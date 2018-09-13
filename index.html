@@ -3,13 +3,26 @@ layout: default
 ---
 
 <html>
-	<head><title>Title</title></head>
+	<head><title>zrxiv</title></head>
 	<body>
-		<ul>
-		{% for doc_ in site.data.documents %}
-		{% assign doc = doc_[1] %}
-		  <li>{{ doc.title }}</li>
-		{% endfor %}
-		</ul>
+		 <table>
+			<thead>
+				<tr>
+					<th>added</th>
+					<th>title</th>
+					<th>tags</th>
+				</tr>
+			</thead>
+			<tbody style="width:100%">
+				{% for doc_ in site.data.documents %}
+				{% assign doc = doc_[1] %}
+				<tr>
+					<td>{{ doc.added_at }}</td>
+					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
+					<td>{{ doc.tags | join: ', ' }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
 	</body>
 </html>
