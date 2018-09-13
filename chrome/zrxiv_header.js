@@ -36,8 +36,6 @@ function zrxiv_tag_changed(checkbox, tag, checked)
 	.then(res =>
 	{
 		var doc = JSON.parse(atob(res.content));
-		doc.tags = doc.tags || [];
-
 		var checked_old = doc.tags.indexOf(tag) != -1;
 		if(checked && !checked_old)
 			doc.tags.push(tag);
@@ -59,7 +57,7 @@ function zrxiv_tag_changed(checkbox, tag, checked)
 function zrxiv_tags_render(tags_on)
 {
 	return fetch(zrxiv_github_api + '/contents/_data/tags', { headers : {'Authorization' : 'Basic ' + btoa(zrxiv_github_username_token)} })
-	.then(res => res.json())
+	.then(res => res.status == 200 ? res.json() : [])
 	.then(res => {
 		var tags_all = res.map(x => x.name.split('.').slice(0, -1).join('.'));
 		var tags = document.getElementById('zrxiv_tags');
@@ -89,13 +87,7 @@ function zrxiv_document_add()
 		},
 		body : JSON.stringify({ message : 'Add ' + zrxiv_document_id, content : btoa(JSON.stringify({id : zrxiv_document_id, title : document.title, url : window.location.href, date : Math.floor(new Date().getTime() / 1000), tags : [] })) })
 	})
-	.then(res => 
-	{
-		if(res.statusCode == 200)
-			return [];
-		else
-			return fetch(zrxiv_github_api + '/contents/_data/documents/' + zrxiv_document_id + '.json', { headers : {'Authorization' : 'Basic ' + btoa(zrxiv_github_username_token)}}).then(res => res.json()).then(res => JSON.parse(atob(res.content)).tags || []);
-	})
+	.then(res => res.status == 200 ? [] : fetch(zrxiv_github_api + '/contents/_data/documents/' + zrxiv_document_id + '.json', { headers : {'Authorization' : 'Basic ' + btoa(zrxiv_github_username_token)}}).then(res => res.json()).then(res => JSON.parse(atob(res.content)).tags) )
 	.then(zrxiv_tags_render);
 }
 
@@ -104,7 +96,7 @@ function zrxiv_make_checkbox(tag, checked)
 	var checkbox = document.createElement('input');
 	checkbox.type = 'checkbox'
 	checkbox.value = tag;
-	checkbox.checked = checked,
+	checkbox.checked = checked;
 	checkbox.addEventListener('change', function() { zrxiv_tag_changed(this); });
 	var label = document.createElement('label');
 	label.appendChild(checkbox);
@@ -123,7 +115,7 @@ if(!document.getElementById('zrxiv'))
 		var container = document.createElement('div');
 		container.id = 'zrxiv';
 
-		var match = new RegExp('/(.+).github.io/(.+)', 'g').exec(options.zrxiv_github_repo);
+		var match = new RegExp('([^/]+)\.github.io/(.+)', 'g').exec(options.zrxiv_github_repo);
 		var username = match[1], repo = match[2];
 		container.innerHTML = data;
 		container.setAttribute('zrxiv_github_username_token', username + ':' + options.zrxiv_github_token);
