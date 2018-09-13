@@ -123,12 +123,12 @@ if(!document.getElementById('zrxiv'))
 		var container = document.createElement('div');
 		container.id = 'zrxiv';
 
-		var match = new RegExp('github.com/(.+)/(.+)', 'g').exec(options.zrxiv_github_repo);
+		var match = new RegExp('/(.+).github.io/(.+)', 'g').exec(options.zrxiv_github_repo);
 		var username = match[1], repo = match[2];
 		container.innerHTML = data;
 		container.setAttribute('zrxiv_github_username_token', username + ':' + options.zrxiv_github_token);
-		container.setAttribute('zrxiv_github_api',options.zrxiv_github_repo.replace('github.com', 'api.github.com/repos'));
-		container.setAttribute('zrxiv_site', options.zrxiv_github_repo.replace('github.com/' + username, username + '.github.io'));
+		container.setAttribute('zrxiv_site', options.zrxiv_github_repo);
+		container.setAttribute('zrxiv_github_api', 'https://api.github.com/repos/' + username + '/' + repo);
 
 		document.body.insertBefore(container, document.body.firstChild);
 		var script = document.createElement('script');
