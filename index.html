@@ -16,9 +16,9 @@ layout: null
 			<tbody style="width:100%">
 				{% for doc_ in site.data.documents %}
 				{% assign doc = doc_[1] %}
-				{% assign testtime = 946702800 %}
+				{% assign testtime = 1536708253.5688908 %}
 				<tr>
-					<td>a {{ testtime | date: "%Y-%m-%d %H:%M" }}</td>
+					<td>{{ testtime | date: "%Y-%m-%d %H:%M" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
 					<td>{{ doc.tags | join: ', ' }}</td>
 				</tr>
