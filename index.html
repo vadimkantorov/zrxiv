@@ -5,7 +5,7 @@ layout: null
 <html>
 	<head><title>zrxiv</title></head>
 	<body>
-		 <table>
+		 <table style="width:100%">
 			<thead>
 				<tr>
 					<th>added</th>
@@ -13,7 +13,7 @@ layout: null
 					<th>tags</th>
 				</tr>
 			</thead>
-			<tbody style="width:100%">
+			<tbody>
 				{% for doc_ in site.data.documents %}
 				{% assign doc = doc_[1] %}
 				<tr>
