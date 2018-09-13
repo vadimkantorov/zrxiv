@@ -1,4 +1,11 @@
 <html>
 	<head><title>Title</title></head>
-	<body>Hello world</body>
+	<body>
+		<ul>
+		{% for doc_ in site.data.documents %}
+		{% assign doc = doc_[1] %}
+		  <li>{{ doc.title }}</li>
+		{% endfor %}
+		</ul>
+	</body>
 </html>
