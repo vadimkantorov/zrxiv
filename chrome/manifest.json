@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "zrXiv",
+	"version": "0.1",
+	"permissions" : ["storage"],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://arxiv.org/abs/*"
+			],
+			"js": ["zrxiv_header.js"],
+			"all_frames": true
+		}
+	],
+	"web_accessible_resources": ["zrxiv_header.html", "zrxiv_header.js", "zrxiv_options.js"],
+	"options_page" : "zrxiv_options.html"
+}
