@@ -15,7 +15,8 @@ layout: null
 				</tr>
 			</thead>
 			<tbody>
-				{% for doc in site.data.documents %}
+				{% assign docs = site.data.documents | sort: 'date' %}
+				{% for doc in docs reversed %}
 				<tr>
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
