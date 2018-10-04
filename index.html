@@ -18,8 +18,13 @@ layout: null
 				</tr>
 			</thead>
 			<tbody>
-				{% assign docs = site.data.documents | map: 1 %}
-				{% for doc in docs reversed %}
+				{% assign docs_ = site.data.documents %}
+				{% assign docs = "" | split:"," %}
+				{% for doc_ in docs_ %}
+					{% assign docs = docs | push: doc_[1] %}
+				{% endfor %}
+				
+				{% for doc in docs %}
 				<tr>
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
