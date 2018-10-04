@@ -18,7 +18,7 @@ layout: null
 				</tr>
 			</thead>
 			<tbody>
-				{% assign docs = site.data.documents | map: 'first' %}
+				{% assign docs = site.data.documents | map: 'last' %}
 				{% for doc in docs reversed %}
 				<tr>
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
