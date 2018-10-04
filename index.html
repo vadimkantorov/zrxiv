@@ -23,6 +23,7 @@ layout: null
 				{% for doc_ in docs_ %}
 					{% assign docs = docs | push: doc_[1] %}
 				{% endfor %}
+				{% assign docs = (docs | sort: 'date') | reverse %}
 				
 				{% for doc in docs %}
 				<tr>
