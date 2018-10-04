@@ -18,7 +18,7 @@ layout: null
 				</tr>
 			</thead>
 			<tbody>
-				{% assign docs = site.data.documents %}
+				{% assign docs = site.data.documents | sort: 'date' %}
 				{% for doc_ in docs %}
 				{% assign doc = doc_[1] %}
 				<tr>
