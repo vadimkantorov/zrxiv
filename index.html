@@ -18,9 +18,8 @@ layout: null
 				</tr>
 			</thead>
 			<tbody>
-				{% assign docs_ = site.data.documents %}
 				{% assign docs = "" | split:"," %}
-				{% for doc_ in docs_ %}
+				{% for doc_ in site.data.documents %}
 					{% assign docs = docs | push: doc_[1] %}
 				{% endfor %}
 				{% assign docs = (docs | sort: 'date') | reverse %}
