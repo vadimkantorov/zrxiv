@@ -3,7 +3,10 @@ layout: null
 ---
 
 <html>
-	<head><title>zrxiv</title></head>
+	<head>
+		<title>zrxiv</title>
+		<meta http-equiv="cache-control" content="no-cache; max-age=0" />
+	</head>
 	<body>
 		<p>Welcome to a zrXiv stash, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</p>
 		<table style="width:100%">
@@ -15,8 +18,8 @@ layout: null
 				</tr>
 			</thead>
 			<tbody>
-				{% assign docs = site.data.documents | sort: 'date' %}
-				{% for doc in docs reversed %}
+				{% assign docs = site.data.documents %}
+				{% for doc in docs %}
 				<tr>
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
