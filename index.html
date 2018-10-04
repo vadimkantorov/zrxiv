@@ -19,7 +19,7 @@ layout: null
 			</thead>
 			<tbody>
 				{% assign docs = site.data.documents | sort: 'date' %}
-				{% for doc_ in docs %}
+				{% for doc_ in docs reversed %}
 				{% assign doc = doc_[1] %}
 				<tr>
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
