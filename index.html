@@ -19,7 +19,8 @@ layout: null
 			</thead>
 			<tbody>
 				{% assign docs = site.data.documents %}
-				{% for doc in docs %}
+				{% for doc_ in docs %}
+				{% assign doc = doc_[1] %}
 				<tr>
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
