@@ -42,6 +42,11 @@ layout: null
 				{
 					const tag = window.location.hash.substr(route_tags.length);
 					document.querySelectorAll('tr:not([data-tags*="' + tag + '"])').forEach(el => {el.style.display = 'none'});
+					document.querySelectorAll('tr:[data-tags*="' + tag + '"]').forEach(el => {el.style.display = ''});
+				}
+				else
+				{
+					document.querySelectorAll('tr').forEach(el => {el.style.display = ''});
 				}
 			}
 		</script>
