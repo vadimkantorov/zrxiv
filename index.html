@@ -3,11 +3,8 @@ layout: null
 ---
 
 <html>
-	<head>
-		<title>zrxiv</title>
-		<meta http-equiv="cache-control" content="no-cache; max-age=0" />
-	</head>
-	<body>
+	<head><title>zrxiv</title></head>
+	<body onhashchange="onhashchange">
 		<p>Welcome to a zrXiv stash, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</p>
 		<table style="width:100%">
 			<thead>
@@ -25,7 +22,7 @@ layout: null
 				{% assign docs = (docs | sort: 'date') | reverse %}
 				
 				{% for doc in docs %}
-				<tr>
+				<tr data-tags="{{ doc.tags | join: ' ' }}">
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
 					<td>
@@ -33,10 +30,17 @@ layout: null
 						<a href="#/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
 						{% endfor %}
 					</td>
-					
 				</tr>
 				{% endfor %}
 			</tbody>
 		</table>
+		<script type="text/javascript">
+			function onhashchange()
+			{
+				console.log(window.location.hash);
+				//var tag = window.location.hash.substr('#';
+				//var docs = document.querySelectorAll('tr:not([data-tags*=''])');
+			}
+		</script>
 	</body>
 </html>
