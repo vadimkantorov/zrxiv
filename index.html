@@ -28,7 +28,12 @@ layout: null
 				<tr>
 					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
-					<td>{{ doc.tags | join: ', ' }}</td>
+					<td>
+						{% for tag in doc.tags %}
+						<a href="#/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endfor %}
+						{% endfor %}
+					</td>
+					
 				</tr>
 				{% endfor %}
 			</tbody>
