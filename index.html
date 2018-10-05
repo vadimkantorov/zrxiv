@@ -4,7 +4,7 @@ layout: null
 
 <html>
 	<head><title>zrxiv</title></head>
-	<body onhashchange="onhashchange()">
+	<body onhashchange="navigate()" onload="navigate()">
 		<p>Welcome to a zrXiv stash, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</p>
 		<table style="width:100%">
 			<thead>
@@ -35,7 +35,7 @@ layout: null
 			</tbody>
 		</table>
 		<script type="text/javascript">
-			function onhashchange()
+			function navigate()
 			{
 				const route_tags = '#/tags/';
 				if(window.location.hash.startsWith(route_tags))
