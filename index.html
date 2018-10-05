@@ -37,9 +37,13 @@ layout: null
 		<script type="text/javascript">
 			function onhashchange()
 			{
-				console.log(window.location.hash);
-				//var tag = window.location.hash.substr('#';
-				//var docs = document.querySelectorAll('tr:not([data-tags*=''])');
+				var route_tags = '#/tags/';
+				if(window.location.hash.startsWith(route_tags))
+				{
+					var tag = window.location.hash.substr(route_tags.length);
+					var docs = document.querySelectorAll('tr:not([data-tags*="' + tag '"])');
+					console.log(docs);
+				}
 			}
 		</script>
 	</body>
