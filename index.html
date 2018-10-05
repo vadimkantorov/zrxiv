@@ -30,7 +30,7 @@ layout: null
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
 					<td>
 						{% for tag in doc.tags %}
-						<a href="#/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endfor %}
+						<a href="#/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
 						{% endfor %}
 					</td>
 					
