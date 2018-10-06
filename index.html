@@ -9,8 +9,8 @@ layout: null
 		Tags: 
 		<ul>
 		{% for tag_ in site.data.tags %}
-		{% assign tag = tag[0] %}
-			<li><a href="#/tags/{{ tag}}">{{ tag }}</a></li>
+		{% assign tag = tag_[0] %}
+			<li><a href="#/tags/{{ tag }}">{{ tag }}</a></li>
 		{% endfor %}
 		</ul>
 		<table style="width:100%">
