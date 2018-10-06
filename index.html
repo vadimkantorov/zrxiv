@@ -6,6 +6,13 @@ layout: null
 	<head><title>zrxiv</title></head>
 	<body onhashchange="navigate()" onload="navigate()">
 		<p>Welcome to a <a href="#">zrXiv</a> stash, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</p>
+		Tags: 
+		<ul>
+		{% for tag_ in site.data.tags %}
+		{% assign tag = tag[0] %}
+			<li><a href="#/tags/{{ tag}}">{{ tag }}</a></li>
+		{% endfor %}
+		</ul>
 		<table style="width:100%">
 			<thead>
 				<tr>
