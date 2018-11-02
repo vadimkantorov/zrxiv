@@ -1,1 +1,10 @@
-{"id":"1804.01346","title":"[1804.01346] Normalized Cut Loss for Weakly-supervised CNN Segmentation","url":"https://arxiv.org/abs/1804.01346","date":1539611810,"tags":["weaksup"]}
+{
+  "id": "1804.01346",
+  "title": "[1804.01346] Normalized Cut Loss for Weakly-supervised CNN Segmentation",
+  "url": "https://arxiv.org/abs/1804.01346",
+  "date": 1539611810,
+  "tags": [
+    "weaksup",
+    "diffusion"
+  ]
+}
