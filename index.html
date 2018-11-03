@@ -5,13 +5,16 @@ layout: null
 <html>
 	<head><title>zrxiv</title></head>
 	<body onhashchange="navigate()" onload="navigate()">
-		<p>Welcome to a <a href="#">zrXiv</a> stash, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}. Tags:</p>
-		<ul>
-		{% for tag_ in site.data.tags %}
-		{% assign tag = tag_[0] %}
-			<li><a href="#/tags/{{ tag }}">{{ tag }}</a></li>
-		{% endfor %}
-		</ul>
+		<p>Welcome to a <a href="#">zrXiv</a> stash, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}</p>
+		<div style="overflow:auto">
+			<span style="float:left">Tags:</span>
+			<ul style="display:inline">
+			{% for tag_ in site.data.tags %}
+			{% assign tag = tag_[0] %}
+				<li><a href="#/tags/{{ tag }}" style="margin-left: 2em; float:left">{{ tag }}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
 		<table style="width:100%">
 			<thead>
 				<tr>
