@@ -17,11 +17,11 @@ layout: default
 			</ul>
 		</div>
 		<br />
-		<table style="width:100%">
+		<table style="width:100%; table-layout:auto">
 			<thead>
 				<tr>
 					<th>added</th>
-					<th>title</th>
+					<th style="width:100%">title</th>
 					<th>tags</th>
 				</tr>
 			</thead>
@@ -34,7 +34,7 @@ layout: default
 				
 				{% for doc in docs %}
 				<tr data-tags="{{ doc.tags | join: ' ' }}">
-					<td>{{ doc.date | date: "%Y-%m-%d" }}</td>
+					<td style="white-space:nowrap">{{ doc.date | date: "%Y-%m-%d" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
 					<td>
 						{% for tag in doc.tags %}
