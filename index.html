@@ -5,8 +5,8 @@ layout: null
 <html>
 	<head><title>zrxiv</title></head>
 	<body onhashchange="navigate()" onload="navigate()">
-		<p>Welcome to a <a href="#">zrXiv</a> stash, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}</p>
-		<div style="overflow:auto">
+		<p>Welcome to <a href="#">zrXiv</a>, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}</p>
+		<p style="overflow:auto">
 			<span style="float:left">Tags:</span>
 			<ul style="display:inline">
 			{% for tag_ in site.data.tags %}
@@ -14,7 +14,7 @@ layout: null
 				<li style="margin-left: 2em; float:left"><a href="#/tags/{{ tag }}">{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
-		</div>
+		</p>
 		<table style="width:100%">
 			<thead>
 				<tr>
