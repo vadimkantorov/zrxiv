@@ -1,18 +1,18 @@
 ---
-layout: null
+layout: default
 ---
 
 <!DOCTYPE html>
 <html>
 	<head><title>zrxiv</title></head>
 	<body onhashchange="navigate()" onload="navigate()">
-		<p>Welcome to <a href="#">zrXiv</a>, updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}</p>
+		<p>updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}</p>
 		<div style="overflow:auto">
 			<span style="float:left">Tags:</span>
 			<ul style="display:inline">
 			{% for tag_ in site.data.tags %}
 			{% assign tag = tag_[0] %}
-				<li style="margin-left: 2em; float:left"><a href="#/tags/{{ tag }}">{{ tag }}</a></li>
+				<li style="margin-left: 2em; float:left; margin-top: 0px"><a href="#/tags/{{ tag }}">{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
 		</div>
@@ -34,7 +34,7 @@ layout: null
 				
 				{% for doc in docs %}
 				<tr data-tags="{{ doc.tags | join: ' ' }}">
-					<td>{{ doc.date | date: "%Y-%m-%d %H:%M" }}</td>
+					<td>{{ doc.date | date: "%Y-%m-%d" }}</td>
 					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
 					<td>
 						{% for tag in doc.tags %}
