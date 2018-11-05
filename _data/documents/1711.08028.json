@@ -1,0 +1,13 @@
+{
+  "title": "Recurrent Relational Networks",
+  "author": [
+    "Rasmus Berg Palm",
+    "Ulrich Paquet",
+    "Ole Winther"
+  ],
+  "abstract": "  This paper is concerned with learning to solve tasks that require a chain of\ninterdependent steps of relational inference, like answering complex questions\nabout the relationships between objects, or solving puzzles where the smaller\nelements of a solution mutually constrain each other. We introduce the\nrecurrent relational network, a general purpose module that operates on a graph\nrepresentation of objects. As a generalization of Santoro et al. [2017]'s\nrelational network, it can augment any neural network model with the capacity\nto do many-step relational reasoning. We achieve state of the art results on\nthe bAbI textual question-answering dataset with the recurrent relational\nnetwork, consistently solving 20/20 tasks. As bAbI is not particularly\nchallenging from a relational reasoning point of view, we introduce\nPretty-CLEVR, a new diagnostic dataset for relational reasoning. In the\nPretty-CLEVR set-up, we can vary the question to control for the number of\nrelational reasoning steps that are required to obtain the answer. Using\nPretty-CLEVR, we probe the limitations of multi-layer perceptrons, relational\nand recurrent relational networks. Finally, we show how recurrent relational\nnetworks can learn to solve Sudoku puzzles from supervised training data, a\nchallenging task requiring upwards of 64 steps of relational reasoning. We\nachieve state-of-the-art results amongst comparable methods by solving 96.6% of\nthe hardest Sudoku puzzles.\n",
+  "id": "1711.08028",
+  "date": 1541411837,
+  "url": "https://arxiv.org/abs/1711.08028",
+  "tags": []
+}
