@@ -8,7 +8,7 @@ layout: default
 	<body onhashchange="navigate()" onload="navigate()">
 		<p>updated at {{ "now" | date: "%Y-%m-%d %H:%M" }} GMT</p>
 		<div style="overflow:auto">
-			<span style="float:left">Tags:</span>
+			<span style="float:left">tags:</span>
 			<ul style="display:inline">
 			{% for tag_ in site.data.tags %}
 			{% assign tag = tag_[0] %}
