@@ -1,0 +1,15 @@
+{
+  "title": "Plan Online, Learn Offline: Efficient Learning and Exploration via\n  Model-Based Control",
+  "author": [
+    "Kendall Lowrey",
+    "Aravind Rajeswaran",
+    "Sham Kakade",
+    "Emanuel Todorov",
+    "Igor Mordatch"
+  ],
+  "abstract": "  We propose a plan online and learn offline (POLO) framework for the setting\nwhere an agent, with an internal model, needs to continually act and learn in\nthe world. Our work builds on the synergistic relationship between local\nmodel-based control, global value function learning, and exploration. We study\nhow local trajectory optimization can cope with approximation errors in the\nvalue function, and can stabilize and accelerate value function learning.\nConversely, we also study how approximate value functions can help reduce the\nplanning horizon and allow for better policies beyond local solutions. Finally,\nwe also demonstrate how trajectory optimization can be used to perform\ntemporally coordinated exploration in conjunction with estimating uncertainty\nin value function approximation. This exploration is critical for fast and\nstable learning of the value function. Combining these components enable\nsolutions to complex control tasks, like humanoid locomotion and dexterous\nin-hand manipulation, in the equivalent of a few minutes of experience in the\nreal world.\n",
+  "id": "1811.01848",
+  "date": 1541539043,
+  "url": "https://arxiv.org/abs/1811.01848",
+  "tags": []
+}
