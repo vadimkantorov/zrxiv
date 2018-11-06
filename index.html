@@ -34,11 +34,11 @@ layout: default
 				
 				{% for doc in docs %}
 				<tr data-tags="{{ doc.tags | join: ' ' }}">
-					<td style="white-space:nowrap">{{ doc.date | date: "%Y-%m-%d" }}</td>
+					<td style="white-space:nowrap" title="{{ doc.date | date: "%Y, %B %-d, %H:%M" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
 					<td>
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
 						{% if doc.author %}
-						<br /><span>{{ doc.author | join: ", " }}</span>
+						<br /><small style="color:lightgray">{{ doc.author | join: ", " }}</small>
 						{% endif %}
 					</td>
 					<td>
