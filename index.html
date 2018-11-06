@@ -39,19 +39,7 @@ layout: default
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
 						{% for author in doc.author %}
 							{% if forloop.first == true %}<br />{% endif %}
-							{% assign authorshort = "" %}
-							{% assign words = author | split: " " %}
-							{% for word in words %}
-								{% if forloop.first != true %}
-									{% assign authorshort = authorshort | append: ". " %}
-								{% endif %}
-								{% assign wordshort = word %}
-								{% if forloop.last != true %}
-									{% assign wordshort = word | slice: 0 %}
-								{% endif %}
-								{% assign authorshort = authorshort | append: wordshort %}
-							{% endfor %}
-							<small style="color:lightgray" title="{{ author }}">{{ authorshort }}{% if forloop.last != true %}, {% endif %}</small>
+							<small style="color:lightgray" title="{{ author }}">{{ (author | split: " ").last }}{% if forloop.last != true %}, {% endif %}</small>
 						{% endfor %}
 					</td>
 					<td>
