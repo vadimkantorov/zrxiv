@@ -45,9 +45,7 @@ layout: default
 								{% if forloop.first != true %}
 									{% assign authorshort = authorshort | append: ". " %}
 								{% endif %}
-								{% if forloop.last != true %}
-									{% assign word = word | slice: 0 %}
-								{% endif %}
+								{% assign word = word | slice: 0 %}
 								{% assign authorshort = authorshort | append: word %}
 							{% endfor %}
 							<small style="color:lightgray" title="{{ author }}">{{ authorshort }}{% if forloop.last != true %}, {% endif %}</small>
