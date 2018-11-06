@@ -35,7 +35,12 @@ layout: default
 				{% for doc in docs %}
 				<tr data-tags="{{ doc.tags | join: ' ' }}">
 					<td style="white-space:nowrap">{{ doc.date | date: "%Y-%m-%d" }}</td>
-					<td><a href="{{ doc.url }}">{{ doc.title }}</a></td>
+					<td>
+						<a href="{{ doc.url }}">{{ doc.title }}</a>
+						{% if doc.author %}
+						<br /><span>{% doc.author | join: ", " %}</span>
+						{% endif %}
+					</td>
 					<td>
 						{% for tag in doc.tags %}
 						<a href="#/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
