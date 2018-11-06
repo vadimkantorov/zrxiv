@@ -1,0 +1,15 @@
+{
+  "title": "Towards Sparse Hierarchical Graph Classifiers",
+  "author": [
+    "Cătălina Cangea",
+    "Petar Veličković",
+    "Nikola Jovanović",
+    "Thomas Kipf",
+    "Pietro Liò"
+  ],
+  "abstract": "  Recent advances in representation learning on graphs, mainly leveraging graph\nconvolutional networks, have brought a substantial improvement on many\ngraph-based benchmark tasks. While novel approaches to learning node embeddings\nare highly suitable for node classification and link prediction, their\napplication to graph classification (predicting a single label for the entire\ngraph) remains mostly rudimentary, typically using a single global pooling step\nto aggregate node features or a hand-designed, fixed heuristic for hierarchical\ncoarsening of the graph structure. An important step towards ameliorating this\nis differentiable graph coarsening---the ability to reduce the size of the\ngraph in an adaptive, data-dependent manner within a graph neural network\npipeline, analogous to image downsampling within CNNs. However, the previous\nprominent approach to pooling has quadratic memory requirements during training\nand is therefore not scalable to large graphs. Here we combine several recent\nadvances in graph neural network design to demonstrate that competitive\nhierarchical graph classification results are possible without sacrificing\nsparsity. Our results are verified on several established graph classification\nbenchmarks, and highlight an important direction for future research in\ngraph-based neural networks.\n",
+  "id": "1811.01287",
+  "date": 1541498637,
+  "url": "https://arxiv.org/abs/1811.01287",
+  "tags": []
+}
