@@ -38,7 +38,7 @@ layout: default
 					<td>
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
 						{% if doc.author %}
-						<br /><span>{% doc.author | join: ", " %}</span>
+						<br /><span>{{ doc.author | join: ", " }}</span>
 						{% endif %}
 					</td>
 					<td>
