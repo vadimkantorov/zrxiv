@@ -37,9 +37,23 @@ layout: default
 					<td style="white-space:nowrap" title="{{ doc.date | date: "%Y, %B %-d, %H:%M" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
 					<td>
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
-						{% if doc.author %}
-						<br /><small style="color:lightgray">{{ doc.author | join: ", " }}</small>
-						{% endif %}
+						{% for author in doc.author %}
+							{% if forloop.first %}<br />{% endif %}
+							{% assign authorshort = '' %}
+							{% assign words = author | split: " " %}
+							{% for word in words %}
+								{% if forloop.first != true %}
+									{% assign authorshort = authorshort | append: ". " %}
+								{% endif %}
+						
+								{% if forloop.last %}
+									{% assign authorshort = authorshort | append: word %}
+								{% else %}
+									{% assign authorshort = authorshort | append: (word | slice: 0) %}
+								{% endif %}
+							{% endfor %}
+							<small style="color:lightgray" title="{{ author }}">{{ authorshort }}</small>{% if forloop.last != true %}, {% endif %}
+						{% endfor %}
 					</td>
 					<td>
 						{% for tag in doc.tags %}
