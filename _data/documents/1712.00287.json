@@ -1,0 +1,17 @@
+{
+  "title": "Faithful Inversion of Generative Models for Effective Amortized\n  Inference",
+  "author": [
+    "Stefan Webb",
+    "Adam Golinski",
+    "Robert Zinkov",
+    "N. Siddharth",
+    "Tom Rainforth",
+    "Yee Whye Teh",
+    "Frank Wood"
+  ],
+  "abstract": "  Inference amortization methods share information across multiple\nposterior-inference problems, allowing each to be carried out more efficiently.\nGenerally, they require the inversion of the dependency structure in the\ngenerative model, as the modeller must learn a mapping from observations to\ndistributions approximating the posterior. Previous approaches have involved\ninverting the dependency structure in a heuristic way that fails to capture\nthese dependencies correctly, thereby limiting the achievable accuracy of the\nresulting approximations. We introduce an algorithm for faithfully, and\nminimally, inverting the graphical model structure of any generative model.\nSuch inverses have two crucial properties: (a) they do not encode any\nindependence assertions that are absent from the model and; (b) they are local\nmaxima for the number of true independencies encoded. We prove the correctness\nof our approach and empirically show that the resulting minimally faithful\ninverses lead to better inference amortization than existing heuristic\napproaches.\n",
+  "id": "1712.00287",
+  "date": 1541590498,
+  "url": "https://arxiv.org/abs/1712.00287",
+  "tags": []
+}
