@@ -1,0 +1,14 @@
+{
+  "title": "Learning Graphs from Data: A Signal Representation Perspective",
+  "author": [
+    "Xiaowen Dong",
+    "Dorina Thanou",
+    "Michael Rabbat",
+    "Pascal Frossard"
+  ],
+  "abstract": "  The construction of a meaningful graph topology plays a crucial role in the\neffective representation, processing, analysis and visualization of structured\ndata. When a natural choice of the graph is not readily available from the\ndatasets, it is thus desirable to infer or learn a graph topology from the\ndata. In this tutorial overview, we survey solutions to the problem of graph\nlearning, including classical viewpoints from statistics and physics, and more\nrecent approaches that adopt a graph signal processing (GSP) perspective. We\nfurther emphasize the conceptual similarities and differences between classical\nand GSP graph inference methods and highlight the potential advantage of the\nlatter in a number of theoretical and practical scenarios. We conclude with\nseveral open issues and challenges that are keys to the design of future signal\nprocessing and machine learning algorithms for learning graphs from data.\n",
+  "id": "1806.00848",
+  "date": 1541592401,
+  "url": "https://arxiv.org/abs/1806.00848",
+  "tags": []
+}
