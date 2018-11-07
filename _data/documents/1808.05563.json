@@ -1,0 +1,14 @@
+{
+  "title": "Learning Invariances using the Marginal Likelihood",
+  "author": [
+    "Mark van der Wilk",
+    "Matthias Bauer",
+    "ST John",
+    "James Hensman"
+  ],
+  "abstract": "  Generalising well in supervised learning tasks relies on correctly\nextrapolating the training data to a large region of the input space. One way\nto achieve this is to constrain the predictions to be invariant to\ntransformations on the input that are known to be irrelevant (e.g.\ntranslation). Commonly, this is done through data augmentation, where the\ntraining set is enlarged by applying hand-crafted transformations to the\ninputs. We argue that invariances should instead be incorporated in the model\nstructure, and learned using the marginal likelihood, which correctly rewards\nthe reduced complexity of invariant models. We demonstrate this for Gaussian\nprocess models, due to the ease with which their marginal likelihood can be\nestimated. Our main contribution is a variational inference scheme for Gaussian\nprocesses containing invariances described by a sampling procedure. We learn\nthe sampling procedure by back-propagating through it to maximise the marginal\nlikelihood.\n",
+  "id": "1808.05563",
+  "date": 1541590552,
+  "url": "https://arxiv.org/abs/1808.05563v1",
+  "tags": []
+}
