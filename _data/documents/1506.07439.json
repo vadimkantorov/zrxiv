@@ -1,0 +1,14 @@
+{
+  "title": "Kernel Cuts: MRF meets Kernel & Spectral Clustering",
+  "author": [
+    "Meng Tang",
+    "Dmitrii Marin",
+    "Ismail Ben Ayed",
+    "Yuri Boykov"
+  ],
+  "abstract": "  We propose a new segmentation model combining common regularization energies,\ne.g. Markov Random Field (MRF) potentials, and standard pairwise clustering\ncriteria like Normalized Cut (NC), average association (AA), etc. These\nclustering and regularization models are widely used in machine learning and\ncomputer vision, but they were not combined before due to significant\ndifferences in the corresponding optimization, e.g. spectral relaxation and\ncombinatorial max-flow techniques. On the one hand, we show that many common\napplications using MRF segmentation energies can benefit from a high-order NC\nterm, e.g. enforcing balanced clustering of arbitrary high-dimensional image\nfeatures combining color, texture, location, depth, motion, etc. On the other\nhand, standard clustering applications can benefit from an inclusion of common\npairwise or higher-order MRF constraints, e.g. edge alignment, bin-consistency,\nlabel cost, etc. To address joint energies like NC+MRF, we propose efficient\nKernel Cut algorithms based on bound optimization. While focusing on graph cut\nand move-making techniques, our new unary (linear) kernel and spectral bound\nformulations for common pairwise clustering criteria allow to integrate them\nwith any regularization functionals with existing discrete or continuous\nsolvers.\n",
+  "id": "1506.07439",
+  "date": 1541591983,
+  "url": "https://arxiv.org/abs/1506.07439",
+  "tags": []
+}
