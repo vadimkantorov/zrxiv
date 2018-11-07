@@ -1,0 +1,13 @@
+{
+  "title": "VideoMatch: Matching based Video Object Segmentation",
+  "author": [
+    "Yuan-Ting Hu",
+    "Jia-Bin Huang",
+    "Alexander G. Schwing"
+  ],
+  "abstract": "  Video object segmentation is challenging yet important in a wide variety of\napplications for video analysis. Recent works formulate video object\nsegmentation as a prediction task using deep nets to achieve appealing\nstate-of-the-art performance. Due to the formulation as a prediction task, most\nof these methods require fine-tuning during test time, such that the deep nets\nmemorize the appearance of the objects of interest in the given video. However,\nfine-tuning is time-consuming and computationally expensive, hence the\nalgorithms are far from real time. To address this issue, we develop a novel\nmatching based algorithm for video object segmentation. In contrast to\nmemorization based classification techniques, the proposed approach learns to\nmatch extracted features to a provided template without memorizing the\nappearance of the objects. We validate the effectiveness and the robustness of\nthe proposed method on the challenging DAVIS-16, DAVIS-17, Youtube-Objects and\nJumpCut datasets. Extensive results show that our method achieves comparable\nperformance without fine-tuning and is much more favorable in terms of\ncomputational time.\n",
+  "id": "1809.01123",
+  "date": 1541590587,
+  "url": "https://arxiv.org/abs/1809.01123",
+  "tags": []
+}
