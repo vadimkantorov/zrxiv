@@ -1,0 +1,13 @@
+{
+  "title": "DeepTAM: Deep Tracking and Mapping",
+  "author": [
+    "Huizhong Zhou",
+    "Benjamin Ummenhofer",
+    "Thomas Brox"
+  ],
+  "abstract": "  We present a system for keyframe-based dense camera tracking and depth map\nestimation that is entirely learned. For tracking, we estimate small pose\nincrements between the current camera image and a synthetic viewpoint. This\nsignificantly simplifies the learning problem and alleviates the dataset bias\nfor camera motions. Further, we show that generating a large number of pose\nhypotheses leads to more accurate predictions. For mapping, we accumulate\ninformation in a cost volume centered at the current depth estimate. The\nmapping network then combines the cost volume and the keyframe image to update\nthe depth prediction, thereby effectively making use of depth measurements and\nimage-based priors. Our approach yields state-of-the-art results with few\nimages and is robust with respect to noisy camera poses. We demonstrate that\nthe performance of our 6 DOF tracking competes with RGB-D tracking algorithms.\nWe compare favorably against strong classic and deep learning powered dense\ndepth algorithms.\n",
+  "id": "1808.01900",
+  "date": 1541591514,
+  "url": "https://arxiv.org/abs/1808.01900",
+  "tags": []
+}
