@@ -1,0 +1,12 @@
+{
+  "title": "A Coordinate-Free Construction of Scalable Natural Gradient",
+  "author": [
+    "Kevin Luk",
+    "Roger Grosse"
+  ],
+  "abstract": "  Most neural networks are trained using first-order optimization methods,\nwhich are sensitive to the parameterization of the model. Natural gradient\ndescent is invariant to smooth reparameterizations because it is defined in a\ncoordinate-free way, but tractable approximations are typically defined in\nterms of coordinate systems, and hence may lose the invariance properties. We\nanalyze the invariance properties of the Kronecker-Factored Approximate\nCurvature (K-FAC) algorithm by constructing the algorithm in a coordinate-free\nway. We explicitly construct a Riemannian metric under which the natural\ngradient matches the K-FAC update; invariance to affine transformations of the\nactivations follows immediately. We extend our framework to analyze the\ninvariance properties of K-FAC applied to convolutional networks and recurrent\nneural networks, as well as metrics other than the usual Fisher metric.\n",
+  "id": "1808.10340",
+  "date": 1541590624,
+  "url": "https://arxiv.org/abs/1808.10340",
+  "tags": []
+}
