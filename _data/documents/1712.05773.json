@@ -1,0 +1,14 @@
+{
+  "title": "Semantic Visual Localization",
+  "author": [
+    "Johannes L. Schönberger",
+    "Marc Pollefeys",
+    "Andreas Geiger",
+    "Torsten Sattler"
+  ],
+  "abstract": "  Robust visual localization under a wide range of viewing conditions is a\nfundamental problem in computer vision. Handling the difficult cases of this\nproblem is not only very challenging but also of high practical relevance,\ne.g., in the context of life-long localization for augmented reality or\nautonomous robots. In this paper, we propose a novel approach based on a joint\n3D geometric and semantic understanding of the world, enabling it to succeed\nunder conditions where previous approaches failed. Our method leverages a novel\ngenerative model for descriptor learning, trained on semantic scene completion\nas an auxiliary task. The resulting 3D descriptors are robust to missing\nobservations by encoding high-level 3D geometric and semantic information.\nExperiments on several challenging large-scale localization datasets\ndemonstrate reliable localization under extreme viewpoint, illumination, and\ngeometry changes.\n",
+  "id": "1712.05773",
+  "date": 1541590526,
+  "url": "https://arxiv.org/abs/1712.05773",
+  "tags": []
+}
