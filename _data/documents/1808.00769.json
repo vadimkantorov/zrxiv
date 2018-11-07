@@ -1,0 +1,15 @@
+{
+  "title": "Sparse and Dense Data with CNNs: Depth Completion and Semantic\n  Segmentation",
+  "author": [
+    "Maximilian Jaritz",
+    "Raoul de Charette",
+    "Emilie Wirbel",
+    "Xavier Perrotton",
+    "Fawzi Nashashibi"
+  ],
+  "abstract": "  Convolutional neural networks are designed for dense data, but vision data is\noften sparse (stereo depth, point clouds, pen stroke, etc.). We present a\nmethod to handle sparse depth data with optional dense RGB, and accomplish\ndepth completion and semantic segmentation changing only the last layer. Our\nproposal efficiently learns sparse features without the need of an additional\nvalidity mask. We show how to ensure network robustness to varying input\nsparsities. Our method even works with densities as low as 0.8% (8 layer\nlidar), and outperforms all published state-of-the-art on the Kitti depth\ncompletion benchmark.\n",
+  "id": "1808.00769",
+  "date": 1541590698,
+  "url": "https://arxiv.org/abs/1808.00769",
+  "tags": []
+}
