@@ -1,0 +1,12 @@
+{
+  "title": "Learning random-walk label propagation for weakly-supervised semantic\n  segmentation",
+  "author": [
+    "Paul Vernaza",
+    "Manmohan Chandraker"
+  ],
+  "abstract": "  Large-scale training for semantic segmentation is challenging due to the\nexpense of obtaining training data for this task relative to other vision\ntasks. We propose a novel training approach to address this difficulty. Given\ncheaply-obtained sparse image labelings, we propagate the sparse labels to\nproduce guessed dense labelings. A standard CNN-based segmentation network is\ntrained to mimic these labelings. The label-propagation process is defined via\nrandom-walk hitting probabilities, which leads to a differentiable\nparameterization with uncertainty estimates that are incorporated into our\nloss. We show that by learning the label-propagator jointly with the\nsegmentation predictor, we are able to effectively learn semantic edges given\nno direct edge supervision. Experiments also show that training a segmentation\nnetwork in this way outperforms the naive approach.\n",
+  "id": "1802.00470",
+  "date": 1541591522,
+  "url": "https://arxiv.org/abs/1802.00470",
+  "tags": []
+}
