@@ -1,0 +1,12 @@
+{
+  "title": "Training Deep Networks without Learning Rates Through Coin Betting",
+  "author": [
+    "Francesco Orabona",
+    "Tatiana Tommasi"
+  ],
+  "abstract": "  Deep learning methods achieve state-of-the-art performance in many\napplication scenarios. Yet, these methods require a significant amount of\nhyperparameters tuning in order to achieve the best results. In particular,\ntuning the learning rates in the stochastic optimization process is still one\nof the main bottlenecks. In this paper, we propose a new stochastic gradient\ndescent procedure for deep networks that does not require any learning rate\nsetting. Contrary to previous methods, we do not adapt the learning rates nor\nwe make use of the assumed curvature of the objective function. Instead, we\nreduce the optimization process to a game of betting on a coin and propose a\nlearning-rate-free optimal algorithm for this scenario. Theoretical convergence\nis proven for convex and quasi-convex functions and empirical evidence shows\nthe advantage of our algorithm over popular stochastic gradient algorithms.\n",
+  "id": "1705.07795",
+  "date": 1541592278,
+  "url": "https://arxiv.org/abs/1705.07795",
+  "tags": []
+}
