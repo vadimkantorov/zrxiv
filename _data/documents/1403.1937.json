@@ -1,0 +1,14 @@
+{
+  "title": "A fast eikonal equation solver using the Schrodinger wave equation",
+  "author": [
+    "Karthik S. Gurumoorthy",
+    "Adrian M. Peter",
+    "Birmingham Hang Guan",
+    "Anand Rangarajan"
+  ],
+  "abstract": "  We use a Schr\\\"odinger wave equation formalism to solve the eikonal equation.\nIn our framework, a solution to the eikonal equation is obtained in the limit\nas Planck's constant $\\hbar$ (treated as a free parameter) tends to zero of the\nsolution to the corresponding linear Schr\\\"odinger equation. The Schr\\\"odinger\nequation corresponding to the eikonal turns out to be a \\emph{generalized,\nscreened Poisson equation}. Despite being linear, it does not have a\nclosed-form solution for arbitrary forcing functions. We present two different\ntechniques to solve the screened Poisson equation. In the first approach we use\na standard perturbation analysis approach to derive a new algorithm which is\nguaranteed to converge provided the forcing function is bounded and positive.\nThe perturbation technique requires a sequence of discrete convolutions which\ncan be performed in $O(N\\log N)$ using the Fast Fourier Transform (FFT) where\n$N$ is the number of grid points. In the second method we discretize the linear\nLaplacian operator by the finite difference method leading to a sparse linear\nsystem of equations which can be solved using the plethora of sparse solvers.\nThe eikonal solution is recovered from the exponent of the resultant scalar\nfield. Our approach eliminates the need to explicitly construct viscosity\nsolutions as customary with direct solutions to the eikonal. Since the linear\nequation is computed for a small but non-zero $\\hbar$, the obtained solution is\nan approximation. Though our solution framework is applicable to the general\nclass of eikonal problems, we detail specifics for the popular vision\napplications of shape-from-shading, vessel segmentation, and path planning.\n",
+  "id": "1403.1937",
+  "date": 1541592067,
+  "url": "https://arxiv.org/abs/1403.1937",
+  "tags": []
+}
