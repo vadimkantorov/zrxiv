@@ -1,0 +1,13 @@
+{
+  "title": "Repeatability Is Not Enough: Learning Affine Regions via\n  Discriminability",
+  "author": [
+    "Dmytro Mishkin",
+    "Filip Radenovic",
+    "Jiri Matas"
+  ],
+  "abstract": "  A method for learning local affine-covariant regions is presented. We show\nthat maximizing geometric repeatability does not lead to local regions, a.k.a\nfeatures,that are reliably matched and this necessitates descriptor-based\nlearning. We explore factors that influence such learning and registration: the\nloss function, descriptor type, geometric parametrization and the trade-off\nbetween matchability and geometric accuracy and propose a novel hard\nnegative-constant loss function for learning of affine regions. The affine\nshape estimator -- AffNet -- trained with the hard negative-constant loss\noutperforms the state-of-the-art in bag-of-words image retrieval and wide\nbaseline stereo. The proposed training process does not require precisely\ngeometrically aligned patches.The source codes and trained weights are\navailable at https://github.com/ducha-aiki/affnet\n",
+  "id": "1711.06704",
+  "date": 1541590990,
+  "url": "https://arxiv.org/abs/1711.06704",
+  "tags": []
+}
