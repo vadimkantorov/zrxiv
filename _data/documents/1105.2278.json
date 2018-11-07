@@ -1,0 +1,14 @@
+{
+  "title": "Nonequilibrium candidate Monte Carlo: A new tool for efficient\n  equilibrium simulation",
+  "author": [
+    "Jerome P. Nilmeier",
+    "Gavin E. Crooks",
+    "David D. L. Minh",
+    "John D. Chodera"
+  ],
+  "abstract": "  Metropolis Monte Carlo simulation is a powerful tool for studying the\nequilibrium properties of matter. In complex condensed-phase systems, however,\nit is difficult to design Monte Carlo moves with high acceptance probabilities\nthat also rapidly sample uncorrelated configurations. Here, we introduce a new\nclass of moves based on nonequilibrium dynamics: candidate configurations are\ngenerated through a finite-time process in which a system is actively driven\nout of equilibrium, and accepted with criteria that preserve the equilibrium\ndistribution. The acceptance rule is similar to the Metropolis acceptance\nprobability, but related to the nonequilibrium work rather than the\ninstantaneous energy difference. Our method is applicable to sampling from both\na single thermodynamic state or a mixture of thermodynamic states, and allows\nboth coordinates and thermodynamic parameters to be driven in nonequilibrium\nproposals. While generating finite-time switching trajectories incurs an\nadditional cost, driving some degrees of freedom while allowing others to\nevolve naturally can lead to large enhancements in acceptance probabilities,\ngreatly reducing structural correlation times. Using nonequilibrium driven\nprocesses vastly expands the repertoire of useful Monte Carlo proposals in\nsimulations of dense solvated systems.\n",
+  "id": "1105.2278",
+  "date": 1541591977,
+  "url": "https://arxiv.org/abs/1105.2278",
+  "tags": []
+}
