@@ -1,0 +1,13 @@
+{
+  "title": "Photorealistic Style Transfer with Screened Poisson Equation",
+  "author": [
+    "Roey Mechrez",
+    "Eli Shechtman",
+    "Lihi Zelnik-Manor"
+  ],
+  "abstract": "  Recent work has shown impressive success in transferring painterly style to\nimages. These approaches, however, fall short of photorealistic style transfer.\nEven when both the input and reference images are photographs, the output still\nexhibits distortions reminiscent of a painting. In this paper we propose an\napproach that takes as input a stylized image and makes it more photorealistic.\nIt relies on the Screened Poisson Equation, maintaining the fidelity of the\nstylized image while constraining the gradients to those of the original input\nimage. Our method is fast, simple, fully automatic and shows positive progress\nin making a stylized image photorealistic. Our results exhibit finer details\nand are less prone to artifacts than the state-of-the-art.\n",
+  "id": "1709.09828",
+  "date": 1541591930,
+  "url": "https://arxiv.org/abs/1709.09828",
+  "tags": []
+}
