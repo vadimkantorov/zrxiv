@@ -1,0 +1,12 @@
+{
+  "title": "The Description Length of Deep Learning Models",
+  "author": [
+    "Léonard Blier",
+    "Yann Ollivier"
+  ],
+  "abstract": "  Solomonoff's general theory of inference and the Minimum Description Length\nprinciple formalize Occam's razor, and hold that a good model of data is a\nmodel that is good at losslessly compressing the data, including the cost of\ndescribing the model itself. Deep neural networks might seem to go against this\nprinciple given the large number of parameters to be encoded.\n  We demonstrate experimentally the ability of deep neural networks to compress\nthe training data even when accounting for parameter encoding. The compression\nviewpoint originally motivated the use of variational methods in neural\nnetworks. Unexpectedly, we found that these variational methods provide\nsurprisingly poor compression bounds, despite being explicitly built to\nminimize such bounds. This might explain the relatively poor practical\nperformance of variational methods in deep learning. On the other hand, simple\nincremental encoding methods yield excellent compression values on deep\nnetworks, vindicating Solomonoff's approach.\n",
+  "id": "1802.07044",
+  "date": 1541590669,
+  "url": "https://arxiv.org/abs/1802.07044",
+  "tags": []
+}
