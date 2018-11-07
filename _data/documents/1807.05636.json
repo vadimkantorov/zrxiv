@@ -1,0 +1,13 @@
+{
+  "title": "Cross Pixel Optical Flow Similarity for Self-Supervised Learning",
+  "author": [
+    "Aravindh Mahendran",
+    "James Thewlis",
+    "Andrea Vedaldi"
+  ],
+  "abstract": "  We propose a novel method for learning convolutional neural image\nrepresentations without manual supervision. We use motion cues in the form of\noptical flow, to supervise representations of static images. The obvious\napproach of training a network to predict flow from a single image can be\nneedlessly difficult due to intrinsic ambiguities in this prediction task. We\ninstead propose a much simpler learning goal: embed pixels such that the\nsimilarity between their embeddings matches that between their optical flow\nvectors. At test time, the learned deep network can be used without access to\nvideo or flow information and transferred to tasks such as image\nclassification, detection, and segmentation. Our method, which significantly\nsimplifies previous attempts at using motion for self-supervision, achieves\nstate-of-the-art results in self-supervision using motion cues, competitive\nresults for self-supervision in general, and is overall state of the art in\nself-supervised pretraining for semantic image segmentation, as demonstrated on\nstandard benchmarks.\n",
+  "id": "1807.05636",
+  "date": 1541592384,
+  "url": "https://arxiv.org/abs/1807.05636",
+  "tags": []
+}
