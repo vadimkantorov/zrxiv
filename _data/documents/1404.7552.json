@@ -1,0 +1,13 @@
+{
+  "title": "The geometry of kernelized spectral clustering",
+  "author": [
+    "Geoffrey Schiebinger",
+    "Martin J. Wainwright",
+    "Bin Yu"
+  ],
+  "abstract": "  Clustering of data sets is a standard problem in many areas of science and\nengineering. The method of spectral clustering is based on embedding the data\nset using a kernel function, and using the top eigenvectors of the normalized\nLaplacian to recover the connected components. We study the performance of\nspectral clustering in recovering the latent labels of i.i.d. samples from a\nfinite mixture of nonparametric distributions. The difficulty of this label\nrecovery problem depends on the overlap between mixture components and how\neasily a mixture component is divided into two nonoverlapping components. When\nthe overlap is small compared to the indivisibility of the mixture components,\nthe principal eigenspace of the population-level normalized Laplacian operator\nis approximately spanned by the square-root kernelized component densities. In\nthe finite sample setting, and under the same assumption, embedded samples from\ndifferent components are approximately orthogonal with high probability when\nthe sample size is large. As a corollary we control the fraction of samples\nmislabeled by spectral clustering under finite mixtures with nonparametric\ncomponents.\n",
+  "id": "1404.7552",
+  "date": 1541591972,
+  "url": "https://arxiv.org/abs/1404.7552",
+  "tags": []
+}
