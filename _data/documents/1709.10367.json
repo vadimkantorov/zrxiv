@@ -1,0 +1,14 @@
+{
+  "title": "Structured Embedding Models for Grouped Data",
+  "author": [
+    "Maja Rudolph",
+    "Francisco Ruiz",
+    "Susan Athey",
+    "David Blei"
+  ],
+  "abstract": "  Word embeddings are a powerful approach for analyzing language, and\nexponential family embeddings (EFE) extend them to other types of data. Here we\ndevelop structured exponential family embeddings (S-EFE), a method for\ndiscovering embeddings that vary across related groups of data. We study how\nthe word usage of U.S. Congressional speeches varies across states and party\naffiliation, how words are used differently across sections of the ArXiv, and\nhow the co-purchase patterns of groceries can vary across seasons. Key to the\nsuccess of our method is that the groups share statistical information. We\ndevelop two sharing strategies: hierarchical modeling and amortization. We\ndemonstrate the benefits of this approach in empirical studies of speeches,\nabstracts, and shopping baskets. We show how S-EFE enables group-specific\ninterpretation of word usage, and outperforms EFE in predicting held-out data.\n",
+  "id": "1709.10367",
+  "date": 1541591467,
+  "url": "https://arxiv.org/abs/1709.10367",
+  "tags": []
+}
