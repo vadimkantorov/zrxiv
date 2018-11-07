@@ -1,0 +1,17 @@
+{
+  "title": "3D-Aware Scene Manipulation via Inverse Graphics",
+  "author": [
+    "Shunyu Yao",
+    "Tzu Ming Harry Hsu",
+    "Jun-Yan Zhu",
+    "Jiajun Wu",
+    "Antonio Torralba",
+    "William T. Freeman",
+    "Joshua B. Tenenbaum"
+  ],
+  "abstract": "  We aim to obtain an interpretable, expressive, and disentangled scene\nrepresentation that contains comprehensive structural and textural information\nfor each object. Previous scene representations learned by neural networks are\noften uninterpretable, limited to a single object, or lacking 3D knowledge. In\nthis work, we propose 3D scene de-rendering networks (3D-SDN) to address the\nabove issues by integrating disentangled representations for semantics,\ngeometry, and appearance into a deep generative model. Our scene encoder\nperforms inverse graphics, translating a scene into a structured object-wise\nrepresentation. Our decoder has two components: a differentiable shape renderer\nand a neural texture generator. The disentanglement of semantics, geometry, and\nappearance supports 3D-aware scene manipulation, e.g., rotating and moving\nobjects freely while keeping the consistent shape and texture, and changing the\nobject appearance without affecting its shape. Experiments demonstrate that our\nediting scheme based on 3D-SDN is superior to its 2D counterpart.\n",
+  "id": "1808.09351",
+  "date": 1541590660,
+  "url": "https://arxiv.org/abs/1808.09351",
+  "tags": []
+}
