@@ -1,0 +1,15 @@
+{
+  "title": "QUOTA: The Quantile Option Architecture for Reinforcement Learning",
+  "author": [
+    "Shangtong Zhang",
+    "Borislav Mavrin",
+    "Hengshuai Yao",
+    "Linglong Kong",
+    "Bo Liu"
+  ],
+  "abstract": "  In this paper, we propose the Quantile Option Architecture (QUOTA) for\nexploration based on recent advances in distributional reinforcement learning\n(RL). In QUOTA, decision making is based on quantiles of a value distribution,\nnot only the mean. QUOTA provides a new dimension for exploration via making\nuse of both optimism and pessimism of a value distribution. We demonstrate the\nperformance advantage of QUOTA in both challenging video games and physical\nrobot simulators.\n",
+  "id": "1811.02073",
+  "date": 1541589073,
+  "url": "https://arxiv.org/abs/1811.02073",
+  "tags": []
+}
