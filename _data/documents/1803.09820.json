@@ -1,0 +1,11 @@
+{
+  "title": "A disciplined approach to neural network hyper-parameters: Part 1 --\n  learning rate, batch size, momentum, and weight decay",
+  "author": [
+    "Leslie N. Smith"
+  ],
+  "abstract": "  Although deep learning has produced dazzling successes for applications of\nimage, speech, and video processing in the past few years, most trainings are\nwith suboptimal hyper-parameters, requiring unnecessarily long training times.\nSetting the hyper-parameters remains a black art that requires years of\nexperience to acquire. This report proposes several efficient ways to set the\nhyper-parameters that significantly reduce training time and improves\nperformance. Specifically, this report shows how to examine the training\nvalidation/test loss function for subtle clues of underfitting and overfitting\nand suggests guidelines for moving toward the optimal balance point. Then it\ndiscusses how to increase/decrease the learning rate/momentum to speed up\ntraining. Our experiments show that it is crucial to balance every manner of\nregularization for each dataset and architecture. Weight decay is used as a\nsample regularizer to show how its optimal value is tightly coupled with the\nlearning rates and momentums. Files to help replicate the results reported here\nare available.\n",
+  "id": "1803.09820",
+  "date": 1541592395,
+  "url": "https://arxiv.org/abs/1803.09820",
+  "tags": []
+}
