@@ -1,0 +1,12 @@
+{
+  "title": "Convergent and Anti-diffusive Properties of Mean-Shift Method",
+  "author": [
+    "Xiaogang Wang",
+    "Jianhong Wu"
+  ],
+  "abstract": "  An analytic framework based on partial differential equations is derived for\ncertain dynamic clustering methods.\n  The proposed mathematical framework is based on the application of the\nconservation law in physics to characterize successive transformations of the\nunderlying probability density function. It is then applied to analyze the\nconvergence and stability of mean shift type of dynamic clustering algorithms.\nTheoretical analysis shows that un-supervised mean-shift type of algorithm is\nintrinsically unstable. It is proved that the only possibility of a correct\nconvergence for unsupervised mean shift type of algorithm is to transform the\noriginal probability density into a multivariate normal distribution with no\ndependence struture. Our analytical results suggest that a more stable and\nconvergent mean shift algorithm might be achieved by adopting a judiciously\nchosen supervision mechanism.\n",
+  "id": "1204.3235",
+  "date": 1541591754,
+  "url": "https://arxiv.org/abs/1204.3235",
+  "tags": []
+}
