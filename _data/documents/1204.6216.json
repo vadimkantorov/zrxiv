@@ -1,0 +1,13 @@
+{
+  "title": "Geodesics in Heat",
+  "author": [
+    "Keenan Crane",
+    "Clarisse Weischedel",
+    "Max Wardetzky"
+  ],
+  "abstract": "  We introduce the heat method for computing the shortest geodesic distance to\na specified subset (e.g., point or curve) of a given domain. The heat method is\nrobust, efficient, and simple to implement since it is based on solving a pair\nof standard linear elliptic problems. The method represents a significant\nbreakthrough in the practical computation of distance on a wide variety of\ngeometric domains, since the resulting linear systems can be prefactored once\nand subsequently solved in near-linear time. In practice, distance can be\nupdated via the heat method an order of magnitude faster than with\nstate-of-the-art methods while maintaining a comparable level of accuracy. We\nprovide numerical evidence that the method converges to the exact geodesic\ndistance in the limit of refinement; we also explore smoothed approximations of\ndistance suitable for applications where more regularity is required.\n",
+  "id": "1204.6216",
+  "date": 1541592087,
+  "url": "https://arxiv.org/abs/1204.6216",
+  "tags": []
+}
