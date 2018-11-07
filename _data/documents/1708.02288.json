@@ -1,0 +1,12 @@
+{
+  "title": "Beyond Low-Rank Representations: Orthogonal Clustering Basis\n  Reconstruction with Optimized Graph Structure for Multi-view Spectral\n  Clustering",
+  "author": [
+    "Yang Wang",
+    "Lin Wu"
+  ],
+  "abstract": "  Low-Rank Representation (LRR) is arguably one of the most powerful paradigms\nfor Multi-view spectral clustering, which elegantly encodes the multi-view\nlocal graph/manifold structures into an intrinsic low-rank self-expressive data\nsimilarity embedded in high-dimensional space, to yield a better graph\npartition than their single-view counterparts. In this paper we revisit it with\na fundamentally different perspective by discovering LRR as essentially a\nlatent clustered orthogonal projection based representation winged with an\noptimized local graph structure for spectral clustering; each column of the\nrepresentation is fundamentally a cluster basis orthogonal to others to\nindicate its members, which intuitively projects the view-specific feature\nrepresentation to be the one spanned by all orthogonal basis to characterize\nthe cluster structures. Upon this finding, we propose our technique with the\nfollowings: (1) We decompose LRR into latent clustered orthogonal\nrepresentation via low-rank matrix factorization, to encode the more flexible\ncluster structures than LRR over primal data objects; (2) We convert the\nproblem of LRR into that of simultaneously learning orthogonal clustered\nrepresentation and optimized local graph structure for each view; (3) The\nlearned orthogonal clustered representations and local graph structures enjoy\nthe same magnitude for multi-view, so that the ideal multi-view consensus can\nbe readily achieved. The experiments over multi-view datasets validate its\nsuperiority.\n",
+  "id": "1708.02288",
+  "date": 1541592075,
+  "url": "https://arxiv.org/abs/1708.02288",
+  "tags": []
+}
