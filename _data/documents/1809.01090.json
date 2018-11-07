@@ -1,0 +1,18 @@
+{
+  "title": "A Quantum Spatial Graph Convolutional Neural Network using Quantum\n  Passing Information",
+  "author": [
+    "Lu Bai",
+    "Yuhang Jiao",
+    "Luca Rossi",
+    "Lixin Cui",
+    "Jian Cheng",
+    "Edwin R. Hancock"
+  ],
+  "abstract": "  In this paper, we develop a new Quantum Spatial Graph Convolutional Neural\nNetwork (QSGCNN) model that can directly learn a classification function for\ngraphs of arbitrary sizes. Unlike state-of-the-art Graph Convolutional Neural\nNetwork (GCN) models, the proposed QSGCNN model incorporates the process of\nidentifying transitive aligned vertices between graphs, and transforms\narbitrary sized graphs into fixed-sized aligned vertex grid structures. To\nfurther learn representative graph characteristics, a new quantum spatial graph\nconvolution is proposed and employed to extract multi-scale vertex features, in\nterms of quantum passing information between grid vertices of each graph. Since\nthe quantum spatial convolution preserves the property of the input grid\nstructures, the proposed QSGCNN model allows to directly employ the traditional\nconvolutional neural network to further learn from the global graph topology,\nproviding an end-to-end deep learning architecture that integrates the graph\nrepresentation and learning in the quantum spatial graph convolution layer and\nthe traditional convolutional layer for graph classifications. We demonstrate\nthe effectiveness of the proposed QSGCNN model in terms of the theoretical\nconnections to state-of-the-art methods. The proposed QSGCNN model addresses\nthe shortcomings of information loss and imprecise information representation\narising in existing GCN models associated with SortPooling or SumPooling\nlayers. Experimental results on benchmark graph classification datasets\ndemonstrate the effectiveness of the proposed QSGCNN model.\n",
+  "id": "1809.01090",
+  "date": 1541590579,
+  "url": "https://arxiv.org/abs/1809.01090",
+  "tags": [
+    "giant"
+  ]
+}
