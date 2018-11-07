@@ -1,0 +1,16 @@
+{
+  "title": "Linear tSNE optimization for the Web",
+  "author": [
+    "Nicola Pezzotti",
+    "Alexander Mordvintsev",
+    "Thomas Hollt",
+    "Boudewijn P. F. Lelieveldt",
+    "Elmar Eisemann",
+    "Anna Vilanova"
+  ],
+  "abstract": "  The t-distributed Stochastic Neighbor Embedding (tSNE) algorithm has become\nin recent years one of the most used and insightful techniques for the\nexploratory data analysis of high-dimensional data. tSNE reveals clusters of\nhigh-dimensional data points at different scales while it requires only minimal\ntuning of its parameters. Despite these advantages, the computational\ncomplexity of the algorithm limits its application to relatively small\ndatasets. To address this problem, several evolutions of tSNE have been\ndeveloped in recent years, mainly focusing on the scalability of the similarity\ncomputations between data points. However, these contributions are insufficient\nto achieve interactive rates when visualizing the evolution of the tSNE\nembedding for large datasets. In this work, we present a novel approach to the\nminimization of the tSNE objective function that heavily relies on modern\ngraphics hardware and has linear computational complexity. Our technique does\nnot only beat the state of the art, but can even be executed on the client side\nin a browser. We propose to approximate the repulsion forces between data\npoints using adaptive-resolution textures that are drawn at every iteration\nwith WebGL. This approximation allows us to reformulate the tSNE minimization\nproblem as a series of tensor operation that are computed with TensorFlow.js, a\nJavaScript library for scalable tensor computations.\n",
+  "id": "1805.10817",
+  "date": 1541590700,
+  "url": "https://arxiv.org/abs/1805.10817",
+  "tags": []
+}
