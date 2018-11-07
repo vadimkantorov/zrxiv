@@ -1,0 +1,13 @@
+{
+  "title": "Typology of phase transitions in Bayesian inference problems",
+  "author": [
+    "Federico Ricci-Tersenghi",
+    "Guilhem Semerjian",
+    "Lenka Zdeborova"
+  ],
+  "abstract": "  Many inference problems, notably the stochastic block model (SBM) that\ngenerates a random graph with a hidden community structure, undergo phase\ntransitions as a function of the signal-to-noise ratio, and can exhibit hard\nphases in which optimal inference is information-theoretically possible but\ncomputationally challenging. In this paper we refine this description in two\nways. In a qualitative perspective we emphasize the existence of more generic\nphase diagrams with a hybrid-hard phase in which it is computationally easy to\nreach a non-trivial inference accuracy, but computationally hard to match the\ninformation theoretically optimal one. We support this discussion by\nquantitative expansions of the functional cavity equations that describe\ninference problems on sparse graphs. These expansions shed light on the\nexistence of hybrid-hard phases, for a large class of planted constraint\nsatisfaction problems, and on the question of the tightness of the\nKesten-Stigum (KS) bound for the associated tree reconstruction problem. Our\nresults show that the instability of the trivial fixed point is not a generic\nevidence for the Bayes-optimality of the message passing algorithms. We clarify\nin particular the status of the symmetric SBM with 4 communities and of the\ntree reconstruction of the associated Potts model: in the assortative\n(ferromagnetic) case the KS bound is always tight, whereas in the\ndisassortative (antiferromagnetic) case we exhibit an explicit criterion\ninvolving the degree distribution that separates a large degree regime where\nthe KS bound is tight and a low degree regime where it is not. We also\ninvestigate the SBM with 2 communities of different sizes, a.k.a. the\nasymmetric Ising model, and describe quantitatively its computational gap as a\nfunction of its asymmetry. We complement this study with numerical simulations\nof the Belief Propagation iterative algorithm.\n",
+  "id": "1806.11013",
+  "date": 1541591755,
+  "url": "https://arxiv.org/abs/1806.11013",
+  "tags": []
+}
