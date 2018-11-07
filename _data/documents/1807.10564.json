@@ -1,0 +1,12 @@
+{
+  "title": "Auto-Encoding Variational Neural Machine Translation",
+  "author": [
+    "Bryan Eikema",
+    "Wilker Aziz"
+  ],
+  "abstract": "  We present a deep generative model of bilingual sentence pairs. The model\ngenerates source and target sentences jointly from a shared latent\nrepresentation and is parameterised by neural networks. Efficient training is\ndone by amortised variational inference and reparameterised gradients.\nAdditionally, we discuss the statistical implications of joint modelling and\npropose an efficient approximation to maximum a posteriori decoding for fast\ntest-time predictions. We demonstrate the effectiveness of our model in three\nmachine translation scenarios: in-domain training, mixed-domain training, and\nlearning from a mix of gold-standard and synthetic data. Our experiments show\nconsistently that our joint formulation outperforms conditional modelling in\nall such scenarios.\n",
+  "id": "1807.10564",
+  "date": 1541592373,
+  "url": "https://arxiv.org/abs/1807.10564",
+  "tags": []
+}
