@@ -1,0 +1,15 @@
+{
+  "title": "RAND-WALK: A Latent Variable Model Approach to Word Embeddings",
+  "author": [
+    "Sanjeev Arora",
+    "Yuanzhi Li",
+    "Yingyu Liang",
+    "Tengyu Ma",
+    "Andrej Risteski"
+  ],
+  "abstract": "  Semantic word embeddings represent the meaning of a word via a vector, and\nare created by diverse methods. Many use nonlinear operations on co-occurrence\nstatistics, and have hand-tuned hyperparameters and reweighting methods.\n  This paper proposes a new generative model, a dynamic version of the\nlog-linear topic model of~\\citet{mnih2007three}. The methodological novelty is\nto use the prior to compute closed form expressions for word statistics. This\nprovides a theoretical justification for nonlinear models like PMI, word2vec,\nand GloVe, as well as some hyperparameter choices. It also helps explain why\nlow-dimensional semantic embeddings contain linear algebraic structure that\nallows solution of word analogies, as shown by~\\citet{mikolov2013efficient} and\nmany subsequent papers.\n  Experimental support is provided for the generative model assumptions, the\nmost important of which is that latent word vectors are fairly uniformly\ndispersed in space.\n",
+  "id": "1502.03520",
+  "date": 1541592336,
+  "url": "https://arxiv.org/abs/1502.03520",
+  "tags": []
+}
