@@ -1,0 +1,15 @@
+{
+  "title": "Bayesian Semantic Instance Segmentation in Open Set World",
+  "author": [
+    "Trung Pham",
+    "Vijay Kumar B G",
+    "Thanh-Toan Do",
+    "Gustavo Carneiro",
+    "Ian Reid"
+  ],
+  "abstract": "  This paper addresses the semantic instance segmentation task in the open-set\nconditions, where input images can contain known and unknown object classes.\nThe training process of existing semantic instance segmentation methods\nrequires annotation masks for all object instances, which is expensive to\nacquire or even infeasible in some realistic scenarios, where the number of\ncategories may increase boundlessly. In this paper, we present a novel open-set\nsemantic instance segmentation approach capable of segmenting all known and\nunknown object classes in images, based on the output of an object detector\ntrained on known object classes. We formulate the problem using a Bayesian\nframework, where the posterior distribution is approximated with a simulated\nannealing optimization equipped with an efficient image partition sampler. We\nshow empirically that our method is competitive with state-of-the-art\nsupervised methods on known classes, but also performs well on unknown classes\nwhen compared with unsupervised methods.\n",
+  "id": "1806.00911",
+  "date": 1541590628,
+  "url": "https://arxiv.org/abs/1806.00911",
+  "tags": []
+}
