@@ -1,0 +1,13 @@
+{
+  "title": "Designing Effective Inter-Pixel Information Flow for Natural Image\n  Matting",
+  "author": [
+    "Yağız Aksoy",
+    "Tunç Ozan Aydın",
+    "Marc Pollefeys"
+  ],
+  "abstract": "  We present a novel, purely affinity-based natural image matting algorithm.\nOur method relies on carefully defined pixel-to-pixel connections that enable\neffective use of information available in the image. We control the information\nflow from the known-opacity regions into the unknown region, as well as within\nthe unknown region itself, by utilizing multiple definitions of pixel\naffinities. Among other forms of information flow, we introduce color-mixture\nflow, which builds upon local linear embedding and effectively encapsulates the\nrelation between different pixel opacities. Our resulting novel linear system\nformulation can be solved in closed-form and is robust against several\nfundamental challenges of natural matting such as holes and remote intricate\nstructures. Our evaluation using the alpha matting benchmark suggests a\nsignificant performance improvement over the current methods. While our method\nis primarily designed as a standalone matting tool, we show that it can also be\nused for regularizing mattes obtained by sampling-based methods. We extend our\nformulation to layer color estimation and show that the use of multiple\nchannels of flow increases the layer color quality. We also demonstrate our\nperformance in green-screen keying and further analyze the characteristics of\nthe affinities used in our method.\n",
+  "id": "1707.05055",
+  "date": 1541592408,
+  "url": "https://arxiv.org/abs/1707.05055",
+  "tags": []
+}
