@@ -1,0 +1,14 @@
+{
+  "title": "A neural network catalyzer for multi-dimensional similarity search",
+  "author": [
+    "Alexandre Sablayrolles",
+    "Matthijs Douze",
+    "Cordelia Schmid",
+    "Hervé Jégou"
+  ],
+  "abstract": "  This paper aims at learning a function mapping input vectors to an output\nspace in a way that improves high-dimensional similarity search. As a proxy\nobjective, we design and train a neural network that favors uniformity in the\nspherical output space, while preserving the neighborhood structure after the\nmapping. For this purpose, we propose a new regularizer derived from the\nKozachenko-Leonenko differential entropy estimator and combine it with a\nlocality-aware triplet loss. Our method operates as a catalyzer for traditional\nindexing methods such as locality sensitive hashing or iterative quantization,\nboosting the overall recall. Additionally, the network output distribution\nmakes it possible to leverage structured quantizers with efficient algebraic\nencoding, in particular spherical lattice quantizers such as the Gosset lattice\nE8. Our experiments show that this approach is competitive with\nstate-of-the-art methods such as optimized product quantization.\n",
+  "id": "1806.03198",
+  "date": 1541591690,
+  "url": "https://arxiv.org/abs/1806.03198",
+  "tags": []
+}
