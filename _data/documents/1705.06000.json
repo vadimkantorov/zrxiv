@@ -1,0 +1,11 @@
+{
+  "title": "One Shot Joint Colocalization and Cosegmentation",
+  "author": [
+    "Abhishek Sharma"
+  ],
+  "abstract": "  This paper presents a novel framework in which image cosegmentation and\ncolocalization are cast into a single optimization problem that integrates\ninformation from low level appearance cues with that of high level localization\ncues in a very weakly supervised manner. In contrast to multi-task learning\nparadigm that learns similar tasks using a shared representation, the proposed\nframework leverages two representations at different levels and simultaneously\ndiscriminates between foreground and background at the bounding box and\nsuperpixel level using discriminative clustering. We show empirically that\nconstraining the two problems at different scales enables the transfer of\nsemantic localization cues to improve cosegmentation output whereas local\nappearance based segmentation cues help colocalization. The unified framework\noutperforms strong baseline approaches, of learning the two problems\nseparately, by a large margin on four benchmark datasets. Furthermore, it\nobtains competitive results compared to the state of the art for cosegmentation\non two benchmark datasets and second best result for colocalization on Pascal\nVOC 2007.\n",
+  "id": "1705.06000",
+  "date": 1541590517,
+  "url": "https://arxiv.org/abs/1705.06000",
+  "tags": []
+}
