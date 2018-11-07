@@ -1,0 +1,14 @@
+{
+  "title": "Global Optimization with Orthogonality Constraints via Stochastic\n  Diffusion on Manifold",
+  "author": [
+    "Honglin Yuan",
+    "Xiaoyi Gu",
+    "Rongjie Lai",
+    "Zaiwen Wen"
+  ],
+  "abstract": "  Orthogonality constrained optimization is widely used in applications from\nscience and engineering. Due to the nonconvex orthogonality constraints, many\nnumerical algorithms often can hardly achieve the global optimality. We aim at\nestablishing an efficient scheme for finding global minimizers under one or\nmore orthogonality constraints. The main concept is based on noisy gradient\nflow constructed from stochastic differential equations (SDE) on the Stiefel\nmanifold, the differential geometric characterization of orthogonality\nconstraints. We derive an explicit representation of SDE on the Stiefel\nmanifold endowed with a canonical metric and propose a numerically efficient\nscheme to simulate this SDE based on Cayley transformation with theoretical\nconvergence guarantee. The convergence to global optimizers is proved under\nsecond-order continuity. The effectiveness and efficiency of the proposed\nalgorithms are demonstrated on a variety of problems including homogeneous\npolynomial optimization, computation of stability number, and 3D structure\ndetermination from Common Lines in Cryo-EM.\n",
+  "id": "1707.02126",
+  "date": 1541592151,
+  "url": "https://arxiv.org/abs/1707.02126",
+  "tags": []
+}
