@@ -1,0 +1,13 @@
+{
+  "title": "Eigenvectors of Orthogonally Decomposable Functions",
+  "author": [
+    "Mikhail Belkin",
+    "Luis Rademacher",
+    "James Voss"
+  ],
+  "abstract": "  The Eigendecomposition of quadratic forms (symmetric matrices) guaranteed by\nthe spectral theorem is a foundational result in applied mathematics. Motivated\nby a shared structure found in inferential problems of recent interest---namely\northogonal tensor decompositions, Independent Component Analysis (ICA), topic\nmodels, spectral clustering, and Gaussian mixture learning---we generalize the\neigendecomposition from quadratic forms to a broad class of \"orthogonally\ndecomposable\" functions. We identify a key role of convexity in our extension,\nand we generalize two traditional characterizations of eigenvectors: First, the\neigenvectors of a quadratic form arise from the optima structure of the\nquadratic form on the sphere. Second, the eigenvectors are the fixed points of\nthe power iteration.\n  In our setting, we consider a simple first order generalization of the power\nmethod which we call gradient iteration. It leads to efficient and easily\nimplementable methods for basis recovery. It includes influential Machine\nLearning methods such as cumulant-based FastICA and the tensor power iteration\nfor orthogonally decomposable tensors as special cases.\n  We provide a complete theoretical analysis of gradient iteration using the\nstructure theory of discrete dynamical systems to show almost sure convergence\nand fast (super-linear) convergence rates. The analysis also extends to the\ncase when the observed function is only approximately orthogonally\ndecomposable, with bounds that are polynomial in dimension and other relevant\nparameters, such as perturbation size. Our perturbation results can be\nconsidered as a non-linear version of the classical Davis-Kahan theorem for\nperturbations of eigenvectors of symmetric matrices.\n",
+  "id": "1411.1420",
+  "date": 1541592156,
+  "url": "https://arxiv.org/abs/1411.1420",
+  "tags": []
+}
