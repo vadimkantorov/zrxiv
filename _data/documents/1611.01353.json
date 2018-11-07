@@ -1,0 +1,12 @@
+{
+  "title": "Information Dropout: Learning Optimal Representations Through Noisy\n  Computation",
+  "author": [
+    "Alessandro Achille",
+    "Stefano Soatto"
+  ],
+  "abstract": "  The cross-entropy loss commonly used in deep learning is closely related to\nthe defining properties of optimal representations, but does not enforce some\nof the key properties. We show that this can be solved by adding a\nregularization term, which is in turn related to injecting multiplicative noise\nin the activations of a Deep Neural Network, a special case of which is the\ncommon practice of dropout. We show that our regularized loss function can be\nefficiently minimized using Information Dropout, a generalization of dropout\nrooted in information theoretic principles that automatically adapts to the\ndata and can better exploit architectures of limited capacity. When the task is\nthe reconstruction of the input, we show that our loss function yields a\nVariational Autoencoder as a special case, thus providing a link between\nrepresentation learning, information theory and variational inference. Finally,\nwe prove that we can promote the creation of disentangled representations\nsimply by enforcing a factorized prior, a fact that has been observed\nempirically in recent work. Our experiments validate the theoretical intuitions\nbehind our method, and we find that information dropout achieves a comparable\nor better generalization performance than binary dropout, especially on smaller\nmodels, since it can automatically adapt the noise to the structure of the\nnetwork, as well as to the test sample.\n",
+  "id": "1611.01353",
+  "date": 1541592376,
+  "url": "https://arxiv.org/abs/1611.01353",
+  "tags": []
+}
