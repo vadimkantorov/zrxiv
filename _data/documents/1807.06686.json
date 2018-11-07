@@ -1,0 +1,12 @@
+{
+  "title": "Supermodular Locality Sensitive Hashes",
+  "author": [
+    "Maxim Berman",
+    "Matthew B. Blaschko"
+  ],
+  "abstract": "  In this work, we show deep connections between Locality Sensitive Hashability\nand submodular analysis. We show that the LSHablility of the most commonly\nanalyzed set similarities is in one-to-one correspondance with the\nsupermodularity of these similarities when taken with respect to the symmetric\ndifference of their arguments. We find that the supermodularity of equivalent\nLSHable similarities can be dependent on the set encoding. While monotonicity\nand supermodularity does not imply the metric condition necessary for\nsupermodularity, this condition is guaranteed for the more restricted class of\nsupermodular Hamming similarities that we introduce. We show moreover that LSH\npreserving transformations are also supermodular-preserving, yielding a way to\ngenerate families of similarities both LSHable and supermodular. Finally, we\nshow that even the more restricted family of cardinality-based supermodular\nHamming similarities presents promising aspects for the study of the link\nbetween LSHability and supermodularity. We hope that the several bridges that\nwe introduce between LSHability and supermodularity paves the way to a better\nunderstanding both of supermodular analysis and LSHability, notably in the\ncontext of large-scale supermodular optimization.\n",
+  "id": "1807.06686",
+  "date": 1541592421,
+  "url": "https://arxiv.org/abs/1807.06686",
+  "tags": []
+}
