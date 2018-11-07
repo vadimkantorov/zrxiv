@@ -1,0 +1,11 @@
+{
+  "title": "A Brief Introduction to Machine Learning for Engineers",
+  "author": [
+    "Osvaldo Simeone"
+  ],
+  "abstract": "  This monograph aims at providing an introduction to key concepts, algorithms,\nand theoretical results in machine learning. The treatment concentrates on\nprobabilistic models for supervised and unsupervised learning problems. It\nintroduces fundamental concepts and algorithms by building on first principles,\nwhile also exposing the reader to more advanced topics with extensive pointers\nto the literature, within a unified notation and mathematical framework. The\nmaterial is organized according to clearly defined categories, such as\ndiscriminative and generative models, frequentist and Bayesian approaches,\nexact and approximate inference, as well as directed and undirected models.\nThis monograph is meant as an entry point for researchers with a background in\nprobability and linear algebra.\n",
+  "id": "1709.02840",
+  "date": 1541590663,
+  "url": "https://arxiv.org/abs/1709.02840",
+  "tags": []
+}
