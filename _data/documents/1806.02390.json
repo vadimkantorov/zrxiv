@@ -1,0 +1,13 @@
+{
+  "title": "Variational Implicit Processes",
+  "author": [
+    "Chao Ma",
+    "Yingzhen Li",
+    "José Miguel Hernández-Lobato"
+  ],
+  "abstract": "  This paper introduces the variational implicit processes (VIPs), a Bayesian\nnonparametric method based on a class of highly flexible priors over functions.\nSimilar to Gaussian processes (GPs), in implicit processes (IPs), an implicit\nmultivariate prior (data simulators, Bayesian neural networks, etc.) is placed\nover any finite collections of random variables. A novel and efficient\nvariational inference algorithm for IPs is derived using wake-sleep updates,\nwhich gives analytic solutions and allows scalable hyper-parameter learning\nwith stochastic optimization. Experiments on real-world regression datasets\ndemonstrate that VIPs return better uncertainty estimates and superior\nperformance over existing inference methods for GPs and Bayesian neural\nnetworks. With a Bayesian LSTM as the implicit prior, the proposed approach\nachieves state-of-the-art results on predicting power conversion efficiency of\nmolecules based on raw chemical formulas.\n",
+  "id": "1806.02390",
+  "date": 1541591675,
+  "url": "https://arxiv.org/abs/1806.02390",
+  "tags": []
+}
