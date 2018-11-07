@@ -1,0 +1,13 @@
+{
+  "title": "Prior Convictions: Black-Box Adversarial Attacks with Bandits and Priors",
+  "author": [
+    "Andrew Ilyas",
+    "Logan Engstrom",
+    "Aleksander Madry"
+  ],
+  "abstract": "  We introduce a framework that unifies the existing work on black-box\nadversarial example generation. We demonstrate that the current state of the\nart in the field is optimal in a certain natural sense. Despite this\noptimality, we show how to improve black-box attacks by bringing a new element\ninto the problem: ambient priors for the gradient. We identify two such priors,\nand give an algorithm based on bandit optimization that allows for seamless\nintegration of these and other priors. Our framework leads to methods that are\ntwo to three times more query-efficient and two to three times smaller failure\nrate than the state-of-the-art approaches.\n",
+  "id": "1807.07978",
+  "date": 1541592381,
+  "url": "https://arxiv.org/abs/1807.07978",
+  "tags": []
+}
