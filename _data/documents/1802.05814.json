@@ -1,0 +1,16 @@
+{
+  "title": "Variational Autoencoders for Collaborative Filtering",
+  "author": [
+    "Dawen Liang",
+    "Rahul G. Krishnan",
+    "Matthew D. Hoffman",
+    "Tony Jebara"
+  ],
+  "abstract": "  We extend variational autoencoders (VAEs) to collaborative filtering for\nimplicit feedback. This non-linear probabilistic model enables us to go beyond\nthe limited modeling capacity of linear factor models which still largely\ndominate collaborative filtering research.We introduce a generative model with\nmultinomial likelihood and use Bayesian inference for parameter estimation.\nDespite widespread use in language modeling and economics, the multinomial\nlikelihood receives less attention in the recommender systems literature. We\nintroduce a different regularization parameter for the learning objective,\nwhich proves to be crucial for achieving competitive performance. Remarkably,\nthere is an efficient way to tune the parameter using annealing. The resulting\nmodel and learning algorithm has information-theoretic connections to maximum\nentropy discrimination and the information bottleneck principle. Empirically,\nwe show that the proposed approach significantly outperforms several\nstate-of-the-art baselines, including two recently-proposed neural network\napproaches, on several real-world datasets. We also provide extended\nexperiments comparing the multinomial likelihood with other commonly used\nlikelihood functions in the latent factor collaborative filtering literature\nand show favorable results. Finally, we identify the pros and cons of employing\na principled Bayesian inference approach and characterize settings where it\nprovides the most significant improvements.\n",
+  "id": "1802.05814",
+  "date": 1541591777,
+  "url": "https://arxiv.org/abs/1802.05814",
+  "tags": [
+    "giant"
+  ]
+}
