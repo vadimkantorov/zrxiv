@@ -1,0 +1,20 @@
+{
+  "title": "Relational recurrent neural networks",
+  "author": [
+    "Adam Santoro",
+    "Ryan Faulkner",
+    "David Raposo",
+    "Jack Rae",
+    "Mike Chrzanowski",
+    "Theophane Weber",
+    "Daan Wierstra",
+    "Oriol Vinyals",
+    "Razvan Pascanu",
+    "Timothy Lillicrap"
+  ],
+  "abstract": "  Memory-based neural networks model temporal data by leveraging an ability to\nremember information for long periods. It is unclear, however, whether they\nalso have an ability to perform complex relational reasoning with the\ninformation they remember. Here, we first confirm our intuitions that standard\nmemory architectures may struggle at tasks that heavily involve an\nunderstanding of the ways in which entities are connected -- i.e., tasks\ninvolving relational reasoning. We then improve upon these deficits by using a\nnew memory module -- a \\textit{Relational Memory Core} (RMC) -- which employs\nmulti-head dot product attention to allow memories to interact. Finally, we\ntest the RMC on a suite of tasks that may profit from more capable relational\nreasoning across sequential information, and show large gains in RL domains\n(e.g. Mini PacMan), program evaluation, and language modeling, achieving\nstate-of-the-art results on the WikiText-103, Project Gutenberg, and GigaWord\ndatasets.\n",
+  "id": "1806.01822",
+  "date": 1541590488,
+  "url": "https://arxiv.org/abs/1806.01822",
+  "tags": []
+}
