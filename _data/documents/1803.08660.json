@@ -1,0 +1,14 @@
+{
+  "title": "Lifting Layers: Analysis and Applications",
+  "author": [
+    "Peter Ochs",
+    "Tim Meinhardt",
+    "Laura Leal-Taixe",
+    "Michael Moeller"
+  ],
+  "abstract": "  The great advances of learning-based approaches in image processing and\ncomputer vision are largely based on deeply nested networks that compose linear\ntransfer functions with suitable non-linearities. Interestingly, the most\nfrequently used non-linearities in imaging applications (variants of the\nrectified linear unit) are uncommon in low dimensional approximation problems.\nIn this paper we propose a novel non-linear transfer function, called lifting,\nwhich is motivated from a related technique in convex optimization. A lifting\nlayer increases the dimensionality of the input, naturally yields a linear\nspline when combined with a fully connected layer, and therefore closes the gap\nbetween low and high dimensional approximation problems. Moreover, applying the\nlifting operation to the loss layer of the network allows us to handle\nnon-convex and flat (zero-gradient) cost functions. We analyze the proposed\nlifting theoretically, exemplify interesting properties in synthetic\nexperiments and demonstrate its effectiveness in deep learning approaches to\nimage classification and denoising.\n",
+  "id": "1803.08660",
+  "date": 1541590555,
+  "url": "https://arxiv.org/abs/1803.08660",
+  "tags": []
+}
