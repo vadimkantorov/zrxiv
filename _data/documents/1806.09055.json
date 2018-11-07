@@ -1,0 +1,13 @@
+{
+  "title": "DARTS: Differentiable Architecture Search",
+  "author": [
+    "Hanxiao Liu",
+    "Karen Simonyan",
+    "Yiming Yang"
+  ],
+  "abstract": "  This paper addresses the scalability challenge of architecture search by\nformulating the task in a differentiable manner. Unlike conventional approaches\nof applying evolution or reinforcement learning over a discrete and\nnon-differentiable search space, our method is based on the continuous\nrelaxation of the architecture representation, allowing efficient search of the\narchitecture using gradient descent. Extensive experiments on CIFAR-10,\nImageNet, Penn Treebank and WikiText-2 show that our algorithm excels in\ndiscovering high-performance convolutional architectures for image\nclassification and recurrent architectures for language modeling, while being\norders of magnitude faster than state-of-the-art non-differentiable techniques.\n",
+  "id": "1806.09055",
+  "date": 1541592233,
+  "url": "https://arxiv.org/abs/1806.09055",
+  "tags": []
+}
