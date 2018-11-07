@@ -1,0 +1,11 @@
+{
+  "title": "An Evolutionary Theory for the Variability Hypothesis",
+  "author": [
+    "Theodore P. Hill"
+  ],
+  "abstract": "  An elementary biostatistical theory based on \"selectivity\" is proposed to\naddress a question raised by Charles Darwin, namely, how one gender of a\nsexually dimorphic species might tend to evolve with greater variability than\nthe other gender. Briefly, the theory says that if one sex is relatively\nselective then from one generation to the next, more variable subpopulations of\nthe opposite sex will generally tend to prevail over those with lesser\nvariability. Moreover, the perhaps less intuitive converse also holds - if a\nsex is relatively non-selective, then less variable subpopulations of the\nopposite sex will tend to prevail over those with greater variability. This\ntheory requires certain regularity conditions on the distributions, but makes\nno assumptions about differences in means between the sexes, nor does it\npresume that one sex is selective and the other non-selective. Two mathematical\nmodels are presented: a discrete-time one-step probabilistic model using\nnormally distributed perceived fitness values; and a continuous-time\ndeterministic model using exponentially distributed fitness levels.\n",
+  "id": "1703.04184",
+  "date": 1541590507,
+  "url": "https://arxiv.org/abs/1703.04184",
+  "tags": []
+}
