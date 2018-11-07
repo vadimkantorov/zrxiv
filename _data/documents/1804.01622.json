@@ -1,0 +1,13 @@
+{
+  "title": "Image Generation from Scene Graphs",
+  "author": [
+    "Justin Johnson",
+    "Agrim Gupta",
+    "Li Fei-Fei"
+  ],
+  "abstract": "  To truly understand the visual world our models should be able not only to\nrecognize images but also generate them. To this end, there has been exciting\nrecent progress on generating images from natural language descriptions. These\nmethods give stunning results on limited domains such as descriptions of birds\nor flowers, but struggle to faithfully reproduce complex sentences with many\nobjects and relationships. To overcome this limitation we propose a method for\ngenerating images from scene graphs, enabling explicitly reasoning about\nobjects and their relationships. Our model uses graph convolution to process\ninput graphs, computes a scene layout by predicting bounding boxes and\nsegmentation masks for objects, and converts the layout to an image with a\ncascaded refinement network. The network is trained adversarially against a\npair of discriminators to ensure realistic outputs. We validate our approach on\nVisual Genome and COCO-Stuff, where qualitative results, ablations, and user\nstudies demonstrate our method's ability to generate complex images with\nmultiple objects.\n",
+  "id": "1804.01622",
+  "date": 1541592359,
+  "url": "https://arxiv.org/abs/1804.01622",
+  "tags": []
+}
