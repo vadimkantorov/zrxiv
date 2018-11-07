@@ -1,0 +1,13 @@
+{
+  "title": "Pervasive Attention: 2D Convolutional Neural Networks for\n  Sequence-to-Sequence Prediction",
+  "author": [
+    "Maha Elbayad",
+    "Laurent Besacier",
+    "Jakob Verbeek"
+  ],
+  "abstract": "  Current state-of-the-art machine translation systems are based on\nencoder-decoder architectures, that first encode the input sequence, and then\ngenerate an output sequence based on the input encoding. Both are interfaced\nwith an attention mechanism that recombines a fixed encoding of the source\ntokens based on the decoder state. We propose an alternative approach which\ninstead relies on a single 2D convolutional neural network across both\nsequences. Each layer of our network re-codes source tokens on the basis of the\noutput sequence produced so far. Attention-like properties are therefore\npervasive throughout the network. Our model yields excellent results,\noutperforming state-of-the-art encoder-decoder systems, while being\nconceptually simpler and having fewer parameters.\n",
+  "id": "1808.03867",
+  "date": 1541590633,
+  "url": "https://arxiv.org/abs/1808.03867",
+  "tags": []
+}
