@@ -1,0 +1,15 @@
+{
+  "title": "Deep Variational Reinforcement Learning for POMDPs",
+  "author": [
+    "Maximilian Igl",
+    "Luisa Zintgraf",
+    "Tuan Anh Le",
+    "Frank Wood",
+    "Shimon Whiteson"
+  ],
+  "abstract": "  Many real-world sequential decision making problems are partially observable\nby nature, and the environment model is typically unknown. Consequently, there\nis great need for reinforcement learning methods that can tackle such problems\ngiven only a stream of incomplete and noisy observations. In this paper, we\npropose deep variational reinforcement learning (DVRL), which introduces an\ninductive bias that allows an agent to learn a generative model of the\nenvironment and perform inference in that model to effectively aggregate the\navailable information. We develop an n-step approximation to the evidence lower\nbound (ELBO), allowing the model to be trained jointly with the policy. This\nensures that the latent state representation is suitable for the control task.\nIn experiments on Mountain Hike and flickering Atari we show that our method\noutperforms previous approaches relying on recurrent neural networks to encode\nthe past.\n",
+  "id": "1806.02426",
+  "date": 1541591777,
+  "url": "https://arxiv.org/abs/1806.02426",
+  "tags": []
+}
