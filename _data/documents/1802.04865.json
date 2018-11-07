@@ -1,0 +1,12 @@
+{
+  "title": "Learning Confidence for Out-of-Distribution Detection in Neural Networks",
+  "author": [
+    "Terrance DeVries",
+    "Graham W. Taylor"
+  ],
+  "abstract": "  Modern neural networks are very powerful predictive models, but they are\noften incapable of recognizing when their predictions may be wrong. Closely\nrelated to this is the task of out-of-distribution detection, where a network\nmust determine whether or not an input is outside of the set on which it is\nexpected to safely perform. To jointly address these issues, we propose a\nmethod of learning confidence estimates for neural networks that is simple to\nimplement and produces intuitively interpretable outputs. We demonstrate that\non the task of out-of-distribution detection, our technique surpasses recently\nproposed techniques which construct confidence based on the network's output\ndistribution, without requiring any additional labels or access to\nout-of-distribution examples. Additionally, we address the problem of\ncalibrating out-of-distribution detectors, where we demonstrate that\nmisclassified in-distribution examples can be used as a proxy for\nout-of-distribution examples.\n",
+  "id": "1802.04865",
+  "date": 1541590198,
+  "url": "https://arxiv.org/abs/1802.04865",
+  "tags": []
+}
