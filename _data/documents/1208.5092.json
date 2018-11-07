@@ -1,0 +1,14 @@
+{
+  "title": "Graph Degree Linkage: Agglomerative Clustering on a Directed Graph",
+  "author": [
+    "Wei Zhang",
+    "Xiaogang Wang",
+    "Deli Zhao",
+    "Xiaoou Tang"
+  ],
+  "abstract": "  This paper proposes a simple but effective graph-based agglomerative\nalgorithm, for clustering high-dimensional data. We explore the different roles\nof two fundamental concepts in graph theory, indegree and outdegree, in the\ncontext of clustering. The average indegree reflects the density near a sample,\nand the average outdegree characterizes the local geometry around a sample.\nBased on such insights, we define the affinity measure of clusters via the\nproduct of average indegree and average outdegree. The product-based affinity\nmakes our algorithm robust to noise. The algorithm has three main advantages:\ngood performance, easy implementation, and high computational efficiency. We\ntest the algorithm on two fundamental computer vision problems: image\nclustering and object matching. Extensive experiments demonstrate that it\noutperforms the state-of-the-arts in both applications.\n",
+  "id": "1208.5092",
+  "date": 1541591760,
+  "url": "https://arxiv.org/abs/1208.5092",
+  "tags": []
+}
