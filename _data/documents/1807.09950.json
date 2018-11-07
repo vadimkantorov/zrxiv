@@ -1,0 +1,14 @@
+{
+  "title": "Variational Memory Encoder-Decoder",
+  "author": [
+    "Hung Le",
+    "Truyen Tran",
+    "Thin Nguyen",
+    "Svetha Venkatesh"
+  ],
+  "abstract": "  Introducing variability while maintaining coherence is a core task in\nlearning to generate utterances in conversation. Standard neural\nencoder-decoder models and their extensions using conditional variational\nautoencoder often result in either trivial or digressive responses. To overcome\nthis, we explore a novel approach that injects variability into neural\nencoder-decoder via the use of external memory as a mixture model, namely\nVariational Memory Encoder-Decoder (VMED). By associating each memory read with\na mode in the latent mixture distribution at each timestep, our model can\ncapture the variability observed in sequential data such as natural\nconversations. We empirically compare the proposed model against other recent\napproaches on various conversational datasets. The results show that VMED\nconsistently achieves significant improvement over others in both metric-based\nand qualitative evaluations.\n",
+  "id": "1807.09950",
+  "date": 1541592392,
+  "url": "https://arxiv.org/abs/1807.09950",
+  "tags": []
+}
