@@ -1,0 +1,13 @@
+{
+  "title": "Issues Encountered Deploying Differential Privacy",
+  "author": [
+    "Simson L. Garfinkel",
+    "John M. Abowd",
+    "Sarah Powazek"
+  ],
+  "abstract": "  When differential privacy was created more than a decade ago, the motivating\nexample was statistics published by an official statistics agency. In\nattempting to transition differential privacy from the academy to practice, the\nU.S. Census Bureau has encountered many challenges unanticipated by\ndifferential privacy's creators. These challenges include obtaining qualified\npersonnel and a suitable computing environment, the difficulty accounting for\nall uses of the confidential data, the lack of release mechanisms that align\nwith the needs of data users, the expectation on the part of data users that\nthey will have access to micro-data, and the difficulty in setting the value of\nthe privacy-loss parameter, $\\epsilon$ (epsilon), and the lack of tools and\ntrained individuals to verify the correctness of differential privacy\nimplementations.\n",
+  "id": "1809.02201",
+  "date": 1541590580,
+  "url": "https://arxiv.org/abs/1809.02201",
+  "tags": []
+}
