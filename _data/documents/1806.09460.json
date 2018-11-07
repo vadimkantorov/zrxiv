@@ -1,0 +1,11 @@
+{
+  "title": "A Tour of Reinforcement Learning: The View from Continuous Control",
+  "author": [
+    "Benjamin Recht"
+  ],
+  "abstract": "  This manuscript surveys reinforcement learning from the perspective of\noptimization and control with a focus on continuous control applications. It\nsurveys the general formulation, terminology, and typical experimental\nimplementations of reinforcement learning and reviews competing solution\nparadigms. In order to compare the relative merits of various techniques, this\nsurvey presents a case study of the Linear Quadratic Regulator (LQR) with\nunknown dynamics, perhaps the simplest and best studied problem in optimal\ncontrol. The manuscript describes how merging techniques from learning theory\nand control can provide non-asymptotic characterizations of LQR performance and\nshows that these characterizations tend to match experimental behavior. In\nturn, when revisiting more complex applications, many of the observed phenomena\nin LQR persist. In particular, theory and experiment demonstrate the role and\nimportance of models and the cost of generality in reinforcement learning\nalgorithms. This survey concludes with a discussion of some of the challenges\nin designing learning systems that safely and reliably interact with complex\nand uncertain environments and how tools from reinforcement learning and\ncontrols might be combined to approach these challenges.\n",
+  "id": "1806.09460",
+  "date": 1541592272,
+  "url": "https://arxiv.org/abs/1806.09460",
+  "tags": []
+}
