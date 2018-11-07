@@ -1,0 +1,19 @@
+{
+  "title": "Spectral-Pruning: Compressing deep neural network via spectral analysis",
+  "author": [
+    "Taiji Suzuki",
+    "Hiroshi Abe",
+    "Tomoya Murata",
+    "Shingo Horiuchi",
+    "Kotaro Ito",
+    "Tokuma Wachi",
+    "So Hirai",
+    "Masatoshi Yukishima",
+    "Tomoaki Nishimura"
+  ],
+  "abstract": "  The model size of deep neural network is getting larger and larger to realize\nsuperior performance in complicated tasks. This makes it difficult to implement\ndeep neural network in small edge-computing devices. To overcome this problem,\nmodel compression methods have been gathering much attention. However, there\nhave been only few theoretical back-grounds that explain what kind of quantity\ndetermines the compression ability. To resolve this issue, we develop a new\ntheoretical frame-work for model compression, and propose a new method called\n{\\it Spectral-Pruning} based on the theory. Our theoretical analysis is based\non the observation such that the eigenvalues of the covariance matrix of the\noutput from nodes in the internal layers often shows rapid decay. We define\n\"degree of freedom\" to quantify an intrinsic dimensionality of the model by\nusing the eigenvalue distribution and show that the compression ability is\nessentially controlled by this quantity. Along with this, we give a\ngeneralization error bound of the compressed model. Our proposed method is\napplicable to wide range of models, unlike the existing methods, e.g., ones\npossess complicated branches as implemented in SegNet and ResNet. Our method\nmakes use of both \"input\" and \"output\" in each layer and is easy to implement.\nWe apply our method to several datasets to justify our theoretical analyses and\nshow that the proposed method achieves the state-of-the-art performance.\n",
+  "id": "1808.08558",
+  "date": 1541592063,
+  "url": "https://arxiv.org/abs/1808.08558",
+  "tags": []
+}
