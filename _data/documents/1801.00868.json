@@ -1,0 +1,15 @@
+{
+  "title": "Panoptic Segmentation",
+  "author": [
+    "Alexander Kirillov",
+    "Kaiming He",
+    "Ross Girshick",
+    "Carsten Rother",
+    "Piotr Dollár"
+  ],
+  "abstract": "  We propose and study a novel panoptic segmentation (PS) task. Panoptic\nsegmentation unifies the typically distinct tasks of semantic segmentation\n(assign a class label to each pixel) and instance segmentation (detect and\nsegment each object instance). The proposed task requires generating a coherent\nscene segmentation that is rich and complete, an important step toward\nreal-world vision systems. While early work in computer vision addressed\nrelated image/scene parsing tasks, these are not currently popular, possibly\ndue to lack of appropriate metrics or associated recognition challenges. To\naddress this, we first propose a novel panoptic quality (PQ) metric that\ncaptures performance for all classes (stuff and things) in an interpretable and\nunified manner. Using the proposed metric, we perform a rigorous study of both\nhuman and machine performance for PS on three existing datasets, revealing\ninteresting insights about the task. Second, we are working to introduce\npanoptic segmentation tracks at upcoming recognition challenges. The aim of our\nwork is to revive the interest of the community in a more unified view of image\nsegmentation.\n",
+  "id": "1801.00868",
+  "date": 1541590470,
+  "url": "https://arxiv.org/abs/1801.00868",
+  "tags": []
+}
