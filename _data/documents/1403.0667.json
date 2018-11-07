@@ -1,0 +1,13 @@
+{
+  "title": "The Hidden Convexity of Spectral Clustering",
+  "author": [
+    "James Voss",
+    "Mikhail Belkin",
+    "Luis Rademacher"
+  ],
+  "abstract": "  In recent years, spectral clustering has become a standard method for data\nanalysis used in a broad range of applications. In this paper we propose a new\nclass of algorithms for multiway spectral clustering based on optimization of a\ncertain \"contrast function\" over the unit sphere. These algorithms, partly\ninspired by certain Independent Component Analysis techniques, are simple, easy\nto implement and efficient.\n  Geometrically, the proposed algorithms can be interpreted as hidden basis\nrecovery by means of function optimization. We give a complete characterization\nof the contrast functions admissible for provable basis recovery. We show how\nthese conditions can be interpreted as a \"hidden convexity\" of our optimization\nproblem on the sphere; interestingly, we use efficient convex maximization\nrather than the more common convex minimization. We also show encouraging\nexperimental results on real and simulated data.\n",
+  "id": "1403.0667",
+  "date": 1541592283,
+  "url": "https://arxiv.org/abs/1403.0667",
+  "tags": []
+}
