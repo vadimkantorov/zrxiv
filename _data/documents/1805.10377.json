@@ -1,0 +1,13 @@
+{
+  "title": "Ergodic Measure Preserving Flows",
+  "author": [
+    "Yichuan Zhang",
+    "Jose Miguel Hernandez-Lobato",
+    "Zoubin Ghahramani"
+  ],
+  "abstract": "  Probabilistic modelling is a general and elegant framework to capture the\nuncertainty, ambiguity and diversity of data. Probabilistic inference is the\ncore technique for developing training and simulation algorithms on\nprobabilistic models. However, the classic inference methods, like Markov chain\nMonte Carlo (MCMC) methods and mean-field variational inference (VI), are not\ncomputationally scalable for the recent developed probabilistic models with\nneural networks (NNs). This motivates many recent works on improving classic\ninference methods using NNs, especially, NN empowered VI. However, even with\npowerful NNs, VI still suffers its fundamental limitations. In this work, we\npropose a novel computational scalable general inference framework. With the\ntheoretical foundation in ergodic theory, the proposed methods are not only\ncomputationally scalable like NN-based VI methods but also asymptotically\naccurate like MCMC. We test our method on popular benchmark problems and the\nresults suggest that our methods can outperform NN-based VI and MCMC on deep\ngenerative models and Bayesian neural networks.\n",
+  "id": "1805.10377",
+  "date": 1541591721,
+  "url": "https://arxiv.org/abs/1805.10377",
+  "tags": []
+}
