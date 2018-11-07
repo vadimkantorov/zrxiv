@@ -1,0 +1,11 @@
+{
+  "title": "Topology-preserving diffusion of divergence-free vector fields and\n  magnetic relaxation",
+  "author": [
+    "Yann Brenier"
+  ],
+  "abstract": "  The usual heat equation is not suitable to preserve the topology of\ndivergence-free vector fields, because it destroys their integral line\nstructure. On the contrary, in the fluid mechanics literature, on can find\nexamples of topology-preserving diffusion equations for divergence-free vector\nfields. They are very degenerate since they admit all stationary solutions to\nthe Euler equations of incompressible fluids as equilibrium points. For them,\nwe provide a suitable concept of \"dissipative solutions\", which shares common\nfeatures with both P.-L. Lions' dissipative solutions to the Euler equations\nand the concept of \"curves of maximal slopes\", a la De Giorgi, recently used to\nstudy the scalar heat equation in very general metric spaces.\n",
+  "id": "1304.4562",
+  "date": 1541591824,
+  "url": "https://arxiv.org/abs/1304.4562",
+  "tags": []
+}
