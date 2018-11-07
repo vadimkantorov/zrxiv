@@ -1,0 +1,13 @@
+{
+  "title": "Video Time: Properties, Encoders and Evaluation",
+  "author": [
+    "Amir Ghodrati",
+    "Efstratios Gavves",
+    "Cees G. M. Snoek"
+  ],
+  "abstract": "  Time-aware encoding of frame sequences in a video is a fundamental problem in\nvideo understanding. While many attempted to model time in videos, an explicit\nstudy on quantifying video time is missing. To fill this lacuna, we aim to\nevaluate video time explicitly. We describe three properties of video time,\nnamely a) temporal asymmetry, b)temporal continuity and c) temporal causality.\nBased on each we formulate a task able to quantify the associated property.\nThis allows assessing the effectiveness of modern video encoders, like C3D and\nLSTM, in their ability to model time. Our analysis provides insights about\nexisting encoders while also leading us to propose a new video time encoder,\nwhich is better suited for the video time recognition tasks than C3D and LSTM.\nWe believe the proposed meta-analysis can provide a reasonable baseline to\nassess video time encoders on equal grounds on a set of temporal-aware tasks.\n",
+  "id": "1807.06980",
+  "date": 1541592390,
+  "url": "https://arxiv.org/abs/1807.06980",
+  "tags": []
+}
