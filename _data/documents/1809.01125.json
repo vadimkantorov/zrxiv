@@ -1,0 +1,13 @@
+{
+  "title": "Unsupervised Video Object Segmentation using Motion Saliency-Guided\n  Spatio-Temporal Propagation",
+  "author": [
+    "Yuan-Ting Hu",
+    "Jia-Bin Huang",
+    "Alexander G. Schwing"
+  ],
+  "abstract": "  Unsupervised video segmentation plays an important role in a wide variety of\napplications from object identification to compression. However, to date, fast\nmotion, motion blur and occlusions pose significant challenges. To address\nthese challenges for unsupervised video segmentation, we develop a novel\nsaliency estimation technique as well as a novel neighborhood graph, based on\noptical flow and edge cues. Our approach leads to significantly better initial\nforeground-background estimates and their robust as well as accurate diffusion\nacross time. We evaluate our proposed algorithm on the challenging DAVIS,\nSegTrack v2 and FBMS-59 datasets. Despite the usage of only a standard edge\ndetector trained on 200 images, our method achieves state-of-the-art results\noutperforming deep learning based methods in the unsupervised setting. We even\ndemonstrate competitive results comparable to deep learning based methods in\nthe semi-supervised setting on the DAVIS dataset.\n",
+  "id": "1809.01125",
+  "date": 1541590496,
+  "url": "https://arxiv.org/abs/1809.01125",
+  "tags": []
+}
