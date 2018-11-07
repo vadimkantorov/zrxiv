@@ -1,0 +1,15 @@
+{
+  "title": "Learning to Share and Hide Intentions using Information Regularization",
+  "author": [
+    "DJ Strouse",
+    "Max Kleiman-Weiner",
+    "Josh Tenenbaum",
+    "Matt Botvinick",
+    "David Schwab"
+  ],
+  "abstract": "  Learning to cooperate with friends and compete with foes is a key component\nof multi-agent reinforcement learning. Typically to do so, one requires access\nto either a model of or interaction with the other agent(s). Here we show how\nto learn effective strategies for cooperation and competition in an asymmetric\ninformation game with no such model or interaction. Our approach is to\nencourage an agent to reveal or hide their intentions using an\ninformation-theoretic regularizer. We consider both the mutual information\nbetween goal and action given state, as well as the mutual information between\ngoal and state. We show how to stochastically optimize these regularizers in a\nway that is easy to integrate with policy gradient reinforcement learning.\nFinally, we demonstrate that cooperative (competitive) policies learned with\nour approach lead to more (less) reward for a second agent in two simple\nasymmetric information games.\n",
+  "id": "1808.02093",
+  "date": 1541591618,
+  "url": "https://arxiv.org/abs/1808.02093",
+  "tags": []
+}
