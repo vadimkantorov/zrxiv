@@ -1,0 +1,14 @@
+{
+  "title": "A Tree-based Decoder for Neural Machine Translation",
+  "author": [
+    "Xinyi Wang",
+    "Hieu Pham",
+    "Pengcheng Yin",
+    "Graham Neubig"
+  ],
+  "abstract": "  Recent advances in Neural Machine Translation (NMT) show that adding\nsyntactic information to NMT systems can improve the quality of their\ntranslations. Most existing work utilizes some specific types of\nlinguistically-inspired tree structures, like constituency and dependency parse\ntrees. This is often done via a standard RNN decoder that operates on a\nlinearized target tree structure. However, it is an open question of what\nspecific linguistic formalism, if any, is the best structural representation\nfor NMT. In this paper, we (1) propose an NMT model that can naturally generate\nthe topology of an arbitrary tree structure on the target side, and (2)\nexperiment with various target tree structures. Our experiments show the\nsurprising result that our model delivers the best improvements with balanced\nbinary trees constructed without any linguistic knowledge; this model\noutperforms standard seq2seq models by up to 2.1 BLEU points, and other methods\nfor incorporating target-side syntax by up to 0.7 BLEU.\n",
+  "id": "1808.09374",
+  "date": 1541590699,
+  "url": "https://arxiv.org/abs/1808.09374",
+  "tags": []
+}
