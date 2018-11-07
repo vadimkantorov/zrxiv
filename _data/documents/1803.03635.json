@@ -1,0 +1,12 @@
+{
+  "title": "The Lottery Ticket Hypothesis: Finding Small, Trainable Neural Networks",
+  "author": [
+    "Jonathan Frankle",
+    "Michael Carbin"
+  ],
+  "abstract": "  Neural network compression techniques are able to reduce the parameter counts\nof trained networks by over 90%--decreasing storage requirements and improving\ninference performance--without compromising accuracy. However, contemporary\nexperience is that it is difficult to train small architectures from scratch,\nwhich would similarly improve training performance.\n  We articulate a new conjecture to explain why it is easier to train large\nnetworks: the \"lottery ticket hypothesis.\" It states that large networks that\ntrain successfully contain subnetworks that--when trained in\nisolation--converge in a comparable number of iterations to comparable\naccuracy. These subnetworks, which we term \"winning tickets,\" have won the\ninitialization lottery: their connections have initial weights that make\ntraining particularly effective.\n  We find that a standard technique for pruning unnecessary network weights\nnaturally uncovers a subnetwork which, at the start of training, comprised a\nwinning ticket. We present an algorithm to identify winning tickets and a\nseries of experiments that support the lottery ticket hypothesis. We\nconsistently find winning tickets that are less than 20% of the size of several\nfully-connected, convolutional, and residual architectures for MNIST and\nCIFAR10. Furthermore, winning tickets at moderate levels of pruning (20-50% of\nthe original network size) converge up to 6.7x faster than the original network\nand exhibit higher test accuracy.\n",
+  "id": "1803.03635",
+  "date": 1541591908,
+  "url": "https://arxiv.org/abs/1803.03635",
+  "tags": []
+}
