@@ -1,0 +1,18 @@
+{
+  "title": "Bayesian Action Decoder for Deep Multi-Agent Reinforcement Learning",
+  "author": [
+    "Jakob N. Foerster",
+    "Francis Song",
+    "Edward Hughes",
+    "Neil Burch",
+    "Iain Dunning",
+    "Shimon Whiteson",
+    "Matthew Botvinick",
+    "Michael Bowling"
+  ],
+  "abstract": "  When observing the actions of others, humans carry out inferences about why\nthe others acted as they did, and what this implies about their view of the\nworld. Humans also use the fact that their actions will be interpreted in this\nmanner when observed by others, allowing them to act informatively and thereby\ncommunicate efficiently with others. Although learning algorithms have recently\nachieved superhuman performance in a number of two-player, zero-sum games,\nscalable multi-agent reinforcement learning algorithms that can discover\neffective strategies and conventions in complex, partially observable settings\nhave proven elusive. We present the Bayesian action decoder (BAD), a new\nmulti-agent learning method that uses an approximate Bayesian update to obtain\na public belief that conditions on the actions taken by all agents in the\nenvironment. Together with the public belief, this Bayesian update effectively\ndefines a new Markov decision process, the public belief MDP, in which the\naction space consists of deterministic partial policies, parameterised by deep\nneural networks, that can be sampled for a given public state. It exploits the\nfact that an agent acting only on this public belief state can still learn to\nuse its private information if the action space is augmented to be over partial\npolicies mapping private information into environment actions. The Bayesian\nupdate is also closely related to the theory of mind reasoning that humans\ncarry out when observing others' actions. We first validate BAD on a\nproof-of-principle two-step matrix game, where it outperforms traditional\npolicy gradient methods. We then evaluate BAD on the challenging, cooperative\npartial-information card game Hanabi, where in the two-player setting the\nmethod surpasses all previously published learning and hand-coded approaches.\n",
+  "id": "1811.01458",
+  "date": 1541636670,
+  "url": "https://arxiv.org/abs/1811.01458",
+  "tags": []
+}
