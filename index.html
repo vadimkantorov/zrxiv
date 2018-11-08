@@ -19,17 +19,23 @@ layout: null
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
+		{% assign sortedtags = "" | split: "," %}
+		{% for tag_ in site.data.tags %}
+			{% assign sortedtags = sortedtags | push: tag_[0] %}
+		{% endfor %}
+		{% assign sortedtags = sortedtags | sort %}
+		
+		{% assign docs = "" | split:"," %}
+		{% for doc_ in site.data.documents %}
+			{% assign docs = docs | push: doc_[1] %}
+		{% endfor %}
+		{% assign docs = (docs | sort: 'date') | reverse %}
+
 		<div class="container-lg px-3 my-5 markdown-body">
-		<h1><a href="https://vadimkantorov.github.io/zrxiv/">zrxiv</a></h1>
+		<h1><a href="https://vadimkantorov.github.io/zrxiv/">zrxiv</a></h1>	
 		<p>updated at {{ "now" | date: "%Y-%m-%d %H:%M" }} GMT</p>
 		<div style="overflow:auto">
-			<span style="float:left">tags:</span>
 			<ul style="display:inline">
-			{% assign sortedtags = "" | split: "," %}
-			{% for tag_ in site.data.tags %}
-				{% assign sortedtags = sortedtags | push: tag_[0] %}
-			{% endfor %}
-			{% assign sortedtags = sortedtags | sort %}
 			{% for tag in sortedtags %}
 				<li style="margin-left: 2em; float:left; margin-top: 0px"><a href="#/tags/{{ tag }}">{{ tag }}</a></li>
 			{% endfor %}
@@ -45,12 +51,6 @@ layout: null
 				</tr>
 			</thead>
 			<tbody>
-				{% assign docs = "" | split:"," %}
-				{% for doc_ in site.data.documents %}
-					{% assign docs = docs | push: doc_[1] %}
-				{% endfor %}
-				{% assign docs = (docs | sort: 'date') | reverse %}
-				
 				{% for doc in docs %}
 				<tr data-tags="{{ doc.tags | join: ' ' }}">
 					<td style="white-space:nowrap" title="{{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
