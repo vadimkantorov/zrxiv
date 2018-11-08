@@ -83,14 +83,14 @@ layout: null
 				if(window.location.hash.startsWith(route_tags))
 				{
 					const tag = window.location.hash.substr(route_tags.length);
-					document.querySelectorAll('tbody tr:not([data-tags*="' + tag + '"])').forEach(el => {el.style.display = 'none'});
-					document.querySelectorAll('tbody tr[data-tags*="' + tag + '"]').forEach(el => {el.style.display = ''});
+					document.querySelectorAll('tbody tr:not([data-tags~="' + tag + '"])').forEach(el => {el.style.display = 'none'});
+					document.querySelectorAll('tbody tr[data-tags~="' + tag + '"]').forEach(el => {el.style.display = ''});
 				}
 				else if(window.location.hash.startsWith(route_authors))
 				{
 					const author = window.location.hash.substr(route_authors.length);
-					document.querySelectorAll('tbody tr:not([data-authors*="' + author + '"])').forEach(el => {el.style.display = 'none'});
-					document.querySelectorAll('tbody tr[data-authors*="' + author + '"]').forEach(el => {el.style.display = ''});
+					document.querySelectorAll('tbody tr:not([data-authors~="' + author + '"])').forEach(el => {el.style.display = 'none'});
+					document.querySelectorAll('tbody tr[data-authors~="' + author + '"]').forEach(el => {el.style.display = ''});
 				}
 				else
 				{
