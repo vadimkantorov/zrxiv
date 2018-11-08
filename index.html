@@ -16,8 +16,11 @@ layout: default
 		<meta property="og:image" content="{{ site.github.url }}/logo.png" />
 		<link rel="icon" href="logo.png" />
 		<link rel="canonical" href="{{ site.github.url }}" />
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
+		<div class="container-lg px-3 my-5 markdown-body">
+		<h1><a href="https://vadimkantorov.github.io/zrxiv/">zrxiv</a></h1>
 		<p>updated at {{ "now" | date: "%Y-%m-%d %H:%M" }} GMT</p>
 		<div style="overflow:auto">
 			<span style="float:left">tags:</span>
@@ -68,6 +71,7 @@ layout: default
 				{% endfor %}
 			</tbody>
 		</table>
+		</div>
 		<script type="text/javascript">
 			function navigate()
 			{
