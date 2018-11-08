@@ -22,8 +22,12 @@ layout: default
 		<div style="overflow:auto">
 			<span style="float:left">tags:</span>
 			<ul style="display:inline">
+			{% assign sortedtags = "" | split: "," %}
 			{% for tag_ in site.data.tags %}
-			{% assign tag = tag_[0] %}
+				{% assign sortedtags = sortedtags | push: tag_[0] %}
+			{% endfor %}
+			{% assign sortedtags = sortedtags | sort %}
+			{% for tag in sortedtags %}
 				<li style="margin-left: 2em; float:left; margin-top: 0px"><a href="#/tags/{{ tag }}">{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
