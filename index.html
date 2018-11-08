@@ -63,7 +63,7 @@ layout: null
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
 						{% for lastname in lastnames %}
 							{% if forloop.first == true %}<br />{% endif %}
-							<small><a href="#/authors/{{ lastname }}" title="{{ author }}" style="color:lightgray">{{ lastname }}</a>{% if forloop.last != true %}, {% endif %}</small>
+							<small><a href="#/authors/{{ lastname }}" title="{{ author }}" style="color:lightgray">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
 						{% endfor %}
 					</td>
 					<td>
