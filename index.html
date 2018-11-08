@@ -4,7 +4,12 @@ layout: default
 
 <!DOCTYPE html>
 <html>
-	<head><title>zrxiv</title></head>
+	<head>
+		<title>zrxiv for {{ site.github.owner_name }}</title>
+		<meta property="og:title" content="zrxiv for {{ site.github.owner_name }}" />
+		<meta property="og:image" content="{{ site.github.url }}/logo.png" />
+		<link rel="icon" href="logo.png" />
+	</head>
 	<body onhashchange="navigate()" onload="navigate()">
 		<p>updated at {{ "now" | date: "%Y-%m-%d %H:%M" }} GMT</p>
 		<div style="overflow:auto">
