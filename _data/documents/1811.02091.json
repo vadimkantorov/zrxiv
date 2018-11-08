@@ -1,0 +1,18 @@
+{
+  "title": "Simple, Distributed, and Accelerated Probabilistic Programming",
+  "author": [
+    "Dustin Tran",
+    "Matthew Hoffman",
+    "Dave Moore",
+    "Christopher Suter",
+    "Srinivas Vasudevan",
+    "Alexey Radul",
+    "Matthew Johnson",
+    "Rif A. Saurous"
+  ],
+  "abstract": "  We describe a simple, low-level approach for embedding probabilistic\nprogramming in a deep learning ecosystem. In particular, we distill\nprobabilistic programming down to a single abstraction---the random variable.\nOur lightweight implementation in TensorFlow enables numerous applications: a\nmodel-parallel variational auto-encoder (VAE) with 2nd-generation tensor\nprocessing units (TPUv2s); a data-parallel autoregressive model (Image\nTransformer) with TPUv2s; and multi-GPU No-U-Turn Sampler (NUTS). For both a\nstate-of-the-art VAE on 64x64 ImageNet and Image Transformer on 256x256\nCelebA-HQ, our approach achieves an optimal linear speedup from 1 to 256 TPUv2\nchips. With NUTS, we see a 100x speedup on GPUs over Stan and 37x over PyMC3.\n",
+  "id": "1811.02091",
+  "date": 1541636723,
+  "url": "https://arxiv.org/abs/1811.02091",
+  "tags": []
+}
