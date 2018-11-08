@@ -63,12 +63,12 @@ layout: null
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
 						{% for lastname in lastnames %}
 							{% if forloop.first == true %}<br />{% endif %}
-							<small><a href="#/authors/{{ lastname }}" title="{{ author }}" style="color:lightgray">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
+							<small><a href="#/author/{{ lastname }}" title="{{ author }}" style="color:lightgray">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
 						{% endfor %}
 					</td>
 					<td>
 						{% for tag in doc.tags %}
-						<a href="#/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
+						<a href="#/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
 						{% endfor %}
 					</td>
 				</tr>
@@ -79,7 +79,7 @@ layout: null
 		<script type="text/javascript">
 			function navigate()
 			{
-				const route_tags = '#/tags/', route_authors = '#/authors/';
+				const route_tags = '#/tag/', route_authors = '#/author/';
 				if(window.location.hash.startsWith(route_tags))
 				{
 					const tag = window.location.hash.substr(route_tags.length);
