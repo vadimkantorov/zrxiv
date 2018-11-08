@@ -51,14 +51,19 @@ layout: null
 			</thead>
 			<tbody>
 				{% for doc in docs %}
-				<tr data-tags="{{ doc.tags | join: ' ' }}">
+				{% assign lastnames = "" | split:"," %}
+				{% for author in doc.author %}
+					{% assign names = author | split: " " %}
+					{% assign lastnames = lastnames | push: names.last %}
+				{% endfor %}
+				
+				<tr data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}">
 					<td style="white-space:nowrap" title="{{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
 					<td>
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
-						{% for author in doc.author %}
+						{% for lastname in lastnames %}
 							{% if forloop.first == true %}<br />{% endif %}
-							{% assign names = author | split: " " %}
-							<small style="color:lightgray" title="{{ author }}">{{ names.last }}{% if forloop.last != true %}, {% endif %}</small>
+							<small style="color:lightgray" title="{{ author }}"><a href="#/authors/{{ lastname }}">{{ lastname }}</a>{% if forloop.last != true %}, {% endif %}</small>
 						{% endfor %}
 					</td>
 					<td>
@@ -74,12 +79,18 @@ layout: null
 		<script type="text/javascript">
 			function navigate()
 			{
-				const route_tags = '#/tags/';
+				const route_tags = '#/tags/', route_authors = '#/authors/';
 				if(window.location.hash.startsWith(route_tags))
 				{
 					const tag = window.location.hash.substr(route_tags.length);
 					document.querySelectorAll('tbody tr:not([data-tags*="' + tag + '"])').forEach(el => {el.style.display = 'none'});
 					document.querySelectorAll('tbody tr[data-tags*="' + tag + '"]').forEach(el => {el.style.display = ''});
+				}
+				else if(window.location.hash.startsWith(route_authors))
+				{
+					const author = window.location.hash.substr(route_authors.length);
+					document.querySelectorAll('tbody tr:not([data-authors*="' + author + '"])').forEach(el => {el.style.display = 'none'});
+					document.querySelectorAll('tbody tr[data-authors*="' + author + '"]').forEach(el => {el.style.display = ''});
 				}
 				else
 				{
