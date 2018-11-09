@@ -1,0 +1,12 @@
+{
+  "title": "An Introduction to Animal Movement Modeling with Hidden Markov Models\n  using Stan for Bayesian Inference",
+  "author": [
+    "Vianey Leos-Barajas",
+    "Théo Michelot"
+  ],
+  "abstract": "  Hidden Markov models (HMMs) are popular time series model in many fields\nincluding ecology, economics and genetics. HMMs can be defined over discrete or\ncontinuous time, though here we only cover the former. In the field of movement\necology in particular, HMMs have become a popular tool for the analysis of\nmovement data because of their ability to connect observed movement data to an\nunderlying latent process, generally interpreted as the animal's unobserved\nbehavior. Further, we model the tendency to persist in a given behavior over\ntime. Notation presented here will generally follow the format of Zucchini et\nal. (2016) and cover HMMs applied in an unsupervised case to animal movement\ndata, specifically positional data. We provide Stan code to analyze movement\ndata of the wild haggis as presented first in Michelot et al. (2016).\n",
+  "id": "1806.10639",
+  "date": 1541771207,
+  "url": "https://arxiv.org/abs/1806.10639",
+  "tags": []
+}
