@@ -1,0 +1,13 @@
+{
+  "title": "Performance of Johnson-Lindenstrauss Transform for k-Means and k-Medians\n  Clustering",
+  "author": [
+    "Konstantin Makarychev",
+    "Yury Makarychev",
+    "Ilya Razenshteyn"
+  ],
+  "abstract": "  Consider an instance of Euclidean $k$-means or $k$-medians clustering. We\nshow that the cost of the optimal solution is preserved up to a factor of\n$(1+\\varepsilon)$ under a projection onto a random $O(\\log(k / \\varepsilon) /\n\\varepsilon^2)$-dimensional subspace. Further, the cost of every clustering is\npreserved within $(1+\\varepsilon)$. More generally, our result applies to any\ndimension reduction map satisfying a mild sub-Gaussian-tail condition. Our\nbound on the dimension is nearly optimal. Additionally, our result applies to\nEuclidean $k$-clustering with the distances raised to the $p$-th power for any\nconstant $p$.\n  For $k$-means, our result resolves an open problem posed by Cohen, Elder,\nMusco, Musco, and Persu (STOC 2015); for $k$-medians, it answers a question\nraised by Kannan.\n",
+  "id": "1811.03195",
+  "date": 1541766513,
+  "url": "https://arxiv.org/abs/1811.03195",
+  "tags": []
+}
