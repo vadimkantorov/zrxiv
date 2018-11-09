@@ -58,7 +58,7 @@ layout: null
 				{% endfor %}
 				
 				<tr data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}">
-					<td style="white-space:nowrap" title="{{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
+					<td style="white-space:nowrap; vertical-align:top" title="{{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
 					<td>
 						<a href="{{ doc.url }}">{{ doc.title }}</a>
 						{% for author in doc.author %}
