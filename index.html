@@ -67,7 +67,7 @@ layout: null
 							<small><a href="#/author/{{ lastname }}" style="color:lightgray" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
 						{% endfor %}
 					</td>
-					<td style="vertical-align:top">
+					<td style="padding: 0px; vertical-align:top">
 						<ul>
 						{% for tag in doc.tags %}
 							<li><a href="#/tag/{{ tag }}">{{ tag }}</a></li>
