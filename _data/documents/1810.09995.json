@@ -1,0 +1,12 @@
+{
+  "title": "Deep Graph Convolutional Encoders for Structured Data to Text Generation",
+  "author": [
+    "Diego Marcheggiani",
+    "Laura Perez-Beltrachini"
+  ],
+  "abstract": "  Most previous work on neural text generation from graph-structured data\nrelies on standard sequence-to-sequence methods. These approaches linearise the\ninput graph to be fed to a recurrent neural network. In this paper, we propose\nan alternative encoder based on graph convolutional networks that directly\nexploits the input structure. We report results on two graph-to-sequence\ndatasets that empirically show the benefits of explicitly encoding the input\ngraph structure.\n",
+  "id": "1810.09995",
+  "date": 1541771012,
+  "url": "https://arxiv.org/abs/1810.09995",
+  "tags": []
+}
