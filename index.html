@@ -50,8 +50,8 @@ layout: null
 					{% assign lastnames = lastnames | push: lastname %}
 				{% endfor %}
 				
-				<tr data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}">
-					<td style="white-space:nowrap; vertical-align:top" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
+				<tr data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
+					<td style="white-space:nowrap; vertical-align:top" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}"><a style="color:black" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></td>
 					<td style="vertical-align:top; width:100%">
 						<a href="{{ doc.url }}">{{ doc.title }}</a><br />
 						{% for author in doc.author %}
@@ -72,7 +72,7 @@ layout: null
 		<script type="text/javascript">
 			function navigate()
 			{
-				const route_tags = '#/tag/', route_authors = '#/author/';
+				const route_tags = '#/tag/', route_authors = '#/author/', route_date = '#/date/';
 				if(window.location.hash.startsWith(route_tags))
 				{
 					const tag = window.location.hash.substr(route_tags.length);
@@ -84,6 +84,12 @@ layout: null
 					const author = window.location.hash.substr(route_authors.length);
 					document.querySelectorAll('tbody tr:not([data-authors~="' + author + '"])').forEach(el => {el.style.display = 'none'});
 					document.querySelectorAll('tbody tr[data-authors~="' + author + '"]').forEach(el => {el.style.display = ''});
+				}
+				else if(window.location.hash.startsWith(route_date))
+				{
+					const date = window.location.hash.substr(route_date.length);
+					document.querySelectorAll('tbody tr:not([data-date="' + date + '"])').forEach(el => {el.style.display = 'none'});
+					document.querySelectorAll('tbody tr[data-date="' + date + '"]').forEach(el => {el.style.display = ''});
 				}
 				else
 				{
