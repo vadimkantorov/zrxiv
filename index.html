@@ -54,19 +54,15 @@ layout: null
 					<td style="white-space:nowrap; vertical-align:top" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</td>
 					<td style="vertical-align:top; width:100%">
 						<a href="{{ doc.url }}">{{ doc.title }}</a><br />
-						<span>
 						{% for author in doc.author %}
 							{% assign lastname = (author | split: " ") | last %}
 							<small><a href="#/author/{{ lastname }}" style="color:lightgray" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
 						{% endfor %}
-						</span>
-						<span style="float: right">
-							<ul style="display: inline">
-							{% for tag in doc.tags %}
-								<li style="margin-left: {% if forloop.first == true %} 1em {%else%} 2em {% endif %} ; float:left; "><a href="#/tag/{{ tag }}">{{ tag }}</a></li>
-							{% endfor %}
-							</ul>
-						</span>
+						<ul style="display: inline; float: right">
+						{% for tag in doc.tags %}
+							<li style="margin-left: 2em; float:left; margin-top:0px"><a href="#/tag/{{ tag }}">{{ tag }}</a></li>
+						{% endfor %}
+						</ul>
 					</td>
 				</tr>
 				{% endfor %}
