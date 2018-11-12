@@ -88,8 +88,8 @@ layout: null
 				else if(window.location.hash.startsWith(route_date))
 				{
 					const date = window.location.hash.substr(route_date.length);
-					document.querySelectorAll('tbody tr:not([data-date="' + date + '"])').forEach(el => {el.style.display = 'none'});
-					document.querySelectorAll('tbody tr[data-date="' + date + '"]').forEach(el => {el.style.display = ''});
+					document.querySelectorAll('tbody tr:not([data-date^="' + date + '"])').forEach(el => {el.style.display = 'none'});
+					document.querySelectorAll('tbody tr[data-date^="' + date + '"]').forEach(el => {el.style.display = ''});
 				}
 				else
 				{
