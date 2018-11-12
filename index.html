@@ -58,7 +58,7 @@ layout: null
 							{% assign lastname = (author | split: " ") | last %}
 							<small><a href="#/author/{{ lastname }}" style="color:lightgray" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
 						{% endfor %}
-						<ul style="display: inline; float: right">
+						<ul style="display: inline; float: right; margin:0px">
 						{% for tag in doc.tags %}
 							<li style="margin-left: 2em; float:left; margin-top:0px"><a href="#/tag/{{ tag }}">{{ tag }}</a></li>
 						{% endfor %}
