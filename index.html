@@ -51,7 +51,6 @@ layout: null
 				{% endfor %}
 				
 				<tr data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
-					<td style="white-space:nowrap; vertical-align:top" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}"><a style="color:black" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></td>
 					<td style="vertical-align:top; width:100%">
 						<a href="{{ doc.url }}">{{ doc.title }}</a><br />
 						{% for author in doc.author %}
@@ -64,6 +63,7 @@ layout: null
 						{% endfor %}
 						</ul>
 					</td>
+					<td style="white-space:nowrap; vertical-align:top" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}"><a style="color:black" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></td>
 				</tr>
 				{% endfor %}
 			</tbody>
