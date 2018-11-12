@@ -36,7 +36,7 @@ layout: null
 		<div style="overflow:auto">
 			<ul style="display:inline">
 			{% for tag in sortedtags %}
-				<li style="margin-left: {% if forloop.first == true %} 1em {%else%} 2em {% endif %} ; float:left; margin-top: 0px"><a href="#/tag/{{ tag }}">{{ tag }}</a></li>
+				<li style="margin-left: {% if forloop.first == true %} 1em {%else%} 2em {% endif %} ; float:left; margin-top: 0px"><a href="#/tag/{{ tag }}" style="color:red">{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
 		</div>
@@ -60,7 +60,7 @@ layout: null
 						{% endfor %}
 						<ul style="display: inline; float: right; margin:0px">
 						{% for tag in doc.tags %}
-							<li style="margin-left: 2em; float:left; margin-top:0px"><a href="#/tag/{{ tag }}">{{ tag }}</a></li>
+							<li style="margin-left: 2em; float:left; margin-top:0px"><a href="#/tag/{{ tag }}" style="color:red">{{ tag }}</a></li>
 						{% endfor %}
 						</ul>
 					</td>
