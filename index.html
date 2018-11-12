@@ -51,14 +51,14 @@ layout: null
 				{% endfor %}
 				
 				<tr data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
-					<td style="vertical-align:top; width:100%">
+					<td style="vertical-align:top; width:100%; border-right: none">
 						<a href="{{ doc.url }}">{{ doc.title }}</a><br />
 						{% for author in doc.author %}
 							{% assign lastname = (author | split: " ") | last %}
 							<small><a href="#/author/{{ lastname }}" style="color:lightgray" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
 						{% endfor %}
 					</td>
-					<td style="white-space:nowrap; vertical-align:top; position:relative" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
+					<td style="white-space:nowrap; vertical-align:top; position:relative; border-left: none" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
 						<a style="color:lightgray" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a>
 						<br />
 						<ul style="display: inline; float: right; margin:0px; position: absolute; right: 1em">
