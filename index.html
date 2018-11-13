@@ -34,12 +34,13 @@ layout: null
 		<div class="container-lg px-3 my-5 markdown-body">
 		<h1 style="overflow-y:auto"><a href="{{ site.github.url }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span style="float:right; font-size:small; color:lightgray" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">{{ site.data.documents | size }} docs @ {{ site.time | date: "%Y-%m-%d %H:%M" }} GMT</span></h1>
 		<div style="overflow:auto">
-			<ul style="display:inline-flex; margin-left: -16px; padding: 0px">
+			<ul style="display:inline">
 			{% for tag in sortedtags %}
 				<li style="margin-left: 2em; float:left; margin-top: 0px"><a href="#/tag/{{ tag }}" style="color:red">{{ tag }}</a></li>
 			{% endfor %}
 			</ul>
 		</div>
+		<br />
 		<table style="width:100%; table-layout:auto">
 			{% for doc in docs %}
 			{% assign lastnames = "" | split:"," %}
