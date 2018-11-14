@@ -56,11 +56,13 @@ layout: null
 					{% endfor %}&nbsp;
 				</td>
 				<td style="white-space:nowrap; vertical-align:top; position:relative; border-left: none" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
+					<div  style="position: absolute; right: 13px">
 					<a style="color:lightgray;" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a><br />
-					<div style="position: absolute; right: 0px">
+					<div style="position: absolute; right: 13px">
 						{% for tag in doc.tags %}
 						<a href="#/tag/{{ tag }}" style="color:red">★{{ tag }}</a>&nbsp;
 						{% endfor %}
+					</div>
 					</div>
 				</td>
 			</tr>
