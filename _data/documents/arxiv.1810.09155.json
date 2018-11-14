@@ -1,0 +1,14 @@
+{
+  "title": "A Simple Baseline Algorithm for Graph Classification",
+  "author": [
+    "Nathan de Lara",
+    "Edouard Pineau"
+  ],
+  "abstract": "  Graph classification has recently received a lot of attention from various\nfields of machine learning e.g. kernel methods, sequential modeling or graph\nembedding. All these approaches offer promising results with different\nrespective strengths and weaknesses. However, most of them rely on complex\nmathematics and require heavy computational power to achieve their best\nperformance. We propose a simple and fast algorithm based on the spectral\ndecomposition of graph Laplacian to perform graph classification and get a\nfirst reference score for a dataset. We show that this method obtains\ncompetitive results compared to state-of-the-art algorithms.\n",
+  "id": "arxiv.1810.09155",
+  "url": "https://arxiv.org/abs/1810.09155",
+  "pdf": "https://arxiv.org/pdf/1810.09155",
+  "source": "arxiv.org",
+  "date": 1542206725,
+  "tags": []
+}
