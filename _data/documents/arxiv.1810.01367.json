@@ -1,0 +1,17 @@
+{
+  "title": "FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative\n  Models",
+  "author": [
+    "Will Grathwohl",
+    "Ricky T. Q. Chen",
+    "Jesse Bettencourt",
+    "Ilya Sutskever",
+    "David Duvenaud"
+  ],
+  "abstract": "  A promising class of generative models maps points from a simple distribution\nto a complex distribution through an invertible neural network.\nLikelihood-based training of these models requires restricting their\narchitectures to allow cheap computation of Jacobian determinants.\nAlternatively, the Jacobian trace can be used if the transformation is\nspecified by an ordinary differential equation. In this paper, we use\nHutchinson's trace estimator to give a scalable unbiased estimate of the\nlog-density. The result is a continuous-time invertible generative model with\nunbiased density estimation and one-pass sampling, while allowing unrestricted\nneural network architectures. We demonstrate our approach on high-dimensional\ndensity estimation, image generation, and variational inference, achieving the\nstate-of-the-art among exact likelihood methods with efficient sampling.\n",
+  "id": "arxiv.1810.01367",
+  "url": "https://arxiv.org/abs/1810.01367",
+  "pdf": "https://arxiv.org/pdf/1810.01367",
+  "source": "arxiv.org",
+  "date": 1542222703,
+  "tags": []
+}
