@@ -1,0 +1,17 @@
+{
+  "title": "Visualizing the Loss Landscape of Neural Nets",
+  "author": [
+    "Hao Li",
+    "Zheng Xu",
+    "Gavin Taylor",
+    "Christoph Studer",
+    "Tom Goldstein"
+  ],
+  "abstract": "  Neural network training relies on our ability to find \"good\" minimizers of\nhighly non-convex loss functions. It is well-known that certain network\narchitecture designs (e.g., skip connections) produce loss functions that train\neasier, and well-chosen training parameters (batch size, learning rate,\noptimizer) produce minimizers that generalize better. However, the reasons for\nthese differences, and their effects on the underlying loss landscape, are not\nwell understood. In this paper, we explore the structure of neural loss\nfunctions, and the effect of loss landscapes on generalization, using a range\nof visualization methods. First, we introduce a simple \"filter normalization\"\nmethod that helps us visualize loss function curvature and make meaningful\nside-by-side comparisons between loss functions. Then, using a variety of\nvisualizations, we explore how network architecture affects the loss landscape,\nand how training parameters affect the shape of minimizers.\n",
+  "id": "arxiv.1712.09913",
+  "url": "https://arxiv.org/abs/1712.09913",
+  "pdf": "https://arxiv.org/pdf/1712.09913",
+  "source": "arxiv.org",
+  "date": 1542202059,
+  "tags": []
+}
