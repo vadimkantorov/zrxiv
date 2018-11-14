@@ -1,0 +1,16 @@
+{
+  "title": "Neural Ordinary Differential Equations",
+  "author": [
+    "Ricky T. Q. Chen",
+    "Yulia Rubanova",
+    "Jesse Bettencourt",
+    "David Duvenaud"
+  ],
+  "abstract": "  We introduce a new family of deep neural network models. Instead of\nspecifying a discrete sequence of hidden layers, we parameterize the derivative\nof the hidden state using a neural network. The output of the network is\ncomputed using a black-box differential equation solver. These continuous-depth\nmodels have constant memory cost, adapt their evaluation strategy to each\ninput, and can explicitly trade numerical precision for speed. We demonstrate\nthese properties in continuous-depth residual networks and continuous-time\nlatent variable models. We also construct continuous normalizing flows, a\ngenerative model that can train by maximum likelihood, without partitioning or\nordering the data dimensions. For training, we show how to scalably\nbackpropagate through any ODE solver, without access to its internal\noperations. This allows end-to-end training of ODEs within larger models.\n",
+  "id": "arxiv.1806.07366",
+  "url": "https://arxiv.org/abs/1806.07366",
+  "pdf": "https://arxiv.org/pdf/1806.07366",
+  "source": "arxiv.org",
+  "date": 1542222690,
+  "tags": []
+}
