@@ -1,0 +1,15 @@
+{
+  "title": "Learning and Generalization in Overparameterized Neural Networks, Going\n  Beyond Two Layers",
+  "author": [
+    "Zeyuan Allen-Zhu",
+    "Yuanzhi Li",
+    "Yingyu Liang"
+  ],
+  "abstract": "  Neural networks have great success in many machine learning applications, but\nthe fundamental learning theory behind them remains largely unsolved. Learning\nneural networks is NP-hard, but in practice, simple algorithms like stochastic\ngradient descent (SGD) often produce good solutions. Moreover, it is observed\nthat overparameterization --- designing networks whose number of parameters is\nlarger than statistically needed to perfectly fit the data --- improves both\noptimization and generalization, appearing to contradict traditional learning\ntheory.\n  In this work, we extend the theoretical understanding of two and three-layer\nneural networks in the overparameterized regime. We prove that, using\noverparameterized neural networks, one can (improperly) learn some notable\nhypothesis classes, including two and three-layer neural networks with fewer\nparameters. Moreover, the learning process can be simply done by SGD or its\nvariants in polynomial time using polynomially many samples. We also show that\nfor a fixed sample size, the generalization error of the solution found by some\nSGD variant can be made almost independent of the number of parameters in the\noverparameterized network.\n",
+  "id": "arxiv.1811.04918",
+  "url": "https://arxiv.org/abs/1811.04918",
+  "pdf": "https://arxiv.org/pdf/1811.04918",
+  "source": "arxiv.org",
+  "date": 1542306097,
+  "tags": []
+}
