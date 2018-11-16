@@ -34,8 +34,8 @@ layout: null
 			.tag:not(:first-child) {margin-left:1em}
 			.tag:before {content: "★"}
 			
-			.author {color:lightgray}
-			.date {color:lightgray}
+			.author {color:lightgray; font-size:small}
+			.date {color:lightgray; font-size:small}
 			
 			h1 {overflow-y:auto}
 		</style>
@@ -67,17 +67,17 @@ layout: null
 
 				<li data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
 					<div style="display:flex">
-						<a style="max-width:80%" href="{{ doc.url }}" style="flex-grow:1">{{ doc.title }}</a><br />
+						<a style="flex-grow:1; max-width:80%" href="{{ doc.url }}">{{ doc.title }}</a><br />
 						<div style="display:flex; flex-wrap: wrap; justify-content:flex-end">
 							{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
 						</div>
 					</div>
 					<div style="display:flex">
 						<div style="flex-grow:1">
-							{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<small><a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span class="author">, </span>{% endif %}</small>{% endfor %}&nbsp;
+							{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span class="author">, </span>{% endif %}{% endfor %}&nbsp;
 						</div>
 						<div title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
-							<small><a class="date" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></small>
+							<a class="date" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a>
 						</div>
 					</div>
 				</li>
