@@ -1,0 +1,16 @@
+{
+  "title": "A Flexible Approach to Automated RNN Architecture Generation",
+  "author": [
+    "Martin Schrimpf",
+    "Stephen Merity",
+    "James Bradbury",
+    "Richard Socher"
+  ],
+  "abstract": "  The process of designing neural architectures requires expert knowledge and\nextensive trial and error. While automated architecture search may simplify\nthese requirements, the recurrent neural network (RNN) architectures generated\nby existing methods are limited in both flexibility and components. We propose\na domain-specific language (DSL) for use in automated architecture search which\ncan produce novel RNNs of arbitrary depth and width. The DSL is flexible enough\nto define standard architectures such as the Gated Recurrent Unit and Long\nShort Term Memory and allows the introduction of non-standard RNN components\nsuch as trigonometric curves and layer normalization. Using two different\ncandidate generation techniques, random search with a ranking function and\nreinforcement learning, we explore the novel architectures produced by the RNN\nDSL for language modeling and machine translation domains. The resulting\narchitectures do not follow human intuition yet perform well on their targeted\ntasks, suggesting the space of usable RNN architectures is far larger than\npreviously assumed.\n",
+  "id": "arxiv.1712.07316",
+  "url": "https://arxiv.org/abs/1712.07316",
+  "pdf": "https://arxiv.org/pdf/1712.07316",
+  "source": "arxiv.org",
+  "date": 1542329132,
+  "tags": []
+}
