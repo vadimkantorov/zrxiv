@@ -76,7 +76,7 @@ layout: null
 						<div style="flex-grow:1">
 							{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span class="author">, </span>{% endif %}{% endfor %}&nbsp;
 						</div>
-						<div title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
+						<div style="display: flex; align-items:flex-end" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
 							<a class="date" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a>
 						</div>
 					</div>
