@@ -24,8 +24,8 @@ layout: null
 			ul li:last-child{border-bottom:1px solid #dfe2e5}
 			
 			.tag {color:red;}
-			.tag:not(last-child), .tag:only-child {margin-right:5px}
-			.tag:before {content: "★"}
+			.tag:not(:last-child), .tag:only-child {margin-right:5px}
+			.tag::before {content: "★"}
 			
 			.author {color:lightgray; font-size:small}
 			.date {display: flex; align-items:flex-end}
@@ -38,6 +38,7 @@ layout: null
 			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end}
 			.authors {flex-grow:1}
 			
+			a.author:not(:last-child)::after {content: ","; margin-right: 2pt}
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
@@ -67,20 +68,12 @@ layout: null
 
 				<li class="doc" data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
 					<div>
-						<div class="title">
-							<a class="title" href="{{ doc.url }}">{{ doc.title }}</a>
-						</div>
-						<div class="tags">
-							{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
-						</div>
+						<div class="title"><a class="title" href="{{ doc.url }}">{{ doc.title }}</a></div>
+						<div class="tags">{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
-						<div class="authors">
-							{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span class="author">, </span>{% endif %}{% endfor %}&nbsp;
-						</div>
-						<div class="date" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
-							<a href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a>
-						</div>
+						<div class="authors">{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
+						<div class="date" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}"><a href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
