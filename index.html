@@ -72,7 +72,7 @@ layout: null
 							{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
 						</div>
 					</div>
-					<div >
+					<div>
 						<div class="authors">
 							{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span class="author">, </span>{% endif %}{% endfor %}&nbsp;
 						</div>
