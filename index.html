@@ -27,9 +27,16 @@ layout: null
 			.tag:before {content: "★"}
 			
 			.author {color:lightgray; font-size:small}
-			.date {color:lightgray; font-size:small; white-space:nowrap; margin-right:5px}
+			.date {display: flex; align-items:flex-end}
+			.date>a {color:lightgray; font-size:small; white-space:nowrap; margin-right:5px}
 			
 			h1 {overflow-y:auto}
+			
+			.doc>div {display:flex}
+			.title {flex-grow:1; /*max-width:80%*/}
+			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end}
+			.authors {flex-grow:1}
+			
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
@@ -57,19 +64,19 @@ layout: null
 					{% assign lastnames = lastnames | push: lastname %}
 				{% endfor %}
 
-				<li data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
-					<div style="display:flex">
-						<a style="flex-grow:1; /*max-width:80%*/" href="{{ doc.url }}">{{ doc.title }}</a><br />
-						<div style="display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end">
+				<li class="doc" data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
+					<div>
+						<a class="title" href="{{ doc.url }}">{{ doc.title }}</a><br />
+						<div class="tags">
 							{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
 						</div>
 					</div>
-					<div style="display:flex">
-						<div style="flex-grow:1">
+					<div >
+						<div class="authors">
 							{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span class="author">, </span>{% endif %}{% endfor %}&nbsp;
 						</div>
-						<div style="display: flex; align-items:flex-end" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
-							<a class="date" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a>
+						<div class="date" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
+							<a href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a>
 						</div>
 					</div>
 				</li>
