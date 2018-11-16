@@ -66,9 +66,9 @@ layout: null
 				{% endfor %}
 
 				<li data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
-					<div style="width:100%; display:flex">
-						<a href="{{ doc.url }}" style="flex-grow:1">{{ doc.title }}</a><br />
-						<div style="max-width:20%; display:flex; flex-wrap: wrap; justify-content:flex-end">
+					<div style="display:flex">
+						<a style="max-width:80%" href="{{ doc.url }}" style="flex-grow:1">{{ doc.title }}</a><br />
+						<div style="display:flex; flex-wrap: wrap; justify-content:flex-end">
 							{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
 						</div>
 					</div>
