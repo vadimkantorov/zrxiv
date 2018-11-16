@@ -23,16 +23,15 @@ layout: null
 			ul li:nth-child(2n){background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			ul li:last-child{border-bottom:1px solid #dfe2e5}
 			
-			.tag {color:red;}
-			/*.tag:not(:last-child), .tag:only-child {margin-right:5px}*/
+			h1 {overflow-y:auto}
+			
+			.tag {color:red; margin-right: 5px}
 			.tag::before {content: "★"}
 			
 			.author {color:lightgray; font-size:small}
 			.date {display: flex; align-items:flex-end}
 			.date>a {color:lightgray; font-size:small; white-space:nowrap; margin-right:5px}
-			
-			h1 {overflow-y:auto}
-			
+						
 			.doc>div {display:flex}
 			.title {flex-grow:1; /*max-width:80%*/}
 			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end}
