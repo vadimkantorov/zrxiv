@@ -16,6 +16,7 @@ layout: null
 		<meta property="og:image" content="{{ site.github.url }}/logo.png" />
 		<link rel="icon" href="logo.png" />
 		<link rel="canonical" href="{{ site.github.url }}" />
+		<!--<link rel="stylesheet" href="style.css">-->
 		<style>
 			html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 			body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:14px;line-height:1.5;color:#24292e;background-color:#fff}
@@ -31,10 +32,14 @@ layout: null
 			ul {margin: 0px}
 			ul li{padding:6px 13px;border:1px solid #dfe2e5; margin:0px !important}
 			ul li:nth-child(2n){background-color:#f6f8fa; border-top:0px}
+			ul {list-style:none; padding:0}
 			
 			.tag {color:red;}
 			.tag:not(:first-child) {margin-left:1em}
 			.tag:before {content: "★"}
+			
+			.author {color:lightgray}
+			.date {color:lightgray}
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
@@ -51,36 +56,35 @@ layout: null
 		{% assign docs = (docs | sort: 'date') | reverse %}
 		
 		<div class="container-lg px-3 my-5 markdown-body">
-		<h1 style="overflow-y:auto"><a href="{{ site.github.url }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span style="float:right; font-size:small; color:lightgray" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">{{ site.data.documents | size }} docs @ {{ site.time | date: "%Y-%m-%d %H:%M" }} GMT</span></h1>
-		<div>
-			{% for tag in sortedtags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
-		</div>
-		<br />
-		<table style="width:100%; table-layout:auto">
-			{% for doc in docs %}
-			{% assign lastnames = "" | split:"," %}
-			{% for author in doc.author %}
-				{% assign lastname = (author | split: " ") | last %}
-				{% assign lastnames = lastnames | push: lastname %}
-			{% endfor %}
+			<h1 style="overflow-y:auto"><a href="{{ site.github.url }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span style="float:right; font-size:small; color:lightgray" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">{{ site.data.documents | size }} docs @ {{ site.time | date: "%Y-%m-%d %H:%M" }} GMT</span></h1>
+			<div>{% for tag in sortedtags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
+			<br />
+			<ul>
+				{% for doc in docs %}
+				{% assign lastnames = "" | split:"," %}
+				{% for author in doc.author %}
+					{% assign lastname = (author | split: " ") | last %}
+					{% assign lastnames = lastnames | push: lastname %}
+				{% endfor %}
 
-			<tr data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
-				<td style="vertical-align:top; width:100%; border-right: none">
-					<a href="{{ doc.url }}">{{ doc.title }}</a><br />
-					{% for author in doc.author %}
-						{% assign lastname = (author | split: " ") | last %}
-						<small><a href="#/author/{{ lastname }}" style="color:lightgray" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span style="color:lightgray">, </span>{% endif %}</small>
-					{% endfor %}&nbsp;
-				</td>
-				<td style="white-space:nowrap; vertical-align:top; position:relative; border-left: none" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
-					<div style="position: absolute; right: 1em">
-						{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
-					</div><br />
-					<small><a style="color:lightgray;" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></small>
-				</td>
-			</tr>
-			{% endfor %}
-		</table>
+				<li data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
+					<div style="width:100%; display:flex">
+						<a href="{{ doc.url }}" style="flex-grow:1">{{ doc.title }}</a><br />
+						<div style="max-width:20%; display:flex; flex-wrap: wrap; justify-content:flex-end">
+							{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
+						</div>
+					</div>
+					<div style="display:flex">
+						<div style="flex-grow:1">
+							{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<small><a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% if forloop.last != true %}<span class="author">, </span>{% endif %}</small>{% endfor %}&nbsp;
+						</div>
+						<div title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">
+							<small><a class="date" href="#/date/{{ doc.date | date: "%Y-%m-%d" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></small>
+						</div>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
 		</div>
 		<script type="text/javascript">
 			function navigate()
