@@ -29,13 +29,13 @@ layout: null
 			.tag::before {content: "★"}
 			
 			.author {color:lightgray; font-size:small}
-			.date {display: flex; align-items:flex-end}
 			.date>a {color:lightgray; font-size:small; white-space:nowrap; margin-right:5px}
 						
 			.doc>div {display:flex}
 			.title {flex-grow:1; /*max-width:80%*/}
 			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end}
-			.authors {flex-grow:1}
+			.authors {display:flex; flex-grow:1; flex-wrap:wrap;}
+			.date {display: flex; align-items:flex-end}
 			
 			a.author:not(:last-child)::after {content: ","; margin-right: 2pt}
 		</style>
