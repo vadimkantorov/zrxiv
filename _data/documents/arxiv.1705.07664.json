@@ -1,0 +1,16 @@
+{
+  "title": "CayleyNets: Graph Convolutional Neural Networks with Complex Rational\n  Spectral Filters",
+  "author": [
+    "Ron Levie",
+    "Federico Monti",
+    "Xavier Bresson",
+    "Michael M. Bronstein"
+  ],
+  "abstract": "  The rise of graph-structured data such as social networks, regulatory\nnetworks, citation graphs, and functional brain networks, in combination with\nresounding success of deep learning in various applications, has brought the\ninterest in generalizing deep learning models to non-Euclidean domains. In this\npaper, we introduce a new spectral domain convolutional architecture for deep\nlearning on graphs. The core ingredient of our model is a new class of\nparametric rational complex functions (Cayley polynomials) allowing to\nefficiently compute spectral filters on graphs that specialize on frequency\nbands of interest. Our model generates rich spectral filters that are localized\nin space, scales linearly with the size of the input data for\nsparsely-connected graphs, and can handle different constructions of Laplacian\noperators. Extensive experimental results show the superior performance of our\napproach, in comparison to other spectral domain convolutional architectures,\non spectral image classification, community detection, vertex classification\nand matrix completion tasks.\n",
+  "id": "arxiv.1705.07664",
+  "url": "https://arxiv.org/abs/1705.07664",
+  "pdf": "https://arxiv.org/pdf/1705.07664",
+  "source": "arxiv.org",
+  "date": 1542649368,
+  "tags": []
+}
