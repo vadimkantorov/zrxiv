@@ -1,0 +1,17 @@
+{
+  "title": "Exploring the structure of a real-time, arbitrary neural artistic\n  stylization network",
+  "author": [
+    "Golnaz Ghiasi",
+    "Honglak Lee",
+    "Manjunath Kudlur",
+    "Vincent Dumoulin",
+    "Jonathon Shlens"
+  ],
+  "abstract": "  In this paper, we present a method which combines the flexibility of the\nneural algorithm of artistic style with the speed of fast style transfer\nnetworks to allow real-time stylization using any content/style image pair. We\nbuild upon recent work leveraging conditional instance normalization for\nmulti-style transfer networks by learning to predict the conditional instance\nnormalization parameters directly from a style image. The model is successfully\ntrained on a corpus of roughly 80,000 paintings and is able to generalize to\npaintings previously unobserved. We demonstrate that the learned embedding\nspace is smooth and contains a rich structure and organizes semantic\ninformation associated with paintings in an entirely unsupervised manner.\n",
+  "id": "arxiv.1705.06830",
+  "url": "https://arxiv.org/abs/1705.06830",
+  "pdf": "https://arxiv.org/pdf/1705.06830",
+  "source": "arxiv.org",
+  "date": 1542669476,
+  "tags": []
+}
