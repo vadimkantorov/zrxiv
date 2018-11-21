@@ -1,0 +1,14 @@
+{
+  "title": "Splitting Methods for Convex Clustering",
+  "author": [
+    "Eric C. Chi",
+    "Kenneth Lange"
+  ],
+  "abstract": "  Clustering is a fundamental problem in many scientific applications. Standard\nmethods such as $k$-means, Gaussian mixture models, and hierarchical\nclustering, however, are beset by local minima, which are sometimes drastically\nsuboptimal. Recently introduced convex relaxations of $k$-means and\nhierarchical clustering shrink cluster centroids toward one another and ensure\na unique global minimizer. In this work we present two splitting methods for\nsolving the convex clustering problem. The first is an instance of the\nalternating direction method of multipliers (ADMM); the second is an instance\nof the alternating minimization algorithm (AMA). In contrast to previously\nconsidered algorithms, our ADMM and AMA formulations provide simple and unified\nframeworks for solving the convex clustering problem under the previously\nstudied norms and open the door to potentially novel norms. We demonstrate the\nperformance of our algorithm on both simulated and real data examples. While\nthe differences between the two algorithms appear to be minor on the surface,\ncomplexity analysis and numerical experiments show AMA to be significantly more\nefficient.\n",
+  "id": "arxiv.1304.0499",
+  "url": "https://arxiv.org/abs/1304.0499",
+  "pdf": "https://arxiv.org/pdf/1304.0499",
+  "source": "arxiv.org",
+  "date": 1542802029,
+  "tags": []
+}
