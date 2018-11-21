@@ -1,0 +1,14 @@
+{
+  "title": "Effective operator formalism for open quantum systems",
+  "author": [
+    "Florentin Reiter",
+    "Anders S. Sørensen"
+  ],
+  "abstract": "  We present an effective operator formalism for open quantum systems.\nEmploying perturbation theory and adiabatic elimination of excited states for a\nweakly driven system, we derive an effective master equation which reduces the\nevolution to the ground-state dynamics. The effective evolution involves a\nsingle effective Hamiltonian and one effective Lindblad operator for each\nnaturally occurring decay process. Simple expressions are derived for the\neffective operators which can be directly applied to reach effective equations\nof motion for the ground states. We compare our method with the hitherto\nexisting concepts for effective interactions and present physical examples for\nthe application of our formalism, including dissipative state preparation by\nengineered decay processes.\n",
+  "id": "arxiv.1112.2806",
+  "url": "https://arxiv.org/abs/1112.2806",
+  "pdf": "https://arxiv.org/pdf/1112.2806",
+  "source": "arxiv.org",
+  "date": 1542810469,
+  "tags": []
+}
