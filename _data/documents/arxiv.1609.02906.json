@@ -1,0 +1,13 @@
+{
+  "title": "Robust Spectral Detection of Global Structures in the Data by Learning a\n  Regularization",
+  "author": [
+    "Pan Zhang"
+  ],
+  "abstract": "  Spectral methods are popular in detecting global structures in the given data\nthat can be represented as a matrix. However when the data matrix is sparse or\nnoisy, classic spectral methods usually fail to work, due to localization of\neigenvectors (or singular vectors) induced by the sparsity or noise. In this\nwork, we propose a general method to solve the localization problem by learning\na regularization matrix from the localized eigenvectors. Using matrix\nperturbation analysis, we demonstrate that the learned regularizations suppress\ndown the eigenvalues associated with localized eigenvectors and enable us to\nrecover the informative eigenvectors representing the global structure. We show\napplications of our method in several inference problems: community detection\nin networks, clustering from pairwise similarities, rank estimation and matrix\ncompletion problems. Using extensive experiments, we illustrate that our method\nsolves the localization problem and works down to the theoretical detectability\nlimits in different kinds of synthetic data. This is in contrast with existing\nspectral algorithms based on data matrix, non-backtracking matrix, Laplacians\nand those with rank-one regularizations, which perform poorly in the sparse\ncase with noise.\n",
+  "id": "arxiv.1609.02906",
+  "url": "https://arxiv.org/abs/1609.02906",
+  "pdf": "https://arxiv.org/pdf/1609.02906",
+  "source": "arxiv.org",
+  "date": 1542816613,
+  "tags": []
+}
