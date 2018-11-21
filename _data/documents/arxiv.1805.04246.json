@@ -1,0 +1,13 @@
+{
+  "title": "Convex Programming Based Spectral Clustering",
+  "author": [
+    "Tomohiko Mizutani"
+  ],
+  "abstract": "  Clustering is a fundamental task in data analysis, and spectral clustering\nhas been recognized as a promising approach to it. Given a graph describing the\nrelationship between data, spectral clustering explores the underlying cluster\nstructure in two stages. The first stage embeds the nodes of the graph into\nreal space, and the second stage groups the embedded nodes into several\nclusters. The use of the $k$-means method in the grouping stage is currently\nstandard practice. We present a spectral clustering algorithm that uses convex\nprogramming in the grouping stage, and study how well it works. The concept\nbehind the algorithm design lies in the following observation. The nodes with\nthe largest degree in each cluster may be found by computing an enclosing\nellipsoid for embedded nodes in real space, and the clusters may be identified\nby using those nodes. We show that the observations are valid, and the\nalgorithm returns clusters to provide the conductance of graph, if the gap\nassumption, introduced by Peng el al. at COLT 2015, is satisfied. We also give\nan experimental assessment of the algorithm's performance.\n",
+  "id": "arxiv.1805.04246",
+  "url": "https://arxiv.org/abs/1805.04246",
+  "pdf": "https://arxiv.org/pdf/1805.04246",
+  "source": "arxiv.org",
+  "date": 1542811265,
+  "tags": []
+}
