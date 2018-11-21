@@ -1,0 +1,15 @@
+{
+  "title": "Convex Clustering: Model, Theoretical Guarantee and Efficient Algorithm",
+  "author": [
+    "Defeng Sun",
+    "Kim-Chuan Toh",
+    "Yancheng Yuan"
+  ],
+  "abstract": "  Clustering is a fundamental problem in unsupervised learning. Popular methods\nlike K-means, may suffer from poor performance as they are prone to get stuck\nin its local minima. Recently, the sum-of-norms (SON) model (also known as the\nclustering path) has been proposed in Pelckmans et al. (2005), Lindsten et al.\n(2011) and Hocking et al. (2011). The perfect recovery properties of the convex\nclustering model with uniformly weighted all pairwise-differences\nregularization have been proved by Zhu et al. (2014) and Panahi et al. (2017).\nHowever, no theoretical guarantee has been established for the general weighted\nconvex clustering model, where better empirical results have been observed. In\nthe numerical optimization aspect, although algorithms like the alternating\ndirection method of multipliers (ADMM) and the alternating minimization\nalgorithm (AMA) have been proposed to solve the convex clustering model (Chi\nand Lange, 2015), it still remains very challenging to solve large-scale\nproblems. In this paper, we establish sufficient conditions for the perfect\nrecovery guarantee of the general weighted convex clustering model, which\ninclude and improve existing theoretical results as special cases. In addition,\nwe develop a semismooth Newton based augmented Lagrangian method for solving\nlarge-scale convex clustering problems. Extensive numerical experiments on both\nsimulated and real data demonstrate that our algorithm is highly efficient and\nrobust for solving large-scale problems. Moreover, the numerical results also\nshow the superior performance and scalability of our algorithm comparing to the\nexisting first-order methods. In particular, our algorithm is able to solve a\nconvex clustering problem with 200,000 points in $\\mathbb{R}^3$ in about 6\nminutes.\n",
+  "id": "arxiv.1810.02677",
+  "url": "https://arxiv.org/abs/1810.02677",
+  "pdf": "https://arxiv.org/pdf/1810.02677",
+  "source": "arxiv.org",
+  "date": 1542802032,
+  "tags": []
+}
