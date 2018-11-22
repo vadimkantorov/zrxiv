@@ -1,0 +1,17 @@
+{
+  "title": "Stable Opponent Shaping in Differentiable Games",
+  "author": [
+    "Alistair Letcher",
+    "Jakob Foerster",
+    "David Balduzzi",
+    "Tim Rocktäschel",
+    "Shimon Whiteson"
+  ],
+  "abstract": "  A growing number of learning methods are actually \\emph{games} which optimise\nmultiple, interdependent objectives in parallel -- from GANs and intrinsic\ncuriosity to multi-agent RL. Opponent shaping is a powerful approach to improve\nlearning dynamics in such games, accounting for the fact that the 'environment'\nincludes agents adapting to one another's updates. Learning with\nOpponent-Learning Awareness (LOLA) is a recent algorithm which exploits this\ndynamic response and encourages cooperation in settings like the Iterated\nPrisoner's Dilemma. Although experimentally successful, we show that LOLA can\nexhibit 'arrogant' behaviour directly at odds with convergence. In fact,\nremarkably few algorithms have theoretical guarantees applying across all\ndifferentiable games. In this paper we present Stable Opponent Shaping (SOS), a\nnew method that interpolates between LOLA and a stable variant named LookAhead.\nWe prove that LookAhead locally converges and avoids strict saddles in\n\\emph{all differentiable games}, the strongest results in the field so far. SOS\ninherits these desirable guarantees, while also shaping the learning of\nopponents and consistently either matching or outperforming LOLA\nexperimentally.\n",
+  "id": "arxiv.1811.08469",
+  "url": "https://arxiv.org/abs/1811.08469",
+  "pdf": "https://arxiv.org/pdf/1811.08469",
+  "source": "arxiv.org",
+  "date": 1542907270,
+  "tags": []
+}
