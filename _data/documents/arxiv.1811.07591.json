@@ -1,0 +1,15 @@
+{
+  "title": "Deep Frank-Wolfe For Neural Network Optimization",
+  "author": [
+    "Leonard Berrada",
+    "Andrew Zisserman",
+    "M. Pawan Kumar"
+  ],
+  "abstract": "  Learning a deep neural network requires solving a challenging optimization\nproblem: it is a high-dimensional, non-convex and non-smooth minimization\nproblem with a large number of terms. The current practice in neural network\noptimization is to rely on the stochastic gradient descent (SGD) algorithm or\nits adaptive variants. However, SGD requires a hand-designed schedule for the\nlearning rate. In addition, its adaptive variants tend to produce solutions\nthat generalize less well on unseen data than SGD with a hand-designed\nschedule. We present an optimization method that offers empirically the best of\nboth worlds: our algorithm yields good generalization performance while\nrequiring only one hyper-parameter. Our approach is based on a composite\nproximal framework, which exploits the compositional nature of deep neural\nnetworks and can leverage powerful convex optimization algorithms by design.\nSpecifically, we employ the Frank-Wolfe (FW) algorithm for SVM, which computes\nan optimal step-size in closed-form at each time-step. We further show that the\ndescent direction is given by a simple backward pass in the network, yielding\nthe same computational cost per iteration as SGD. We present experiments on the\nCIFAR and SNLI data sets, where we demonstrate the significant superiority of\nour method over Adam, Adagrad, as well as the recently proposed BPGrad and\nAMSGrad. Furthermore, we compare our algorithm to SGD with a hand-designed\nlearning rate schedule, and show that it provides similar generalization while\nconverging faster. The code is publicly available at\nhttps://github.com/oval-group/dfw.\n",
+  "id": "arxiv.1811.07591",
+  "url": "https://arxiv.org/abs/1811.07591",
+  "pdf": "https://arxiv.org/pdf/1811.07591",
+  "source": "arxiv.org",
+  "date": 1543332258,
+  "tags": []
+}
