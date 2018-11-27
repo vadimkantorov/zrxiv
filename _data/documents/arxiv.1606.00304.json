@@ -1,0 +1,15 @@
+{
+  "title": "Efficient multivariate entropy estimation via $k$-nearest neighbour\n  distances",
+  "author": [
+    "Thomas B. Berrett",
+    "Richard J. Samworth",
+    "Ming Yuan"
+  ],
+  "abstract": "  Many statistical procedures, including goodness-of-fit tests and methods for\nindependent component analysis, rely critically on the estimation of the\nentropy of a distribution. In this paper, we seek entropy estimators that are\nefficient and achieve the local asymptotic minimax lower bound with respect to\nsquared error loss. To this end, we study weighted averages of the estimators\noriginally proposed by Kozachenko and Leonenko (1987), based on the $k$-nearest\nneighbour distances of a sample of $n$ independent and identically distributed\nrandom vectors in $\\mathbb{R}^d$. A careful choice of weights enables us to\nobtain an efficient estimator in arbitrary dimensions, given sufficient\nsmoothness, while the original unweighted estimator is typically only efficient\nwhen $d \\leq 3$. In addition to the new estimator proposed and theoretical\nunderstanding provided, our results facilitate the construction of\nasymptotically valid confidence intervals for the entropy of asymptotically\nminimal width.\n",
+  "id": "arxiv.1606.00304",
+  "url": "https://arxiv.org/abs/1606.00304",
+  "pdf": "https://arxiv.org/pdf/1606.00304",
+  "source": "arxiv.org",
+  "date": 1543282364,
+  "tags": []
+}
