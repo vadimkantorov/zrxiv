@@ -1,0 +1,14 @@
+{
+  "title": "A non-parametric k-nearest neighbour entropy estimator",
+  "author": [
+    "Damiano Lombardi",
+    "Sanjay Pant"
+  ],
+  "abstract": "  A non-parametric k-nearest neighbour based entropy estimator is proposed. It\nimproves on the classical Kozachenko-Leonenko estimator by considering\nnon-uniform probability densities in the region of k-nearest neighbours around\neach sample point. It aims at improving the classical estimators in three\nsituations: first, when the dimensionality of the random variable is large;\nsecond, when near-functional relationships leading to high correlation between\ncomponents of the random variable are present; and third, when the marginal\nvariances of random variable components vary significantly with respect to each\nother. Heuristics on the error of the proposed and classical estimators are\npresented. Finally, the proposed estimator is tested for a variety of\ndistributions in successively increasing dimensions and in the presence of a\nnear-functional relationship. Its performance is compared with a classical\nestimator and shown to be a significant improvement.\n",
+  "id": "arxiv.1506.06501",
+  "url": "https://arxiv.org/abs/1506.06501",
+  "pdf": "https://arxiv.org/pdf/1506.06501",
+  "source": "arxiv.org",
+  "date": 1543277872,
+  "tags": []
+}
