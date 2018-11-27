@@ -1,0 +1,17 @@
+{
+  "title": "Fast non parametric entropy estimation for spatial-temporal saliency\n  method",
+  "author": [
+    "Anh Cat Le Ngo",
+    "Guoping Qiu",
+    "Geoff Underwood",
+    "Kenneth Li-Minn Ang",
+    "Jasmine Kah-Phooi Seng"
+  ],
+  "abstract": "  This paper formulates bottom-up visual saliency as center surround\nconditional entropy and presents a fast and efficient technique for the\ncomputation of such a saliency map. It is shown that the new saliency\nformulation is consistent with self-information based saliency,\ndecision-theoretic saliency and Bayesian definition of surprises but also faces\nthe same significant computational challenge of estimating probability density\nin very high dimensional spaces with limited samples. We have developed a fast\nand efficient nonparametric method to make the practical implementation of\nthese types of saliency maps possible. By aligning pixels from the center and\nsurround regions and treating their location coordinates as random variables,\nwe use a k-d partitioning method to efficiently estimating the center surround\nconditional entropy. We present experimental results on two publicly available\neye tracking still image databases and show that the new technique is\ncompetitive with state of the art bottom-up saliency computational methods. We\nhave also extended the technique to compute spatiotemporal visual saliency of\nvideo and evaluate the bottom-up spatiotemporal saliency against eye tracking\ndata on a video taken onboard a moving vehicle with the driver's eye being\ntracked by a head mounted eye-tracker.\n",
+  "id": "arxiv.1301.7661",
+  "url": "https://arxiv.org/abs/1301.7661",
+  "pdf": "https://arxiv.org/pdf/1301.7661",
+  "source": "arxiv.org",
+  "date": 1543277887,
+  "tags": []
+}
