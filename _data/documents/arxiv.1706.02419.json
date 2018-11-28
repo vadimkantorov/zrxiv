@@ -1,0 +1,14 @@
+{
+  "title": "Estimating Mixture Entropy with Pairwise Distances",
+  "author": [
+    "Artemy Kolchinsky",
+    "Brendan D. Tracey"
+  ],
+  "abstract": "  Mixture distributions arise in many parametric and non-parametric settings --\nfor example, in Gaussian mixture models and in non-parametric estimation. It is\noften necessary to compute the entropy of a mixture, but, in most cases, this\nquantity has no closed-form expression, making some form of approximation\nnecessary. We propose a family of estimators based on a pairwise distance\nfunction between mixture components, and show that this estimator class has\nmany attractive properties. For many distributions of interest, the proposed\nestimators are efficient to compute, differentiable in the mixture parameters,\nand become exact when the mixture components are clustered. We prove this\nfamily includes lower and upper bounds on the mixture entropy. The Chernoff\n$\\alpha$-divergence gives a lower bound when chosen as the distance function,\nwith the Bhattacharyya distance providing the tightest lower bound for\ncomponents that are symmetric and members of a location family. The\nKullback-Leibler divergence gives an upper bound when used as the distance\nfunction. We provide closed-form expressions of these bounds for mixtures of\nGaussians, and discuss their applications to the estimation of mutual\ninformation. We then demonstrate that our bounds are significantly tighter than\nwell-known existing bounds using numeric simulations. This estimator class is\nvery useful in optimization problems involving maximization/minimization of\nentropy and mutual information, such as MaxEnt and rate distortion problems.\n",
+  "id": "arxiv.1706.02419",
+  "url": "https://arxiv.org/abs/1706.02419",
+  "pdf": "https://arxiv.org/pdf/1706.02419",
+  "source": "arxiv.org",
+  "date": 1543419473,
+  "tags": []
+}
