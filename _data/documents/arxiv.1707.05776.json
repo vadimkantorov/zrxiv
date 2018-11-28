@@ -1,0 +1,16 @@
+{
+  "title": "Optimizing the Latent Space of Generative Networks",
+  "author": [
+    "Piotr Bojanowski",
+    "Armand Joulin",
+    "David Lopez-Paz",
+    "Arthur Szlam"
+  ],
+  "abstract": "  Generative Adversarial Networks (GANs) have been shown to be able to sample\nimpressively realistic images. GAN training consists of a saddle point\noptimization problem that can be thought of as an adversarial game between a\ngenerator which produces the images, and a discriminator, which judges if the\nimages are real. Both the generator and the discriminator are commonly\nparametrized as deep convolutional neural networks. The goal of this paper is\nto disentangle the contribution of the optimization procedure and the network\nparametrization to the success of GANs. To this end we introduce and study\nGenerative Latent Optimization (GLO), a framework to train a generator without\nthe need to learn a discriminator, thus avoiding challenging adversarial\noptimization problems. We show experimentally that GLO enjoys many of the\ndesirable properties of GANs: learning from large data, synthesizing\nvisually-appealing samples, interpolating meaningfully between samples, and\nperforming linear arithmetic with noise vectors.\n",
+  "id": "arxiv.1707.05776",
+  "url": "https://arxiv.org/abs/1707.05776",
+  "pdf": "https://arxiv.org/pdf/1707.05776",
+  "source": "arxiv.org",
+  "date": 1543434431,
+  "tags": []
+}
