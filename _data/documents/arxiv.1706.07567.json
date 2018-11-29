@@ -1,0 +1,16 @@
+{
+  "title": "Sampling Matters in Deep Embedding Learning",
+  "author": [
+    "Chao-Yuan Wu",
+    "R. Manmatha",
+    "Alexander J. Smola",
+    "Philipp Krähenbühl"
+  ],
+  "abstract": "  Deep embeddings answer one simple question: How similar are two images?\nLearning these embeddings is the bedrock of verification, zero-shot learning,\nand visual search. The most prominent approaches optimize a deep convolutional\nnetwork with a suitable loss function, such as contrastive loss or triplet\nloss. While a rich line of work focuses solely on the loss functions, we show\nin this paper that selecting training examples plays an equally important role.\nWe propose distance weighted sampling, which selects more informative and\nstable examples than traditional approaches. In addition, we show that a simple\nmargin based loss is sufficient to outperform all other loss functions. We\nevaluate our approach on the Stanford Online Products, CAR196, and the\nCUB200-2011 datasets for image retrieval and clustering, and on the LFW dataset\nfor face verification. Our method achieves state-of-the-art performance on all\nof them.\n",
+  "id": "arxiv.1706.07567",
+  "url": "https://arxiv.org/abs/1706.07567",
+  "pdf": "https://arxiv.org/pdf/1706.07567",
+  "source": "arxiv.org",
+  "date": 1543449713,
+  "tags": []
+}
