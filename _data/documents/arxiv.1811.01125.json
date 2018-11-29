@@ -1,0 +1,14 @@
+{
+  "title": "On the Emergence of Lorentz Invariance and Unitarity from the Scattering\n  Facet of Cosmological Polytopes",
+  "author": [
+    "Nima Arkani-Hamed",
+    "Paolo Benincasa"
+  ],
+  "abstract": "  The concepts of Lorentz invariance of local (flat space) physics, and\nunitarity of time evolution and the S-matrix, are famously rigid and robust,\nadmitting no obvious consistent theoretical deformations, and confirmed to\nincredible accuracy by experiments. But neither of these notions seem to appear\ndirectly in describing the spatial correlation functions at future infinity\ncharacterizing the \"boundary\" observables in cosmology. How then can we see\nthem emerge as {\\it exact} concepts from a possible ab-initio theory for the\nlate-time wavefunction of the universe? In this letter we examine this question\nin a simple but concrete setting, for the perturbative wavefunction in a class\nof scalar field models where an ab-initio description of the wavefunction has\nbeen given by \"cosmological polytopes\". Singularities of the wavefunction are\nassociated with facets of the polytope. One of the singularities --\ncorresponding to the \"total energy pole\" -- is well known to be associated with\nthe flat-space scattering amplitude. We show how the combinatorics and geometry\nof this {\\it scattering facet} of the cosmological polytope straightforwardly\nleads to the emergence of Lorentz invariance and unitarity for the S-matrix.\nUnitarity follows from the way boundaries of the scattering facet factorize\ninto products of lower-dimensional polytopes, while Lorentz invariance follows\nfrom a contour integral representation of the canonical form, which exists for\nany polytope, specialized to cosmological polytopes.\n",
+  "id": "arxiv.1811.01125",
+  "url": "https://arxiv.org/abs/1811.01125",
+  "pdf": "https://arxiv.org/pdf/1811.01125",
+  "source": "arxiv.org",
+  "date": 1543501968,
+  "tags": []
+}
