@@ -1,0 +1,16 @@
+{
+  "title": "Understanding the impact of entropy in policy learning",
+  "author": [
+    "Zafarali Ahmed",
+    "Nicolas Le Roux",
+    "Mohammad Norouzi",
+    "Dale Schuurmans"
+  ],
+  "abstract": "  Entropy regularization is commonly used to improve policy optimization in\nreinforcement learning. It is believed to help with \\exploration by encouraging\nthe selection of more stochastic policies. In this work, we analyze this claim\nand, through new visualizations of the optimization landscape, we observe that\nincorporating entropy in policy optimization serves as a regularizer. We show\nthat even with access to the exact gradient, policy optimization is difficult\ndue to the geometry of the objective function. We qualitatively show that, in\nsome environments, entropy regularization can make the optimization landscape\nsmoother, thereby connecting local optima and enabling the use of larger\nlearning rates. This manuscript presents new tools for understanding the\nunderlying optimization landscape and highlights the challenge of designing\ngeneral-purpose policy optimization algorithms in reinforcement learning.\n",
+  "id": "arxiv.1811.11214",
+  "url": "https://arxiv.org/abs/1811.11214",
+  "pdf": "https://arxiv.org/pdf/1811.11214",
+  "source": "arxiv.org",
+  "date": 1543501256,
+  "tags": []
+}
