@@ -1,0 +1,17 @@
+{
+  "title": "A Closed-form Solution to Photorealistic Image Stylization",
+  "author": [
+    "Yijun Li",
+    "Ming-Yu Liu",
+    "Xueting Li",
+    "Ming-Hsuan Yang",
+    "Jan Kautz"
+  ],
+  "abstract": "  Photorealistic image stylization concerns transferring style of a reference\nphoto to a content photo with the constraint that the stylized photo should\nremain photorealistic. While several photorealistic image stylization methods\nexist, they tend to generate spatially inconsistent stylizations with\nnoticeable artifacts. In this paper, we propose a method to address these\nissues. The proposed method consists of a stylization step and a smoothing\nstep. While the stylization step transfers the style of the reference photo to\nthe content photo, the smoothing step ensures spatially consistent\nstylizations. Each of the steps has a closed-form solution and can be computed\nefficiently. We conduct extensive experimental validations. The results show\nthat the proposed method generates photorealistic stylization outputs that are\nmore preferred by human subjects as compared to those by the competing methods\nwhile running much faster. Source code and additional results are available at\nhttps://github.com/NVIDIA/FastPhotoStyle .\n",
+  "id": "arxiv.1802.06474",
+  "url": "https://arxiv.org/abs/1802.06474",
+  "pdf": "https://arxiv.org/pdf/1802.06474",
+  "source": "arxiv.org",
+  "date": 1543498869,
+  "tags": []
+}
