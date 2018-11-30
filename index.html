@@ -69,7 +69,7 @@ layout: null
 
 				<li class="doc" data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
 					<div>
-						<div class="title"><a class="title" href="{{ doc.url }}">{{ doc.title }}</a></div>
+						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract }}">{{ doc.title }}</a></div>
 						<div class="tags">{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
