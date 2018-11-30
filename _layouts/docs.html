@@ -69,11 +69,11 @@
 				<li class="doc" data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
 					<div>
 						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract }}">{{ doc.title }}</a></div>
-						<div class="tags">{% for tag in doc.tags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
+						<div class="tags">{% for tag in doc.tags %}<a href="all#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
-						<div class="authors">{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date"><a href="#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+						<div class="authors">{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="all#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
+						<div class="date"><a href="all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
