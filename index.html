@@ -34,6 +34,7 @@ layout: null
 			.doc>div {display:flex}
 			.title {flex-grow:1; /*max-width:80%*/}
 			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end}
+			.tags_header {display:flex; flex-wrap: wrap;}
 			.authors {display:flex; flex-grow:1; flex-wrap:wrap;}
 			.date {display: flex; align-items:flex-end}
 			
@@ -55,10 +56,12 @@ layout: null
 		{% endfor %}
 		{% assign docs = (docs | sort: 'date') | reverse %}
 		{% assign num_docs = site.data.documents | size %}
+		{% assign recent_docs = site.recent_docs %}
+		{% if num_docs < recent_docs %}{% assign recent_docs = num_docs %}{% endif %}
 		
 		<div class="container-lg px-3 my-5 markdown-body">
-			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span style="float:right" class="subtitle"><a href="#" class="subtitle"><strong>total {{ num_docs }} docs</strong></a> | <a class="subtitle" href="#">recent {{ 227 | at_most: 50 }} docs</a></span></h1>
-			<div style="display:flex; flex-wrap: wrap;">{% for tag in sortedtags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
+			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span style="float:right" class="subtitle"><a href="#" class="subtitle">total {{ num_docs }} docs</a> | <a class="subtitle" href="#">recent {{ recent_docs }} docs</a></span></h1>
+			<div class="tags_header">{% for tag in sortedtags %}<a href="#/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 			<br />
 			<ul>
 				{% for doc in docs %}
