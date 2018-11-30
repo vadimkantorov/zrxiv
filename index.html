@@ -58,6 +58,7 @@ layout: null
 		{% assign num_docs = site.data.documents | size %}
 		{% assign recent_docs = site.recent_docs %}
 		{% if num_docs < recent_docs %}{% assign recent_docs = num_docs %}{% endif %}
+		{% assign docs = docs | slice: 0, recent_docs %}
 		
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span style="float:right" class="subtitle"><a href="#" class="subtitle">total {{ num_docs }} docs</a> | <a class="subtitle" href="#">recent {{ recent_docs }} docs</a></span></h1>
@@ -87,29 +88,22 @@ layout: null
 		<script type="text/javascript">
 			function navigate()
 			{
-				const route_tags = '#/tag/', route_authors = '#/author/', route_date = '#/date/';
-				if(window.location.hash.startsWith(route_tags))
+				const hash = window.location.hash;
+				const routes = {'#/tag/' : ['data-tags', '~'], '#/author/' : ['data-authors', '~'], '#/date/' : ['data-date', '^']};
+				let route_found = false;
+				for(const route in routes)
 				{
-					const tag = window.location.hash.substr(route_tags.length);
-					document.querySelectorAll('li:not([data-tags~="' + tag + '"])').forEach(el => {el.style.display = 'none'});
-					document.querySelectorAll('li[data-tags~="' + tag + '"]').forEach(el => {el.style.display = ''});
+					if(hash.startsWith(route) && (!route_found))
+					{
+						const arg = hash.substr(route.length);
+						const [field, op] = routes[route];
+						document.querySelectorAll('li:not(['+ field + op + '="' + arg + '"])').forEach(el => {el.style.display = 'none'});
+						document.querySelectorAll('li[' + field + op + '="' + arg + '"]').forEach(el => {el.style.display = ''});
+						route_found = true;
+					}
 				}
-				else if(window.location.hash.startsWith(route_authors))
-				{
-					const author = window.location.hash.substr(route_authors.length);
-					document.querySelectorAll('li:not([data-authors~="' + author + '"])').forEach(el => {el.style.display = 'none'});
-					document.querySelectorAll('li[data-authors~="' + author + '"]').forEach(el => {el.style.display = ''});
-				}
-				else if(window.location.hash.startsWith(route_date))
-				{
-					const date = window.location.hash.substr(route_date.length);
-					document.querySelectorAll('li:not([data-date^="' + date + '"])').forEach(el => {el.style.display = 'none'});
-					document.querySelectorAll('li[data-date^="' + date + '"]').forEach(el => {el.style.display = ''});
-				}
-				else
-				{
+				if(!route_found)
 					document.querySelectorAll('li').forEach(el => {el.style.display = ''});
-				}
 			}
 		</script>
 	</body>
