@@ -84,7 +84,7 @@
 			function reset_doc(li, row_index)
 			{
 				li.hidden = false;
-				if(i % 2 == 1)
+				if(row_index % 2 == 1)
 					li.classList.add('doc-even');
 				else
 					li.classList.remove('doc-even');
