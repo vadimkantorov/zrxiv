@@ -28,7 +28,6 @@
 			.date>a {color:lightgray; font-size:small; white-space:nowrap; margin-right:5px}
 						
 			.doc>div {display:flex}
-			.doc-hidden {display:none}
 			.title {flex-grow:1; /*max-width:80%*/}
 			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end}
 			.tags-header {display:flex; flex-wrap: wrap;}
@@ -93,13 +92,13 @@
 					{
 						const arg = hash.substr(route.length);
 						const [field, op] = routes[route];
-						document.querySelectorAll('li:not(['+ field + op + '="' + arg + '"])').forEach(el => el.classList.add('doc-hidden'));
-						document.querySelectorAll('li[' + field + op + '="' + arg + '"]').forEach(el => el.classList.remove('doc-hidden'));
+						document.querySelectorAll('li:not(['+ field + op + '="' + arg + '"])').forEach(el => {el.hidden = true;});
+						document.querySelectorAll('li[' + field + op + '="' + arg + '"]').forEach(el => {el.hidden = false;});
 						route_found = true;
 					}
 				}
 				if(!route_found)
-					document.querySelectorAll('li').forEach(el => el.classList.remove('doc-hidden'));
+					document.querySelectorAll('li').forEach(el => {el.hidden = false;});
 			}
 		</script>
 	</body>
