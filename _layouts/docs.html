@@ -81,6 +81,15 @@
 			</ul>
 		</div>
 		<script type="text/javascript">
+			function reset_doc(li, row_index)
+			{
+				li.hidden = false;
+				if(i % 2 == 1)
+					li.classList.add('doc-even');
+				else
+					li.classList.remove('doc-even');
+			}
+			
 			function navigate()
 			{
 				const hash = window.location.hash;
@@ -92,13 +101,13 @@
 					{
 						const arg = hash.substr(route.length);
 						const [field, op] = routes[route];
-						document.querySelectorAll('li:not(['+ field + op + '="' + arg + '"])').forEach(el => {el.hidden = true;});
-						document.querySelectorAll('li[' + field + op + '="' + arg + '"]').forEach((el, i) => {el.hidden = false; (i % 2 == 1 ? el.classList.add : el.classList.remove)('doc-even'); });
+						document.querySelectorAll('li:not(['+ field + op + '="' + arg + '"])').forEach(li => {li.hidden = true;});
+						document.querySelectorAll('li[' + field + op + '="' + arg + '"]').forEach(reset_doc);
 						route_found = true;
 					}
 				}
 				if(!route_found)
-					document.querySelectorAll('li').forEach((el, i) => {el.hidden = false; (i % 2 == 1 ? el.classList.add : el.classList.remove)('doc-even'); });
+					document.querySelectorAll('li').forEach(reset_doc);
 			}
 		</script>
 	</body>
