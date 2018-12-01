@@ -83,11 +83,11 @@
 		<script type="text/javascript">
 			function reset_doc(li, row_index)
 			{
-				li.hidden = false;
 				if(row_index % 2 == 1)
 					li.classList.add('doc-even');
 				else
 					li.classList.remove('doc-even');
+				li.hidden = false;
 			}
 			
 			function navigate()
