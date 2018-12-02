@@ -1,6 +1,6 @@
 recent_docs: 50
 
 collections:
-  tags:
+  testcol:
     output: true
     permalink: /:collection/:path/
