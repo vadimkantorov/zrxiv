@@ -1,6 +1,14 @@
 recent_docs: 50
 
 collections:
-  testcol:
+  portfolio:
     output: true
     permalink: /:collection/:path/
+    
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: default
