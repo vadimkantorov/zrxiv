@@ -6,4 +6,4 @@ collections:
     permalink: /:collection/:path/
     
 plugins:
-- jekyll-optional-front-matter
+  - jekyll-optional-front-matter
