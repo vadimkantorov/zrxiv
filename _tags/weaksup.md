@@ -1,5 +1,5 @@
 ---
-layout: null
+collection: tags
 ---
 
 Hi test
