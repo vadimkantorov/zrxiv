@@ -5,10 +5,3 @@ collections:
     output: true
     permalink: /:collection/:path/
     
-defaults:
-  # _tags
-  - scope:
-      path: ""
-      type: tags
-    values:
-      layout: default
