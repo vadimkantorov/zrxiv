@@ -4,6 +4,3 @@ collections:
   tags:
     output: true
     permalink: /:collection/:path/
-    
-plugins:
-  - jekyll-optional-front-matter
