@@ -1,0 +1,16 @@
+{
+  "title": "Deep Counterfactual Regret Minimization",
+  "author": [
+    "Noam Brown",
+    "Adam Lerer",
+    "Sam Gross",
+    "Tuomas Sandholm"
+  ],
+  "abstract": "  Counterfactual Regret Minimization (CFR) is the leading algorithm for solving\nlarge imperfect-information games. It iteratively traverses the game tree in\norder to converge to a Nash equilibrium. In order to deal with extremely large\ngames, CFR typically uses domain-specific heuristics to simplify the target\ngame in a process known as abstraction. This simplified game is solved with\ntabular CFR, and its solution is mapped back to the full game. This paper\nintroduces Deep Counterfactual Regret Minimization (Deep CFR), a form of CFR\nthat obviates the need for abstraction by instead using deep neural networks to\napproximate the behavior of CFR in the full game. We show that Deep CFR is\nprincipled and achieves strong performance in large poker games. This is the\nfirst non-tabular variant of CFR to be successful in large games.\n",
+  "id": "arxiv.1811.00164",
+  "url": "https://arxiv.org/abs/1811.00164",
+  "pdf": "https://arxiv.org/pdf/1811.00164",
+  "source": "arxiv.org",
+  "date": 1543793043,
+  "tags": []
+}
