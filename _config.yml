@@ -3,4 +3,4 @@ recent_docs: 50
 collections:
   tags:
     output: true
-    permalink: /tags/:title
+    permalink: /tags/:title:output_ext
