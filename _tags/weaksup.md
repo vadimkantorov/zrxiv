@@ -1,4 +1,4 @@
 ---
 ---
 
-Hi from tag.
+Hi from tag: {{ site.time }}
