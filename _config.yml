@@ -6,4 +6,5 @@ plugins:
 collections_dir: _data
 collections:
   tags:
-    output: true    
+    output: true
+    permalink: /tags/:title:output_ext
