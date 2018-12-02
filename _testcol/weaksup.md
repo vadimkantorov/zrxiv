@@ -1,5 +1,4 @@
 ---
-collection: tags
 ---
 
 Hi test
