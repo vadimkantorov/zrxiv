@@ -6,4 +6,4 @@ plugins:
 collections:
   tags:
     output: true
-    permalink: /:collection/:name
+    permalink: none
