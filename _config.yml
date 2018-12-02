@@ -1,5 +1,8 @@
 recent_docs: 50
 
+plugins:
+  - jekyll-optional-front-matter
+  
 collections_dir: _data
 collections:
   tags:
