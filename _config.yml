@@ -7,4 +7,4 @@ collections_dir: _data
 collections:
   tags:
     output: true
-    permalink: /tags/:title
+    permalink: /tags/:title.html
