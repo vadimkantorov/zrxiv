@@ -1,14 +1,14 @@
 recent_docs: 50
 
 collections:
-  portfolio:
+  tags:
     output: true
     permalink: /:collection/:path/
     
 defaults:
-  # _portfolio
+  # _tags
   - scope:
       path: ""
-      type: portfolio
+      type: tags
     values:
       layout: default
