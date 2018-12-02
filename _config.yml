@@ -1,1 +1,6 @@
 recent_docs: 50
+
+collections_dir: _data
+collections:
+  tags:
+    output: true    
