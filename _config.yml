@@ -15,4 +15,4 @@ defaults:
     scope:
       type: "pages"
     values:
-      permalink: /:basename/
+      permalink: /tagsaba/:basename/
