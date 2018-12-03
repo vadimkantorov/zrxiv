@@ -2,7 +2,10 @@ recent_docs: 50
 
 data_source: data
 collections_dir: data
-collections:
-  tags:
-    output: true
-    permalink: /:collection/:path/
+
+#collections:
+#  tags:
+#    output: true
+#    permalink: /:collection/:path/
+
+permalink: /tags/:name/
