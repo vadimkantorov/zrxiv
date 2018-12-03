@@ -13,4 +13,4 @@ defaults:
     scope:
       path: "data/tags/*.md"
     values:
-      permalink: /tags/:basename/
+      permalink: /tag/:basename/
