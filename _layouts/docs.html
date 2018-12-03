@@ -43,7 +43,7 @@
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
 		{% assign sortedtags = "" | split: "," %}
-		{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign page_name_size = page.name | size | minus: 3 %}{% assign page_name = page.name | slice: 0, page_name_size %}{% assign sortedtags = sortedtags | push: page_name %}{% endif %}{% endfor %}
+		{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}{% assign sortedtags = sortedtags | push: tag %}{% endif %}{% endfor %}
 		{% assign sortedtags = sortedtags | sort %}
 		
 		{% assign docs = "" | split:"," %}
@@ -54,6 +54,14 @@
 		{% assign recent_docs = site.recent_docs %}
 		{% if num_docs < recent_docs %}{% assign recent_docs = num_docs %}{% endif %}
 		{% if page.recent_docs == true %}{% assign docs = docs | slice: 0, recent_docs %}{% endif %}
+		{% if page.path contains "data/tags/" %}
+			{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}
+			{% assign docs_by_tag = "" | split:"," %}
+			{% for doc in docs %}
+				{% if doc.tags contains tag %}{% assign docs_by_tag = docs_by_tag | push: doc %}{% endif %}
+			{% endfor %}
+			{% assign docs = docs_by_tag %}
+		{% endif %}
 		
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles"><a href="all" class="{% if page.recent_docs == true %}subtitle-unchecked{% else %}subtitle-checked{% endif %}">total {{ num_docs }} docs</a> | <a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a></span></h1>
