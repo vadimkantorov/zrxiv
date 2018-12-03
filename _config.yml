@@ -11,6 +11,6 @@ collections_dir: data
 defaults:
   -
     scope:
-      type: "pages"
+      path: "data/tags/*.md"
     values:
       permalink: /tags/:basename/
