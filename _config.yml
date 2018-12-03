@@ -6,7 +6,7 @@ defaults:
     scope:
       path: "data/tags/*.md"
     values:
-      permalink: /tag/:basename/
+      permalink: /:basename/
       
 plugins:
   - jekyll-optional-front-matter
