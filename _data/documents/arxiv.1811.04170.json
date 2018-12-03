@@ -1,0 +1,15 @@
+{
+  "title": "The Augmented Synthetic Control Method",
+  "author": [
+    "Eli Ben-Michael",
+    "Avi Feller",
+    "Jesse Rothstein"
+  ],
+  "abstract": "  The synthetic control method (SCM) is a popular approach for estimating the\nimpact of a treatment on a single unit in panel data settings. The \"synthetic\ncontrol\" is a weighted average of control units that balances the treated\nunit's pre-treatment outcomes as closely as possible. The curse of\ndimensionality, however, means that SCM does not generally achieve exact\nbalance, which can bias the SCM estimate. We propose an extension, Augmented\nSCM, which uses an outcome model to estimate the bias due to covariate\nimbalance and then de-biases the original SCM estimate, analogous to bias\ncorrection for inexact matching. We motivate this approach by showing that SCM\nis a (regularized) inverse propensity score weighting estimator, with\npre-treatment outcomes as covariates and a ridge penalty on the propensity\nscore coefficients. We give theoretical guarantees for specific cases and\npropose a new inference procedure. We demonstrate gains from Augmented SCM with\nextensive simulation studies and apply this framework to canonical SCM\nexamples. We implement the proposed method in the new augsynth R package.\n",
+  "id": "arxiv.1811.04170",
+  "url": "https://arxiv.org/abs/1811.04170",
+  "pdf": "https://arxiv.org/pdf/1811.04170",
+  "source": "arxiv.org",
+  "date": 1543796846,
+  "tags": []
+}
