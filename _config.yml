@@ -1,7 +1,7 @@
 recent_docs: 50
 
 data_source: data
-collections_dir: datat
+collections_dir: data
 collections:
   tags:
     output: true
