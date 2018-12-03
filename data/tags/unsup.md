@@ -4,5 +4,6 @@
 Hi from tag: {{ site.time }}
 
 {% for page in site.pages %}
-Found {{page.path}}
+{% if page.path contains 'data/tags/' %}
+Found {{page.title}}
 {%endfor%}
