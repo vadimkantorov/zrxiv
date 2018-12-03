@@ -43,7 +43,7 @@
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
 		{% assign sortedtags = "" | split: "," %}
-		{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign sortedtags = sortedtags | push: (page.name | remove: ".md") %}{% endif %}{% endfor %}
+		{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign page_name_size = page.name | size | minus: 3 %}{% assign page_name = page.name | slice: 0, page_name_size %}{% assign sortedtags = sortedtags | push: page_name %}{% endif %}{% endfor %}
 		{% assign sortedtags = sortedtags | sort %}
 		
 		{% assign docs = "" | split:"," %}
