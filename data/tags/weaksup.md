@@ -1,6 +1,3 @@
----
----
-
 Hi from tag: {{ site.time }}
 
 {% for username_ in site.data.subscriptions %}
