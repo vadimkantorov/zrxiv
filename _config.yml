@@ -8,4 +8,4 @@ collections_dir: data
 #    output: true
 #    permalink: /:collection/:path/
 
-permalink: /tags/:basename/
+permalink: /tagsaba/:basename/
