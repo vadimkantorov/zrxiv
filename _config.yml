@@ -1,16 +1,19 @@
 recent_docs: 50
 
 data_source: data
-collections_dir: data
-
-#collections:
-#  tags:
-#    output: true
-#    permalink: /:collection/:path/
-
 defaults:
   -
     scope:
       path: "data/tags/*.md"
     values:
       permalink: /tag/:basename/
+      
+plugins:
+  - jekyll-optional-front-matter
+  
+#collections_dir: data
+#collections:
+#  tags:
+#    output: true
+#    permalink: /:collection/:path/
+
