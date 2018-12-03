@@ -1,0 +1,14 @@
+{
+  "title": "Variational Noise-Contrastive Estimation",
+  "author": [
+    "Benjamin Rhodes",
+    "Michael Gutmann"
+  ],
+  "abstract": "  Unnormalised latent variable models are a broad and flexible class of\nstatistical models. However, learning their parameters from data is\nintractable, and few estimation techniques are currently available for such\nmodels. To increase the number of techniques in our arsenal, we propose\nvariational noise-contrastive estimation (VNCE), building on NCE which is a\nmethod that only applies to unnormalised models. The core idea is to use a\nvariational lower bound to the NCE objective function, which can be optimised\nin the same fashion as the evidence lower bound (ELBO) in standard variational\ninference (VI). We prove that VNCE can be used for both parameter estimation of\nunnormalised models and posterior inference of latent variables. The developed\ntheory shows that VNCE has the same level of generality as standard VI, meaning\nthat advances made there can be directly imported to the unnormalised setting.\nWe validate VNCE on toy models and apply it to a realistic problem of\nestimating an undirected graphical model from incomplete data.\n",
+  "id": "arxiv.1810.08010",
+  "url": "https://arxiv.org/abs/1810.08010",
+  "pdf": "https://arxiv.org/pdf/1810.08010",
+  "source": "arxiv.org",
+  "date": 1543861430,
+  "tags": []
+}
