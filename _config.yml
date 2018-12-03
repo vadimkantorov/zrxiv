@@ -7,7 +7,7 @@ defaults:
       path: "data/tags/*.md"
     values:
       permalink: /:basename/
-      layout: docs
+      layout: default
       
 plugins:
   - jekyll-optional-front-matter
