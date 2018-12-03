@@ -1,5 +1,6 @@
 recent_docs: 50
 
+layouts: ./
 data_source: data
 defaults:
   -
