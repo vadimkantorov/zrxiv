@@ -1,0 +1,19 @@
+{
+  "title": "Entropy and mutual information in models of deep neural networks",
+  "author": [
+    "Marylou Gabrié",
+    "Andre Manoel",
+    "Clément Luneau",
+    "Jean Barbier",
+    "Nicolas Macris",
+    "Florent Krzakala",
+    "Lenka Zdeborová"
+  ],
+  "abstract": "  We examine a class of deep learning models with a tractable method to compute\ninformation-theoretic quantities. Our contributions are three-fold: (i) We show\nhow entropies and mutual informations can be derived from heuristic statistical\nphysics methods, under the assumption that weight matrices are independent and\northogonally-invariant. (ii) We extend particular cases in which this result is\nknown to be rigorously exact by providing a proof for two-layers networks with\nGaussian random weights, using the recently introduced adaptive interpolation\nmethod. (iii) We propose an experiment framework with generative models of\nsynthetic datasets, on which we train deep neural networks with a weight\nconstraint designed so that the assumption in (i) is verified during learning.\nWe study the behavior of entropies and mutual informations throughout learning\nand conclude that, in the proposed setting, the relationship between\ncompression and generalization remains elusive.\n",
+  "id": "arxiv.1805.09785",
+  "url": "https://arxiv.org/abs/1805.09785",
+  "pdf": "https://arxiv.org/pdf/1805.09785",
+  "source": "arxiv.org",
+  "date": 1543841054,
+  "tags": []
+}
