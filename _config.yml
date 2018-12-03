@@ -1,6 +1,6 @@
 recent_docs: 50
 
-layouts_dir: custom
+layouts_dir: /
 data_source: data
 defaults:
   -
