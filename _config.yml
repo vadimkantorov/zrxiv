@@ -1,6 +1,7 @@
 recent_docs: 50
 
 layouts_dir: .
+include: _layout.html
 data_source: data
 defaults:
   -
