@@ -1,0 +1,17 @@
+{
+  "title": "Noise Contrastive Estimation for Scalable Linear Models for One-Class\n  Collaborative Filtering",
+  "author": [
+    "Ga Wu",
+    "Maksims Volkovs",
+    "Chee Loong Soon",
+    "Scott Sanner",
+    "Himanshu Rai"
+  ],
+  "abstract": "  Previous highly scalable one-class collaborative filtering methods such as\nProjected Linear Recommendation (PLRec) have advocated using fast randomized\nSVD to embed items into a latent space, followed by linear regression methods\nto learn personalized recommendation models per user. Unfortunately, naive SVD\nembedding methods often exhibit a popularity bias that skews the ability to\naccurately embed niche items. To address this, we leverage insights from Noise\nContrastive Estimation (NCE) to derive a closed-form, efficiently computable\n\"depopularized\" embedding. While this method is not ideal for direct\nrecommendation using methods like PureSVD since popularity still plays an\nimportant role in recommendation, we find that embedding followed by linear\nregression to learn personalized user models in a novel method we call\nNCE-PLRec leverages the improved item embedding of NCE while correcting for its\npopularity unbiasing in final recommendations. An analysis of the\nrecommendation popularity distribution demonstrates that NCE-PLRec uniformly\ndistributes its recommendations over the popularity spectrum while other\nmethods exhibit distinct biases towards specific popularity subranges, thus\nartificially restricting their recommendations. Empirically, NCE-PLRec\noutperforms state-of-the-art methods as well as various ablations of itself on\na variety of large-scale recommendation datasets.\n",
+  "id": "arxiv.1811.00697",
+  "url": "https://arxiv.org/abs/1811.00697",
+  "pdf": "https://arxiv.org/pdf/1811.00697",
+  "source": "arxiv.org",
+  "date": 1543861427,
+  "tags": []
+}
