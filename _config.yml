@@ -8,4 +8,11 @@ collections_dir: data
 #    output: true
 #    permalink: /:collection/:path/
 
-permalink: /tagsaba/:basename/
+#permalink: /tagsaba/:basename/
+
+defaults:
+  -
+    scope:
+      type: "pages"
+    values:
+      permalink: /:basename/
