@@ -1,5 +1,7 @@
 recent_docs: 50
 
+data_source: data
+
 collections:
   tags:
     output: true
