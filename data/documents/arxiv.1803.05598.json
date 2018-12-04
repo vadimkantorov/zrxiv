@@ -1,0 +1,17 @@
+{
+  "title": "Large Margin Deep Networks for Classification",
+  "author": [
+    "Gamaleldin F. Elsayed",
+    "Dilip Krishnan",
+    "Hossein Mobahi",
+    "Kevin Regan",
+    "Samy Bengio"
+  ],
+  "abstract": "  We present a formulation of deep learning that aims at producing a large\nmargin classifier. The notion of margin, minimum distance to a decision\nboundary, has served as the foundation of several theoretically profound and\nempirically successful results for both classification and regression tasks.\nHowever, most large margin algorithms are applicable only to shallow models\nwith a preset feature representation; and conventional margin methods for\nneural networks only enforce margin at the output layer. Such methods are\ntherefore not well suited for deep networks.\n  In this work, we propose a novel loss function to impose a margin on any\nchosen set of layers of a deep network (including input and hidden layers). Our\nformulation allows choosing any norm on the metric measuring the margin. We\ndemonstrate that the decision boundary obtained by our loss has nice properties\ncompared to standard classification loss functions. Specifically, we show\nimproved empirical results on the MNIST, CIFAR-10 and ImageNet datasets on\nmultiple tasks: generalization from small training sets, corrupted labels, and\nrobustness against adversarial perturbations. The resulting loss is general and\ncomplementary to existing data augmentation (such as random/adversarial input\ntransform) and regularization techniques (such as weight decay, dropout, and\nbatch norm).\n",
+  "id": "arxiv.1803.05598",
+  "url": "https://arxiv.org/abs/1803.05598",
+  "pdf": "https://arxiv.org/pdf/1803.05598",
+  "source": "arxiv.org",
+  "date": 1543924132,
+  "tags": []
+}
