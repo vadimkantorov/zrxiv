@@ -1,0 +1,16 @@
+{
+  "title": "Exponential Family Embeddings",
+  "author": [
+    "Maja R. Rudolph",
+    "Francisco J. R. Ruiz",
+    "Stephan Mandt",
+    "David M. Blei"
+  ],
+  "abstract": "  Word embeddings are a powerful approach for capturing semantic similarity\namong terms in a vocabulary. In this paper, we develop exponential family\nembeddings, a class of methods that extends the idea of word embeddings to\nother types of high-dimensional data. As examples, we studied neural data with\nreal-valued observations, count data from a market basket analysis, and ratings\ndata from a movie recommendation system. The main idea is to model each\nobservation conditioned on a set of other observations. This set is called the\ncontext, and the way the context is defined is a modeling choice that depends\non the problem. In language the context is the surrounding words; in\nneuroscience the context is close-by neurons; in market basket data the context\nis other items in the shopping cart. Each type of embedding model defines the\ncontext, the exponential family of conditional distributions, and how the\nlatent embedding vectors are shared across data. We infer the embeddings with a\nscalable algorithm based on stochastic gradient descent. On all three\napplications - neural activity of zebrafish, users' shopping behavior, and\nmovie ratings - we found exponential family embedding models to be more\neffective than other types of dimension reduction. They better reconstruct\nheld-out data and find interesting qualitative structure.\n",
+  "id": "arxiv.1608.00778",
+  "url": "https://arxiv.org/abs/1608.00778",
+  "pdf": "https://arxiv.org/pdf/1608.00778",
+  "source": "arxiv.org",
+  "date": 1544038015,
+  "tags": []
+}
