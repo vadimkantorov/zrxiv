@@ -1,0 +1,18 @@
+{
+  "title": "A La Carte Embedding: Cheap but Effective Induction of Semantic Feature\n  Vectors",
+  "author": [
+    "Mikhail Khodak",
+    "Nikunj Saunshi",
+    "Yingyu Liang",
+    "Tengyu Ma",
+    "Brandon Stewart",
+    "Sanjeev Arora"
+  ],
+  "abstract": "  Motivations like domain adaptation, transfer learning, and feature learning\nhave fueled interest in inducing embeddings for rare or unseen words, n-grams,\nsynsets, and other textual features. This paper introduces a la carte\nembedding, a simple and general alternative to the usual word2vec-based\napproaches for building such representations that is based upon recent\ntheoretical results for GloVe-like embeddings. Our method relies mainly on a\nlinear transformation that is efficiently learnable using pretrained word\nvectors and linear regression. This transform is applicable on the fly in the\nfuture when a new text feature or rare word is encountered, even if only a\nsingle usage example is available. We introduce a new dataset showing how the a\nla carte method requires fewer examples of words in context to learn\nhigh-quality embeddings and we obtain state-of-the-art results on a nonce task\nand some unsupervised document classification tasks.\n",
+  "id": "arxiv.1805.05388",
+  "url": "https://arxiv.org/abs/1805.05388",
+  "pdf": "https://arxiv.org/pdf/1805.05388",
+  "source": "arxiv.org",
+  "date": 1544037910,
+  "tags": []
+}
