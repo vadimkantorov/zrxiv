@@ -78,7 +78,7 @@
 					{% assign lastnames = lastnames | push: lastname %}
 				{% endfor %}
 
-				<li class="doc {% cycle '', 'doc-even' %}" data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
+				<li class="doc {% cycle '', 'doc-even' %}" data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}" data-bibtex="{{ doc.bibtex | escape }}">
 					<div>
 						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | escape }}">{{ doc.title }}</a></div>
 						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
