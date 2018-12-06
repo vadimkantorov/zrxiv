@@ -128,7 +128,7 @@
 					document.querySelectorAll('li').forEach(reset_doc);
 				
 				const bibtex = Array.from(document.querySelectorAll('li:not([data-bibtex=""]):not([hidden=true])')).map(li => li.dataset.bibtex).join('\n\n');
-				document.querySelector('bibtex').href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
+				document.getElementById('bibtex').href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
 			}
 		</script>
 	</body>
