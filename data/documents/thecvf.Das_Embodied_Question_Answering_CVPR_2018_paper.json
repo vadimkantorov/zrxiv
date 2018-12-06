@@ -1,0 +1,20 @@
+{
+  "title": "Embodied Question Answering",
+  "authors": [
+    "Abhishek Das",
+    "Samyak Datta",
+    "Georgia Gkioxari",
+    "Stefan Lee",
+    "Devi Parikh",
+    "Dhruv Batra"
+  ],
+  "abstract": "We present a new AI task -- Embodied Question Answering (EmbodiedQA) -- where an agent is spawned at a random location in a 3D environment and asked a question (\"What color is the car?\"). In order to answer, the agent must first intelligently navigate to explore the environment, gather necessary visual information through first-person (egocentric) vision, and then answer the question (\"orange\"). EmbodiedQA requires a range of AI skills -- language understanding, visual recognition, active perception, goal-driven navigation, commonsense reasoning, long-term memory, and grounding language into actions. In this work, we develop a dataset of questions and answers in House3D environments, evaluation metrics, and a hierarchical model trained with imitation and reinforcement learning.",
+  "id": "thecvf.Das_Embodied_Question_Answering_CVPR_2018_paper",
+  "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Das_Embodied_Question_Answering_CVPR_2018_paper.html",
+  "pdf": "http://openaccess.thecvf.com/http://openaccess.thecvf.com/content_cvpr_2018/papers/Das_Embodied_Question_Answering_CVPR_2018_paper.pdf",
+  "bibtex": "\n@InProceedings{Das_2018_CVPR,\n\nauthor = {Das, Abhishek and Datta, Samyak and Gkioxari, Georgia and Lee, Stefan and Parikh, Devi and Batra, Dhruv},\n\ntitle = {Embodied Question Answering},\n\nbooktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},\n\nmonth = {June},\n\nyear = {2018}\n\n}\n",
+  "arxiv": "https://arxiv.org/abs/arXiv:1711.11543",
+  "source": "thecvf.com",
+  "date": 1544107598,
+  "tags": []
+}
