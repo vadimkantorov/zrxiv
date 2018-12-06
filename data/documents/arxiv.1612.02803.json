@@ -1,0 +1,16 @@
+{
+  "title": "The Physical Systems Behind Optimization Algorithms",
+  "author": [
+    "Lin F. Yang",
+    "R. Arora",
+    "V. Braverman",
+    "Tuo Zhao"
+  ],
+  "abstract": "  We use differential equations based approaches to provide some {\\it\n\\textbf{physics}} insights into analyzing the dynamics of popular optimization\nalgorithms in machine learning. In particular, we study gradient descent,\nproximal gradient descent, coordinate gradient descent, proximal coordinate\ngradient, and Newton's methods as well as their Nesterov's accelerated variants\nin a unified framework motivated by a natural connection of optimization\nalgorithms to physical systems. Our analysis is applicable to more general\nalgorithms and optimization problems {\\it \\textbf{beyond}} convexity and strong\nconvexity, e.g. Polyak-\\L ojasiewicz and error bound conditions (possibly\nnonconvex).\n",
+  "id": "arxiv.1612.02803",
+  "url": "https://arxiv.org/abs/1612.02803",
+  "pdf": "https://arxiv.org/pdf/1612.02803",
+  "source": "arxiv.org",
+  "date": 1544088737,
+  "tags": []
+}
