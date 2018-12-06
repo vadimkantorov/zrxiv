@@ -1,0 +1,14 @@
+{
+  "title": "Revisiting k-means: New Algorithms via Bayesian Nonparametrics",
+  "author": [
+    "Brian Kulis",
+    "Michael I. Jordan"
+  ],
+  "abstract": "  Bayesian models offer great flexibility for clustering\napplications---Bayesian nonparametrics can be used for modeling infinite\nmixtures, and hierarchical Bayesian models can be utilized for sharing clusters\nacross multiple data sets. For the most part, such flexibility is lacking in\nclassical clustering methods such as k-means. In this paper, we revisit the\nk-means clustering algorithm from a Bayesian nonparametric viewpoint. Inspired\nby the asymptotic connection between k-means and mixtures of Gaussians, we show\nthat a Gibbs sampling algorithm for the Dirichlet process mixture approaches a\nhard clustering algorithm in the limit, and further that the resulting\nalgorithm monotonically minimizes an elegant underlying k-means-like clustering\nobjective that includes a penalty for the number of clusters. We generalize\nthis analysis to the case of clustering multiple data sets through a similar\nasymptotic argument with the hierarchical Dirichlet process. We also discuss\nfurther extensions that highlight the benefits of our analysis: i) a spectral\nrelaxation involving thresholded eigenvectors, and ii) a normalized cut graph\nclustering algorithm that does not fix the number of clusters in the graph.\n",
+  "id": "arxiv.1111.0352",
+  "url": "https://arxiv.org/abs/1111.0352",
+  "pdf": "https://arxiv.org/pdf/1111.0352",
+  "source": "arxiv.org",
+  "date": 1544095783,
+  "tags": []
+}
