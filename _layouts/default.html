@@ -73,7 +73,7 @@
 			<ul>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}
-				{% for author in doc.author %}
+				{% for author in doc.authors %}
 					{% assign lastname = (author | split: " ") | last %}
 					{% assign lastnames = lastnames | push: lastname %}
 				{% endfor %}
@@ -84,7 +84,7 @@
 						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
-						<div class="authors">{% for author in doc.author %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
+						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
 						<div class="date"><a href="{{ site.github.url }}/all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
