@@ -1,0 +1,13 @@
+{
+  "title": "Liberal Radicalism: Formal Rules for a Society Neutral Among Communities",
+  "authors": [],
+  "abstract": "We propose a design for philanthropic or publicly-funded seeding to allow (near) optimal provision of a decentralized, self-organizing ecosystem of public goods. The concept extends ideas from Quadratic Voting to a funding mechanism for endogenous community formation. Individuals make public goods contributions to projects of value to them. The amount received by the project is (proportional to) the square of the sum of the square roots of contributions received. Under the “standard model” this yields first-best public goods provision. Variations can limit the cost, help protect against collusion and aid coordination. We discuss applications to campaign finance, open source software ecosystems, news media finance and urban public projects. More broadly, we offer a resolution to the classic liberal-communitarian debate in political philosophy by providing neutral and non-authoritarian rules that nonetheless support collective organization.",
+  "id": "ssrn.ssrn.3243656",
+  "url": "https://papers.ssrn.com/abstract=3243656",
+  "pdf": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=3243656",
+  "bibtex": "@article{Buterin_2018, title={Liberal Radicalism: Formal Rules for a Society Neutral Among Communities}, ISSN={1556-5068}, url={http://dx.doi.org/10.2139/ssrn.3243656}, DOI={10.2139/ssrn.3243656}, journal={SSRN Electronic Journal }, publisher={Elsevier BV}, author={Buterin, Vitalik and Hitzig, Zoë and Weyl, Eric Glen}, year={2018}}",
+  "source": "ssrn.com",
+  "date": 1544223120,
+  "tags": [],
+  "doi": "10.2139/ssrn.3243656"
+}
