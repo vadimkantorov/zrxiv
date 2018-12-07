@@ -40,8 +40,9 @@
 			.subtitle-checked { font-size:small; color:black }
 			.subtitles {float:right; font-size:small; color:lightgray }
 			
-			#bibtex {margin-left: auto; color: black}
-			#bibtex_copy {height: 0px; width: 0px; overflow: hidden; position: absolute;}
+			#bibtex_download {margin-left: auto; color: black}
+			#bibtex_copy_area {height: 0px; width: 0px; overflow: hidden; position: absolute;}
+			.bibtex_copy::after { content: "| " }
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
@@ -70,7 +71,7 @@
 		{% endif %}
 		
 					    
-		<textarea id="bibtex_copy"></textarea>
+		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles"><a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}">total {{ num_docs }} docs</a> | {% if docs_by_tag %}<a class="subtitle-checked" href="{{ site.github.url }}/{{ tag }}">{{ tag }} {{ docs | size }} docs</a> {% else %}<a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a>{% endif %}</span></h1>
 			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}<a href="#" id="bibtex" download="bibtex.txt">[download bibtex]</a></div>
@@ -90,7 +91,7 @@
 					</div>
 					<div>
 						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a href="#" onclick="bibtex_copy(this)" data-bibtex="{{ doc.bibtex | escape }}">copy bibtex</a> | {% endif %}<a href="{{ site.github.url }}/all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a href="#" onclick="bibtex_copy(this)" data-bibtex="{{ doc.bibtex | escape }}">copy bibtex</a>{% endif %}<a href="{{ site.github.url }}/all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
@@ -113,7 +114,7 @@
 			
 			function bibtex_copy(a)
 			{
-				const textarea = document.getElementById('bibtex_copy');
+				const textarea = document.getElementById('bibtex_copy_area');
 				textarea.value = a.dataset.bibtex;
 				textarea.select();
 				document.execCommand('copy');
