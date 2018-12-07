@@ -1,0 +1,16 @@
+{
+  "title": "Diffusion Processes on Manifolds",
+  "authors": [
+    "Fabrice Debbasch",
+    "Claire Chevalier"
+  ],
+  "abstract": "\nThis is an informal introduction to stochastic analysis on both Riemannian and Lorentzian manifolds. We review the basics underlying the construction of diffusions on manifolds, highlighting the important differences between the Riemannian and Lorentzian cases. We also discuss a few recent applications which range from biophysics to cosmology.\n",
+  "id": "projecteuclid.euclid.imsc_1233152936",
+  "url": "https://projecteuclid.org/euclid.imsc/1233152936",
+  "pdf": "https://projecteuclid.org/download/pdfview_1/euclid.imsc/1233152936",
+  "bibtex": "@inbook{debbasch,\n  address = \"Beachwood, Ohio, USA\",\nauthor = \"Debbasch, Fabrice and Chevalier, Claire\",\nbooktitle = \"Markov Processes and Related Topics: A Festschrift for Thomas G. Kurtz\",\ndoi = \"10.1214/074921708000000318\",\neditor = \"Ethier, Stewart N. and Feng, Jin and Stockbridge, Richard H.\",\npages = \"85--97\",\npublisher = \"Institute of Mathematical Statistics\",\nseries = \"Collections\",\ntitle = \"Diffusion Processes on Manifolds\",\nurl = \"https://doi.org/10.1214/074921708000000318\",\nvolume = \"Volume 4\",\nyear = \"2008\"\n}",
+  "source": "projecteuclid.org",
+  "date": 1544224785,
+  "tags": [],
+  "doi": "10.1214/074921708000000318"
+}
