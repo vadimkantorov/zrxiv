@@ -1,0 +1,15 @@
+{
+  "title": "Octree Generating Networks: Efficient Convolutional Architectures for\n  High-resolution 3D Outputs",
+  "authors": [
+    "Maxim Tatarchenko",
+    "Alexey Dosovitskiy",
+    "Thomas Brox"
+  ],
+  "abstract": "  We present a deep convolutional decoder architecture that can generate\nvolumetric 3D outputs in a compute- and memory-efficient manner by using an\noctree representation. The network learns to predict both the structure of the\noctree, and the occupancy values of individual cells. This makes it a\nparticularly valuable technique for generating 3D shapes. In contrast to\nstandard decoders acting on regular voxel grids, the architecture does not have\ncubic complexity. This allows representing much higher resolution outputs with\na limited memory budget. We demonstrate this in several application domains,\nincluding 3D convolutional autoencoders, generation of objects and whole scenes\nfrom high-level representations, and shape from a single image.\n",
+  "id": "arxiv.1703.09438",
+  "url": "https://arxiv.org/abs/1703.09438",
+  "pdf": "https://arxiv.org/pdf/1703.09438",
+  "source": "arxiv.org",
+  "date": 1544196347,
+  "tags": []
+}
