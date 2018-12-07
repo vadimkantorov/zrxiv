@@ -1,0 +1,16 @@
+{
+  "title": "Sparse Convex Clustering",
+  "authors": [
+    "Binhuan Wang",
+    "Yilong Zhang",
+    "Will Wei Sun",
+    "Yixin Fang"
+  ],
+  "abstract": "  Convex clustering, a convex relaxation of k-means clustering and hierarchical\nclustering, has drawn recent attentions since it nicely addresses the\ninstability issue of traditional nonconvex clustering methods. Although its\ncomputational and statistical properties have been recently studied, the\nperformance of convex clustering has not yet been investigated in the\nhigh-dimensional clustering scenario, where the data contains a large number of\nfeatures and many of them carry no information about the clustering structure.\nIn this paper, we demonstrate that the performance of convex clustering could\nbe distorted when the uninformative features are included in the clustering. To\novercome it, we introduce a new clustering method, referred to as Sparse Convex\nClustering, to simultaneously cluster observations and conduct feature\nselection. The key idea is to formulate convex clustering in a form of\nregularization, with an adaptive group-lasso penalty term on cluster centers.\nIn order to optimally balance the tradeoff between the cluster fitting and\nsparsity, a tuning criterion based on clustering stability is developed. In\ntheory, we provide an unbiased estimator for the degrees of freedom of the\nproposed sparse convex clustering method. Finally, the effectiveness of the\nsparse convex clustering is examined through a variety of numerical experiments\nand a real data application.\n",
+  "id": "arxiv.1601.04586",
+  "url": "https://arxiv.org/abs/1601.04586",
+  "pdf": "https://arxiv.org/pdf/1601.04586",
+  "source": "arxiv.org",
+  "date": 1544220365,
+  "tags": []
+}
