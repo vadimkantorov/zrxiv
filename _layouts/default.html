@@ -140,7 +140,7 @@
 					document.querySelectorAll('.doc').forEach(reset_doc);
 				
 				const bibtex = Array.from(document.querySelectorAll('.doc:not([data-bibtex=""]) a[data-bibtex]')).map(a => a.dataset.bibtex).join('\n\n');
-				document.getElementById('bibtex').href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
+				document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
 			}
 		</script>
 	</body>
