@@ -90,7 +90,7 @@
 					</div>
 					<div>
 						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a href="#" onclick="bibtex_copy(this)" data-bibtex="{{ doc.bibtex | escape }}">[copy bibtex]</a>{% endif %}<a href="{{ site.github.url }}/all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a href="#" onclick="bibtex_copy(this)" data-bibtex="{{ doc.bibtex | escape }}">copy bibtex</a> | {% endif %}<a href="{{ site.github.url }}/all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
