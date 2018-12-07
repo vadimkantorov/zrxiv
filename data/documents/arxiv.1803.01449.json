@@ -1,0 +1,14 @@
+{
+  "title": "Deep Continuous Clustering",
+  "authors": [
+    "Sohil Atul Shah",
+    "Vladlen Koltun"
+  ],
+  "abstract": "  Clustering high-dimensional datasets is hard because interpoint distances\nbecome less informative in high-dimensional spaces. We present a clustering\nalgorithm that performs nonlinear dimensionality reduction and clustering\njointly. The data is embedded into a lower-dimensional space by a deep\nautoencoder. The autoencoder is optimized as part of the clustering process.\nThe resulting network produces clustered data. The presented approach does not\nrely on prior knowledge of the number of ground-truth clusters. Joint nonlinear\ndimensionality reduction and clustering are formulated as optimization of a\nglobal continuous objective. We thus avoid discrete reconfigurations of the\nobjective that characterize prior clustering algorithms. Experiments on\ndatasets from multiple domains demonstrate that the presented algorithm\noutperforms state-of-the-art clustering schemes, including recent methods that\nuse deep networks.\n",
+  "id": "arxiv.1803.01449",
+  "url": "https://arxiv.org/abs/1803.01449",
+  "pdf": "https://arxiv.org/pdf/1803.01449",
+  "source": "arxiv.org",
+  "date": 1544226611,
+  "tags": []
+}
