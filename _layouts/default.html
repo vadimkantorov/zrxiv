@@ -74,7 +74,7 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles"><a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}">total {{ num_docs }} docs</a> | {% if docs_by_tag %}<a class="subtitle-checked" href="{{ site.github.url }}/{{ tag }}">{{ tag }} {{ docs | size }} docs</a> {% else %}<a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a>{% endif %}</span></h1>
-			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}<a href="#" id="bibtex" download="bibtex.txt">[download bibtex]</a></div>
+			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}<a href="#" id="bibtex_download" download="bibtex.txt">[download bibtex]</a></div>
 			<br />
 			<ul>
 				{% for doc in docs %}
@@ -91,7 +91,7 @@
 					</div>
 					<div>
 						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#/author/{{ lastname }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a href="#" onclick="bibtex_copy(this)" data-bibtex="{{ doc.bibtex | escape }}">copy bibtex</a>{% endif %}<a href="{{ site.github.url }}/all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="bibtex_copy(this)" data-bibtex="{{ doc.bibtex | escape }}">copy bibtex</a>{% endif %}<a href="{{ site.github.url }}/all#/date/{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
