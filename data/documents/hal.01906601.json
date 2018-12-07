@@ -1,0 +1,18 @@
+{
+  "title": [
+    "Optimistic optimization of a Brownian"
+  ],
+  "authors": [
+    "Jean-Bastien Grill",
+    "Michal Valko",
+    "Rémi Munos"
+  ],
+  "abstract": "We address the problem of optimizing a Brownian motion. We consider a (random) realization W of a Brownian motion with input space in [0, 1]. Given W, our goal is to return an ε-approximation of its maximum using the smallest possible number of function evaluations, the sample complexity of the algorithm. We provide an algorithm with sample complexity of order log 2 (1/ε). This improves over previous results of Al-Mharmah and Calvin (1996) and Calvin et al. (2017) which provided only polynomial rates. Our algorithm is adaptive-each query depends on previous values-and is an instance of the optimism-in-the-face-of-uncertainty principle.",
+  "id": "hal.01906601",
+  "url": "https://hal.inria.fr/hal-01906601",
+  "pdf": "https://hal.inria.fr/hal-01906601/file/grill2018optimistic.pdf",
+  "bibtex": "@inproceedings{grill:hal-01906601,\n  TITLE = {{Optimistic optimization of a Brownian}},\n  AUTHOR = {Grill, Jean-Bastien and Valko, Michal and Munos, R{\\'e}mi},\n  URL = {https://hal.inria.fr/hal-01906601},\n  BOOKTITLE = {{Neural Information Processing Systems}},\n  ADDRESS = {Montr{\\'e}al, Canada},\n  YEAR = {2018},\n  PDF = {https://hal.inria.fr/hal-01906601/file/grill2018optimistic.pdf},\n  HAL_ID = {hal-01906601},\n  HAL_VERSION = {v1},\n}\n",
+  "source": "hal.archives-ouvertes.fr",
+  "date": 1544203503,
+  "tags": []
+}
