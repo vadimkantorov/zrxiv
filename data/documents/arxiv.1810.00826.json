@@ -1,0 +1,16 @@
+{
+  "title": "How Powerful are Graph Neural Networks?",
+  "authors": [
+    "Keyulu Xu",
+    "Weihua Hu",
+    "Jure Leskovec",
+    "Stefanie Jegelka"
+  ],
+  "abstract": "  Graph Neural Networks (GNNs) for representation learning of graphs broadly\nfollow a neighborhood aggregation framework, where the representation vector of\na node is computed by recursively aggregating and transforming feature vectors\nof its neighboring nodes. Many GNN variants have been proposed and have\nachieved state-of-the-art results on both node and graph classification tasks.\nHowever, despite GNNs revolutionizing graph representation learning, there is\nlimited understanding of their representational properties and limitations.\nHere, we present a theoretical framework for analyzing the expressive power of\nGNNs in capturing different graph structures. Our results characterize the\ndiscriminative power of popular GNN variants, such as Graph Convolutional\nNetworks and GraphSAGE, and show that they cannot learn to distinguish certain\nsimple graph structures. We then develop a simple architecture that is provably\nthe most expressive among the class of GNNs and is as powerful as the\nWeisfeiler-Lehman graph isomorphism test. We empirically validate our\ntheoretical findings on a number of graph classification benchmarks, and\ndemonstrate that our model achieves state-of-the-art performance.\n",
+  "id": "arxiv.1810.00826",
+  "url": "https://arxiv.org/abs/1810.00826",
+  "pdf": "https://arxiv.org/pdf/1810.00826",
+  "source": "arxiv.org",
+  "date": 1544200188,
+  "tags": []
+}
