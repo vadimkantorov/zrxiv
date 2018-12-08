@@ -86,7 +86,7 @@
 
 				<li class="doc {% cycle '', 'doc-even' %}" data-tags="{{ doc.tags | join: ' ' }}" data-authors="{{ lastnames | join: ' ' }}" data-date="{{ doc.date | date: "%Y-%m-%d" }}">
 					<div>
-						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title }}</a> <span class="subtitle-unchecked">{{ doc.source }}</span></div>
+						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a> <span class="subtitle-unchecked">{{ doc.source }}</span></div>
 						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
