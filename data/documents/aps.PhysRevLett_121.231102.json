@@ -1,0 +1,31 @@
+{
+  "title": "Test of the Gravitational Redshift with <i>Galileo</i> Satellites in an Eccentric Orbit",
+  "authors": [
+    "Sven Herrmann",
+    "Felix Finke",
+    "Martin Lülf",
+    "Olga Kichakova",
+    "Dirk Puetzfeld",
+    "Daniela Knickmann",
+    "Meike List",
+    "Benny Rievers",
+    "Gabriele Giorgi",
+    "Christoph Günther",
+    "Hansjörg Dittus",
+    "Roberto Prieto-Cerdeira",
+    "Florian Dilssner",
+    "Francisco Gonzalez",
+    "Erik Schönemann",
+    "Javier Ventura-Traveset",
+    "Claus Lämmerzahl"
+  ],
+  "abstract": "On August 22, 2014, the satellites GSAT-0201 and GSAT-0202 of the European GNSS Galileo were unintentionally launched into eccentric orbits. Unexpectedly, this has become a fortunate scientific opportunity since the onboard hydrogen masers allow for a sensitive test of the redshift predicted by the theory of general relativity. In the present Letter, we describe an analysis of approximately three years of data from these satellites including three different clocks. For one of these, we determine the test parameter quantifying a potential violation of the combined effects of the gravitational redshift and the relativistic Doppler shift. The uncertainty of our result is reduced by more than a factor 4 as compared to the values of Gravity Probe A obtained in 1976.",
+  "id": "aps.PhysRevLett_121.231102",
+  "url": "https://link.aps.org/doi/10.1103/PhysRevLett.121.231102",
+  "pdf": "http://link.aps.org/pdf/10.1103/PhysRevLett.121.231102",
+  "bibtex": "@article{PhysRevLett.121.231102,\n  title = {Test of the Gravitational Redshift with Galileo Satellites in an Eccentric Orbit},\n  author = {Herrmann, Sven and Finke, Felix and L\\\"ulf, Martin and Kichakova, Olga and Puetzfeld, Dirk and Knickmann, Daniela and List, Meike and Rievers, Benny and Giorgi, Gabriele and G\\\"unther, Christoph and Dittus, Hansj\\\"org and Prieto-Cerdeira, Roberto and Dilssner, Florian and Gonzalez, Francisco and Sch\\\"onemann, Erik and Ventura-Traveset, Javier and L\\\"ammerzahl, Claus},\n  journal = {Phys. Rev. Lett.},\n  volume = {121},\n  issue = {23},\n  pages = {231102},\n  numpages = {6},\n  year = {2018},\n  month = {Dec},\n  publisher = {American Physical Society},\n  doi = {10.1103/PhysRevLett.121.231102},\n  url = {https://link.aps.org/doi/10.1103/PhysRevLett.121.231102}\n}\n",
+  "source": "aps.org",
+  "date": 1544290170,
+  "tags": [],
+  "doi": "10.1103/PhysRevLett.121.231102"
+}
