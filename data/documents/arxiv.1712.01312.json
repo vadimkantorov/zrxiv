@@ -1,0 +1,15 @@
+{
+  "title": "Learning Sparse Neural Networks through $L_0$ Regularization",
+  "authors": [
+    "Christos Louizos",
+    "Max Welling",
+    "Diederik P. Kingma"
+  ],
+  "abstract": "  We propose a practical method for $L_0$ norm regularization for neural\nnetworks: pruning the network during training by encouraging weights to become\nexactly zero. Such regularization is interesting since (1) it can greatly speed\nup training and inference, and (2) it can improve generalization. AIC and BIC,\nwell-known model selection criteria, are special cases of $L_0$ regularization.\nHowever, since the $L_0$ norm of weights is non-differentiable, we cannot\nincorporate it directly as a regularization term in the objective function. We\npropose a solution through the inclusion of a collection of non-negative\nstochastic gates, which collectively determine which weights to set to zero. We\nshow that, somewhat surprisingly, for certain distributions over the gates, the\nexpected $L_0$ norm of the resulting gated weights is differentiable with\nrespect to the distribution parameters. We further propose the \\emph{hard\nconcrete} distribution for the gates, which is obtained by \"stretching\" a\nbinary concrete distribution and then transforming its samples with a\nhard-sigmoid. The parameters of the distribution over the gates can then be\njointly optimized with the original network parameters. As a result our method\nallows for straightforward and efficient learning of model structures with\nstochastic gradient descent and allows for conditional computation in a\nprincipled way. We perform various experiments to demonstrate the effectiveness\nof the resulting approach and regularizer.\n",
+  "id": "arxiv.1712.01312",
+  "url": "https://arxiv.org/abs/1712.01312",
+  "pdf": "https://arxiv.org/pdf/1712.01312",
+  "source": "arxiv.org",
+  "date": 1544281685,
+  "tags": []
+}
