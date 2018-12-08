@@ -1,0 +1,15 @@
+{
+  "title": "Recurrent machines for likelihood-free inference",
+  "authors": [
+    "Arthur Pesah",
+    "Antoine Wehenkel",
+    "Gilles Louppe"
+  ],
+  "abstract": "  Likelihood-free inference is concerned with the estimation of the parameters\nof a non-differentiable stochastic simulator that best reproduce real\nobservations. In the absence of a likelihood function, most of the existing\ninference methods optimize the simulator parameters through a handcrafted\niterative procedure that tries to make the simulated data more similar to the\nobservations. In this work, we explore whether meta-learning can be used in the\nlikelihood-free context, for learning automatically from data an iterative\noptimization procedure that would solve likelihood-free inference problems. We\ndesign a recurrent inference machine that learns a sequence of parameter\nupdates leading to good parameter estimates, without ever specifying some\nexplicit notion of divergence between the simulated data and the real data\ndistributions. We demonstrate our approach on toy simulators, showing promising\nresults both in terms of performance and robustness.\n",
+  "id": "arxiv.1811.12932",
+  "url": "https://arxiv.org/abs/1811.12932",
+  "pdf": "https://arxiv.org/pdf/1811.12932",
+  "source": "arxiv.org",
+  "date": 1544311372,
+  "tags": []
+}
