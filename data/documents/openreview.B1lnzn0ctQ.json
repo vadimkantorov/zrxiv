@@ -1,0 +1,14 @@
+{
+  "title": "ALISTA: Analytic Weights Are As Good As Learned Weights in LISTA",
+  "authors": [
+    "Anonymous"
+  ],
+  "abstract": "Deep neural networks based on unfolding an iterative algorithm, for example, LISTA (learned iterative shrinkage thresholding algorithm), have been an empirical success for sparse signal recovery. The weights of these neural networks are currently determined by data-driven “black-box” training. In this work, we propose Analytic LISTA (ALISTA), where the weight matrix in LISTA is computed as the solution to a data-free optimization problem, leaving only the stepsize and threshold parameters to data-driven learning. This signiﬁcantly simpliﬁes the training. Speciﬁcally, the data-free optimization problem is based on coherence minimization. We show our ALISTA retains the optimal linear convergence proved in (Chen et al., 2018) and has a performance comparable to LISTA. Furthermore, we extend ALISTA to convolutional linear operators, again determined in a data-free manner. We also propose a feed-forward framework that combines the data-free optimization and ALISTA networks from end to end, one that can be jointly trained to gain robustness to small perturbations in the encoding model.",
+  "id": "openreview.B1lnzn0ctQ",
+  "url": "https://openreview.net/forum?id=B1lnzn0ctQ",
+  "pdf": "https://openreview.net/pdf/e0e99d0ac0c9aeb1a18abdd037ffc06d0f17e8ce.pdf",
+  "bibtex": "@inproceedings{\n  anonymous2019alista:, \ntitle={ALISTA: Analytic Weights Are As Good As Learned Weights in LISTA},    \nauthor={Anonymous},    \nbooktitle={Submitted to International Conference on Learning Representations},    \nyear={2019},    \nurl={https://openreview.net/forum?id=B1lnzn0ctQ},    \nnote={under review}    \n}",
+  "source": "openreview.net",
+  "date": 1544312065,
+  "tags": []
+}
