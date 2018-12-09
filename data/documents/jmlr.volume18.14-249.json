@@ -1,0 +1,16 @@
+{
+  "title": "Averaged Collapsed Variational Bayes Inference",
+  "authors": [
+    "Katsuhiko Ishiguro",
+    "Issei Sato",
+    "Naonori Ueda"
+  ],
+  "abstract": "This paper presents the Averaged CVB (ACVB) inference and offers\nconvergence-guaranteed and practically useful fast Collapsed\nVariational Bayes (CVB) inferences. CVB inferences yield more\nprecise inferences of Bayesian probabilistic models than\nVariational Bayes (VB) inferences. However, their convergence\naspect is fairly unknown and has not been scrutinized. To make\nCVB more useful, we study their convergence behaviors in a\nempirical and practical approach. We develop a convergence-\nguaranteed algorithm for any CVB-based inference called ACVB,\nwhich enables automatic convergence detection and frees non-\nexpert practitioners from the difficult and costly manual\nmonitoring of inference processes. In experiments, ACVB\ninferences are comparable to or better than those of existing\ninference methods and deterministic, fast, and provide easier\nconvergence detection. These features are especially convenient\nfor practitioners who want precise Bayesian inference with\nassured convergence.",
+  "id": "jmlr.volume18.14-249",
+  "url": "http://jmlr.org/papers/volume18/14-249/14-249.html",
+  "pdf": "http://jmlr.org/papers/volume18/14-249/14-249.pdf",
+  "bibtex": "@article{JMLR:v18:14-249,\n  author  = {Katsuhiko Ishiguro and Issei Sato and Naonori Ueda},\n  title   = {Averaged Collapsed Variational Bayes Inference},\n  journal = {Journal of Machine Learning Research},\n  year    = {2017},\n  volume  = {18},\n  number  = {1},\n  pages   = {1-29},\n  url     = {http://jmlr.org/papers/v18/14-249.html}\n}\n",
+  "source": "jmlr.org",
+  "date": 1544388384,
+  "tags": []
+}
