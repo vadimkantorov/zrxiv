@@ -1,0 +1,17 @@
+{
+  "title": "Lossy Trapdoor Permutations with Improved Lossiness",
+  "authors": [
+    "Benedikt Auerbach",
+    "Eike Kiltz",
+    "Bertram Poettering",
+    "Stefan Schoenen"
+  ],
+  "abstract": "[object Text] [object Text]",
+  "id": "iacr.iacr.2018.1183",
+  "url": "https://ia.cr/2018/1183",
+  "pdf": "https://eprint.iacr.org/2018/1183.pdf",
+  "bibtex": "@misc{cryptoeprint:2018:1183,\n    author = {Benedikt Auerbach and Eike Kiltz and Bertram Poettering and Stefan Schoenen},\n    title = {Lossy Trapdoor Permutations with Improved Lossiness},\n    howpublished = {Cryptology ePrint Archive, Report 2018/1183},\n    year = {2018},\n    note = {\\url{https://eprint.iacr.org/2018/1183}},\n}",
+  "source": "iacr.org",
+  "date": 1544388333,
+  "tags": []
+}
