@@ -1,0 +1,14 @@
+{
+  "title": "An MDL framework for sparse coding and dictionary learning",
+  "authors": [
+    "Ignacio Ramírez",
+    "Guillermo Sapiro"
+  ],
+  "abstract": "  The power of sparse signal modeling with learned over-complete dictionaries\nhas been demonstrated in a variety of applications and fields, from signal\nprocessing to statistical inference and machine learning. However, the\nstatistical properties of these models, such as under-fitting or over-fitting\ngiven sets of data, are still not well characterized in the literature. As a\nresult, the success of sparse modeling depends on hand-tuning critical\nparameters for each data and application. This work aims at addressing this by\nproviding a practical and objective characterization of sparse models by means\nof the Minimum Description Length (MDL) principle -- a well established\ninformation-theoretic approach to model selection in statistical inference. The\nresulting framework derives a family of efficient sparse coding and dictionary\nlearning algorithms which, by virtue of the MDL principle, are completely\nparameter free. Furthermore, such framework allows to incorporate additional\nprior information to existing models, such as Markovian dependencies, or to\ndefine completely new problem formulations, including in the matrix analysis\narea, in a natural way. These virtues will be demonstrated with parameter-free\nalgorithms for the classic image denoising and classification problems, and for\nlow-rank matrix recovery in video applications.\n",
+  "id": "arxiv.1110.2436",
+  "url": "https://arxiv.org/abs/1110.2436",
+  "pdf": "https://arxiv.org/pdf/1110.2436",
+  "source": "arxiv.org",
+  "date": 1544384601,
+  "tags": []
+}
