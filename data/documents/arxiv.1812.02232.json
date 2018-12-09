@@ -1,0 +1,15 @@
+{
+  "title": "Casanova",
+  "authors": [
+    "Kyle Butt",
+    "Derek Sorensen",
+    "Michael Stay"
+  ],
+  "abstract": "  We introduce Casanova, a leaderless optimistic consensus protocol designed\nfor a permissioned blockchain. Casanova produces blocks in a DAG rather than a\nchain, and combines voting rounds with block production by singling out\nindividual conflicting transactions.\n",
+  "id": "arxiv.1812.02232",
+  "url": "https://arxiv.org/abs/1812.02232",
+  "pdf": "https://arxiv.org/pdf/1812.02232",
+  "source": "arxiv.org",
+  "date": 1544393199,
+  "tags": []
+}
