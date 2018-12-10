@@ -1,0 +1,15 @@
+{
+  "title": "A Convergence Theory for Deep Learning via Over-Parameterization",
+  "authors": [
+    "Zeyuan Allen-Zhu",
+    "Yuanzhi Li",
+    "Zhao Song"
+  ],
+  "abstract": "  Deep neural networks (DNNs) have demonstrated dominating performance in many\nfields; since AlexNet, the neural networks used in practice are going wider and\ndeeper. On the theoretical side, a long line of works have been focusing on why\nwe can train neural networks when there is only one hidden layer. The theory of\nmulti-layer networks remains somewhat unsettled.\n  In this work, we prove why simple algorithms such as stochastic gradient\ndescent (SGD) can find $\\textit{global minima}$ on the training objective of\nDNNs. We only make two assumptions: the inputs do not degenerate and the\nnetwork is over-parameterized. The latter means the number of hidden neurons is\nsufficiently large: $\\textit{polynomial}$ in $L$, the number of DNN layers and\nin $n$, the number of training samples.\n  As concrete examples, on the training set and starting from randomly\ninitialized weights, we show that SGD attains 100% accuracy in classification\ntasks, or minimizes regression loss in linear convergence speed $\\varepsilon\n\\propto e^{-\\Omega(T)}$, with a number of iterations that only scales\npolynomial in $n$ and $L$. Our theory applies to the widely-used but non-smooth\nReLU activation, and to any smooth and possibly non-convex loss functions. In\nterms of network architectures, our theory at least applies to fully-connected\nneural networks, convolutional neural networks (CNN), and residual neural\nnetworks (ResNet).\n",
+  "id": "arxiv.1811.03962",
+  "url": "https://arxiv.org/abs/1811.03962",
+  "pdf": "https://arxiv.org/pdf/1811.03962",
+  "source": "arxiv.org",
+  "date": 1544475782,
+  "tags": []
+}
