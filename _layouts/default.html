@@ -115,7 +115,7 @@
 			function bibtex_copy(a)
 			{
 				const textarea = document.getElementById('bibtex_copy_area');
-				textarea.value = a.dataset.bibtex;
+				textarea.value = a.title;
 				textarea.select();
 				document.execCommand('copy');
 			}
