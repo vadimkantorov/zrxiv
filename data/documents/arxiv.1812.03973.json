@@ -1,0 +1,16 @@
+{
+  "title": "Bayesian Layers: A Module for Neural Network Uncertainty",
+  "authors": [
+    "Dustin Tran",
+    "Dusenberry Mike",
+    "Mark van der Wilk",
+    "Danijar Hafner"
+  ],
+  "abstract": "  We describe Bayesian Layers, a module designed for fast experimentation with\nneural network uncertainty. It extends neural network libraries with layers\ncapturing uncertainty over weights (Bayesian neural nets), pre-activation units\n(dropout), activations (\"stochastic output layers\"), and the function itself\n(Gaussian processes). With reversible layers, one can also propagate\nuncertainty from input to output such as for flow-based distributions and\nconstant-memory backpropagation. Bayesian Layers are a drop-in replacement for\nother layers, maintaining core features that one typically desires for\nexperimentation. As demonstration, we fit a 10-billion parameter \"Bayesian\nTransformer\" on 512 TPUv2 cores, which replaces attention layers with their\nBayesian counterpart.\n",
+  "id": "arxiv.1812.03973",
+  "url": "https://arxiv.org/abs/1812.03973",
+  "pdf": "https://arxiv.org/pdf/1812.03973",
+  "source": "arxiv.org",
+  "date": 1544548002,
+  "tags": []
+}
