@@ -1,0 +1,20 @@
+{
+  "title": "Disguised Faces in the Wild",
+  "authors": [
+    "Vineet Kushwaha",
+    "Maneet Singh",
+    "Richa Singh",
+    "Mayank Vatsa",
+    "Nalini Ratha",
+    "Rama Chellappa"
+  ],
+  "abstract": "Existing research in the field of face recognition with variations due to disguises focuses primarily on images captured in controlled settings. Limited research has been performed on images captured in unconstrained environments, primarily due to the lack of corresponding disguised face datasets. In order to overcome this limitation, this work presents a novel Disguised Faces in the Wild (DFW) dataset, consisting of over 11,000 images for understanding and pushing the current state-of-the-art for disguised face recognition. To the best of our knowledge, DFW is a first-of-a-kind dataset containing images pertaining to both obfuscation and impersonation for understanding the effect of disguise variations. A major portion of the dataset has been collected from the Internet, thereby encompassing a wide variety of disguise accessories and variations across other covariates. As part of CVPR2018, a competition and workshop are organized to facilitate research in this direction. This paper presents a description of the dataset, the baseline protocols and performance, along with the phase-I results of the competition.",
+  "id": "cvf.Kushwaha_Disguised_Faces_in_CVPR_2018",
+  "url": "http://openaccess.thecvf.com/content_cvpr_2018_workshops/w1/html/Kushwaha_Disguised_Faces_in_CVPR_2018_paper.html",
+  "pdf": "http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w1/Kushwaha_Disguised_Faces_in_CVPR_2018_paper.pdf",
+  "bibtex": "@inproceedings{Kushwaha_2018_CVPR_Workshops,\n  author = {Kushwaha, Vineet and Singh, Maneet and Singh, Richa and Vatsa, Mayank and Ratha, Nalini and Chellappa, Rama},\n  title = {Disguised Faces in the Wild},\n  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},\n  month = {June},\n  year = {2018}\n}",
+  "source": "thecvf.com",
+  "date": 1544536525,
+  "tags": [],
+  "arxiv": "https://arxiv.org/abs/arXiv:1804.09669"
+}
