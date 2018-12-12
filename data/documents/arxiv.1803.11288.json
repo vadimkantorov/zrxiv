@@ -1,0 +1,13 @@
+{
+  "title": "FutureMapping: The Computational Structure of Spatial AI Systems",
+  "authors": [
+    "Andrew J. Davison"
+  ],
+  "abstract": "  We discuss and predict the evolution of Simultaneous Localisation and Mapping\n(SLAM) into a general geometric and semantic `Spatial AI' perception capability\nfor intelligent embodied devices. A big gap remains between the visual\nperception performance that devices such as augmented reality eyewear or\ncomsumer robots will require and what is possible within the constraints\nimposed by real products. Co-design of algorithms, processors and sensors will\nbe needed. We explore the computational structure of current and future Spatial\nAI algorithms and consider this within the landscape of ongoing hardware\ndevelopments.\n",
+  "id": "arxiv.1803.11288",
+  "url": "https://arxiv.org/abs/1803.11288",
+  "pdf": "https://arxiv.org/pdf/1803.11288",
+  "source": "arxiv.org",
+  "date": 1544644492,
+  "tags": []
+}
