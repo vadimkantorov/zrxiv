@@ -1,0 +1,16 @@
+{
+  "title": "Near-Optimal Representation Learning for Hierarchical Reinforcement Learning",
+  "authors": [
+    "Ofir Nachum",
+    "Shixiang Gu",
+    "Honglak Lee",
+    "Sergey Levine"
+  ],
+  "abstract": "  We study the problem of representation learning in goal-conditioned\nhierarchical reinforcement learning. In such hierarchical structures, a\nhigher-level controller solves tasks by iteratively communicating goals which a\nlower-level policy is trained to reach. Accordingly, the choice of\nrepresentation -- the mapping of observation space to goal space -- is crucial.\nTo study this problem, we develop a notion of sub-optimality of a\nrepresentation, defined in terms of expected reward of the optimal hierarchical\npolicy using this representation. We derive expressions which bound the\nsub-optimality and show how these expressions can be translated to\nrepresentation learning objectives which may be optimized in practice. Results\non a number of difficult continuous-control tasks show that our approach to\nrepresentation learning yields qualitatively better representations as well as\nquantitatively better hierarchical policies, compared to existing methods (see\nvideos at https://sites.google.com/view/representation-hrl).\n",
+  "id": "arxiv.1810.01257",
+  "url": "https://arxiv.org/abs/1810.01257",
+  "pdf": "https://arxiv.org/pdf/1810.01257",
+  "source": "arxiv.org",
+  "date": 1544636885,
+  "tags": []
+}
