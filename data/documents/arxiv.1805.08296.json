@@ -1,0 +1,16 @@
+{
+  "title": "Data-Efficient Hierarchical Reinforcement Learning",
+  "authors": [
+    "Ofir Nachum",
+    "Shixiang Gu",
+    "Honglak Lee",
+    "Sergey Levine"
+  ],
+  "abstract": "  Hierarchical reinforcement learning (HRL) is a promising approach to extend\ntraditional reinforcement learning (RL) methods to solve more complex tasks.\nYet, the majority of current HRL methods require careful task-specific design\nand on-policy training, making them difficult to apply in real-world scenarios.\nIn this paper, we study how we can develop HRL algorithms that are general, in\nthat they do not make onerous additional assumptions beyond standard RL\nalgorithms, and efficient, in the sense that they can be used with modest\nnumbers of interaction samples, making them suitable for real-world problems\nsuch as robotic control. For generality, we develop a scheme where lower-level\ncontrollers are supervised with goals that are learned and proposed\nautomatically by the higher-level controllers. To address efficiency, we\npropose to use off-policy experience for both higher and lower-level training.\nThis poses a considerable challenge, since changes to the lower-level behaviors\nchange the action space for the higher-level policy, and we introduce an\noff-policy correction to remedy this challenge. This allows us to take\nadvantage of recent advances in off-policy model-free RL to learn both higher-\nand lower-level policies using substantially fewer environment interactions\nthan on-policy algorithms. We term the resulting HRL agent HIRO and find that\nit is generally applicable and highly sample-efficient. Our experiments show\nthat HIRO can be used to learn highly complex behaviors for simulated robots,\nsuch as pushing objects and utilizing them to reach target locations, learning\nfrom only a few million samples, equivalent to a few days of real-time\ninteraction. In comparisons with a number of prior HRL methods, we find that\nour approach substantially outperforms previous state-of-the-art techniques.\n",
+  "id": "arxiv.1805.08296",
+  "url": "https://arxiv.org/abs/1805.08296",
+  "pdf": "https://arxiv.org/pdf/1805.08296",
+  "source": "arxiv.org",
+  "date": 1544636887,
+  "tags": []
+}
