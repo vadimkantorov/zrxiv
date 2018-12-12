@@ -1,0 +1,15 @@
+{
+  "title": "Statistical anomalies in 2011-2012 Russian elections revealed by 2D correlation analysis",
+  "authors": [
+    "Dmitry Kobak",
+    "Sergey Shpilkin",
+    "Maxim S. Pshenichnikov"
+  ],
+  "abstract": "  Here we perform a statistical analysis of the official data from recent\nRussian parliamentary and presidential elections (held on December 4th, 2011\nand March 4th, 2012, respectively). A number of anomalies are identified that\npersistently skew the results in favour of the pro-government party, United\nRussia (UR), and its leader Vladimir Putin. The main irregularities are: (i)\nremarkably high correlation between turnout and voting results; (ii) a large\nnumber of polling stations where the UR/Putin results are given by a round\nnumber of percent; (iii) constituencies showing improbably low or (iv)\nanomalously high dispersion of results across polling stations; (v) substantial\ndifference between results at paper-based and electronic polling stations.\nThese anomalies, albeit less prominent in the presidential elections, hardly\nconform to the assumptions of fair and free voting. The approaches proposed\nhere can be readily extended to quantify fingerprints of electoral fraud in any\nother problematic elections.\n",
+  "id": "arxiv.1205.0741",
+  "url": "https://arxiv.org/abs/1205.0741",
+  "pdf": "https://arxiv.org/pdf/1205.0741",
+  "source": "arxiv.org",
+  "date": 1544644069,
+  "tags": []
+}
