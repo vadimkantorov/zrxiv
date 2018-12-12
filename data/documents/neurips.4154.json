@@ -1,0 +1,16 @@
+{
+  "title": "Discriminative Clustering by Regularized Information Maximization",
+  "authors": [
+    "Andreas Krause",
+    "Pietro Perona",
+    "Ryan G. Gomes"
+  ],
+  "abstract": "Is there a principled way to learn a probabilistic discriminative classifier from an unlabeled data set? We present a framework that simultaneously clusters the data and trains a discriminative classifier. We call it Regularized Information Maximization (RIM). RIM optimizes an intuitive information-theoretic objective function which balances class separation, class balance and classifier complexity. The approach can flexibly incorporate different likelihood functions, express prior assumptions about the relative size of different classes and incorporate partial labels for semi-supervised learning. In particular, we instantiate the framework to unsupervised, multi-class kernelized logistic regression. Our empirical evaluation indicates that RIM outperforms existing methods on several real data sets, and demonstrates that RIM is an effective model selection method.",
+  "id": "neurips.4154",
+  "url": "https://papers.nips.cc/paper/4154-discriminative-clustering-by-regularized-information-maximization.html",
+  "pdf": "http://papers.nips.cc/paper/4154-discriminative-clustering-by-regularized-information-maximization.pdf",
+  "bibtex": "@incollection{NIPS2010_4154,\n  title = {Discriminative Clustering by Regularized Information Maximization},\n  author = {Krause, Andreas and Perona, Pietro and Ryan G. Gomes},\n  booktitle = {Advances in Neural Information Processing Systems 23},\n  editor = {J. D. Lafferty and C. K. I. Williams and J. Shawe-Taylor and R. S. Zemel and A. Culotta},\n  pages = {775--783},\n  year = {2010},\n  publisher = {Curran Associates, Inc.},\n  url = {http://papers.nips.cc/paper/4154-discriminative-clustering-by-regularized-information-maximization.pdf}\n}",
+  "source": "nips.cc",
+  "date": 1544657695,
+  "tags": []
+}
