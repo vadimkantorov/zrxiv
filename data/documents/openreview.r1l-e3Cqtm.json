@@ -1,0 +1,14 @@
+{
+  "title": "Deep Probabilistic Video Compression",
+  "authors": [
+    "Anonymous"
+  ],
+  "abstract": "We propose a variational inference approach to deep probabilistic video compression.  Our model uses advances in variational autoencoders (VAEs) for sequential data and combines it with recent work on neural image compression. The approach jointly learns to transform the original video into a  lower-dimensional representation as well as to entropy code this representation according to a temporally-conditioned probabilistic model. We split the latent space into local (per frame) and global (per segment) variables, and show that training the VAE to utilize both representations leads to an improved rate-distortion performance. Evaluation on small videos from public data sets with varying complexity and diversity show that our model yields competitive results when trained on generic video content. Extreme compression performance is achieved for videos with specialized content if the model is trained on similar videos.",
+  "id": "openreview.r1l-e3Cqtm",
+  "url": "https://openreview.net/forum?id=r1l-e3Cqtm",
+  "pdf": "https://openreview.net/pdf/5aec3594d42c20abaaa50a88b19baf85e9c68467.pdf",
+  "bibtex": "@inproceedings{\n  anonymous2019deep,\n  title={Deep Probabilistic Video Compression},\n  author={Anonymous},\n  booktitle={Submitted to International Conference on Learning Representations},\n  year={2019},\n  url={https://openreview.net/forum?id=r1l-e3Cqtm},\n  note={under review}\n}",
+  "source": "openreview.net",
+  "date": 1544671525,
+  "tags": []
+}
