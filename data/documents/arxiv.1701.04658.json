@@ -1,0 +1,16 @@
+{
+  "title": "Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks",
+  "authors": [
+    "Kevis-Kokitsi Maninis",
+    "Jordi Pont-Tuset",
+    "Pablo Arbeláez",
+    "Luc Van Gool"
+  ],
+  "abstract": "  We present Convolutional Oriented Boundaries (COB), which produces multiscale\noriented contours and region hierarchies starting from generic image\nclassification Convolutional Neural Networks (CNNs). COB is computationally\nefficient, because it requires a single CNN forward pass for multi-scale\ncontour detection and it uses a novel sparse boundary representation for\nhierarchical segmentation; it gives a significant leap in performance over the\nstate-of-the-art, and it generalizes very well to unseen categories and\ndatasets. Particularly, we show that learning to estimate not only contour\nstrength but also orientation provides more accurate results. We perform\nextensive experiments for low-level applications on BSDS, PASCAL Context,\nPASCAL Segmentation, and NYUD to evaluate boundary detection performance,\nshowing that COB provides state-of-the-art contours and region hierarchies in\nall datasets. We also evaluate COB on high-level tasks when coupled with\nmultiple pipelines for object proposals, semantic contours, semantic\nsegmentation, and object detection on MS-COCO, SBD, and PASCAL; showing that\nCOB also improves the results for all tasks.\n",
+  "id": "arxiv.1701.04658",
+  "url": "https://arxiv.org/abs/1701.04658",
+  "pdf": "https://arxiv.org/pdf/1701.04658",
+  "source": "arxiv.org",
+  "date": 1544727864,
+  "tags": []
+}
