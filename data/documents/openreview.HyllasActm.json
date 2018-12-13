@@ -1,0 +1,14 @@
+{
+  "title": "End-to-End Learning of Video Compression Using Spatio-Temporal Autoencoders",
+  "authors": [
+    "Anonymous"
+  ],
+  "abstract": "Deep learning (DL) is having a revolutionary impact in image processing, with DL-based approaches now holding the state of the art in many tasks, including image compression. However, video compression has so far resisted the DL revolution, with the very few proposed approaches being based on complex and impractical architectures with multiple networks. This paper proposes what we believe is the first approach to end-to-end learning of a single network for video compression. We tackle the problem in a novel way, avoiding explicit motion estimation/prediction, by formalizing it as the rate-distortion optimization of a single spatio-temporal autoencoder; i.e., we jointly learn a latent-space projection transform and a synthesis transform for low bitrate video compression. The quantizer uses a rounding scheme, which is relaxed during training, and an entropy estimation technique to enforce an information bottleneck, inspired by recent advances in image compression. We compare the obtained video compression networks with standard widely-used codecs, showing better performance than the MPEG-4 standard, being competitive with H.264/AVC for low bitrates. ",
+  "id": "openreview.HyllasActm",
+  "url": "https://openreview.net/forum?id=HyllasActm",
+  "pdf": "https://openreview.net/pdf/1f47583e0f12599fbd9242d5d3da8f404415e069.pdf",
+  "bibtex": "@inproceedings{\n  anonymous2019end-to-end,\n  title={End-to-End Learning of Video Compression Using Spatio-Temporal Autoencoders},\n  author={Anonymous},\n  booktitle={Submitted to International Conference on Learning Representations},\n  year={2019},\n  url={https://openreview.net/forum?id=HyllasActm},\n  note={under review}\n}",
+  "source": "openreview.net",
+  "date": 1544670741,
+  "tags": []
+}
