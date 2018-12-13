@@ -1,0 +1,14 @@
+{
+  "title": "Deep Watershed Transform for Instance Segmentation",
+  "authors": [
+    "Min Bai",
+    "Raquel Urtasun"
+  ],
+  "abstract": "  Most contemporary approaches to instance segmentation use complex pipelines\ninvolving conditional random fields, recurrent neural networks, object\nproposals, or template matching schemes. In our paper, we present a simple yet\npowerful end-to-end convolutional neural network to tackle this task. Our\napproach combines intuitions from the classical watershed transform and modern\ndeep learning to produce an energy map of the image where object instances are\nunambiguously represented as basins in the energy map. We then perform a cut at\na single energy level to directly yield connected components corresponding to\nobject instances. Our model more than doubles the performance of the\nstate-of-the-art on the challenging Cityscapes Instance Level Segmentation\ntask.\n",
+  "id": "arxiv.1611.08303",
+  "url": "https://arxiv.org/abs/1611.08303",
+  "pdf": "https://arxiv.org/pdf/1611.08303",
+  "source": "arxiv.org",
+  "date": 1544728318,
+  "tags": []
+}
