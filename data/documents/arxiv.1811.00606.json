@@ -1,0 +1,14 @@
+{
+  "title": "DeepTileBars: Visualizing Term Distribution for Neural Information Retrieval",
+  "authors": [
+    "Zhiwen Tang",
+    "Grace Hui Yang"
+  ],
+  "abstract": "  Most neural Information Retrieval (Neu-IR) models derive query-to-document\nranking scores based on term-level matching. Inspired by TileBars, a classical\nterm distribution visualization method, in this paper, we propose a novel\nNeu-IR model that handles query-to-document matching at the subtopic and higher\nlevels. Our system first splits the documents into topical segments,\n\"visualizes\" the matchings between the query and the segments, and then feeds\nan interaction matrix into a Neu-IR model, DeepTileBars, to obtain the final\nranking scores. DeepTileBars models the relevance signals occurring at\ndifferent granularities in a document's topic hierarchy. It better captures the\ndiscourse structure of a document and thus the matching patterns. Although its\ndesign and implementation are light-weight, DeepTileBars outperforms other\nstate-of-the-art Neu-IR models on benchmark datasets including the Text\nREtrieval Conference (TREC) 2010-2012 Web Tracks and LETOR 4.0.\n",
+  "id": "arxiv.1811.00606",
+  "url": "https://arxiv.org/abs/1811.00606",
+  "pdf": "https://arxiv.org/pdf/1811.00606",
+  "source": "arxiv.org",
+  "date": 1544823183,
+  "tags": []
+}
