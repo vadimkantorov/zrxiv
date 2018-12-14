@@ -1,0 +1,16 @@
+{
+  "title": "Deep Painterly Harmonization",
+  "authors": [
+    "Fujun Luan",
+    "Sylvain Paris",
+    "Eli Shechtman",
+    "Kavita Bala"
+  ],
+  "abstract": "  Copying an element from a photo and pasting it into a painting is a\nchallenging task. Applying photo compositing techniques in this context yields\nsubpar results that look like a collage --- and existing painterly stylization\nalgorithms, which are global, perform poorly when applied locally. We address\nthese issues with a dedicated algorithm that carefully determines the local\nstatistics to be transferred. We ensure both spatial and inter-scale\nstatistical consistency and demonstrate that both aspects are key to generating\nquality results. To cope with the diversity of abstraction levels and types of\npaintings, we introduce a technique to adjust the parameters of the transfer\ndepending on the painting. We show that our algorithm produces significantly\nbetter results than photo compositing or global stylization techniques and that\nit enables creative painterly edits that would be otherwise difficult to\nachieve.\n",
+  "id": "arxiv.1804.03189",
+  "url": "https://arxiv.org/abs/1804.03189",
+  "pdf": "https://arxiv.org/pdf/1804.03189",
+  "source": "arxiv.org",
+  "date": 1544827349,
+  "tags": []
+}
