@@ -1,0 +1,14 @@
+{
+  "title": "Recurrent Pixel Embedding for Instance Grouping",
+  "authors": [
+    "Shu Kong",
+    "Charless Fowlkes"
+  ],
+  "abstract": "  We introduce a differentiable, end-to-end trainable framework for solving\npixel-level grouping problems such as instance segmentation consisting of two\nnovel components. First, we regress pixels into a hyper-spherical embedding\nspace so that pixels from the same group have high cosine similarity while\nthose from different groups have similarity below a specified margin. We\nanalyze the choice of embedding dimension and margin, relating them to\ntheoretical results on the problem of distributing points uniformly on the\nsphere. Second, to group instances, we utilize a variant of mean-shift\nclustering, implemented as a recurrent neural network parameterized by kernel\nbandwidth. This recurrent grouping module is differentiable, enjoys convergent\ndynamics and probabilistic interpretability. Backpropagating the group-weighted\nloss through this module allows learning to focus on only correcting embedding\nerrors that won't be resolved during subsequent clustering. Our framework,\nwhile conceptually simple and theoretically abundant, is also practically\neffective and computationally efficient. We demonstrate substantial\nimprovements over state-of-the-art instance segmentation for object proposal\ngeneration, as well as demonstrating the benefits of grouping loss for\nclassification tasks such as boundary detection and semantic segmentation.\n",
+  "id": "arxiv.1712.08273",
+  "url": "https://arxiv.org/abs/1712.08273",
+  "pdf": "https://arxiv.org/pdf/1712.08273",
+  "source": "arxiv.org",
+  "date": 1544805676,
+  "tags": []
+}
