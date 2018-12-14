@@ -1,0 +1,22 @@
+{
+  "title": "Music Transformer",
+  "authors": [
+    "Cheng-Zhi Anna Huang",
+    "Ashish Vaswani",
+    "Jakob Uszkoreit",
+    "Noam Shazeer",
+    "Ian Simon",
+    "Curtis Hawthorne",
+    "Andrew M. Dai",
+    "Matthew D. Hoffman",
+    "Monica Dinculescu",
+    "Douglas Eck"
+  ],
+  "abstract": "  Music relies heavily on repetition to build structure and meaning.\nSelf-reference occurs on multiple timescales, from motifs to phrases to reusing\nof entire sections of music, such as in pieces with ABA structure. The\nTransformer (Vaswani et al., 2017), a sequence model based on self-attention,\nhas achieved compelling results in many generation tasks that require\nmaintaining long-range coherence. This suggests that self-attention might also\nbe well-suited to modeling music. In musical composition and performance,\nhowever, relative timing is critically important. Existing approaches for\nrepresenting relative positional information in the Transformer modulate\nattention based on pairwise distance (Shaw et al., 2018). This is impractical\nfor long sequences such as musical compositions since their memory complexity\nfor intermediate relative information is quadratic in the sequence length. We\npropose an algorithm that reduces their intermediate memory requirement to\nlinear in the sequence length. This enables us to demonstrate that a\nTransformer with our modified relative attention mechanism can generate\nminute-long compositions (thousands of steps, four times the length modeled in\nOore et al., 2018) with compelling structure, generate continuations that\ncoherently elaborate on a given motif, and in a seq2seq setup generate\naccompaniments conditioned on melodies. We evaluate the Transformer with our\nrelative attention mechanism on two datasets, JSB Chorales and\nPiano-e-Competition, and obtain state-of-the-art results on the latter.\n",
+  "id": "arxiv.1809.04281",
+  "url": "https://arxiv.org/abs/1809.04281",
+  "pdf": "https://arxiv.org/pdf/1809.04281",
+  "source": "arxiv.org",
+  "date": 1544825598,
+  "tags": []
+}
