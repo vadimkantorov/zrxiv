@@ -1,0 +1,15 @@
+{
+  "title": "Large sample analysis of the median heuristic",
+  "authors": [
+    "Damien Garreau",
+    "Wittawat Jitkrittum",
+    "Motonobu Kanagawa"
+  ],
+  "abstract": "  In kernel methods, the median heuristic has been widely used as a way of\nsetting the bandwidth of RBF kernels. While its empirical performances make it\na safe choice under many circumstances, there is little theoretical\nunderstanding of why this is the case. Our aim in this paper is to advance our\nunderstanding of the median heuristic by focusing on the setting of kernel\ntwo-sample test. We collect new findings that may be of interest for both\ntheoreticians and practitioners. In theory, we provide a convergence analysis\nthat shows the asymptotic normality of the bandwidth chosen by the median\nheuristic in the setting of kernel two-sample test. Systematic empirical\ninvestigations are also conducted in simple settings, comparing the\nperformances based on the bandwidths chosen by the median heuristic and those\nby the maximization of test power.\n",
+  "id": "arxiv.1707.07269",
+  "url": "https://arxiv.org/abs/1707.07269",
+  "pdf": "https://arxiv.org/pdf/1707.07269",
+  "source": "arxiv.org",
+  "date": 1544755132,
+  "tags": []
+}
