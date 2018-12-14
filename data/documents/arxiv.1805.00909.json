@@ -1,0 +1,13 @@
+{
+  "title": "Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review",
+  "authors": [
+    "Sergey Levine"
+  ],
+  "abstract": "  The framework of reinforcement learning or optimal control provides a\nmathematical formalization of intelligent decision making that is powerful and\nbroadly applicable. While the general form of the reinforcement learning\nproblem enables effective reasoning about uncertainty, the connection between\nreinforcement learning and inference in probabilistic models is not immediately\nobvious. However, such a connection has considerable value when it comes to\nalgorithm design: formalizing a problem as probabilistic inference in principle\nallows us to bring to bear a wide array of approximate inference tools, extend\nthe model in flexible and powerful ways, and reason about compositionality and\npartial observability. In this article, we will discuss how a generalization of\nthe reinforcement learning or optimal control problem, which is sometimes\ntermed maximum entropy reinforcement learning, is equivalent to exact\nprobabilistic inference in the case of deterministic dynamics, and variational\ninference in the case of stochastic dynamics. We will present a detailed\nderivation of this framework, overview prior work that has drawn on this and\nrelated ideas to propose new reinforcement learning and control algorithms, and\ndescribe perspectives on future research.\n",
+  "id": "arxiv.1805.00909",
+  "url": "https://arxiv.org/abs/1805.00909",
+  "pdf": "https://arxiv.org/pdf/1805.00909",
+  "source": "arxiv.org",
+  "date": 1544827747,
+  "tags": []
+}
