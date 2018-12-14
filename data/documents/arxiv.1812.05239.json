@@ -1,0 +1,17 @@
+{
+  "title": "Improving fairness in machine learning systems: What do industry practitioners need?",
+  "authors": [
+    "Kenneth Holstein",
+    "Jennifer Wortman Vaughan",
+    "Hal Daumé III",
+    "Miro Dudík",
+    "Hanna Wallach"
+  ],
+  "abstract": "  The potential for machine learning (ML) systems to amplify social inequities\nand unfairness is receiving increasing popular and academic attention. A surge\nof recent work has focused on the development of algorithmic tools to assess\nand mitigate such unfairness. If these tools are to have a positive impact on\nindustry practice, however, it is crucial that their design be informed by an\nunderstanding of real-world needs. Through 35 semi-structured interviews and an\nanonymous survey of 267 ML practitioners, we conduct the first systematic\ninvestigation of commercial product teams' challenges and needs for support in\ndeveloping fairer ML systems. We identify areas of alignment and disconnect\nbetween the challenges faced by industry practitioners and solutions proposed\nin the fair ML research literature. Based on these findings, we highlight\ndirections for future ML and HCI research that will better address industry\npractitioners' needs.\n",
+  "id": "arxiv.1812.05239",
+  "url": "https://arxiv.org/abs/1812.05239",
+  "pdf": "https://arxiv.org/pdf/1812.05239",
+  "source": "arxiv.org",
+  "date": 1544809780,
+  "tags": []
+}
