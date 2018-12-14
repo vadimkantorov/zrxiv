@@ -1,0 +1,15 @@
+{
+  "title": "NEWMA: a new method for scalable model-free online change-point detection",
+  "authors": [
+    "Nicolas Keriven",
+    "Damien Garreau",
+    "Iacopo Poli"
+  ],
+  "abstract": "  We consider the problem of detecting abrupt changes in the distribution of a\nmulti-dimensional time series, with limited computing power and memory. In this\npaper, we propose a new method for model-free online change-point detection\nthat relies only on fast and light recursive statistics, inspired by the\nclassical Exponential Weighted Moving Average algorithm (EWMA). The proposed\nidea is to compute two EWMA statistics on the stream of data with different\nforgetting factors, and to compare them. By doing so, we show that we\nimplicitly compare recent samples with older ones, without the need to\nexplicitly store them. Additionally, we leverage Random Features to efficiently\nuse the Maximum Mean Discrepancy as a distance between distributions. We show\nthat our method is orders of magnitude faster than usual non-parametric methods\nfor a given accuracy.\n",
+  "id": "arxiv.1805.08061",
+  "url": "https://arxiv.org/abs/1805.08061",
+  "pdf": "https://arxiv.org/pdf/1805.08061",
+  "source": "arxiv.org",
+  "date": 1544755133,
+  "tags": []
+}
