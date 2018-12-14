@@ -1,0 +1,18 @@
+{
+  "title": "Assessing the Scalability of Biologically-Motivated Deep Learning Algorithms and Architectures",
+  "authors": [
+    "Sergey Bartunov",
+    "Adam Santoro",
+    "Blake A. Richards",
+    "Luke Marris",
+    "Geoffrey E. Hinton",
+    "Timothy Lillicrap"
+  ],
+  "abstract": "  The backpropagation of error algorithm (BP) is impossible to implement in a\nreal brain. The recent success of deep networks in machine learning and AI,\nhowever, has inspired proposals for understanding how the brain might learn\nacross multiple layers, and hence how it might approximate BP. As of yet, none\nof these proposals have been rigorously evaluated on tasks where BP-guided deep\nlearning has proved critical, or in architectures more structured than simple\nfully-connected networks. Here we present results on scaling up biologically\nmotivated models of deep learning on datasets which need deep networks with\nappropriate architectures to achieve good performance. We present results on\nthe MNIST, CIFAR-10, and ImageNet datasets and explore variants of\ntarget-propagation (TP) and feedback alignment (FA) algorithms, and explore\nperformance in both fully- and locally-connected architectures. We also\nintroduce weight-transport-free variants of difference target propagation (DTP)\nmodified to remove backpropagation from the penultimate layer. Many of these\nalgorithms perform well for MNIST, but for CIFAR and ImageNet we find that TP\nand FA variants perform significantly worse than BP, especially for networks\ncomposed of locally connected units, opening questions about whether new\narchitectures and algorithms are required to scale these approaches. Our\nresults and implementation details help establish baselines for biologically\nmotivated deep learning schemes going forward.\n",
+  "id": "arxiv.1807.04587",
+  "url": "https://arxiv.org/abs/1807.04587",
+  "pdf": "https://arxiv.org/pdf/1807.04587",
+  "source": "arxiv.org",
+  "date": 1544754499,
+  "tags": []
+}
