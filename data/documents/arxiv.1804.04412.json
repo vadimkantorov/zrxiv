@@ -1,0 +1,18 @@
+{
+  "title": "Unsupervised Discovery of Object Landmarks as Structural Representations",
+  "authors": [
+    "Yuting Zhang",
+    "Yijie Guo",
+    "Yixin Jin",
+    "Yijun Luo",
+    "Zhiyuan He",
+    "Honglak Lee"
+  ],
+  "abstract": "  Deep neural networks can model images with rich latent representations, but\nthey cannot naturally conceptualize structures of object categories in a\nhuman-perceptible way. This paper addresses the problem of learning object\nstructures in an image modeling process without supervision. We propose an\nautoencoding formulation to discover landmarks as explicit structural\nrepresentations. The encoding module outputs landmark coordinates, whose\nvalidity is ensured by constraints that reflect the necessary properties for\nlandmarks. The decoding module takes the landmarks as a part of the learnable\ninput representations in an end-to-end differentiable framework. Our discovered\nlandmarks are semantically meaningful and more predictive of manually annotated\nlandmarks than those discovered by previous methods. The coordinates of our\nlandmarks are also complementary features to pretrained deep-neural-network\nrepresentations in recognizing visual attributes. In addition, the proposed\nmethod naturally creates an unsupervised, perceptible interface to manipulate\nobject shapes and decode images with controllable structures. The project\nwebpage is at http://ytzhang.net/projects/lmdis-rep\n",
+  "id": "arxiv.1804.04412",
+  "url": "https://arxiv.org/abs/1804.04412",
+  "pdf": "https://arxiv.org/pdf/1804.04412",
+  "source": "arxiv.org",
+  "date": 1544914495,
+  "tags": []
+}
