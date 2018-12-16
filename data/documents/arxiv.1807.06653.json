@@ -1,0 +1,15 @@
+{
+  "title": "Invariant Information Distillation for Unsupervised Image Segmentation and Clustering",
+  "authors": [
+    "Xu Ji",
+    "João F. Henriques",
+    "Andrea Vedaldi"
+  ],
+  "abstract": "  We present a new method that learns to segment and cluster images without\nlabels of any kind. A simple loss based on information theory is used to\nextract meaningful representations directly from raw images. This is achieved\nby maximising mutual information of images known to be related by spatial\nproximity or randomized transformations, which distills their shared abstract\ncontent. Unlike much of the work in unsupervised deep learning, our learned\nfunction outputs segmentation heatmaps and discrete classifications labels\ndirectly, rather than embeddings that need further processing to be usable. The\nloss can be formulated as a convolution, making it the first end-to-end\nunsupervised learning method that learns densely and efficiently for semantic\nsegmentation. Implemented using realistic settings on generic deep neural\nnetwork architectures, our method attains superior performance on COCO-Stuff\nand ISPRS-Potsdam for segmentation and STL for clustering, beating\nstate-of-the-art baselines.\n",
+  "id": "arxiv.1807.06653",
+  "url": "https://arxiv.org/abs/1807.06653",
+  "pdf": "https://arxiv.org/pdf/1807.06653",
+  "source": "arxiv.org",
+  "date": 1544978085,
+  "tags": []
+}
