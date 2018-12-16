@@ -14,7 +14,7 @@
 		<link rel="canonical" href="{{ site.github.url }}" />
 		<link rel="stylesheet" href="{{ site.github.url }}/style.css">
 		<style>
-			ul {margin: 0px; list-style:none; padding:0 !important}
+			ul {margin: 0px; list-style:none; padding:0 !important; margin-top: 1em}
 			li {padding:6px 13px;border:1px solid #dfe2e5; margin:0px !important}
 			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			li:last-child {border-bottom:1px solid #dfe2e5}
@@ -43,6 +43,8 @@
 			#bibtex_download { {% if page.recent_docs == true or page.path contains "data/tags/" %}float:right{% endif %} }
 			#bibtex_copy_area {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px}
 			.bibtex_copy::after { content: " | " }
+			
+			input {margin-left: auto}
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
@@ -74,8 +76,7 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles"><a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}">total {{ num_docs }} docs</a> | {% if docs_by_tag %}<a class="subtitle-checked" href="{{ site.github.url }}/{{ tag }}">{{ tag }} {{ docs | size }} docs</a> {% else %}<a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a>{% endif %}<br /><a href="#" class="subtitle-checked" id="bibtex_download" download="bibtex.txt">bibtex</a></span></h1>
-			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
-			<br />
+			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}<input type="text"></input><button>Filter</button></div>
 			<ul>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}
