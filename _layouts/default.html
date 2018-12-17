@@ -135,25 +135,24 @@
 			function navigate()
 			{
 				const hash = window.location.hash;
-				const routes = {'#tag:' : ['data-tags', '~'], '#author:' : ['data-authors', '~'], '#date:' : ['data-date', '^'], '#source:' : ['data-source', '~']};
-				let route_field = null, route_arg = null;
+				document.getElementById('filter_area').value = hash != '' ? decodeURIComponent(hash.substr(1)) : '';
+				document.getElementById('filter_area').onkeyup = filter_keyup;
+				
+				const routes = {'#tag:' : 'data-tags~', '#author:' : 'data-authors~', '#date:' : 'data-date^', '#source:' : 'data-source~'};
+				let route_arg = null;
 				for(const route in routes)
 				{
-					if(hash.startsWith(route) && (route_field == null))
+					if(hash.startsWith(route) && (route_arg == null))
 					{
-						[route_field, route_arg] = [route.substr(1), hash.substr(route.length)];
-						const [field, op] = routes[route];
-						document.querySelectorAll('.doc:not(['+ field + op + '="' + route_arg + '"])').forEach(li => {li.hidden = true;});
-						document.querySelectorAll('.doc[' + field + op + '="' + route_arg + '"]').forEach(reset_doc);
+						route_arg = hash.substr(route.length);
+						document.querySelectorAll('.doc:not(['+ routes[route] + '="' + route_arg + '"])').forEach(li => {li.hidden = true;});
+						document.querySelectorAll('.doc[' + routes[route] + '="' + route_arg + '"]').forEach(reset_doc);
 					}
 				}
-				if(route_field == null)
+				if(!route_arg)
 					document.querySelectorAll('.doc').forEach(reset_doc);
 				
-				const bibtex = Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n');
-				document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
-				document.getElementById('filter_area').onkeyup = filter_keyup;
-				document.getElementById('filter_area').value = route_field != null ? (route_field + decodeURIComponent(route_arg)) : '';
+				document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n'));
 			}
 		</script>
 	</body>
