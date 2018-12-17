@@ -153,7 +153,7 @@
 				const bibtex = Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n');
 				document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
 				document.getElementById('filter_area').onkeyup = filter_keyup;
-				document.getElementById('filter_area').value = route_field != null ? (route_field + route_arg) : '';
+				document.getElementById('filter_area').value = route_field != null ? (route_field + decodeURIComponent(route_arg)) : '';
 			}
 		</script>
 	</body>
