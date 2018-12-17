@@ -76,7 +76,7 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles"><a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}">total {{ num_docs }} docs</a> | {% if docs_by_tag %}<a class="subtitle-checked" href="{{ site.github.url }}/{{ tag }}">{{ tag }} {{ docs | size }} docs</a> {% else %}<a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a>{% endif %}<br /><a href="#" class="subtitle-checked" id="bibtex_download" download="bibtex.txt">bibtex</a></span></h1>
-			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}<input id="filter" type="text" onkeyup="filter_keyup()"></input><button onclick="filter_click()">Filter</button></div>
+			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}<input id="filter" type="text"></input><button onclick="filter_click()">Filter</button></div>
 			<ul>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}
@@ -136,16 +136,15 @@
 			{
 				const hash = window.location.hash;
 				const routes = {'#/tag:' : ['data-tags', '~'], '#/author:' : ['data-authors', '~'], '#/date:' : ['data-date', '^'], '#/source:' : ['data-source', '~']};
-				let route_found = false;
+				let route_field = null, route_arg = null;
 				for(const route in routes)
 				{
-					if(hash.startsWith(route) && (!route_found))
+					if(hash.startsWith(route) && (route_field == null))
 					{
-						const arg = hash.substr(route.length);
+						[route_field, route_arg] = [route.substr(2), hash.substr(route.length)];
 						const [field, op] = routes[route];
-						document.querySelectorAll('.doc:not(['+ field + op + '="' + arg + '"])').forEach(li => {li.hidden = true;});
-						document.querySelectorAll('.doc[' + field + op + '="' + arg + '"]').forEach(reset_doc);
-						route_found = true;
+						document.querySelectorAll('.doc:not(['+ field + op + '="' + route_arg + '"])').forEach(li => {li.hidden = true;});
+						document.querySelectorAll('.doc[' + field + op + '="' + route_arg + '"]').forEach(reset_doc);
 					}
 				}
 				if(!route_found)
@@ -153,7 +152,8 @@
 				
 				const bibtex = Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n');
 				document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
-				documeng.getElementById('filter').onkeyup = filter_keyup;
+				document.getElementById('filter').onkeyup = filter_keyup;
+				document.getElementById('filter').value = route_field + route_arg;
 			}
 		</script>
 	</body>
