@@ -136,15 +136,12 @@
 			{
 				const hash = window.location.hash != '' ? decodeURIComponent(window.location.hash.substr(1)) : '';
 				const routes = {'tag:' : 'data-tags~', 'author:' : 'data-authors~', 'date:' : 'data-date^', 'source:' : 'data-source~', '': 'title*'};
-				const words = hash.split(' ');
-				
-				let selector = '';
-				for(let i = 0; i < words.length; i++)
+				const sorted = Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length);
+				const selector = hash.split(' ').map(w => 
 				{
-					for(const route in Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length))
-						if(words[i].startsWith(route))
-							selector += `[${routes[route]}="${words[i].substr(route.length)}"]`;
-				}
+					const r = sorted.find(r => w.startsWith(r));
+					return `[${routes[r]}="${w.substr(r.length)}"]`;
+				).join('');
 				
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
