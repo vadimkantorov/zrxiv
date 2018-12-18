@@ -134,25 +134,25 @@
 			
 			function navigate()
 			{
-				const hash = window.location.hash;
-				document.getElementById('filter_area').value = hash != '' ? decodeURIComponent(hash.substr(1)) : '';
-				document.getElementById('filter_area').onkeyup = filter_keyup;
+				const hash = window.location.hash != '' ? decodeURIComponent(window.location.hash.substr(1)) : '';
+				const routes = {tag : 'data-tags~', author : 'data-authors~', date : 'data-date^', source : 'data-source~', '': 'title*'};
+				const words = hash.split(' ');
 				
-				const routes = {'#tag:' : 'data-tags~', '#author:' : 'data-authors~', '#date:' : 'data-date^', '#source:' : 'data-source~'};
-				let route_arg = null;
-				for(const route in routes)
+				let selector = '';
+				for(let i = 0; i < words.length; i++)
 				{
-					if(hash.startsWith(route) && (route_arg == null))
-					{
-						route_arg = hash.substr(route.length);
-						document.querySelectorAll('.doc:not(['+ routes[route] + '="' + route_arg + '"])').forEach(li => {li.hidden = true;});
-						document.querySelectorAll('.doc[' + routes[route] + '="' + route_arg + '"]').forEach(reset_doc);
-					}
+					for(const route in Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length))
+						if(words[i].startsWith(route + ':'))
+							selector += `[${routes[route]}="${words[i].substr(route.length + 1)}"]`;
 				}
-				if(!route_arg)
-					document.querySelectorAll('.doc').forEach(reset_doc);
 				
+				document.querySelectorAll('.doc').forEach(d => d.removeClass('filtered'));
+				document.querySelectorAll('.doc' + selector).forEach(d => d.addClass('filtered'));
+				document.querySelectorAll('.doc:not(.filtered)').forEach(d => {d.hidden = true;});
+				document.querySelectorAll('.doc.filtered').forEach(reset_doc);
 				document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n'));
+				document.getElementById('filter_area').value = hash;
+				document.getElementById('filter_area').onkeyup = filter_keyup;
 			}
 		</script>
 	</body>
