@@ -91,7 +91,7 @@
 						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
-						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#author:{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
+						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
 						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="bibtex_copy(this); return false" title="{{ doc.bibtex | escape }}">copy bibtex</a>{% endif %}<a href="{{ site.github.url }}/all#date:{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
@@ -129,13 +129,13 @@
 			
 			function filter_click()
 			{
-				window.location = '#' + document.getElementById('filter_area').value;
+				window.location = '#' + document.getElementById('filter_area').value.split(' ').join('+');
 			}
 			
 			function navigate()
 			{
-				const hash = window.location.hash != '' ? decodeURIComponent(window.location.hash.substr(1)) : '';
-				const routes = {'tag:' : 'data-tags~', 'author:' : 'data-authors~', 'date:' : 'data-date^', 'source:' : 'data-source~', '': 'data-title*'};
+				const hash = window.location.hash != '' ? decodeURIComponent(window.location.hash.substr(1)).split('+').join(' ') : '';
+				const routes = {'#' : 'data-tags~', '@' : 'data-authors~', 'date:' : 'data-date^', 'source:' : 'data-source~', '': 'data-title*'};
 				const sorted = Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length);
 				const selector = hash != '' ? hash.split(' ').map(w => 
 				{
