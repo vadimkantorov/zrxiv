@@ -1,0 +1,16 @@
+{
+  "title": "Coordinate-based Texture Inpainting for Pose-Guided Image Generation",
+  "authors": [
+    "Artur Grigorev",
+    "Artem Sevastopolsky",
+    "Alexander Vakhitov",
+    "Victor Lempitsky"
+  ],
+  "abstract": "  We present a new deep learning approach to pose-guided resynthesis of human\nphotographs. At the heart of the new approach is the estimation of the complete\nbody surface texture based on a single photograph. Since the input photograph\nalways observes only a part of the surface, we suggest a new inpainting method\nthat completes the texture of the human body. Rather than working directly with\ncolors of texture elements, the inpainting network estimates an appropriate\nsource location in the input image for each element of the body surface. This\ncorrespondence field between the input image and the texture is then further\nwarped into the target image coordinate frame based on the desired pose,\neffectively establishing the correspondence between the source and the target\nview even when the pose change is drastic. The final convolutional network then\nuses the established correspondence and all other available information to\nsynthesize the output image using a fully-convolutional architecture with\ndeformable convolutions. We show the state-of-the-art result for pose-guided\nimage synthesis. Additionally, we demonstrate the performance of our system for\ngarment transfer and pose-guided face resynthesis.\n",
+  "id": "arxiv.1811.11459",
+  "url": "https://arxiv.org/abs/1811.11459",
+  "pdf": "https://arxiv.org/pdf/1811.11459",
+  "source": "arxiv.org",
+  "date": 1545148900,
+  "tags": []
+}
