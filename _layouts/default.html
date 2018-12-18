@@ -135,19 +135,16 @@
 			function navigate()
 			{
 				const hash = window.location.hash != '' ? decodeURIComponent(window.location.hash.substr(1)) : '';
-				const routes = {tag : 'data-tags~', author : 'data-authors~', date : 'data-date^', source : 'data-source~', '': 'title*'};
+				const routes = {'tag:' : 'data-tags~', 'author:' : 'data-authors~', 'date:' : 'data-date^', 'source:' : 'data-source~', '': 'title*'};
 				const words = hash.split(' ');
 				
 				let selector = '';
 				for(let i = 0; i < words.length; i++)
 				{
 					for(const route in Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length))
-						if(words[i].startsWith(route + ':'))
-							selector += `[${routes[route]}="${words[i].substr(route.length + 1)}"]`;
+						if(words[i].startsWith(route))
+							selector += `[${routes[route]}="${words[i].substr(route.length)}"]`;
 				}
-				console.log(routes);
-				console.log(words);
-				console.log(selector);
 				
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
