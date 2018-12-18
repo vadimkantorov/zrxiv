@@ -1,0 +1,13 @@
+{
+  "title": "Quantum Theory From Five Reasonable Axioms",
+  "authors": [
+    "Lucien Hardy"
+  ],
+  "abstract": "  The usual formulation of quantum theory is based on rather obscure axioms\n(employing complex Hilbert spaces, Hermitean operators, and the trace rule for\ncalculating probabilities). In this paper it is shown that quantum theory can\nbe derived from five very reasonable axioms. The first four of these are\nobviously consistent with both quantum theory and classical probability theory.\nAxiom 5 (which requires that there exists continuous reversible transformations\nbetween pure states) rules out classical probability theory. If Axiom 5 (or\neven just the word \"continuous\" from Axiom 5) is dropped then we obtain\nclassical probability theory instead. This work provides some insight into the\nreasons quantum theory is the way it is. For example, it explains the need for\ncomplex numbers and where the trace formula comes from. We also gain insight\ninto the relationship between quantum theory and classical probability theory.\n",
+  "id": "arxiv.quant-ph_0101012",
+  "url": "https://arxiv.org/abs/quant-ph/0101012",
+  "pdf": "https://arxiv.org/pdf/quant-ph/0101012",
+  "source": "arxiv.org",
+  "date": 1545134269,
+  "tags": []
+}
