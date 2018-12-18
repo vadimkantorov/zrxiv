@@ -1,0 +1,16 @@
+{
+  "title": "Image Manipulation with Perceptual Discriminators",
+  "authors": [
+    "Diana Sungatullina",
+    "Egor Zakharov",
+    "Dmitry Ulyanov",
+    "Victor Lempitsky"
+  ],
+  "abstract": "  Systems that perform image manipulation using deep convolutional networks\nhave achieved remarkable realism. Perceptual losses and losses based on\nadversarial discriminators are the two main classes of learning objectives\nbehind these advances. In this work, we show how these two ideas can be\ncombined in a principled and non-additive manner for unaligned image\ntranslation tasks. This is accomplished through a special architecture of the\ndiscriminator network inside generative adversarial learning framework. The new\narchitecture, that we call a perceptual discriminator, embeds the convolutional\nparts of a pre-trained deep classification network inside the discriminator\nnetwork. The resulting architecture can be trained on unaligned image datasets\nwhile benefiting from the robustness and efficiency of perceptual losses. We\ndemonstrate the merits of the new architecture in a series of qualitative and\nquantitative comparisons with baseline approaches and state-of-the-art\nframeworks for unaligned image translation.\n",
+  "id": "arxiv.1809.01396",
+  "url": "https://arxiv.org/abs/1809.01396",
+  "pdf": "https://arxiv.org/pdf/1809.01396",
+  "source": "arxiv.org",
+  "date": 1545148897,
+  "tags": []
+}
