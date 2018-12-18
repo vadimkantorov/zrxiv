@@ -1,0 +1,15 @@
+{
+  "title": "Latent Convolutional Models",
+  "authors": [
+    "ShahRukh Athar",
+    "Evgeny Burnaev",
+    "Victor Lempitsky"
+  ],
+  "abstract": "  We present a new latent model of natural images that can be learned on\nlarge-scale datasets. The learning process provides a latent embedding for\nevery image in the training dataset, as well as a deep convolutional network\nthat maps the latent space to the image space. After training, the new model\nprovides a strong and universal image prior for a variety of image restoration\ntasks such as large-hole inpainting, superresolution, and colorization. To\nmodel high-resolution natural images, our approach uses latent spaces of very\nhigh dimensionality (one to two orders of magnitude higher than previous latent\nimage models). To tackle this high dimensionality, we use latent spaces with a\nspecial manifold structure (convolutional manifolds) parameterized by a ConvNet\nof a certain architecture. In the experiments, we compare the learned latent\nmodels with latent models learned by autoencoders, advanced variants of\ngenerative adversarial networks, and a strong baseline system using simpler\nparameterization of the latent space. Our model outperforms the competing\napproaches over a range of restoration tasks.\n",
+  "id": "arxiv.1806.06284",
+  "url": "https://arxiv.org/abs/1806.06284",
+  "pdf": "https://arxiv.org/pdf/1806.06284",
+  "source": "arxiv.org",
+  "date": 1545148882,
+  "tags": []
+}
