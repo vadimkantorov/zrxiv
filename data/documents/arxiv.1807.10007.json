@@ -1,0 +1,15 @@
+{
+  "title": "Instance Segmentation by Deep Coloring",
+  "authors": [
+    "Victor Kulikov",
+    "Victor Yurchenko",
+    "Victor Lempitsky"
+  ],
+  "abstract": "  We propose a new and, arguably, a very simple reduction of instance\nsegmentation to semantic segmentation. This reduction allows to train\nfeed-forward non-recurrent deep instance segmentation systems in an end-to-end\nfashion using architectures that have been proposed for semantic segmentation.\nOur approach proceeds by introducing a fixed number of labels (colors) and then\ndynamically assigning object instances to those labels during training\n(coloring). A standard semantic segmentation objective is then used to train a\nnetwork that can color previously unseen images. At test time, individual\nobject instances can be recovered from the output of the trained convolutional\nnetwork using simple connected component analysis. In the experimental\nvalidation, the coloring approach is shown to be capable of solving diverse\ninstance segmentation tasks arising in autonomous driving (the Cityscapes\nbenchmark), plant phenotyping (the CVPPP leaf segmentation challenge), and\nhigh-throughput microscopy image analysis.\n  The source code is publicly available:\nhttps://github.com/kulikovv/DeepColoring.\n",
+  "id": "arxiv.1807.10007",
+  "url": "https://arxiv.org/abs/1807.10007",
+  "pdf": "https://arxiv.org/pdf/1807.10007",
+  "source": "arxiv.org",
+  "date": 1545148874,
+  "tags": []
+}
