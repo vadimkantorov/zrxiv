@@ -145,6 +145,7 @@
 						if(words[i].startsWith(route + ':'))
 							selector += `[${routes[route]}="${words[i].substr(route.length + 1)}"]`;
 				}
+				console.log(selector);
 				
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
