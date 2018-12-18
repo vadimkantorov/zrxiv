@@ -137,11 +137,7 @@
 				const hash = window.location.hash != '' ? decodeURIComponent(window.location.hash.substr(1)).split('+').join(' ') : '';
 				const routes = {'#' : 'data-tags~', '@' : 'data-authors~', 'date:' : 'data-date^', 'source:' : 'data-source~', '': 'data-title*'};
 				const sorted = Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length);
-				const selector = hash != '' ? hash.split(' ').map(w => 
-				{
-					const r = sorted.find(r => w.startsWith(r));
-					return `[${routes[r]}="${w.substr(r.length).toLowerCase()}"]`;
-				}).join('') : '';
+				const selector = hash != '' ? hash.split(' ').map(w => [w, sorted.find(r => w.startsWith(r))]).map(([w, r]) => `[${routes[r]}="${w.substr(r.length).toLowerCase()}"]`).join('') : '';
 				
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
