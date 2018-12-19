@@ -1,0 +1,18 @@
+{
+  "title": "Kernel Exponential Family Estimation via Doubly Dual Embedding",
+  "authors": [
+    "Bo Dai",
+    "Hanjun Dai",
+    "Arthur Gretton",
+    "Le Song",
+    "Dale Schuurmans",
+    "Niao He"
+  ],
+  "abstract": "  We investigate penalized maximum log-likelihood estimation for exponential\nfamily distributions whose natural parameter resides in a reproducing kernel\nHilbert space. Key to our approach is a novel technique, doubly dual embedding,\nthat avoids computation of the partition function. This technique also allows\nthe development of a flexible sampling strategy that amortizes the cost of\nMonte-Carlo sampling in the inference stage. The resulting estimator can be\neasily generalized to kernel conditional exponential families. We furthermore\nestablish a connection between infinite-dimensional exponential family\nestimation and MMD-GANs, revealing a new perspective for understanding GANs.\nCompared to current score matching based estimators, the proposed method\nimproves both memory and time efficiency while enjoying stronger statistical\nproperties, such as fully capturing smoothness in its statistical convergence\nrate while the score matching estimator appears to saturate. Finally, we show\nthat the proposed estimator can empirically outperform state-of-the-art methods\nin both kernel exponential family estimation and its conditional extension.\n",
+  "id": "arxiv.1811.02228",
+  "url": "https://arxiv.org/abs/1811.02228",
+  "pdf": "https://arxiv.org/pdf/1811.02228",
+  "source": "arxiv.org",
+  "date": 1545236175,
+  "tags": []
+}
