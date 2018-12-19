@@ -1,0 +1,14 @@
+{
+  "title": "An Inverse Power Method for Nonlinear Eigenproblems with Applications in 1-Spectral Clustering and Sparse PCA",
+  "authors": [
+    "Matthias Hein",
+    "Thomas Bühler"
+  ],
+  "abstract": "  Many problems in machine learning and statistics can be formulated as\n(generalized) eigenproblems. In terms of the associated optimization problem,\ncomputing linear eigenvectors amounts to finding critical points of a quadratic\nfunction subject to quadratic constraints. In this paper we show that a certain\nclass of constrained optimization problems with nonquadratic objective and\nconstraints can be understood as nonlinear eigenproblems. We derive a\ngeneralization of the inverse power method which is guaranteed to converge to a\nnonlinear eigenvector. We apply the inverse power method to 1-spectral\nclustering and sparse PCA which can naturally be formulated as nonlinear\neigenproblems. In both applications we achieve state-of-the-art results in\nterms of solution quality and runtime. Moving beyond the standard eigenproblem\nshould be useful also in many other applications and our inverse power method\ncan be easily adapted to new problems.\n",
+  "id": "arxiv.1012.0774",
+  "url": "https://arxiv.org/abs/1012.0774",
+  "pdf": "https://arxiv.org/pdf/1012.0774",
+  "source": "arxiv.org",
+  "date": 1545243231,
+  "tags": []
+}
