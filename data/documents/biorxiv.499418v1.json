@@ -1,0 +1,19 @@
+{
+  "title": "Discovery of Hierarchical Representations for Efficient Planning",
+  "authors": [
+    "Momchil Tomov",
+    "Samyukta Yagati",
+    "Agni Kumar",
+    "Wanqian Yang",
+    "Samuel Gershman"
+  ],
+  "abstract": "<p>We propose that humans spontaneously organize environments into clusters of states that support hierarchical planning, enabling them to  tackle challenging problems by breaking them down into sub-problems at various levels of abstraction. People constantly rely on such hierarchical presentations to accomplish tasks big and small -- from planning one9s day, to organizing a wedding, to getting a PhD -- often succeeding on the very first attempt. We formalize a Bayesian model of hierarchy discovery that explains how humans discover such useful abstractions. Building on principles developed in the robotics literature, the model predicts that hierarchy discovery should be sensitive to the topological structure, reward distribution, and distribution of tasks in the environment. In five simulations, we show that the model accounts for previously reported effects of environment structure on planning behavior, such as detection of bottleneck states and transitions. We then test the novel predictions of the model in seven behavioral experiments, demonstrating how the distribution of tasks and rewards can additionally influence planning behavior via the discovered hierarchy, sometimes facilitating and sometimes hindering performance. We also show that people use uncertainty to guide their learning in a way that is informative for hierarchy discovery. Finally, we propose how hierarchy discovery and hierarchical planning might be implemented in the brain. Together, these findings present an important advance in our understanding of how the brain might use Bayesian inference to uncover and exploit the hidden hierarchical structure of the world.</p>",
+  "id": "biorxiv.499418v1",
+  "url": "https://www.biorxiv.org/content/early/2018/12/17/499418",
+  "pdf": "https://www.biorxiv.org/content/biorxiv/early/2018/12/17/499418.full.pdf",
+  "bibtex": "@article{tomov499418,\n  title = {Discovery of Hierarchical Representations for Efficient Planning},\n  author = {Tomov, Momchil and Yagati, Samyukta and Kumar, Agni and Yang, Wanqian and Gershman, Samuel},\n  journal = {bioRxiv},\n  year = {2018},\n  doi = {10.1101/499418},\n  elocation-id = {499418},\n  eprint = {https://www.biorxiv.org/content/early/2018/12/17/499418.full.pdf},\n  publisher = {Cold Spring Harbor Laboratory},\n  pdf = {https://www.biorxiv.org/content/biorxiv/early/2018/12/17/499418.full.pdf},\n  url = {https://www.biorxiv.org/content/early/2018/12/17/499418}\n}",
+  "source": "biorxiv.org",
+  "date": 1545261485,
+  "tags": [],
+  "doi": "10.1101/499418"
+}
