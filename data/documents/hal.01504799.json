@@ -1,0 +1,14 @@
+{
+  "title": "A Convex Approach to K-means Clustering and Image Segmentation",
+  "authors": [
+    "Laurent Condat"
+  ],
+  "abstract": "A new convex formulation of data clustering and image segmentation is proposed, with fixed number K of regions and possible penalization of the region perimeters. So, this problem is a spatially regularized version of the K-means problem, a.k.a. piecewise constant Mumford–Shah problem. The proposed approach relies on a discretization of the search space; that is, a finite number of candidates must be specified, from which the K centroids are determined. After reformulation as an assignment problem, a convex relaxation is proposed, which involves a kind of l 1,infinity norm ball. A splitting of it is proposed, so as to avoid the costly projection onto this set. Some examples illustrate the efficiency of the approach.",
+  "id": "hal.01504799",
+  "url": "https://hal.archives-ouvertes.fr/hal-01504799v3",
+  "pdf": "https://hal.archives-ouvertes.fr/hal-01504799/file/Condat-EMMCVPR-17.pdf",
+  "bibtex": "@inproceedings{condat:hal-01504799,\n  title = {{A Convex Approach to K-means Clustering and Image Segmentation}},\n  author = {Condat, Laurent},\n  booktitle = {{11th International Conference on Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR)}},\n  year = {2017},\n  address = {Venice, Italy},\n  hal_id = {hal-01504799},\n  hal_version = {v3},\n  keywords = {Piecewise constant Mumford--Shah problem ; K-means ; Image segmentation ; Convex relaxation},\n  month = Oct,,\n  pdf = {https://hal.archives-ouvertes.fr/hal-01504799/file/Condat-EMMCVPR-17.pdf},\n  url = {https://hal.archives-ouvertes.fr/hal-01504799}\n}",
+  "source": "hal.archives-ouvertes.fr",
+  "date": 1545250089,
+  "tags": []
+}
