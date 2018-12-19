@@ -1,0 +1,15 @@
+{
+  "title": "Piecewise Flat Embedding for Image Segmentation",
+  "authors": [
+    "Chaowei Fang",
+    "Zicheng Liao",
+    "Yizhou Yu"
+  ],
+  "abstract": "  We introduce a new multi-dimensional nonlinear embedding -- Piecewise Flat\nEmbedding (PFE) -- for image segmentation. Based on the theory of sparse signal\nrecovery, piecewise flat embedding with diverse channels attempts to recover a\npiecewise constant image representation with sparse region boundaries and\nsparse cluster value scattering. The resultant piecewise flat embedding\nexhibits interesting properties such as suppressing slowly varying signals, and\noffers an image representation with higher region identifiability which is\ndesirable for image segmentation or high-level semantic analysis tasks. We\nformulate our embedding as a variant of the Laplacian Eigenmap embedding with\nan $L_{1,p} (0<p\\leq1)$ regularization term to promote sparse solutions. First,\nwe devise a two-stage numerical algorithm based on Bregman iterations to\ncompute $L_{1,1}$-regularized piecewise flat embeddings. We further generalize\nthis algorithm through iterative reweighting to solve the general\n$L_{1,p}$-regularized problem. To demonstrate its efficacy, we integrate PFE\ninto two existing image segmentation frameworks, segmentation based on\nclustering and hierarchical segmentation based on contour detection.\nExperiments on four major benchmark datasets, BSDS500, MSRC, Stanford\nBackground Dataset, and PASCAL Context, show that segmentation algorithms\nincorporating our embedding achieve significantly improved results.\n",
+  "id": "arxiv.1802.03248",
+  "url": "https://arxiv.org/abs/1802.03248",
+  "pdf": "https://arxiv.org/pdf/1802.03248",
+  "source": "arxiv.org",
+  "date": 1545243234,
+  "tags": []
+}
