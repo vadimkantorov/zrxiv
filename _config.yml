@@ -12,7 +12,7 @@ defaults:
     scope:
       path: "data/bibtex/*.md"
     values:
-      permalink: /bib/:basename
+      permalink: /:basename.bib
       layout: bibtex
       
 plugins:
