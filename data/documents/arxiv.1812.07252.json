@@ -1,0 +1,22 @@
+{
+  "title": "Sim-to-Real via Sim-to-Sim: Data-efficient Robotic Grasping via Randomized-to-Canonical Adaptation Networks",
+  "authors": [
+    "Stephen James",
+    "Paul Wohlhart",
+    "Mrinal Kalakrishnan",
+    "Dmitry Kalashnikov",
+    "Alex Irpan",
+    "Julian Ibarz",
+    "Sergey Levine",
+    "Raia Hadsell",
+    "Konstantinos Bousmalis"
+  ],
+  "abstract": "  Real world data, especially in the domain of robotics, is notoriously costly\nto collect. One way to circumvent this can be to leverage the power of\nsimulation in order to produce large amounts of labelled data. However,\ntraining models on simulated images does not readily transfer to real-world\nones. Using domain adaptation methods to cross this \"reality gap\" requires at\nbest a large amount of unlabelled real-world data, whilst domain randomization\nalone can waste modeling power, rendering certain reinforcement learning (RL)\nmethods unable to learn the task of interest. In this paper, we present\nRandomized-to-Canonical Adaptation Networks (RCANs), a novel approach to\ncrossing the visual reality gap that uses no real-world data. Our method learns\nto translate randomized rendered images into their equivalent non-randomized,\ncanonical versions. This in turn allows for real images to also be translated\ninto canonical sim images. We demonstrate the effectiveness of this sim-to-real\napproach by training a vision-based closed-loop grasping reinforcement learning\nagent in simulation, and then transferring it to the real world to attain 70%\nzero-shot grasp success on unseen objects, a result that almost doubles the\nsuccess of learning the same task directly on domain randomization alone.\nAdditionally, by joint finetuning in the real-world with only 5,000 real-world\ngrasps, our method achieves 91%, outperforming a state-of-the-art system\ntrained with 580,000 real-world grasps, resulting in a reduction of real-world\ndata by more than 99%.\n",
+  "id": "arxiv.1812.07252",
+  "url": "https://arxiv.org/abs/1812.07252",
+  "pdf": "https://arxiv.org/pdf/1812.07252",
+  "bibtex": "@misc{james2018_arxiv:1812.07252,\n    title = {Sim-to-Real via Sim-to-Sim: Data-efficient Robotic Grasping via Randomized-to-Canonical Adaptation Networks},\n    author = {Stephen James, Paul Wohlhart, Mrinal Kalakrishnan, Dmitry Kalashnikov, Alex Irpan, Julian Ibarz, Sergey Levine, Raia Hadsell, Konstantinos Bousmalis},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.07252},\n    pdf = {https://arxiv.org/pdf/1812.07252},\n    url = {https://arxiv.org/abs/1812.07252}\n}",
+  "source": "arxiv.org",
+  "date": 1545329583,
+  "tags": []
+}
