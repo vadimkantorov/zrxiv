@@ -5,6 +5,6 @@
 {% assign docs = (docs | sort: 'date') | reverse %}
 {% assign tag_name_length = page.name | size | minus: 3 %}
 {% assign tag = page.name | slice: 0, tag_name_length %}
-{% for doc in docs %}{% if doc.tags contains tag %}{{ doc.bibtex }}
+{% for doc in docs %}{{ doc.bibtex }}
 
-{% endif %}{% endfor %}
+{% endfor %}
