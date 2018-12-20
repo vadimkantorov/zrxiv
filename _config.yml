@@ -13,7 +13,7 @@ defaults:
       path: "data/bibtex/*.md"
     values:
       permalink: /bib/:basename
-      layout: default
+      layout: bibtex
       
 plugins:
   - jekyll-optional-front-matter
