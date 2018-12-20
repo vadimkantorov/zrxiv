@@ -1,0 +1,16 @@
+{
+  "title": "Multivariate one-sided testing in matched observational studies as an adversarial game",
+  "authors": [
+    "Peter L. Cohen",
+    "Matt A. Olson",
+    "Colin B. Fogarty"
+  ],
+  "abstract": "  We present a multivariate one-sided sensitivity analysis for matched\nobservational studies, appropriate when the researcher has specified that a\ngiven causal mechanism should manifest itself in effects on multiple outcome\nvariables in a known direction. The test statistic can be thought of as the\nsolution to an adversarial game, where the researcher determines the best\nlinear combination of test statistics to combat nature's presentation of the\nworst-case pattern of hidden bias. The corresponding optimization problem is\nconvex, and can be solved efficiently even for reasonably sized observational\nstudies. Asymptotically the test statistic converges to a chi-bar-squared\ndistribution under the null, a common distribution in order restricted\nstatistical inference. The test attains the largest possible design sensitivity\nover a class of coherent test statistics, and facilitates one-sided sensitivity\nanalyses for individual outcome variables while maintaining familywise error\ncontrol through is incorporation into closed testing procedures.\n",
+  "id": "arxiv.1812.07728",
+  "url": "https://arxiv.org/abs/1812.07728",
+  "pdf": "https://arxiv.org/pdf/1812.07728",
+  "bibtex": "@misc{cohen2018_arxiv:1812.07728,\n    title = {Multivariate one-sided testing in matched observational studies as an adversarial game},\n    author = {Peter L. Cohen, Matt A. Olson, Colin B. Fogarty},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.07728},\n    pdf = {https://arxiv.org/pdf/1812.07728},\n    url = {https://arxiv.org/abs/1812.07728}\n}",
+  "source": "arxiv.org",
+  "date": 1545319293,
+  "tags": []
+}
