@@ -2,7 +2,7 @@
 {% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}
 {% assign docs = (docs | sort: 'date') | reverse %}
 {% assign tag_name_length = page.name | size | minus: 3 %}
-{% assign tag = page.name | slice: 0, length %}
+{% assign tag = page.name | slice: 0, tag_name_length %}
 {% for doc in docs %}{% if doc.tags contains tag %}{{ doc.bibtex }}
 
 {% endif %}{% endfor %}
