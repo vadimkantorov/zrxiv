@@ -16,7 +16,7 @@ defaults:
       layout: bibtex   
   -
     scope:
-      path: "data/json/*.md"
+      path: "data/tags/*.md"
     values:
       permalink: /:basename.json/
       layout: json
