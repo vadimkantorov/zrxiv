@@ -1,0 +1,16 @@
+{
+  "title": "Deep Networks Incorporating Spiking Neural Dynamics",
+  "authors": [
+    "Stanisław Woźniak",
+    "Angeliki Pantazi",
+    "Evangelos Eleftheriou"
+  ],
+  "abstract": "  Neural networks have become the key technology of Artificial Intelligence\n(AI) that contributed to breakthroughs in several machine learning tasks,\nprimarily owing to advances in Artificial Neural Networks (ANNs). Neural\nnetworks incorporating spiking neurons have held great promise because of their\nbrain-inspired temporal dynamics and high power efficiency, however scaling out\nand training deep Spiking Neural Networks (SNNs) remained significant\nchallenges - they still fall behind ANNs in terms of accuracy on many\ntraditional learning tasks. In this paper, we propose an alternative\nperspective on the spiking neuron as a particular ANN construct called Spiking\nNeural Unit (SNU). Specifically, the SNU casts the stateful temporal spiking\nneuron, of a LIF type, as a recurrent ANN unit, analogous to LSTMs and GRUs.\nMoreover, by introducing the concept of proportional reset, we generalize the\nLIF dynamics to a variant called soft SNU (sSNU). The proposed family of units\nhas a series of benefits. Firstly, the ANN training methods, such as\nbackpropagation through time, naturally apply to them and enable a simple\napproach for successful training of deep spiking networks. For example, a 4- or\n7-layer SNN trained on a temporal version of MNIST dataset provides higher\naccuracy in comparison to RNNs, LSTM- and GRU-based networks of similar\narchitecture. Secondly, for the task of polyphonic music prediction on the JSB\ndataset, an sSNU-based network surpasses the state-of-the-art performance of\nRNNs, LSTM- and GRU-based networks. The novel family of units introduced in\nthis paper bridges the biologically-inspired SNNs with ANNs. It provides a\nsystematic methodology for implementing and training deep networks\nincorporating spiking dynamics that achieve accuracies as high, or better than,\nstate-of-the-art ANNs. Thus, it opens a new avenue for the widespread adoption\nof SNNs to practical applications.\n",
+  "id": "arxiv.1812.07040",
+  "url": "https://arxiv.org/abs/1812.07040",
+  "pdf": "https://arxiv.org/pdf/1812.07040",
+  "bibtex": "@misc{woźniak2018_arxiv:1812.07040,\n    title = {Deep Networks Incorporating Spiking Neural Dynamics},\n    author = {Stanisław Woźniak, Angeliki Pantazi, Evangelos Eleftheriou},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.07040},\n    pdf = {https://arxiv.org/pdf/1812.07040},\n    url = {https://arxiv.org/abs/1812.07040}\n}",
+  "source": "arxiv.org",
+  "date": 1545329605,
+  "tags": []
+}
