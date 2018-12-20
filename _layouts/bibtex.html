@@ -1,3 +1,5 @@
+{{ site.time }}
+
 {% assign docs = "" | split:"," %}
 {% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}
 {% assign docs = (docs | sort: 'date') | reverse %}
