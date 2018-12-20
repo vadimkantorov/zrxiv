@@ -1,0 +1,16 @@
+{
+  "title": "Multiclass Total Variation Clustering",
+  "authors": [
+    "Xavier Bresson",
+    "Thomas Laurent",
+    "David Uminsky",
+    "James H. von Brecht"
+  ],
+  "abstract": "  Ideas from the image processing literature have recently motivated a new set\nof clustering algorithms that rely on the concept of total variation. While\nthese algorithms perform well for bi-partitioning tasks, their recursive\nextensions yield unimpressive results for multiclass clustering tasks. This\npaper presents a general framework for multiclass total variation clustering\nthat does not rely on recursion. The results greatly outperform previous total\nvariation algorithms and compare well with state-of-the-art NMF approaches.\n",
+  "id": "arxiv.1306.1185",
+  "url": "https://arxiv.org/abs/1306.1185",
+  "pdf": "https://arxiv.org/pdf/1306.1185",
+  "source": "arxiv.org",
+  "date": 1545316159,
+  "tags": []
+}
