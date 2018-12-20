@@ -1,0 +1,15 @@
+{
+  "title": "Spectral Inference under Complex Temporal Dynamics",
+  "authors": [
+    "Jun Yang",
+    "Zhou Zhou"
+  ],
+  "abstract": "  We develop unified theory and methodology for the inference of evolutionary\nFourier power spectra for a general class of locally stationary and possibly\nnonlinear processes. In particular, simultaneous confidence regions (SCR) with\nasymptotically correct coverage rates are constructed for the evolutionary\nspectral densities on a nearly optimally dense grid of the joint time-frequency\ndomain. A simulation based bootstrap method is proposed to implement the SCR.\nThe SCR enables researchers and practitioners to visually evaluate the\nmagnitude and pattern of the evolutionary power spectra with asymptotically\naccurate statistical guarantee. The SCR also serves as a unified tool for a\nwide range of statistical inference problems in time-frequency analysis ranging\nfrom tests for white noise, stationarity and time-frequency separability to the\nvalidation for non-stationary linear models.\n",
+  "id": "arxiv.1812.07706",
+  "url": "https://arxiv.org/abs/1812.07706",
+  "pdf": "https://arxiv.org/pdf/1812.07706",
+  "bibtex": "@misc{yang2018_arxiv:1812.07706,\n    title = {Spectral Inference under Complex Temporal Dynamics},\n    author = {Jun Yang, Zhou Zhou},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.07706},\n    pdf = {https://arxiv.org/pdf/1812.07706},\n    url = {https://arxiv.org/abs/1812.07706}\n}",
+  "source": "arxiv.org",
+  "date": 1545322719,
+  "tags": []
+}
