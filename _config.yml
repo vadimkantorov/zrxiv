@@ -10,7 +10,7 @@ defaults:
       layout: default
   -
     scope:
-      path: "data/bibtex/*.md"
+      path: "data/tags/*.md"
     values:
       permalink: /:basename.bib/
       layout: bibtex   
