@@ -2,18 +2,18 @@ recent_docs: 50
 
 data_source: data
 defaults:
-  #-
-  #  scope:
-  #    path: "data/tags/*.md"
-  #  values:
-  #    permalink: /:basename/
-  #    layout: default
   -
     scope:
-      path: "data/bibtex/*.md"
+      path: "data/tags/*.md"
     values:
       permalink: /:basename/
       layout: default
+  #-
+  #  scope:
+  #    path: "data/bibtex/*.md"
+  #  values:
+  #    permalink: /:basename/
+  #    layout: default
       
 plugins:
   - jekyll-optional-front-matter
