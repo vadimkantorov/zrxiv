@@ -3,8 +3,6 @@
 {% assign docs = (docs | sort: 'date') | reverse %}
 {% assign tag_name_length = page.name | size | minus: 3 %}
 {% assign tag = page.name | slice: 0, tag_name_length %}
-{{ site.time }}
-{{ tag }}
 {% for doc in docs %}{{ doc.bibtex }}
 
 {% endfor %}
