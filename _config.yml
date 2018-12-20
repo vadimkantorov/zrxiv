@@ -8,12 +8,12 @@ defaults:
     values:
       permalink: /:basename/
       layout: default
-  #-
-  #  scope:
-  #    path: "data/bibtex/*.md"
-  #  values:
-  #    permalink: /:basename/
-  #    layout: default
+  -
+    scope:
+      path: "data/bibtex/*.md"
+    values:
+      permalink: /:basename/
+      layout: default
       
 plugins:
   - jekyll-optional-front-matter
