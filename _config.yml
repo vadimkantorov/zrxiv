@@ -8,18 +8,18 @@ defaults:
     values:
       permalink: /:basename/
       layout: default
-  -
-    scope:
-      path: "data/tags/*.md"
-    values:
-      permalink: /:basename.bib/
-      layout: bibtex   
-  -
-    scope:
-      path: "data/tags/*.md"
-    values:
-      permalink: /:basename.json/
-      layout: json
+#  -
+#    scope:
+#      path: "data/tags/*.md"
+#    values:
+#      permalink: /:basename.bib/
+#      layout: bibtex   
+#  -
+#    scope:
+#      path: "data/tags/*.md"
+#    values:
+#      permalink: /:basename.json/
+#      layout: json
       
 plugins:
   - jekyll-optional-front-matter
