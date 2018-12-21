@@ -1,0 +1,20 @@
+{
+  "title": "Learning deep representations by mutual information estimation and maximization",
+  "authors": [
+    "R Devon Hjelm",
+    "Alex Fedorov",
+    "Samuel Lavoie-Marchildon",
+    "Karan Grewal",
+    "Phil Bachman",
+    "Adam Trischler",
+    "Yoshua Bengio"
+  ],
+  "abstract": "This work investigates unsupervised learning of representations by maximizing mutual information between an input and the output of a deep neural network encoder. Importantly, we show that structure matters: incorporating knowledge about locality in the input into the objective can significantly improve a representation's suitability for downstream tasks. We further control characteristics of the representation by matching to a prior distribution adversarially. Our method, which we call Deep InfoMax (DIM), outperforms a number of popular unsupervised learning methods and compares favorably with fully-supervised learning on several classification tasks in the settings studied. DIM opens new avenues for unsupervised learning of representations and is an important step towards flexible formulations of representation learning objectives for specific end-goals.",
+  "id": "openreview.Bklr3j0cKX",
+  "url": "https://openreview.net/forum?id=Bklr3j0cKX",
+  "pdf": "https://openreview.net/pdf?id=Bklr3j0cKX",
+  "bibtex": "@inproceedings{hjelm2018learning,\n    title = {Learning deep representations by mutual information estimation and maximization},\n    author = {R Devon Hjelm and Alex Fedorov and Samuel Lavoie-Marchildon and Karan Grewal and Phil Bachman and Adam Trischler and Yoshua Bengio},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=Bklr3j0cKX},\n    url = {https://openreview.net/forum?id=Bklr3j0cKX}\n}",
+  "source": "openreview.net",
+  "date": 1545406199,
+  "tags": []
+}
