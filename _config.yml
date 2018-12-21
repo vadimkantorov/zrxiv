@@ -8,12 +8,12 @@ defaults:
     values:
       permalink: /:basename/
       layout: default
-  -
-    scope:
-      path: "data/../data/../data/tags/*.md"
-    values:
-      permalink: /:basename.bib/
-      layout: bibtex   
+#  -
+#    scope:
+#      path: "data/../data/../data/tags/*.md"
+#    values:
+#      permalink: /:basename.bib/
+#      layout: bibtex   
   -
     scope:
       path: "data/../data/tags/*.md"
