@@ -1,0 +1,17 @@
+{
+  "title": "Efficient Lifelong Learning with A-GEM",
+  "authors": [
+    "Arslan Chaudhry",
+    "Marc'Aurelio Ranzato",
+    "Marcus Rohrbach",
+    "Mohamed Elhoseiny"
+  ],
+  "abstract": "  In lifelong learning, the learner is presented with a sequence of tasks,\nincrementally building a data-driven prior which may be leveraged to speed up\nlearning of a new task. In this work, we investigate the efficiency of current\nlifelong approaches, in terms of sample complexity, computational and memory\ncost. Towards this end, we first introduce a new and a more realistic\nevaluation protocol, whereby learners observe each example only once and\nhyper-parameter selection is done on a small and disjoint set of tasks, which\nis not used for the actual learning experience and evaluation. Second, we\nintroduce a new metric measuring how quickly a learner acquires a new skill.\nThird, we propose an improved version of GEM (Lopez-Paz & Ranzato, 2017),\ndubbed Averaged GEM (A-GEM), which enjoys the same or even better performance\nas GEM, while being almost as computationally and memory efficient as EWC\n(Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we\nshow that all algorithms including A-GEM can learn even more quickly if they\nare provided with task descriptors specifying the classification tasks under\nconsideration. Our experiments on several standard lifelong learning benchmarks\ndemonstrate that A-GEM has the best trade-off between accuracy and efficiency.\n",
+  "id": "arxiv.1812.00420",
+  "url": "https://arxiv.org/abs/1812.00420",
+  "pdf": "https://arxiv.org/pdf/1812.00420",
+  "bibtex": "@misc{chaudhry2018_arxiv:1812.00420,\n    title = {Efficient Lifelong Learning with A-GEM},\n    author = {Arslan Chaudhry, Marc'Aurelio Ranzato, Marcus Rohrbach, Mohamed Elhoseiny},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.00420},\n    pdf = {https://arxiv.org/pdf/1812.00420},\n    url = {https://arxiv.org/abs/1812.00420}\n}",
+  "source": "arxiv.org",
+  "date": 1545414920,
+  "tags": []
+}
