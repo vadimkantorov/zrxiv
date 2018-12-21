@@ -1,0 +1,19 @@
+{
+  "title": "Adversarially Regularized Graph Autoencoder",
+  "authors": [
+    "Shirui Pan",
+    "Ruiqi Hu",
+    "Guodong Long",
+    "Jing Jiang",
+    "Lina Yao",
+    "Chengqi Zhang"
+  ],
+  "abstract": "  Graph embedding is an effective method to represent graph data in a low\ndimensional space for graph analytics. Most existing embedding algorithms\ntypically focus on preserving the topological structure or minimizing the\nreconstruction errors of graph data, but they have mostly ignored the data\ndistribution of the latent codes from the graphs, which often results in\ninferior embedding in real-world graph data. In this paper, we propose a novel\nadversarial graph embedding framework for graph data. The framework encodes the\ntopological structure and node content in a graph to a compact representation,\non which a decoder is trained to reconstruct the graph structure. Furthermore,\nthe latent representation is enforced to match a prior distribution via an\nadversarial training scheme. To learn a robust embedding, two variants of\nadversarial approaches, adversarially regularized graph autoencoder (ARGA) and\nadversarially regularized variational graph autoencoder (ARVGA), are developed.\nExperimental studies on real-world graphs validate our design and demonstrate\nthat our algorithms outperform baselines by a wide margin in link prediction,\ngraph clustering, and graph visualization tasks.\n",
+  "id": "arxiv.1802.04407",
+  "url": "https://arxiv.org/abs/1802.04407",
+  "pdf": "https://arxiv.org/pdf/1802.04407",
+  "bibtex": "@misc{pan2018_arxiv:1802.04407,\n    title = {Adversarially Regularized Graph Autoencoder},\n    author = {Shirui Pan, Ruiqi Hu, Guodong Long, Jing Jiang, Lina Yao, Chengqi Zhang},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1802.04407},\n    pdf = {https://arxiv.org/pdf/1802.04407},\n    url = {https://arxiv.org/abs/1802.04407}\n}",
+  "source": "arxiv.org",
+  "date": 1545405399,
+  "tags": []
+}
