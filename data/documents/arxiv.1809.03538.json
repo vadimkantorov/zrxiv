@@ -1,0 +1,18 @@
+{
+  "title": "Convolutional Graph Auto-encoder: A Deep Generative Neural Architecture for Probabilistic Spatio-temporal Solar Irradiance Forecasting",
+  "authors": [
+    "Mahdi Khodayar",
+    "Saeed Mohammadi",
+    "Mohammad Khodayar",
+    "Jianhui Wang",
+    "Guangyi Liu"
+  ],
+  "abstract": "  Machine Learning on graph-structured data is an important and omnipresent\ntask for a vast variety of applications including anomaly detection and dynamic\nnetwork analysis. In this paper, a deep generative model is introduced to\ncapture continuous probability densities corresponding to the nodes of an\narbitrary graph. In contrast to all learning formulations in the area of\ndiscriminative pattern recognition, we propose a scalable generative\noptimization/algorithm theoretically proved to capture distributions at the\nnodes of a graph. Our model is able to generate samples from the probability\ndensities learned at each node. This probabilistic data generation model, i.e.\nconvolutional graph auto-encoder (CGAE), is devised based on the localized\nfirst-order approximation of spectral graph convolutions, deep learning, and\nthe variational Bayesian inference. We apply our CGAE to a new problem, the\nspatio-temporal probabilistic solar irradiance prediction. Multiple solar\nradiation measurement sites in a wide area in northern states of the US are\nmodeled as an undirected graph. Using our proposed model, the distribution of\nfuture irradiance given historical radiation observations is estimated for\nevery site/node. Numerical results on the National Solar Radiation Database\nshow state-of-the-art performance for probabilistic radiation prediction on\ngeographically distributed irradiance data in terms of reliability, sharpness,\nand continuous ranked probability score.\n",
+  "id": "arxiv.1809.03538",
+  "url": "https://arxiv.org/abs/1809.03538",
+  "pdf": "https://arxiv.org/pdf/1809.03538",
+  "bibtex": "@misc{khodayar2018_arxiv:1809.03538,\n    title = {Convolutional Graph Auto-encoder: A Deep Generative Neural Architecture for Probabilistic Spatio-temporal Solar Irradiance Forecasting},\n    author = {Mahdi Khodayar, Saeed Mohammadi, Mohammad Khodayar, Jianhui Wang, Guangyi Liu},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1809.03538},\n    pdf = {https://arxiv.org/pdf/1809.03538},\n    url = {https://arxiv.org/abs/1809.03538}\n}",
+  "source": "arxiv.org",
+  "date": 1545405403,
+  "tags": []
+}
