@@ -1,0 +1,18 @@
+{
+  "title": "The role of over-parametrization in generalization of neural networks",
+  "authors": [
+    "Behnam Neyshabur",
+    "Zhiyuan Li",
+    "Srinadh Bhojanapalli",
+    "Yann LeCun",
+    "Nathan Srebro"
+  ],
+  "abstract": "Despite existing work on ensuring generalization of neural networks in terms of scale sensitive complexity measures, such as norms, margin and sharpness, these complexity measures do not offer an explanation of why neural networks generalize better with over-parametrization. In this work we suggest a novel complexity measure based on unit-wise capacities resulting in a tighter generalization bound for two layer ReLU networks. Our capacity bound correlates with the behavior of test error with increasing network sizes (within the range reported in the experiments), and could partly explain the improvement in generalization with over-parametrization. We further present a matching lower bound for the Rademacher complexity that improves over previous capacity lower bounds for neural networks. ",
+  "id": "openreview.BygfghAcYX",
+  "url": "https://openreview.net/forum?id=BygfghAcYX",
+  "pdf": "https://openreview.net/pdf?id=BygfghAcYX",
+  "bibtex": "@inproceedings{neyshabur2018the,\n    title = {The role of over-parametrization in generalization of neural networks},\n    author = {Behnam Neyshabur and Zhiyuan Li and Srinadh Bhojanapalli and Yann LeCun and Nathan Srebro},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=BygfghAcYX},\n    url = {https://openreview.net/forum?id=BygfghAcYX}\n}",
+  "source": "openreview.net",
+  "date": 1545410589,
+  "tags": []
+}
