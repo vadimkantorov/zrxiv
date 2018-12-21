@@ -14,12 +14,12 @@ defaults:
 #    values:
 #      permalink: /:basename.bib/
 #      layout: bibtex   
-#  -
-#    scope:
-#      path: "data/tags/*.md"
-#    values:
-#      permalink: /:basename.json/
-#      layout: json
+  -
+    scope:
+      path: "data/../data/tags/*.md"
+    values:
+      permalink: /:basename.json/
+      layout: json
       
 plugins:
   - jekyll-optional-front-matter
