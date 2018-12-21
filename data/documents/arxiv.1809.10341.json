@@ -1,0 +1,19 @@
+{
+  "title": "Deep Graph Infomax",
+  "authors": [
+    "Petar Veličković",
+    "William Fedus",
+    "William L. Hamilton",
+    "Pietro Liò",
+    "Yoshua Bengio",
+    "R Devon Hjelm"
+  ],
+  "abstract": "  We present Deep Graph Infomax (DGI), a general approach for learning node\nrepresentations within graph-structured data in an unsupervised manner. DGI\nrelies on maximizing mutual information between patch representations and\ncorresponding high-level summaries of graphs---both derived using established\ngraph convolutional network architectures. The learnt patch representations\nsummarize subgraphs centered around nodes of interest, and can thus be reused\nfor downstream node-wise learning tasks. In contrast to most prior approaches\nto graph representation learning, DGI does not rely on random walks, and is\nreadily applicable to both transductive and inductive learning setups. We\ndemonstrate competitive performance on a variety of node classification\nbenchmarks, which at times even exceeds the performance of supervised learning.\n",
+  "id": "arxiv.1809.10341",
+  "url": "https://arxiv.org/abs/1809.10341",
+  "pdf": "https://arxiv.org/pdf/1809.10341",
+  "bibtex": "@misc{veličković2018_arxiv:1809.10341,\n    title = {Deep Graph Infomax},\n    author = {Petar Veličković, William Fedus, William L. Hamilton, Pietro Liò, Yoshua Bengio, R Devon Hjelm},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1809.10341},\n    pdf = {https://arxiv.org/pdf/1809.10341},\n    url = {https://arxiv.org/abs/1809.10341}\n}",
+  "source": "arxiv.org",
+  "date": 1545408695,
+  "tags": []
+}
