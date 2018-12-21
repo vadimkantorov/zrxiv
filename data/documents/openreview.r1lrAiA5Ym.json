@@ -1,0 +1,17 @@
+{
+  "title": "Backpropamine: training self-modifying neural networks with differentiable neuromodulated plasticity",
+  "authors": [
+    "Thomas Miconi",
+    "Aditya Rawal",
+    "Jeff Clune",
+    "Kenneth O. Stanley"
+  ],
+  "abstract": "The impressive lifelong learning in animal brains is primarily enabled by plastic changes in synaptic connectivity. Importantly, these changes are not passive, but are actively controlled by neuromodulation, which is itself under the control of the brain. The resulting self-modifying abilities of the brain play an important role in learning and adaptation, and are a major basis for biological reinforcement learning. Here we show for the first time that artificial neural networks with such neuromodulated plasticity can be trained with gradient descent. Extending previous work on differentiable Hebbian plasticity, we propose a differentiable formulation for the neuromodulation of plasticity. We show that neuromodulated plasticity improves the performance of neural networks on both reinforcement learning and supervised learning tasks. In one task, neuromodulated plastic LSTMs with millions of parameters outperform standard LSTMs on a benchmark language modeling task (controlling for the number of parameters). We conclude that differentiable neuromodulation of plasticity offers a powerful new framework for training neural networks.",
+  "id": "openreview.r1lrAiA5Ym",
+  "url": "https://openreview.net/forum?id=r1lrAiA5Ym",
+  "pdf": "https://openreview.net/pdf?id=r1lrAiA5Ym",
+  "bibtex": "@inproceedings{miconi2018backpropamine,\n    title = {Backpropamine: training self-modifying neural networks with differentiable neuromodulated plasticity},\n    author = {Thomas Miconi and Aditya Rawal and Jeff Clune and Kenneth O. Stanley},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=r1lrAiA5Ym},\n    url = {https://openreview.net/forum?id=r1lrAiA5Ym}\n}",
+  "source": "openreview.net",
+  "date": 1545415547,
+  "tags": []
+}
