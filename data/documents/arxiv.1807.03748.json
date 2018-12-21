@@ -1,0 +1,16 @@
+{
+  "title": "Representation Learning with Contrastive Predictive Coding",
+  "authors": [
+    "Aaron van den Oord",
+    "Yazhe Li",
+    "Oriol Vinyals"
+  ],
+  "abstract": "  While supervised learning has enabled great progress in many applications,\nunsupervised learning has not seen such widespread adoption, and remains an\nimportant and challenging endeavor for artificial intelligence. In this work,\nwe propose a universal unsupervised learning approach to extract useful\nrepresentations from high-dimensional data, which we call Contrastive\nPredictive Coding. The key insight of our model is to learn such\nrepresentations by predicting the future in latent space by using powerful\nautoregressive models. We use a probabilistic contrastive loss which induces\nthe latent space to capture information that is maximally useful to predict\nfuture samples. It also makes the model tractable by using negative sampling.\nWhile most prior work has focused on evaluating representations for a\nparticular modality, we demonstrate that our approach is able to learn useful\nrepresentations achieving strong performance on four distinct domains: speech,\nimages, text and reinforcement learning in 3D environments.\n",
+  "id": "arxiv.1807.03748",
+  "url": "https://arxiv.org/abs/1807.03748",
+  "pdf": "https://arxiv.org/pdf/1807.03748",
+  "bibtex": "@misc{oord2018_arxiv:1807.03748,\n    title = {Representation Learning with Contrastive Predictive Coding},\n    author = {Aaron van den Oord, Yazhe Li, Oriol Vinyals},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1807.03748},\n    pdf = {https://arxiv.org/pdf/1807.03748},\n    url = {https://arxiv.org/abs/1807.03748}\n}",
+  "source": "arxiv.org",
+  "date": 1545406403,
+  "tags": []
+}
