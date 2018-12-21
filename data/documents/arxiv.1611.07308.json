@@ -1,0 +1,15 @@
+{
+  "title": "Variational Graph Auto-Encoders",
+  "authors": [
+    "Thomas N. Kipf",
+    "Max Welling"
+  ],
+  "abstract": "  We introduce the variational graph auto-encoder (VGAE), a framework for\nunsupervised learning on graph-structured data based on the variational\nauto-encoder (VAE). This model makes use of latent variables and is capable of\nlearning interpretable latent representations for undirected graphs. We\ndemonstrate this model using a graph convolutional network (GCN) encoder and a\nsimple inner product decoder. Our model achieves competitive results on a link\nprediction task in citation networks. In contrast to most existing models for\nunsupervised learning on graph-structured data and link prediction, our model\ncan naturally incorporate node features, which significantly improves\npredictive performance on a number of benchmark datasets.\n",
+  "id": "arxiv.1611.07308",
+  "url": "https://arxiv.org/abs/1611.07308",
+  "pdf": "https://arxiv.org/pdf/1611.07308",
+  "bibtex": "@misc{kipf2016_arxiv:1611.07308,\n    title = {Variational Graph Auto-Encoders},\n    author = {Thomas N. Kipf, Max Welling},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1611.07308},\n    pdf = {https://arxiv.org/pdf/1611.07308},\n    url = {https://arxiv.org/abs/1611.07308}\n}",
+  "source": "arxiv.org",
+  "date": 1545405397,
+  "tags": []
+}
