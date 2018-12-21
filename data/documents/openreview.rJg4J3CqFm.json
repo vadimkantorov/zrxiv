@@ -1,0 +1,16 @@
+{
+  "title": "Learning Entropic Wasserstein Embeddings",
+  "authors": [
+    "Charlie Frogner",
+    "Farzaneh Mirzazadeh",
+    "Justin Solomon"
+  ],
+  "abstract": "Despite their prevalence, Euclidean embeddings of data are fundamentally limited in their ability to capture latent semantic structures, which need not conform to Euclidean spatial assumptions. Here we consider an alternative, which embeds data as discrete probability distributions in a Wasserstein space, endowed with an optimal transport metric. Wasserstein spaces are much larger and more flexible than Euclidean spaces, in that they can successfully embed a wider variety of metric structures. We propose to exploit this flexibility by learning an embedding that captures the semantic information in the Wasserstein distance between embedded distributions. We examine empirically the representational capacity of such learned Wasserstein embeddings, showing that they can embed a wide variety of complex metric structures with smaller distortion than an equivalent Euclidean embedding. We also investigate an application to word embedding, demonstrating a unique advantage of Wasserstein embeddings: we can directly visualize the high-dimensional embedding, as it is a probability distribution on a low-dimensional space. This obviates the need for dimensionality reduction techniques such as t-SNE for visualization.",
+  "id": "openreview.rJg4J3CqFm",
+  "url": "https://openreview.net/forum?id=rJg4J3CqFm",
+  "pdf": "https://openreview.net/pdf?id=rJg4J3CqFm",
+  "bibtex": "@inproceedings{frogner2018learning,\n    title = {Learning Entropic Wasserstein Embeddings},\n    author = {Charlie Frogner and Farzaneh Mirzazadeh and Justin Solomon},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=rJg4J3CqFm},\n    url = {https://openreview.net/forum?id=rJg4J3CqFm}\n}",
+  "source": "openreview.net",
+  "date": 1545426168,
+  "tags": []
+}
