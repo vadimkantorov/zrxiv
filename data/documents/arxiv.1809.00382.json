@@ -1,0 +1,18 @@
+{
+  "title": "The global rate of convergence for optimal tensor methods in smooth convex optimization",
+  "authors": [
+    "Alexander Gasnikov",
+    "Eduard Gorbunov",
+    "Dmitry Kovalev",
+    "Ahmed Mohhamed",
+    "Elena Chernousova"
+  ],
+  "abstract": "  In this work we consider Monteiro-Svaiter accelerated hybrid proximal\nextragradient (A-HPE) framework and accelerated Newton proximal extragradient\n(A-NPE) framework.The last framework contains optimal methods for rather smooth\nconvex optimization problems with second-order oracle. We generalize A-NPE\nframework for higher order derivative oracle (schemes). We replacing Newton's\ntype step in A-NPE that was used for auxiliary problem by Newton's type\nregulirized (tensor) type step (Yu. Nesterov, 2018). Moreover we generalize\nlarge step A-HPE/A-NPE framework by replacing Monteiro-Svaiter's large step\ncondition so that this framework could work for high-order scheme. The main\ncontribution of this paper is as follows: we propose optimal high-order method\nfor convex optimization problems. As far as we know for that moment there exist\nonly zero, first and second order optimal methods that work according to the\nlower bounds. For higher order schemes there exists a gap between the lower\nbounds (Arjevani, Shamir, Shiff, 2017) and available high-order (tensor)\nmethods (Nesterov-Polyak, 2006; Yu. Nesterov, 2008; M. Baes, 2009; Yu.\nNesterov, 2018). Asymptotically the ratio of the rates of convergences for the\nbest existing methods and lower bounds is about 1.5. In this work we eliminate\nthis gap and show that lower bounds are tight.\n",
+  "id": "arxiv.1809.00382",
+  "url": "https://arxiv.org/abs/1809.00382",
+  "pdf": "https://arxiv.org/pdf/1809.00382",
+  "bibtex": "@misc{gasnikov2018_arxiv:1809.00382,\n    title = {The global rate of convergence for optimal tensor methods in smooth convex optimization},\n    author = {Alexander Gasnikov, Eduard Gorbunov, Dmitry Kovalev, Ahmed Mohhamed, Elena Chernousova},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1809.00382},\n    pdf = {https://arxiv.org/pdf/1809.00382},\n    url = {https://arxiv.org/abs/1809.00382}\n}",
+  "source": "arxiv.org",
+  "date": 1545357825,
+  "tags": []
+}
