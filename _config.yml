@@ -22,10 +22,17 @@ defaults:
       layout: json
   -
     scope:
-      path: "all.md"
+      path: "all_bibtex.md"
     values:
-      permalink: /:basename.bib/
+      permalink: /all.bib/
       layout: bibtex
+
+  -
+    scope:
+      path: "all_json.md"
+    values:
+      permalink: /all.json/
+      layout: json
       
 plugins:
   - jekyll-optional-front-matter
