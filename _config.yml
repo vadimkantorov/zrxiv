@@ -12,13 +12,13 @@ defaults:
     scope:
       path: "data/bibtex/*.md"
     values:
-      permalink: /:basename.bib/
+      permalink: /:basename.bib
       layout: bibtex   
   -
     scope:
       path: "data/json/*.md"
     values:
-      permalink: /:basename.json/
+      permalink: /:basename.json
       layout: json
   -
     scope:
@@ -31,7 +31,7 @@ defaults:
     scope:
       path: "all_json.md"
     values:
-      permalink: /all.json/
+      permalink: /all.json
       layout: json
       
 plugins:
