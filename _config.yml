@@ -20,12 +20,12 @@ defaults:
     values:
       permalink: /:basename.json/
       layout: json
- #-
- #   scope:
- #     path: "all.md"
- #   values:
- #     permalink: /:basename.bib/
- #     layout: bibtex   
+ -
+    scope:
+      path: "all.md"
+    values:
+      permalink: /all.bib/
+      layout: bibtex   
       
 plugins:
   - jekyll-optional-front-matter
