@@ -24,7 +24,7 @@ defaults:
     scope:
       path: "all_bibtex.md"
     values:
-      permalink: /all.bib/
+      permalink: /all.bib
       layout: bibtex
 
   -
