@@ -4,6 +4,12 @@ data_source: data
 defaults:
   -
     scope:
+      path: "recent.md"
+    values:
+      permalink: /:basename/
+      layout: default
+  -
+    scope:
       path: "data/tags/*.md"
     values:
       permalink: /:basename/
