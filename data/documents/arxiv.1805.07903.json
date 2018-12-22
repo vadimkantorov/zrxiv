@@ -1,0 +1,17 @@
+{
+  "title": "Unsupervised Deep Context Prediction for Background Foreground Separation",
+  "authors": [
+    "Maryam Sultana",
+    "Arif Mahmood",
+    "Sajid Javed",
+    "Soon Ki Jung"
+  ],
+  "abstract": "  In many advanced video based applications background modeling is a\npre-processing step to eliminate redundant data, for instance in tracking or\nvideo surveillance applications. Over the past years background subtraction is\nusually based on low level or hand-crafted features such as raw color\ncomponents, gradients, or local binary patterns. The background subtraction\nalgorithms performance suffer in the presence of various challenges such as\ndynamic backgrounds, photometric variations, camera jitters, and shadows. To\nhandle these challenges for the purpose of accurate background modeling we\npropose a unified framework based on the algorithm of image inpainting. It is\nan unsupervised visual feature learning hybrid Generative Adversarial algorithm\nbased on context prediction. We have also presented the solution of random\nregion inpainting by the fusion of center region inpaiting and random region\ninpainting with the help of poisson blending technique. Furthermore we also\nevaluated foreground object detection with the fusion of our proposed method\nand morphological operations. The comparison of our proposed method with 12\nstate-of-the-art methods shows its stability in the application of background\nestimation and foreground detection.\n",
+  "id": "arxiv.1805.07903",
+  "url": "https://arxiv.org/abs/1805.07903",
+  "pdf": "https://arxiv.org/pdf/1805.07903",
+  "bibtex": "@misc{sultana2018_arxiv:1805.07903,\n    title = {Unsupervised Deep Context Prediction for Background Foreground Separation},\n    author = {Maryam Sultana, Arif Mahmood, Sajid Javed, Soon Ki Jung},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.07903},\n    pdf = {https://arxiv.org/pdf/1805.07903},\n    url = {https://arxiv.org/abs/1805.07903}\n}",
+  "source": "arxiv.org",
+  "date": 1545509218,
+  "tags": []
+}
