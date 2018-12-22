@@ -1,5 +1,4 @@
-{% assign docs = "" | split:"," %}{% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}{% assign docs = (docs | sort: 'date') | reverse %}{% assign tag_name_length = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_length | split: "_" %}{% assign tag = tag[0] %}{% assign docs_by_tag = "" | split:"," %}{% for doc in docs %}{% if tag == "all" or doc.tags contains tag %}{% assign docs_by_tag = docs_by_tag | push: doc %}{% endif %}{% endfor %}[
-
-{% for doc in docs_by_tag %}{{ doc | jsonify }}{%if forloop.last == false %},{% endif %}
-{% endfor %}
+{% assign docs = "" | split:"," %}{% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}{% assign docs = (docs | sort: 'date') | reverse %}{% assign tag_name_length = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_length | split: "_" %}{% assign tag = tag[0] %}{% assign docs_by_tag = "" | split:"," %}{% for doc in docs %}{% if tag == "all" or doc.tags contains tag %}{% assign doc = doc | jsonify %}{% assign docs_by_tag = docs_by_tag | push: doc %}{% endif %}{% endfor %}
+[
+{{ docs_by_tag | join: ",\n" }}
 ]
