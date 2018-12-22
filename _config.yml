@@ -9,13 +9,13 @@ defaults:
       permalink: /index.html
       layout: default
       recent_docs: true
-  -
-    scope:
-      path: "all.html"
-    values:
-      permalink: /all.html
-      layout: default
-      recent_docs: false
+#  -
+#    scope:
+#      path: "all.html"
+#    values:
+#      permalink: /all.html
+#      layout: default
+#      recent_docs: false
   -
     scope:
       path: "data/tags/*.md"
