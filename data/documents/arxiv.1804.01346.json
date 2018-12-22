@@ -13,5 +13,7 @@
   "pdf": "https://arxiv.org/pdf/1804.01346",
   "source": "arxiv.org",
   "date": 1542653883,
-  "tags": []
+  "tags": [
+    "weaksup"
+  ]
 }
