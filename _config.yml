@@ -26,12 +26,23 @@ defaults:
     values:
       permalink: /all.bib
       layout: bibtex
-
   -
     scope:
       path: "all_json.md"
     values:
       permalink: /all.json
+      layout: json
+  -
+    scope:
+      path: "recent_bibtex.md"
+    values:
+      permalink: /recent.bib
+      layout: bibtex
+  -
+    scope:
+      path: "recent_json.md"
+    values:
+      permalink: /recent.json
       layout: json
       
 plugins:
