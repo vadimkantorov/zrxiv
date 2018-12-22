@@ -1,0 +1,19 @@
+{
+  "title": "Fully Convolutional Speech Recognition",
+  "authors": [
+    "Neil Zeghidour",
+    "Qiantong Xu",
+    "Vitaliy Liptchinsky",
+    "Nicolas Usunier",
+    "Gabriel Synnaeve",
+    "Ronan Collobert"
+  ],
+  "abstract": "  Current state-of-the-art speech recognition systems build on recurrent neural\nnetworks for acoustic and/or language modeling, and rely on feature extraction\npipelines to extract mel-filterbanks or cepstral coefficients. In this paper we\npresent an alternative approach based solely on convolutional neural networks,\nleveraging recent advances in acoustic models from the raw waveform and\nlanguage modeling. This fully convolutional approach is trained end-to-end to\npredict characters from the raw waveform, removing the feature extraction step\naltogether. An external convolutional language model is used to decode words.\nOn Wall Street Journal, our model matches the current state-of-the-art. On\nLibrispeech, we report state-of-the-art performance among end-to-end models,\nincluding Deep Speech 2 trained with 12 times more acoustic data and\nsignificantly more linguistic data.\n",
+  "id": "arxiv.1812.06864",
+  "url": "https://arxiv.org/abs/1812.06864",
+  "pdf": "https://arxiv.org/pdf/1812.06864",
+  "bibtex": "@misc{zeghidour2018_arxiv:1812.06864,\n    title = {Fully Convolutional Speech Recognition},\n    author = {Neil Zeghidour, Qiantong Xu, Vitaliy Liptchinsky, Nicolas Usunier, Gabriel Synnaeve, Ronan Collobert},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.06864},\n    pdf = {https://arxiv.org/pdf/1812.06864},\n    url = {https://arxiv.org/abs/1812.06864}\n}",
+  "source": "arxiv.org",
+  "date": 1545515050,
+  "tags": []
+}
