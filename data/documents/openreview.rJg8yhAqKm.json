@@ -1,0 +1,21 @@
+{
+  "title": "Transfer and Exploration via the Information Bottleneck",
+  "authors": [
+    "Anirudh Goyal",
+    "Riashat Islam",
+    "DJ Strouse",
+    "Zafarali Ahmed",
+    "Hugo Larochelle",
+    "Matthew Botvinick",
+    "Sergey Levine",
+    "Yoshua Bengio"
+  ],
+  "abstract": "A central challenge in reinforcement learning is discovering effective policies for tasks where rewards are sparsely distributed. We postulate that in the absence of useful reward signals, an effective exploration strategy should seek out {\\it decision states}. These states lie at critical junctions in the state space from where the agent can transition to new, potentially unexplored regions. We propose to learn about decision states from prior experience. By training a goal-conditioned model with an information bottleneck, we can identify decision states by examining where the model accesses the goal state through the bottleneck. We find that this simple mechanism effectively identifies decision states, even in partially observed settings. In effect, the model learns the sensory cues that correlate with potential subgoals. In new environments, this model can then identify novel subgoals for further exploration, guiding the agent through a sequence of potential decision  states and through new regions of the state space.",
+  "id": "openreview.rJg8yhAqKm",
+  "url": "https://openreview.net/forum?id=rJg8yhAqKm",
+  "pdf": "https://openreview.net/pdf?id=rJg8yhAqKm",
+  "bibtex": "@inproceedings{goyal2018transfer,\n    title = {Transfer and Exploration via the Information Bottleneck},\n    author = {Anirudh Goyal and Riashat Islam and DJ Strouse and Zafarali Ahmed and Hugo Larochelle and Matthew Botvinick and Sergey Levine and Yoshua Bengio},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=rJg8yhAqKm},\n    url = {https://openreview.net/forum?id=rJg8yhAqKm}\n}",
+  "source": "openreview.net",
+  "date": 1545487557,
+  "tags": []
+}
