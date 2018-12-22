@@ -22,7 +22,7 @@ defaults:
       layout: json
  -
     scope:
-      path: "all.md"
+      path: "/all.md"
     values:
       permalink: /all.bib/
       layout: bibtex   
