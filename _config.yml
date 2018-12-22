@@ -6,7 +6,7 @@ defaults:
     scope:
       path: "recent.md"
     values:
-      permalink: /recent.html
+      permalink: /index.html
       layout: default
       recent_docs: true
 #  -
