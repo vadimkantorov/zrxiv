@@ -8,6 +8,7 @@ defaults:
     values:
       permalink: /index.html
       layout: default
+      recent_docs: true
   -
     scope:
       path: "data/tags/*.md"
