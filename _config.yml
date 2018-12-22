@@ -4,9 +4,9 @@ data_source: data
 defaults:
   -
     scope:
-      path: "recent.md"
+      path: "recent.html"
     values:
-      permalink: /:basename/
+      permalink: /index.html
       layout: default
   -
     scope:
