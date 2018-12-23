@@ -1,0 +1,18 @@
+{
+  "title": "Lovasz Convolutional Networks",
+  "authors": [
+    "Prateek Yadav",
+    "Madhav Nimishakavi",
+    "Naganand Yadati",
+    "Arun Rajkumar",
+    "Partha Talukdar"
+  ],
+  "abstract": "  Semi-supervised learning on graph structured data has received significant\nattention with the recent introduction of graph convolution networks (GCN).\nWhile traditional methods have focused on optimizing a loss augmented with\nLaplacian regularization framework, GCNs perform an implicit Laplacian type\nregularization to capture local graph structure. In this work, we propose\nLovasz convolutional network (LCNs) which are capable of incorporating global\ngraph properties. LCNs achieve this by utilizing Lovasz's orthonormal\nembeddings of the nodes. We analyse local and global properties of graphs and\ndemonstrate settings where LCNs tend to work better than GCNs. We validate the\nproposed method on standard random graph models such as stochastic block models\n(SBM) and certain community structure based graphs where LCNs outperform GCNs\nand learn more intuitive embeddings. We also perform extensive binary and\nmulti-class classification experiments on real world datasets to demonstrate\nLCN's effectiveness. In addition to simple graphs, we also demonstrate the use\nof LCNs on hypergraphs by identifying settings where they are expected to work\nbetter than GCNs.\n",
+  "id": "arxiv.1805.11365",
+  "url": "https://arxiv.org/abs/1805.11365",
+  "pdf": "https://arxiv.org/pdf/1805.11365",
+  "bibtex": "@misc{yadav2018_arxiv:1805.11365,\n    title = {Lovasz Convolutional Networks},\n    author = {Prateek Yadav, Madhav Nimishakavi, Naganand Yadati, Arun Rajkumar, Partha Talukdar},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.11365},\n    pdf = {https://arxiv.org/pdf/1805.11365},\n    url = {https://arxiv.org/abs/1805.11365}\n}",
+  "source": "arxiv.org",
+  "date": 1545600481,
+  "tags": []
+}
