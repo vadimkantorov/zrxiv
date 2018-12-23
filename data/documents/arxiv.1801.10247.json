@@ -1,0 +1,16 @@
+{
+  "title": "FastGCN: Fast Learning with Graph Convolutional Networks via Importance Sampling",
+  "authors": [
+    "Jie Chen",
+    "Tengfei Ma",
+    "Cao Xiao"
+  ],
+  "abstract": "  The graph convolutional networks (GCN) recently proposed by Kipf and Welling\nare an effective graph model for semi-supervised learning. This model, however,\nwas originally designed to be learned with the presence of both training and\ntest data. Moreover, the recursive neighborhood expansion across layers poses\ntime and memory challenges for training with large, dense graphs. To relax the\nrequirement of simultaneous availability of test data, we interpret graph\nconvolutions as integral transforms of embedding functions under probability\nmeasures. Such an interpretation allows for the use of Monte Carlo approaches\nto consistently estimate the integrals, which in turn leads to a batched\ntraining scheme as we propose in this work---FastGCN. Enhanced with importance\nsampling, FastGCN not only is efficient for training but also generalizes well\nfor inference. We show a comprehensive set of experiments to demonstrate its\neffectiveness compared with GCN and related models. In particular, training is\norders of magnitude more efficient while predictions remain comparably\naccurate.\n",
+  "id": "arxiv.1801.10247",
+  "url": "https://arxiv.org/abs/1801.10247",
+  "pdf": "https://arxiv.org/pdf/1801.10247",
+  "bibtex": "@misc{chen2018_arxiv:1801.10247,\n    title = {FastGCN: Fast Learning with Graph Convolutional Networks via Importance Sampling},\n    author = {Jie Chen, Tengfei Ma, Cao Xiao},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1801.10247},\n    pdf = {https://arxiv.org/pdf/1801.10247},\n    url = {https://arxiv.org/abs/1801.10247}\n}",
+  "source": "arxiv.org",
+  "date": 1545601366,
+  "tags": []
+}
