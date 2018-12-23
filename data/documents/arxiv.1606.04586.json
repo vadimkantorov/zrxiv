@@ -1,0 +1,16 @@
+{
+  "title": "Regularization With Stochastic Transformations and Perturbations for Deep Semi-Supervised Learning",
+  "authors": [
+    "Mehdi Sajjadi",
+    "Mehran Javanmardi",
+    "Tolga Tasdizen"
+  ],
+  "abstract": "  Effective convolutional neural networks are trained on large sets of labeled\ndata. However, creating large labeled datasets is a very costly and\ntime-consuming task. Semi-supervised learning uses unlabeled data to train a\nmodel with higher accuracy when there is a limited set of labeled data\navailable. In this paper, we consider the problem of semi-supervised learning\nwith convolutional neural networks. Techniques such as randomized data\naugmentation, dropout and random max-pooling provide better generalization and\nstability for classifiers that are trained using gradient descent. Multiple\npasses of an individual sample through the network might lead to different\npredictions due to the non-deterministic behavior of these techniques. We\npropose an unsupervised loss function that takes advantage of the stochastic\nnature of these methods and minimizes the difference between the predictions of\nmultiple passes of a training sample through the network. We evaluate the\nproposed method on several benchmark datasets.\n",
+  "id": "arxiv.1606.04586",
+  "url": "https://arxiv.org/abs/1606.04586",
+  "pdf": "https://arxiv.org/pdf/1606.04586",
+  "bibtex": "@misc{sajjadi2016_arxiv:1606.04586,\n    title = {Regularization With Stochastic Transformations and Perturbations for Deep Semi-Supervised Learning},\n    author = {Mehdi Sajjadi, Mehran Javanmardi, Tolga Tasdizen},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1606.04586},\n    pdf = {https://arxiv.org/pdf/1606.04586},\n    url = {https://arxiv.org/abs/1606.04586}\n}",
+  "source": "arxiv.org",
+  "date": 1545608350,
+  "tags": []
+}
