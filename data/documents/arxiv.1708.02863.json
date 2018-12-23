@@ -1,0 +1,19 @@
+{
+  "title": "CoupleNet: Coupling Global Structure with Local Parts for Object Detection",
+  "authors": [
+    "Yousong Zhu",
+    "Chaoyang Zhao",
+    "Jinqiao Wang",
+    "Xu Zhao",
+    "Yi Wu",
+    "Hanqing Lu"
+  ],
+  "abstract": "  The region-based Convolutional Neural Network (CNN) detectors such as Faster\nR-CNN or R-FCN have already shown promising results for object detection by\ncombining the region proposal subnetwork and the classification subnetwork\ntogether. Although R-FCN has achieved higher detection speed while keeping the\ndetection performance, the global structure information is ignored by the\nposition-sensitive score maps. To fully explore the local and global\nproperties, in this paper, we propose a novel fully convolutional network,\nnamed as CoupleNet, to couple the global structure with local parts for object\ndetection. Specifically, the object proposals obtained by the Region Proposal\nNetwork (RPN) are fed into the the coupling module which consists of two\nbranches. One branch adopts the position-sensitive RoI (PSRoI) pooling to\ncapture the local part information of the object, while the other employs the\nRoI pooling to encode the global and context information. Next, we design\ndifferent coupling strategies and normalization ways to make full use of the\ncomplementary advantages between the global and local branches. Extensive\nexperiments demonstrate the effectiveness of our approach. We achieve\nstate-of-the-art results on all three challenging datasets, i.e. a mAP of 82.7%\non VOC07, 80.4% on VOC12, and 34.4% on COCO. Codes will be made publicly\navailable.\n",
+  "id": "arxiv.1708.02863",
+  "url": "https://arxiv.org/abs/1708.02863",
+  "pdf": "https://arxiv.org/pdf/1708.02863",
+  "bibtex": "@misc{zhu2017_arxiv:1708.02863,\n    title = {CoupleNet: Coupling Global Structure with Local Parts for Object Detection},\n    author = {Yousong Zhu, Chaoyang Zhao, Jinqiao Wang, Xu Zhao, Yi Wu, Hanqing Lu},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1708.02863},\n    pdf = {https://arxiv.org/pdf/1708.02863},\n    url = {https://arxiv.org/abs/1708.02863}\n}",
+  "source": "arxiv.org",
+  "date": 1545524339,
+  "tags": []
+}
