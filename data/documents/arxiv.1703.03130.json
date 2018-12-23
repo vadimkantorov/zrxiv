@@ -1,0 +1,20 @@
+{
+  "title": "A Structured Self-attentive Sentence Embedding",
+  "authors": [
+    "Zhouhan Lin",
+    "Minwei Feng",
+    "Cicero Nogueira dos Santos",
+    "Mo Yu",
+    "Bing Xiang",
+    "Bowen Zhou",
+    "Yoshua Bengio"
+  ],
+  "abstract": "  This paper proposes a new model for extracting an interpretable sentence\nembedding by introducing self-attention. Instead of using a vector, we use a\n2-D matrix to represent the embedding, with each row of the matrix attending on\na different part of the sentence. We also propose a self-attention mechanism\nand a special regularization term for the model. As a side effect, the\nembedding comes with an easy way of visualizing what specific parts of the\nsentence are encoded into the embedding. We evaluate our model on 3 different\ntasks: author profiling, sentiment classification, and textual entailment.\nResults show that our model yields a significant performance gain compared to\nother sentence embedding methods in all of the 3 tasks.\n",
+  "id": "arxiv.1703.03130",
+  "url": "https://arxiv.org/abs/1703.03130",
+  "pdf": "https://arxiv.org/pdf/1703.03130",
+  "bibtex": "@misc{lin2017_arxiv:1703.03130,\n    title = {A Structured Self-attentive Sentence Embedding},\n    author = {Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, Yoshua Bengio},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1703.03130},\n    pdf = {https://arxiv.org/pdf/1703.03130},\n    url = {https://arxiv.org/abs/1703.03130}\n}",
+  "source": "arxiv.org",
+  "date": 1545528604,
+  "tags": []
+}
