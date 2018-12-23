@@ -1,0 +1,18 @@
+{
+  "title": "Quantum Max-flow/Min-cut",
+  "authors": [
+    "Shawn X. Cui",
+    "Michael H. Freedman",
+    "Or Sattath",
+    "Richard Stong",
+    "Greg Minton"
+  ],
+  "abstract": "  The classical max-flow min-cut theorem describes transport through certain\nidealized classical networks. We consider the quantum analog for tensor\nnetworks. By associating an integral capacity to each edge and a tensor to each\nvertex in a flow network, we can also interpret it as a tensor network, and\nmore specifically, as a linear map from the input space to the output space.\nThe quantum max flow is defined to be the maximal rank of this linear map over\nall choices of tensors. The quantum min cut is defined to be the minimum\nproduct of the capacities of edges over all cuts of the tensor network. We show\nthat unlike the classical case, the quantum max-flow=min-cut conjecture is not\ntrue in general. Under certain conditions, e.g., when the capacity on each edge\nis some power of a fixed integer, the quantum max-flow is proved to equal the\nquantum min-cut. However, concrete examples are also provided where the\nequality does not hold.\n  We also found connections of quantum max-flow/min-cut with entropy of\nentanglement and the quantum satisfiability problem. We speculate that the\nphenomena revealed may be of interest both in spin systems in condensed matter\nand in quantum gravity.\n",
+  "id": "arxiv.1508.04644",
+  "url": "https://arxiv.org/abs/1508.04644",
+  "pdf": "https://arxiv.org/pdf/1508.04644",
+  "bibtex": "@misc{cui2015_arxiv:1508.04644,\n    title = {Quantum Max-flow/Min-cut},\n    author = {Shawn X. Cui, Michael H. Freedman, Or Sattath, Richard Stong, Greg Minton},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1508.04644},\n    pdf = {https://arxiv.org/pdf/1508.04644},\n    url = {https://arxiv.org/abs/1508.04644}\n}",
+  "source": "arxiv.org",
+  "date": 1545526693,
+  "tags": []
+}
