@@ -1,0 +1,21 @@
+{
+  "title": "Recall Traces: Backtracking Models for Efficient Reinforcement Learning",
+  "authors": [
+    "Anirudh Goyal",
+    "Philemon Brakel",
+    "William Fedus",
+    "Soumye Singhal",
+    "Timothy Lillicrap",
+    "Sergey Levine",
+    "Hugo Larochelle",
+    "Yoshua Bengio"
+  ],
+  "abstract": "In many environments only a tiny subset of all states yield high reward.  In these cases, few of the interactions with the environment provide a relevant learning signal. Hence, we may want to preferentially train on those high-reward states and the probable trajectories leading to them. \nTo this end, we advocate for the use of a \\textit{backtracking model} that predicts the preceding states that terminate at a given high-reward state.  We can train a model which, starting from a high value state (or one that is estimated to have high value), predicts and samples which (state, action)-tuples may have led to that high value state. These traces of (state, action) pairs, which we refer to as Recall Traces, sampled from this backtracking model starting from a high value state, are informative as they terminate in good states, and hence we can use these traces to improve a policy. We provide a variational interpretation for this idea and a practical algorithm in which the backtracking model samples from an approximate posterior distribution over trajectories which lead to large rewards. Our method improves the sample efficiency of both on- and off-policy RL algorithms across several environments and tasks.  ",
+  "id": "openreview.HygsfnR9Ym",
+  "url": "https://openreview.net/forum?id=HygsfnR9Ym",
+  "pdf": "https://openreview.net/pdf?id=HygsfnR9Ym",
+  "bibtex": "@inproceedings{goyal2018recall,\n    title = {Recall Traces: Backtracking Models for Efficient Reinforcement Learning},\n    author = {Anirudh Goyal and Philemon Brakel and William Fedus and Soumye Singhal and Timothy Lillicrap and Sergey Levine and Hugo Larochelle and Yoshua Bengio},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=HygsfnR9Ym},\n    url = {https://openreview.net/forum?id=HygsfnR9Ym}\n}",
+  "source": "openreview.net",
+  "date": 1545861112,
+  "tags": []
+}
