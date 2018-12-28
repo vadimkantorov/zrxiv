@@ -1,0 +1,17 @@
+{
+  "title": "RegNet: Learning the Optimization of Direct Image-to-Image Pose Registration",
+  "authors": [
+    "Lei Han",
+    "Mengqi Ji",
+    "Lu Fang",
+    "Matthias Nießner"
+  ],
+  "abstract": "  Direct image-to-image alignment that relies on the optimization of\nphotometric error metrics suffers from limited convergence range and\nsensitivity to lighting conditions. Deep learning approaches has been applied\nto address this problem by learning better feature representations using\nconvolutional neural networks, yet still require a good initialization. In this\npaper, we demonstrate that the inaccurate numerical Jacobian limits the\nconvergence range which could be improved greatly using learned approaches.\nBased on this observation, we propose a novel end-to-end network, RegNet, to\nlearn the optimization of image-to-image pose registration. By jointly learning\nfeature representation for each pixel and partial derivatives that replace\nhandcrafted ones (e.g., numerical differentiation) in the optimization step,\nthe neural network facilitates end-to-end optimization. The energy landscape is\nconstrained on both the feature representation and the learned Jacobian, hence\nproviding more flexibility for the optimization as a consequence leads to more\nrobust and faster convergence. In a series of experiments, including a broad\nablation study, we demonstrate that RegNet is able to converge for\nlarge-baseline image pairs with fewer iterations.\n",
+  "id": "arxiv.1812.10212",
+  "url": "https://arxiv.org/abs/1812.10212",
+  "pdf": "https://arxiv.org/pdf/1812.10212",
+  "bibtex": "@misc{han2018_arxiv:1812.10212,\n    title = {RegNet: Learning the Optimization of Direct Image-to-Image Pose Registration},\n    author = {Lei Han, Mengqi Ji, Lu Fang, Matthias Nießner},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.10212},\n    pdf = {https://arxiv.org/pdf/1812.10212},\n    url = {https://arxiv.org/abs/1812.10212}\n}",
+  "source": "arxiv.org",
+  "date": 1546004476,
+  "tags": []
+}
