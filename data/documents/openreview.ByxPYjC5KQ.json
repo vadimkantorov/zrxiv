@@ -1,0 +1,16 @@
+{
+  "title": "Improving Generalization and Stability of Generative Adversarial Networks",
+  "authors": [
+    "Hoang Thanh-Tung",
+    "Truyen Tran",
+    "Svetha Venkatesh"
+  ],
+  "abstract": "Generative Adversarial Networks (GANs) are one of the most popular tools for learning complex high dimensional distributions. However, generalization properties of GANs have not been well understood. In this paper, we analyze the generalization of GANs in practical settings. We show that discriminators trained on discrete datasets with the original GAN loss have poor generalization capability and do not approximate the theoretically optimal discriminator. We propose a zero-centered gradient penalty for improving the generalization of the discriminator by pushing it toward the optimal discriminator. The penalty guarantees the generalization and convergence of GANs. Experiments on synthetic and large scale datasets verify our theoretical analysis.\n",
+  "id": "openreview.ByxPYjC5KQ",
+  "url": "https://openreview.net/forum?id=ByxPYjC5KQ",
+  "pdf": "https://openreview.net/pdf?id=ByxPYjC5KQ",
+  "bibtex": "@inproceedings{thanh-tung2018improving,\n    title = {Improving Generalization and Stability of Generative Adversarial Networks},\n    author = {Hoang Thanh-Tung and Truyen Tran and Svetha Venkatesh},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=ByxPYjC5KQ},\n    url = {https://openreview.net/forum?id=ByxPYjC5KQ}\n}",
+  "source": "openreview.net",
+  "date": 1546192322,
+  "tags": []
+}
