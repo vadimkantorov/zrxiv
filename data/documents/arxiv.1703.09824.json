@@ -1,0 +1,14 @@
+{
+  "title": "Understanding the Lomb-Scargle Periodogram",
+  "authors": [
+    "Jacob T. VanderPlas"
+  ],
+  "abstract": "  The Lomb-Scargle periodogram is a well-known algorithm for detecting and\ncharacterizing periodic signals in unevenly-sampled data. This paper presents a\nconceptual introduction to the Lomb-Scargle periodogram and important practical\nconsiderations for its use. Rather than a rigorous mathematical treatment, the\ngoal of this paper is to build intuition about what assumptions are implicit in\nthe use of the Lomb-Scargle periodogram and related estimators of periodicity,\nso as to motivate important practical considerations required in its proper\napplication and interpretation.\n",
+  "id": "arxiv.1703.09824",
+  "url": "https://arxiv.org/abs/1703.09824",
+  "pdf": "https://arxiv.org/pdf/1703.09824",
+  "bibtex": "@misc{vanderplas2017_arxiv:1703.09824,\n    title = {Understanding the Lomb-Scargle Periodogram},\n    author = {Jacob T. VanderPlas},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1703.09824},\n    pdf = {https://arxiv.org/pdf/1703.09824},\n    url = {https://arxiv.org/abs/1703.09824}\n}",
+  "source": "arxiv.org",
+  "date": 1546187831,
+  "tags": []
+}
