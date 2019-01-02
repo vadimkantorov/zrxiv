@@ -1,0 +1,16 @@
+{
+  "title": "Adversarial Examples, Uncertainty, and Transfer Testing Robustness in Gaussian Process Hybrid Deep Networks",
+  "authors": [
+    "John Bradshaw",
+    "Alexander G. de G. Matthews",
+    "Zoubin Ghahramani"
+  ],
+  "abstract": "  Deep neural networks (DNNs) have excellent representative power and are state\nof the art classifiers on many tasks. However, they often do not capture their\nown uncertainties well making them less robust in the real world as they\noverconfidently extrapolate and do not notice domain shift. Gaussian processes\n(GPs) with RBF kernels on the other hand have better calibrated uncertainties\nand do not overconfidently extrapolate far from data in their training set.\nHowever, GPs have poor representational power and do not perform as well as\nDNNs on complex domains. In this paper we show that GP hybrid deep networks,\nGPDNNs, (GPs on top of DNNs and trained end-to-end) inherit the nice properties\nof both GPs and DNNs and are much more robust to adversarial examples. When\nextrapolating to adversarial examples and testing in domain shift settings,\nGPDNNs frequently output high entropy class probabilities corresponding to\nessentially \"don't know\". GPDNNs are therefore promising as deep architectures\nthat know when they don't know.\n",
+  "id": "arxiv.1707.02476",
+  "url": "https://arxiv.org/abs/1707.02476",
+  "pdf": "https://arxiv.org/pdf/1707.02476",
+  "bibtex": "@misc{bradshaw2017_arxiv:1707.02476,\n    title = {Adversarial Examples, Uncertainty, and Transfer Testing Robustness in Gaussian Process Hybrid Deep Networks},\n    author = {John Bradshaw, Alexander G. de G. Matthews, Zoubin Ghahramani},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1707.02476},\n    pdf = {https://arxiv.org/pdf/1707.02476},\n    url = {https://arxiv.org/abs/1707.02476}\n}",
+  "source": "arxiv.org",
+  "date": 1546449295,
+  "tags": []
+}
