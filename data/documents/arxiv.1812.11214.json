@@ -1,0 +1,30 @@
+{
+  "title": "Kymatio: Scattering Transforms in Python",
+  "authors": [
+    "Mathieu Andreux",
+    "Tomás Angles",
+    "Georgios Exarchakis",
+    "Roberto Leonarduzzi",
+    "Gaspar Rochette",
+    "Louis Thiry",
+    "John Zarka",
+    "Stéphane Mallat",
+    "Joakim Andén",
+    "Eugene Belilovsky",
+    "Joan Bruna",
+    "Vincent Lostanlen",
+    "Matthew J. Hirn",
+    "Edouard Oyallon",
+    "Sixhin Zhang",
+    "Carmine Cella",
+    "Michael Eickenberg"
+  ],
+  "abstract": "  The wavelet scattering transform is an invariant signal representation\nsuitable for many signal processing and machine learning applications. We\npresent the Kymatio software package, an easy-to-use, high-performance Python\nimplementation of the scattering transform in 1D, 2D, and 3D that is compatible\nwith modern deep learning frameworks. All transforms may be executed on a GPU\n(in addition to CPU), offering a considerable speed up over CPU\nimplementations. The package also has a small memory footprint, resulting\ninefficient memory usage. The source code, documentation, and examples are\navailable undera BSD license at https://www.kymat.io/\n",
+  "id": "arxiv.1812.11214",
+  "url": "https://arxiv.org/abs/1812.11214",
+  "pdf": "https://arxiv.org/pdf/1812.11214",
+  "bibtex": "@misc{andreux2018_arxiv:1812.11214,\n    title = {Kymatio: Scattering Transforms in Python},\n    author = {Mathieu Andreux, Tomás Angles, Georgios Exarchakis, Roberto Leonarduzzi, Gaspar Rochette, Louis Thiry, John Zarka, Stéphane Mallat, Joakim Andén, Eugene Belilovsky, Joan Bruna, Vincent Lostanlen, Matthew J. Hirn, Edouard Oyallon, Sixhin Zhang, Carmine Cella, Michael Eickenberg},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.11214},\n    pdf = {https://arxiv.org/pdf/1812.11214},\n    url = {https://arxiv.org/abs/1812.11214}\n}",
+  "source": "arxiv.org",
+  "date": 1546449376,
+  "tags": []
+}
