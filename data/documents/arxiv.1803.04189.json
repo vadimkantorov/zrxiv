@@ -1,0 +1,20 @@
+{
+  "title": "Noise2Noise: Learning Image Restoration without Clean Data",
+  "authors": [
+    "Jaakko Lehtinen",
+    "Jacob Munkberg",
+    "Jon Hasselgren",
+    "Samuli Laine",
+    "Tero Karras",
+    "Miika Aittala",
+    "Timo Aila"
+  ],
+  "abstract": "  We apply basic statistical reasoning to signal reconstruction by machine\nlearning -- learning to map corrupted observations to clean signals -- with a\nsimple and powerful conclusion: it is possible to learn to restore images by\nonly looking at corrupted examples, at performance at and sometimes exceeding\ntraining using clean data, without explicit image priors or likelihood models\nof the corruption. In practice, we show that a single model learns photographic\nnoise removal, denoising synthetic Monte Carlo images, and reconstruction of\nundersampled MRI scans -- all corrupted by different processes -- based on\nnoisy data only.\n",
+  "id": "arxiv.1803.04189",
+  "url": "https://arxiv.org/abs/1803.04189",
+  "pdf": "https://arxiv.org/pdf/1803.04189",
+  "bibtex": "@misc{lehtinen2018_arxiv:1803.04189,\n    title = {Noise2Noise: Learning Image Restoration without Clean Data},\n    author = {Jaakko Lehtinen, Jacob Munkberg, Jon Hasselgren, Samuli Laine, Tero Karras, Miika Aittala, Timo Aila},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.04189},\n    pdf = {https://arxiv.org/pdf/1803.04189},\n    url = {https://arxiv.org/abs/1803.04189}\n}",
+  "source": "arxiv.org",
+  "date": 1546535227,
+  "tags": []
+}
