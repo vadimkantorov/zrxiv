@@ -1,0 +1,17 @@
+{
+  "title": "Surges of collective human activity emerge from simple pairwise correlations",
+  "authors": [
+    "Christopher W. Lynn",
+    "Lia Papadopoulos",
+    "Daniel D. Lee",
+    "Danielle S. Bassett"
+  ],
+  "abstract": "  Collective human behavior drives a wide range of social, political, and\ntechnological phenomena in the modern world. However, while the correlated\nactivity of one or two individuals is partially understood, it remains unclear\nif and how these simple low-order correlations give rise to the complex\nlarge-scale patterns characteristic of human experience. Here we show that\nnetworks of email and private message correspondence exhibit surges of\ncollective activity, which cannot be explained by assuming that humans act\nindependently. Intuitively, this collective behavior could arise from shared\ndaily and weekly rhythms, or from complicated correlations between large groups\nof individuals. Instead, we find that large-scale patterns of activity can be\nunderstood as emerging naturally from the network of simple pairwise\ncorrelations between individuals in a population. To arrive at this conclusion,\nwe employ the principle of maximum entropy from information theory, making our\nmodel equivalent to an Ising model. Interestingly, the structure of learned\nIsing interactions in our model---chosen only to account for pairwise\ncorrelations in the data---closely corresponds to the network of inter-human\ncommunication in the population. Together, these results highlight the\nimportance of thinking carefully about fine-scale correlations as possible\nbuilding blocks for large-scale patterns of human behavior, a perspective that\nhas notably lacked sufficient investigation.\n",
+  "id": "arxiv.1803.00118",
+  "url": "https://arxiv.org/abs/1803.00118",
+  "pdf": "https://arxiv.org/pdf/1803.00118",
+  "bibtex": "@misc{lynn2018_arxiv:1803.00118,\n    title = {Surges of collective human activity emerge from simple pairwise correlations},\n    author = {Christopher W. Lynn, Lia Papadopoulos, Daniel D. Lee, Danielle S. Bassett},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.00118},\n    pdf = {https://arxiv.org/pdf/1803.00118},\n    url = {https://arxiv.org/abs/1803.00118}\n}",
+  "source": "arxiv.org",
+  "date": 1546712748,
+  "tags": []
+}
