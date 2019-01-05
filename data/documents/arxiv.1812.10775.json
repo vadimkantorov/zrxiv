@@ -1,0 +1,17 @@
+{
+  "title": "3D Point-Capsule Networks",
+  "authors": [
+    "Yongheng Zhao",
+    "Tolga Birdal",
+    "Haowen Deng",
+    "Federico Tombari"
+  ],
+  "abstract": "  In this paper, we propose 3D point-capsule networks, an auto-encoder designed\nto process sparse 3D point clouds while preserving spatial arrangements of the\ninput data. 3D capsule networks arise as a direct consequence of our novel\nunified 3D auto-encoder formulation. Their dynamic routing scheme and the\npeculiar 2D latent space deployed by our approach bring in improvements for\nseveral common point cloud-related tasks, such as object classification, object\nreconstruction and part segmentation as substantiated by our extensive\nevaluations. Moreover, it enables new applications such as part interpolation\nand replacement.\n",
+  "id": "arxiv.1812.10775",
+  "url": "https://arxiv.org/abs/1812.10775",
+  "pdf": "https://arxiv.org/pdf/1812.10775",
+  "bibtex": "@misc{zhao2018_arxiv:1812.10775,\n    title = {3D Point-Capsule Networks},\n    author = {Yongheng Zhao, Tolga Birdal, Haowen Deng, Federico Tombari},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.10775},\n    pdf = {https://arxiv.org/pdf/1812.10775},\n    url = {https://arxiv.org/abs/1812.10775}\n}",
+  "source": "arxiv.org",
+  "date": 1546731677,
+  "tags": []
+}
