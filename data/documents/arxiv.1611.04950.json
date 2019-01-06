@@ -1,0 +1,18 @@
+{
+  "title": "The Fast Slepian Transform",
+  "authors": [
+    "Santhosh Karnik",
+    "Zhihui Zhu",
+    "Michael B. Wakin",
+    "Justin Romberg",
+    "Mark A. Davenport"
+  ],
+  "abstract": "  The discrete prolate spheroidal sequences (DPSS's) provide an efficient\nrepresentation for discrete signals that are perfectly timelimited and nearly\nbandlimited. Due to the high computational complexity of projecting onto the\nDPSS basis - also known as the Slepian basis - this representation is often\noverlooked in favor of the fast Fourier transform (FFT). We show that there\nexist fast constructions for computing approximate projections onto the leading\nSlepian basis elements. The complexity of the resulting algorithms is\ncomparable to the FFT, and scales favorably as the quality of the desired\napproximation is increased. In the process of bounding the complexity of these\nalgorithms, we also establish new nonasymptotic results on the eigenvalue\ndistribution of discrete time-frequency localization operators. We then\ndemonstrate how these algorithms allow us to efficiently compute the solution\nto certain least-squares problems that arise in signal processing. We also\nprovide simulations comparing these fast, approximate Slepian methods to exact\nSlepian methods as well as the traditional FFT based methods.\n",
+  "id": "arxiv.1611.04950",
+  "url": "https://arxiv.org/abs/1611.04950",
+  "pdf": "https://arxiv.org/pdf/1611.04950",
+  "bibtex": "@misc{karnik2016_arxiv:1611.04950,\n    title = {The Fast Slepian Transform},\n    author = {Santhosh Karnik, Zhihui Zhu, Michael B. Wakin, Justin Romberg, Mark A. Davenport},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1611.04950},\n    pdf = {https://arxiv.org/pdf/1611.04950},\n    url = {https://arxiv.org/abs/1611.04950}\n}",
+  "source": "arxiv.org",
+  "date": 1546813614,
+  "tags": []
+}
