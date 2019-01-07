@@ -1,0 +1,14 @@
+{
+  "title": "Lenia - Biology of Artificial Life",
+  "authors": [
+    "Bert Wang-Chak Chan"
+  ],
+  "abstract": "  We report a new model of artificial life called Lenia (from Latin lenis\n\"smooth\"), a two-dimensional cellular automaton with continuous\nspace-time-state and generalized local rule. Computer simulations show that\nLenia supports a great diversity of complex autonomous patterns or \"lifeforms\"\nbearing resemblance to real-world microscopic organisms. More than 400 species\nin 18 families have been identified, many discovered via interactive\nevolutionary computation. They differ from other cellular automata patterns in\nbeing geometric, metameric, fuzzy, resilient, adaptive, and rule-generic.\n  We present basic observations of the model regarding the properties of\nspace-time and basic settings. We provide a board survey of the lifeforms,\ncategorize them into a hierarchical taxonomy, and map their distribution in the\nparameter hyperspace. We describe their morphological structures and behavioral\ndynamics, propose possible mechanisms of their self-propulsion,\nself-organization and plasticity. Finally, we discuss how the study of Lenia\nwould be related to biology, artificial life, and artificial intelligence.\n",
+  "id": "arxiv.1812.05433",
+  "url": "https://arxiv.org/abs/1812.05433",
+  "pdf": "https://arxiv.org/pdf/1812.05433",
+  "bibtex": "@misc{chan2018_arxiv:1812.05433,\n    title = {Lenia - Biology of Artificial Life},\n    author = {Bert Wang-Chak Chan},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.05433},\n    pdf = {https://arxiv.org/pdf/1812.05433},\n    url = {https://arxiv.org/abs/1812.05433}\n}",
+  "source": "arxiv.org",
+  "date": 1546882960,
+  "tags": []
+}
