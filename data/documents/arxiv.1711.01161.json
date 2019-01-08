@@ -1,0 +1,19 @@
+{
+  "title": "Learning Filterbanks from Raw Speech for Phone Recognition",
+  "authors": [
+    "Neil Zeghidour",
+    "Nicolas Usunier",
+    "Iasonas Kokkinos",
+    "Thomas Schatz",
+    "Gabriel Synnaeve",
+    "Emmanuel Dupoux"
+  ],
+  "abstract": "  We train a bank of complex filters that operates on the raw waveform and is\nfed into a convolutional neural network for end-to-end phone recognition. These\ntime-domain filterbanks (TD-filterbanks) are initialized as an approximation of\nmel-filterbanks, and then fine-tuned jointly with the remaining convolutional\narchitecture. We perform phone recognition experiments on TIMIT and show that\nfor several architectures, models trained on TD-filterbanks consistently\noutperform their counterparts trained on comparable mel-filterbanks. We get our\nbest performance by learning all front-end steps, from pre-emphasis up to\naveraging. Finally, we observe that the filters at convergence have an\nasymmetric impulse response, and that some of them remain almost analytic.\n",
+  "id": "arxiv.1711.01161",
+  "url": "https://arxiv.org/abs/1711.01161",
+  "pdf": "https://arxiv.org/pdf/1711.01161",
+  "bibtex": "@misc{zeghidour2017_arxiv:1711.01161,\n    title = {Learning Filterbanks from Raw Speech for Phone Recognition},\n    author = {Neil Zeghidour, Nicolas Usunier, Iasonas Kokkinos, Thomas Schatz, Gabriel Synnaeve, Emmanuel Dupoux},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1711.01161},\n    pdf = {https://arxiv.org/pdf/1711.01161},\n    url = {https://arxiv.org/abs/1711.01161}\n}",
+  "source": "arxiv.org",
+  "date": 1546989245,
+  "tags": []
+}
