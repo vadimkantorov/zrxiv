@@ -1,0 +1,18 @@
+{
+  "title": "Stable Opponent Shaping in Differentiable Games",
+  "authors": [
+    "Alistair Letcher",
+    "Jakob Foerster",
+    "David Balduzzi",
+    "Tim Rocktäschel",
+    "Shimon Whiteson"
+  ],
+  "abstract": "A growing number of learning methods are actually games which optimise multiple, interdependent objectives in parallel -- from GANs and intrinsic curiosity to multi-agent RL. Opponent shaping is a powerful approach to improve learning dynamics in such games, accounting for the fact that the 'environment' includes agents adapting to one another's updates. Learning with Opponent-Learning Awareness (LOLA) is a recent algorithm which exploits this dynamic response and encourages cooperation in settings like the Iterated Prisoner's Dilemma. Although experimentally successful, we show that LOLA can exhibit 'arrogant' behaviour directly at odds with convergence. In fact, remarkably few algorithms have theoretical guarantees applying across all differentiable games. In this paper we present Stable Opponent Shaping (SOS), a new method that interpolates between LOLA and a stable variant named LookAhead. We prove that LookAhead locally converges and avoids strict saddles in all differentiable games, the strongest results in the field so far. SOS inherits these desirable guarantees, while also shaping the learning of opponents and consistently either matching or outperforming LOLA experimentally.",
+  "id": "openreview.SyGjjsC5tQ",
+  "url": "https://openreview.net/forum?id=SyGjjsC5tQ",
+  "pdf": "https://openreview.net/pdf?id=SyGjjsC5tQ",
+  "bibtex": "@inproceedings{letcher2018stable,\n    title = {Stable Opponent Shaping in Differentiable Games},\n    author = {Alistair Letcher and Jakob Foerster and David Balduzzi and Tim Rocktäschel and Shimon Whiteson},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=SyGjjsC5tQ},\n    url = {https://openreview.net/forum?id=SyGjjsC5tQ}\n}",
+  "source": "openreview.net",
+  "date": 1547052595,
+  "tags": []
+}
