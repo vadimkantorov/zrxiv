@@ -40,7 +40,7 @@
 			.subtitle-checked { font-size:small; color:black }
 			.subtitles {float:right; font-size:small; color:lightgray }
 			
-			#bibtex_download { {% if page.recent_docs == true or page.path contains "data/tags/" %}float:right{% endif %} }
+			#bibtex_download { {% if page.recent_docs == true %}float:right{% endif %} }
 			#bibtex_copy_area {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px}
 			.bibtex_copy::after { content: " | " }
 			
