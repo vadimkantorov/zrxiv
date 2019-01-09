@@ -141,18 +141,18 @@
 				document.getElementById('filter_area').value = hash;
 				document.getElementById('filter_area').onkeyup = filter_keyup;
 				
-				const tag_link = document.getElementById('tag');
+				const tag_link = document.getElementById('tag'), bibtex_link = document.getElementById('bibtex_download');
 				if(selector != '')
 				{
 					const filtered_docs = document.querySelectorAll('.doc:not([hidden])');
 					const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
 					
 					tag_link.innerText = `filtered ${filtered_docs.length} docs`;
-					tag_link.download = 'filtered.bib';
-					document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
+					bibtex_link.download = 'filtered.bib';
+					bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
 				}
 				else
-					tag_link.download = null;
+					bibtex_link.removeAttribute('download');
 			}
 		</script>
 	</body>
