@@ -140,7 +140,9 @@
 				document.querySelectorAll('.doc.filtered').forEach(reset_doc);
 				document.getElementById('filter_area').value = hash;
 				document.getElementById('filter_area').onkeyup = filter_keyup;
-				//document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n'));
+				
+				if(selector != '')
+					document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n'));
 			}
 		</script>
 	</body>
