@@ -1,0 +1,16 @@
+{
+  "title": "Interpretable Convolutional Neural Networks",
+  "authors": [
+    "Quanshi Zhang",
+    "Ying Nian Wu",
+    "Song-Chun Zhu"
+  ],
+  "abstract": "  This paper proposes a method to modify traditional convolutional neural\nnetworks (CNNs) into interpretable CNNs, in order to clarify knowledge\nrepresentations in high conv-layers of CNNs. In an interpretable CNN, each\nfilter in a high conv-layer represents a certain object part. We do not need\nany annotations of object parts or textures to supervise the learning process.\nInstead, the interpretable CNN automatically assigns each filter in a high\nconv-layer with an object part during the learning process. Our method can be\napplied to different types of CNNs with different structures. The clear\nknowledge representation in an interpretable CNN can help people understand the\nlogics inside a CNN, i.e., based on which patterns the CNN makes the decision.\nExperiments showed that filters in an interpretable CNN were more semantically\nmeaningful than those in traditional CNNs.\n",
+  "id": "arxiv.1710.00935",
+  "url": "https://arxiv.org/abs/1710.00935",
+  "pdf": "https://arxiv.org/pdf/1710.00935",
+  "bibtex": "@misc{zhang2017_arxiv:1710.00935,\n    title = {Interpretable Convolutional Neural Networks},\n    author = {Quanshi Zhang, Ying Nian Wu, Song-Chun Zhu},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1710.00935},\n    pdf = {https://arxiv.org/pdf/1710.00935},\n    url = {https://arxiv.org/abs/1710.00935}\n}",
+  "source": "arxiv.org",
+  "date": 1547038512,
+  "tags": []
+}
