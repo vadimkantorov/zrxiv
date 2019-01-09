@@ -70,7 +70,7 @@
 					    
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
-			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles">{% if docs_by_tag %}<a href="{{ site.github.url }}/{{ tag }}" class="subtitle-checked">{{ tag }} {{ docs | size }} docs</a>{% else %}<a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}">total {{ num_docs }} docs</a>{% endif %} | <a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a><br /><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-checked" id="bibtex_download">bibtex</a></span></h1>
+			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles">{% if docs_by_tag %}<a href="{{ site.github.url }}/{{ tag }}" class="subtitle-checked" id="tag">{{ tag }} {{ docs | size }} docs</a>{% else %}<a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" id="tag">total {{ num_docs }} docs</a>{% endif %} | <a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a><br /><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-checked" id="bibtex_download">bibtex</a></span></h1>
 			<div class="tags-header">{% for tag in sortedtags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button></div>
 			<ul>
 				{% for doc in docs %}
@@ -142,7 +142,11 @@
 				document.getElementById('filter_area').onkeyup = filter_keyup;
 				
 				if(selector != '')
-					document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title).join('\n\n'));
+				{
+					const filtered_docs_bibtex = Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title);
+					document.getElementById('tag').innerText = `filtered ${filtered_docs_bibtex.length} docs`;
+					document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
+				}
 			}
 		</script>
 	</body>
