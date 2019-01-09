@@ -143,8 +143,9 @@
 				
 				if(selector != '')
 				{
-					const filtered_docs_bibtex = Array.from(document.querySelectorAll('.doc:not([hidden]) a.bibtex_copy')).map(a => a.title);
-					document.getElementById('tag').innerText = `filtered ${filtered_docs_bibtex.length} docs`;
+					const filtered_docs = document.querySelectorAll('.doc:not([hidden])');
+					const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
+					document.getElementById('tag').innerText = `filtered ${filtered_docs.length} docs`;
 					document.getElementById('bibtex_download').href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
 				}
 			}
