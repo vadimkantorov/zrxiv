@@ -1,0 +1,18 @@
+{
+  "title": "Neural RGB->D Sensing: Depth and Uncertainty from a Video Camera",
+  "authors": [
+    "Chao Liu",
+    "Jinwei Gu",
+    "Kihwan Kim",
+    "Srinivasa Narasimhan",
+    "Jan Kautz"
+  ],
+  "abstract": "  Depth sensing is crucial for 3D reconstruction and scene understanding.\nActive depth sensors provide dense metric measurements, but often suffer from\nlimitations such as restricted operating ranges, low spatial resolution, sensor\ninterference, and high power consumption. In this paper, we propose a deep\nlearning (DL) method to estimate per-pixel depth and its uncertainty\ncontinuously from a monocular video stream, with the goal of effectively\nturning an RGB camera into an RGB-D camera. Unlike prior DL-based methods, we\nestimate a depth probability distribution for each pixel rather than a single\ndepth value, leading to an estimate of a 3D depth probability volume for each\ninput frame. These depth probability volumes are accumulated over time under a\nBayesian filtering framework as more incoming frames are processed\nsequentially, which effectively reduces depth uncertainty and improves\naccuracy, robustness, and temporal stability. Compared to prior work, the\nproposed approach achieves more accurate and stable results, and generalizes\nbetter to new datasets. Experimental results also show the output of our\napproach can be directly fed into classical RGB-D based 3D scanning methods for\n3D scene reconstruction.\n",
+  "id": "arxiv.1901.02571",
+  "url": "https://arxiv.org/abs/1901.02571",
+  "pdf": "https://arxiv.org/pdf/1901.02571",
+  "bibtex": "@misc{liu2019_arxiv:1901.02571,\n    title = {Neural RGB->D Sensing: Depth and Uncertainty from a Video Camera},\n    author = {Chao Liu, Jinwei Gu, Kihwan Kim, Srinivasa Narasimhan, Jan Kautz},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.02571},\n    pdf = {https://arxiv.org/pdf/1901.02571},\n    url = {https://arxiv.org/abs/1901.02571}\n}",
+  "source": "arxiv.org",
+  "date": 1547139056,
+  "tags": []
+}
