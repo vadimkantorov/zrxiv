@@ -1,0 +1,15 @@
+{
+  "title": "On the effect of the activation function on the distribution of hidden nodes in a deep network",
+  "authors": [
+    "Philip M. Long",
+    "Hanie Sedghi"
+  ],
+  "abstract": "  We analyze the joint probability distribution on the lengths of the vectors\nof hidden variables in different layers of a fully connected deep network, when\nthe weights and biases are chosen randomly according to Gaussian distributions,\nand the input is in $\\{ -1, 1\\}^N$. We show that, if the activation function\n$\\phi$ satisfies a minimal set of assumptions, satisfied by all activation\nfunctions that we know that are used in practice, then, as the width of the\nnetwork gets large, the `length process' converges in probability to a length\nmap that is determined as a simple function of the variances of the random\nweights and biases, and the activation function $\\phi$. We also show that this\nconvergence may fail for $\\phi$ that violate our assumptions.\n",
+  "id": "arxiv.1901.02104",
+  "url": "https://arxiv.org/abs/1901.02104",
+  "pdf": "https://arxiv.org/pdf/1901.02104",
+  "bibtex": "@misc{long2019_arxiv:1901.02104,\n    title = {On the effect of the activation function on the distribution of hidden nodes in a deep network},\n    author = {Philip M. Long, Hanie Sedghi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.02104},\n    pdf = {https://arxiv.org/pdf/1901.02104},\n    url = {https://arxiv.org/abs/1901.02104}\n}",
+  "source": "arxiv.org",
+  "date": 1547137719,
+  "tags": []
+}
