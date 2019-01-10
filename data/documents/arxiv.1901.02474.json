@@ -1,0 +1,14 @@
+{
+  "title": "On Relativistic $f$-Divergences",
+  "authors": [
+    "Alexia Jolicoeur-Martineau"
+  ],
+  "abstract": "  This paper provides a more rigorous look at Relativistic Generative\nAdversarial Networks (RGANs). We prove that the objective function of the\ndiscriminator is a statistical divergence for any concave function $f$ with\nminimal properties ($f(0)=0$, $f'(0) \\neq 0$, $\\sup_x f(x)>0$). We also devise\na few variants of relativistic $f$-divergences. Wasserstein GAN was originally\njustified by the idea that the Wasserstein distance (WD) is most sensible\nbecause it is weak (i.e., it induces a weak topology). We show that the WD is\nweaker than $f$-divergences which are weaker than relativistic $f$-divergences.\nGiven the good performance of RGANs, this suggests that WGAN does not performs\nwell primarily because of the weak metric, but rather because of regularization\nand the use of a relativistic discriminator. We also take a closer look at\nestimators of relativistic $f$-divergences. We introduce the minimum-variance\nunbiased estimator (MVUE) for Relativistic paired GANs (RpGANs; originally\ncalled RGANs which could bring confusion) and show that it does not perform\nbetter. Furthermore, we show that the estimator of Relativistic average GANs\n(RaGANs) is only asymptotically unbiased, but that the finite-sample bias is\nsmall. Removing this bias does not improve performance.\n",
+  "id": "arxiv.1901.02474",
+  "url": "https://arxiv.org/abs/1901.02474",
+  "pdf": "https://arxiv.org/pdf/1901.02474",
+  "bibtex": "@misc{jolicoeur-martineau2019_arxiv:1901.02474,\n    title = {On Relativistic $f$-Divergences},\n    author = {Alexia Jolicoeur-Martineau},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.02474},\n    pdf = {https://arxiv.org/pdf/1901.02474},\n    url = {https://arxiv.org/abs/1901.02474}\n}",
+  "source": "arxiv.org",
+  "date": 1547126378,
+  "tags": []
+}
