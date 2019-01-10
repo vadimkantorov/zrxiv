@@ -1,0 +1,19 @@
+{
+  "title": "Computational Intractability Law Molds the Topology of Biological Networks",
+  "authors": [
+    "Ali A Atiia",
+    "Corbin Hopper",
+    "Katsumi Inoue",
+    "Silvia Vidal",
+    "Jerome Waldispuhl"
+  ],
+  "abstract": "<p>Virtually all molecular interaction networks (MINs), irrespective of organism or physiological context, have a majority of loosely-connected 9leaf9 genes interacting with at most 1-3 genes, and a minority of highly-connected 9hub9 genes interacting with at least 10 or more other genes. Previous reports proposed adaptive and non-adaptive hypotheses describing sufficient but not necessary conditions for the origin of this majority-leaves minority-hubs (mLmH) topology. We modeled the evolution of MINs as a computational optimization problem which describes the cost of conserving, deleting or mutating existing genes so as to maximize (minimize) the overall number of beneficial (damaging) interactions network-wide. The model 1) provides sufficient and, assuming P≠NP, necessary conditions for the emergence of mLmH as a software adaptation to circumvent computational intractability, 2) predicts the percentage number of genes having <i>d</i> interacting partners, and 3) when employed as a fitness function in an evolutionary algorithm, produces mLmH-possessing synthetic networks whose degree distributions match those of equal-size MINs.</p>",
+  "id": "biorxiv.510495v1",
+  "url": "https://www.biorxiv.org/content/early/2019/01/03/510495",
+  "pdf": "https://www.biorxiv.org/content/biorxiv/early/2019/01/03/510495.full.pdf",
+  "bibtex": "@article{atiia510495,\n    title = {Computational Intractability Law Molds the Topology of Biological Networks},\n    author = {Atiia, Ali A and Hopper, Corbin and Inoue, Katsumi and Vidal, Silvia and Waldispuhl, Jerome},\n    journal = {bioRxiv},\n    year = {2019},\n    doi = {10.1101/510495},\n    elocation-id = {510495},\n    eprint = {https://www.biorxiv.org/content/early/2019/01/03/510495.full.pdf},\n    publisher = {Cold Spring Harbor Laboratory},\n    pdf = {https://www.biorxiv.org/content/biorxiv/early/2019/01/03/510495.full.pdf},\n    url = {https://www.biorxiv.org/content/early/2019/01/03/510495}\n}",
+  "source": "biorxiv.org",
+  "date": 1547084020,
+  "tags": [],
+  "doi": "10.1101/510495"
+}
