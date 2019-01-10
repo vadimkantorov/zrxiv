@@ -1,0 +1,18 @@
+{
+  "title": "On the Capabilities and Limitations of Reasoning for Natural Language Understanding",
+  "authors": [
+    "Daniel Khashabi",
+    "Erfan Sadeqi Azer",
+    "Tushar Khot",
+    "Ashish Sabharwal",
+    "Dan Roth"
+  ],
+  "abstract": "  Recent systems for natural language understanding are strong at overcoming\nlinguistic variability for lookup style reasoning. Yet, their accuracy drops\ndramatically as the number of reasoning steps increases. We present the first\nformal framework to study such empirical observations, addressing the\nambiguity, redundancy, incompleteness, and inaccuracy that the use of language\nintroduces when representing a hidden conceptual space. Our formal model uses\ntwo interrelated spaces: a conceptual meaning space that is unambiguous and\ncomplete but hidden, and a linguistic symbol space that captures a noisy\ngrounding of the meaning space in the symbols or words of a language.\n  We apply this framework to study the connectivity problem in undirected\ngraphs---a core reasoning problem that forms the basis for more complex\nmulti-hop reasoning. We show that it is indeed possible to construct a\nhigh-quality algorithm for detecting connectivity in the (latent) meaning\ngraph, based on an observed noisy symbol graph, as long as the noise is below\nour quantified noise level and only a few hops are needed. On the other hand,\nwe also prove an impossibility result: if a query requires a large number\n(specifically, logarithmic in the size of the meaning graph) of hops, no\nreasoning system operating over the symbol graph is likely to recover any\nuseful property of the meaning graph. This highlights a fundamental barrier for\na class of reasoning problems and systems, and suggests the need to limit the\ndistance between the two spaces, rather than investing in multi-hop reasoning\nwith \"many\" hops.\n",
+  "id": "arxiv.1901.02522",
+  "url": "https://arxiv.org/abs/1901.02522",
+  "pdf": "https://arxiv.org/pdf/1901.02522",
+  "bibtex": "@misc{khashabi2019_arxiv:1901.02522,\n    title = {On the Capabilities and Limitations of Reasoning for Natural Language Understanding},\n    author = {Daniel Khashabi, Erfan Sadeqi Azer, Tushar Khot, Ashish Sabharwal, Dan Roth},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.02522},\n    pdf = {https://arxiv.org/pdf/1901.02522},\n    url = {https://arxiv.org/abs/1901.02522}\n}",
+  "source": "arxiv.org",
+  "date": 1547139406,
+  "tags": []
+}
