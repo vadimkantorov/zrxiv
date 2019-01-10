@@ -1,0 +1,16 @@
+{
+  "title": "An Online Plug-and-Play Algorithm for Regularized Image Reconstruction",
+  "authors": [
+    "Yu Sun",
+    "Brendt Wohlberg",
+    "Ulugbek S. Kamilov"
+  ],
+  "abstract": "  Plug-and-play priors (PnP) is a powerful framework for regularizing imaging\ninverse problems by using advanced denoisers within an iterative algorithm.\nRecent experimental evidence suggests that PnP algorithms achieve\nstate-of-the-art performance in a range of imaging applications. In this paper,\nwe introduce a new online PnP algorithm based on the iterative\nshrinkage/thresholding algorithm (ISTA). The proposed algorithm uses only a\nsubset of measurements at every iteration, which makes it scalable to very\nlarge datasets. We present a new theoretical convergence analysis, for both\nbatch and online variants of PnP-ISTA, for denoisers that do not necessarily\ncorrespond to proximal operators. We also present simulations illustrating the\napplicability of the algorithm to image reconstruction in diffraction\ntomography. The results in this paper have the potential to expand the\napplicability of the PnP framework to very large and redundant datasets.\n",
+  "id": "arxiv.1809.04693",
+  "url": "https://arxiv.org/abs/1809.04693",
+  "pdf": "https://arxiv.org/pdf/1809.04693",
+  "bibtex": "@misc{sun2018_arxiv:1809.04693,\n    title = {An Online Plug-and-Play Algorithm for Regularized Image Reconstruction},\n    author = {Yu Sun, Brendt Wohlberg, Ulugbek S. Kamilov},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1809.04693},\n    pdf = {https://arxiv.org/pdf/1809.04693},\n    url = {https://arxiv.org/abs/1809.04693}\n}",
+  "source": "arxiv.org",
+  "date": 1547137750,
+  "tags": []
+}
