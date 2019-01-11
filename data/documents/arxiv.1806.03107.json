@@ -1,0 +1,18 @@
+{
+  "title": "Temporal Difference Variational Auto-Encoder",
+  "authors": [
+    "Karol Gregor",
+    "George Papamakarios",
+    "Frederic Besse",
+    "Lars Buesing",
+    "Theophane Weber"
+  ],
+  "abstract": "  To act and plan in complex environments, we posit that agents should have a\nmental simulator of the world with three characteristics: (a) it should build\nan abstract state representing the condition of the world; (b) it should form a\nbelief which represents uncertainty on the world; (c) it should go beyond\nsimple step-by-step simulation, and exhibit temporal abstraction. Motivated by\nthe absence of a model satisfying all these requirements, we propose TD-VAE, a\ngenerative sequence model that learns representations containing explicit\nbeliefs about states several steps into the future, and that can be rolled out\ndirectly without single-step transitions. TD-VAE is trained on pairs of\ntemporally separated time points, using an analogue of temporal difference\nlearning used in reinforcement learning.\n",
+  "id": "arxiv.1806.03107",
+  "url": "https://arxiv.org/abs/1806.03107",
+  "pdf": "https://arxiv.org/pdf/1806.03107",
+  "bibtex": "@misc{gregor2018_arxiv:1806.03107,\n    title = {Temporal Difference Variational Auto-Encoder},\n    author = {Karol Gregor, George Papamakarios, Frederic Besse, Lars Buesing, Theophane Weber},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.03107},\n    pdf = {https://arxiv.org/pdf/1806.03107},\n    url = {https://arxiv.org/abs/1806.03107}\n}",
+  "source": "arxiv.org",
+  "date": 1547165282,
+  "tags": []
+}
