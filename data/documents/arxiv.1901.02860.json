@@ -1,0 +1,20 @@
+{
+  "title": "Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context",
+  "authors": [
+    "Zihang Dai",
+    "Zhilin Yang",
+    "Yiming Yang",
+    "William W. Cohen",
+    "Jaime Carbonell",
+    "Quoc V. Le",
+    "Ruslan Salakhutdinov"
+  ],
+  "abstract": "  Transformer networks have a potential of learning longer-term dependency, but\nare limited by a fixed-length context in the setting of language modeling. As a\nsolution, we propose a novel neural architecture, \\textit{Transformer-XL}, that\nenables Transformer to learn dependency beyond a fixed length without\ndisrupting temporal coherence. Concretely, it consists of a segment-level\nrecurrence mechanism and a novel positional encoding scheme. Our method not\nonly enables capturing longer-term dependency, but also resolves the problem of\ncontext fragmentation. As a result, Transformer-XL learns dependency that is\nabout 80\\% longer than RNNs and 450\\% longer than vanilla Transformers,\nachieves better performance on both short and long sequences, and is up to\n1,800+ times faster than vanilla Transformer during evaluation. Additionally,\nwe improve the state-of-the-art (SoTA) results of bpc/perplexity from 1.06 to\n0.99 on enwiki8, from 1.13 to 1.08 on text8, from 20.5 to 18.3 on WikiText-103,\nfrom 23.7 to 21.8 on One Billion Word, and from 55.3 to 54.5 on Penn Treebank\n(without finetuning). Our code, pretrained models, and hyperparameters are\navailable in both Tensorflow and PyTorch.\n",
+  "id": "arxiv.1901.02860",
+  "url": "https://arxiv.org/abs/1901.02860",
+  "pdf": "https://arxiv.org/pdf/1901.02860",
+  "bibtex": "@misc{dai2019_arxiv:1901.02860,\n    title = {Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context},\n    author = {Zihang Dai, Zhilin Yang, Yiming Yang, William W. Cohen, Jaime Carbonell, Quoc V. Le, Ruslan Salakhutdinov},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.02860},\n    pdf = {https://arxiv.org/pdf/1901.02860},\n    url = {https://arxiv.org/abs/1901.02860}\n}",
+  "source": "arxiv.org",
+  "date": 1547206840,
+  "tags": []
+}
