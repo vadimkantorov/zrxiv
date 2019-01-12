@@ -1,0 +1,17 @@
+{
+  "title": "Soft yet sharp interfaces in a vertex model of confluent tissue",
+  "authors": [
+    "Daniel M. Sussman",
+    "J. M. Schwarz",
+    "M. Cristina Marchetti",
+    "M. Lisa Manning"
+  ],
+  "abstract": "  How can dense biological tissue maintain sharp boundaries between coexisting\ncell populations? We explore this question within a simple vertex model for\ncells, focusing on the role of topology and tissue surface tension. We show\nthat the ability of cells to independently regulate adhesivity and tension,\ntogether with neighbor-based interaction rules, lets them support strikingly\nunusual interfaces. In particular, we show that mechanical- and\nfluctuation-based measurements of the effective surface tension of a cellular\naggregate yield different results, leading to mechanically soft interfaces that\nare nevertheless extremely sharp.\n",
+  "id": "arxiv.1710.00708",
+  "url": "https://arxiv.org/abs/1710.00708",
+  "pdf": "https://arxiv.org/pdf/1710.00708",
+  "bibtex": "@misc{sussman2017_arxiv:1710.00708,\n    title = {Soft yet sharp interfaces in a vertex model of confluent tissue},\n    author = {Daniel M. Sussman, J. M. Schwarz, M. Cristina Marchetti, M. Lisa Manning},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1710.00708},\n    pdf = {https://arxiv.org/pdf/1710.00708},\n    url = {https://arxiv.org/abs/1710.00708}\n}",
+  "source": "arxiv.org",
+  "date": 1547312362,
+  "tags": []
+}
