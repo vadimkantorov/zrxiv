@@ -1,0 +1,18 @@
+{
+  "title": "Biomimetic emulsions reveal the effect of mechanical forces on cell–cell adhesion",
+  "authors": [
+    "Lea-Laetitia Pontani",
+    "Ivane Jorjadze",
+    "Virgile Viasnoff",
+    "Jasna Brujic"
+  ],
+  "abstract": "<p>Cell–cell contacts in tissues are continuously subject to mechanical forces due to homeostatic pressure and active cytoskeleton dynamics. In the process of cellular adhesion, the molecular pathways are well characterized but the role of mechanics is less well understood. To isolate the role of pressure we present a dense packing of functionalized emulsion droplets in which surface interactions are tuned to mimic those of real cells. By visualizing the microstructure in 3D we find that a threshold compression force is necessary to overcome electrostatic repulsion and surface elasticity and establish protein-mediated adhesion. Varying the droplet interaction potential maps out a phase diagram for adhesion as a function of force and salt concentration. Remarkably, fitting the data with our theoretical model predicts binder concentrations in the adhesion areas that are similar to those found in real cells. Moreover, we quantify the dependence of the area of adhesion on the applied force and thus reveal adhesion strengthening with increasing external pressure even in the absence of active cellular processes. This biomimetic approach reveals a physical origin of pressure-sensitive adhesion and its strength across cell–cell junctions.</p>",
+  "id": "pnas.109/25/9839",
+  "url": "https://www.pnas.org/content/109/25/9839",
+  "pdf": "https://www.pnas.org/content/pnas/109/25/9839.full.pdf",
+  "bibtex": "@article{pontani9839,\n    title = {Biomimetic emulsions reveal the effect of mechanical forces on cell{\\textendash}cell adhesion},\n    author = {Pontani, Lea-Laetitia and Jorjadze, Ivane and Viasnoff, Virgile and Brujic, Jasna},\n    journal = {Proceedings of the National Academy of Sciences},\n    year = {2012},\n    doi = {10.1073/pnas.1201499109},\n    eprint = {https://www.pnas.org/content/109/25/9839.full.pdf},\n    issn = {0027-8424},\n    number = {25},\n    pages = {9839--9844},\n    publisher = {National Academy of Sciences},\n    volume = {109},\n    pdf = {https://www.pnas.org/content/pnas/109/25/9839.full.pdf},\n    url = {https://www.pnas.org/content/109/25/9839}\n}",
+  "source": "pnas.org",
+  "date": 1547312175,
+  "tags": [],
+  "doi": "10.1073/pnas.1201499109"
+}
