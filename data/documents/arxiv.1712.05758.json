@@ -1,0 +1,17 @@
+{
+  "title": "Anomalous glassy dynamics in simple models of dense biological tissue",
+  "authors": [
+    "Daniel M. Sussman",
+    "M. Paoluzzi",
+    "M. Cristina Marchetti",
+    "M. Lisa Manning"
+  ],
+  "abstract": "  In order to understand the mechanisms for glassy dynamics in biological\ntissues and shed light on those in non-biological materials, we study the\nlow-temperature disordered phase of 2D vertex-like models. Recently it has been\nnoted that vertex models have quite unusual behavior in the zero-temperature\nlimit, with rigidity transitions that are controlled by residual stresses and\ntherefore exhibit very different scaling and phenomenology compared to\nparticulate systems. Here we investigate the finite-temperature phase of\ntwo-dimensional Voronoi and Vertex models, and show that they have highly\nunusual, sub-Arrhenius scaling of dynamics with temperature. We connect the\nanomalous glassy dynamics to features of the potential energy landscape\nassociated with zero-temperature inherent states.\n",
+  "id": "arxiv.1712.05758",
+  "url": "https://arxiv.org/abs/1712.05758",
+  "pdf": "https://arxiv.org/pdf/1712.05758",
+  "bibtex": "@misc{sussman2017_arxiv:1712.05758,\n    title = {Anomalous glassy dynamics in simple models of dense biological tissue},\n    author = {Daniel M. Sussman, M. Paoluzzi, M. Cristina Marchetti, M. Lisa Manning},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1712.05758},\n    pdf = {https://arxiv.org/pdf/1712.05758},\n    url = {https://arxiv.org/abs/1712.05758}\n}",
+  "source": "arxiv.org",
+  "date": 1547312370,
+  "tags": []
+}
