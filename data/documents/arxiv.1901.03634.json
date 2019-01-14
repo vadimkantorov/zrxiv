@@ -1,0 +1,14 @@
+{
+  "title": "Variation Network: Learning High-level Attributes for Controlled Input Manipulation",
+  "authors": [
+    "Gaëtan Hadjeres"
+  ],
+  "abstract": "  This paper presents the Variation Network (VarNet), a generative model\nproviding means to manipulate the high-level attributes of a given input. The\noriginality of our approach is that VarNet is not only capable of handling\npre-defined attributes but can also learn the relevant attributes of the\ndataset by itself. These two settings can be easily combined which makes VarNet\napplicable for a wide variety of tasks. Further, VarNet has a sound\nprobabilistic interpretation which grants us with a novel way to navigate in\nthe latent spaces as well as means to control how the attributes are learned.\nWe demonstrate experimentally that this model is capable of performing\ninteresting input manipulation and that the learned attributes are relevant and\ninterpretable.\n",
+  "id": "arxiv.1901.03634",
+  "url": "https://arxiv.org/abs/1901.03634",
+  "pdf": "https://arxiv.org/pdf/1901.03634",
+  "bibtex": "@misc{hadjeres2019_arxiv:1901.03634,\n    title = {Variation Network: Learning High-level Attributes for Controlled Input Manipulation},\n    author = {Gaëtan Hadjeres},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.03634},\n    pdf = {https://arxiv.org/pdf/1901.03634},\n    url = {https://arxiv.org/abs/1901.03634}\n}",
+  "source": "arxiv.org",
+  "date": 1547477508,
+  "tags": []
+}
