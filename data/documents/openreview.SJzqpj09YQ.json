@@ -1,0 +1,18 @@
+{
+  "title": "Spectral Inference Networks: Unifying Deep and Spectral Learning",
+  "authors": [
+    "David Pfau",
+    "Stig Petersen",
+    "Ashish Agarwal",
+    "David G. T. Barrett",
+    "Kimberly L. Stachenfeld"
+  ],
+  "abstract": "We present Spectral Inference Networks, a framework for learning eigenfunctions of linear operators by stochastic optimization. Spectral Inference Networks generalize Slow Feature Analysis to generic symmetric operators, and are closely related to Variational Monte Carlo methods from computational physics. As such, they can be a powerful tool for unsupervised representation learning from video or graph-structured data. We cast training Spectral Inference Networks as a bilevel optimization problem, which allows for online learning of multiple eigenfunctions. We show results of training Spectral Inference Networks on problems in quantum mechanics and feature learning for videos on synthetic datasets. Our results demonstrate that Spectral Inference Networks accurately recover eigenfunctions of linear operators and can discover interpretable representations from video in a fully unsupervised manner.",
+  "id": "openreview.SJzqpj09YQ",
+  "url": "https://openreview.net/forum?id=SJzqpj09YQ",
+  "pdf": "https://openreview.net/pdf?id=SJzqpj09YQ",
+  "bibtex": "@inproceedings{pfau2018spectral,\n    title = {Spectral Inference Networks: Unifying Deep and Spectral Learning},\n    author = {David Pfau and Stig Petersen and Ashish Agarwal and David G. T. Barrett and Kimberly L. Stachenfeld},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=SJzqpj09YQ},\n    url = {https://openreview.net/forum?id=SJzqpj09YQ}\n}",
+  "source": "openreview.net",
+  "date": 1547490653,
+  "tags": []
+}
