@@ -1,0 +1,18 @@
+{
+  "title": "Learning to Make Analogies by Contrasting Abstract Relational Structure",
+  "authors": [
+    "Felix Hill",
+    "Adam Santoro",
+    "David Barrett",
+    "Ari Morcos",
+    "Timothy Lillicrap"
+  ],
+  "abstract": "Analogical reasoning has been a principal focus of various waves of AI research. Analogy is particularly challenging for machines because it requires relational structures to be represented such that they can be flexibly applied across diverse domains of experience. Here, we study how analogical reasoning can be induced in neural networks that learn to perceive and reason about raw visual data. We find that the critical factor for inducing such a capacity is not an elaborate architecture, but rather, careful attention to the choice of data and the manner in which it is presented to the model. The most robust capacity for analogical reasoning is induced when networks learn analogies by contrasting abstract relational structures in their input domains, a training method that uses only the input data to force models to learn about important abstract features. Using this technique we demonstrate capacities for complex, visual and symbolic analogy making and generalisation in even the simplest neural network architectures.",
+  "id": "openreview.SylLYsCcFm",
+  "url": "https://openreview.net/forum?id=SylLYsCcFm",
+  "pdf": "https://openreview.net/pdf?id=SylLYsCcFm",
+  "bibtex": "@inproceedings{hill2018learning,\n    title = {Learning to Make Analogies by Contrasting Abstract Relational Structure},\n    author = {Felix Hill and Adam Santoro and David Barrett and Ari Morcos and Timothy Lillicrap},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=SylLYsCcFm},\n    url = {https://openreview.net/forum?id=SylLYsCcFm}\n}",
+  "source": "openreview.net",
+  "date": 1547490671,
+  "tags": []
+}
