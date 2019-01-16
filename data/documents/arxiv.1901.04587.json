@@ -1,0 +1,16 @@
+{
+  "title": "Human few-shot learning of compositional instructions",
+  "authors": [
+    "Brenden M. Lake",
+    "Tal Linzen",
+    "Marco Baroni"
+  ],
+  "abstract": "  People learn in fast and flexible ways that have not been emulated by\nmachines. Once a person learns a new verb \"dax,\" he or she can effortlessly\nunderstand how to \"dax twice,\" \"walk and dax,\" or \"dax vigorously.\" There have\nbeen striking recent improvements in machine learning for natural language\nprocessing, yet the best algorithms require vast amounts of experience and\nstruggle to generalize new concepts in compositional ways. To better understand\nthese distinctively human abilities, we study the compositional skills of\npeople through language-like instruction learning tasks. Our results show that\npeople can learn and use novel functional concepts from very few examples\n(few-shot learning), successfully applying familiar functions to novel inputs.\nPeople can also compose concepts in complex ways that go beyond the provided\ndemonstrations. Two additional experiments examined the assumptions and\ninductive biases that people make when solving these tasks, revealing three\nbiases: mutual exclusivity, one-to-one mappings, and iconic concatenation. We\ndiscuss the implications for cognitive modeling and the potential for building\nmachines with more human-like language learning capabilities.\n",
+  "id": "arxiv.1901.04587",
+  "url": "https://arxiv.org/abs/1901.04587",
+  "pdf": "https://arxiv.org/pdf/1901.04587",
+  "bibtex": "@misc{lake2019_arxiv:1901.04587,\n    title = {Human few-shot learning of compositional instructions},\n    author = {Brenden M. Lake, Tal Linzen, Marco Baroni},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.04587},\n    pdf = {https://arxiv.org/pdf/1901.04587},\n    url = {https://arxiv.org/abs/1901.04587}\n}",
+  "source": "arxiv.org",
+  "date": 1547681188,
+  "tags": []
+}
