@@ -1,0 +1,18 @@
+{
+  "title": "Multi-Agent Diverse Generative Adversarial Networks",
+  "authors": [
+    "Arnab Ghosh",
+    "Viveka Kulharia",
+    "Vinay Namboodiri",
+    "Philip H. S. Torr",
+    "Puneet K. Dokania"
+  ],
+  "abstract": "  We propose MAD-GAN, an intuitive generalization to the Generative Adversarial\nNetworks (GANs) and its conditional variants to address the well known problem\nof mode collapse. First, MAD-GAN is a multi-agent GAN architecture\nincorporating multiple generators and one discriminator. Second, to enforce\nthat different generators capture diverse high probability modes, the\ndiscriminator of MAD-GAN is designed such that along with finding the real and\nfake samples, it is also required to identify the generator that generated the\ngiven fake sample. Intuitively, to succeed in this task, the discriminator must\nlearn to push different generators towards different identifiable modes. We\nperform extensive experiments on synthetic and real datasets and compare\nMAD-GAN with different variants of GAN. We show high quality diverse sample\ngenerations for challenging tasks such as image-to-image translation and face\ngeneration. In addition, we also show that MAD-GAN is able to disentangle\ndifferent modalities when trained using highly challenging diverse-class\ndataset (e.g. dataset with images of forests, icebergs, and bedrooms). In the\nend, we show its efficacy on the unsupervised feature representation task. In\nAppendix, we introduce a similarity based competing objective (MAD-GAN-Sim)\nwhich encourages different generators to generate diverse samples based on a\nuser defined similarity metric. We show its performance on the image-to-image\ntranslation, and also show its effectiveness on the unsupervised feature\nrepresentation task.\n",
+  "id": "arxiv.1704.02906",
+  "url": "https://arxiv.org/abs/1704.02906",
+  "pdf": "https://arxiv.org/pdf/1704.02906",
+  "bibtex": "@misc{ghosh2017_arxiv:1704.02906,\n    title = {Multi-Agent Diverse Generative Adversarial Networks},\n    author = {Arnab Ghosh, Viveka Kulharia, Vinay Namboodiri, Philip H. S. Torr, Puneet K. Dokania},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1704.02906},\n    pdf = {https://arxiv.org/pdf/1704.02906},\n    url = {https://arxiv.org/abs/1704.02906}\n}",
+  "source": "arxiv.org",
+  "date": 1547815288,
+  "tags": []
+}
