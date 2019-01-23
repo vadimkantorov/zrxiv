@@ -1,0 +1,15 @@
+{
+  "title": "Deep Spiking Networks",
+  "authors": [
+    "Peter O'Connor",
+    "Max Welling"
+  ],
+  "abstract": "  We introduce an algorithm to do backpropagation on a spiking network. Our\nnetwork is \"spiking\" in the sense that our neurons accumulate their activation\ninto a potential over time, and only send out a signal (a \"spike\") when this\npotential crosses a threshold and the neuron is reset. Neurons only update\ntheir states when receiving signals from other neurons. Total computation of\nthe network thus scales with the number of spikes caused by an input rather\nthan network size. We show that the spiking Multi-Layer Perceptron behaves\nidentically, during both prediction and training, to a conventional deep\nnetwork of rectified-linear units, in the limiting case where we run the\nspiking network for a long time. We apply this architecture to a conventional\nclassification problem (MNIST) and achieve performance very close to that of a\nconventional Multi-Layer Perceptron with the same architecture. Our network is\na natural architecture for learning based on streaming event-based data, and is\na stepping stone towards using spiking neural networks to learn efficiently on\nstreaming data.\n",
+  "id": "arxiv.1602.08323",
+  "url": "https://arxiv.org/abs/1602.08323",
+  "pdf": "https://arxiv.org/pdf/1602.08323",
+  "bibtex": "@misc{o'connor2016_arxiv:1602.08323,\n    title = {Deep Spiking Networks},\n    author = {Peter O'Connor, Max Welling},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1602.08323},\n    pdf = {https://arxiv.org/pdf/1602.08323},\n    url = {https://arxiv.org/abs/1602.08323}\n}",
+  "source": "arxiv.org",
+  "date": 1548286321,
+  "tags": []
+}
