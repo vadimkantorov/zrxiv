@@ -1,0 +1,18 @@
+{
+  "title": "Generalization of Equilibrium Propagation to Vector Field Dynamics",
+  "authors": [
+    "Benjamin Scellier",
+    "Anirudh Goyal",
+    "Jonathan Binas",
+    "Thomas Mesnard",
+    "Yoshua Bengio"
+  ],
+  "abstract": "  The biological plausibility of the backpropagation algorithm has long been\ndoubted by neuroscientists. Two major reasons are that neurons would need to\nsend two different types of signal in the forward and backward phases, and that\npairs of neurons would need to communicate through symmetric bidirectional\nconnections. We present a simple two-phase learning procedure for fixed point\nrecurrent networks that addresses both these issues. In our model, neurons\nperform leaky integration and synaptic weights are updated through a local\nmechanism. Our learning method generalizes Equilibrium Propagation to vector\nfield dynamics, relaxing the requirement of an energy function. As a\nconsequence of this generalization, the algorithm does not compute the true\ngradient of the objective function, but rather approximates it at a precision\nwhich is proven to be directly related to the degree of symmetry of the\nfeedforward and feedback weights. We show experimentally that our algorithm\noptimizes the objective function.\n",
+  "id": "arxiv.1808.04873",
+  "url": "https://arxiv.org/abs/1808.04873",
+  "pdf": "https://arxiv.org/pdf/1808.04873",
+  "bibtex": "@misc{scellier2018_arxiv:1808.04873,\n    title = {Generalization of Equilibrium Propagation to Vector Field Dynamics},\n    author = {Benjamin Scellier, Anirudh Goyal, Jonathan Binas, Thomas Mesnard, Yoshua Bengio},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1808.04873},\n    pdf = {https://arxiv.org/pdf/1808.04873},\n    url = {https://arxiv.org/abs/1808.04873}\n}",
+  "source": "arxiv.org",
+  "date": 1548286322,
+  "tags": []
+}
