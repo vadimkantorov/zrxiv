@@ -1,0 +1,17 @@
+{
+  "title": "The Core Decomposition of Networks: Theory, Algorithms and Applications",
+  "authors": [
+    "Fragkiskos Malliaros",
+    "Christos Giatsidis",
+    "Apostolos Papadopoulos",
+    "Michalis Vazirgiannis"
+  ],
+  "abstract": "The core decomposition of networks has attracted significant attention due to its numerous applications in real-life problems. Simply stated, the core decomposition of a network (graph) assigns to each graph node v, an integer number c(v) (the core number), capturing how well v is connected with respect to its neighbors. This concept is strongly related to the concept of graph degeneracy, which has a long history in Graph Theory. Although the core decomposition concept is extremely simple, there is an enormous interest in the topic from diverse application domains, mainly because it can be used to analyze a network in a simple and concise manner by quantifying the significance of graph nodes. Therefore, there exists a respectable number of research works that either propose efficient algorithmic techniques under different settings and graph types or apply the concept to another problem or scientific area. Based on this large interest in the topic, in this survey, we perform an in-depth discussion of core decomposition, focusing mainly on: i) the basic theory and fundamental concepts, ii) the algorithmic techniques proposed for computing it efficiently under different settings, and iii) the applications that can benefit significantly from it.",
+  "id": "hal.01986309",
+  "url": "https://hal-centralesupelec.archives-ouvertes.fr/hal-01986309",
+  "pdf": "https://hal-centralesupelec.archives-ouvertes.fr/hal-01986309/file/core_decomposition_arXiv.pdf",
+  "bibtex": "@unpublished{malliaros:hal-01986309,\n    title = {{The Core Decomposition of Networks: Theory, Algorithms and Applications}},\n    author = {Malliaros, Fragkiskos and Giatsidis, Christos and Papadopoulos, Apostolos and Vazirgiannis, Michalis},\n    year = {2019},\n    hal_id = {hal-01986309},\n    hal_version = {v1},\n    keywords = {Core decomposition ; graph mining ; graph degeneracy ; graph theory ; algorithms},\n    month = Jan,,\n    note = {working paper or preprint},\n    pdf = {https://hal-centralesupelec.archives-ouvertes.fr/hal-01986309/file/core_decomposition_arXiv.pdf},\n    url = {https://hal-centralesupelec.archives-ouvertes.fr/hal-01986309}\n}",
+  "source": "hal.archives-ouvertes.fr",
+  "date": 1548235070,
+  "tags": []
+}
