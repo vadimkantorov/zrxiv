@@ -1,0 +1,17 @@
+{
+  "title": "Maximum Entropy Generators for Energy-Based Models",
+  "authors": [
+    "Rithesh Kumar",
+    "Anirudh Goyal",
+    "Aaron Courville",
+    "Yoshua Bengio"
+  ],
+  "abstract": "  Unsupervised learning is about capturing dependencies between variables and\nis driven by the contrast between the probable vs. improbable configurations of\nthese variables, often either via a generative model that only samples probable\nones or with an energy function (unnormalized log-density) that is low for\nprobable ones and high for improbable ones. Here, we consider learning both an\nenergy function and an efficient approximate sampling mechanism. Whereas the\ndiscriminator in generative adversarial networks (GANs) learns to separate data\nand generator samples, introducing an entropy maximization regularizer on the\ngenerator can turn the interpretation of the critic into an energy function,\nwhich separates the training distribution from everything else, and thus can be\nused for tasks like anomaly or novelty detection. Then, we show how Markov\nChain Monte Carlo can be done in the generator latent space whose samples can\nbe mapped to data space, producing better samples. These samples are used for\nthe negative phase gradient required to estimate the log-likelihood gradient of\nthe data space energy function. To maximize entropy at the output of the\ngenerator, we take advantage of recently introduced neural estimators of mutual\ninformation. We find that in addition to producing a useful scoring function\nfor anomaly detection, the resulting approach produces sharp samples while\ncovering the modes well, leading to high Inception and Frechet scores.\n",
+  "id": "arxiv.1901.08508",
+  "url": "https://arxiv.org/abs/1901.08508",
+  "pdf": "https://arxiv.org/pdf/1901.08508",
+  "bibtex": "@misc{kumar2019_arxiv:1901.08508,\n    title = {Maximum Entropy Generators for Energy-Based Models},\n    author = {Rithesh Kumar, Anirudh Goyal, Aaron Courville, Yoshua Bengio},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.08508},\n    pdf = {https://arxiv.org/pdf/1901.08508},\n    url = {https://arxiv.org/abs/1901.08508}\n}",
+  "source": "arxiv.org",
+  "date": 1548448027,
+  "tags": []
+}
