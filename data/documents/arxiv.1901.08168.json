@@ -1,0 +1,17 @@
+{
+  "title": "Loss Landscapes of Regularized Linear Autoencoders",
+  "authors": [
+    "Daniel Kunin",
+    "Jonathan M. Bloom",
+    "Aleksandrina Goeva",
+    "Cotton Seed"
+  ],
+  "abstract": "  Autoencoders are a deep learning model for representation learning. When\ntrained to minimize the Euclidean distance between the data and its\nreconstruction, linear autoencoders (LAEs) learn the subspace spanned by the\ntop principal directions but cannot learn the principal directions themselves.\nIn this paper, we prove that $L_2$-regularized LAEs learn the principal\ndirections as the left singular vectors of the decoder, providing an extremely\nsimple and scalable algorithm for rank-$k$ SVD. More generally, we consider\nLAEs with (i) no regularization, (ii) regularization of the composition of the\nencoder and decoder, and (iii) regularization of the encoder and decoder\nseparately. We relate the minimum of (iii) to the MAP estimate of probabilistic\nPCA and show that for all critical points the encoder and decoder are\ntransposes. Building on topological intuition, we smoothly parameterize the\ncritical manifolds for all three losses via a novel unified framework and\nillustrate these results empirically. Overall, this work clarifies the\nrelationship between autoencoders and Bayesian models and between\nregularization and orthogonality.\n",
+  "id": "arxiv.1901.08168",
+  "url": "https://arxiv.org/abs/1901.08168",
+  "pdf": "https://arxiv.org/pdf/1901.08168",
+  "bibtex": "@misc{kunin2019_arxiv:1901.08168,\n    title = {Loss Landscapes of Regularized Linear Autoencoders},\n    author = {Daniel Kunin, Jonathan M. Bloom, Aleksandrina Goeva, Cotton Seed},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.08168},\n    pdf = {https://arxiv.org/pdf/1901.08168},\n    url = {https://arxiv.org/abs/1901.08168}\n}",
+  "source": "arxiv.org",
+  "date": 1548684878,
+  "tags": []
+}
