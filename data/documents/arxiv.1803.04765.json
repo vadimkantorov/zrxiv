@@ -1,0 +1,15 @@
+{
+  "title": "Deep k-Nearest Neighbors: Towards Confident, Interpretable and Robust Deep Learning",
+  "authors": [
+    "Nicolas Papernot",
+    "Patrick McDaniel"
+  ],
+  "abstract": "  Deep neural networks (DNNs) enable innovative applications of machine\nlearning like image recognition, machine translation, or malware detection.\nHowever, deep learning is often criticized for its lack of robustness in\nadversarial settings (e.g., vulnerability to adversarial inputs) and general\ninability to rationalize its predictions. In this work, we exploit the\nstructure of deep learning to enable new learning-based inference and decision\nstrategies that achieve desirable properties such as robustness and\ninterpretability. We take a first step in this direction and introduce the Deep\nk-Nearest Neighbors (DkNN). This hybrid classifier combines the k-nearest\nneighbors algorithm with representations of the data learned by each layer of\nthe DNN: a test input is compared to its neighboring training points according\nto the distance that separates them in the representations. We show the labels\nof these neighboring points afford confidence estimates for inputs outside the\nmodel's training manifold, including on malicious inputs like adversarial\nexamples--and therein provides protections against inputs that are outside the\nmodels understanding. This is because the nearest neighbors can be used to\nestimate the nonconformity of, i.e., the lack of support for, a prediction in\nthe training data. The neighbors also constitute human-interpretable\nexplanations of predictions. We evaluate the DkNN algorithm on several\ndatasets, and show the confidence estimates accurately identify inputs outside\nthe model, and that the explanations provided by nearest neighbors are\nintuitive and useful in understanding model failures.\n",
+  "id": "arxiv.1803.04765",
+  "url": "https://arxiv.org/abs/1803.04765",
+  "pdf": "https://arxiv.org/pdf/1803.04765",
+  "bibtex": "@misc{papernot2018_arxiv:1803.04765,\n    title = {Deep k-Nearest Neighbors: Towards Confident, Interpretable and Robust Deep Learning},\n    author = {Nicolas Papernot, Patrick McDaniel},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.04765},\n    pdf = {https://arxiv.org/pdf/1803.04765},\n    url = {https://arxiv.org/abs/1803.04765}\n}",
+  "source": "arxiv.org",
+  "date": 1548839307,
+  "tags": []
+}
