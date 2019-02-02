@@ -1,0 +1,15 @@
+{
+  "title": "Automatic Local Rewriting for Combinatorial Optimization",
+  "authors": [
+    "Xinyun Chen",
+    "Yuandong Tian"
+  ],
+  "abstract": "  To solve combinatorial problems, traditional search-based optimization uses\nheuristics to guide the search. Deciding in which specific conditions and\nsituations a certain heuristic can be applied is time-consuming and might cost\ndecades to tune. In this paper, we learn a policy to pick heuristics and\nrewrite the local components of the current solution to iteratively improve it\nuntil convergence. The policy factorizes into a region-picking policy and a\nrule-picking policy, and it employs a neural network trained with reinforcement\nlearning. We evaluate our approach in three domains: expression simplification,\nonline job scheduling and SAT. Our approach outperforms Z3 (De Moura &\nBj{\\o}rner, 2008), a state-of-the-art theorem prover, in expression\nsimplification, outperforms DeepRM (Mao et al., 2016) and Google OR-tools\n(Google, 2019) in online job scheduling, and outperforms NeuroSAT (Selsam et\nal., 2019) and DG-DAGRNN (Amizadeh et al., 2019) in SAT with a small number of\nvariables.\n",
+  "id": "arxiv.1810.00337",
+  "url": "https://arxiv.org/abs/1810.00337",
+  "pdf": "https://arxiv.org/pdf/1810.00337",
+  "bibtex": "@misc{chen2018_arxiv:1810.00337,\n    title = {Automatic Local Rewriting for Combinatorial Optimization},\n    author = {Xinyun Chen, Yuandong Tian},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.00337},\n    pdf = {https://arxiv.org/pdf/1810.00337},\n    url = {https://arxiv.org/abs/1810.00337}\n}",
+  "source": "arxiv.org",
+  "date": 1549143076,
+  "tags": []
+}
