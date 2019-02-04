@@ -1,0 +1,16 @@
+{
+  "title": "Hyperspherical Prototype Networks",
+  "authors": [
+    "Pascal Mettes",
+    "Elise van der Pol",
+    "Cees G. M. Snoek"
+  ],
+  "abstract": "  This paper introduces hyperspherical prototype networks, which unify\nregression and classification by prototypes on hyperspherical output spaces.\nRather than defining prototypes as the mean output vector over training\nexamples per class, we propose hyperspheres as output spaces to define class\nprototypes a priori with large margin separation. By doing so, we do not\nrequire any prototype updating, we can handle any training size, and the output\ndimensionality is no longer constrained to the number of classes. Furthermore,\nhyperspherical prototype networks generalize to regression, by optimizing\noutputs as an interpolation between two prototypes on the hypersphere. Since\nboth tasks are now defined by the same loss function, they can be jointly\noptimized for multi-task problems. Experimental evaluation shows the benefits\nof hyperspherical prototype networks for classification, regression, and their\ncombination.\n",
+  "id": "arxiv.1901.10514",
+  "url": "https://arxiv.org/abs/1901.10514",
+  "pdf": "https://arxiv.org/pdf/1901.10514",
+  "bibtex": "@misc{mettes2019_arxiv:1901.10514,\n    title = {Hyperspherical Prototype Networks},\n    author = {Pascal Mettes, Elise van der Pol, Cees G. M. Snoek},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.10514},\n    pdf = {https://arxiv.org/pdf/1901.10514},\n    url = {https://arxiv.org/abs/1901.10514}\n}",
+  "source": "arxiv.org",
+  "date": 1549324695,
+  "tags": []
+}
