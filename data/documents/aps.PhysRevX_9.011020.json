@@ -1,0 +1,18 @@
+{
+  "title": "Glassy Nature of the Hard Phase in Inference Problems",
+  "authors": [
+    "Fabrizio Antenucci",
+    "Silvio Franz",
+    "Pierfrancesco Urbani",
+    "Lenka Zdeborová"
+  ],
+  "abstract": "An algorithmically hard phase is described in a range of inference problems: Even if the signal can be reconstructed with a small error from an information-theoretic point of view, known algorithms fail unless the noise-to-signal ratio is sufficiently small. This hard phase is typically understood as a metastable branch of the dynamical evolution of message-passing algorithms. In this work, we study the metastable branch for a prototypical inference problem, the low-rank matrix factorization, that presents a hard phase. We show that, for noise-to-signal ratios that are below the information-theoretic threshold, the posterior measure is composed of an exponential number of metastable glassy states, and we compute their entropy, called the complexity. We show that this glassiness extends even slightly below the algorithmic threshold, below which the well-known approximate message-passing (AMP) algorithm is able to closely reconstruct the signal. Counterintuitively, we find that the performance of the AMP algorithm is not improved by taking into account the glassy nature of the hard phase. This result provides further evidence that the hard phase in inference problems is algorithmically impenetrable for some deep computational reasons that remain to be uncovered.",
+  "id": "aps.PhysRevX_9.011020",
+  "url": "https://link.aps.org/doi/10.1103/PhysRevX.9.011020",
+  "pdf": "http://link.aps.org/pdf/10.1103/PhysRevX.9.011020",
+  "bibtex": "@article{physrevx.9.011020,\n    title = {Glassy Nature of the Hard Phase in Inference Problems},\n    author = {Antenucci, Fabrizio and Franz, Silvio and Urbani, Pierfrancesco and Zdeborov\\'a, Lenka},\n    journal = {Phys. Rev. X},\n    year = {2019},\n    doi = {10.1103/PhysRevX.9.011020},\n    issue = {1},\n    month = {Jan},\n    numpages = {10},\n    pages = {011020},\n    publisher = {American Physical Society},\n    volume = {9},\n    pdf = {http://link.aps.org/pdf/10.1103/PhysRevX.9.011020},\n    url = {https://link.aps.org/doi/10.1103/PhysRevX.9.011020}\n}",
+  "source": "aps.org",
+  "date": 1549371127,
+  "tags": [],
+  "doi": "10.1103/PhysRevX.9.011020"
+}
