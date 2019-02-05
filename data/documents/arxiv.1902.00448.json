@@ -1,0 +1,17 @@
+{
+  "title": "Combinatorial Bayesian Optimization using Graph Representations",
+  "authors": [
+    "Changyong Oh",
+    "Jakub M. Tomczak",
+    "Efstratios Gavves",
+    "Max Welling"
+  ],
+  "abstract": "  This paper focuses on Bayesian Optimization - typically considered with\ncontinuous inputs - for discrete search input spaces, including integer,\ncategorical or graph structured input variables. In Gaussian process-based\nBayesian Optimization a problem arises, as it is not straightforward to define\na proper kernel on discrete input structures, where no natural notion of\nsmoothness or similarity could be provided. We propose COMBO, a method that\nrepresents values of discrete variables as vertices of a graph and then use the\ndiffusion kernel on that graph. As the graph size explodes with the number of\ncategorical variables and categories, we propose the graph Cartesian product to\ndecompose the graph into smaller sub-graphs, enabling kernel computation in\nlinear time with respect to the number of input variables. Moreover, in our\nformulation we learn a scale parameter per subgraph. In empirical studies on\nfour discrete optimization problems we demonstrate that our method is on par or\noutperforms the state-of-the-art in discrete Bayesian optimization.\n",
+  "id": "arxiv.1902.00448",
+  "url": "https://arxiv.org/abs/1902.00448",
+  "pdf": "https://arxiv.org/pdf/1902.00448",
+  "bibtex": "@misc{oh2019_arxiv:1902.00448,\n    title = {Combinatorial Bayesian Optimization using Graph Representations},\n    author = {Changyong Oh, Jakub M. Tomczak, Efstratios Gavves, Max Welling},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.00448},\n    pdf = {https://arxiv.org/pdf/1902.00448},\n    url = {https://arxiv.org/abs/1902.00448}\n}",
+  "source": "arxiv.org",
+  "date": 1549330851,
+  "tags": []
+}
