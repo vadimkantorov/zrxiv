@@ -1,0 +1,17 @@
+{
+  "title": "Deep Metric Learning via Facility Location",
+  "authors": [
+    "Hyun Oh Song",
+    "Stefanie Jegelka",
+    "Vivek Rathod",
+    "Kevin Murphy"
+  ],
+  "abstract": "  Learning the representation and the similarity metric in an end-to-end\nfashion with deep networks have demonstrated outstanding results for clustering\nand retrieval. However, these recent approaches still suffer from the\nperformance degradation stemming from the local metric training procedure which\nis unaware of the global structure of the embedding space.\n  We propose a global metric learning scheme for optimizing the deep metric\nembedding with the learnable clustering function and the clustering metric\n(NMI) in a novel structured prediction framework.\n  Our experiments on CUB200-2011, Cars196, and Stanford online products\ndatasets show state of the art performance both on the clustering and retrieval\ntasks measured in the NMI and Recall@K evaluation metrics.\n",
+  "id": "arxiv.1612.01213",
+  "url": "https://arxiv.org/abs/1612.01213",
+  "pdf": "https://arxiv.org/pdf/1612.01213",
+  "bibtex": "@misc{song2016_arxiv:1612.01213,\n    title = {Deep Metric Learning via Facility Location},\n    author = {Hyun Oh Song, Stefanie Jegelka, Vivek Rathod, Kevin Murphy},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1612.01213},\n    pdf = {https://arxiv.org/pdf/1612.01213},\n    url = {https://arxiv.org/abs/1612.01213}\n}",
+  "source": "arxiv.org",
+  "date": 1549398656,
+  "tags": []
+}
