@@ -1,0 +1,16 @@
+{
+  "title": "An Effective Approach to Unsupervised Machine Translation",
+  "authors": [
+    "Mikel Artetxe",
+    "Gorka Labaka",
+    "Eneko Agirre"
+  ],
+  "abstract": "  While machine translation has traditionally relied on large amounts of\nparallel corpora, a recent research line has managed to train both Neural\nMachine Translation (NMT) and Statistical Machine Translation (SMT) systems\nusing monolingual corpora only. In this paper, we identify and address several\ndeficiencies of existing unsupervised SMT approaches by exploiting subword\ninformation, developing a theoretically well founded unsupervised tuning\nmethod, and incorporating a joint refinement procedure. Moreover, we use our\nimproved SMT system to initialize a dual NMT model, which is further fine-tuned\nthrough on-the-fly back-translation. Together, we obtain large improvements\nover the previous state-of-the-art in unsupervised machine translation. For\ninstance, we get 22.5 BLEU points in English-to-German WMT 2014, 5.5 points\nmore than the previous best unsupervised system, and 0.5 points more than the\n(supervised) shared task winner back in 2014.\n",
+  "id": "arxiv.1902.01313",
+  "url": "https://arxiv.org/abs/1902.01313",
+  "pdf": "https://arxiv.org/pdf/1902.01313",
+  "bibtex": "@misc{artetxe2019_arxiv:1902.01313,\n    title = {An Effective Approach to Unsupervised Machine Translation},\n    author = {Mikel Artetxe, Gorka Labaka, Eneko Agirre},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.01313},\n    pdf = {https://arxiv.org/pdf/1902.01313},\n    url = {https://arxiv.org/abs/1902.01313}\n}",
+  "source": "arxiv.org",
+  "date": 1549375243,
+  "tags": []
+}
