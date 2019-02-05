@@ -1,0 +1,18 @@
+{
+  "title": "Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design",
+  "authors": [
+    "Jonathan Ho",
+    "Xi Chen",
+    "Aravind Srinivas",
+    "Yan Duan",
+    "Pieter Abbeel"
+  ],
+  "abstract": "  Flow-based generative models are powerful exact likelihood models with\nefficient sampling and inference. Despite their computational efficiency,\nflow-based models generally have much worse density modeling performance\ncompared to state-of-the-art autoregressive models. In this paper, we\ninvestigate and improve upon three limiting design choices employed by\nflow-based models in prior work: the use of uniform noise for dequantization,\nthe use of inexpressive affine flows, and the use of purely convolutional\nconditioning networks in coupling layers. Based on our findings, we propose\nFlow++, a new flow-based model that is now the state-of-the-art\nnon-autoregressive model for unconditional density estimation on standard image\nbenchmarks. Our work has begun to close the significant performance gap that\nhas so far existed between autoregressive models and flow-based models. Our\nimplementation is available at https://github.com/aravind0706/flowpp.\n",
+  "id": "arxiv.1902.00275",
+  "url": "https://arxiv.org/abs/1902.00275",
+  "pdf": "https://arxiv.org/pdf/1902.00275",
+  "bibtex": "@misc{ho2019_arxiv:1902.00275,\n    title = {Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design},\n    author = {Jonathan Ho, Xi Chen, Aravind Srinivas, Yan Duan, Pieter Abbeel},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.00275},\n    pdf = {https://arxiv.org/pdf/1902.00275},\n    url = {https://arxiv.org/abs/1902.00275}\n}",
+  "source": "arxiv.org",
+  "date": 1549402258,
+  "tags": []
+}
