@@ -1,0 +1,18 @@
+{
+  "title": "Scalable Metropolis-Hastings for Exact Bayesian Inference with Large Datasets",
+  "authors": [
+    "Robert Cornish",
+    "Paul Vanetti",
+    "Alexandre Bouchard-Côté",
+    "George Deligiannidis",
+    "Arnaud Doucet"
+  ],
+  "abstract": "  Bayesian inference via standard Markov Chain Monte Carlo (MCMC) methods such\nas Metropolis-Hastings is too computationally intensive to handle large\ndatasets, since the cost per step usually scales like $O(n)$ in the number of\ndata points $n$. We propose the Scalable Metropolis-Hastings (SMH) kernel that\nexploits Gaussian concentration of the posterior to require processing on\naverage only $O(1)$ or even $O(1/\\sqrt{n})$ data points per step. This scheme\nis based on a combination of factorized acceptance probabilities, procedures\nfor fast simulation of Bernoulli processes, and control variate ideas. Contrary\nto many MCMC subsampling schemes such as fixed step-size Stochastic Gradient\nLangevin Dynamics, our approach is exact insofar as the invariant distribution\nis the true posterior and not an approximation to it. We characterise the\nperformance of our algorithm theoretically, and give realistic and verifiable\nconditions under which it is geometrically ergodic. This theory is borne out by\nempirical results that demonstrate overall performance benefits over standard\nMetropolis-Hastings and various subsampling algorithms.\n",
+  "id": "arxiv.1901.09881",
+  "url": "https://arxiv.org/abs/1901.09881",
+  "pdf": "https://arxiv.org/pdf/1901.09881",
+  "bibtex": "@misc{cornish2019_arxiv:1901.09881,\n    title = {Scalable Metropolis-Hastings for Exact Bayesian Inference with Large Datasets},\n    author = {Robert Cornish, Paul Vanetti, Alexandre Bouchard-Côté, George Deligiannidis, Arnaud Doucet},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.09881},\n    pdf = {https://arxiv.org/pdf/1901.09881},\n    url = {https://arxiv.org/abs/1901.09881}\n}",
+  "source": "arxiv.org",
+  "date": 1549374676,
+  "tags": []
+}
