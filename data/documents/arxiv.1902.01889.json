@@ -1,0 +1,16 @@
+{
+  "title": "Analyzing and Improving Representations with the Soft Nearest Neighbor Loss",
+  "authors": [
+    "Nicholas Frosst",
+    "Nicolas Papernot",
+    "Geoffrey Hinton"
+  ],
+  "abstract": "  We explore and expand the $\\textit{Soft Nearest Neighbor Loss}$ to measure\nthe $\\textit{entanglement}$ of class manifolds in representation space: i.e.,\nhow close pairs of points from the same class are relative to pairs of points\nfrom different classes. We demonstrate several use cases of the loss. As an\nanalytical tool, it provides insights into the evolution of class similarity\nstructures during learning. Surprisingly, we find that $\\textit{maximizing}$\nthe entanglement of representations of different classes in the hidden layers\nis beneficial for discrimination in the final layer, possibly because it\nencourages representations to identify class-independent similarity structures.\nMaximizing the soft nearest neighbor loss in the hidden layers leads not only\nto improved generalization but also to better-calibrated estimates of\nuncertainty on outlier data. Data that is not from the training distribution\ncan be recognized by observing that in the hidden layers, it has fewer than the\nnormal number of neighbors from the predicted class.\n",
+  "id": "arxiv.1902.01889",
+  "url": "https://arxiv.org/abs/1902.01889",
+  "pdf": "https://arxiv.org/pdf/1902.01889",
+  "bibtex": "@misc{frosst2019_arxiv:1902.01889,\n    title = {Analyzing and Improving Representations with the Soft Nearest Neighbor Loss},\n    author = {Nicholas Frosst, Nicolas Papernot, Geoffrey Hinton},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.01889},\n    pdf = {https://arxiv.org/pdf/1902.01889},\n    url = {https://arxiv.org/abs/1902.01889}\n}",
+  "source": "arxiv.org",
+  "date": 1549577891,
+  "tags": []
+}
