@@ -1,0 +1,16 @@
+{
+  "title": "Negative eigenvalues of the Hessian in deep neural networks",
+  "authors": [
+    "Guillaume Alain",
+    "Nicolas Le Roux",
+    "Pierre-Antoine Manzagol"
+  ],
+  "abstract": "  The loss function of deep networks is known to be non-convex but the precise\nnature of this nonconvexity is still an active area of research. In this work,\nwe study the loss landscape of deep networks through the eigendecompositions of\ntheir Hessian matrix. In particular, we examine how important the negative\neigenvalues are and the benefits one can observe in handling them\nappropriately.\n",
+  "id": "arxiv.1902.02366",
+  "url": "https://arxiv.org/abs/1902.02366",
+  "pdf": "https://arxiv.org/pdf/1902.02366",
+  "bibtex": "@misc{alain2019_arxiv:1902.02366,\n    title = {Negative eigenvalues of the Hessian in deep neural networks},\n    author = {Guillaume Alain, Nicolas Le Roux, Pierre-Antoine Manzagol},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.02366},\n    pdf = {https://arxiv.org/pdf/1902.02366},\n    url = {https://arxiv.org/abs/1902.02366}\n}",
+  "source": "arxiv.org",
+  "date": 1549633841,
+  "tags": []
+}
