@@ -1,0 +1,20 @@
+{
+  "title": "An Intriguing Failing of Convolutional Neural Networks and the CoordConv Solution",
+  "authors": [
+    "Rosanne Liu",
+    "Joel Lehman",
+    "Piero Molino",
+    "Felipe Petroski Such",
+    "Eric Frank",
+    "Alex Sergeev",
+    "Jason Yosinski"
+  ],
+  "abstract": "  Few ideas have enjoyed as large an impact on deep learning as convolution.\nFor any problem involving pixels or spatial representations, common intuition\nholds that convolutional neural networks may be appropriate. In this paper we\nshow a striking counterexample to this intuition via the seemingly trivial\ncoordinate transform problem, which simply requires learning a mapping between\ncoordinates in (x,y) Cartesian space and one-hot pixel space. Although\nconvolutional networks would seem appropriate for this task, we show that they\nfail spectacularly. We demonstrate and carefully analyze the failure first on a\ntoy problem, at which point a simple fix becomes obvious. We call this solution\nCoordConv, which works by giving convolution access to its own input\ncoordinates through the use of extra coordinate channels. Without sacrificing\nthe computational and parametric efficiency of ordinary convolution, CoordConv\nallows networks to learn either complete translation invariance or varying\ndegrees of translation dependence, as required by the end task. CoordConv\nsolves the coordinate transform problem with perfect generalization and 150\ntimes faster with 10--100 times fewer parameters than convolution. This stark\ncontrast raises the question: to what extent has this inability of convolution\npersisted insidiously inside other tasks, subtly hampering performance from\nwithin? A complete answer to this question will require further investigation,\nbut we show preliminary evidence that swapping convolution for CoordConv can\nimprove models on a diverse set of tasks. Using CoordConv in a GAN produced\nless mode collapse as the transform between high-level spatial latents and\npixels becomes easier to learn. A Faster R-CNN detection model trained on MNIST\nshowed 24% better IOU when using CoordConv, and in the RL domain agents playing\nAtari games benefit significantly from the use of CoordConv layers.\n",
+  "id": "arxiv.1807.03247",
+  "url": "https://arxiv.org/abs/1807.03247",
+  "pdf": "https://arxiv.org/pdf/1807.03247",
+  "bibtex": "@misc{liu2018_arxiv:1807.03247,\n    title = {An Intriguing Failing of Convolutional Neural Networks and the CoordConv Solution},\n    author = {Rosanne Liu, Joel Lehman, Piero Molino, Felipe Petroski Such, Eric Frank, Alex Sergeev, Jason Yosinski},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1807.03247},\n    pdf = {https://arxiv.org/pdf/1807.03247},\n    url = {https://arxiv.org/abs/1807.03247}\n}",
+  "source": "arxiv.org",
+  "date": 1549652563,
+  "tags": []
+}
