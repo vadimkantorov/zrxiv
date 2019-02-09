@@ -1,0 +1,16 @@
+{
+  "title": "Model-Based Active Exploration",
+  "authors": [
+    "Pranav Shyam",
+    "Wojciech Jaśkowski",
+    "Faustino Gomez"
+  ],
+  "abstract": "  Efficient exploration is an unsolved problem in Reinforcement Learning which\nis usually addressed by reactively rewarding the agent for fortuitously\nencountering novel situations. This paper introduces an efficient active\nexploration algorithm, Model-Based Active eXploration (MAX), which uses an\nensemble of forward models to plan to observe novel events. This is carried out\nby optimizing agent behaviour with respect to a measure of novelty derived from\nthe Bayesian perspective of exploration, which is estimated using the\ndisagreement between the futures predicted by the ensemble members. We show\nempirically that in semi-random discrete environments where directed\nexploration is critical to make progress, MAX is at least an order of magnitude\nmore efficient than strong baselines. MAX scales to high-dimensional continuous\nenvironments where it builds task-agnostic models that can be used for any\ndownstream task.\n",
+  "id": "arxiv.1810.12162",
+  "url": "https://arxiv.org/abs/1810.12162",
+  "pdf": "https://arxiv.org/pdf/1810.12162",
+  "bibtex": "@misc{shyam2018_arxiv:1810.12162,\n    title = {Model-Based Active Exploration},\n    author = {Pranav Shyam, Wojciech Jaśkowski, Faustino Gomez},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.12162},\n    pdf = {https://arxiv.org/pdf/1810.12162},\n    url = {https://arxiv.org/abs/1810.12162}\n}",
+  "source": "arxiv.org",
+  "date": 1549732123,
+  "tags": []
+}
