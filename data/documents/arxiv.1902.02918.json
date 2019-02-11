@@ -1,0 +1,16 @@
+{
+  "title": "Certified Adversarial Robustness via Randomized Smoothing",
+  "authors": [
+    "Jeremy M Cohen",
+    "Elan Rosenfeld",
+    "J. Zico Kolter"
+  ],
+  "abstract": "  Recent work has shown that any classifier which classifies well under\nGaussian noise can be leveraged to create a new classifier that is provably\nrobust to adversarial perturbations in L2 norm. However, existing guarantees\nfor such classifiers are suboptimal. In this work we provide the first tight\nanalysis of this \"randomized smoothing\" technique. We then demonstrate that\nthis extremely simple method outperforms by a wide margin all other provably\nL2-robust classifiers proposed in the literature. Furthermore, we train an\nImageNet classifier with e.g. a provable top-1 accuracy of 49% under\nadversarial perturbations with L2 norm less than 0.5 (=127/255). No other\nprovable adversarial defense has been shown to be feasible on ImageNet. While\nrandomized smoothing with Gaussian noise only confers robustness in L2 norm,\nthe empirical success of the approach suggests that provable methods based on\nrandomization at test time are a promising direction for future research into\nadversarially robust classification. Code and trained models are available at\nhttps://github.com/locuslab/smoothing .\n",
+  "id": "arxiv.1902.02918",
+  "url": "https://arxiv.org/abs/1902.02918",
+  "pdf": "https://arxiv.org/pdf/1902.02918",
+  "bibtex": "@misc{cohen2019_arxiv:1902.02918,\n    title = {Certified Adversarial Robustness via Randomized Smoothing},\n    author = {Jeremy M Cohen, Elan Rosenfeld, J. Zico Kolter},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.02918},\n    pdf = {https://arxiv.org/pdf/1902.02918},\n    url = {https://arxiv.org/abs/1902.02918}\n}",
+  "source": "arxiv.org",
+  "date": 1549922228,
+  "tags": []
+}
