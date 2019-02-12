@@ -1,0 +1,19 @@
+{
+  "title": "Top-K Off-Policy Correction for a REINFORCE Recommender System",
+  "authors": [
+    "Minmin Chen",
+    "Alex Beutel",
+    "Paul Covington",
+    "Sagar Jain",
+    "Francois Belletti",
+    "Ed Chi"
+  ],
+  "abstract": "  Industrial recommender systems deal with extremely large action spaces --\nmany millions of items to recommend. Moreover, they need to serve billions of\nusers, who are unique at any point in time, making a complex user state space.\nLuckily, huge quantities of logged implicit feedback (e.g., user clicks, dwell\ntime) are available for learning. Learning from the logged feedback is however\nsubject to biases caused by only observing feedback on recommendations selected\nby the previous versions of the recommender. In this work, we present a general\nrecipe of addressing such biases in a production top-K recommender system at\nYoutube, built with a policy-gradient-based algorithm, i.e. REINFORCE. The\ncontributions of the paper are: (1) scaling REINFORCE to a production\nrecommender system with an action space on the orders of millions; (2) applying\noff-policy correction to address data biases in learning from logged feedback\ncollected from multiple behavior policies; (3) proposing a novel top-K\noff-policy correction to account for our policy recommending multiple items at\na time; (4) showcasing the value of exploration. We demonstrate the efficacy of\nour approaches through a series of simulations and multiple live experiments on\nYoutube.\n",
+  "id": "arxiv.1812.02353",
+  "url": "https://arxiv.org/abs/1812.02353",
+  "pdf": "https://arxiv.org/pdf/1812.02353",
+  "bibtex": "@misc{chen2018_arxiv:1812.02353,\n    title = {Top-K Off-Policy Correction for a REINFORCE Recommender System},\n    author = {Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, Ed Chi},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.02353},\n    pdf = {https://arxiv.org/pdf/1812.02353},\n    url = {https://arxiv.org/abs/1812.02353}\n}",
+  "source": "arxiv.org",
+  "date": 1550003484,
+  "tags": []
+}
