@@ -1,0 +1,18 @@
+{
+  "title": "Cyclical Stochastic Gradient MCMC for Bayesian Deep Learning",
+  "authors": [
+    "Ruqi Zhang",
+    "Chunyuan Li",
+    "Jianyi Zhang",
+    "Changyou Chen",
+    "Andrew Gordon Wilson"
+  ],
+  "abstract": "  The posteriors over neural network weights are high dimensional and\nmultimodal. Each mode typically characterizes a meaningfully different\nrepresentation of the data. We develop Cyclical Stochastic Gradient MCMC\n(SG-MCMC) to automatically explore such distributions. In particular, we\npropose a cyclical stepsize schedule, where larger steps discover new modes,\nand smaller steps characterize each mode. We prove that our proposed learning\nrate schedule provides faster convergence to samples from a stationary\ndistribution than SG-MCMC with standard decaying schedules. Moreover, we\nprovide extensive experimental results to demonstrate the effectiveness of\ncyclical SG-MCMC in learning complex multimodal distributions, especially for\nfully Bayesian inference with modern deep neural networks.\n",
+  "id": "arxiv.1902.03932",
+  "url": "https://arxiv.org/abs/1902.03932",
+  "pdf": "https://arxiv.org/pdf/1902.03932",
+  "bibtex": "@misc{zhang2019_arxiv:1902.03932,\n    title = {Cyclical Stochastic Gradient MCMC for Bayesian Deep Learning},\n    author = {Ruqi Zhang, Chunyuan Li, Jianyi Zhang, Changyou Chen, Andrew Gordon Wilson},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.03932},\n    pdf = {https://arxiv.org/pdf/1902.03932},\n    url = {https://arxiv.org/abs/1902.03932}\n}",
+  "source": "arxiv.org",
+  "date": 1550015858,
+  "tags": []
+}
