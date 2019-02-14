@@ -1,0 +1,20 @@
+{
+  "title": "ELF OpenGo: An Analysis and Open Reimplementation of AlphaZero",
+  "authors": [
+    "Yuandong Tian",
+    "Jerry Ma",
+    "Qucheng Gong",
+    "Shubho Sengupta",
+    "Zhuoyuan Chen",
+    "James Pinkerton",
+    "C. Lawrence Zitnick"
+  ],
+  "abstract": "  The AlphaGo, AlphaGo Zero, and AlphaZero series of algorithms are a\nremarkable demonstration of deep reinforcement learning's capabilities,\nachieving superhuman performance in the complex game of Go with progressively\nincreasing autonomy. However, many obstacles remain in the understanding of and\nusability of these promising approaches by the research community. Toward\nelucidating unresolved mysteries and facilitating future research, we propose\nELF OpenGo, an open-source reimplementation of the AlphaZero algorithm. ELF\nOpenGo is the first open-source Go AI to convincingly demonstrate superhuman\nperformance with a perfect (20:0) record against global top professionals. We\napply ELF OpenGo to conduct extensive ablation studies, and to identify and\nanalyze numerous interesting phenomena in both the model training and in the\ngameplay inference procedures. Our code, models, selfplay datasets, and\nauxiliary data are publicly available.\n",
+  "id": "arxiv.1902.04522",
+  "url": "https://arxiv.org/abs/1902.04522",
+  "pdf": "https://arxiv.org/pdf/1902.04522",
+  "bibtex": "@misc{tian2019_arxiv:1902.04522,\n    title = {ELF OpenGo: An Analysis and Open Reimplementation of AlphaZero},\n    author = {Yuandong Tian, Jerry Ma, Qucheng Gong, Shubho Sengupta, Zhuoyuan Chen, James Pinkerton, C. Lawrence Zitnick},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.04522},\n    pdf = {https://arxiv.org/pdf/1902.04522},\n    url = {https://arxiv.org/abs/1902.04522}\n}",
+  "source": "arxiv.org",
+  "date": 1550148020,
+  "tags": []
+}
