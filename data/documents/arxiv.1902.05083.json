@@ -1,0 +1,14 @@
+{
+  "title": "Anytime Tail Averaging",
+  "authors": [
+    "Nicolas Le Roux"
+  ],
+  "abstract": "  Tail averaging consists in averaging the last examples in a stream. Common\ntechniques either have a memory requirement which grows with the number of\nsamples to average, are not available at every timestep or do not accomodate\ngrowing windows. We propose two techniques with a low constant memory cost that\nperform tail averaging with access to the average at every time step. We also\nshow how one can improve the accuracy of that average at the cost of increased\nmemory consumption.\n",
+  "id": "arxiv.1902.05083",
+  "url": "https://arxiv.org/abs/1902.05083",
+  "pdf": "https://arxiv.org/pdf/1902.05083",
+  "bibtex": "@misc{roux2019_arxiv:1902.05083,\n    title = {Anytime Tail Averaging},\n    author = {Nicolas Le Roux},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.05083},\n    pdf = {https://arxiv.org/pdf/1902.05083},\n    url = {https://arxiv.org/abs/1902.05083}\n}",
+  "source": "arxiv.org",
+  "date": 1550210522,
+  "tags": []
+}
