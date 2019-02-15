@@ -1,0 +1,14 @@
+{
+  "title": "Scaling Limits of Wide Neural Networks with Weight Sharing: Gaussian Process Behavior, Gradient Independence, and Neural Tangent Kernel Derivation",
+  "authors": [
+    "Greg Yang"
+  ],
+  "abstract": "  Several recent trends in machine learning theory and practice, from the\ndesign of state-of-the-art Gaussian Process to the convergence analysis of deep\nneural nets (DNNs) under stochastic gradient descent (SGD), have found it\nfruitful to study wide random neural networks. Central to these approaches are\ncertain scaling limits of such networks. We unify these results by introducing\na notion of a straightline \\emph{tensor program} that can express most neural\nnetwork computations, and we characterize its scaling limit when its tensors\nare large and randomized. From our framework follows (1) the convergence of\nrandom neural networks to Gaussian processes for architectures such as\nrecurrent neural networks, convolutional neural networks, residual networks,\nattention, and any combination thereof, with or without batch normalization;\n(2) conditions under which the \\emph{gradient independence assumption} -- that\nweights in backpropagation can be assumed to be independent from weights in the\nforward pass -- leads to correct computation of gradient dynamics, and\ncorrections when it does not; (3) the convergence of the Neural Tangent Kernel,\na recently proposed kernel used to predict training dynamics of neural networks\nunder gradient descent, at initialization for all architectures in (1) without\nbatch normalization. Mathematically, our framework is general enough to\nrederive classical random matrix results such as the semicircle and the\nMarchenko-Pastur laws, as well as recent results in neural network Jacobian\nsingular values. We hope our work opens a way toward design of even stronger\nGaussian Processes, initialization schemes to avoid gradient\nexplosion/vanishing, and deeper understanding of SGD dynamics in modern\narchitectures.\n",
+  "id": "arxiv.1902.04760",
+  "url": "https://arxiv.org/abs/1902.04760",
+  "pdf": "https://arxiv.org/pdf/1902.04760",
+  "bibtex": "@misc{yang2019_arxiv:1902.04760,\n    title = {Scaling Limits of Wide Neural Networks with Weight Sharing: Gaussian Process Behavior, Gradient Independence, and Neural Tangent Kernel Derivation},\n    author = {Greg Yang},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.04760},\n    pdf = {https://arxiv.org/pdf/1902.04760},\n    url = {https://arxiv.org/abs/1902.04760}\n}",
+  "source": "arxiv.org",
+  "date": 1550210620,
+  "tags": []
+}
