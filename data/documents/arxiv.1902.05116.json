@@ -1,0 +1,16 @@
+{
+  "title": "Probabilistic Neural Architecture Search",
+  "authors": [
+    "Francesco Paolo Casale",
+    "Jonathan Gordon",
+    "Nicolo Fusi"
+  ],
+  "abstract": "  In neural architecture search (NAS), the space of neural network\narchitectures is automatically explored to maximize predictive accuracy for a\ngiven task. Despite the success of recent approaches, most existing methods\ncannot be directly applied to large scale problems because of their prohibitive\ncomputational complexity or high memory usage. In this work, we propose a\nProbabilistic approach to neural ARchitecture SEarCh (PARSEC) that drastically\nreduces memory requirements while maintaining state-of-the-art computational\ncomplexity, making it possible to directly search over more complex\narchitectures and larger datasets. Our approach only requires as much memory as\nis needed to train a single architecture from our search space. This is due to\na memory-efficient sampling procedure wherein we learn a probability\ndistribution over high-performing neural network architectures. Importantly,\nthis framework enables us to transfer the distribution of architectures learnt\non smaller problems to larger ones, further reducing the computational cost. We\nshowcase the advantages of our approach in applications to CIFAR-10 and\nImageNet, where our approach outperforms methods with double its computational\ncost and matches the performance of methods with costs that are three orders of\nmagnitude larger.\n",
+  "id": "arxiv.1902.05116",
+  "url": "https://arxiv.org/abs/1902.05116",
+  "pdf": "https://arxiv.org/pdf/1902.05116",
+  "bibtex": "@misc{casale2019_arxiv:1902.05116,\n    title = {Probabilistic Neural Architecture Search},\n    author = {Francesco Paolo Casale, Jonathan Gordon, Nicolo Fusi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.05116},\n    pdf = {https://arxiv.org/pdf/1902.05116},\n    url = {https://arxiv.org/abs/1902.05116}\n}",
+  "source": "arxiv.org",
+  "date": 1550235262,
+  "tags": []
+}
