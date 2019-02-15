@@ -1,0 +1,18 @@
+{
+  "title": "MultiGrain: a unified image embedding for classes and instances",
+  "authors": [
+    "Maxim Berman",
+    "Hervé Jégou",
+    "Andrea Vedaldi",
+    "Iasonas Kokkinos",
+    "Matthijs Douze"
+  ],
+  "abstract": "incorrect id format for 1902.05509?fbclid=IwAR2ILSyi4urqfX9eNzdG_Sk_9dqHIV9w6Hv8aZuiBKZ_S-1yphIg9bYpedE",
+  "id": "arxiv.1902.05509",
+  "url": "https://arxiv.org/abs/1902.05509",
+  "pdf": "https://arxiv.org/pdf/1902.05509",
+  "bibtex": "@misc{berman2019_arxiv:1902.05509,\n    title = {MultiGrain: a unified image embedding for classes and instances},\n    author = {Maxim Berman, Hervé Jégou, Andrea Vedaldi, Iasonas Kokkinos, Matthijs Douze},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.05509},\n    pdf = {https://arxiv.org/pdf/1902.05509},\n    url = {https://arxiv.org/abs/1902.05509}\n}",
+  "source": "arxiv.org",
+  "date": 1550226356,
+  "tags": []
+}
