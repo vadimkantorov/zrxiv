@@ -1,0 +1,18 @@
+{
+  "title": "Heavy-tailed kernels reveal a finer cluster structure in t-SNE visualisations",
+  "authors": [
+    "Dmitry Kobak",
+    "George Linderman",
+    "Stefan Steinerberger",
+    "Yuval Kluger",
+    "Philipp Berens"
+  ],
+  "abstract": "  T-distributed stochastic neighbour embedding (t-SNE) is a widely used data\nvisualisation technique. It differs from its predecessor SNE by the\nlow-dimensional similarity kernel: the Gaussian kernel was replaced by the\nheavy-tailed Cauchy kernel, solving the \"crowding problem\" of SNE. Here, we\ndevelop an efficient implementation of t-SNE for a $t$-distribution kernel with\nan arbitrary degree of freedom $\\nu$, with $\\nu\\to\\infty$ corresponding to SNE\nand $\\nu=1$ corresponding to the standard t-SNE. Using theoretical analysis and\ntoy examples, we show that $\\nu<1$ can further reduce the crowding problem and\nreveal finer cluster structure that is invisible in standard t-SNE. We further\ndemonstrate the striking effect of heavier-tailed kernels on large real-life\ndata sets such as MNIST, single-cell RNA-sequencing data, and the HathiTrust\nlibrary. We use domain knowledge to confirm that the revealed clusters are\nmeaningful. Overall, we argue that modifying the tail heaviness of the t-SNE\nkernel can yield additional insight into the cluster structure of the data.\n",
+  "id": "arxiv.1902.05804",
+  "url": "https://arxiv.org/abs/1902.05804",
+  "pdf": "https://arxiv.org/pdf/1902.05804",
+  "bibtex": "@misc{kobak2019_arxiv:1902.05804,\n    title = {Heavy-tailed kernels reveal a finer cluster structure in t-SNE visualisations},\n    author = {Dmitry Kobak, George Linderman, Stefan Steinerberger, Yuval Kluger, Philipp Berens},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.05804},\n    pdf = {https://arxiv.org/pdf/1902.05804},\n    url = {https://arxiv.org/abs/1902.05804}\n}",
+  "source": "arxiv.org",
+  "date": 1550491513,
+  "tags": []
+}
