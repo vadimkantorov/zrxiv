@@ -1,0 +1,17 @@
+{
+  "title": "Mesh: Compacting Memory Management for C/C++ Applications",
+  "authors": [
+    "Bobby Powers",
+    "David Tench",
+    "Emery D. Berger",
+    "Andrew McGregor"
+  ],
+  "abstract": "  Programs written in C/C++ can suffer from serious memory fragmentation,\nleading to low utilization of memory, degraded performance, and application\nfailure due to memory exhaustion. This paper introduces Mesh, a plug-in\nreplacement for malloc that, for the first time, eliminates fragmentation in\nunmodified C/C++ applications. Mesh combines novel randomized algorithms with\nwidely-supported virtual memory operations to provably reduce fragmentation,\nbreaking the classical Robson bounds with high probability. Mesh generally\nmatches the runtime performance of state-of-the-art memory allocators while\nreducing memory consumption; in particular, it reduces the memory of\nconsumption of Firefox by 16% and Redis by 39%.\n",
+  "id": "arxiv.1902.04738",
+  "url": "https://arxiv.org/abs/1902.04738",
+  "pdf": "https://arxiv.org/pdf/1902.04738",
+  "bibtex": "@misc{powers2019_arxiv:1902.04738,\n    title = {Mesh: Compacting Memory Management for C/C++ Applications},\n    author = {Bobby Powers, David Tench, Emery D. Berger, Andrew McGregor},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.04738},\n    pdf = {https://arxiv.org/pdf/1902.04738},\n    url = {https://arxiv.org/abs/1902.04738}\n}",
+  "source": "arxiv.org",
+  "date": 1550451467,
+  "tags": []
+}
