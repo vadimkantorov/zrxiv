@@ -1,0 +1,15 @@
+{
+  "title": "Deep Neural Networks with Box Convolutions",
+  "authors": [
+    "Egor Burkov",
+    "Victor Lempitsky"
+  ],
+  "abstract": "Box filters computed using integral images have been part of the computer vision toolset for a long time. Here, we show that a convolutional layer that computes box filter responses in a sliding manner can be used within deep architectures, whereas the dimensions and the offsets of the sliding boxes in such a layer can be learned as part of an end-to-end loss minimization. Crucially, the training process can make the size of the boxes in such a layer arbitrarily large without incurring extra computational cost and without the need to increase the number of learnable parameters. Due to its ability to integrate information over large boxes, the new layer facilitates long-range propagation of information and leads to the efficient increase of the receptive fields of downstream units in the network. By incorporating the new layer into existing architectures for semantic segmentation, we are able to achieve both the increase in segmentation accuracy as well as the decrease in the computational cost and the number of learnable parameters.",
+  "id": "neurips.7859",
+  "url": "http://papers.nips.cc/paper/7859-deep-neural-networks-with-box-convolutions.html",
+  "pdf": "http://papers.nips.cc/paper/7859-deep-neural-networks-with-box-convolutions.pdf",
+  "bibtex": "@incollection{nips2018_7859,\n    title = {Deep Neural Networks with Box Convolutions},\n    author = {Burkov, Egor and Lempitsky, Victor},\n    booktitle = {Advances in Neural Information Processing Systems 31},\n    year = {2018},\n    editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},\n    pages = {6214--6224},\n    publisher = {Curran Associates, Inc.},\n    pdf = {http://papers.nips.cc/paper/7859-deep-neural-networks-with-box-convolutions.pdf},\n    url = {http://papers.nips.cc/paper/7859-deep-neural-networks-with-box-convolutions.pdf}\n}",
+  "source": "nips.cc",
+  "date": 1550522852,
+  "tags": []
+}
