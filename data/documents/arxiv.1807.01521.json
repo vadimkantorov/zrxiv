@@ -1,0 +1,16 @@
+{
+  "title": "Curiosity Driven Exploration of Learned Disentangled Goal Spaces",
+  "authors": [
+    "Adrien Laversanne-Finot",
+    "Alexandre Péré",
+    "Pierre-Yves Oudeyer"
+  ],
+  "abstract": "  Intrinsically motivated goal exploration processes enable agents to\nautonomously sample goals to explore efficiently complex environments with\nhigh-dimensional continuous actions. They have been applied successfully to\nreal world robots to discover repertoires of policies producing a wide\ndiversity of effects. Often these algorithms relied on engineered goal spaces\nbut it was recently shown that one can use deep representation learning\nalgorithms to learn an adequate goal space in simple environments. However, in\nthe case of more complex environments containing multiple objects or\ndistractors, an efficient exploration requires that the structure of the goal\nspace reflects the one of the environment. In this paper we show that using a\ndisentangled goal space leads to better exploration performances than an\nentangled goal space. We further show that when the representation is\ndisentangled, one can leverage it by sampling goals that maximize learning\nprogress in a modular manner. Finally, we show that the measure of learning\nprogress, used to drive curiosity-driven exploration, can be used\nsimultaneously to discover abstract independently controllable features of the\nenvironment.\n",
+  "id": "arxiv.1807.01521",
+  "url": "https://arxiv.org/abs/1807.01521",
+  "pdf": "https://arxiv.org/pdf/1807.01521",
+  "bibtex": "@misc{laversanne-finot2018_arxiv:1807.01521,\n    title = {Curiosity Driven Exploration of Learned Disentangled Goal Spaces},\n    author = {Adrien Laversanne-Finot, Alexandre Péré, Pierre-Yves Oudeyer},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1807.01521},\n    pdf = {https://arxiv.org/pdf/1807.01521},\n    url = {https://arxiv.org/abs/1807.01521}\n}",
+  "source": "arxiv.org",
+  "date": 1550508136,
+  "tags": []
+}
