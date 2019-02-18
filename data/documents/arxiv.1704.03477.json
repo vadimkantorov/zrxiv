@@ -1,0 +1,15 @@
+{
+  "title": "A Neural Representation of Sketch Drawings",
+  "authors": [
+    "David Ha",
+    "Douglas Eck"
+  ],
+  "abstract": "  We present sketch-rnn, a recurrent neural network (RNN) able to construct\nstroke-based drawings of common objects. The model is trained on thousands of\ncrude human-drawn images representing hundreds of classes. We outline a\nframework for conditional and unconditional sketch generation, and describe new\nrobust training methods for generating coherent sketch drawings in a vector\nformat.\n",
+  "id": "arxiv.1704.03477",
+  "url": "https://arxiv.org/abs/1704.03477",
+  "pdf": "https://arxiv.org/pdf/1704.03477",
+  "bibtex": "@misc{ha2017_arxiv:1704.03477,\n    title = {A Neural Representation of Sketch Drawings},\n    author = {David Ha, Douglas Eck},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1704.03477},\n    pdf = {https://arxiv.org/pdf/1704.03477},\n    url = {https://arxiv.org/abs/1704.03477}\n}",
+  "source": "arxiv.org",
+  "date": 1550495581,
+  "tags": []
+}
