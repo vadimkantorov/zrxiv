@@ -124,7 +124,7 @@
 			
 			function filter_click()
 			{
-				window.location = '#filter=' + document.getElementById('filter_area').value.split(' ').join('+');
+				window.location = (window.location.pathname.slice(-1) == '/' ? (window.location.pathname + 'all') : '') + '#filter=' + document.getElementById('filter_area').value.split(' ').join('+');
 			}
 			
 			function navigate()
