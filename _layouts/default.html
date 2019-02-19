@@ -25,23 +25,23 @@
 			.tag::before {content: "#"}
 			
 			.author {color:lightgray; font-size:small}
-			.date>a {color:lightgray; font-size:small; white-space:nowrap; }
+			.date>a {color:lightgray; font-size:small; white-space:nowrap; margin-left: 3px; }
 						
 			.doc>div {display:flex}
 			.title {flex-grow:1; /*max-width:80%*/}
-			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end}
-			.tags-header {display:flex; flex-wrap: wrap;}
-			.authors {display:flex; flex-grow:1; flex-wrap:wrap;}
-			.date {display: flex; align-items:flex-end}
-			.source { color:lightgray }
-			a.author:not(:last-child)::after {content: ","; margin-right: 2pt}
+			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end; }
+			.tags-header {display:flex; flex-wrap: wrap; }
+			.authors {display:flex; flex-grow:1; flex-wrap:wrap; }
+			.date {display: flex; align-items:flex-end; }
+			.source { color:lightgray; margin-left: 5px; }
+			a.author:not(:last-child)::after {content: ","; margin-right: 2pt; }
 			
-			.subtitle-unchecked { font-size:small; color:lightgray }
-			.subtitle-checked { font-size:small; color:black }
-			.subtitles {float:right; font-size:small; color:lightgray }
+			.subtitle-unchecked { font-size:small; color:lightgray; }
+			.subtitle-checked { font-size:small; color:black; }
+			.subtitles {float:right; font-size:small; color:lightgray; }
 			
 			#bibtex_download { {% if page.recent_docs == true %}float:right{% endif %} }
-			#bibtex_copy_area {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px}
+			#bibtex_copy_area {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px; }
 			.bibtex_copy::after { content: " | " }
 			
 			input {margin-left: auto}
