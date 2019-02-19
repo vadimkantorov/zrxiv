@@ -33,7 +33,7 @@
 			.tags-header {display:flex; flex-wrap: wrap;}
 			.authors {display:flex; flex-grow:1; flex-wrap:wrap;}
 			.date {display: flex; align-items:flex-end}
-			
+			.source { color:lightgray }
 			a.author:not(:last-child)::after {content: ","; margin-right: 2pt}
 			
 			.subtitle-unchecked { font-size:small; color:lightgray }
@@ -83,7 +83,7 @@
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
 					<div>
 						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
-						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}{% if doc.source and doc.source != "" %}<a class="subtitle-unchecked" href="{{ site.github.url }}/all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}</div>
+						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}{% if doc.source and doc.source != "" %}<a class="source" href="{{ site.github.url }}/all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}</div>
 					</div>
 					<div>
 						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
