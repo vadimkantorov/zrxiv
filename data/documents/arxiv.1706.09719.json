@@ -1,0 +1,15 @@
+{
+  "title": "Iterative Spectral Clustering for Unsupervised Object Localization",
+  "authors": [
+    "Aditya Vora",
+    "Shanmuganathan Raman"
+  ],
+  "abstract": "  This paper addresses the problem of unsupervised object localization in an\nimage. Unlike previous supervised and weakly supervised algorithms that require\nbounding box or image level annotations for training classifiers in order to\nlearn features representing the object, we propose a simple yet effective\ntechnique for localization using iterative spectral clustering. This iterative\nspectral clustering approach along with appropriate cluster selection strategy\nin each iteration naturally helps in searching of object region in the image.\nIn order to estimate the final localization window, we group the proposals\nobtained from the iterative spectral clustering step based on the perceptual\nsimilarity, and average the coordinates of the proposals from the top scoring\ngroups. We benchmark our algorithm on challenging datasets like Object\nDiscovery and PASCAL VOC 2007, achieving an average CorLoc percentage of 51%\nand 35% respectively which is comparable to various other weakly supervised\nalgorithms despite being completely unsupervised.\n",
+  "id": "arxiv.1706.09719",
+  "url": "https://arxiv.org/abs/1706.09719",
+  "pdf": "https://arxiv.org/pdf/1706.09719",
+  "bibtex": "@misc{vora2017_arxiv:1706.09719,\n    title = {Iterative Spectral Clustering for Unsupervised Object Localization},\n    author = {Aditya Vora, Shanmuganathan Raman},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1706.09719},\n    pdf = {https://arxiv.org/pdf/1706.09719},\n    url = {https://arxiv.org/abs/1706.09719}\n}",
+  "source": "arxiv.org",
+  "date": 1550604229,
+  "tags": []
+}
