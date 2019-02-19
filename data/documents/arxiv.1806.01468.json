@@ -1,0 +1,15 @@
+{
+  "title": "Understanding Regularized Spectral Clustering via Graph Conductance",
+  "authors": [
+    "Yilin Zhang",
+    "Karl Rohe"
+  ],
+  "abstract": "  This paper uses the relationship between graph conductance and spectral\nclustering to study (i) the failures of spectral clustering and (ii) the\nbenefits of regularization. The explanation is simple. Sparse and stochastic\ngraphs create a lot of small trees that are connected to the core of the graph\nby only one edge. Graph conductance is sensitive to these noisy `dangling\nsets'. Spectral clustering inherits this sensitivity. The second part of the\npaper starts from a previously proposed form of regularized spectral clustering\nand shows that it is related to the graph conductance on a `regularized graph'.\nWe call the conductance on the regularized graph CoreCut. Based upon previous\narguments that relate graph conductance to spectral clustering (e.g. Cheeger\ninequality), minimizing CoreCut relaxes to regularized spectral clustering.\nSimple inspection of CoreCut reveals why it is less sensitive to small cuts in\nthe graph. Together, these results show that unbalanced partitions from\nspectral clustering can be understood as overfitting to noise in the periphery\nof a sparse and stochastic graph. Regularization fixes this overfitting. In\naddition to this statistical benefit, these results also demonstrate how\nregularization can improve the computational speed of spectral clustering. We\nprovide simulations and data examples to illustrate these results.\n",
+  "id": "arxiv.1806.01468",
+  "url": "https://arxiv.org/abs/1806.01468",
+  "pdf": "https://arxiv.org/pdf/1806.01468",
+  "bibtex": "@misc{zhang2018_arxiv:1806.01468,\n    title = {Understanding Regularized Spectral Clustering via Graph Conductance},\n    author = {Yilin Zhang, Karl Rohe},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.01468},\n    pdf = {https://arxiv.org/pdf/1806.01468},\n    url = {https://arxiv.org/abs/1806.01468}\n}",
+  "source": "arxiv.org",
+  "date": 1550600019,
+  "tags": []
+}
