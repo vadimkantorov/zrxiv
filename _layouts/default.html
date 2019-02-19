@@ -148,6 +148,7 @@
 					const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
 					
 					tag_link.innerText = `filtered ${filtered_docs.length} docs`;
+					tag_link.href = window.location.href;
 					bibtex_link.download = 'filtered.bib';
 					bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
 				}
