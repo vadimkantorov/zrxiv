@@ -1,0 +1,19 @@
+{
+  "title": "Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent",
+  "authors": [
+    "Jaehoon Lee",
+    "Lechao Xiao",
+    "Samuel S. Schoenholz",
+    "Yasaman Bahri",
+    "Jascha Sohl-Dickstein",
+    "Jeffrey Pennington"
+  ],
+  "abstract": "  A longstanding goal in deep learning research has been to precisely\ncharacterize training and generalization. However, the often complex loss\nlandscapes of neural networks have made a theory of learning dynamics elusive.\nIn this work, we show that for wide neural networks the learning dynamics\nsimplify considerably and that, in the infinite width limit, they are governed\nby a linear model obtained from the first-order Taylor expansion of the network\naround its initial parameters. Furthermore, mirroring the correspondence\nbetween wide Bayesian neural networks and Gaussian processes, gradient-based\ntraining of wide neural networks with a squared loss produces test set\npredictions drawn from a Gaussian process with a particular compositional\nkernel. While these theoretical results are only exact in the infinite width\nlimit, we nevertheless find excellent empirical agreement between the\npredictions of the original network and those of the linearized version even\nfor finite practically-sized networks. This agreement is robust across\ndifferent architectures, optimization methods, and loss functions.\n",
+  "id": "arxiv.1902.06720",
+  "url": "https://arxiv.org/abs/1902.06720",
+  "pdf": "https://arxiv.org/pdf/1902.06720",
+  "bibtex": "@misc{lee2019_arxiv:1902.06720,\n    title = {Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent},\n    author = {Jaehoon Lee, Lechao Xiao, Samuel S. Schoenholz, Yasaman Bahri, Jascha Sohl-Dickstein, Jeffrey Pennington},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.06720},\n    pdf = {https://arxiv.org/pdf/1902.06720},\n    url = {https://arxiv.org/abs/1902.06720}\n}",
+  "source": "arxiv.org",
+  "date": 1550605983,
+  "tags": []
+}
