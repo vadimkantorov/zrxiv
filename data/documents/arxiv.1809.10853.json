@@ -1,0 +1,15 @@
+{
+  "title": "Adaptive Input Representations for Neural Language Modeling",
+  "authors": [
+    "Alexei Baevski",
+    "Michael Auli"
+  ],
+  "abstract": "  We introduce adaptive input representations for neural language modeling\nwhich extend the adaptive softmax of Grave et al. (2017) to input\nrepresentations of variable capacity. There are several choices on how to\nfactorize the input and output layers, and whether to model words, characters\nor sub-word units. We perform a systematic comparison of popular choices for a\nself-attentional architecture. Our experiments show that models equipped with\nadaptive embeddings are more than twice as fast to train than the popular\ncharacter input CNN while having a lower number of parameters. We achieve a new\nstate of the art on the WikiText-103 benchmark of 20.51 perplexity, improving\nthe next best known result by 8.7 perplexity. On the Billion word benchmark, we\nachieve a state of the art of 24.14 perplexity.\n",
+  "id": "arxiv.1809.10853",
+  "url": "https://arxiv.org/abs/1809.10853",
+  "pdf": "https://arxiv.org/pdf/1809.10853",
+  "bibtex": "@misc{baevski2018_arxiv:1809.10853,\n    title = {Adaptive Input Representations for Neural Language Modeling},\n    author = {Alexei Baevski, Michael Auli},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1809.10853},\n    pdf = {https://arxiv.org/pdf/1809.10853},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1550702353,
+  "tags": []
+}
