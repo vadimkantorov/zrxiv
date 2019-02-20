@@ -1,0 +1,18 @@
+{
+  "title": "Adaptive Neural Trees",
+  "authors": [
+    "Ryutaro Tanno",
+    "Kai Arulkumaran",
+    "Daniel C. Alexander",
+    "Antonio Criminisi",
+    "Aditya Nori"
+  ],
+  "abstract": "  Deep neural networks and decision trees operate on largely separate\nparadigms; typically, the former performs representation learning with\npre-specified architectures, while the latter is characterised by learning\nhierarchies over pre-specified features with data-driven architectures. We\nunite the two via adaptive neural trees (ANTs), a model that incorporates\nrepresentation learning into edges, routing functions and leaf nodes of a\ndecision tree, along with a backpropagation-based training algorithm that\nadaptively grows the architecture from primitive modules (e.g., convolutional\nlayers). We demonstrate that, whilst achieving competitive performance on\nclassification and regression datasets, ANTs benefit from (i) lightweight\ninference via conditional computation, (ii) hierarchical separation of features\nuseful to the predictive task e.g. learning meaningful class associations, such\nas separating natural vs. man-made objects, and (iii) a mechanism to adapt the\narchitecture to the size and complexity of the training dataset.\n",
+  "id": "arxiv.1807.06699",
+  "url": "https://arxiv.org/abs/1807.06699",
+  "pdf": "https://arxiv.org/pdf/1807.06699",
+  "bibtex": "@misc{tanno2018_arxiv:1807.06699,\n    title = {Adaptive Neural Trees},\n    author = {Ryutaro Tanno, Kai Arulkumaran, Daniel C. Alexander, Antonio Criminisi, Aditya Nori},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1807.06699},\n    pdf = {https://arxiv.org/pdf/1807.06699},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1550703166,
+  "tags": []
+}
