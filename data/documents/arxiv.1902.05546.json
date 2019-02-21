@@ -1,0 +1,18 @@
+{
+  "title": "Learning to Control Self-Assembling Morphologies: A Study of Generalization via Modularity",
+  "authors": [
+    "Deepak Pathak",
+    "Chris Lu",
+    "Trevor Darrell",
+    "Phillip Isola",
+    "Alexei A. Efros"
+  ],
+  "abstract": "  Contemporary sensorimotor learning approaches typically start with an\nexisting complex agent (e.g., a robotic arm), which they learn to control. In\ncontrast, this paper investigates a modular co-evolution strategy: a collection\nof primitive agents learns to dynamically self-assemble into composite bodies\nwhile also learning to coordinate their behavior to control these bodies. Each\nprimitive agent consists of a limb with a motor attached at one end. Limbs may\nchoose to link up to form collectives. When a limb initiates a link-up action\nand there is another limb nearby, the latter is magnetically connected to the\n'parent' limb's motor. This forms a new single agent, which may further link\nwith other agents. In this way, complex morphologies can emerge, controlled by\na policy whose architecture is in explicit correspondence with the morphology.\nWe evaluate the performance of these 'dynamic' and 'modular' agents in\nsimulated environments. We demonstrate better generalization to test-time\nchanges both in the environment, as well as in the agent morphology, compared\nto static and monolithic baselines. Project videos and code are available at\nhttps://pathak22.github.io/modular-assemblies/\n",
+  "id": "arxiv.1902.05546",
+  "url": "https://arxiv.org/abs/1902.05546",
+  "pdf": "https://arxiv.org/pdf/1902.05546",
+  "bibtex": "@misc{pathak2019_arxiv:1902.05546,\n    title = {Learning to Control Self-Assembling Morphologies: A Study of Generalization via Modularity},\n    author = {Deepak Pathak, Chris Lu, Trevor Darrell, Phillip Isola, Alexei A. Efros},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.05546},\n    pdf = {https://arxiv.org/pdf/1902.05546},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1550777734,
+  "tags": []
+}
