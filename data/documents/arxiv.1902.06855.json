@@ -1,0 +1,18 @@
+{
+  "title": "Optimizing Network Performance for Distributed DNN Training on GPU Clusters: ImageNet/AlexNet Training in 1.5 Minutes",
+  "authors": [
+    "Peng Sun",
+    "Wansen Feng",
+    "Ruobing Han",
+    "Shengen Yan",
+    "Yonggang Wen"
+  ],
+  "abstract": "  It is important to scale out deep neural network (DNN) training for reducing\nmodel training time. The high communication overhead is one of the major\nperformance bottlenecks for distributed DNN training across multiple GPUs. Our\ninvestigations have shown that popular open-source DNN systems could only\nachieve 2.5 speedup ratio on 64 GPUs connected by 56 Gbps network. To address\nthis problem, we propose a communication backend named GradientFlow for\ndistributed DNN training, and employ a set of network optimization techniques.\nFirst, we integrate ring-based allreduce, mixed-precision training, and\ncomputation/communication overlap into GradientFlow. Second, we propose lazy\nallreduce to improve network throughput by fusing multiple communication\noperations into a single one, and design coarse-grained sparse communication to\nreduce network traffic by only transmitting important gradient chunks. When\ntraining ImageNet/AlexNet on 512 GPUs, our approach achieves 410.2 speedup\nratio and completes 95-epoch training in 1.5 minutes, which outperforms\nexisting approaches.\n",
+  "id": "arxiv.1902.06855",
+  "url": "https://arxiv.org/abs/1902.06855",
+  "pdf": "https://arxiv.org/pdf/1902.06855",
+  "bibtex": "@misc{sun2019_arxiv:1902.06855,\n    title = {Optimizing Network Performance for Distributed DNN Training on GPU Clusters: ImageNet/AlexNet Training in 1.5 Minutes},\n    author = {Peng Sun, Wansen Feng, Ruobing Han, Shengen Yan, Yonggang Wen},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.06855},\n    pdf = {https://arxiv.org/pdf/1902.06855},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1550708970,
+  "tags": []
+}
