@@ -1,0 +1,17 @@
+{
+  "title": "Learning to Generalize from Sparse and Underspecified Rewards",
+  "authors": [
+    "Rishabh Agarwal",
+    "Chen Liang",
+    "Dale Schuurmans",
+    "Mohammad Norouzi"
+  ],
+  "abstract": "  We consider the problem of learning from sparse and underspecified rewards,\nwhere an agent receives a complex input, such as a natural language\ninstruction, and needs to generate a complex response, such as an action\nsequence, while only receiving binary success-failure feedback. Such\nsuccess-failure rewards are often underspecified: they do not distinguish\nbetween purposeful and accidental success. Generalization from underspecified\nrewards hinges on discounting spurious trajectories that attain accidental\nsuccess, while learning from sparse feedback requires effective exploration. We\naddress exploration by using a mode covering direction of KL divergence to\ncollect a diverse set of successful trajectories, followed by a mode seeking KL\ndivergence to train a robust policy. We propose Meta Reward Learning (MeRL) to\nconstruct an auxiliary reward function that provides more refined feedback for\nlearning. The parameters of the auxiliary reward function are optimized with\nrespect to the validation performance of a trained policy. The MeRL approach\noutperforms our alternative reward learning technique based on Bayesian\nOptimization, and achieves the state-of-the-art on weakly-supervised semantic\nparsing. It improves previous work by 1.2% and 2.4% on WikiTableQuestions and\nWikiSQL datasets respectively.\n",
+  "id": "arxiv.1902.07198",
+  "url": "https://arxiv.org/abs/1902.07198",
+  "pdf": "https://arxiv.org/pdf/1902.07198",
+  "bibtex": "@misc{agarwal2019_arxiv:1902.07198,\n    title = {Learning to Generalize from Sparse and Underspecified Rewards},\n    author = {Rishabh Agarwal, Chen Liang, Dale Schuurmans, Mohammad Norouzi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.07198},\n    pdf = {https://arxiv.org/pdf/1902.07198},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1550872471,
+  "tags": []
+}
