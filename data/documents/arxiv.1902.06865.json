@@ -1,0 +1,18 @@
+{
+  "title": "Hyperbolic Discounting and Learning over Multiple Horizons",
+  "authors": [
+    "William Fedus",
+    "Carles Gelada",
+    "Yoshua Bengio",
+    "Marc G. Bellemare",
+    "Hugo Larochelle"
+  ],
+  "abstract": "  Reinforcement learning (RL) typically defines a discount factor as part of\nthe Markov Decision Process. The discount factor values future rewards by an\nexponential scheme that leads to theoretical convergence guarantees of the\nBellman equation. However, evidence from psychology, economics and neuroscience\nsuggests that humans and animals instead have hyperbolic time-preferences. In\nthis work we revisit the fundamentals of discounting in RL and bridge this\ndisconnect by implementing an RL agent that acts via hyperbolic discounting. We\ndemonstrate that a simple approach approximates hyperbolic discount functions\nwhile still using familiar temporal-difference learning techniques in RL.\nAdditionally, and independent of hyperbolic discounting, we make a surprising\ndiscovery that simultaneously learning value functions over multiple\ntime-horizons is an effective auxiliary task which often improves over a strong\nvalue-based RL agent, Rainbow.\n",
+  "id": "arxiv.1902.06865",
+  "url": "https://arxiv.org/abs/1902.06865",
+  "pdf": "https://arxiv.org/pdf/1902.06865",
+  "bibtex": "@misc{fedus2019_arxiv:1902.06865,\n    title = {Hyperbolic Discounting and Learning over Multiple Horizons},\n    author = {William Fedus, Carles Gelada, Yoshua Bengio, Marc G. Bellemare, Hugo Larochelle},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.06865},\n    pdf = {https://arxiv.org/pdf/1902.06865},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1550796472,
+  "tags": []
+}
