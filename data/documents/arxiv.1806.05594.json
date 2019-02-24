@@ -1,0 +1,17 @@
+{
+  "title": "There Are Many Consistent Explanations of Unlabeled Data: Why You Should Average",
+  "authors": [
+    "Ben Athiwaratkun",
+    "Marc Finzi",
+    "Pavel Izmailov",
+    "Andrew Gordon Wilson"
+  ],
+  "abstract": "  Presently the most successful approaches to semi-supervised learning are\nbased on consistency regularization, whereby a model is trained to be robust to\nsmall perturbations of its inputs and parameters. To understand consistency\nregularization, we conceptually explore how loss geometry interacts with\ntraining procedures. The consistency loss dramatically improves generalization\nperformance over supervised-only training; however, we show that SGD struggles\nto converge on the consistency loss and continues to make large steps that lead\nto changes in predictions on the test data. Motivated by these observations, we\npropose to train consistency-based methods with Stochastic Weight Averaging\n(SWA), a recent approach which averages weights along the trajectory of SGD\nwith a modified learning rate schedule. We also propose fast-SWA, which further\naccelerates convergence by averaging multiple points within each cycle of a\ncyclical learning rate schedule. With weight averaging, we achieve the best\nknown semi-supervised results on CIFAR-10 and CIFAR-100, over many different\nquantities of labeled training data. For example, we achieve 5.0% error on\nCIFAR-10 with only 4000 labels, compared to the previous best result in the\nliterature of 6.3%.\n",
+  "id": "arxiv.1806.05594",
+  "url": "https://arxiv.org/abs/1806.05594",
+  "pdf": "https://arxiv.org/pdf/1806.05594",
+  "bibtex": "@misc{athiwaratkun2018_arxiv:1806.05594,\n    title = {There Are Many Consistent Explanations of Unlabeled Data: Why You Should Average},\n    author = {Ben Athiwaratkun, Marc Finzi, Pavel Izmailov, Andrew Gordon Wilson},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.05594},\n    pdf = {https://arxiv.org/pdf/1806.05594},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551031587,
+  "tags": []
+}
