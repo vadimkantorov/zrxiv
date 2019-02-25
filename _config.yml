@@ -42,6 +42,12 @@ defaults:
       layout: txt
   -
     scope:
+      path: "data/xml/*.md"
+    values:
+      permalink: /:basename.xml
+      layout: xml
+  -
+    scope:
       path: "all_bibtex.md"
     values:
       permalink: /all.bib
