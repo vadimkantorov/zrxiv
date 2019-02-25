@@ -82,6 +82,12 @@ defaults:
     values:
       permalink: /recent.txt
       layout: txt
+  -
+    scope:
+      path: "recent_xml.md"
+    values:
+      permalink: /recent.xml
+      layout: xml
       
 plugins:
   - jekyll-optional-front-matter
