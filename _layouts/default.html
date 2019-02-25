@@ -34,14 +34,15 @@
 		<link rel="icon" href="{{ site.github.url }}/logo.png" />
 		<link rel="canonical" href="{{ site.github.url }}" />
 		<link rel="stylesheet" href="{{ site.github.url }}/style.css">
-		<link href="{{ site.github.url }}/{{ tag_xml }}.xml" type="application/rss+xml" rel="alternate" title="Latest 50 papers for {{ tag_xml }} papers (atom)" />
+		<link href="{{ site.github.url }}/{{ tag_xml }}.xml" type="application/rss+xml" rel="alternate" title="Latest 50 {{ tag_xml }} papers (atom)" />
 		<style>
 			h1 {overflow-y:auto}
-			input {margin-left: auto}
+			input[type=text] {margin-left: auto}
+			input[type=checkbox] {align-self: center}
 			ul {margin: 0px; list-style:none; padding:0 !important; margin-top: 1em !important}
 			li {padding:6px 13px;border:1px solid #dfe2e5; margin:0px !important}
-			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			li:last-child {border-bottom:1px solid #dfe2e5}
+			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			.doc>div {display:flex}
 			
 			.tag {color:red}
@@ -84,6 +85,7 @@
 
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
 					<div>
+						<input type="checkbox"></input>
 						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}{% if doc.source and doc.source != "" %}<a class="source" href="{{ site.github.url }}/all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}</div>
 					</div>
