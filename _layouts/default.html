@@ -18,11 +18,7 @@
 	{% for doc in docs %}{% if doc.tags contains tag %}{% assign docs_by_tag = docs_by_tag | push: doc %}{% endif %}{% endfor %}
 	{% assign docs = docs_by_tag %}
 {% endif %}
-{% if tag == "all" %}
-	{% assign tag_xml = "recent" %}
-{% else %}
-	{% asssign tag_xml = tag %}
-{% endif %}
+{% assign tag_xml = tag %}{% if tag == "all" %}{% assign tag_xml = "recent" %}{% endif %}
 
 <html lang="en-US">
 	<head>
