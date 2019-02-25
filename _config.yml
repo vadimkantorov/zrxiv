@@ -33,7 +33,13 @@ defaults:
       path: "data/json/*.md"
     values:
       permalink: /:basename.json
-      layout: json
+      layout: json 
+  -
+    scope:
+      path: "data/txt/*.md"
+    values:
+      permalink: /:basename.txt
+      layout: txt
   -
     scope:
       path: "all_bibtex.md"
