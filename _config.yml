@@ -54,6 +54,12 @@ defaults:
       layout: json
   -
     scope:
+      path: "all_txt.md"
+    values:
+      permalink: /all.txt
+      layout: txt
+  -
+    scope:
       path: "recent_bibtex.md"
     values:
       permalink: /recent.bib
@@ -64,6 +70,12 @@ defaults:
     values:
       permalink: /recent.json
       layout: json
+  -
+    scope:
+      path: "recent_txt.md"
+    values:
+      permalink: /recent.txt
+      layout: txt
       
 plugins:
   - jekyll-optional-front-matter
