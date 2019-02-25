@@ -1,0 +1,15 @@
+{
+  "title": "Trainable Nonlinear Reaction Diffusion: A Flexible Framework for Fast and Effective Image Restoration",
+  "authors": [
+    "Yunjin Chen",
+    "Thomas Pock"
+  ],
+  "abstract": "  Image restoration is a long-standing problem in low-level computer vision\nwith many interesting applications. We describe a flexible learning framework\nbased on the concept of nonlinear reaction diffusion models for various image\nrestoration problems. By embodying recent improvements in nonlinear diffusion\nmodels, we propose a dynamic nonlinear reaction diffusion model with\ntime-dependent parameters (\\ie, linear filters and influence functions). In\ncontrast to previous nonlinear diffusion models, all the parameters, including\nthe filters and the influence functions, are simultaneously learned from\ntraining data through a loss based approach. We call this approach TNRD --\n\\textit{Trainable Nonlinear Reaction Diffusion}. The TNRD approach is\napplicable for a variety of image restoration tasks by incorporating\nappropriate reaction force. We demonstrate its capabilities with three\nrepresentative applications, Gaussian image denoising, single image super\nresolution and JPEG deblocking. Experiments show that our trained nonlinear\ndiffusion models largely benefit from the training of the parameters and\nfinally lead to the best reported performance on common test datasets for the\ntested applications. Our trained models preserve the structural simplicity of\ndiffusion models and take only a small number of diffusion steps, thus are\nhighly efficient. Moreover, they are also well-suited for parallel computation\non GPUs, which makes the inference procedure extremely fast.\n",
+  "id": "arxiv.1508.02848",
+  "url": "https://arxiv.org/abs/1508.02848",
+  "pdf": "https://arxiv.org/pdf/1508.02848",
+  "bibtex": "@misc{chen2015_arxiv:1508.02848,\n    title = {Trainable Nonlinear Reaction Diffusion: A Flexible Framework for Fast and Effective Image Restoration},\n    author = {Yunjin Chen, Thomas Pock},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1508.02848},\n    pdf = {https://arxiv.org/pdf/1508.02848},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551104219,
+  "tags": []
+}
