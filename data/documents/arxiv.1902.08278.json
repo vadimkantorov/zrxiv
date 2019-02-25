@@ -1,0 +1,20 @@
+{
+  "title": "Thresholding normally distributed data creates complex networks",
+  "authors": [
+    "George Cantwell",
+    "Yanchen Liu",
+    "Benjamin F. Maier",
+    "Alice C. Schwarze",
+    "Carlos A. Serván",
+    "Jordan Snyder",
+    "Guillaume St-Onge"
+  ],
+  "abstract": "  Network data sets are often constructed by some kind of thresholding\nprocedure. The resulting networks frequently possess properties such as\nheavy-tailed degree distributions, clustering, large connected components and\nshort average shortest path lengths. These properties are considered typical of\ncomplex networks and appear in many contexts, prompting consideration of their\nuniversality. Here we introduce a simple generative model for continuous valued\nrelational data and study the network ensemble obtained by thresholding it. We\nfind that some, but not all, of the properties associated with complex networks\ncan be seen after thresholding, even though the underlying data is not\n\"complex\". In particular, we observe heavy-tailed degree distributions, large\nnumbers of triangles, and short path lengths, while we do not observe\nnon-vanishing clustering or community structure.\n",
+  "id": "arxiv.1902.08278",
+  "url": "https://arxiv.org/abs/1902.08278",
+  "pdf": "https://arxiv.org/pdf/1902.08278",
+  "bibtex": "@misc{cantwell2019_arxiv:1902.08278,\n    title = {Thresholding normally distributed data creates complex networks},\n    author = {George Cantwell, Yanchen Liu, Benjamin F. Maier, Alice C. Schwarze, Carlos A. Serván, Jordan Snyder, Guillaume St-Onge},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.08278},\n    pdf = {https://arxiv.org/pdf/1902.08278},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551109819,
+  "tags": []
+}
