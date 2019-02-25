@@ -1,0 +1,18 @@
+{
+  "title": "Deep Clustering via Joint Convolutional Autoencoder Embedding and Relative Entropy Minimization",
+  "authors": [
+    "Kamran Ghasedi Dizaji",
+    "Amirhossein Herandi",
+    "Cheng Deng",
+    "Weidong Cai",
+    "Heng Huang"
+  ],
+  "abstract": "  Image clustering is one of the most important computer vision applications,\nwhich has been extensively studied in literature. However, current clustering\nmethods mostly suffer from lack of efficiency and scalability when dealing with\nlarge-scale and high-dimensional data. In this paper, we propose a new\nclustering model, called DEeP Embedded RegularIzed ClusTering (DEPICT), which\nefficiently maps data into a discriminative embedding subspace and precisely\npredicts cluster assignments. DEPICT generally consists of a multinomial\nlogistic regression function stacked on top of a multi-layer convolutional\nautoencoder. We define a clustering objective function using relative entropy\n(KL divergence) minimization, regularized by a prior for the frequency of\ncluster assignments. An alternating strategy is then derived to optimize the\nobjective by updating parameters and estimating cluster assignments.\nFurthermore, we employ the reconstruction loss functions in our autoencoder, as\na data-dependent regularization term, to prevent the deep embedding function\nfrom overfitting. In order to benefit from end-to-end optimization and\neliminate the necessity for layer-wise pretraining, we introduce a joint\nlearning framework to minimize the unified clustering and reconstruction loss\nfunctions together and train all network layers simultaneously. Experimental\nresults indicate the superiority and faster running time of DEPICT in\nreal-world clustering tasks, where no labeled data is available for\nhyper-parameter tuning.\n",
+  "id": "arxiv.1704.06327",
+  "url": "https://arxiv.org/abs/1704.06327",
+  "pdf": "https://arxiv.org/pdf/1704.06327",
+  "bibtex": "@misc{dizaji2017_arxiv:1704.06327,\n    title = {Deep Clustering via Joint Convolutional Autoencoder Embedding and Relative Entropy Minimization},\n    author = {Kamran Ghasedi Dizaji, Amirhossein Herandi, Cheng Deng, Weidong Cai, Heng Huang},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1704.06327},\n    pdf = {https://arxiv.org/pdf/1704.06327},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551102926,
+  "tags": []
+}
