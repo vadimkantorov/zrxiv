@@ -1,0 +1,16 @@
+{
+  "title": "Community detection in networks via nonlinear modularity eigenvectors",
+  "authors": [
+    "Francesco Tudisco",
+    "Pedro Mercado",
+    "Matthias Hein"
+  ],
+  "abstract": "  Revealing a community structure in a network or dataset is a central problem\narising in many scientific areas. The modularity function $Q$ is an established\nmeasure quantifying the quality of a community, being identified as a set of\nnodes having high modularity. In our terminology, a set of nodes with positive\nmodularity is called a \\textit{module} and a set that maximizes $Q$ is thus\ncalled \\textit{leading module}. Finding a leading module in a network is an\nimportant task, however the dimension of real-world problems makes the\nmaximization of $Q$ unfeasible. This poses the need of approximation techniques\nwhich are typically based on a linear relaxation of $Q$, induced by the\nspectrum of the modularity matrix $M$. In this work we propose a nonlinear\nrelaxation which is instead based on the spectrum of a nonlinear modularity\noperator $\\mathcal M$. We show that extremal eigenvalues of $\\mathcal M$\nprovide an exact relaxation of the modularity measure $Q$, however at the price\nof being more challenging to be computed than those of $M$. Thus we extend the\nwork made on nonlinear Laplacians, by proposing a computational scheme, named\n\\textit{generalized RatioDCA}, to address such extremal eigenvalues. We show\nmonotonic ascent and convergence of the method. We finally apply the new method\nto several synthetic and real-world data sets, showing both effectiveness of\nthe model and performance of the method.\n",
+  "id": "arxiv.1708.05569",
+  "url": "https://arxiv.org/abs/1708.05569",
+  "pdf": "https://arxiv.org/pdf/1708.05569",
+  "bibtex": "@misc{tudisco2017_arxiv:1708.05569,\n    title = {Community detection in networks via nonlinear modularity eigenvectors},\n    author = {Francesco Tudisco, Pedro Mercado, Matthias Hein},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1708.05569},\n    pdf = {https://arxiv.org/pdf/1708.05569},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551102091,
+  "tags": []
+}
