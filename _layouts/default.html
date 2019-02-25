@@ -1,4 +1,29 @@
 <!DOCTYPE html>
+{% assign sortedtags = "" | split: "," %}
+{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}{% assign sortedtags = sortedtags | push: tag %}{% endif %}{% endfor %}
+{% assign sortedtags = sortedtags | sort %}
+
+{% assign docs = "" | split:"," %}
+{% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}
+{% assign docs = (docs | sort: 'date') | reverse %}
+{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}
+
+{% assign num_docs = site.data.documents | size %}
+{% assign recent_docs = site.recent_docs %}
+{% if num_docs < recent_docs %}{% assign recent_docs = num_docs %}{% endif %}
+{% if page.recent_docs == true %}{% assign docs = docs | slice: 0, recent_docs %}{% endif %}
+
+{% if page.path contains "data/tags/" %}
+	{% assign docs_by_tag = "" | split:"," %}
+	{% for doc in docs %}{% if doc.tags contains tag %}{% assign docs_by_tag = docs_by_tag | push: doc %}{% endif %}{% endfor %}
+	{% assign docs = docs_by_tag %}
+{% endif %}
+{% if tag == "all" %}
+	{% asssign tag_xml = "recent" %}
+{% else %}
+	{% asssign tag_xml = tag %}
+{% endif %}
+
 <html lang="en-US">
 	<head>
 		<title>zrxiv for {{ site.github.owner_name }}</title>
@@ -13,6 +38,7 @@
 		<link rel="icon" href="{{ site.github.url }}/logo.png" />
 		<link rel="canonical" href="{{ site.github.url }}" />
 		<link rel="stylesheet" href="{{ site.github.url }}/style.css">
+		<link href="{{ site.github.url }}/{{ tag_xml }}.xml" type="application/rss+xml" rel="alternate" title="Latest 50 papers for {{ tag_xml }} papers (atom)" />
 		<style>
 			h1 {overflow-y:auto}
 			input {margin-left: auto}
@@ -48,26 +74,6 @@
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
-		{% assign sortedtags = "" | split: "," %}
-		{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}{% assign sortedtags = sortedtags | push: tag %}{% endif %}{% endfor %}
-		{% assign sortedtags = sortedtags | sort %}
-		
-		{% assign docs = "" | split:"," %}
-		{% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}
-		{% assign docs = (docs | sort: 'date') | reverse %}
-		{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}
-		
-		{% assign num_docs = site.data.documents | size %}
-		{% assign recent_docs = site.recent_docs %}
-		{% if num_docs < recent_docs %}{% assign recent_docs = num_docs %}{% endif %}
-		{% if page.recent_docs == true %}{% assign docs = docs | slice: 0, recent_docs %}{% endif %}
-					    
-		{% if page.path contains "data/tags/" %}
-			{% assign docs_by_tag = "" | split:"," %}
-			{% for doc in docs %}{% if doc.tags contains tag %}{% assign docs_by_tag = docs_by_tag | push: doc %}{% endif %}{% endfor %}
-    			{% assign docs = docs_by_tag %}
-		{% endif %}
-					    
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles">{% if docs_by_tag %}<a href="{{ site.github.url }}/{{ tag }}" class="subtitle-checked" id="tag">{{ tag }} {{ docs | size }} docs</a>{% else %}<a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" id="tag">total {{ num_docs }} docs</a>{% endif %} | <a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a><br /><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-checked" id="bibtex_download" download>bibtex</a></span></h1>
