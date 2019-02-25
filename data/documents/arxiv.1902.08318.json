@@ -1,0 +1,15 @@
+{
+  "title": "Parsing Gigabytes of JSON per Second",
+  "authors": [
+    "Geoff Langdale",
+    "Daniel Lemire"
+  ],
+  "abstract": "  JavaScript Object Notation or JSON is a ubiquitous data exchange format on\nthe Web. Ingesting JSON documents can become a performance bottleneck due to\nthe sheer volume of data. We are thus motivated to make JSON parsing as fast as\npossible.\n  Despite the maturity of the problem of JSON parsing, we show that substantial\nspeedups are possible. We present the first standard-compliant JSON parser to\nprocess gigabytes of data per second on a single core, using commodity\nprocessors. We can use a quarter or fewer instructions than a state-of-the-art\nreference parser like RapidJSON. Unlike other validating parsers, our software\n(simdjson) makes extensive use of Single Instruction, Multiple Data (SIMD)\ninstructions. To ensure reproducibility, simdjson is freely available as\nopen-source software under a liberal license.\n",
+  "id": "arxiv.1902.08318",
+  "url": "https://arxiv.org/abs/1902.08318",
+  "pdf": "https://arxiv.org/pdf/1902.08318",
+  "bibtex": "@misc{langdale2019_arxiv:1902.08318,\n    title = {Parsing Gigabytes of JSON per Second},\n    author = {Geoff Langdale, Daniel Lemire},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.08318},\n    pdf = {https://arxiv.org/pdf/1902.08318},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551100724,
+  "tags": []
+}
