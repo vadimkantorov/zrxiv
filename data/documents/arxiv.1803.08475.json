@@ -1,0 +1,16 @@
+{
+  "title": "Attention, Learn to Solve Routing Problems!",
+  "authors": [
+    "Wouter Kool",
+    "Herke van Hoof",
+    "Max Welling"
+  ],
+  "abstract": "  The recently presented idea to learn heuristics for combinatorial\noptimization problems is promising as it can save costly development. However,\nto push this idea towards practical implementation, we need better models and\nbetter ways of training. We contribute in both directions: we propose a model\nbased on attention layers with benefits over the Pointer Network and we show\nhow to train this model using REINFORCE with a simple baseline based on a\ndeterministic greedy rollout, which we find is more efficient than using a\nvalue function. We significantly improve over recent learned heuristics for the\nTravelling Salesman Problem (TSP), getting close to optimal results for\nproblems up to 100 nodes. With the same hyperparameters, we learn strong\nheuristics for two variants of the Vehicle Routing Problem (VRP), the\nOrienteering Problem (OP) and (a stochastic variant of) the Prize Collecting\nTSP (PCTSP), outperforming a wide range of baselines and getting results close\nto highly optimized and specialized algorithms.\n",
+  "id": "arxiv.1803.08475",
+  "url": "https://arxiv.org/abs/1803.08475",
+  "pdf": "https://arxiv.org/pdf/1803.08475",
+  "bibtex": "@misc{kool2018_arxiv:1803.08475,\n    title = {Attention, Learn to Solve Routing Problems!},\n    author = {Wouter Kool, Herke van Hoof, Max Welling},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.08475},\n    pdf = {https://arxiv.org/pdf/1803.08475},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551192696,
+  "tags": []
+}
