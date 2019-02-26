@@ -1,0 +1,15 @@
+{
+  "title": "Cut-Pursuit Algorithm for Regularizing Nonsmooth Functionals with Graph Total Variation",
+  "authors": [
+    "Hugo Raguet",
+    "Loïc Landrieu"
+  ],
+  "abstract": "  We present an extension of the cut-pursuit algorithm, introduced by Landrieu\nand Obozinski (2017), to the graph total-variation regularization of functions\nwith a separable nondifferentiable part. We propose a modified algorithmic\nscheme as well as adapted proofs of convergence. We also present a heuristic\napproach for handling the cases in which the values associated to each vertex\nof the graph are multidimensional. The performance of our algorithm, which we\ndemonstrate on difficult, ill-conditioned large-scale inverse and learning\nproblems, is such that it may in practice extend the scope of application of\nthe total-variation regularization.\n",
+  "id": "arxiv.1802.04383",
+  "url": "https://arxiv.org/abs/1802.04383",
+  "pdf": "https://arxiv.org/pdf/1802.04383",
+  "bibtex": "@misc{raguet2018_arxiv:1802.04383,\n    title = {Cut-Pursuit Algorithm for Regularizing Nonsmooth Functionals with Graph Total Variation},\n    author = {Hugo Raguet, Loïc Landrieu},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1802.04383},\n    pdf = {https://arxiv.org/pdf/1802.04383},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551213138,
+  "tags": []
+}
