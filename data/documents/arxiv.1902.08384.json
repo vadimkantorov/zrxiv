@@ -1,0 +1,16 @@
+{
+  "title": "Preconditioning for the Geometric Transportation Problem",
+  "authors": [
+    "Andrey Boris Khesin",
+    "Aleksandar Nikolov",
+    "Dmitry Paramonov"
+  ],
+  "abstract": "  In the geometric transportation problem, we are given a collection of points\n$P$ in $d$-dimensional Euclidean space, and each point is given a supply of\n$\\mu(p)$ units of mass, where $\\mu(p)$ could be a positive or a negative\ninteger, and the total sum of the supplies is $0$. The goal is to find a flow\n(called a transportation map) that transports $\\mu(p)$ units from any point $p$\nwith $\\mu(p) > 0$, and transports $-\\mu(p)$ units into any point $p$ with\n$\\mu(p) < 0$. Moreover, the flow should minimize the total distance traveled by\nthe transported mass. The optimal value is known as the transportation cost, or\nthe Earth Mover's Distance (from the points with positive supply to those with\nnegative supply). This problem has been widely studied in many fields of\ncomputer science: from theoretical work in computational geometry, to\napplications in computer vision, graphics, and machine learning.\n  In this work we study approximation algorithms for the geometric\ntransportation problem. We give an algorithm which, for any fixed dimension\n$d$, finds a $(1+\\varepsilon)$-approximate transportation map in time\nnearly-linear in $n$, and polynomial in $\\varepsilon^{-1}$ and in the logarithm\nof the total supply. This is the first approximation scheme for the problem\nwhose running time depends on $n$ as $n\\cdot \\mathrm{polylog}(n)$. Our\ntechniques combine the generalized preconditioning framework of Sherman, which\nis grounded in continuous optimization, with simple geometric arguments to\nfirst reduce the problem to a minimum cost flow problem on a sparse graph, and\nthen to design a good preconditioner for this latter problem.\n",
+  "id": "arxiv.1902.08384",
+  "url": "https://arxiv.org/abs/1902.08384",
+  "pdf": "https://arxiv.org/pdf/1902.08384",
+  "bibtex": "@misc{khesin2019_arxiv:1902.08384,\n    title = {Preconditioning for the Geometric Transportation Problem},\n    author = {Andrey Boris Khesin, Aleksandar Nikolov, Dmitry Paramonov},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.08384},\n    pdf = {https://arxiv.org/pdf/1902.08384},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551139573,
+  "tags": []
+}
