@@ -85,8 +85,7 @@
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
 					<div>
-						<input type="checkbox"></input>
-						<div class="title"><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
+						<div class="title"><input type="checkbox"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 						<div class="tags">{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}{% if doc.source and doc.source != "" %}<a class="source" href="{{ site.github.url }}/all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}</div>
 					</div>
 					<div>
@@ -99,8 +98,7 @@
 		</div>
 		<template id="doc_tmpl"><li class="" data-authors="" data-tags="" data-title="">
 			<div>
-				<input type="checkbox"></input>
-				<div class="title"><a class="title" href="" title=""></a></div>
+				<div class="title"><input type="checkbox"></input><a class="title" href="" title=""></a></div>
 				<div class="tags"><a class="source" href=""></a></div>
 			</div>
 			<div>
