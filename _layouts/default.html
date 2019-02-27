@@ -103,6 +103,65 @@
 			</ul>
 		</div>
 		<script type="text/javascript">
+			function base64_encode_utf8(str)
+			{
+			    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
+			}
+			
+			function parse_bibtex(text)
+			{
+				const parse_bibtex_line = function(text)
+				{
+					let m = text.match(/^\s*(\S+?)\s*=\s*/);
+					if (!m) 
+						throw new Error('Unrecogonised line format');
+					const name = m[1];
+					const search = text.slice(m[0].length);
+					const re = /[\n\r,{}]/g;
+					let length = m[0].length;
+					let braceCount = 0;
+					do
+					{
+						m = re.exec(search);
+						if (m[0] === '{')
+							braceCount++;
+						else if (m[0] === '}')
+						{
+							if (braceCount ===  0)
+								throw new Error('Unexpected closing brace: "}"');
+							braceCount--;
+						}
+					}
+					while (braceCount > 0);
+					const value = search.slice(0, re.lastIndex);
+					length += re.lastIndex;
+
+					while(true)
+					{
+						m = re.exec(search);
+						if(m[0] != '{' && m[0] != '}')
+							length += m[0].length;
+						else
+							break;
+					}
+
+					return [name, value, length];
+				};
+
+				const m = text.match(/^\s*@([^{]+){\s*([^,\n]+)[,\n]/);
+				if (!m) 
+					throw new Error('Unrecogonised header format');
+				text = text.slice(m[0].length).trim();
+				let bib = {};
+				while (text[0] !== '}')
+				{
+					const [field, value, length] = parse_bibtex_line(text);
+					bib[field.toLowerCase()] = value;
+					text = text.slice(length).trim();
+				}
+				return [m[1].trim().toLowerCase(), m[2].trim().toLowerCase(), bib];
+			}
+			
 			function reset_doc(li, row_index, hidden)
 			{
 				if(row_index % 2 == 1)
@@ -110,11 +169,6 @@
 				else
 					li.classList.remove('doc-even');
 				li.hidden = false;
-			}
-			
-			function base64_encode_utf8(str)
-			{
-			    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
 			}
 			
 			function bibtex_copy(a)
