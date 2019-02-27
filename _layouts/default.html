@@ -102,7 +102,7 @@
 				<div class="tags"><a class="source" href=""></a></div>
 			</div>
 			<div>
-				<div class="authors"><template><a href="" class="author" title=""></a></template></div>
+				<div class="authors"></div>
 				<div class="date"><a class="bibtex_copy" href="#" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
 			</div>
 		</li></template>
@@ -199,6 +199,27 @@
 							a.innerText = bib[2]['title'];
 							a.href = bib[2]['url'];
 							ul.appendChild(li);
+							let div = li.querySelector('.authors');
+							let authors = (bib[2]['author'].includes(' and ') ? bib[2]['author'].split(' and ') : bib[2]['author'].split(', ')).map(author => 
+							{
+								if(author.includes(','))
+								{
+									let splitted = author.split(',');
+									return [splitted[0], splitted.slice(1).join(' ') + ' ' + splitted[0]];
+								}
+								else
+								{
+									let splitted = author.split(' ');
+									return [splitted.pop(), author];
+								}
+							});
+							for(let j = 0; j < authors.length; j++)
+							{
+								a = document.createElement('a');
+								a.innerText = authors[j][0];
+								a.title = authors[j][1];
+								div.appendChild(a);
+							}
 						};
 					};
 					fileReader.readAsText(files[0]);
