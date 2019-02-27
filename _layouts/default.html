@@ -82,12 +82,7 @@
 			</div>
 			<ul>
 				{% for doc in docs %}
-				{% assign lastnames = "" | split: "," %}
-				{% for author in doc.authors %}
-					{% assign lastname = (author | split: " ") | last %}
-					{% assign lastnames = lastnames | push: lastname %}
-				{% endfor %}
-
+				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
 					<div>
 						<input type="checkbox"></input>
