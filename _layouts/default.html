@@ -158,6 +158,8 @@
 						bib[field.toLowerCase()] = value;
 						text = text.slice(length).trim();
 					}
+					if(text[0] == '}')
+						text = text.slice(1).trim();
 					res.push([m[1].trim().toLowerCase(), m[2].trim().toLowerCase(), bib]);
 				}
 				return res;
