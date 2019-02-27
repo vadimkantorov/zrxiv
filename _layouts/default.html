@@ -162,7 +162,11 @@
 					let bib = {};
 					while (text[0] !== '}')
 					{
-						const [field, value, length] = parse_bibtex_line(text);
+						let [field, value, length] = parse_bibtex_line(text);
+						while(value.startsWith('{'))
+							value = value.slice(1);
+						while(value.endsWith('}'))
+							value = value.slice(0, -1);
 						bib[field.toLowerCase()] = value;
 						text = text.slice(length).trim();
 					}
@@ -191,7 +195,9 @@
 							const bib = bibs[i];
 							let li = document.importNode(doc_tmpl, true).firstChild;
 							li.className = i % 2 == 1 ? 'doc-even' : '';
-							li.querySelector('a.title').innerText = bib[2]['title'];
+							let a = li.querySelector('a.title');
+							a.innerText = bib[2]['title'];
+							a.href = bib[2]['href'];
 							ul.appendChild(li);
 						};
 					};
