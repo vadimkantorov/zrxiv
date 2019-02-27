@@ -178,6 +178,12 @@
 				return res;
 			}
 			
+			function format_bibtex(bibtex)
+			{
+				let [record_type, citation_key, bib] = bibtex;
+        			return `@${record_type}{${citation_key},\n` + Object.keys(bib).map(k => `    ${k} = ${bib[k]}`).join(',\n') + '\n}';
+			}
+			
 			function import_click()
 			{
 				const files = document.getElementById('import').files;
@@ -194,6 +200,7 @@
 						{
 							const bib = bibs[i];
 							let li = document.importNode(doc_tmpl, true).firstChild;
+							li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
 							if(i % 2 == 1)
 								li.classList.add('doc-even');
 							let a = li.querySelector('a.title');
