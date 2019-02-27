@@ -143,14 +143,13 @@
 					return [name, value, length];
 				};
 
-				const m = text.match(/^\s*@([^{]+){\s*([^,\n]+)[,\n]/);
-				if (!m) 
-					throw new Error('Unrecogonised header format');
-				text = text.slice(m[0].length).trim();
-				
 				let res = [];
 				while(text.length > 0)
 				{
+					const m = text.match(/^\s*@([^{]+){\s*([^,\n]+)[,\n]/);
+					if (!m) 
+						throw new Error('Unrecogonised header format');
+					text = text.slice(m[0].length).trim();
 					let bib = {};
 					while (text[0] !== '}')
 					{
@@ -160,6 +159,7 @@
 					}
 					if(text[0] == '}')
 						text = text.slice(1).trim();
+					
 					res.push([m[1].trim().toLowerCase(), m[2].trim().toLowerCase(), bib]);
 				}
 				return res;
