@@ -160,7 +160,12 @@
 			function import_click()
 			{
 				const files = document.getElementById('import').files;
-				console.log(files);
+				if(files.length > 0)
+				{
+					const fileReader = new FileReader(); 
+					fileReader.onload = function (e) { console.log(e); console.log(parse_bibtex(fileReader.result)); } 
+					fileReader.readAsText(files[0]);
+				}
 			}
 			
 			function reset_doc(li, row_index, hidden)
