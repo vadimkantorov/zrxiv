@@ -96,7 +96,7 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<template id="doc_tmpl"><li class="" data-authors="" data-tags="" data-title="">
+		<template id="doc_tmpl"><li class="doc" data-authors="" data-tags="" data-title="">
 			<div>
 				<div class="title"><input type="checkbox"></input><a class="title" href="" title=""></a></div>
 				<div class="tags"><a class="source" href=""></a></div>
@@ -194,7 +194,8 @@
 						{
 							const bib = bibs[i];
 							let li = document.importNode(doc_tmpl, true).firstChild;
-							li.className = i % 2 == 1 ? 'doc-even' : '';
+							if(i % 2 == 1)
+								li.classList.add('doc-even');
 							let a = li.querySelector('a.title');
 							a.innerText = bib[2]['title'];
 							a.href = bib[2]['url'];
