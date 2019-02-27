@@ -192,6 +192,7 @@
 						{
 							const bib = bibs[i];
 							let li = document.importNode(doc_tmpl, true).firstChild;
+							li.class = i % 2 == 1 ? 'doc-even' : '';
 							li.querySelector('a.title').innerText = bib[2]['title'];
 							ul.appendChild(li);
 						};
