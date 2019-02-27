@@ -181,7 +181,7 @@
 			function format_bibtex(bibtex)
 			{
 				let [record_type, citation_key, bib] = bibtex;
-        			return `@${record_type}{${citation_key},\n` + Object.keys(bib).map(k => `    ${k} = ${bib[k]}`).join(',\n') + '\n}';
+        			return `@${record_type}{${citation_key},\n` + Object.keys(bib).map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
 			}
 			
 			function import_click()
