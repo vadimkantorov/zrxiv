@@ -189,7 +189,12 @@
 						const bibs = parse_bibtex(e.target.result);
 						const ul = document.getElementsByTagName('ul')[0];
 						while(ul.firstChild) ul.firstChild.remove();
-						
+						const doc_tmpl = document.getElementById('doc_tmpl').content;
+						for(let i = 0; i < bibs.length; i++)
+						{
+							let li = document.importNode(doc_tmpl, true).firstChild;
+							ul.appendChild(li);
+						};
 					};
 					fileReader.readAsText(files[0]);
 				}
