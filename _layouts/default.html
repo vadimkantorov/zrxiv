@@ -97,6 +97,19 @@
 				{% endfor %}
 			</ul>
 		</div>
+		<template id="doc_tmpl">
+			<li class="" data-authors="" data-tags="" data-title="">
+				<div>
+					<input type="checkbox"></input>
+					<div class="title"><a class="title" href="" title=""></a></div>
+					<div class="tags"><a class="source" href=""></a></div>
+				</div>
+				<div>
+					<div class="authors"><template><a href="" class="author" title=""></a></template></div>
+					<div class="date"><a class="bibtex_copy" href="#" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
+				</div>
+			</li>
+		</template>
 		<script type="text/javascript">
 			function base64_encode_utf8(str)
 			{
