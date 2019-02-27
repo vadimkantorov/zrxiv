@@ -190,7 +190,9 @@
 						const doc_tmpl = document.getElementById('doc_tmpl').content;
 						for(let i = 0; i < bibs.length; i++)
 						{
+							const bib = bibs[i];
 							let li = document.importNode(doc_tmpl, true).firstChild;
+							li.querySelector('a.title').innerText = bib[2]['title'];
 							ul.appendChild(li);
 						};
 					};
