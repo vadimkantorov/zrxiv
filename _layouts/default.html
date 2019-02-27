@@ -184,7 +184,13 @@
 				if(files.length > 0)
 				{
 					const fileReader = new FileReader(); 
-					fileReader.onload = function (e) { console.log(parse_bibtex(e.target.result)); } 
+					fileReader.onload = function (e)
+					{
+						const bibs = parse_bibtex(e.target.result);
+						const ul = document.getElementsByTagName('ul')[0];
+						while(ul.firstChild) ul.firstChild.remove();
+						
+					};
 					fileReader.readAsText(files[0]);
 				}
 			}
