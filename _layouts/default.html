@@ -223,6 +223,12 @@
 								a.href = '#';
 								div.appendChild(a);
 							}
+							const date = new Date();
+							a = document.createElement('a');
+							a.href = '#';
+							a.innerText = '#' + date.toISOString().slice(0, 10);
+							//a.title = 'added at %Y, %B %-d, %H:%M GMT';
+							li.querySelector('.date').appendChild(a);
 						};
 					};
 					fileReader.readAsText(files[0]);
