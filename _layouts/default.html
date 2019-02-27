@@ -147,14 +147,20 @@
 				if (!m) 
 					throw new Error('Unrecogonised header format');
 				text = text.slice(m[0].length).trim();
-				let bib = {};
-				while (text[0] !== '}')
+				
+				let res = [];
+				while(text.length > 0)
 				{
-					const [field, value, length] = parse_bibtex_line(text);
-					bib[field.toLowerCase()] = value;
-					text = text.slice(length).trim();
+					let bib = {};
+					while (text[0] !== '}')
+					{
+						const [field, value, length] = parse_bibtex_line(text);
+						bib[field.toLowerCase()] = value;
+						text = text.slice(length).trim();
+					}
+					res.push([m[1].trim().toLowerCase(), m[2].trim().toLowerCase(), bib]);
 				}
-				return [m[1].trim().toLowerCase(), m[2].trim().toLowerCase(), bib];
+				return res;
 			}
 			
 			function import_click()
@@ -163,7 +169,7 @@
 				if(files.length > 0)
 				{
 					const fileReader = new FileReader(); 
-					fileReader.onload = function (e) { console.log(e); console.log(parse_bibtex(fileReader.result)); } 
+					fileReader.onload = function (e) { console.log(parse_bibtex(e.target.result)); } 
 					fileReader.readAsText(files[0]);
 				}
 			}
