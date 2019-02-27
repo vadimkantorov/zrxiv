@@ -229,7 +229,7 @@
 							a.innerText = '#' + date.toISOString().slice(0, 10);
 							const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
-							a.title = `added at ${date.getUTCFullYear()}, ${monthNames[date.getUTCMonth()]} ${date.getUTCDate()}, ${date.getUTCHours()}:${date.getUTCMinutes()} GMT`;
+							a.title = `will be marked as added at ${date.getUTCFullYear()}, ${monthNames[date.getUTCMonth()]} ${date.getUTCDate()}, ${date.getUTCHours()}:${date.getUTCMinutes()} GMT`;
 							li.querySelector('.date').appendChild(a);
 						};
 					};
