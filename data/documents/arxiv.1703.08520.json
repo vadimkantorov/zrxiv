@@ -1,0 +1,16 @@
+{
+  "title": "Augmented Ensemble MCMC sampling in Factorial Hidden Markov Models",
+  "authors": [
+    "Kaspar Märtens",
+    "Michalis K Titsias",
+    "Christopher Yau"
+  ],
+  "abstract": "Bayesian inference for factorial hidden Markov models is challenging due to\nthe exponentially sized latent variable space. Standard Monte Carlo samplers\ncan have difficulties effectively exploring the posterior landscape and are\noften restricted to exploration around localised regions that depend on\ninitialisation. We introduce a general purpose ensemble Markov Chain Monte\nCarlo (MCMC) technique to improve on existing poorly mixing samplers. This is\nachieved by combining parallel tempering and an auxiliary variable scheme to\nexchange information between the chains in an efficient way. The latter\nexploits a genetic algorithm within an augmented Gibbs sampler. We compare our\ntechnique with various existing samplers in a simulation study as well as in a\ncancer genomics application, demonstrating the improvements obtained by our\naugmented ensemble approach.",
+  "id": "arxiv.1703.08520",
+  "url": "https://arxiv.org/abs/1703.08520",
+  "pdf": "https://arxiv.org/pdf/1703.08520",
+  "bibtex": "@misc{märtens2017_arxiv:1703.08520,\n    title = {Augmented Ensemble MCMC sampling in Factorial Hidden Markov Models},\n    author = {Kaspar Märtens, Michalis K Titsias, Christopher Yau},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1703.08520},\n    pdf = {https://arxiv.org/pdf/1703.08520},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551350829,
+  "tags": []
+}
