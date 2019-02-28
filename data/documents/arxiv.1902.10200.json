@@ -1,0 +1,18 @@
+{
+  "title": "Learning Latent Scene-Graph Representations for Referring Relationships",
+  "authors": [
+    "Moshiko Raboh",
+    "Roei Herzig",
+    "Gal Chechik",
+    "Jonathan Berant",
+    "Amir Globerson"
+  ],
+  "abstract": "Understanding the semantics of complex visual scenes often requires analyzing\na network of objects and their relations. Such networks are known as\nscene-graphs. While scene-graphs have great potential for machine vision\napplications, learning scene-graph based models is challenging. One reason is\nthe complexity of the graph representation, and the other is the lack of large\nscale data for training broad coverage graphs. In this work we propose a way of\naddressing these difficulties, via the concept of a Latent Scene Graph. We\ndescribe a family of models that uses \"scene-graph like\" representations, and\nuses them in downstream tasks. Furthermore, we show how these representations\ncan be trained from partial supervision. Finally, we show how our approach can\nbe used to achieve new state of the art results on the challenging problem of\nreferring relationships.",
+  "id": "arxiv.1902.10200",
+  "url": "https://arxiv.org/abs/1902.10200",
+  "pdf": "https://arxiv.org/pdf/1902.10200",
+  "bibtex": "@misc{raboh2019_arxiv:1902.10200,\n    title = {Learning Latent Scene-Graph Representations for Referring Relationships},\n    author = {Moshiko Raboh, Roei Herzig, Gal Chechik, Jonathan Berant, Amir Globerson},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.10200},\n    pdf = {https://arxiv.org/pdf/1902.10200},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551347596,
+  "tags": []
+}
