@@ -1,0 +1,14 @@
+{
+  "title": "Fifty Years of KdV: An Integrable System",
+  "authors": [
+    "Percy Deift"
+  ],
+  "abstract": "The author discusses integrability of Hamiltonian dynamical systems in the\naftermath of KdV. The author also discusses the role of integrable systems in\ncertain numerical computations, particularly the computation of the eigenvalues\nof a random symmetric matrix.",
+  "id": "arxiv.1902.10267",
+  "url": "https://arxiv.org/abs/1902.10267",
+  "pdf": "https://arxiv.org/pdf/1902.10267",
+  "bibtex": "@misc{deift2019_arxiv:1902.10267,\n    title = {Fifty Years of KdV: An Integrable System},\n    author = {Percy Deift},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.10267},\n    pdf = {https://arxiv.org/pdf/1902.10267},\n    url = https://arxiv.org/abs/1902.10267\n}",
+  "source": "arxiv.org",
+  "date": 1551369456,
+  "tags": []
+}
