@@ -1,0 +1,21 @@
+{
+  "title": "EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs",
+  "authors": [
+    "Aldo Pareja",
+    "Giacomo Domeniconi",
+    "Jie Chen",
+    "Tengfei Ma",
+    "Toyotaro Suzumura",
+    "Hiroki Kanezashi",
+    "Tim Kaler",
+    "Charles E. Leisersen"
+  ],
+  "abstract": "Graph representation learning resurges as a trending research subject owing\nto the widespread use of deep learning for Euclidean data, which inspire\nvarious creative designs of neural networks in the non-Euclidean domain,\nparticularly graphs. With the success of these graph neural networks (GNN) in\nthe static setting, we approach further practical scenarios where the graph\ndynamically evolves. For this case, combining the GNN with a recurrent neural\nnetwork (RNN, broadly speaking) is a natural idea. Existing approaches\ntypically learn one single graph model for all the graphs, by using the RNN to\ncapture the dynamism of the output node embeddings and to implicitly regulate\nthe graph model. In this work, we propose a different approach, coined\nEvolveGCN, that uses the RNN to evolve the graph model itself over time. This\nmodel adaptation approach is model oriented rather than node oriented, and\nhence is advantageous in the flexibility on the input. For example, in the\nextreme case, the model can handle at a new time step, a completely new set of\nnodes whose historical information is unknown, because the dynamism has been\ncarried over to the GNN parameters. We evaluate the proposed approach on tasks\nincluding node classification, edge classification, and link prediction. The\nexperimental results indicate a generally higher performance of EvolveGCN\ncompared with related approaches.",
+  "id": "arxiv.1902.10191",
+  "url": "https://arxiv.org/abs/1902.10191",
+  "pdf": "https://arxiv.org/pdf/1902.10191",
+  "bibtex": "@misc{pareja2019_arxiv:1902.10191,\n    title = {EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs},\n    author = {Aldo Pareja, Giacomo Domeniconi, Jie Chen, Tengfei Ma, Toyotaro Suzumura, Hiroki Kanezashi, Tim Kaler, Charles E. Leisersen},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.10191},\n    pdf = {https://arxiv.org/pdf/1902.10191},\n    url = undefined\n}",
+  "source": "arxiv.org",
+  "date": 1551351242,
+  "tags": []
+}
