@@ -1,0 +1,16 @@
+{
+  "title": "End-to-end Segmentation with Recurrent Attention Neural Network",
+  "authors": [
+    "Qiaoying Huang",
+    "Xiao Chen",
+    "Mariappan Nadar"
+  ],
+  "abstract": "Image segmentation quality depends heavily on the quality of the image. For\nmany medical imaging modalities, image reconstruction is required to convert\nacquired raw data to images before any analysis. However, imperfect\nreconstruction with artifacts and loss of information is almost inevitable,\nwhich compromises the final performance of segmentation. In this study, we\npresent a novel end-to-end deep learning framework that performs magnetic\nresonance brain image segmentation directly from the raw data. The end-to-end\nframework consists a unique task-driven attention module that recurrently\nutilizes intermediate segmentation result to facilitate image-domain feature\nextraction from the raw data for segmentation, thus closely bridging the\nreconstruction and the segmentation tasks. In addition, we introduce a novel\nworkflow to generate labeled training data for segmentation by exploiting\nimaging modality simulators and digital phantoms. Extensive experiment results\nshow that the proposed method outperforms the state-of-the-art methods.",
+  "id": "arxiv.1812.02068",
+  "url": "https://arxiv.org/abs/1812.02068",
+  "pdf": "https://arxiv.org/pdf/1812.02068",
+  "bibtex": "@misc{huang2018_arxiv:1812.02068,\n    title = {End-to-end Segmentation with Recurrent Attention Neural Network},\n    author = {Qiaoying Huang, Xiao Chen, Mariappan Nadar},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.02068},\n    pdf = {https://arxiv.org/pdf/1812.02068},\n    url = https://arxiv.org/abs/1812.02068\n}",
+  "source": "arxiv.org",
+  "date": 1551377152,
+  "tags": []
+}
