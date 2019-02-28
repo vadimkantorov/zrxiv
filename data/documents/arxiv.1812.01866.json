@@ -1,0 +1,19 @@
+{
+  "title": "Few-shot Object Detection via Feature Reweighting",
+  "authors": [
+    "Bingyi Kang",
+    "Zhuang Liu",
+    "Xin Wang",
+    "Fisher Yu",
+    "Jiashi Feng",
+    "Trevor Darrell"
+  ],
+  "abstract": "This work aims to solve the challenging few-shot object detection problem\nwhere only a few annotated examples are available for each object category to\ntrain a detection model. Such an ability of learning to detect an object from\njust a few examples is common for human vision systems, but remains absent for\ncomputer vision systems. Though few-shot meta learning offers a promising\nsolution technique, previous works mostly target the task of image\nclassification and are not directly applicable for the much more complicated\nobject detection task. In this work, we propose a novel meta-learning based\nmodel with carefully designed architecture, which consists of a meta-model and\na base detection model. The base detection model is trained on several base\nclasses with sufficient samples to offer basis features. The meta-model is\ntrained to reweight importance of features from the base detection model over\nthe input image and adapt these features to assist novel object detection from\na few examples. The meta-model is light-weight, end-to-end trainable and able\nto entail the base model with detection ability for novel objects fast. Through\nexperiments we demonstrated our model can outperform baselines by a large\nmargin for few-shot object detection, on multiple datasets and settings. Our\nmodel also exhibits fast adaptation speed to novel few-shot classes.",
+  "id": "arxiv.1812.01866",
+  "url": "https://arxiv.org/abs/1812.01866",
+  "pdf": "https://arxiv.org/pdf/1812.01866",
+  "bibtex": "@misc{kang2018_arxiv:1812.01866,\n    title = {Few-shot Object Detection via Feature Reweighting},\n    author = {Bingyi Kang, Zhuang Liu, Xin Wang, Fisher Yu, Jiashi Feng, Trevor Darrell},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.01866},\n    pdf = {https://arxiv.org/pdf/1812.01866},\n    url = https://arxiv.org/abs/1812.01866\n}",
+  "source": "arxiv.org",
+  "date": 1551377111,
+  "tags": []
+}
