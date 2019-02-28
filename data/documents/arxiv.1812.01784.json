@@ -1,0 +1,18 @@
+{
+  "title": "Generalized Zero- and Few-Shot Learning via Aligned Variational Autoencoders",
+  "authors": [
+    "Edgar Schönfeld",
+    "Sayna Ebrahimi",
+    "Samarth Sinha",
+    "Trevor Darrell",
+    "Zeynep Akata"
+  ],
+  "abstract": "Many approaches in generalized zero-shot learning rely on cross-modal mapping\nbetween the image feature space and the class embedding space. As labeled\nimages are rare, one direction is to augment the dataset by generating either\nimages or image features. However, the former misses fine-grained details and\nthe latter requires learning a mapping associated with class embeddings. In\nthis work, we take feature generation one step further and propose a model\nwhere a shared latent space of image features and class embeddings is learned\nby modality-specific aligned variational autoencoders. This leaves us with the\nrequired discriminative information about the image and classes in the latent\nfeatures, on which we train a softmax classifier. The key to our approach is\nthat we align the distributions learned from images and from side-information\nto construct latent features that contain the essential multi-modal information\nassociated with unseen classes. We evaluate our learned latent features on\nseveral benchmark datasets, i.e. CUB, SUN, AWA1 and AWA2, and establish a new\nstate-of-the-art on generalized zero-shot as well as on few-shot learning.\nMoreover, our results on ImageNet with various zero-shot splits show that our\nlatent features generalize well in large-scale settings.",
+  "id": "arxiv.1812.01784",
+  "url": "https://arxiv.org/abs/1812.01784",
+  "pdf": "https://arxiv.org/pdf/1812.01784",
+  "bibtex": "@misc{schönfeld2018_arxiv:1812.01784,\n    title = {Generalized Zero- and Few-Shot Learning via Aligned Variational Autoencoders},\n    author = {Edgar Schönfeld, Sayna Ebrahimi, Samarth Sinha, Trevor Darrell, Zeynep Akata},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.01784},\n    pdf = {https://arxiv.org/pdf/1812.01784},\n    url = https://arxiv.org/abs/1812.01784\n}",
+  "source": "arxiv.org",
+  "date": 1551376095,
+  "tags": []
+}
