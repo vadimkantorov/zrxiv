@@ -1,0 +1,20 @@
+{
+  "title": "Deep Unsupervised Clustering with Gaussian Mixture Variational Autoencoders",
+  "authors": [
+    "Nat Dilokthanakul",
+    "Pedro A. M. Mediano",
+    "Marta Garnelo",
+    "Matthew C. H. Lee",
+    "Hugh Salimbeni",
+    "Kai Arulkumaran",
+    "Murray Shanahan"
+  ],
+  "abstract": "We study a variant of the variational autoencoder model (VAE) with a Gaussian\nmixture as a prior distribution, with the goal of performing unsupervised\nclustering through deep generative models. We observe that the known problem of\nover-regularisation that has been shown to arise in regular VAEs also manifests\nitself in our model and leads to cluster degeneracy. We show that a heuristic\ncalled minimum information constraint that has been shown to mitigate this\neffect in VAEs can also be applied to improve unsupervised clustering\nperformance with our model. Furthermore we analyse the effect of this heuristic\nand provide an intuition of the various processes with the help of\nvisualizations. Finally, we demonstrate the performance of our model on\nsynthetic data, MNIST and SVHN, showing that the obtained clusters are\ndistinct, interpretable and result in achieving competitive performance on\nunsupervised clustering to the state-of-the-art results.",
+  "id": "arxiv.1611.02648",
+  "url": "https://arxiv.org/abs/1611.02648",
+  "pdf": "https://arxiv.org/pdf/1611.02648",
+  "bibtex": "@misc{dilokthanakul2016_arxiv:1611.02648,\n    title = {Deep Unsupervised Clustering with Gaussian Mixture Variational Autoencoders},\n    author = {Nat Dilokthanakul, Pedro A. M. Mediano, Marta Garnelo, Matthew C. H. Lee, Hugh Salimbeni, Kai Arulkumaran, Murray Shanahan},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1611.02648},\n    pdf = {https://arxiv.org/pdf/1611.02648},\n    url = https://arxiv.org/abs/1611.02648\n}",
+  "source": "arxiv.org",
+  "date": 1551479349,
+  "tags": []
+}
