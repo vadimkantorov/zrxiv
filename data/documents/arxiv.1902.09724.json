@@ -1,0 +1,17 @@
+{
+  "title": "Automated Model Selection with Bayesian Quadrature",
+  "authors": [
+    "Henry Chai",
+    "Jean-Francois Ton",
+    "Roman Garnett",
+    "Michael A. Osborne"
+  ],
+  "abstract": "We present a novel technique for tailoring Bayesian quadrature (BQ) to model\nselection. The state-of-the-art for comparing the evidence of multiple models\nrelies on Monte Carlo methods, which converge slowly and are unreliable for\ncomputationally expensive models. Previous research has shown that BQ offers\nsample efficiency superior to Monte Carlo in computing the evidence of an\nindividual model. However, applying BQ directly to model comparison may waste\ncomputation producing an overly-accurate estimate for the evidence of a clearly\npoor model. We propose an automated and efficient algorithm for computing the\nmost-relevant quantity for model selection: the posterior probability of a\nmodel. Our technique maximizes the mutual information between this quantity and\nobservations of the models' likelihoods, yielding efficient acquisition of\nsamples across disparate model spaces when likelihood observations are limited.\nOur method produces more-accurate model posterior estimates using fewer model\nlikelihood evaluations than standard Bayesian quadrature and Monte Carlo\nestimators, as we demonstrate on synthetic and real-world examples.",
+  "id": "arxiv.1902.09724",
+  "url": "https://arxiv.org/abs/1902.09724",
+  "pdf": "https://arxiv.org/pdf/1902.09724",
+  "bibtex": "@misc{chai2019_arxiv:1902.09724,\n    title = {Automated Model Selection with Bayesian Quadrature},\n    author = {Henry Chai, Jean-Francois Ton, Roman Garnett, Michael A. Osborne},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.09724},\n    pdf = {https://arxiv.org/pdf/1902.09724},\n    url = https://arxiv.org/abs/1902.09724\n}",
+  "source": "arxiv.org",
+  "date": 1551459689,
+  "tags": []
+}
