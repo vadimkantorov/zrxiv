@@ -90,7 +90,7 @@
 					</div>
 					<div>
 						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="{{ site.github.url }}/all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a href="#" onclick="bibtex_copy(this); return false" title="{{ doc.bibtex | escape }}">copy bibtex</a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="{{ site.github.url }}/all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="bibtex_copy(this); return false" title="{{ doc.bibtex | escape }}">copy bibtex</a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="{{ site.github.url }}/all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
@@ -103,7 +103,7 @@
 			</div>
 			<div>
 				<div class="authors"></div>
-				<div class="date"><a href="#" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
+				<div class="date"><a class="bibtex_copy" href="" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
 			</div>
 		</li></template>
 		<script type="text/javascript">
@@ -200,7 +200,7 @@
 						{
 							const bib = bibs[i];
 							let li = document.importNode(doc_tmpl, true).firstChild;
-							li.querySelector('.date a').title = format_bibtex(bib);
+							li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
 							if(i % 2 == 1)
 								li.classList.add('doc-even');
 							let a = li.querySelector('a.title');
@@ -221,15 +221,17 @@
 									return [splitted.pop(), author];
 								}
 							});
+							const site_root = document.querySelector("meta[property='og:url']").getAttribute('content');
 							for(let j = 0; j < authors.length; j++)
 							{
 								a = document.createElement('a');
 								a.className = 'author';
 								a.innerText = authors[j][0];
 								a.title = authors[j][1];
-								a.href = '#';
+								a.href = `%{site_root}/import#filter=@${authors[j][0].toLowerCase()}`;
 								div.appendChild(a);
 							}
+							update_tab_bibtex_links('imported');
 						};
 					};
 					fileReader.readAsText(files[0]);
@@ -264,6 +266,18 @@
 				window.location = (window.location.pathname.slice(-1) == '/' ? (window.location.pathname + 'all') : '') + '#filter=' + document.getElementById('filter_area').value.split(' ').join('+');
 			}
 			
+			function update_tab_bibtex_links(tab_name)
+			{
+				const tag_link = document.getElementById('tag'), bibtex_link = document.getElementById('bibtex_download');
+				const filtered_docs = document.querySelectorAll('.doc:not([hidden])');
+				const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
+
+				tag_link.innerText = `${tab_name} ${filtered_docs.length} docs`;
+				tag_link.href = window.location.href;
+				bibtex_link.download = `%{tab_name}.bib`;
+				bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
+			}
+			
 			function navigate()
 			{
 				const hash = window.location.hash != '' ? decodeURIComponent(window.location.hash.substr('#filter='.length)).split('+').join(' ') : '';
@@ -278,19 +292,10 @@
 				document.getElementById('filter_area').value = hash;
 				document.getElementById('filter_area').onkeyup = filter_keyup;
 				
-				const tag_link = document.getElementById('tag'), bibtex_link = document.getElementById('bibtex_download');
 				if(selector != '')
-				{
-					const filtered_docs = document.querySelectorAll('.doc:not([hidden])');
-					const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
-					
-					tag_link.innerText = `filtered ${filtered_docs.length} docs`;
-					tag_link.href = window.location.href;
-					bibtex_link.download = 'filtered.bib';
-					bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
-				}
+					update_tab_bibtex_links('filtered');
 				else
-					bibtex_link.removeAttribute('download');
+					document.getElementById('bibtex_download').removeAttribute('download');
 			}
 		</script>
 	</body>
