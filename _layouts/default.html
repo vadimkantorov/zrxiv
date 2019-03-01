@@ -208,7 +208,8 @@
 							if(i % 2 == 1)
 								li.classList.add('doc-even');
 							let a = li.querySelector('a.title');
-							a.innerText = bib[2]['title'];
+							const title = bib[2]['title'];
+							a.innerText = title;
 							a.href = bib[2]['url'];
 							ul.appendChild(li);
 							let div = li.querySelector('.authors');
@@ -226,15 +227,20 @@
 								}
 							});
 							const site_root = document.querySelector("meta[property='og:url']").getAttribute('content');
+							let lastnames = [];
 							for(let j = 0; j < authors.length; j++)
 							{
 								a = document.createElement('a');
 								a.className = 'author';
 								a.innerText = authors[j][0];
 								a.title = authors[j][1];
-								a.href = '#filter=@' + authors[j][0].toLowerCase();
+								const lastname = authors[j][0].toLowerCase();
+								a.href = '#filter=@' + lastname;
 								div.appendChild(a);
+								lastnames.push(lastname)
 							}
+							li.dataset.authors = lastnames.join(' ');
+							li.dataset.title = title;
 							update_tab_bibtex_links('imported');
 						};
 					};
