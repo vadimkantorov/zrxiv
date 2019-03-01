@@ -103,7 +103,7 @@
 			</div>
 			<div>
 				<div class="authors"></div>
-				<div class="date"><a class="bibtex_copy" href="#" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
+				<div class="date"><a href="#" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
 			</div>
 		</li></template>
 		<script type="text/javascript">
@@ -200,7 +200,7 @@
 						{
 							const bib = bibs[i];
 							let li = document.importNode(doc_tmpl, true).firstChild;
-							li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
+							li.querySelector('.date a').title = format_bibtex(bib);
 							if(i % 2 == 1)
 								li.classList.add('doc-even');
 							let a = li.querySelector('a.title');
@@ -230,14 +230,6 @@
 								a.href = '#';
 								div.appendChild(a);
 							}
-							const date = new Date();
-							a = document.createElement('a');
-							a.href = '#';
-							a.innerText = '#' + date.toISOString().slice(0, 10);
-							const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"];
-							a.title = `will be marked as added at ${date.getUTCFullYear()}, ${monthNames[date.getUTCMonth()]} ${date.getUTCDate()}, ${date.getUTCHours()}:${date.getUTCMinutes()} GMT`;
-							li.querySelector('.date').appendChild(a);
 						};
 					};
 					fileReader.readAsText(files[0]);
