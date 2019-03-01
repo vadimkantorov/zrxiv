@@ -1,0 +1,17 @@
+{
+  "title": "Listen, Attend and Spell",
+  "authors": [
+    "William Chan",
+    "Navdeep Jaitly",
+    "Quoc V. Le",
+    "Oriol Vinyals"
+  ],
+  "abstract": "We present Listen, Attend and Spell (LAS), a neural network that learns to\ntranscribe speech utterances to characters. Unlike traditional DNN-HMM models,\nthis model learns all the components of a speech recognizer jointly. Our system\nhas two components: a listener and a speller. The listener is a pyramidal\nrecurrent network encoder that accepts filter bank spectra as inputs. The\nspeller is an attention-based recurrent network decoder that emits characters\nas outputs. The network produces character sequences without making any\nindependence assumptions between the characters. This is the key improvement of\nLAS over previous end-to-end CTC models. On a subset of the Google voice search\ntask, LAS achieves a word error rate (WER) of 14.1% without a dictionary or a\nlanguage model, and 10.3% with language model rescoring over the top 32 beams.\nBy comparison, the state-of-the-art CLDNN-HMM model achieves a WER of 8.0%.",
+  "id": "arxiv.1508.01211",
+  "url": "https://arxiv.org/abs/1508.01211",
+  "pdf": "https://arxiv.org/pdf/1508.01211",
+  "bibtex": "@misc{chan2015_arxiv:1508.01211,\n    title = {Listen, Attend and Spell},\n    author = {William Chan, Navdeep Jaitly, Quoc V. Le, Oriol Vinyals},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1508.01211},\n    pdf = {https://arxiv.org/pdf/1508.01211},\n    url = https://arxiv.org/abs/1508.01211\n}",
+  "source": "arxiv.org",
+  "date": 1551401439,
+  "tags": []
+}
