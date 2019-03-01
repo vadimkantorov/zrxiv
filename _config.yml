@@ -4,6 +4,13 @@ data_source: data
 defaults:
   -
     scope:
+      path: "import.md"
+    values:
+      permalink: /import.html
+      layout: default
+      import_docs: true
+  -
+    scope:
       path: "recent.md"
     values:
       permalink: /index.html
