@@ -225,13 +225,14 @@
 									return [splitted.pop(), author];
 								}
 							});
+							const site_root = document.querySelector("meta[property='og:url']").getAttribute('content');
 							for(let j = 0; j < authors.length; j++)
 							{
 								a = document.createElement('a');
 								a.className = 'author';
 								a.innerText = authors[j][0];
 								a.title = authors[j][1];
-								a.href = '/import#filter=@' + authors[j][0].toLowerCase();
+								a.href = `${site_root}/import#filter=@${authors[j][0].toLowerCase()}`;
 								div.appendChild(a);
 							}
 							update_tab_bibtex_links('imported');
