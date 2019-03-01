@@ -232,7 +232,7 @@
 								a.className = 'author';
 								a.innerText = authors[j][0];
 								a.title = authors[j][1];
-								a.href = `${site_root}/import#filter=@${authors[j][0].toLowerCase()}`;
+								a.href = '#filter=@' + authors[j][0].toLowerCase();
 								div.appendChild(a);
 							}
 							update_tab_bibtex_links('imported');
