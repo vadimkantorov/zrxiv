@@ -77,7 +77,7 @@
 	<body onhashchange="navigate()" onload="navigate()">
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
-			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles">{% if docs_by_tag %}<a href="{{ site.github.url }}/{{ tag }}" class="subtitle-checked" id="tag">{{ tag }} {{ docs | size }} docs</a>{% else %}<a href="{{ site.github.url }}/all" class="{% if page.recent_docs == false %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" id="tag">total {{ num_docs }} docs</a>{% endif %} | <a class="{% if page.recent_docs == true %}subtitle-checked{% else %}subtitle-unchecked{% endif %}" href="{{ site.github.url }}">recent {{ recent_docs }} docs</a><br /><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-checked" id="bibtex_download" download>bibtex</a></span></h1>
+			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles"><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-checked" id="bibtex_download" download>bibtex</a></span></h1>
 			<div class="tags-header"><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button>
 			</div>
 			{% if page.import_docs == true %}
@@ -280,12 +280,13 @@
 			
 			function update_tab_bibtex_links(tab_name)
 			{
-				const tag_link = document.getElementById('tag'), bibtex_link = document.getElementById('bibtex_download');
+				//const tag_link = document.getElementById('tag');
+				const bibtex_link = document.getElementById('bibtex_download');
 				const filtered_docs = document.querySelectorAll('.doc:not([hidden])');
 				const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
 
-				tag_link.innerText = `${tab_name} ${filtered_docs.length} docs`;
-				tag_link.href = window.location.href;
+				//tag_link.innerText = `${tab_name} ${filtered_docs.length} docs`;
+				//tag_link.href = window.location.href;
 				bibtex_link.download = `%{tab_name}.bib`;
 				bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
 			}
