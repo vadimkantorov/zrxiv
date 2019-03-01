@@ -77,8 +77,13 @@
 	<body onhashchange="navigate()" onload="navigate()">
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
-			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }} <span class="subtitles"><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-checked" id="bibtex_download" download>bibtex</a></span></h1>
+			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}</h1>
 			<div class="tags-header"><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button>
+			</div>
+			<div>
+				<button onclick="select_all()">Select all</button>
+				<button onclick="deselect_all()">Deselect all</button>
+				<a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-checked" id="bibtex_download" download>Export BibTeX</a>
 			</div>
 			{% if page.import_docs == true %}
 			<div>
@@ -289,6 +294,16 @@
 				//tag_link.href = window.location.href;
 				bibtex_link.download = `%{tab_name}.bib`;
 				bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
+			}
+			
+			function select_all()
+			{
+				document.querySelectorAll('li.filtered input[type=checkbox]').forEach(checkbox => {checkbox.checked = true;});
+			}
+			
+			function deselect_all()
+			{
+				document.querySelectorAll('input[type=checkbox]').forEach(checkbox => {checkbox.checked = false;});
 			}
 			
 			function navigate()
