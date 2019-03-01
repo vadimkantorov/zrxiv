@@ -1,0 +1,15 @@
+{
+  "title": "An Optimized Recurrent Unit for Ultra-Low-Power Keyword Spotting",
+  "authors": [
+    "Justice Amoh",
+    "Kofi Odame"
+  ],
+  "abstract": "There is growing interest in being able to run neural networks on sensors,\nwearables and internet-of-things (IoT) devices. However, the computational\ndemands of neural networks make them difficult to deploy on\nresource-constrained edge devices.\n  To meet this need, our work introduces a new recurrent unit architecture that\nis specifically adapted for on-device low power acoustic event detection (AED).\nThe proposed architecture is based on the gated recurrent unit (`GRU') but\nfeatures optimizations that make it implementable on ultra-low power\nmicro-controllers such as the Arm Cortex M0+.\n  Our new architecture, the Embedded Gated Recurrent Unit (eGRU) is\ndemonstrated to be highly efficient and suitable for short-duration AED and\nkeyword spotting tasks. A single eGRU cell is 60x faster and 10x smaller than a\nGRU cell. Despite its optimizations, eGRU compares well with GRU across tasks\nof varying complexities.\n  The practicality of eGRU is investigated in a wearable acoustic event\ndetection application. An eGRU model is implemented and tested on the Arm\nCortex M0-based Atmel ATSAMD21E18 processor. The Arm M0+ implementation of the\neGRU model compares favorably with a full precision GRU that is running on a\nworkstation. The embedded eGRU model achieves a classification accuracy 95.3%,\nwhich is only 2% less than the full precision GRU.",
+  "id": "arxiv.1902.05026",
+  "url": "https://arxiv.org/abs/1902.05026",
+  "pdf": "https://arxiv.org/pdf/1902.05026",
+  "bibtex": "@misc{amoh2019_arxiv:1902.05026,\n    title = {An Optimized Recurrent Unit for Ultra-Low-Power Keyword Spotting},\n    author = {Justice Amoh, Kofi Odame},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.05026},\n    pdf = {https://arxiv.org/pdf/1902.05026},\n    url = https://arxiv.org/abs/1902.05026\n}",
+  "source": "arxiv.org",
+  "date": 1551481361,
+  "tags": []
+}
