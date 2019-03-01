@@ -240,7 +240,7 @@
 								lastnames.push(lastname)
 							}
 							li.dataset.authors = lastnames.join(' ');
-							li.dataset.title = title;
+							li.dataset.title = title.toLowerCase();
 							update_tab_bibtex_links('imported');
 						};
 					};
