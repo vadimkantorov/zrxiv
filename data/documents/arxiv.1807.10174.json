@@ -1,0 +1,18 @@
+{
+  "title": "Superpixel Sampling Networks",
+  "authors": [
+    "Varun Jampani",
+    "Deqing Sun",
+    "Ming-Yu Liu",
+    "Ming-Hsuan Yang",
+    "Jan Kautz"
+  ],
+  "abstract": "Superpixels provide an efficient low/mid-level representation of image data,\nwhich greatly reduces the number of image primitives for subsequent vision\ntasks. Existing superpixel algorithms are not differentiable, making them\ndifficult to integrate into otherwise end-to-end trainable deep neural\nnetworks. We develop a new differentiable model for superpixel sampling that\nleverages deep networks for learning superpixel segmentation. The resulting\n\"Superpixel Sampling Network\" (SSN) is end-to-end trainable, which allows\nlearning task-specific superpixels with flexible loss functions and has fast\nruntime. Extensive experimental analysis indicates that SSNs not only\noutperform existing superpixel algorithms on traditional segmentation\nbenchmarks, but can also learn superpixels for other tasks. In addition, SSNs\ncan be easily integrated into downstream deep networks resulting in performance\nimprovements.",
+  "id": "arxiv.1807.10174",
+  "url": "https://arxiv.org/abs/1807.10174",
+  "pdf": "https://arxiv.org/pdf/1807.10174",
+  "bibtex": "@misc{jampani2018_arxiv:1807.10174,\n    title = {Superpixel Sampling Networks},\n    author = {Varun Jampani, Deqing Sun, Ming-Yu Liu, Ming-Hsuan Yang, Jan Kautz},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1807.10174},\n    pdf = {https://arxiv.org/pdf/1807.10174},\n    url = https://arxiv.org/abs/1807.10174\n}",
+  "source": "arxiv.org",
+  "date": 1551490509,
+  "tags": []
+}
