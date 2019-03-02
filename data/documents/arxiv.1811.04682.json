@@ -1,0 +1,19 @@
+{
+  "title": "Learning Segmentation Masks with the Independence Prior",
+  "authors": [
+    "Songmin Dai",
+    "Xiaoqiang Li",
+    "Lu Wang",
+    "Pin Wu",
+    "Weiqin Tong",
+    "Yimin Chen"
+  ],
+  "abstract": "An instance with a bad mask might make a composite image that uses it look\nfake. This encourages us to learn segmentation by generating realistic\ncomposite images. To achieve this, we propose a novel framework that exploits a\nnew proposed prior called the independence prior based on Generative\nAdversarial Networks (GANs). The generator produces an image with multiple\ncategory-specific instance providers, a layout module and a composition module.\nFirstly, each provider independently outputs a category-specific instance image\nwith a soft mask. Then the provided instances' poses are corrected by the\nlayout module. Lastly, the composition module combines these instances into a\nfinal image. Training with adversarial loss and penalty for mask area, each\nprovider learns a mask that is as small as possible but enough to cover a\ncomplete category-specific instance. Weakly supervised semantic segmentation\nmethods widely use grouping cues modeling the association between image parts,\nwhich are either artificially designed or learned with costly segmentation\nlabels or only modeled on local pairs. Unlike them, our method automatically\nmodels the dependence between any parts and learns instance segmentation. We\napply our framework in two cases: (1) Foreground segmentation on\ncategory-specific images with box-level annotation. (2) Unsupervised learning\nof instance appearances and masks with only one image of homogeneous object\ncluster (HOC). We get appealing results in both tasks, which shows the\nindependence prior is useful for instance segmentation and it is possible to\nunsupervisedly learn instance masks with only one image.",
+  "id": "arxiv.1811.04682",
+  "url": "https://arxiv.org/abs/1811.04682",
+  "pdf": "https://arxiv.org/pdf/1811.04682",
+  "bibtex": "@misc{dai2018_arxiv:1811.04682,\n    title = {Learning Segmentation Masks with the Independence Prior},\n    author = {Songmin Dai, Xiaoqiang Li, Lu Wang, Pin Wu, Weiqin Tong, Yimin Chen},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.04682},\n    pdf = {https://arxiv.org/pdf/1811.04682},\n    url = https://arxiv.org/abs/1811.04682\n}",
+  "source": "arxiv.org",
+  "date": 1551490549,
+  "tags": []
+}
