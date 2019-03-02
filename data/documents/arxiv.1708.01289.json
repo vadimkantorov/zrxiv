@@ -1,0 +1,22 @@
+{
+  "title": "Independently Controllable Factors",
+  "authors": [
+    "Valentin Thomas",
+    "Jules Pondard",
+    "Emmanuel Bengio",
+    "Marc Sarfati",
+    "Philippe Beaudoin",
+    "Marie-Jean Meurs",
+    "Joelle Pineau",
+    "Doina Precup",
+    "Yoshua Bengio"
+  ],
+  "abstract": "It has been postulated that a good representation is one that disentangles\nthe underlying explanatory factors of variation. However, it remains an open\nquestion what kind of training framework could potentially achieve that.\nWhereas most previous work focuses on the static setting (e.g., with images),\nwe postulate that some of the causal factors could be discovered if the learner\nis allowed to interact with its environment. The agent can experiment with\ndifferent actions and observe their effects. More specifically, we hypothesize\nthat some of these factors correspond to aspects of the environment which are\nindependently controllable, i.e., that there exists a policy and a learnable\nfeature for each such aspect of the environment, such that this policy can\nyield changes in that feature with minimal changes to other features that\nexplain the statistical variations in the observed data. We propose a specific\nobjective function to find such factors and verify experimentally that it can\nindeed disentangle independently controllable aspects of the environment\nwithout any extrinsic reward signal.",
+  "id": "arxiv.1708.01289",
+  "url": "https://arxiv.org/abs/1708.01289",
+  "pdf": "https://arxiv.org/pdf/1708.01289",
+  "bibtex": "@misc{thomas2017_arxiv:1708.01289,\n    title = {Independently Controllable Factors},\n    author = {Valentin Thomas, Jules Pondard, Emmanuel Bengio, Marc Sarfati, Philippe Beaudoin, Marie-Jean Meurs, Joelle Pineau, Doina Precup, Yoshua Bengio},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1708.01289},\n    pdf = {https://arxiv.org/pdf/1708.01289},\n    url = https://arxiv.org/abs/1708.01289\n}",
+  "source": "arxiv.org",
+  "date": 1551492304,
+  "tags": []
+}
