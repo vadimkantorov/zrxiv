@@ -1,0 +1,19 @@
+{
+  "title": "Recurrent Ladder Networks",
+  "authors": [
+    "Isabeau Prémont-Schwarz",
+    "Alexander Ilin",
+    "Tele Hao",
+    "Antti Rasmus",
+    "Rinu Boney",
+    "Harri Valpola"
+  ],
+  "abstract": "We propose a recurrent extension of the Ladder networks whose structure is motivated by the inference required in hierarchical latent variable models. We demonstrate that the recurrent Ladder is able to handle a wide variety of complex learning tasks that benefit from iterative inference and temporal modeling. The architecture shows close-to-optimal results on temporal modeling of video data, competitive results on music modeling, and improved perceptual grouping based on higher order abstractions, such as stochastic textures and motion cues. We present results for fully supervised, semi-supervised, and unsupervised tasks. The results suggest that the proposed architecture and principles are powerful tools for learning a hierarchy of abstractions, learning iterative inference and handling temporal information.",
+  "id": "neurips.7182",
+  "url": "http://papers.nips.cc/paper/7182-recurrent-ladder-networks.html",
+  "pdf": "http://papers.nips.cc/paper/7182-recurrent-ladder-networks.pdf",
+  "bibtex": "@incollection{nips2017_7182,\n    title = {Recurrent Ladder Networks},\n    author = {Pr\\'{e}mont-Schwarz, Isabeau and Ilin, Alexander and Hao, Tele and Rasmus, Antti and Boney, Rinu and Valpola, Harri},\n    booktitle = {Advances in Neural Information Processing Systems 30},\n    year = {2017},\n    editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},\n    pages = {6009--6019},\n    publisher = {Curran Associates, Inc.},\n    pdf = {http://papers.nips.cc/paper/7182-recurrent-ladder-networks.pdf},\n    url = http://papers.nips.cc/paper/7182-recurrent-ladder-networks.html\n}",
+  "source": "nips.cc",
+  "date": 1551485322,
+  "tags": []
+}
