@@ -1,0 +1,16 @@
+{
+  "title": "Neural Expectation Maximization",
+  "authors": [
+    "Klaus Greff",
+    "Sjoerd van Steenkiste",
+    "Jürgen Schmidhuber"
+  ],
+  "abstract": "Many real world tasks such as reasoning and physical interaction require identification and manipulation of conceptual entities. A first step towards solving these tasks is the automated discovery of distributed symbol-like representations. In this paper, we explicitly formalize this problem as inference in a spatial mixture model where each component is parametrized by a neural network. Based on the Expectation Maximization framework we then derive a differentiable clustering method that simultaneously learns how to group and represent individual entities. We evaluate our method on the (sequential) perceptual grouping task and find that it is able to accurately recover the constituent objects. We demonstrate that the learned representations are useful for next-step prediction.",
+  "id": "neurips.7246",
+  "url": "http://papers.nips.cc/paper/7246-neural-expectation-maximization.html",
+  "pdf": "http://papers.nips.cc/paper/7246-neural-expectation-maximization.pdf",
+  "bibtex": "@incollection{nips2017_7246,\n    title = {Neural Expectation Maximization},\n    author = {Greff, Klaus and van Steenkiste, Sjoerd and Schmidhuber, J\\\"{u}rgen},\n    booktitle = {Advances in Neural Information Processing Systems 30},\n    year = {2017},\n    editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},\n    pages = {6691--6701},\n    publisher = {Curran Associates, Inc.},\n    pdf = {http://papers.nips.cc/paper/7246-neural-expectation-maximization.pdf},\n    url = http://papers.nips.cc/paper/7246-neural-expectation-maximization.html\n}",
+  "source": "nips.cc",
+  "date": 1551485330,
+  "tags": []
+}
