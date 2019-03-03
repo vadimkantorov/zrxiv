@@ -249,7 +249,7 @@
 							li.dataset.title = title.toLowerCase();
 							ul.appendChild(li);
 						};
-						document.querySelectorAll('.docs_hidden').forEach(el => {el.classList.remvove('docs_hidden')});
+						document.querySelectorAll('.docs_hidden').forEach(el => el.classList.remove('docs_hidden'));
 						update_tab_bibtex_links('imported');
 					};
 					fileReader.readAsText(files[0]);
