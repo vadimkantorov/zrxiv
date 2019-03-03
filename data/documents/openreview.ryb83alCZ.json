@@ -1,0 +1,19 @@
+{
+  "title": "Towards Unsupervised Classification with Deep Generative Models",
+  "authors": [
+    "Dimitris Kalatzis",
+    "Konstantia Kotta",
+    "Ilias Kalamaras",
+    "Anastasios Vafeiadis",
+    "Andrew Rawstron",
+    "Dimitris Tzovaras",
+    "Kostas Stamatopoulos"
+  ],
+  "id": "openreview.ryb83alCZ",
+  "url": "https://openreview.net/forum?id=ryb83alCZ",
+  "pdf": "https://openreview.net/pdf?id=ryb83alCZ",
+  "bibtex": "@misc{kalatzis2018towards,\n    title = {Towards Unsupervised Classification with Deep Generative Models},\n    author = {Dimitris Kalatzis and Konstantia Kotta and Ilias Kalamaras and Anastasios Vafeiadis and Andrew Rawstron and Dimitris Tzovaras and Kostas Stamatopoulos},\n    year = {2018},\n    pdf = {https://openreview.net/pdf?id=ryb83alCZ},\n    url = https://openreview.net/forum?id=ryb83alCZ\n}",
+  "source": "openreview.net",
+  "date": 1551573307,
+  "tags": []
+}
