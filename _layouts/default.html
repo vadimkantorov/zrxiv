@@ -46,6 +46,7 @@
 			li:last-child {border-bottom:1px solid #dfe2e5}
 			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			.doc>div {display:flex}
+			.docs_hidden {display: none}
 			
 			.tag_highlight {background-color: lightyellow}
 			.tag_special {color:red; margin-right: 2pt}
@@ -74,20 +75,21 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}</h1>
-			<div class="tags-header"><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button>
-			</div>
-			<div>
-				<button onclick="select_all()">Select all</button>
-				<button onclick="deselect_all()">Deselect all</button>
-				<a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_download" download>Export BibTeX</a>
-			</div>
+			<div class="tags-header"><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button></div>
+			
 			{% if page.import_docs == true %}
 			<div>
 				<button><label for="import">Import BibTeX</label></button>
 				<input type="file" id="import" name="import" hidden onchange="import_click()"></import>
 			</div>
 			{% endif %}
-			<ul>
+
+			<div class="{% if docs.size == 0 %}docs_hidden{% endif %}">
+				<button onclick="select_all()">Select all</button>
+				<button onclick="deselect_all()">Deselect all</button>
+				<a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_download" download>Export BibTeX</a>
+			</div>
+			<ul class="{% if docs.size == 0 %}docs_hidden{% endif %}">
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
