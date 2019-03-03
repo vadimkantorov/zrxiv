@@ -218,7 +218,6 @@
 							const title = bib[2]['title'];
 							a.innerText = title;
 							a.href = bib[2]['url'];
-							ul.appendChild(li);
 							let div = li.querySelector('.authors');
 							let authors = (bib[2]['author'].includes(' and ') ? bib[2]['author'].split(' and ') : bib[2]['author'].split(', ')).map(author => 
 							{
@@ -248,8 +247,10 @@
 							}
 							li.dataset.authors = lastnames.join(' ');
 							li.dataset.title = title.toLowerCase();
-							update_tab_bibtex_links('imported');
+							ul.appendChild(li);
 						};
+						document.querySelectorAll('.docs_hidden').forEach(el => {el.classList.remvove('docs_hidden')});
+						update_tab_bibtex_links('imported');
 					};
 					fileReader.readAsText(files[0]);
 				}
