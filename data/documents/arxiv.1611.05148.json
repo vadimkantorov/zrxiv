@@ -1,0 +1,18 @@
+{
+  "title": "Variational Deep Embedding: An Unsupervised and Generative Approach to Clustering",
+  "authors": [
+    "Zhuxi Jiang",
+    "Yin Zheng",
+    "Huachun Tan",
+    "Bangsheng Tang",
+    "Hanning Zhou"
+  ],
+  "abstract": "Clustering is among the most fundamental tasks in computer vision and machine\nlearning. In this paper, we propose Variational Deep Embedding (VaDE), a novel\nunsupervised generative clustering approach within the framework of Variational\nAuto-Encoder (VAE). Specifically, VaDE models the data generative procedure\nwith a Gaussian Mixture Model (GMM) and a deep neural network (DNN): 1) the GMM\npicks a cluster; 2) from which a latent embedding is generated; 3) then the DNN\ndecodes the latent embedding into observables. Inference in VaDE is done in a\nvariational way: a different DNN is used to encode observables to latent\nembeddings, so that the evidence lower bound (ELBO) can be optimized using\nStochastic Gradient Variational Bayes (SGVB) estimator and the\nreparameterization trick. Quantitative comparisons with strong baselines are\nincluded in this paper, and experimental results show that VaDE significantly\noutperforms the state-of-the-art clustering methods on 4 benchmarks from\nvarious modalities. Moreover, by VaDE's generative nature, we show its\ncapability of generating highly realistic samples for any specified cluster,\nwithout using supervised information during training. Lastly, VaDE is a\nflexible and extensible framework for unsupervised generative clustering, more\ngeneral mixture models than GMM can be easily plugged in.",
+  "id": "arxiv.1611.05148",
+  "url": "https://arxiv.org/abs/1611.05148",
+  "pdf": "https://arxiv.org/pdf/1611.05148",
+  "bibtex": "@misc{jiang2016_arxiv:1611.05148,\n    title = {Variational Deep Embedding: An Unsupervised and Generative Approach to Clustering},\n    author = {Zhuxi Jiang, Yin Zheng, Huachun Tan, Bangsheng Tang, Hanning Zhou},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1611.05148},\n    pdf = {https://arxiv.org/pdf/1611.05148},\n    url = https://arxiv.org/abs/1611.05148\n}",
+  "source": "arxiv.org",
+  "date": 1551573299,
+  "tags": []
+}
