@@ -69,6 +69,8 @@
 			#bibtex_download { color : black }
 			#bibtex_copy_area {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px; }
 			.separator_before::before { content: " | " }
+			
+			.import_button {margin-right: 10pt; margin-left: auto; margin-right: auto; display : block}
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
@@ -79,7 +81,7 @@
 			
 			{% if page.import_docs == true %}
 			<div>
-				<button><label for="import">Import BibTeX</label></button>
+				<button class="import_button"><label for="import">Import BibTeX</label></button>
 				<input type="file" id="import" name="import" hidden onchange="import_click()"></import>
 			</div>
 			{% endif %}
