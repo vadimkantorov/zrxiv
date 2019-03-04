@@ -1,0 +1,26 @@
+{
+  "title": "Model-Based Reinforcement Learning for Atari",
+  "authors": [
+    "Lukasz Kaiser",
+    "Mohammad Babaeizadeh",
+    "Piotr Milos",
+    "Blazej Osinski",
+    "Roy H Campbell",
+    "Konrad Czechowski",
+    "Dumitru Erhan",
+    "Chelsea Finn",
+    "Piotr Kozakowski",
+    "Sergey Levine",
+    "Ryan Sepassi",
+    "George Tucker",
+    "Henryk Michalewski"
+  ],
+  "abstract": "Model-free reinforcement learning (RL) can be used to learn effective\npolicies for complex tasks, such as Atari games, even from image observations.\nHowever, this typically requires very large amounts of interaction --\nsubstantially more, in fact, than a human would need to learn the same games.\nHow can people learn so quickly? Part of the answer may be that people can\nlearn how the game works and predict which actions will lead to desirable\noutcomes. In this paper, we explore how video prediction models can similarly\nenable agents to solve Atari games with orders of magnitude fewer interactions\nthan model-free methods. We describe Simulated Policy Learning (SimPLe), a\ncomplete model-based deep RL algorithm based on video prediction models and\npresent a comparison of several model architectures, including a novel\narchitecture that yields the best results in our setting. Our experiments\nevaluate SimPLe on a range of Atari games and achieve competitive results with\nonly 100K interactions between the agent and the environment (400K frames),\nwhich corresponds to about two hours of real-time play.",
+  "id": "arxiv.1903.00374",
+  "url": "https://arxiv.org/abs/1903.00374",
+  "pdf": "https://arxiv.org/pdf/1903.00374",
+  "bibtex": "@misc{kaiser2019_arxiv:1903.00374,\n    title = {Model-Based Reinforcement Learning for Atari},\n    author = {Lukasz Kaiser, Mohammad Babaeizadeh, Piotr Milos, Blazej Osinski, Roy H Campbell, Konrad Czechowski, Dumitru Erhan, Chelsea Finn, Piotr Kozakowski, Sergey Levine, Ryan Sepassi, George Tucker, Henryk Michalewski},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.00374},\n    pdf = {https://arxiv.org/pdf/1903.00374},\n    url = https://arxiv.org/abs/1903.00374\n}",
+  "source": "arxiv.org",
+  "date": 1551714530,
+  "tags": []
+}
