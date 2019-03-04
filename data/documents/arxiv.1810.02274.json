@@ -1,0 +1,20 @@
+{
+  "title": "Episodic Curiosity through Reachability",
+  "authors": [
+    "Nikolay Savinov",
+    "Anton Raichuk",
+    "Raphaël Marinier",
+    "Damien Vincent",
+    "Marc Pollefeys",
+    "Timothy Lillicrap",
+    "Sylvain Gelly"
+  ],
+  "abstract": "Rewards are sparse in the real world and most today's reinforcement learning\nalgorithms struggle with such sparsity. One solution to this problem is to\nallow the agent to create rewards for itself - thus making rewards dense and\nmore suitable for learning. In particular, inspired by curious behaviour in\nanimals, observing something novel could be rewarded with a bonus. Such bonus\nis summed up with the real task reward - making it possible for RL algorithms\nto learn from the combined reward. We propose a new curiosity method which uses\nepisodic memory to form the novelty bonus. To determine the bonus, the current\nobservation is compared with the observations in memory. Crucially, the\ncomparison is done based on how many environment steps it takes to reach the\ncurrent observation from those in memory - which incorporates rich information\nabout environment dynamics. This allows us to overcome the known \"couch-potato\"\nissues of prior work - when the agent finds a way to instantly gratify itself\nby exploiting actions which lead to hardly predictable consequences. We test\nour approach in visually rich 3D environments in ViZDoom, DMLab and MuJoCo. In\nnavigational tasks from ViZDoom and DMLab, our agent outperforms the\nstate-of-the-art curiosity method ICM. In MuJoCo, an ant equipped with our\ncuriosity module learns locomotion out of the first-person-view curiosity only.",
+  "id": "arxiv.1810.02274",
+  "url": "https://arxiv.org/abs/1810.02274",
+  "pdf": "https://arxiv.org/pdf/1810.02274",
+  "bibtex": "@misc{savinov2018_arxiv:1810.02274,\n    title = {Episodic Curiosity through Reachability},\n    author = {Nikolay Savinov, Anton Raichuk, Raphaël Marinier, Damien Vincent, Marc Pollefeys, Timothy Lillicrap, Sylvain Gelly},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.02274},\n    pdf = {https://arxiv.org/pdf/1810.02274},\n    url = https://arxiv.org/abs/1810.02274\n}",
+  "source": "arxiv.org",
+  "date": 1551736561,
+  "tags": []
+}
