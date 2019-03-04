@@ -87,8 +87,7 @@
 			{% endif %}
 
 			<div class="{% if docs.size == 0 %}docs_hidden{% endif %}">
-				<button onclick="select_all()">Select all</button>
-				<button onclick="deselect_all()">Deselect all</button>
+				<button onclick="reset_selection()"><input type="checkbox" disabled></input>Reset selection</button>
 				<a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_download" download>Export BibTeX</a>
 			</div>
 			<ul class="{% if docs.size == 0 %}docs_hidden{% endif %}">
@@ -297,14 +296,12 @@
 				bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
 			}
 			
-			function select_all()
+			function reset_selection()
 			{
-				document.querySelectorAll('li.filtered input[type=checkbox]').forEach(checkbox => {checkbox.checked = true;});
-			}
-			
-			function deselect_all()
-			{
-				document.querySelectorAll('input[type=checkbox]').forEach(checkbox => {checkbox.checked = false;});
+				if(document.querySelectorAll('li.filtered input[type=checkbox]:checked').length > 0)
+					document.querySelectorAll('input[type=checkbox]').forEach(checkbox => {checkbox.checked = false;});
+				else
+					document.querySelectorAll('li.filtered input[type=checkbox]').forEach(checkbox => {checkbox.checked = true;});
 			}
 			
 			function navigate()
