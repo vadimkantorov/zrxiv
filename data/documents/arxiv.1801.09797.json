@@ -1,0 +1,15 @@
+{
+  "title": "Discrete Autoencoders for Sequence Models",
+  "authors": [
+    "Łukasz Kaiser",
+    "Samy Bengio"
+  ],
+  "abstract": "Recurrent models for sequences have been recently successful at many tasks,\nespecially for language modeling and machine translation. Nevertheless, it\nremains challenging to extract good representations from these models. For\ninstance, even though language has a clear hierarchical structure going from\ncharacters through words to sentences, it is not apparent in current language\nmodels. We propose to improve the representation in sequence models by\naugmenting current approaches with an autoencoder that is forced to compress\nthe sequence through an intermediate discrete latent space. In order to\npropagate gradients though this discrete representation we introduce an\nimproved semantic hashing technique. We show that this technique performs well\non a newly proposed quantitative efficiency measure. We also analyze latent\ncodes produced by the model showing how they correspond to words and phrases.\nFinally, we present an application of the autoencoder-augmented model to\ngenerating diverse translations.",
+  "id": "arxiv.1801.09797",
+  "url": "https://arxiv.org/abs/1801.09797",
+  "pdf": "https://arxiv.org/pdf/1801.09797",
+  "bibtex": "@misc{kaiser2018_arxiv:1801.09797,\n    title = {Discrete Autoencoders for Sequence Models},\n    author = {Łukasz Kaiser, Samy Bengio},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1801.09797},\n    pdf = {https://arxiv.org/pdf/1801.09797},\n    url = https://arxiv.org/abs/1801.09797\n}",
+  "source": "arxiv.org",
+  "date": 1551718770,
+  "tags": []
+}
