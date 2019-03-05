@@ -260,10 +260,10 @@
 
 			function update_docs_counter(filtered, selected)
 			{
-				if(filtered)
+				if(filtered == true)
 					document.getElementById('num_docs_filtered').innerText = document.querySelectorAll('.doc').length.toString();
-				if(selected)
-					document.getElementById('num_docs_selected').innerText = document.querySelectorAll('.doc input[type=checkbox]:checked').length;
+				if(selected == true || (selected != false))
+					document.getElementById('num_docs_selected').innerText = (selected == true ? document.querySelectorAll('.doc input[type=checkbox]:checked').length : selected).toString();
 			}
 			
 			function reset_doc(li, row_index, hidden)
@@ -310,9 +310,16 @@
 			function reset_selection()
 			{
 				if(document.querySelectorAll('li.filtered input[type=checkbox]:checked').length > 0)
+				{
 					document.querySelectorAll('input[type=checkbox]').forEach(checkbox => {checkbox.checked = false;});
+					update_docs_counter(false, 0);
+				}
 				else
-					document.querySelectorAll('li.filtered input[type=checkbox]').forEach(checkbox => {checkbox.checked = true;});
+				{
+					const checkboxes = document.querySelectorAll('li.filtered input[type=checkbox]');
+					checkboxes.forEach(checkbox => {checkbox.checked = true;});
+					update_docs_counter(false, checkboxes.length);
+				}
 			}
 			
 			function navigate()
