@@ -261,9 +261,9 @@
 			function update_docs_counter(filtered, selected)
 			{
 				if(filtered === true)
-					document.getElementById('num_docs_filtered').innerText = document.querySelectorAll('.doc').length.toString();
+					document.getElementById('num_docs_filtered').innerText = document.querySelectorAll('.doc.filtered').length.toString();
 				if(selected === true || (selected !== false))
-					document.getElementById('num_docs_selected').innerText = (selected === true ? document.querySelectorAll('.doc input[type=checkbox]:checked').length : selected).toString();
+					document.getElementById('num_docs_selected').innerText = (selected === true ? document.querySelectorAll('.doc.filtered input[type=checkbox]:checked').length : selected).toString();
 			}
 			
 			function reset_doc(li, row_index, hidden)
