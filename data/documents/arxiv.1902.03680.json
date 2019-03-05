@@ -1,0 +1,18 @@
+{
+  "title": "Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion",
+  "authors": [
+    "Ryutaro Tanno",
+    "Ardavan Saeedi",
+    "Swami Sankaranarayanan",
+    "Daniel C. Alexander",
+    "Nathan Silberman"
+  ],
+  "abstract": "The predictive performance of supervised learning algorithms depends on the\nquality of labels. In a typical label collection process, multiple annotators\nprovide subjective noisy estimates of the \"truth\" under the influence of their\nvarying skill-levels and biases. Blindly treating these noisy labels as the\nground truth limits the accuracy of learning algorithms in the presence of\nstrong disagreement. This problem is critical for applications in domains such\nas medical imaging where both the annotation cost and inter-observer\nvariability are high. In this work, we present a method for simultaneously\nlearning the individual annotator model and the underlying true label\ndistribution, using only noisy observations. Each annotator is modeled by a\nconfusion matrix that is jointly estimated along with the classifier\npredictions. We propose to add a regularization term to the loss function that\nencourages convergence to the true annotator confusion matrix. We provide a\ntheoretical argument as to how the regularization is essential to our approach\nboth for the case of single annotator and multiple annotators. Despite the\nsimplicity of the idea, experiments on image classification tasks with both\nsimulated and real labels show that our method either outperforms or performs\non par with the state-of-the-art methods and is capable of estimating the\nskills of annotators even with a single label available per image.",
+  "id": "arxiv.1902.03680",
+  "url": "https://arxiv.org/abs/1902.03680",
+  "pdf": "https://arxiv.org/pdf/1902.03680",
+  "bibtex": "@misc{tanno2019_arxiv:1902.03680,\n    title = {Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion},\n    author = {Ryutaro Tanno, Ardavan Saeedi, Swami Sankaranarayanan, Daniel C. Alexander, Nathan Silberman},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.03680},\n    pdf = {https://arxiv.org/pdf/1902.03680},\n    url = https://arxiv.org/abs/1902.03680\n}",
+  "source": "arxiv.org",
+  "date": 1551825087,
+  "tags": []
+}
