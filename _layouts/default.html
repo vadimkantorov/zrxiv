@@ -48,7 +48,6 @@
 			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			.doc>div {display:flex}
 			.doc-header>div {display:flex}
-			.docs_hidden {display: none}
 			
 			.tag_highlight {background-color: lightyellow}
 			.tag_special {color:red; margin-right: 2pt}
@@ -90,7 +89,7 @@
 			</div>
 			{% endif %}
 
-			<ul class="{% if docs.size == 0 %}docs_hidden{% endif %}"><li class="doc-header">
+			<ul><li class="doc-header">
 					<div>
 						<div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents filtered, <span id="num_docs_selected">0</span> documents selected</span></div>
 						<div class="tags"><a class="bibtex_copy" id="bibtex_download" href="" onclick="bibtex_copy(this); return false">copy bibtex</a></div>
@@ -253,7 +252,6 @@
 							li.dataset.title = title.toLowerCase();
 							ul.appendChild(li);
 						};
-						document.querySelectorAll('.docs_hidden').forEach(el => el.classList.remove('docs_hidden'));
 						update_tab_bibtex_links('imported');
 						update_docs_counter(true, true);
 					};
