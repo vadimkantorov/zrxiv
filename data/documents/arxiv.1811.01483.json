@@ -1,0 +1,20 @@
+{
+  "title": "Contingency-Aware Exploration in Reinforcement Learning",
+  "authors": [
+    "Jongwook Choi",
+    "Yijie Guo",
+    "Marcin Moczulski",
+    "Junhyuk Oh",
+    "Neal Wu",
+    "Mohammad Norouzi",
+    "Honglak Lee"
+  ],
+  "abstract": "This paper investigates whether learning contingency-awareness and\ncontrollable aspects of an environment can lead to better exploration in\nreinforcement learning. To investigate this question, we consider an\ninstantiation of this hypothesis evaluated on the Arcade Learning Element\n(ALE). In this study, we develop an attentive dynamics model (ADM) that\ndiscovers controllable elements of the observations, which are often associated\nwith the location of the character in Atari games. The ADM is trained in a\nself-supervised fashion to predict the actions taken by the agent. The learned\ncontingency information is used as a part of the state representation for\nexploration purposes. We demonstrate that combining actor-critic algorithm with\ncount-based exploration using our representation achieves impressive results on\na set of notoriously challenging Atari games due to sparse rewards. For\nexample, we report a state-of-the-art score of >11,000 points on Montezuma's\nRevenge without using expert demonstrations, explicit high-level information\n(e.g., RAM states), or supervisory data. Our experiments confirm that\ncontingency-awareness is indeed an extremely powerful concept for tackling\nexploration problems in reinforcement learning and opens up interesting\nresearch questions for further investigations.",
+  "id": "arxiv.1811.01483",
+  "url": "https://arxiv.org/abs/1811.01483",
+  "pdf": "https://arxiv.org/pdf/1811.01483",
+  "bibtex": "@misc{choi2018_arxiv:1811.01483,\n    title = {Contingency-Aware Exploration in Reinforcement Learning},\n    author = {Jongwook Choi, Yijie Guo, Marcin Moczulski, Junhyuk Oh, Neal Wu, Mohammad Norouzi, Honglak Lee},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.01483},\n    pdf = {https://arxiv.org/pdf/1811.01483},\n    url = https://arxiv.org/abs/1811.01483\n}",
+  "source": "arxiv.org",
+  "date": 1551825007,
+  "tags": []
+}
