@@ -89,7 +89,7 @@
 			</div>
 			{% endif %}
 
-			<ul class="{% if docs.size == 0 %}docs_hidden{% endif %}"><li>
+			<ul class="{% if docs.size == 0 %}docs_hidden{% endif %}"><li class="doc">
 					<div>
 						<div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents filtered, <span id="num_docs_selected">0</span> documents selected</span></div>
 						<div class="tags"><a class="bibtex_copy" if="bibtex_download" href="" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
