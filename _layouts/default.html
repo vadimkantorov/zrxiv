@@ -120,11 +120,6 @@
 			</div>
 		</li></template>
 		<script type="text/javascript">
-			function base64_encode_utf8(str)
-			{
-			    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
-			}
-			
 			function parse_bibtex(text)
 			{
 				const parse_bibtex_line = function(text)
@@ -259,6 +254,8 @@
 
 			function update_docs_header(filtered, selected)
 			{
+				const base64_encode_utf8 = str => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
+			
 				if(filtered === true)
 				{
 					const docs = Array.from(document.querySelectorAll('.doc.filtered'));
@@ -272,15 +269,6 @@
 					document.getElementById('num_docs_selected').innerText = docs.length.toString();
 					document.getElementById('bibtex_selected').href = "data:text/plain;base64," + base64_encode_utf8(docs.map(doc => doc.parentNode.parentNode.parentNode.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n'));
 				}
-			}
-			
-			function reset_doc(li, row_index, hidden)
-			{
-				if(row_index % 2 == 1)
-					li.classList.add('doc-even');
-				else
-					li.classList.remove('doc-even');
-				li.hidden = false;
 			}
 			
 			function bibtex_copy(a)
@@ -323,16 +311,20 @@
 				const routes = {'#' : 'data-tags~', '@' : 'data-authors~', '': 'data-title*'};
 				const sorted = Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length);
 				const selector = hash != '' ? hash.split(' ').map(w => [w, sorted.find(r => w.startsWith(r))]).map(([w, r]) => `[${routes[r]}="${w.substr(r.length).toLowerCase()}"]`).join('') : '';
-				
+				document.getElementById('filter_area').value = hash;
+				document.getElementById('filter_area').onkeyup = filter_keyup;
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
 				document.querySelectorAll('.doc:not(.filtered)').forEach(d => {d.hidden = true;});
-				document.querySelectorAll('.doc.filtered').forEach(reset_doc);
-				document.getElementById('filter_area').value = hash;
-				document.getElementById('filter_area').onkeyup = filter_keyup;
-				
-				if(selector)
-					update_docs_header(true, true);
+				document.querySelectorAll('.doc.filtered').forEach((li, row_index, hidden) =>
+				{
+					if(row_index % 2 == 1)
+						li.classList.add('doc-even');
+					else
+						li.classList.remove('doc-even');
+					li.hidden = false;
+				});
+				update_docs_header(selector != '', selector != '');
 			}
 		</script>
 	</body>
