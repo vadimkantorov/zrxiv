@@ -91,15 +91,14 @@
 
 			<ul><li class="doc-header">
 					<div>
-						<div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents filtered, <span id="num_docs_selected">0</span> documents selected</span></div>
-						<div class="tags"><a class="bibtex_copy" id="bibtex_download" href="" onclick="bibtex_copy(this); return false">copy bibtex</a></div>
+						<div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents <a href="#" id="bibtex_filtered">filtered</a>, <span id="num_docs_selected">0</span> documents <a href="#" id="bibtex_selected">selected</a></span></div>
 					</div>
 				</li>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
 					<div>
-						<div class="title"><input type="checkbox" onchange="update_docs_counter(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
+						<div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 						<div class="tags">{% if doc.source and doc.source != "" %}<a class="source" href="{{ site.github.url }}/all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
@@ -112,7 +111,7 @@
 		</div>
 		<template id="doc_tmpl"><li class="doc filtered" data-authors="" data-tags="" data-title="">
 			<div>
-				<div class="title"><input type="checkbox" onchange="update_docs_counter(false, true)"></input><a class="title" href="" title=""></a></div>
+				<div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="" title=""></a></div>
 				<div class="tags"><a class="source" href=""></a></div>
 			</div>
 			<div>
@@ -252,19 +251,26 @@
 							li.dataset.title = title.toLowerCase();
 							ul.appendChild(li);
 						};
-						update_tab_bibtex_links('imported');
-						update_docs_counter(true, true);
+						update_docs_header(true, true);
 					};
 					fileReader.readAsText(files[0]);
 				}
 			}
 
-			function update_docs_counter(filtered, selected)
+			function update_docs_header(filtered, selected)
 			{
 				if(filtered === true)
 					document.getElementById('num_docs_filtered').innerText = document.querySelectorAll('.doc.filtered').length.toString();
 				if(selected === true || (selected !== false))
 					document.getElementById('num_docs_selected').innerText = (selected === true ? document.querySelectorAll('.doc.filtered input[type=checkbox]:checked').length : selected).toString();
+				
+				//const filtered_docs = document.querySelectorAll('.doc:not([hidden])');
+				//const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
+				//const bibtex_link = document.getElementById('bibtex_download');
+				//const bibtex = filtered_docs_bibtex.join('\n\n');
+				//bibtex_link.title = bibtex;
+				//bibtex_link.download = `${tab_name}.bib`;
+				//bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
 			}
 			
 			function reset_doc(li, row_index, hidden)
@@ -295,29 +301,18 @@
 				window.location = (window.location.pathname.slice(-1) == '/' ? (window.location.pathname + 'all') : '') + '#filter=' + document.getElementById('filter_area').value.split(' ').join('+');
 			}
 			
-			function update_tab_bibtex_links(tab_name)
-			{
-				const filtered_docs = document.querySelectorAll('.doc:not([hidden])');
-				const filtered_docs_bibtex = Array.from(filtered_docs).map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title);
-				const bibtex_link = document.getElementById('bibtex_download');
-				const bibtex = filtered_docs_bibtex.join('\n\n');
-				bibtex_link.title = bibtex;
-				//bibtex_link.download = `${tab_name}.bib`;
-				//bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
-			}
-			
 			function reset_selection()
 			{
 				if(document.querySelectorAll('li.filtered input[type=checkbox]:checked').length > 0)
 				{
 					document.querySelectorAll('input[type=checkbox]').forEach(checkbox => {checkbox.checked = false;});
-					update_docs_counter(false, 0);
+					update_docs_header(false, 0);
 				}
 				else
 				{
 					const checkboxes = document.querySelectorAll('li.filtered input[type=checkbox]');
 					checkboxes.forEach(checkbox => {checkbox.checked = true;});
-					update_docs_counter(false, checkboxes.length);
+					update_docs_header(false, checkboxes.length);
 				}
 			}
 			
@@ -335,11 +330,8 @@
 				document.getElementById('filter_area').value = hash;
 				document.getElementById('filter_area').onkeyup = filter_keyup;
 				
-				if(selector != '')
-				{
-					update_tab_bibtex_links('filtered');
-					update_docs_counter(true, true);
-				}
+				if(selector)
+					update_docs_header(true, true);
 			}
 		</script>
 	</body>
