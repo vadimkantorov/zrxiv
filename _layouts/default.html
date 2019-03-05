@@ -89,10 +89,11 @@
 			</div>
 			{% endif %}
 
-			<div class="{% if docs.size == 0 %}docs_hidden{% endif %}">
-				<button onclick="reset_selection()"><input type="checkbox" disabled></input> Reset</button>
-			</div>
 			<ul class="{% if docs.size == 0 %}docs_hidden{% endif %}">
+				<li class="doc">
+					<div><div class="title"><input type="checkbox" onclick="reset_selection()"></input><span class="title">Several documents selected</span></div></div>
+					<div><div class="authors"><span class="author" onclick="reset_selection()">Reset selection</span></div></div>
+				</li>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
