@@ -260,10 +260,10 @@
 
 			function update_docs_counter(filtered, selected)
 			{
-				if(filtered == true)
+				if(filtered === true)
 					document.getElementById('num_docs_filtered').innerText = document.querySelectorAll('.doc').length.toString();
-				if(selected == true || (selected != false))
-					document.getElementById('num_docs_selected').innerText = (selected == true ? document.querySelectorAll('.doc input[type=checkbox]:checked').length : selected).toString();
+				if(selected === true || (selected !== false))
+					document.getElementById('num_docs_selected').innerText = (selected === true ? document.querySelectorAll('.doc input[type=checkbox]:checked').length : selected).toString();
 			}
 			
 			function reset_doc(li, row_index, hidden)
@@ -337,7 +337,10 @@
 				document.getElementById('filter_area').onkeyup = filter_keyup;
 				
 				if(selector != '')
+				{
 					update_tab_bibtex_links('filtered');
+					update_docs_counter(true, true);
+				}
 				else
 					document.getElementById('bibtex_download').removeAttribute('download');
 			}
