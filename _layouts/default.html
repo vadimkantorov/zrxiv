@@ -207,7 +207,7 @@
 					{
 						const bibs = parse_bibtex(e.target.result);
 						const ul = document.getElementsByTagName('ul')[0];
-						while(ul.firstChild) ul.firstChild.remove();
+						while(ul.childNodes.length > 1) ul.lastChild.remove();
 						const doc_tmpl = document.getElementById('doc_tmpl').content;
 						for(let i = 0; i < bibs.length; i++)
 						{
