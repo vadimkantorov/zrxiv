@@ -303,7 +303,7 @@
 
 				//tag_link.innerText = `${tab_name} ${filtered_docs.length} docs`;
 				//tag_link.href = window.location.href;
-				bibtex_link.download = `%{tab_name}.bib`;
+				bibtex_link.download = `${tab_name}.bib`;
 				bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(filtered_docs_bibtex.join('\n\n'));
 			}
 			
