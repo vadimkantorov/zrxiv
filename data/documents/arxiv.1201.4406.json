@@ -1,0 +1,15 @@
+{
+  "title": "Fundamental solution of the Laplacian in the hyperboloid model of hyperbolic geometry",
+  "authors": [
+    "Howard S. Cohl",
+    "Ernie G. Kalnins"
+  ],
+  "abstract": "Due to the isotropy of $d$-dimensional hyperbolic space, one expects there to\nexist a spherically symmetric fundamental solution for its corresponding\nLaplace-Beltrami operator. The $R$-radius hyperboloid model of hyperbolic\ngeometry $\\Hi_R^d$ with $R>0$, represents a Riemannian manifold with\nnegative-constant sectional curvature. We obtain a spherically symmetric\nfundamental solution of Laplace's equation on this manifold in terms of its\ngeodesic radius. We give several matching expressions for this fundamental\nsolution including a definite integral over reciprocal powers of the hyperbolic\nsine, finite summation expression over hyperbolic functions, Gauss\nhypergeometric functions, and in terms of the associated Legendre function of\nthe second kind with order and degree given by $d/2-1$ with real argument\ngreater than unity. We also demonstrate uniqueness for a fundamental solution\nof Laplace's equation on this manifold in terms of a vanishing decay at\ninfinity.",
+  "id": "arxiv.1201.4406",
+  "url": "https://arxiv.org/abs/1201.4406",
+  "pdf": "https://arxiv.org/pdf/1201.4406",
+  "bibtex": "@misc{cohl2012_arxiv:1201.4406,\n    title = {Fundamental solution of the Laplacian in the hyperboloid model of hyperbolic geometry},\n    author = {Howard S. Cohl, Ernie G. Kalnins},\n    year = {2012},\n    archiveprefix = {arXiv},\n    eprint = {1201.4406},\n    pdf = {https://arxiv.org/pdf/1201.4406},\n    url = https://arxiv.org/abs/1201.4406\n}",
+  "source": "arxiv.org",
+  "date": 1551792973,
+  "tags": []
+}
