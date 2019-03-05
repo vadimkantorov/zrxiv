@@ -1,0 +1,17 @@
+{
+  "title": "Learning Multi-Level Hierarchies with Hindsight",
+  "authors": [
+    "Andrew Levy",
+    "George Konidaris",
+    "Robert Platt",
+    "Kate Saenko"
+  ],
+  "abstract": "Multi-level hierarchies have the potential to accelerate learning in sparse\nreward tasks because they can divide a problem into a set of short horizon\nsubproblems. In order to realize this potential, Hierarchical Reinforcement\nLearning (HRL) algorithms need to be able to learn the multiple levels within a\nhierarchy in parallel, so these simpler subproblems can be solved\nsimultaneously. Yet most existing HRL methods that can learn hierarchies are\nnot able to efficiently learn multiple levels of policies at the same time,\nparticularly in continuous domains. To address this problem, we introduce a\nframework that can learn multiple levels of policies in parallel. Our approach\nconsists of two main components: (i) a particular hierarchical architecture and\n(ii) a method for jointly learning multiple levels of policies. The hierarchies\nproduced by our framework are comprised of a set of nested, goal-conditioned\npolicies that use the state space to decompose a task into short subtasks. All\npolicies in the hierarchy are learned simultaneously using two types of\nhindsight transitions. We demonstrate experimentally in both grid world and\nsimulated robotics domains that our approach can significantly accelerate\nlearning relative to other non-hierarchical and hierarchical methods. Indeed,\nour framework is the first to successfully learn 3-level hierarchies in\nparallel in tasks with continuous state and action spaces.",
+  "id": "arxiv.1712.00948",
+  "url": "https://arxiv.org/abs/1712.00948",
+  "pdf": "https://arxiv.org/pdf/1712.00948",
+  "bibtex": "@misc{levy2017_arxiv:1712.00948,\n    title = {Learning Multi-Level Hierarchies with Hindsight},\n    author = {Andrew Levy, George Konidaris, Robert Platt, Kate Saenko},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1712.00948},\n    pdf = {https://arxiv.org/pdf/1712.00948},\n    url = https://arxiv.org/abs/1712.00948\n}",
+  "source": "arxiv.org",
+  "date": 1551818650,
+  "tags": []
+}
