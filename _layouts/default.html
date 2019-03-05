@@ -90,14 +90,14 @@
 			{% endif %}
 
 			<ul class="{% if docs.size == 0 %}docs_hidden{% endif %}"><li>
-					<div><div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title">Several documents selected</span></div></div>
+					<div><div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents filtered, <span id="num_docs_selected">0</span> documents selected</span></div></div>
 					<!--<div><div class="authors"><span class="author" onclick="reset_selection()">Reset selection</span></div></div>-->
 				</li>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
 					<div>
-						<div class="title"><input type="checkbox"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
+						<div class="title"><input type="checkbox" onchange="update_docs_counter(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 						<div class="tags">{% if doc.source and doc.source != "" %}<a class="source" href="{{ site.github.url }}/all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 					<div>
@@ -252,9 +252,18 @@
 						};
 						document.querySelectorAll('.docs_hidden').forEach(el => el.classList.remove('docs_hidden'));
 						update_tab_bibtex_links('imported');
+						update_docs_counter(true, true);
 					};
 					fileReader.readAsText(files[0]);
 				}
+			}
+
+			function update_docs_counter(filtered, selected)
+			{
+				if(filtered)
+					document.getElementById('num_docs_filtered').innerText = document.querySelectorAll('.doc').length.toString();
+				if(selected)
+					document.getElementById('num_docs_selected').innerText = document.querySelectorAll('.doc input[type=checkbox]:checked').length;
 			}
 			
 			function reset_doc(li, row_index, hidden)
