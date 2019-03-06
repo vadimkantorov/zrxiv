@@ -1,0 +1,17 @@
+{
+  "title": "Spreading vectors for similarity search",
+  "authors": [
+    "Alexandre Sablayrolles",
+    "Matthijs Douze",
+    "Cordelia Schmid",
+    "Hervé Jégou"
+  ],
+  "abstract": "Discretizing multi-dimensional data distributions is a fundamental step of\nmodern indexing methods. State-of-the-art techniques learn parameters of\nquantizers on training data for optimal performance, thus adapting quantizers\nto the data. In this work, we propose to reverse this paradigm and adapt the\ndata to the quantizer: we train a neural net which last layer forms a fixed\nparameter-free quantizer, such as pre-defined points of a hyper-sphere. As a\nproxy objective, we design and train a neural network that favors uniformity in\nthe spherical latent space, while preserving the neighborhood structure after\nthe mapping. We propose a new regularizer derived from the Kozachenko--Leonenko\ndifferential entropy estimator to enforce uniformity and combine it with a\nlocality-aware triplet loss. Experiments show that our end-to-end approach\noutperforms most learned quantization methods, and is competitive with the\nstate of the art on widely adopted benchmarks. Furthermore, we show that\ntraining without the quantization step results in almost no difference in\naccuracy, but yields a generic catalyzer that can be applied with any\nsubsequent quantizer.",
+  "id": "arxiv.1806.03198",
+  "url": "https://arxiv.org/abs/1806.03198",
+  "pdf": "https://arxiv.org/pdf/1806.03198",
+  "bibtex": "@misc{sablayrolles2018_arxiv:1806.03198,\n    title = {Spreading vectors for similarity search},\n    author = {Alexandre Sablayrolles, Matthijs Douze, Cordelia Schmid, Hervé Jégou},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.03198},\n    pdf = {https://arxiv.org/pdf/1806.03198},\n    url = https://arxiv.org/abs/1806.03198\n}",
+  "source": "arxiv.org",
+  "date": 1551830872,
+  "tags": []
+}
