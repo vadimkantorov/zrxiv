@@ -261,15 +261,15 @@
 				{
 					const docs = Array.from(document.querySelectorAll('.doc.filtered'));
 					document.getElementById('num_docs_filtered').innerText = docs.length.toString();
-					document.getElementById('bibtex_filtered').href = "data:text/plain;base64," + base64_encode_utf8(docs.map(doc => doc.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n'));
+					document.getElementById('bibtex_filtered').href = "data:text/plain;base64," + base64_encode_utf8(docs.map(li => li.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n'));
 				}
 				
 				if(selected === 0 || selected === true)
 				{
-					const docs = selected === true ? Array.from(document.querySelectorAll('.doc.filtered input[type=checkbox]:checked')) : [];
+					const docs = selected === true ? Array.from(document.querySelectorAll('.doc.filtered input[type=checkbox]:checked')).map(input => input.parentNode.parentNode.parentNode) : [];
 					document.getElementById('num_docs_selected').innerText = docs.length.toString();
-					document.getElementById('bibtex_selected').href = "data:text/plain;base64," + base64_encode_utf8(docs.map(doc => doc.parentNode.parentNode.parentNode.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n'));
-					document.getElementById('doc-header').dataset.selected = docs.map(doc => doc.id).filter(id => id).join('\t');
+					document.getElementById('bibtex_selected').href = "data:text/plain;base64," + base64_encode_utf8(docs.map(li => li.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n'));
+					document.getElementById('doc-header').dataset.selected = docs.map(li => li.dataset.id).filter(id => id).join('\t');
 				}
 			}
 			
