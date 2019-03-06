@@ -97,7 +97,7 @@
 				</li>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
-				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}">
+				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}">
 					<div>
 						<div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 						<div class="tags">{% if doc.source and doc.source != "" %}<a class="source" href="{{ site.github.url }}/all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}{% for tag in doc.tags %}<a href="{{ site.github.url }}/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
