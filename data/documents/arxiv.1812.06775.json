@@ -1,0 +1,16 @@
+{
+  "title": "Variational Autoencoders Pursue PCA Directions (by Accident)",
+  "authors": [
+    "Michal Rolinek",
+    "Dominik Zietlow",
+    "Georg Martius"
+  ],
+  "abstract": "The Variational Autoencoder (VAE) is a powerful architecture capable of\nrepresentation learning and generative modeling. When it comes to learning\ninterpretable (disentangled) representations, VAE and its variants show\nunparalleled performance. However, the reasons for this are unclear, since a\nvery particular alignment of the latent embedding is needed but the design of\nthe VAE does not encourage it in any explicit way. We address this matter and\noffer the following explanation: the diagonal approximation in the encoder\ntogether with the inherent stochasticity force local orthogonality of the\ndecoder. The local behavior of promoting both reconstruction and orthogonality\nmatches closely how the PCA embedding is chosen. Alongside providing an\nintuitive understanding, we justify the statement with full theoretical\nanalysis as well as with experiments.",
+  "id": "arxiv.1812.06775",
+  "url": "https://arxiv.org/abs/1812.06775",
+  "pdf": "https://arxiv.org/pdf/1812.06775",
+  "bibtex": "@misc{rolinek2018_arxiv:1812.06775,\n    title = {Variational Autoencoders Pursue PCA Directions (by Accident)},\n    author = {Michal Rolinek, Dominik Zietlow, Georg Martius},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.06775},\n    pdf = {https://arxiv.org/pdf/1812.06775},\n    url = https://arxiv.org/abs/1812.06775\n}",
+  "source": "arxiv.org",
+  "date": 1551831995,
+  "tags": []
+}
