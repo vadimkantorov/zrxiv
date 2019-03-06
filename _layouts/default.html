@@ -48,7 +48,7 @@
 			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			.doc>div {display:flex}
 			.doc-header>div {display:flex}
-			.doc-header {background-color: #dfe2e5}
+			#doc-header {background-color: #dfe2e5}
 			
 			.tag_highlight {background-color: lightyellow}
 			.tag_special {color:red; margin-right: 2pt}
@@ -81,7 +81,7 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}{% if page.import_docs != true %} <span class="subtitles"><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-unchecked" download>{{tag}}.bib</a><a href="{{ site.github.url }}/{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ site.github.url }}/{{ tag }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ site.github.url }}/{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span>{% endif %}</h1>
-			<div class="tags-header"><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button></div>
+			<div class="tags-header" data-selected=""><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button></div>
 			
 			{% if page.import_docs == true %}
 			<div>
@@ -90,7 +90,7 @@
 			</div>
 			{% endif %}
 
-			<ul><li class="doc-header">
+			<ul><li id="doc-header">
 					<div>
 						<div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents <a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_filtered" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_filtered.bib">filtered</a>, <span id="num_docs_selected">0</span> documents <a href="data:text/plain;base64," id="bibtex_selected" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_selected.bib">selected</a></span></div>
 					</div>
@@ -269,6 +269,7 @@
 					const docs = selected === true ? Array.from(document.querySelectorAll('.doc.filtered input[type=checkbox]:checked')) : [];
 					document.getElementById('num_docs_selected').innerText = docs.length.toString();
 					document.getElementById('bibtex_selected').href = "data:text/plain;base64," + base64_encode_utf8(docs.map(doc => doc.parentNode.parentNode.parentNode.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n'));
+					document.getElementById('doc-header').dataset.selected = docs.map(doc => doc.id).filter(id => id).join('\t');
 				}
 			}
 			
