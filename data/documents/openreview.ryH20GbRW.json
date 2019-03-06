@@ -1,0 +1,16 @@
+{
+  "title": "Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions",
+  "authors": [
+    "Sjoerd van Steenkiste",
+    "Michael Chang",
+    "Klaus Greff",
+    "Jürgen Schmidhuber"
+  ],
+  "id": "openreview.ryH20GbRW",
+  "url": "https://openreview.net/forum?id=ryH20GbRW",
+  "pdf": "https://openreview.net/pdf?id=ryH20GbRW",
+  "bibtex": "@inproceedings{van2018relational,\n    title = {Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions},\n    author = {Sjoerd van Steenkiste and Michael Chang and Klaus Greff and Jürgen Schmidhuber},\n    booktitle = {International Conference on Learning Representations},\n    year = {2018},\n    pdf = {https://openreview.net/pdf?id=ryH20GbRW},\n    url = https://openreview.net/forum?id=ryH20GbRW\n}",
+  "source": "openreview.net",
+  "date": 1551885759,
+  "tags": []
+}
