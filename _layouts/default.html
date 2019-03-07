@@ -49,6 +49,7 @@
 			li {padding:6px 13px;border:1px solid #dfe2e5; margin:0px !important}
 			li:last-child {border-bottom:1px solid #dfe2e5}
 			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
+			.doc-deleted {background-color: orangered !important }
 			.doc>div {display:flex}
 			#zrxiv_doc_header>div {display:flex}
 			#zrxiv_doc_header {background-color: #dfe2e5}
@@ -260,7 +261,8 @@
 			
 			function update_deleted_docs(docs)
 			{
-				console.log(docs);
+				const lis = document.querySelectorAll(docs.split(' ').filter(doc => doc).map(doc => `li[data-id="${doc}"`).join(','));
+				lis.forEach(li => li.classList.add('doc-deleted'));
 			}
 
 			function update_docs_header(filtered, selected)
