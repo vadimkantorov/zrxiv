@@ -261,8 +261,13 @@
 			
 			function update_deleted_docs(docs)
 			{
-				const lis = document.querySelectorAll(docs.split(' ').filter(doc => doc).map(doc => `li[data-id="${doc}"]`).join(','));
-				lis.forEach(li => li.classList.add('doc-deleted'));
+				document.querySelectorAll(docs.split(' ').filter(doc => doc).map(doc => `li[data-id="${doc}"]`).join(',')).forEach(li => {
+					li.title = 'Document is being deleted';
+					li.classList.add('doc-deleted');
+					const checkbox = li.querySelector('input[type=checkbox]');
+					checkbox.checked = false;
+					checkbox.disabled = true;
+				});
 			}
 
 			function update_docs_header(filtered, selected)
