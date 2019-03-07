@@ -1,0 +1,17 @@
+{
+  "title": "Deep Diffeomorphic Normalizing Flows",
+  "authors": [
+    "Hadi Salman",
+    "Payman Yadollahpour",
+    "Tom Fletcher",
+    "Kayhan Batmanghelich"
+  ],
+  "abstract": "The Normalizing Flow (NF) models a general probability density by estimating\nan invertible transformation applied on samples drawn from a known\ndistribution. We introduce a new type of NF, called Deep Diffeomorphic\nNormalizing Flow (DDNF). A diffeomorphic flow is an invertible function where\nboth the function and its inverse are smooth. We construct the flow using an\nordinary differential equation (ODE) governed by a time-varying smooth vector\nfield. We use a neural network to parametrize the smooth vector field and a\nrecursive neural network (RNN) for approximating the solution of the ODE. Each\ncell in the RNN is a residual network implementing one Euler integration step.\nThe architecture of our flow enables efficient likelihood evaluation,\nstraightforward flow inversion, and results in highly flexible density\nestimation. An end-to-end trained DDNF achieves competitive results with\nstate-of-the-art methods on a suite of density estimation and variational\ninference tasks. Finally, our method brings concepts from Riemannian geometry\nthat, we believe, can open a new research direction for neural density\nestimation.",
+  "id": "arxiv.1810.03256",
+  "url": "https://arxiv.org/abs/1810.03256",
+  "pdf": "https://arxiv.org/pdf/1810.03256",
+  "bibtex": "@misc{salman2018_arxiv:1810.03256,\n    title = {Deep Diffeomorphic Normalizing Flows},\n    author = {Hadi Salman, Payman Yadollahpour, Tom Fletcher, Kayhan Batmanghelich},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.03256},\n    pdf = {https://arxiv.org/pdf/1810.03256},\n    url = https://arxiv.org/abs/1810.03256\n}",
+  "source": "arxiv.org",
+  "date": 1551998388,
+  "tags": []
+}
