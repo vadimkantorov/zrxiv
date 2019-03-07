@@ -261,7 +261,7 @@
 			
 			function update_deleted_docs(docs)
 			{
-				const lis = document.querySelectorAll(docs.split(' ').filter(doc => doc).map(doc => `li[data-id="${doc}"`).join(','));
+				const lis = document.querySelectorAll(docs.split(' ').filter(doc => doc).map(doc => `li[data-id="${doc}"]`).join(','));
 				lis.forEach(li => li.classList.add('doc-deleted'));
 			}
 
