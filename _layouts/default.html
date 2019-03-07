@@ -74,10 +74,11 @@
 			#bibtex_copy_area {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px; }
 			.separator_before::before { content: " | " }
 			
-			.import_button {margin-right: 10pt; margin-left: auto; margin-right: auto; display : block}
-			
 			.subtitle-unchecked { font-size:small; color:lightgray; margin-left: 2pt}
 			.subtitles {float:right; font-size:small; color:lightgray; }
+			
+			#import_area { width: 100%; height: 100pt; margin-top: 5pt }
+			#import_button {margin-right: 10pt; margin-left: auto; margin-right: auto; display : block}
 		</style>
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
@@ -88,8 +89,9 @@
 			
 			{% if page.import_docs == true %}
 			<div>
-				<button class="import_button"><label for="import">Import BibTeX</label></button>
-				<input type="file" id="import" name="import" hidden onchange="import_click()"></import>
+				<textarea id="import_area" placeholder="Paste here BibTeX, arXiv id list or URL list. Alternatively upload a file below."></textarea>
+				<input id="import" type="file"></input>
+				<button id="import_button" onclick="import_click()">Import</button>
 			</div>
 			{% endif %}
 
