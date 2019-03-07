@@ -1,0 +1,15 @@
+{
+  "title": "Multi-task Self-Supervised Visual Learning",
+  "authors": [
+    "Carl Doersch",
+    "Andrew Zisserman"
+  ],
+  "abstract": "We investigate methods for combining multiple self-supervised tasks--i.e.,\nsupervised tasks where data can be collected without manual labeling--in order\nto train a single visual representation. First, we provide an apples-to-apples\ncomparison of four different self-supervised tasks using the very deep\nResNet-101 architecture. We then combine tasks to jointly train a network. We\nalso explore lasso regularization to encourage the network to factorize the\ninformation in its representation, and methods for \"harmonizing\" network inputs\nin order to learn a more unified representation. We evaluate all methods on\nImageNet classification, PASCAL VOC detection, and NYU depth prediction. Our\nresults show that deeper networks work better, and that combining tasks--even\nvia a naive multi-head architecture--always improves performance. Our best\njoint network nearly matches the PASCAL performance of a model pre-trained on\nImageNet classification, and matches the ImageNet network on NYU depth\nprediction.",
+  "id": "arxiv.1708.07860",
+  "url": "https://arxiv.org/abs/1708.07860",
+  "pdf": "https://arxiv.org/pdf/1708.07860",
+  "bibtex": "@misc{doersch2017_arxiv:1708.07860,\n    title = {Multi-task Self-Supervised Visual Learning},\n    author = {Carl Doersch, Andrew Zisserman},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1708.07860},\n    pdf = {https://arxiv.org/pdf/1708.07860},\n    url = https://arxiv.org/abs/1708.07860\n}",
+  "source": "arxiv.org",
+  "date": 1551979667,
+  "tags": []
+}
