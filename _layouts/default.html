@@ -83,7 +83,7 @@
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
 		<textarea id="bibtex_copy_area"></textarea>
-		<textarea id="zrxiv_deleted_docs"></textarea>
+		<textarea id="zrxiv_deleted_docs" onchange="update_deleted_docs(this.value)"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}{% if page.import_docs != true %} <span class="subtitles"><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-unchecked" download>{{tag}}.bib</a><a href="{{ site.github.url }}/{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ site.github.url }}/{{ tag }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ site.github.url }}/{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span>{% endif %}</h1>
 			<div class="tags-header" data-selected=""><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text"></input><button id="filter" onclick="filter_click()">Filter</button></div>
@@ -255,6 +255,11 @@
 					};
 					fileReader.readAsText(files[0]);
 				}
+			}
+			
+			function update_deleted_docs(docs)
+			{
+				console.log(docs);
 			}
 
 			function update_docs_header(filtered, selected)
