@@ -96,7 +96,7 @@
 			</div>
 			{% endif %}
 
-			<ul><li id="zrxiv_doc_header">
+			<ul {% if page.import_docs == true %}hidden{% endif %}><li id="zrxiv_doc_header">
 				<div><div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents <a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_filtered" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_filtered.bib">filtered</a>, <span id="num_docs_selected">0</span> documents <a href="data:text/plain;base64," id="bibtex_selected" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_selected.bib">selected</a></span></div></div>
 			    </li>
 				{% for doc in docs %}
@@ -251,6 +251,7 @@
 							li.dataset.title = title.toLowerCase();
 							ul.appendChild(li);
 						};
+						ul.removeAttribute('hidden');
 						update_docs_header(true, true);
 					};
 					fileReader.readAsText(files[0]);
