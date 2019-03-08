@@ -1,0 +1,16 @@
+{
+  "title": "Neural Expectation Maximization",
+  "authors": [
+    "Klaus Greff",
+    "Sjoerd van Steenkiste",
+    "Jürgen Schmidhuber"
+  ],
+  "abstract": "Many real world tasks such as reasoning and physical interaction require\nidentification and manipulation of conceptual entities. A first step towards\nsolving these tasks is the automated discovery of distributed symbol-like\nrepresentations. In this paper, we explicitly formalize this problem as\ninference in a spatial mixture model where each component is parametrized by a\nneural network. Based on the Expectation Maximization framework we then derive\na differentiable clustering method that simultaneously learns how to group and\nrepresent individual entities. We evaluate our method on the (sequential)\nperceptual grouping task and find that it is able to accurately recover the\nconstituent objects. We demonstrate that the learned representations are useful\nfor next-step prediction.",
+  "id": "arxiv.1708.03498",
+  "url": "https://arxiv.org/abs/1708.03498",
+  "pdf": "https://arxiv.org/pdf/1708.03498",
+  "bibtex": "@misc{greff2017_arxiv:1708.03498,\n    title = {Neural Expectation Maximization},\n    author = {Klaus Greff, Sjoerd van Steenkiste, Jürgen Schmidhuber},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1708.03498},\n    pdf = {https://arxiv.org/pdf/1708.03498},\n    url = https://arxiv.org/abs/1708.03498\n}",
+  "source": "arxiv.org",
+  "date": 1552074153,
+  "tags": []
+}
