@@ -201,9 +201,9 @@
 			
 			function import_click()
 			{
-				const parse_and_show_docs = function(docs)
+				const parse_and_show_docs = function(text)
 				{
-					docs = parse_bibtex(docs);
+					const bibs = parse_bibtex(text);
 					const ul = document.getElementsByTagName('ul')[0];
 					while(ul.childNodes.length > 1) ul.lastChild.remove();
 					const doc_tmpl = document.getElementById('doc_tmpl').content;
