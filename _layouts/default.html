@@ -201,64 +201,69 @@
 			
 			function import_click()
 			{
-				const files = document.getElementById('import').files;
-				if(files.length > 0)
+				const parse_and_show_docs = function(docs)
 				{
-					const fileReader = new FileReader(); 
-					fileReader.onload = function (e)
+					docs = parse_bibtex(docs);
+					const ul = document.getElementsByTagName('ul')[0];
+					while(ul.childNodes.length > 1) ul.lastChild.remove();
+					const doc_tmpl = document.getElementById('doc_tmpl').content;
+					for(let i = 0; i < bibs.length; i++)
 					{
-						const bibs = parse_bibtex(e.target.result);
-						const ul = document.getElementsByTagName('ul')[0];
-						while(ul.childNodes.length > 1) ul.lastChild.remove();
-						const doc_tmpl = document.getElementById('doc_tmpl').content;
-						for(let i = 0; i < bibs.length; i++)
+						const bib = bibs[i];
+						let li = document.importNode(doc_tmpl, true).firstChild;
+						li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
+						if(i % 2 == 1)
+							li.classList.add('doc-even');
+						let a = li.querySelector('a.title');
+						const title = bib[2]['title'];
+						a.innerText = title;
+						a.href = bib[2]['url'];
+						let div = li.querySelector('.authors');
+						let authors = (bib[2]['author'].includes(' and ') ? bib[2]['author'].split(' and ') : bib[2]['author'].split(', ')).map(author => 
 						{
-							const bib = bibs[i];
-							let li = document.importNode(doc_tmpl, true).firstChild;
-							li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
-							if(i % 2 == 1)
-								li.classList.add('doc-even');
-							let a = li.querySelector('a.title');
-							const title = bib[2]['title'];
-							a.innerText = title;
-							a.href = bib[2]['url'];
-							let div = li.querySelector('.authors');
-							let authors = (bib[2]['author'].includes(' and ') ? bib[2]['author'].split(' and ') : bib[2]['author'].split(', ')).map(author => 
+							if(author.includes(','))
 							{
-								if(author.includes(','))
-								{
-									let splitted = author.split(',');
-									return [splitted[0], splitted.slice(1).join(' ') + ' ' + splitted[0]];
-								}
-								else
-								{
-									let splitted = author.split(' ');
-									return [splitted.pop(), author];
-								}
-							});
-							const site_root = document.querySelector("meta[property='og:url']").getAttribute('content');
-							let lastnames = [];
-							for(let j = 0; j < authors.length; j++)
-							{
-								a = document.createElement('a');
-								a.className = 'author';
-								a.innerText = authors[j][0];
-								a.title = authors[j][1];
-								const lastname = authors[j][0].toLowerCase();
-								a.href = '#filter=@' + lastname;
-								div.appendChild(a);
-								lastnames.push(lastname)
+								let splitted = author.split(',');
+								return [splitted[0], splitted.slice(1).join(' ') + ' ' + splitted[0]];
 							}
-							li.dataset.authors = lastnames.join(' ');
-							li.dataset.title = title.toLowerCase();
-							ul.appendChild(li);
-						};
-						update_docs_header(true, true);
-						document.querySelectorAll('#filter_area, #filter').forEach(el => el.classList.remove('visibility_hidden'));
-						reset_selection(true);
-						ul.removeAttribute('hidden');
+							else
+							{
+								let splitted = author.split(' ');
+								return [splitted.pop(), author];
+							}
+						});
+						const site_root = document.querySelector("meta[property='og:url']").getAttribute('content');
+						let lastnames = [];
+						for(let j = 0; j < authors.length; j++)
+						{
+							a = document.createElement('a');
+							a.className = 'author';
+							a.innerText = authors[j][0];
+							a.title = authors[j][1];
+							const lastname = authors[j][0].toLowerCase();
+							a.href = '#filter=@' + lastname;
+							div.appendChild(a);
+							lastnames.push(lastname)
+						}
+						li.dataset.authors = lastnames.join(' ');
+						li.dataset.title = title.toLowerCase();
+						ul.appendChild(li);
 					};
-					fileReader.readAsText(files[0]);
+					update_docs_header(true, true);
+					document.querySelectorAll('#filter_area, #filter').forEach(el => el.classList.remove('visibility_hidden'));
+					reset_selection(true);
+					ul.removeAttribute('hidden');
+				};
+				
+				const files = document.getElementById('import').files;
+				const pasted = document.getElementById('import_area').value;
+				if(pasted.length > 0)
+					parse_and_show_docs(pasted);
+				else if(files.length > 0)
+				{
+					const file_reader = new FileReader(); 
+					file_reader.onload = e => parse_and_show_docs(e.target.result);
+					file_reader.readAsText(files[0]);
 				}
 			}
 			
