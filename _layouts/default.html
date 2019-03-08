@@ -341,7 +341,7 @@
 				}
 				else
 				{
-					const checkboxes = document.querySelectorAll('li.filtered input[type=checkbox]:not([disabled])');
+					const checkboxes = document.querySelectorAll('li.filtered input[type=checkbox]:not([disabled]), #zrxiv_doc_header input[type=checkbox]');
 					checkboxes.forEach(checkbox => {checkbox.checked = true;});
 					update_docs_header(false, true);
 				}
