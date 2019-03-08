@@ -1,0 +1,17 @@
+{
+  "title": "Reparameterizing Distributions on Lie Groups",
+  "authors": [
+    "Luca Falorsi",
+    "Pim de Haan",
+    "Tim R. Davidson",
+    "Patrick Forré"
+  ],
+  "abstract": "Reparameterizable densities are an important way to learn probability\ndistributions in a deep learning setting. For many distributions it is possible\nto create low-variance gradient estimators by utilizing a `reparameterization\ntrick'. Due to the absence of a general reparameterization trick, much research\nhas recently been devoted to extend the number of reparameterizable\ndistributional families. Unfortunately, this research has primarily focused on\ndistributions defined in Euclidean space, ruling out the usage of one of the\nmost influential class of spaces with non-trivial topologies: Lie groups. In\nthis work we define a general framework to create reparameterizable densities\non arbitrary Lie groups, and provide a detailed practitioners guide to further\nthe ease of usage. We demonstrate how to create complex and multimodal\ndistributions on the well known oriented group of 3D rotations,\n$\\operatorname{SO}(3)$, using normalizing flows. Our experiments on applying\nsuch distributions in a Bayesian setting for pose estimation on objects with\ndiscrete and continuous symmetries, showcase their necessity in achieving\nrealistic uncertainty estimates.",
+  "id": "arxiv.1903.02958",
+  "url": "https://arxiv.org/abs/1903.02958",
+  "pdf": "https://arxiv.org/pdf/1903.02958",
+  "bibtex": "@misc{falorsi2019_arxiv:1903.02958,\n    title = {Reparameterizing Distributions on Lie Groups},\n    author = {Luca Falorsi, Pim de Haan, Tim R. Davidson, Patrick Forré},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.02958},\n    pdf = {https://arxiv.org/pdf/1903.02958},\n    url = https://arxiv.org/abs/1903.02958\n}",
+  "source": "arxiv.org",
+  "date": 1552055679,
+  "tags": []
+}
