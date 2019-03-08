@@ -255,6 +255,7 @@
 						};
 						update_docs_header(true, true);
 						document.querySelectorAll('#filter_area, #filter').forEach(el => el.classList.remove('visibility_hidden'));
+						reset_selection(true);
 						ul.removeAttribute('hidden');
 					};
 					fileReader.readAsText(files[0]);
@@ -311,9 +312,9 @@
 				window.location = (window.location.pathname.slice(-1) == '/' ? (window.location.pathname + 'all') : '') + '#filter=' + document.getElementById('filter_area').value.split(' ').join('+');
 			}
 			
-			function reset_selection()
+			function reset_selection(select_all)
 			{
-				if(document.querySelectorAll('li.filtered input[type=checkbox]:checked').length > 0)
+				if(select_all !== true && document.querySelectorAll('li.filtered input[type=checkbox]:checked').length > 0)
 				{
 					document.querySelectorAll('input[type=checkbox]').forEach(checkbox => {checkbox.checked = false;});
 					update_docs_header(false, 0);
