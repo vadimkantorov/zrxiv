@@ -267,7 +267,7 @@
 				let docs = document.cookie.split('deleted_docs=');
 				docs = docs.length >= 2 ? docs[1].split(';')[0].trim() : '';
 				docs = docs.length > 0 ? docs.split(',') : [];
-				return docs.filter(doc => doc);
+				return docs.filter(doc => doc).map(doc => doc.trim());
 			}
 			
 			function mark_deleted_docs()
@@ -289,7 +289,7 @@
 				var date = new Date();
 				date.setTime(date.getTime() + expires_in_minutes * 60 * 1000);
 				const deleted_docs = Array.from(new Set(read_deleted_docs().concat(docs)));
-				document.cookie = `deleted_docs=${deleted_docs}; expires=${date.toGMTString()}; path=/`;
+				document.cookie = `deleted_docs=${deleted_docs.join(',')}; expires=${date.toGMTString()}`;
 				mark_deleted_docs();
 			}
 			
