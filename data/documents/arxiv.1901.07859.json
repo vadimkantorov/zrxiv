@@ -1,0 +1,16 @@
+{
+  "title": "How do Mixture Density RNNs Predict the Future?",
+  "authors": [
+    "Kai Olav Ellefsen",
+    "Charles Patrick Martin",
+    "Jim Torresen"
+  ],
+  "abstract": "Gaining a better understanding of how and what machine learning systems learn\nis important to increase confidence in their decisions and catalyze further\nresearch. In this paper, we analyze the predictions made by a specific type of\nrecurrent neural network, mixture density RNNs (MD-RNNs). These networks learn\nto model predictions as a combination of multiple Gaussian distributions,\nmaking them particularly interesting for problems where a sequence of inputs\nmay lead to several distinct future possibilities. An example is learning\ninternal models of an environment, where different events may or may not occur,\nbut where the average over different events is not meaningful. By analyzing the\npredictions made by trained MD-RNNs, we find that their different Gaussian\ncomponents have two complementary roles: 1) Separately modeling different\nstochastic events and 2) Separately modeling scenarios governed by different\nrules. These findings increase our understanding of what is learned by\npredictive MD-RNNs, and open up new research directions for further\nunderstanding how we can benefit from their self-organizing model\ndecomposition.",
+  "id": "arxiv.1901.07859",
+  "url": "https://arxiv.org/abs/1901.07859",
+  "pdf": "https://arxiv.org/pdf/1901.07859",
+  "bibtex": "@misc{ellefsen2019_arxiv:1901.07859,\n    title = {How do Mixture Density RNNs Predict the Future?},\n    author = {Kai Olav Ellefsen, Charles Patrick Martin, Jim Torresen},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.07859},\n    pdf = {https://arxiv.org/pdf/1901.07859},\n    url = https://arxiv.org/abs/1901.07859\n}",
+  "source": "arxiv.org",
+  "date": 1552011571,
+  "tags": []
+}
