@@ -262,21 +262,33 @@
 				}
 			}
 			
-			function update_deleted_docs(docs)
+			function read_deleted_docs()
 			{
-				document.querySelectorAll(docs.split(' ').filter(doc => doc).map(doc => `li[data-id="${doc}"]`).join(',')).forEach(li => {
+				let docs = document.cookie.split('deleted_docs=');
+				docs = docs.length >= 2 ? docs[1].split(';')[0].trim() : '';
+				docs = docs.length > 0 ? docs.split(',') : [];
+				return docs.filter(doc => doc);
+			}
+			
+			function mark_deleted_docs()
+			{
+				document.querySelectorAll(read_deleted_docs().map(doc => `li[data-id="${doc}"]`).join(',')).forEach(li => {
 					li.title = 'Document is being deleted';
 					li.classList.add('doc-deleted');
 					const checkbox = li.querySelector('input[type=checkbox]');
 					checkbox.checked = false;
 					checkbox.disabled = true;
 				});
-				
-				//const expires_in_minutes = 15;
-				//var date = new Date();
-				//date.setTime(date.getTime() + expires_in_minutes * 60 * 1000);
-				//const deleted_docs = Array.from(new Set(document.cookie.split(';')[0].split(',').concat(docs)));
-				//document.cookie = `deleted_docs=${deleted_docs}; expires=${date.toGMTString()}; path=/`;
+			}
+			
+			function update_deleted_docs(docs)
+			{
+				const expires_in_minutes = 15;
+				var date = new Date();
+				date.setTime(date.getTime() + expires_in_minutes * 60 * 1000);
+				const deleted_docs = Array.from(new Set(read_deleted_docs().concat(docs)));
+				document.cookie = `deleted_docs=${deleted_docs}; expires=${date.toGMTString()}; path=/`;
+				mark_deleted_docs();
 			}
 			
 			function update_docs_header(filtered, selected)
@@ -353,6 +365,7 @@
 					li.hidden = false;
 				});
 				update_docs_header(selector != '', selector != '');
+				mark_deleted_docs();
 			}
 		</script>
 	</body>
