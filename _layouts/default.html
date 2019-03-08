@@ -272,13 +272,15 @@
 			
 			function mark_deleted_docs()
 			{
-				document.querySelectorAll(read_deleted_docs().map(doc => `li[data-id="${doc}"]`).join(',')).forEach(li => {
-					li.title = 'Document is being deleted';
-					li.classList.add('doc-deleted');
-					const checkbox = li.querySelector('input[type=checkbox]');
-					checkbox.checked = false;
-					checkbox.disabled = true;
-				});
+				const docs = read_deleted_docs();
+				if(docs.length > 0)
+					document.querySelectorAll(docs.map(doc => `li[data-id="${doc}"]`).join(',')).forEach(li => {
+						li.title = 'Document is being deleted';
+						li.classList.add('doc-deleted');
+						const checkbox = li.querySelector('input[type=checkbox]');
+						checkbox.checked = false;
+						checkbox.disabled = true;
+					});
 			}
 			
 			function update_deleted_docs(docs)
