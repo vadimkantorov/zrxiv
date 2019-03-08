@@ -271,8 +271,14 @@
 					checkbox.checked = false;
 					checkbox.disabled = true;
 				});
+				
+				//const expires_in_minutes = 15;
+				//var date = new Date();
+				//date.setTime(date.getTime() + expires_in_minutes * 60 * 1000);
+				//const deleted_docs = Array.from(new Set(document.cookie.split(';')[0].split(',').concat(docs)));
+				//document.cookie = `deleted_docs=${deleted_docs}; expires=${date.toGMTString()}; path=/`;
 			}
-
+			
 			function update_docs_header(filtered, selected)
 			{
 				const base64_encode_utf8 = str => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
