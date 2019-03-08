@@ -1,0 +1,18 @@
+{
+  "title": "Self-Tuning Networks: Bilevel Optimization of Hyperparameters using Structured Best-Response Functions",
+  "authors": [
+    "Matthew MacKay",
+    "Paul Vicol",
+    "Jon Lorraine",
+    "David Duvenaud",
+    "Roger Grosse"
+  ],
+  "abstract": "Hyperparameter optimization can be formulated as a bilevel optimization\nproblem, where the optimal parameters on the training set depend on the\nhyperparameters. We aim to adapt regularization hyperparameters for neural\nnetworks by fitting compact approximations to the best-response function, which\nmaps hyperparameters to optimal weights and biases. We show how to construct\nscalable best-response approximations for neural networks by modeling the\nbest-response as a single network whose hidden units are gated conditionally on\nthe regularizer. We justify this approximation by showing the exact\nbest-response for a shallow linear network with L2-regularized Jacobian can be\nrepresented by a similar gating mechanism. We fit this model using a\ngradient-based hyperparameter optimization algorithm which alternates between\napproximating the best-response around the current hyperparameters and\noptimizing the hyperparameters using the approximate best-response function.\nUnlike other gradient-based approaches, we do not require differentiating the\ntraining loss with respect to the hyperparameters, allowing us to tune discrete\nhyperparameters, data augmentation hyperparameters, and dropout probabilities.\nBecause the hyperparameters are adapted online, our approach discovers\nhyperparameter schedules that can outperform fixed hyperparameter values.\nEmpirically, our approach outperforms competing hyperparameter optimization\nmethods on large-scale deep learning problems. We call our networks, which\nupdate their own hyperparameters online during training, Self-Tuning Networks\n(STNs).",
+  "id": "arxiv.1903.03088",
+  "url": "https://arxiv.org/abs/1903.03088",
+  "pdf": "https://arxiv.org/pdf/1903.03088",
+  "bibtex": "@misc{mackay2019_arxiv:1903.03088,\n    title = {Self-Tuning Networks: Bilevel Optimization of Hyperparameters using Structured Best-Response Functions},\n    author = {Matthew MacKay, Paul Vicol, Jon Lorraine, David Duvenaud, Roger Grosse},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.03088},\n    pdf = {https://arxiv.org/pdf/1903.03088},\n    url = https://arxiv.org/abs/1903.03088\n}",
+  "source": "arxiv.org",
+  "date": 1552054949,
+  "tags": []
+}
