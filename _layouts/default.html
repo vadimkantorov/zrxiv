@@ -205,7 +205,6 @@
 				{
 					const bibs = parse_bibtex(text);
 					const ul = document.getElementsByTagName('ul')[0];
-					while(ul.childNodes.length > 1) ul.lastChild.remove();
 					const doc_tmpl = document.getElementById('doc_tmpl').content;
 					for(let i = 0; i < bibs.length; i++)
 					{
@@ -255,11 +254,16 @@
 					ul.removeAttribute('hidden');
 				};
 				
+				const ul = document.getElementsByTagName('ul')[0];
+				while(ul.childNodes.length > 1) ul.lastChild.remove();
+				
 				const files = document.getElementById('import').files;
 				const pasted = document.getElementById('import_area').value;
+				
 				if(pasted.length > 0)
 					parse_and_show_docs(pasted);
-				else if(files.length > 0)
+				
+				if(files.length > 0)
 				{
 					const file_reader = new FileReader(); 
 					file_reader.onload = e => parse_and_show_docs(e.target.result);
