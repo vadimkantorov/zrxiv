@@ -188,15 +188,16 @@
 					if(text[0] == '}')
 						text = text.slice(1).trim();
 					
-					res.push([m[1].trim().toLowerCase(), m[2].trim().toLowerCase(), bib]);
+					bib.bibtex_record_type = m[1].trim().toLowerCase();
+					bib.bibtex_citation_key = m[2].trim().toLowerCase();
+					res.push(bib);
 				}
 				return res;
 			}
 			
-			function format_bibtex(bibtex)
+			function format_bibtex(bib)
 			{
-				let [record_type, citation_key, bib] = bibtex;
-        			return `@${record_type}{${citation_key},\n` + Object.keys(bib).map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
+        			return `@${bib.bibtex_record_type}{${bib.bibtex_citation_key},\n` + Object.keys(bib).filter(k => k != 'bibtex_record_key' && k != 'bibtex_citation_key')map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
 			}
 			
 			async funcion import_doc_by_url(url)
@@ -253,11 +254,11 @@
 						if(i % 2 == 1)
 							li.classList.add('doc-even');
 						let a = li.querySelector('a.title');
-						const title = bib[2]['title'];
+						const title = bib['title'];
 						a.innerText = title;
-						a.href = bib[2]['url'];
+						a.href = bib['url'];
 						let div = li.querySelector('.authors');
-						let authors = (bib[2]['author'].includes(' and ') ? bib[2]['author'].split(' and ') : bib[2]['author'].split(', ')).map(author => 
+						let authors = (bib['author'].includes(' and ') ? bib['author'].split(' and ') : bib['author'].split(', ')).map(author => 
 						{
 							if(author.includes(','))
 							{
