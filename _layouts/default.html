@@ -200,7 +200,7 @@
         			return `@${bib.bibtex_record_type}{${bib.bibtex_citation_key},\n` + Object.keys(bib).filter(k => k != 'bibtex_record_key' && k != 'bibtex_citation_key').map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
 			}
 			
-			async funcion import_doc_by_url(url)
+			async function import_doc_by_url(url)
 			{
 				if(url.includes('arxiv.org'))
 				{
