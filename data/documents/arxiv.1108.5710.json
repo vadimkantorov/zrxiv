@@ -1,0 +1,15 @@
+{
+  "title": "Generalized Fast Approximate Energy Minimization via Graph Cuts: Alpha-Expansion Beta-Shrink Moves",
+  "authors": [
+    "Mark Schmidt",
+    "Karteek Alahari"
+  ],
+  "abstract": "We present alpha-expansion beta-shrink moves, a simple generalization of the\nwidely-used alpha-beta swap and alpha-expansion algorithms for approximate\nenergy minimization. We show that in a certain sense, these moves dominate both\nalpha-beta-swap and alpha-expansion moves, but unlike previous generalizations\nthe new moves require no additional assumptions and are still solvable in\npolynomial-time. We show promising experimental results with the new moves,\nwhich we believe could be used in any context where alpha-expansions are\ncurrently employed.",
+  "id": "arxiv.1108.5710",
+  "url": "https://arxiv.org/abs/1108.5710",
+  "pdf": "https://arxiv.org/pdf/1108.5710",
+  "bibtex": "@misc{schmidt2011_arxiv:1108.5710,\n    title = {Generalized Fast Approximate Energy Minimization via Graph Cuts: Alpha-Expansion Beta-Shrink Moves},\n    author = {Mark Schmidt, Karteek Alahari},\n    year = {2011},\n    archiveprefix = {arXiv},\n    eprint = {1108.5710},\n    pdf = {https://arxiv.org/pdf/1108.5710},\n    url = https://arxiv.org/abs/1108.5710\n}",
+  "source": "arxiv.org",
+  "date": 1552317105,
+  "tags": []
+}
