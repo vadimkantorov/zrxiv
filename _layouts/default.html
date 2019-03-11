@@ -199,6 +199,36 @@
         			return `@${record_type}{${citation_key},\n` + Object.keys(bib).map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
 			}
 			
+			async funcion import_doc_by_url(url)
+			{
+				if(url.includes('arxiv.org'))
+				{
+					const entry = document.createRange().createContextualFragment(await (await fetch(url.replace('arxiv.org/abs/', 'export.arxiv.org/api/query?id_list='))).text()).querySelector('entry');
+					return {
+						title : entry.querySelector('title').innerText,
+						authors : Array.from(entry.querySelectorAll('author name')).map(elem => elem.innerText),
+						url : url,
+						abstact : entry.querySelector('summary').innerText,
+						bibtex : null,
+						id : 'arxiv.' + entry.querySelector('id').split('abs/)[1].split('v')[0]
+					}
+				}
+				else if(url.includes('openreview.net'))
+				{
+					const entry = (await (await fetch(url.replace('/forum?', '/notes?'))).json()).notes[0].content;
+					return {
+						title : entry.title,
+						authors : entry.authors,
+						url : url,
+						abstract : entry.abstract,
+						bibtex : entry._bibtex,
+						id : 'openreview.' + entry.id
+					}
+				}
+				
+				return null;
+			}
+			
 			function import_click()
 			{
 				const parse_and_show_docs = function(text)
@@ -211,8 +241,6 @@
 					catch
 					{
 						bibs = text.match(/[a-zA-Z0-9\/\:\.]+/g).map(s => /^\d{4}\.\d+$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
-						//const entry = document.createRange().createContextualFragment(await (await fetch(href.replace('arxiv.org/abs/', 'export.arxiv.org/api/query?id_list='))).text()).querySelector('entry');
-						//const entry = (await (await fetch(href.replace('/forum?', '/notes?'))).json()).notes.filter(note => note.id == id)[0].content;
 						bibs = [];
 					}
 					const ul = document.getElementsByTagName('ul')[0];
