@@ -211,7 +211,8 @@
 					catch
 					{
 						bibs = text.match(/[a-zA-Z0-9\/\:\.]+/g).map(s => /^\d{4}\.\d+$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
-						console.log(bibs);
+						//const entry = document.createRange().createContextualFragment(await (await fetch(href.replace('arxiv.org/abs/', 'export.arxiv.org/api/query?id_list='))).text()).querySelector('entry');
+						//const entry = (await (await fetch(href.replace('/forum?', '/notes?'))).json()).notes.filter(note => note.id == id)[0].content;
 						bibs = [];
 					}
 					const ul = document.getElementsByTagName('ul')[0];
