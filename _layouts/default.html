@@ -203,7 +203,17 @@
 			{
 				const parse_and_show_docs = function(text)
 				{
-					const bibs = parse_bibtex(text);
+					let bibs = [];
+					try
+					{
+						bibs = parse_bibtex(text);
+					}
+					catch
+					{
+						bibs = text.match(/[a-zA-Z0-9\/\:\.]+/g);
+						console.log(bibs);
+						bibs = [];
+					}
 					const ul = document.getElementsByTagName('ul')[0];
 					const doc_tmpl = document.getElementById('doc_tmpl').content;
 					for(let i = 0; i < bibs.length; i++)
