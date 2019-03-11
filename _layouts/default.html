@@ -210,7 +210,7 @@
 					}
 					catch
 					{
-						bibs = text.match(/[a-zA-Z0-9\/\:\.]+/g);
+						bibs = text.match(/[a-zA-Z0-9\/\:\.]+/g).map(s => /^\d{4}\.\d{4}$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
 						console.log(bibs);
 						bibs = [];
 					}
