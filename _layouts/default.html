@@ -305,11 +305,11 @@
 				if(pasted.length > 0)
 					parse_and_show_docs(pasted);
 				
-				if(files.length > 0)
+				for(let i = 0; i < files.length; i++)
 				{
 					const file_reader = new FileReader(); 
 					file_reader.onload = e => parse_and_show_docs(e.target.result);
-					file_reader.readAsText(files[0]);
+					file_reader.readAsText(files[i]);
 				}
 			}
 			
