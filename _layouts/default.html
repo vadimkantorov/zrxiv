@@ -211,7 +211,7 @@
 						url : url,
 						abstact : entry.querySelector('summary').innerText,
 						bibtex : null,
-						id : 'arxiv.' + entry.querySelector('id').split('abs/')[1].split('v')[0]
+						id : 'arxiv.' + entry.querySelector('id').innerText.split('abs/')[1].split('v')[0]
 					};
 				}
 				else if(url.includes('openreview.net'))
