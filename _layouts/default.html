@@ -273,7 +273,7 @@
 						let a = li.querySelector('a.title');
 						a.innerText = bib.title;
 						a.href = bib.url;
-						a.title = bib.abstract;
+						a.title = bib.abstract || '';
 						let div = li.querySelector('.authors');
 						let lastnames = [];
 						for(let j = 0; j < bib.authors.length; j++)
