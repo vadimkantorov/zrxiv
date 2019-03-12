@@ -250,19 +250,20 @@
 			
 			async function import_click()
 			{
-				const parse_and_show_docs = async function(text)
+				const parse_docs = async function(text)
 				{
-					let bibs = [];
 					try
 					{
-						bibs = parse_bibtex(text);
+						return parse_bibtex(text);
 					}
 					catch
 					{
 						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g).map(s => /^\d{4}\.\d+$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
-						bibs = await Promise.all(urls.map(import_doc_by_url));
+						return await Promise.all(urls.map(import_doc_by_url));
 					}
-					const ul = document.getElementsByTagName('ul')[0];
+				}
+				const show_docs = function(ul, bibs)
+				{
 					const doc_tmpl = document.getElementById('doc_tmpl').content;
 					for(let i = 0; i < bibs.length; i++)
 					{
@@ -292,10 +293,6 @@
 						li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
 						ul.appendChild(li);
 					};
-					update_docs_header(true, true);
-					document.querySelectorAll('#filter_area, #filter').forEach(el => el.classList.remove('visibility_hidden'));
-					reset_selection(true);
-					ul.removeAttribute('hidden');
 				};
 				
 				const ul = document.getElementsByTagName('ul')[0];
@@ -304,14 +301,15 @@
 				const files = document.getElementById('import').files;
 				let pasted = document.getElementById('import_area').value;
 				
-				if(pasted.length > 0)
-					parse_and_show_docs(pasted);
-				
+				const bibs_array = [pasted.length > 0 ? await parse_docs(pasted) : []];
 				for(let i = 0; i < files.length; i++)
-				{
-					pasted = await read_text_file(files[i]);
-					parse_and_show_docs(pasted);
-				}
+					bibs_array.push(await parse_docs(await read_text_file(files[i])));
+				
+				show_docs(ul, [].concat.apply([], bibs_array));
+				update_docs_header(true, true);
+				document.querySelectorAll('#filter_area, #filter').forEach(el => el.classList.remove('visibility_hidden'));
+				reset_selection(true);
+				ul.removeAttribute('hidden');
 			}
 			
 			function read_deleted_docs()
