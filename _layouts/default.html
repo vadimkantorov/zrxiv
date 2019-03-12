@@ -89,6 +89,7 @@
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}{% if page.import_docs != true %} <span class="subtitles"><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-unchecked" download>{{tag}}.bib</a><a href="{{ site.github.url }}/{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ site.github.url }}/{{ tag }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ site.github.url }}/{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span>{% endif %}</h1>
 			<div class="tags-header" data-selected=""><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="filter_click()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div>
+			
 			{% if page.import_docs == true %}
 			<div>
 				<textarea id="import_area" placeholder="Paste here (or upload a file) BibTeX, arXiv ID list or URL list"></textarea>
@@ -96,6 +97,7 @@
 				<button id="import_button" onclick="import_click()">Parse and preview</button>
 			</div>
 			{% endif %}
+
 			<ul {% if page.import_docs == true %}hidden{% endif %}><li id="zrxiv_doc_header">
 				<div><div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents <a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_filtered" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_filtered.bib">filtered</a>, <span id="num_docs_selected">0</span> documents <a href="data:text/plain;base64," id="bibtex_selected" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_selected.bib">selected</a></span></div></div>
 			    </li>
