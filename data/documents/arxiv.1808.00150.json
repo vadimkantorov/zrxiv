@@ -1,0 +1,16 @@
+{
+  "title": "Depth Estimation via Affinity Learned with Convolutional Spatial Propagation Network",
+  "authors": [
+    "Xinjing Cheng",
+    "Peng Wang",
+    "Ruigang Yang"
+  ],
+  "abstract": "Depth estimation from a single image is a fundamental problem in computer\nvision. In this paper, we propose a simple yet effective convolutional spatial\npropagation network (CSPN) to learn the affinity matrix for depth prediction.\nSpecifically, we adopt an efficient linear propagation model, where the\npropagation is performed with a manner of recurrent convolutional operation,\nand the affinity among neighboring pixels is learned through a deep\nconvolutional neural network (CNN). We apply the designed CSPN to two depth\nestimation tasks given a single image: (1) To refine the depth output from\nstate-of-the-art (SOTA) existing methods; and (2) to convert sparse depth\nsamples to a dense depth map by embedding the depth samples within the\npropagation procedure. The second task is inspired by the availability of\nLIDARs that provides sparse but accurate depth measurements. We experimented\nthe proposed CSPN over two popular benchmarks for depth estimation, i.e. NYU v2\nand KITTI, where we show that our proposed approach improves in not only\nquality (e.g., 30% more reduction in depth error), but also speed (e.g., 2 to 5\ntimes faster) than prior SOTA methods.",
+  "id": "arxiv.1808.00150",
+  "url": "https://arxiv.org/abs/1808.00150",
+  "pdf": "https://arxiv.org/pdf/1808.00150",
+  "bibtex": "@misc{cheng2018_arxiv:1808.00150,\n    title = {Depth Estimation via Affinity Learned with Convolutional Spatial Propagation Network},\n    author = {Xinjing Cheng, Peng Wang, Ruigang Yang},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1808.00150},\n    pdf = {https://arxiv.org/pdf/1808.00150},\n    url = https://arxiv.org/abs/1808.00150\n}",
+  "source": "arxiv.org",
+  "date": 1552420569,
+  "tags": []
+}
