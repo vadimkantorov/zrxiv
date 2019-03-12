@@ -208,7 +208,7 @@
 			{
 				bib = Object.assign({}, bib);
 				bib.author = bib.authors.join(' and ');
-				const exclude_keys = ['bibtex_record_key', 'bibtex_citation_key', 'authors', 'abstract'];
+				const exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'authors', 'abstract'];
         			return `@${bib.bibtex_record_type}{${bib.bibtex_citation_key},\n` + Object.keys(bib).filter(k => !exclude_keys.includes(k)).map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
 			}
 			
