@@ -1,0 +1,17 @@
+{
+  "title": "Deformable Shape Completion with Graph Convolutional Autoencoders",
+  "authors": [
+    "Or Litany",
+    "Alex Bronstein",
+    "Michael Bronstein",
+    "Ameesh Makadia"
+  ],
+  "abstract": "The availability of affordable and portable depth sensors has made scanning\nobjects and people simpler than ever. However, dealing with occlusions and\nmissing parts is still a significant challenge. The problem of reconstructing a\n(possibly non-rigidly moving) 3D object from a single or multiple partial scans\nhas received increasing attention in recent years. In this work, we propose a\nnovel learning-based method for the completion of partial shapes. Unlike the\nmajority of existing approaches, our method focuses on objects that can undergo\nnon-rigid deformations. The core of our method is a variational autoencoder\nwith graph convolutional operations that learns a latent space for complete\nrealistic shapes. At inference, we optimize to find the representation in this\nlatent space that best fits the generated shape to the known partial input. The\ncompleted shape exhibits a realistic appearance on the unknown part. We show\npromising results towards the completion of synthetic and real scans of human\nbody and face meshes exhibiting different styles of articulation and\npartiality.",
+  "id": "arxiv.1712.00268",
+  "url": "https://arxiv.org/abs/1712.00268",
+  "pdf": "https://arxiv.org/pdf/1712.00268",
+  "bibtex": "@misc{litany2017_arxiv:1712.00268,\n    title = {Deformable Shape Completion with Graph Convolutional Autoencoders},\n    author = {Or Litany, Alex Bronstein, Michael Bronstein, Ameesh Makadia},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1712.00268},\n    pdf = {https://arxiv.org/pdf/1712.00268},\n    url = https://arxiv.org/abs/1712.00268\n}",
+  "source": "arxiv.org",
+  "date": 1552399370,
+  "tags": []
+}
