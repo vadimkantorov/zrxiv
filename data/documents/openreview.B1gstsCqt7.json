@@ -1,0 +1,15 @@
+{
+  "title": "Sparse Dictionary Learning by Dynamical Neural Networks",
+  "authors": [
+    "Tsung-Han Lin",
+    "Ping Tak Peter Tang"
+  ],
+  "abstract": "A dynamical neural network consists of a set of interconnected neurons that interact over time continuously. It can exhibit computational properties in the sense that the dynamical system’s evolution and/or limit points in the associated state space can correspond to numerical solutions to certain mathematical optimization or learning problems. Such a computational system is particularly attractive in that it can be mapped to a massively parallel computer architecture for power and throughput efficiency, especially if each neuron can rely solely on local information (i.e., local memory). Deriving gradients from the dynamical network’s various states while conforming to this last constraint, however, is challenging. We show that by combining ideas of top-down feedback and contrastive learning, a dynamical network for solving the l1-minimizing dictionary learning problem can be constructed, and the true gradients for learning are provably computable by individual neurons. Using spiking neurons to construct our dynamical network, we present a learning process, its rigorous mathematical analysis, and numerical results on several dictionary learning problems.",
+  "id": "openreview.B1gstsCqt7",
+  "url": "https://openreview.net/forum?id=B1gstsCqt7",
+  "pdf": "https://openreview.net/pdf?id=B1gstsCqt7",
+  "bibtex": "@inproceedings{lin2018sparse,\n    title = {Sparse Dictionary Learning by Dynamical Neural Networks},\n    author = {Tsung-Han Lin and Ping Tak Peter Tang},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=B1gstsCqt7},\n    url = https://openreview.net/forum?id=B1gstsCqt7\n}",
+  "source": "openreview.net",
+  "date": 1552349273,
+  "tags": []
+}
