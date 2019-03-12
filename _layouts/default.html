@@ -235,16 +235,16 @@
 			
 			function read_text_file(input_file)
 			{
-				const tmp = new FileReader();
+				const file_reader = new FileReader();
 				return new Promise((resolve, reject) =>
 				{
-					tmp.onload = () => resolve(tmp.result);
-					tmp.onerror = () => 
+					file_reader.onload = () => resolve(file_reader.result);
+					file_reader.onerror = () => 
 					{
-						tmp.abort();
+						file_reader.abort();
 						reject(new Error('Problem while reading input file'));
 					};
-					tmp.readAsText(input_file);
+					file_reader.readAsText(input_file);
 				});
 			};
 			
@@ -266,7 +266,7 @@
 				const ul = document.getElementsByTagName('ul')[0];
 				while(ul.childNodes.length > 1) ul.lastChild.remove();
 				
-				const files = [document.getElementById('import_area').value || ''].concat(await Promise.all(document.getElementById('import').files.map(read_text_file)));
+				const files = [document.getElementById('import_area').value || ''].concat(await Promise.all(Array.from(document.getElementById('import').files).map(read_text_file)));
 				const bibs = [].concat.apply([], await Promise.all(texts.map(parse_docs)));
 				
 				const doc_tmpl = document.getElementById('doc_tmpl').content;
