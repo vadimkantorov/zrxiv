@@ -115,7 +115,7 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<template id="doc_tmpl"><li class="doc filtered" data-authors="" data-tags="" data-title="">
+		<template><li class="doc filtered" data-authors="" data-tags="" data-title="">
 			<div>
 				<div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="" title=""></a></div>
 				<div class="tags"><a class="source" href=""></a></div>
@@ -263,13 +263,12 @@
 					}
 				}
 				
+				const files = [document.getElementById('import_area').value || ''].concat(await Promise.all(Array.from(document.getElementById('import').files).map(read_text_file)));
+				const bibs = [].concat.apply([], await Promise.all(files.map(parse_docs)));
+				
+				const doc_tmpl = document.getElementsByTagName('template')[0].content;
 				const ul = document.getElementsByTagName('ul')[0];
 				while(ul.childNodes.length > 1) ul.lastChild.remove();
-				
-				const files = [document.getElementById('import_area').value || ''].concat(await Promise.all(Array.from(document.getElementById('import').files).map(read_text_file)));
-				const bibs = [].concat.apply([], await Promise.all(texts.map(parse_docs)));
-				
-				const doc_tmpl = document.getElementById('doc_tmpl').content;
 				for(let i = 0; i < bibs.length; i++)
 				{
 					const bib = bibs[i];
