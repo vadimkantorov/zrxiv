@@ -338,27 +338,28 @@
 			
 			function update_docs_header(filtered, selected)
 			{
-				const base64_encode_utf8 = str => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
-			
+				const data_text_plain_base64_encode_utf8 = str => 'data:text/plain;base64,' + btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
+				const join_bibtex = lis => lis.map(li => li.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n');
+				
 				if(filtered === true)
 				{
 					const docs = Array.from(document.querySelectorAll('.doc.filtered'));
-					const = docs.map(li => li.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n');
+					const bibtex = join_bibtex(docs);
 					document.getElementById('num_docs_filtered').innerText = docs.length.toString();
 					const bibtex_link = document.getElementById('bibtex_filtered');
 					bibtex_link.title = bibtex;
-					bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
+					bibtex_link.href = data_text_plain_base64_encode_utf8(bibtex);
 				}
 				
 				if(selected === 0 || selected === true)
 				{
 					const docs = selected === true ? Array.from(document.querySelectorAll('.doc.filtered input[type=checkbox]:checked:not([disabled])')).map(input => input.parentNode.parentNode.parentNode) : [];
-					const bibtex = docs.map(li => li.querySelector('a.bibtex_copy')).filter(a => a != null).map(a => a.title).join('\n\n');
+					const bibtex = join_bibtex(docs);
 					document.getElementById('num_docs_selected').innerText = docs.length.toString();
 					document.getElementById('zrxiv_doc_header').dataset.selected = docs.map(li => li.dataset.id).filter(id => id).join(' ');
 					const bibtex_link = document.getElementById('zrxiv_bibtex_selected');
 					bibtex_link.title = bibtex;
-					bibtex_link.href = "data:text/plain;base64," + base64_encode_utf8(bibtex);
+					bibtex_link.href = data_text_plain_base64_encode_utf8(bibtex);
 				}
 			}
 			
