@@ -91,9 +91,9 @@
 			<div class="tags-header" data-selected=""><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="filter_click()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div>
 			{% if page.import_docs == true %}
 			<div>
-				<textarea id="import_area" placeholder="Paste here (or upload a file) BibTeX, arXiv id list or arXiv/openreview url list"></textarea>
+				<textarea id="import_area" placeholder="Paste here (or upload a file) BibTeX, arXiv ID list or URL list"></textarea>
 				<input id="import" type="file"></input>
-				<button id="import_button" onclick="import_click()">Import</button>
+				<button id="import_button" onclick="import_click()">Parse and preview</button>
 			</div>
 			{% endif %}
 			<ul {% if page.import_docs == true %}hidden{% endif %}><li id="zrxiv_doc_header">
