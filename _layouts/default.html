@@ -209,7 +209,7 @@
 			{
 				bib = Object.assign({}, bib);
 				bib.author = bib.authors.join(' and ');
-				const exclude_keys = ['bibtex_record_key', 'bibtex_citation_key', 'authors'];
+				const exclude_keys = ['bibtex_record_key', 'bibtex_citation_key', 'authors', 'abstract'];
         			return `@${bib.bibtex_record_type}{${bib.bibtex_citation_key},\n` + Object.keys(bib).filter(k => !exclude_keys.includes(k)).map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
 			}
 			
@@ -233,6 +233,21 @@
 				
 				return null;
 			}
+			
+			function read_text_file(input_file)
+			{
+				const tmp = new FileReader();
+				return new Promise((resolve, reject) =>
+				{
+					tmp.onload = () => resolve(tmp.result);
+					tmp.onerror = () => 
+					{
+						tmp.abort();
+						reject(new Error('Problem while reading input file'));
+					};
+					tmp.readAsText(input_file);
+				});
+			};
 			
 			async function import_click()
 			{
@@ -288,16 +303,15 @@
 				while(ul.childNodes.length > 1) ul.lastChild.remove();
 				
 				const files = document.getElementById('import').files;
-				const pasted = document.getElementById('import_area').value;
+				let pasted = document.getElementById('import_area').value;
 				
 				if(pasted.length > 0)
 					parse_and_show_docs(pasted);
 				
 				for(let i = 0; i < files.length; i++)
 				{
-					const file_reader = new FileReader(); 
-					file_reader.onload = e => parse_and_show_docs(e.target.result);
-					file_reader.readAsText(files[i]);
+					pasted = await read_text_file(files[i]);
+					parse_and_show_docs(pasted);
 				}
 			}
 			
