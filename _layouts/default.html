@@ -268,14 +268,13 @@
 					{
 						const bib = bibs[i];
 						let li = document.importNode(doc_tmpl, true).firstChild;
-						li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
 						if(i % 2 == 1)
 							li.classList.add('doc-even');
 						let a = li.querySelector('a.title');
 						a.innerText = bib.title;
 						a.href = bib.url;
+						a.title = bib.abstract;
 						let div = li.querySelector('.authors');
-						const site_root = document.querySelector("meta[property='og:url']").getAttribute('content');
 						let lastnames = [];
 						for(let j = 0; j < bib.authors.length; j++)
 						{
@@ -290,6 +289,7 @@
 						}
 						li.dataset.authors = lastnames.join(' ');
 						li.dataset.title = bib.title.toLowerCase();
+						li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
 						ul.appendChild(li);
 					};
 					update_docs_header(true, true);
