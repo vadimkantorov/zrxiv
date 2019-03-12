@@ -222,7 +222,7 @@
 						title : entry.querySelector('title').innerText,
 						authors : Array.from(entry.querySelectorAll('author name')).map(elem => elem.innerText),
 						url : url,
-						abstact : entry.querySelector('summary').innerText,
+						abstract : entry.querySelector('summary').innerText.replace(/\n/g, ' ').trim(),
 						bibtex : null,
 						id : 'arxiv.' + id,
 						bibtex_citation_key : 'arxiv.' + id,
