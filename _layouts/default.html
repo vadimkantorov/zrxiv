@@ -263,7 +263,7 @@
 						let lastnames = [];
 						for(let j = 0; j < bib.authors.length; j++)
 						{
-							const [lastname, fullname] = [bib.authors[j].split(' ').pop(), bib.authors[j]]);
+							const [lastname, fullname] = [bib.authors[j].split(' ').pop(), bib.authors[j]];
 							lastnames.push(lastname.toLowerCase());
 							a = document.createElement('a');
 							a.className = 'author';
