@@ -1,0 +1,19 @@
+{
+  "title": "Learning Affinity via Spatial Propagation Networks",
+  "authors": [
+    "Sifei Liu",
+    "Shalini De Mello",
+    "Jinwei Gu",
+    "Guangyu Zhong",
+    "Ming-Hsuan Yang",
+    "Jan Kautz"
+  ],
+  "abstract": "In this paper, we propose spatial propagation networks for learning the\naffinity matrix for vision tasks. We show that by constructing a row/column\nlinear propagation model, the spatially varying transformation matrix exactly\nconstitutes an affinity matrix that models dense, global pairwise relationships\nof an image. Specifically, we develop a three-way connection for the linear\npropagation model, which (a) formulates a sparse transformation matrix, where\nall elements can be the output from a deep CNN, but (b) results in a dense\naffinity matrix that effectively models any task-specific pairwise similarity\nmatrix. Instead of designing the similarity kernels according to image features\nof two points, we can directly output all the similarities in a purely\ndata-driven manner. The spatial propagation network is a generic framework that\ncan be applied to many affinity-related tasks, including but not limited to\nimage matting, segmentation and colorization, to name a few. Essentially, the\nmodel can learn semantically-aware affinity values for high-level vision tasks\ndue to the powerful learning capability of the deep neural network classifier.\nWe validate the framework on the task of refinement for image segmentation\nboundaries. Experiments on the HELEN face parsing and PASCAL VOC-2012 semantic\nsegmentation tasks show that the spatial propagation network provides a\ngeneral, effective and efficient solution for generating high-quality\nsegmentation results.",
+  "id": "arxiv.1710.01020",
+  "url": "https://arxiv.org/abs/1710.01020",
+  "pdf": "https://arxiv.org/pdf/1710.01020",
+  "bibtex": "@misc{liu2017_arxiv:1710.01020,\n    title = {Learning Affinity via Spatial Propagation Networks},\n    author = {Sifei Liu, Shalini De Mello, Jinwei Gu, Guangyu Zhong, Ming-Hsuan Yang, Jan Kautz},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1710.01020},\n    pdf = {https://arxiv.org/pdf/1710.01020},\n    url = https://arxiv.org/abs/1710.01020\n}",
+  "source": "arxiv.org",
+  "date": 1552418602,
+  "tags": []
+}
