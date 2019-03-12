@@ -262,50 +262,43 @@
 						return await Promise.all(urls.map(import_doc_by_url));
 					}
 				}
-				const show_docs = function(ul, bibs)
-				{
-					const doc_tmpl = document.getElementById('doc_tmpl').content;
-					for(let i = 0; i < bibs.length; i++)
-					{
-						const bib = bibs[i];
-						let li = document.importNode(doc_tmpl, true).firstChild;
-						if(i % 2 == 1)
-							li.classList.add('doc-even');
-						let a = li.querySelector('a.title');
-						a.innerText = bib.title;
-						a.href = bib.url;
-						a.title = bib.abstract || '';
-						let div = li.querySelector('.authors');
-						let lastnames = [];
-						for(let j = 0; j < bib.authors.length; j++)
-						{
-							const [lastname, fullname] = [bib.authors[j].split(' ').pop(), bib.authors[j]];
-							lastnames.push(lastname.toLowerCase());
-							a = document.createElement('a');
-							a.className = 'author';
-							a.innerText = lastname;
-							a.title = fullname;
-							a.href = '#filter=@' + lastname.toLowerCase();
-							div.appendChild(a);
-						}
-						li.dataset.authors = lastnames.join(' ');
-						li.dataset.title = bib.title.toLowerCase();
-						li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
-						ul.appendChild(li);
-					};
-				};
 				
 				const ul = document.getElementsByTagName('ul')[0];
 				while(ul.childNodes.length > 1) ul.lastChild.remove();
 				
-				const files = document.getElementById('import').files;
-				let pasted = document.getElementById('import_area').value;
+				const files = [document.getElementById('import_area').value || ''].concat(await Promise.all(document.getElementById('import').files.map(read_text_file)));
+				const bibs = [].concat.apply([], await Promise.all(texts.map(parse_docs)));
 				
-				const bibs_array = [pasted.length > 0 ? await parse_docs(pasted) : []];
-				for(let i = 0; i < files.length; i++)
-					bibs_array.push(await parse_docs(await read_text_file(files[i])));
+				const doc_tmpl = document.getElementById('doc_tmpl').content;
+				for(let i = 0; i < bibs.length; i++)
+				{
+					const bib = bibs[i];
+					let li = document.importNode(doc_tmpl, true).firstChild;
+					if(i % 2 == 1)
+						li.classList.add('doc-even');
+					let a = li.querySelector('a.title');
+					a.innerText = bib.title;
+					a.href = bib.url;
+					a.title = bib.abstract || '';
+					let div = li.querySelector('.authors');
+					let lastnames = [];
+					for(let j = 0; j < bib.authors.length; j++)
+					{
+						const [lastname, fullname] = [bib.authors[j].split(' ').pop(), bib.authors[j]];
+						lastnames.push(lastname.toLowerCase());
+						a = document.createElement('a');
+						a.className = 'author';
+						a.innerText = lastname;
+						a.title = fullname;
+						a.href = '#filter=@' + lastname.toLowerCase();
+						div.appendChild(a);
+					}
+					li.dataset.authors = lastnames.join(' ');
+					li.dataset.title = bib.title.toLowerCase();
+					li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
+					ul.appendChild(li);
+				};
 				
-				show_docs(ul, [].concat.apply([], bibs_array));
 				update_docs_header(true, true);
 				document.querySelectorAll('#filter_area, #filter').forEach(el => el.classList.remove('visibility_hidden'));
 				reset_selection(true);
