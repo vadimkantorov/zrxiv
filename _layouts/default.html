@@ -44,7 +44,7 @@
 			h1 {overflow-y:auto}
 			input[type=text] {margin-left: auto}
 			input[type=checkbox] {align-self: center}
-			ul {margin: 0px; list-style:none; padding:0 !important; margin-top: 1em !important}
+			#zrxiv_docs {margin: 0px; list-style:none; padding:0 !important; margin-top: 1em !important}
 			li {padding:6px 13px;border:1px solid #dfe2e5; margin:0px !important}
 			li:last-child {border-bottom:1px solid #dfe2e5}
 			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
@@ -97,7 +97,7 @@
 			</div>
 			{% endif %}
 
-			<ul {% if page.import_docs == true %}hidden{% endif %}><li id="zrxiv_doc_header">
+			<ul {% if page.import_docs == true %}hidden{% endif %} id="zrxiv_docs"><li id="zrxiv_doc_header">
 				<div><div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents <a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_filtered" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_filtered.bib">filtered</a>, <span id="num_docs_selected">0</span> documents <a href="data:text/plain;base64," id="bibtex_selected" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_selected.bib">selected</a></span></div></div>
 			    </li>
 				{% for doc in docs %}
@@ -115,7 +115,7 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<template><li class="doc filtered" data-authors="" data-tags="" data-title="">
+		<template><li class="doc filtered" data-authors="" data-tags="" data-title="" id="zrxiv_doc">
 			<div>
 				<div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="" title=""></a></div>
 				<div class="tags"><a class="source" href=""></a></div>
@@ -266,13 +266,13 @@
 				const files = [document.getElementById('import_area').value || ''].concat(await Promise.all(Array.from(document.getElementById('import').files).map(read_text_file)));
 				const bibs = [].concat.apply([], await Promise.all(files.map(parse_docs)));
 				
-				const doc_tmpl = document.getElementsByTagName('template')[0].content;
-				const ul = document.getElementsByTagName('ul')[0];
+				const tmpl = document.getElementById('zrxiv_doc').content;
+				const ul = document.getElementById('zrxiv_docs');
 				while(ul.childNodes.length > 1) ul.lastChild.remove();
 				for(let i = 0; i < bibs.length; i++)
 				{
 					const bib = bibs[i];
-					let li = document.importNode(doc_tmpl, true).firstChild;
+					let li = document.importNode(tmpl, true).firstChild;
 					if(i % 2 == 1)
 						li.classList.add('doc-even');
 					let a = li.querySelector('a.title');
