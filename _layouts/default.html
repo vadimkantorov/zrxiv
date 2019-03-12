@@ -89,7 +89,6 @@
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="{{ site.github.url }}" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}{% if page.import_docs != true %} <span class="subtitles"><a href="{{ site.github.url }}/{{ tag }}.bib" class="subtitle-unchecked" download>{{tag}}.bib</a><a href="{{ site.github.url }}/{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ site.github.url }}/{{ tag }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ site.github.url }}/{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span>{% endif %}</h1>
 			<div class="tags-header" data-selected=""><a href="{{ site.github.url }}" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="{{ site.github.url }}/all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="{{ site.github.url }}/import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ site.github.url }}/{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="filter_click()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div>
-			
 			{% if page.import_docs == true %}
 			<div>
 				<textarea id="import_area" placeholder="Paste here (or upload a file) BibTeX, arXiv id list or arXiv/openreview url list"></textarea>
@@ -97,7 +96,6 @@
 				<button id="import_button" onclick="import_click()">Import</button>
 			</div>
 			{% endif %}
-
 			<ul {% if page.import_docs == true %}hidden{% endif %}><li id="zrxiv_doc_header">
 				<div><div class="title"><input type="checkbox" onchange="reset_selection()"></input><span class="title"><span id="num_docs_filtered">{{ docs | size }}</span> documents <a href="{{ site.github.url }}/{{ tag }}.bib" id="bibtex_filtered" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_filtered.bib">filtered</a>, <span id="num_docs_selected">0</span> documents <a href="data:text/plain;base64," id="bibtex_selected" download="zrxiv_{{ site.github.owner_name }}_{{ tag }}_selected.bib">selected</a></span></div></div>
 			    </li>
@@ -190,6 +188,16 @@
 					
 					bib.bibtex_record_type = m[1].trim().toLowerCase();
 					bib.bibtex_citation_key = m[2].trim().toLowerCase();
+					bib.authors = (bib.author.includes(' and ') ? bib.author.split(' and ') : bib.author.split(', ')).map(author => 
+					{
+						if(author.includes(','))
+						{
+							let splitted = author.split(',');
+							author = splitted.slice(1).join(' ') + ' ' + splitted[0];
+						}
+						return author;
+					});
+					delete bib.author;
 					res.push(bib);
 				}
 				return res;
@@ -197,7 +205,10 @@
 			
 			function format_bibtex(bib)
 			{
-        			return `@${bib.bibtex_record_type}{${bib.bibtex_citation_key},\n` + Object.keys(bib).filter(k => k != 'bibtex_record_key' && k != 'bibtex_citation_key').map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
+				bib = Object.assign({}, bib);
+				bib.author = bib.authors.join(' and ');
+				const exclude_keys = ['bibtex_record_key', 'bibtex_citation_key', 'authors'];
+        			return `@${bib.bibtex_record_type}{${bib.bibtex_citation_key},\n` + Object.keys(bib).filter(k => !exclude_keys.includes(k)).map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
 			}
 			
 			async function import_doc_by_url(url)
@@ -205,25 +216,16 @@
 				if(url.includes('arxiv.org'))
 				{
 					const entry = document.createRange().createContextualFragment(await (await fetch(url.replace('arxiv.org/abs/', 'export.arxiv.org/api/query?id_list='))).text()).querySelector('entry');
+					const id = entry.querySelector('id').innerText.split('abs/')[1].split('v')[0];
 					return {
 						title : entry.querySelector('title').innerText,
 						authors : Array.from(entry.querySelectorAll('author name')).map(elem => elem.innerText),
 						url : url,
 						abstact : entry.querySelector('summary').innerText,
 						bibtex : null,
-						id : 'arxiv.' + entry.querySelector('id').innerText.split('abs/')[1].split('v')[0]
-					};
-				}
-				else if(url.includes('openreview.net'))
-				{
-					const entry = (await (await fetch(url.replace('/forum?', '/notes?'))).json()).notes[0].content;
-					return {
-						title : entry.title,
-						authors : entry.authors,
-						url : url,
-						abstract : entry.abstract,
-						bibtex : entry._bibtex,
-						id : 'openreview.' + entry.id
+						id : 'arxiv.' + id,
+						bibtex_citation_key : 'arxiv.' + id,
+						bibtex_record_type : 'misc'
 					};
 				}
 				
@@ -243,8 +245,6 @@
 					{
 						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g).map(s => /^\d{4}\.\d+$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
 						bibs = await Promise.all(urls.map(import_doc_by_url));
-						console.log(bibs);
-						bibs = [];
 					}
 					const ul = document.getElementsByTagName('ul')[0];
 					const doc_tmpl = document.getElementById('doc_tmpl').content;
@@ -256,38 +256,24 @@
 						if(i % 2 == 1)
 							li.classList.add('doc-even');
 						let a = li.querySelector('a.title');
-						const title = bib['title'];
-						a.innerText = title;
-						a.href = bib['url'];
+						a.innerText = bib.title;
+						a.href = bib.url;
 						let div = li.querySelector('.authors');
-						let authors = (bib['author'].includes(' and ') ? bib['author'].split(' and ') : bib['author'].split(', ')).map(author => 
-						{
-							if(author.includes(','))
-							{
-								let splitted = author.split(',');
-								return [splitted[0], splitted.slice(1).join(' ') + ' ' + splitted[0]];
-							}
-							else
-							{
-								let splitted = author.split(' ');
-								return [splitted.pop(), author];
-							}
-						});
 						const site_root = document.querySelector("meta[property='og:url']").getAttribute('content');
 						let lastnames = [];
-						for(let j = 0; j < authors.length; j++)
+						for(let j = 0; j < bib.authors.length; j++)
 						{
+							const [lastname, fullname] = [bib.authors[j].split(' ').pop(), bib.authors[j]]);
+							lastnames.push(lastname.toLowerCase());
 							a = document.createElement('a');
 							a.className = 'author';
-							a.innerText = authors[j][0];
-							a.title = authors[j][1];
-							const lastname = authors[j][0].toLowerCase();
-							a.href = '#filter=@' + lastname;
+							a.innerText = lastname;
+							a.title = fullname;
+							a.href = '#filter=@' + lastname.toLowerCase();
 							div.appendChild(a);
-							lastnames.push(lastname)
 						}
 						li.dataset.authors = lastnames.join(' ');
-						li.dataset.title = title.toLowerCase();
+						li.dataset.title = bib.title.toLowerCase();
 						ul.appendChild(li);
 					};
 					update_docs_header(true, true);
