@@ -1,0 +1,15 @@
+{
+  "title": "Information Geometry and Evolutionary Game Theory",
+  "authors": [
+    "Marc Harper"
+  ],
+  "abstract": "The Shahshahani geometry of evolutionary game theory is realized as the\ninformation geometry of the simplex, deriving from the Fisher information\nmetric of the manifold of categorical probability distributions. Some essential\nconcepts in evolutionary game theory are realized information-theoretically.\nResults are extended to the Lotka-Volterra equation and to multiple population\nsystems.",
+  "id": "arxiv.0911.1383",
+  "url": "https://arxiv.org/abs/0911.1383",
+  "pdf": "https://arxiv.org/pdf/0911.1383",
+  "bibtex": "@misc{harper2009_arxiv:0911.1383,\n    title = {Information Geometry and Evolutionary Game Theory},\n    author = {Marc Harper},\n    year = {2009},\n    archiveprefix = {arXiv},\n    eprint = {0911.1383},\n    pdf = {https://arxiv.org/pdf/0911.1383},\n    url = https://arxiv.org/abs/0911.1383\n}",
+  "source": "arxiv.org",
+  "date": 1552435950,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=0911.1383"
+}
