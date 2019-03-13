@@ -1,0 +1,17 @@
+{
+  "title": "Hierarchical Autoregressive Image Models with Auxiliary Decoders",
+  "authors": [
+    "Jeffrey De Fauw",
+    "Sander Dieleman",
+    "Karen Simonyan"
+  ],
+  "abstract": "Autoregressive generative models of images tend to be biased towards\ncapturing local structure, and as a result they often produce samples which are\nlacking in terms of large-scale coherence. To address this, we propose two\nmethods to learn discrete representations of images which abstract away local\ndetail. We show that autoregressive models conditioned on these representations\ncan produce high-fidelity reconstructions of images, and that we can train\nautoregressive priors on these representations that produce samples with\nlarge-scale coherence. We can recursively apply the learning procedure,\nyielding a hierarchy of progressively more abstract image representations. We\ntrain hierarchical class-conditional autoregressive models on the ImageNet\ndataset and demonstrate that they are able to generate realistic images at\nresolutions of 128$\\times$128 and 256$\\times$256 pixels.",
+  "id": "arxiv.1903.04933",
+  "url": "https://arxiv.org/abs/1903.04933",
+  "pdf": "https://arxiv.org/pdf/1903.04933",
+  "bibtex": "@misc{fauw2019_arxiv:1903.04933,\n    title = {Hierarchical Autoregressive Image Models with Auxiliary Decoders},\n    author = {Jeffrey De Fauw, Sander Dieleman, Karen Simonyan},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.04933},\n    pdf = {https://arxiv.org/pdf/1903.04933},\n    url = https://arxiv.org/abs/1903.04933\n}",
+  "source": "arxiv.org",
+  "date": 1552480104,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.04933"
+}
