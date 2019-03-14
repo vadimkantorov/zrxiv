@@ -414,7 +414,7 @@
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
 				document.querySelectorAll('.doc:not(.filtered)').forEach(d => {d.hidden = true;});
-				document.querySelectorAll('.doc.filtered').forEach((li, row_index, hidden) =>
+				document.querySelectorAll('.doc.filtered').forEach((li, row_index) =>
 				{
 					if(row_index % 2 == 1)
 						li.classList.add('doc-even');
