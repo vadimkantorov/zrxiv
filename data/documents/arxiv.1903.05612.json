@@ -1,0 +1,20 @@
+{
+  "title": "RVOS: End-to-End Recurrent Network for Video Object Segmentation",
+  "authors": [
+    "Carles Ventura",
+    "Miriam Bellver",
+    "Andreu Girbau",
+    "Amaia Salvador",
+    "Ferran Marques",
+    "Xavier Giro-i-Nieto"
+  ],
+  "abstract": "Multiple object video object segmentation is a challenging task, specially\nfor the zero-shot case, when no object mask is given at the initial frame and\nthe model has to find the objects to be segmented along the sequence. In our\nwork, we propose a Recurrent network for multiple object Video Object\nSegmentation (RVOS) that is fully end-to-end trainable. Our model incorporates\nrecurrence on two different domains: (i) the spatial, which allows to discover\nthe different object instances within a frame, and (ii) the temporal, which\nallows to keep the coherence of the segmented objects along time. We train RVOS\nfor zero-shot video object segmentation and are the first ones to report\nquantitative results for DAVIS-2017 and YouTube-VOS benchmarks. Further, we\nadapt RVOS for one-shot video object segmentation by using the masks obtained\nin previous time steps as inputs to be processed by the recurrent module. Our\nmodel reaches comparable results to state-of-the-art techniques in YouTube-VOS\nbenchmark and outperforms all previous video object segmentation methods not\nusing online learning in the DAVIS-2017 benchmark. Moreover, our model achieves\nfaster inference runtimes than previous methods, reaching 44ms/frame on a P100\nGPU.",
+  "id": "arxiv.1903.05612",
+  "url": "https://arxiv.org/abs/1903.05612",
+  "pdf": "https://arxiv.org/pdf/1903.05612",
+  "bibtex": "@misc{ventura2019_arxiv:1903.05612,\n    title = {RVOS: End-to-End Recurrent Network for Video Object Segmentation},\n    author = {Carles Ventura and Miriam Bellver and Andreu Girbau and Amaia Salvador and Ferran Marques and Xavier Giro-i-Nieto},\n    year = {2019},\n    archiveprefix = {arXiv},\n    authors = {Carles Ventura,Miriam Bellver,Andreu Girbau,Amaia Salvador,Ferran Marques,Xavier Giro-i-Nieto},\n    eprint = {1903.05612},\n    pdf = {{https://arxiv.org/pdf/1903.05612}},\n    url = {https://arxiv.org/abs/1903.05612}\n}",
+  "source": "arxiv.org",
+  "date": 1552582597,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.05612"
+}
