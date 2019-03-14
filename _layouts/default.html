@@ -93,9 +93,9 @@
 			
 			{% if page.import_docs == true %}
 			<div>
-				<textarea id="import_area" placeholder="Paste here (or upload a file) BibTeX, arXiv ID list or URL list"></textarea>
+				<textarea id="import_area" placeholder="Paste here (upload a file, enter a URL) BibTeX, arXiv ID list or URL list"></textarea>
 				<input id="import" type="file"></input>
-				<input id="import_url"></input>
+				<input id="import_url" placeholder="URL to a BibTeX file"></input>
 				<button id="import_button" onclick="import_click()">Parse and preview</button>
 			</div>
 			{% endif %}
