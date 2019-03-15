@@ -1,0 +1,20 @@
+{
+  "title": "Spectral Measure of Robustness in Complex Networks",
+  "authors": [
+    "Jun Wu",
+    "Yue-Jin Tan",
+    "Hong-Zhong Deng",
+    "Yong Li",
+    "Bin Liu",
+    "Xin Lv"
+  ],
+  "abstract": "We introduce the concept of natural connectivity as a robustness measure of\ncomplex networks. The natural connectivity has a clear physical meaning and a\nsimple mathematical formulation. It characterizes the redundancy of alternative\npaths by quantifying the weighted number of closed walks of all lengths. We\nshow that the natural connectivity can be derived mathematically from the graph\nspectrum as an average eigenvalue and that it increases strictly monotonically\nwith the addition of edges. We test the natural connectivity and compare it\nwith other robustness measures within a scenario of edge elimination. We\ndemonstrate that the natural connectivity has an acute discrimination which\nagrees with our intuition.",
+  "id": "arxiv.0802.2564",
+  "url": "https://arxiv.org/abs/0802.2564",
+  "pdf": "https://arxiv.org/pdf/0802.2564",
+  "bibtex": "@misc{wu2008_arxiv:0802.2564,\n    title = {Spectral Measure of Robustness in Complex Networks},\n    author = {Jun Wu and Yue-Jin Tan and Hong-Zhong Deng and Yong Li and Bin Liu and Xin Lv},\n    year = {2008},\n    archiveprefix = {arXiv},\n    authors = {Jun Wu,Yue-Jin Tan,Hong-Zhong Deng,Yong Li,Bin Liu,Xin Lv},\n    eprint = {0802.2564},\n    pdf = {{https://arxiv.org/pdf/0802.2564}},\n    url = {https://arxiv.org/abs/0802.2564}\n}",
+  "source": "arxiv.org",
+  "date": 1552667013,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=0802.2564"
+}
