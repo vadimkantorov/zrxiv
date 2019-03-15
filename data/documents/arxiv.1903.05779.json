@@ -1,0 +1,18 @@
+{
+  "title": "Functional Variational Bayesian Neural Networks",
+  "authors": [
+    "Shengyang Sun",
+    "Guodong Zhang",
+    "Jiaxin Shi",
+    "Roger Grosse"
+  ],
+  "abstract": "Variational Bayesian neural networks (BNNs) perform variational inference\nover weights, but it is difficult to specify meaningful priors and approximate\nposteriors in a high-dimensional weight space. We introduce functional\nvariational Bayesian neural networks (fBNNs), which maximize an Evidence Lower\nBOund (ELBO) defined directly on stochastic processes, i.e. distributions over\nfunctions. We prove that the KL divergence between stochastic processes equals\nthe supremum of marginal KL divergences over all finite sets of inputs. Based\non this, we introduce a practical training objective which approximates the\nfunctional ELBO using finite measurement sets and the spectral Stein gradient\nestimator. With fBNNs, we can specify priors entailing rich structures,\nincluding Gaussian processes and implicit stochastic processes. Empirically, we\nfind fBNNs extrapolate well using various structured priors, provide reliable\nuncertainty estimates, and scale to large datasets.",
+  "id": "arxiv.1903.05779",
+  "url": "https://arxiv.org/abs/1903.05779",
+  "pdf": "https://arxiv.org/pdf/1903.05779",
+  "bibtex": "@misc{sun2019_arxiv:1903.05779,\n    title = {Functional Variational Bayesian Neural Networks},\n    author = {Shengyang Sun and Guodong Zhang and Jiaxin Shi and Roger Grosse},\n    year = {2019},\n    archiveprefix = {arXiv},\n    authors = {Shengyang Sun,Guodong Zhang,Jiaxin Shi,Roger Grosse},\n    eprint = {1903.05779},\n    pdf = {{https://arxiv.org/pdf/1903.05779}},\n    url = {https://arxiv.org/abs/1903.05779}\n}",
+  "source": "arxiv.org",
+  "date": 1552665498,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.05779"
+}
