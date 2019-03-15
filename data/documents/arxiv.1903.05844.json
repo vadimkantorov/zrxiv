@@ -1,0 +1,19 @@
+{
+  "title": "Learning Dependency Structures for Weak Supervision Models",
+  "authors": [
+    "Paroma Varma",
+    "Frederic Sala",
+    "Ann He",
+    "Alexander Ratner",
+    "Christopher Ré"
+  ],
+  "abstract": "Labeling training data is a key bottleneck in the modern machine learning\npipeline. Recent weak supervision approaches combine labels from multiple noisy\nsources by estimating their accuracies without access to ground truth labels;\nhowever, estimating the dependencies among these sources is a critical\nchallenge. We focus on a robust PCA-based algorithm for learning these\ndependency structures, establish improved theoretical recovery rates, and\noutperform existing methods on various real-world tasks. Under certain\nconditions, we show that the amount of unlabeled data needed can scale\nsublinearly or even logarithmically with the number of sources $m$, improving\nover previous efforts that ignore the sparsity pattern in the dependency\nstructure and scale linearly in $m$. We provide an information-theoretic lower\nbound on the minimum sample complexity of the weak supervision setting. Our\nmethod outperforms weak supervision approaches that assume\nconditionally-independent sources by up to 4.64 F1 points and previous\nstructure learning approaches by up to 4.41 F1 points on real-world relation\nextraction and image classification tasks.",
+  "id": "arxiv.1903.05844",
+  "url": "https://arxiv.org/abs/1903.05844",
+  "pdf": "https://arxiv.org/pdf/1903.05844",
+  "bibtex": "@misc{varma2019_arxiv:1903.05844,\n    title = {Learning Dependency Structures for Weak Supervision Models},\n    author = {Paroma Varma and Frederic Sala and Ann He and Alexander Ratner and Christopher Ré},\n    year = {2019},\n    archiveprefix = {arXiv},\n    authors = {Paroma Varma,Frederic Sala,Ann He,Alexander Ratner,Christopher Ré},\n    eprint = {1903.05844},\n    pdf = {{https://arxiv.org/pdf/1903.05844}},\n    url = {https://arxiv.org/abs/1903.05844}\n}",
+  "source": "arxiv.org",
+  "date": 1552617063,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.05844"
+}
