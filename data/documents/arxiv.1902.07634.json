@@ -1,0 +1,18 @@
+{
+  "title": "Active Matrix Factorization for Surveys",
+  "authors": [
+    "Chelsea Zhang",
+    "Sean J. Taylor",
+    "Curtiss Cobb",
+    "Jasjeet Sekhon"
+  ],
+  "abstract": "Amid historically low response rates, survey researchers seek ways to reduce\nrespondent burden while measuring desired concepts with precision. We propose\nto ask fewer questions of respondents and impute missing responses via\nprobabilistic matrix factorization. The most informative questions per\nrespondent are chosen sequentially using active learning with variance\nminimization. We begin with Gaussian responses standard in matrix completion\nand derive a simple active strategy with closed-form posterior updates. Next we\nmodel responses more realistically as ordinal logit; posterior inference and\nquestion selection are adapted to the nonconjugate setting. We simulate our\nmatrix sampling procedure on data from real-world surveys. Our active question\nselection achieves efficiency gains over baselines and can benefit from\navailable side information about respondents.",
+  "id": "arxiv.1902.07634",
+  "url": "https://arxiv.org/abs/1902.07634",
+  "pdf": "https://arxiv.org/pdf/1902.07634",
+  "bibtex": "@misc{zhang2019_arxiv:1902.07634,\n    title = {Active Matrix Factorization for Surveys},\n    author = {Chelsea Zhang and Sean J. Taylor and Curtiss Cobb and Jasjeet Sekhon},\n    year = {2019},\n    archiveprefix = {arXiv},\n    authors = {Chelsea Zhang,Sean J. Taylor,Curtiss Cobb,Jasjeet Sekhon},\n    eprint = {1902.07634},\n    pdf = {{https://arxiv.org/pdf/1902.07634}},\n    url = {https://arxiv.org/abs/1902.07634}\n}",
+  "source": "arxiv.org",
+  "date": 1552615329,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1902.07634"
+}
