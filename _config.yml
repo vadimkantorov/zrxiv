@@ -1,4 +1,5 @@
 recent_docs: 50
+rss_docs: 50
 
 data_source: data
 defaults:
