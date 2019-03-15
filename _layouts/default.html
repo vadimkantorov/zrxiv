@@ -409,7 +409,11 @@
 				const selector = hash != '' ? hash.split(' ').map(w => [w, sorted.find(r => w.startsWith(r))]).map(([w, r]) => `[${routes[r]}="${w.substr(r.length).toLowerCase()}"]`).join('') : '';
 				document.getElementById('filter_area').value = hash;
 				document.getElementById('filter_area').onkeyup = event => event.keyCode == 13 ? document.getElementById('filter').click() : null;
-				document.getElementById('import_url').onkeyup = event => event.keyCode == 13 ? document.getElementById('import_button').click() : null;
+				
+				const import_url = document.getElementById('import_url');
+				if(import_url)
+					import_url.onkeyup = event => event.keyCode == 13 ? document.getElementById('import_button').click() : null;
+				
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
 				document.querySelectorAll('.doc:not(.filtered)').forEach(d => {d.hidden = true;});
