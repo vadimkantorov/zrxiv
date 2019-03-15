@@ -1,0 +1,18 @@
+{
+  "title": "Convexity Shape Prior for Level Set based Image Segmentation Method",
+  "authors": [
+    "Shi Yan",
+    "Xue-cheng Tai",
+    "Jun Liu",
+    "Hai-yang Huang"
+  ],
+  "abstract": "We propose a geometric convexity shape prior preservation method for\nvariational level set based image segmentation methods. Our method is built\nupon the fact that the level set of a convex signed distanced function must be\nconvex. This property enables us to transfer a complicated geometrical\nconvexity prior into a simple inequality constraint on the function. An active\nset based Gauss-Seidel iteration is used to handle this constrained\nminimization problem to get an efficient algorithm. We apply our method to\nregion and edge based level set segmentation models including Chan-Vese (CV)\nmodel with guarantee that the segmented region will be convex. Experimental\nresults show the effectiveness and quality of the proposed model and algorithm.",
+  "id": "arxiv.1805.08676",
+  "url": "https://arxiv.org/abs/1805.08676",
+  "pdf": "https://arxiv.org/pdf/1805.08676",
+  "bibtex": "@misc{yan2018_arxiv:1805.08676,\n    title = {Convexity Shape Prior for Level Set based Image Segmentation Method},\n    author = {Shi Yan and Xue-cheng Tai and Jun Liu and Hai-yang Huang},\n    year = {2018},\n    archiveprefix = {arXiv},\n    authors = {Shi Yan,Xue-cheng Tai,Jun Liu,Hai-yang Huang},\n    eprint = {1805.08676},\n    pdf = {{https://arxiv.org/pdf/1805.08676}},\n    url = {https://arxiv.org/abs/1805.08676}\n}",
+  "source": "arxiv.org",
+  "date": 1552675965,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1805.08676"
+}
