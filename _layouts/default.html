@@ -31,12 +31,13 @@
 		<meta property="og:site_name" content="zrxiv" />
 		<meta property="profile:username" content="{{ site.github.owner_name }}" />
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:title" content="zrxiv for {{ site.github.owner_name }}{% if tag != "recent" %} #{{ tag }}{% endif %}" />
-		<meta property="og:url" content="{{ site.github.url }}" />
+		<meta property="og:title" content="zrxiv for {{ site.github.owner_name }}{% if tag != "recent" %}, #{{ tag }}{% endif %}" />
+		<meta property="og:url" content="{{ site.github.url }}{% if tag != "recent" %}/{{ tag }}{% endif %}" />
 		<meta property="og:image" content="{{ site.github.url }}/logo.png" />
 		<link rel="icon" href="{{ site.github.url }}/logo.png" />
-		<link rel="canonical" href="{{ site.github.url }}" />
+		<link rel="canonical" href="{{ site.github.url }}{% if tag != "recent" %}/{{ tag }}{% endif %}" />
 		<link rel="stylesheet" href="{{ site.github.url }}/style.css">
+		<link rel="base" href="{{ site.github.url }}">
 		<link href="{{ site.github.url }}/{{ tag_xml }}.xml" type="application/rss+xml" rel="alternate" title="Latest {{ site.rss_docs }} {{ tag_xml }} papers (atom)" />
 		<style>
 			html { overflow-y: scroll; }
