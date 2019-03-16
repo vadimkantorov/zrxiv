@@ -31,7 +31,7 @@
 		<meta property="og:site_name" content="zrxiv" />
 		<meta property="profile:username" content="{{ site.github.owner_name }}" />
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:title" content="zrxiv for {{ site.github.owner_name }}{% if tag != "recent" && tag != "all" && tag != "import" %}, tag {{tag}}{% endif %}" />
+		<meta property="og:title" content="zrxiv for {{ site.github.owner_name }}{% if tag != "recent" %} #{{ tag }}{% endif %}" />
 		<meta property="og:url" content="{{ site.github.url }}" />
 		<meta property="og:image" content="{{ site.github.url }}/logo.png" />
 		<link rel="icon" href="{{ site.github.url }}/logo.png" />
