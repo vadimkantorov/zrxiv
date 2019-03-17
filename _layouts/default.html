@@ -132,16 +132,7 @@
 		</li></template>
 		
 		<script type="text/javascript">
-			{% if page.import_docs == true %}
-			fetch('https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js').then(x => x.text()).then(eval);
-			{% endif %}
-			function format_bibtex(bib)
-			{
-				bib = Object.assign({}, bib);
-				bib.author = bib.authors.join(' and ');
-				const exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'authors', 'abstract'];
-        			return `@${bib.bibtex_record_type}{${bib.bibtex_citation_key},\n` + Object.keys(bib).filter(k => !exclude_keys.includes(k)).map(k => `    ${k} = {${bib[k]}}`).join(',\n') + '\n}';
-			}
+			{% if page.import_docs == true %}fetch('https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js').then(x => x.text()).then(eval);{% endif %}
 			
 			async function import_doc_by_url(url)
 			{
@@ -232,7 +223,7 @@
 					}
 					li.dataset.authors = lastnames.join(' ');
 					li.dataset.title = bib.title.toLowerCase();
-					li.querySelector('a.bibtex_copy').title = format_bibtex(bib);
+					li.querySelector('a.bibtex_copy').title = ZrxivBibtex.format([bib]);
 					ul.appendChild(li);
 				};
 				
