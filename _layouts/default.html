@@ -133,9 +133,7 @@
 		
 		<script type="text/javascript">
 			{% if page.import_docs == true %}
-			const co1 = await fetch('https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js');
-			const js = await (co2.text());
-			eval(js);
+			fetch('https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js').then(x => x.text()).then(eval);
 			{% endif %}
 			function format_bibtex(bib)
 			{
