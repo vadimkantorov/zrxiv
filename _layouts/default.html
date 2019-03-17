@@ -130,83 +130,10 @@
 				<div class="date"><a class="bibtex_copy" href="" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
 			</div>
 		</li></template>
+		{% if page.import_docs == true %}
+		<script type="text/javascript" src="https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js"></script>
+		{% endif %}
 		<script type="text/javascript">
-			function parse_bibtex(text)
-			{
-				const parse_bibtex_line = function(text)
-				{
-					let m = text.match(/^\s*(\S+?)\s*=\s*/);
-					if (!m) 
-						throw new Error('Unrecogonised line format');
-					const name = m[1];
-					const search = text.slice(m[0].length);
-					const re = /[\n\r,{}]/g;
-					let length = m[0].length;
-					let braceCount = 0;
-					do
-					{
-						m = re.exec(search);
-						if (m[0] === '{')
-							braceCount++;
-						else if (m[0] === '}')
-						{
-							if (braceCount ===  0)
-								throw new Error('Unexpected closing brace: "}"');
-							braceCount--;
-						}
-					}
-					while (braceCount > 0);
-					const value = search.slice(0, re.lastIndex);
-					length += re.lastIndex;
-
-					while(true)
-					{
-						m = re.exec(search);
-						if(m[0] != '{' && m[0] != '}')
-							length += m[0].length;
-						else
-							break;
-					}
-
-					return [name, value, length];
-				};
-
-				let res = [];
-				while(text.length > 0)
-				{
-					const m = text.match(/^\s*@([^{]+){\s*([^,\n]+)[,\n]/);
-					if (!m) 
-						throw new Error('Unrecogonised header format');
-					text = text.slice(m[0].length).trim();
-					let bib = {};
-					while (text[0] !== '}')
-					{
-						let [field, value, length] = parse_bibtex_line(text);
-						while(value.startsWith('{') && value.endsWith('}'))
-							value = value.slice(1, -1);
-						bib[field.toLowerCase()] = value;
-						text = text.slice(length).trim();
-					}
-					if(text[0] == '}')
-						text = text.slice(1).trim();
-					
-					bib.bibtex_record_type = m[1].trim().toLowerCase();
-					bib.bibtex_citation_key = m[2].trim().toLowerCase();
-					bib.authors = (bib.author.includes(' and ') ? bib.author.split(' and ') : bib.author.split(', ')).map(author => 
-					{
-						if(author.includes(','))
-						{
-							let splitted = author.split(',');
-							author = splitted.slice(1).join(' ') + ' ' + splitted[0];
-						}
-						return author;
-					});
-					delete bib.author;
-					res.push(bib);
-				}
-				return res;
-			}
-			
 			function format_bibtex(bib)
 			{
 				bib = Object.assign({}, bib);
@@ -257,7 +184,7 @@
 				{
 					try
 					{
-						return parse_bibtex(text);
+						return ZrxivBibtex.parse(text);
 					}
 					catch
 					{
