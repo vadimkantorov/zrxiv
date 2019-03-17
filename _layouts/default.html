@@ -130,10 +130,11 @@
 				<div class="date"><a class="bibtex_copy" href="" onclick="bibtex_copy(this); return false" title="">copy bibtex</a></div>
 			</div>
 		</li></template>
-		{% if page.import_docs == true %}
-		<script src="https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js"></script>
-		{% endif %}
+		
 		<script type="text/javascript">
+			{% if page.import_docs == true %}
+			eval(await (await fetch('https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js')).text());
+			{% endif %}
 			function format_bibtex(bib)
 			{
 				bib = Object.assign({}, bib);
