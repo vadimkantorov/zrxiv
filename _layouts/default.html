@@ -131,7 +131,7 @@
 			</div>
 		</li></template>
 		{% if page.import_docs == true %}
-		<script type="text/javascript" src="https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js"></script>
+		<script src="https://raw.githubusercontent.com/zrxiv/browserext/master/bibtex.js"></script>
 		{% endif %}
 		<script type="text/javascript">
 			function format_bibtex(bib)
@@ -186,8 +186,9 @@
 					{
 						return ZrxivBibtex.parse(text);
 					}
-					catch
+					catch(exception)
 					{
+						console.log(exception);
 						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g).map(s => /^\d{4}\.\d+$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
 						return await Promise.all(urls.map(import_doc_by_url));
 					}
