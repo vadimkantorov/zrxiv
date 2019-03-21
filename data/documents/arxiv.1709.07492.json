@@ -1,0 +1,16 @@
+{
+  "title": "Sparse-to-Dense: Depth Prediction from Sparse Depth Samples and a Single Image",
+  "authors": [
+    "Fangchang Ma",
+    "Sertac Karaman"
+  ],
+  "abstract": "We consider the problem of dense depth prediction from a sparse set of depth\nmeasurements and a single RGB image. Since depth estimation from monocular\nimages alone is inherently ambiguous and unreliable, to attain a higher level\nof robustness and accuracy, we introduce additional sparse depth samples, which\nare either acquired with a low-resolution depth sensor or computed via visual\nSimultaneous Localization and Mapping (SLAM) algorithms. We propose the use of\na single deep regression network to learn directly from the RGB-D raw data, and\nexplore the impact of number of depth samples on prediction accuracy. Our\nexperiments show that, compared to using only RGB images, the addition of 100\nspatially random depth samples reduces the prediction root-mean-square error by\n50% on the NYU-Depth-v2 indoor dataset. It also boosts the percentage of\nreliable prediction from 59% to 92% on the KITTI dataset. We demonstrate two\napplications of the proposed algorithm: a plug-in module in SLAM to convert\nsparse maps to dense maps, and super-resolution for LiDARs. Software and video\ndemonstration are publicly available.",
+  "id": "arxiv.1709.07492",
+  "url": "https://arxiv.org/abs/1709.07492",
+  "pdf": "https://arxiv.org/pdf/1709.07492",
+  "bibtex": "@misc{ma2017_arxiv:1709.07492,\n    title = {Sparse-to-Dense: Depth Prediction from Sparse Depth Samples and a Single Image},\n    author = {Fangchang Ma and Sertac Karaman},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1709.07492},\n    pdf = {{https://arxiv.org/pdf/1709.07492}},\n    url = {https://arxiv.org/abs/1709.07492}\n}",
+  "source": "arxiv.org",
+  "date": 1553179589,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1709.07492"
+}
