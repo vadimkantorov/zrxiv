@@ -1,0 +1,18 @@
+{
+  "title": "Sylvester Normalizing Flows for Variational Inference",
+  "authors": [
+    "Rianne van den Berg",
+    "Leonard Hasenclever",
+    "Jakub M. Tomczak",
+    "Max Welling"
+  ],
+  "abstract": "Variational inference relies on flexible approximate posterior distributions.\nNormalizing flows provide a general recipe to construct flexible variational\nposteriors. We introduce Sylvester normalizing flows, which can be seen as a\ngeneralization of planar flows. Sylvester normalizing flows remove the\nwell-known single-unit bottleneck from planar flows, making a single\ntransformation much more flexible. We compare the performance of Sylvester\nnormalizing flows against planar flows and inverse autoregressive flows and\ndemonstrate that they compare favorably on several datasets.",
+  "id": "arxiv.1803.05649",
+  "url": "https://arxiv.org/abs/1803.05649",
+  "pdf": "https://arxiv.org/pdf/1803.05649",
+  "bibtex": "@misc{berg2018_arxiv:1803.05649,\n    title = {Sylvester Normalizing Flows for Variational Inference},\n    author = {Rianne van den Berg and Leonard Hasenclever and Jakub M. Tomczak and Max Welling},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.05649},\n    pdf = {{https://arxiv.org/pdf/1803.05649}},\n    url = {https://arxiv.org/abs/1803.05649}\n}",
+  "source": "arxiv.org",
+  "date": 1553178154,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1803.05649"
+}
