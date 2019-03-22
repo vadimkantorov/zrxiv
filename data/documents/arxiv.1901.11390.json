@@ -1,0 +1,21 @@
+{
+  "title": "MONet: Unsupervised Scene Decomposition and Representation",
+  "authors": [
+    "Christopher P. Burgess",
+    "Loic Matthey",
+    "Nicholas Watters",
+    "Rishabh Kabra",
+    "Irina Higgins",
+    "Matt Botvinick",
+    "Alexander Lerchner"
+  ],
+  "abstract": "The ability to decompose scenes in terms of abstract building blocks is\ncrucial for general intelligence. Where those basic building blocks share\nmeaningful properties, interactions and other regularities across scenes, such\ndecompositions can simplify reasoning and facilitate imagination of novel\nscenarios. In particular, representing perceptual observations in terms of\nentities should improve data efficiency and transfer performance on a wide\nrange of tasks. Thus we need models capable of discovering useful\ndecompositions of scenes by identifying units with such regularities and\nrepresenting them in a common format. To address this problem, we have\ndeveloped the Multi-Object Network (MONet). In this model, a VAE is trained\nend-to-end together with a recurrent attention network -- in a purely\nunsupervised manner -- to provide attention masks around, and reconstructions\nof, regions of images. We show that this model is capable of learning to\ndecompose and represent challenging 3D scenes into semantically meaningful\ncomponents, such as objects and background elements.",
+  "id": "arxiv.1901.11390",
+  "url": "https://arxiv.org/abs/1901.11390",
+  "pdf": "https://arxiv.org/pdf/1901.11390",
+  "bibtex": "@misc{burgess2019_arxiv:1901.11390,\n    title = {MONet: Unsupervised Scene Decomposition and Representation},\n    author = {Christopher P. Burgess and Loic Matthey and Nicholas Watters and Rishabh Kabra and Irina Higgins and Matt Botvinick and Alexander Lerchner},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.11390},\n    pdf = {{https://arxiv.org/pdf/1901.11390}},\n    url = {https://arxiv.org/abs/1901.11390}\n}",
+  "source": "arxiv.org",
+  "date": 1553294514,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.11390"
+}
