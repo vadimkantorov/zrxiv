@@ -1,0 +1,23 @@
+{
+  "title": "Multi-Object Representation Learning with Iterative Variational Inference",
+  "authors": [
+    "Klaus Greff",
+    "Raphaël Lopez Kaufmann",
+    "Rishab Kabra",
+    "Nick Watters",
+    "Chris Burgess",
+    "Daniel Zoran",
+    "Loic Matthey",
+    "Matthew Botvinick",
+    "Alexander Lerchner"
+  ],
+  "abstract": "Human perception is structured around objects which form the basis for our\nhigher-level cognition and impressive systematic generalization abilities. Yet\nmost work on representation learning focuses on feature learning without even\nconsidering multiple objects, or treats segmentation as an (often supervised)\npreprocessing step. Instead, we argue for the importance of learning to segment\nand represent objects jointly. We demonstrate that, starting from the simple\nassumption that a scene is composed of multiple entities, it is possible to\nlearn to segment images into interpretable objects with disentangled\nrepresentations. Our method learns -- without supervision -- to inpaint\noccluded parts, and extrapolates to scenes with more objects and to unseen\nobjects with novel feature combinations. We also show that, due to the use of\niterative variational inference, our system is able to learn multi-modal\nposteriors for ambiguous inputs and extends naturally to sequences.",
+  "id": "arxiv.1903.00450",
+  "url": "https://arxiv.org/abs/1903.00450",
+  "pdf": "https://arxiv.org/pdf/1903.00450",
+  "bibtex": "@misc{greff2019_arxiv:1903.00450,\n    title = {Multi-Object Representation Learning with Iterative Variational Inference},\n    author = {Klaus Greff and Raphaël Lopez Kaufmann and Rishab Kabra and Nick Watters and Chris Burgess and Daniel Zoran and Loic Matthey and Matthew Botvinick and Alexander Lerchner},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.00450},\n    pdf = {{https://arxiv.org/pdf/1903.00450}},\n    url = {https://arxiv.org/abs/1903.00450}\n}",
+  "source": "arxiv.org",
+  "date": 1553294515,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.00450"
+}
