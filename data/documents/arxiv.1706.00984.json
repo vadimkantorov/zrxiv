@@ -1,0 +1,16 @@
+{
+  "title": "Graph-Cut RANSAC",
+  "authors": [
+    "Daniel Barath",
+    "Jiri Matas"
+  ],
+  "abstract": "A novel method for robust estimation, called Graph-Cut RANSAC, GC-RANSAC in\nshort, is introduced. To separate inliers and outliers, it runs the graph-cut\nalgorithm in the local optimization (LO) step which is applied when a\nso-far-the-best model is found. The proposed LO step is conceptually simple,\neasy to implement, globally optimal and efficient. GC-RANSAC is shown\nexperimentally, both on synthesized tests and real image pairs, to be more\ngeometrically accurate than state-of-the-art methods on a range of problems,\ne.g. line fitting, homography, affine transformation, fundamental and essential\nmatrix estimation. It runs in real-time for many problems at a speed\napproximately equal to that of the less accurate alternatives (in milliseconds\non standard CPU).",
+  "id": "arxiv.1706.00984",
+  "url": "https://arxiv.org/abs/1706.00984",
+  "pdf": "https://arxiv.org/pdf/1706.00984",
+  "bibtex": "@misc{barath2017_arxiv:1706.00984,\n    title = {Graph-Cut RANSAC},\n    author = {Daniel Barath and Jiri Matas},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1706.00984},\n    pdf = {{https://arxiv.org/pdf/1706.00984}},\n    url = {https://arxiv.org/abs/1706.00984}\n}",
+  "source": "arxiv.org",
+  "date": 1553251390,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1706.00984"
+}
