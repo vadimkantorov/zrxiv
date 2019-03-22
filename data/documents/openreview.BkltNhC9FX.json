@@ -1,0 +1,16 @@
+{
+  "title": "Posterior Attention Models for Sequence to Sequence Learning",
+  "authors": [
+    "Shiv Shankar",
+    "Sunita Sarawagi"
+  ],
+  "abstract": "Modern neural architectures critically rely on attention for mapping structured inputs to sequences. In this paper we show that prevalent attention architectures do not adequately model the dependence among the attention and output tokens across a predicted sequence.\nWe present an alternative architecture called  Posterior Attention Models that after a principled factorization of the full joint distribution of the attention and output variables, proposes two major changes.  First, the position where attention is marginalized is changed from the input to the output. Second, the attention propagated to the next decoding stage is a posterior attention distribution conditioned on the output. Empirically on five translation and two morphological inflection tasks the proposed posterior attention models yield better BLEU score and alignment accuracy than existing attention models.",
+  "id": "openreview.BkltNhC9FX",
+  "url": "https://openreview.net/forum?id=BkltNhC9FX",
+  "pdf": "https://openreview.net/pdf?id=BkltNhC9FX",
+  "bibtex": "@inproceedings{shankar2018posterior,\n    title = {Posterior Attention Models for Sequence to Sequence Learning},\n    author = {Shiv Shankar and Sunita Sarawagi},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {{https://openreview.net/pdf?id=BkltNhC9FX}},\n    url = {https://openreview.net/forum?id=BkltNhC9FX}\n}",
+  "source": "openreview.net",
+  "date": 1553264050,
+  "tags": [],
+  "api": "https://openreview.net/notes?id=BkltNhC9FX"
+}
