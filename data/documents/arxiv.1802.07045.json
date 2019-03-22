@@ -1,0 +1,16 @@
+{
+  "title": "Latent RANSAC",
+  "authors": [
+    "Simon Korman",
+    "Roee Litman"
+  ],
+  "abstract": "We present a method that can evaluate a RANSAC hypothesis in constant time,\ni.e. independent of the size of the data. A key observation here is that\ncorrect hypotheses are tightly clustered together in the latent parameter\ndomain. In a manner similar to the generalized Hough transform we seek to find\nthis cluster, only that we need as few as two votes for a successful detection.\nRapidly locating such pairs of similar hypotheses is made possible by adapting\nthe recent \"Random Grids\" range-search technique. We only perform the usual\n(costly) hypothesis verification stage upon the discovery of a close pair of\nhypotheses. We show that this event rarely happens for incorrect hypotheses,\nenabling a significant speedup of the RANSAC pipeline. The suggested approach\nis applied and tested on three robust estimation problems: camera localization,\n3D rigid alignment and 2D-homography estimation. We perform rigorous testing on\nboth synthetic and real datasets, demonstrating an improvement in efficiency\nwithout a compromise in accuracy. Furthermore, we achieve state-of-the-art 3D\nalignment results on the challenging \"Redwood\" loop-closure challenge.",
+  "id": "arxiv.1802.07045",
+  "url": "https://arxiv.org/abs/1802.07045",
+  "pdf": "https://arxiv.org/pdf/1802.07045",
+  "bibtex": "@misc{korman2018_arxiv:1802.07045,\n    title = {Latent RANSAC},\n    author = {Simon Korman and Roee Litman},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1802.07045},\n    pdf = {{https://arxiv.org/pdf/1802.07045}},\n    url = {https://arxiv.org/abs/1802.07045}\n}",
+  "source": "arxiv.org",
+  "date": 1553251390,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1802.07045"
+}
