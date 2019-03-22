@@ -1,0 +1,16 @@
+{
+  "title": "The Perception-Distortion Tradeoff",
+  "authors": [
+    "Yochai Blau",
+    "Tomer Michaeli"
+  ],
+  "abstract": "Image restoration algorithms are typically evaluated by some distortion\nmeasure (e.g. PSNR, SSIM, IFC, VIF) or by human opinion scores that quantify\nperceived perceptual quality. In this paper, we prove mathematically that\ndistortion and perceptual quality are at odds with each other. Specifically, we\nstudy the optimal probability for correctly discriminating the outputs of an\nimage restoration algorithm from real images. We show that as the mean\ndistortion decreases, this probability must increase (indicating worse\nperceptual quality). As opposed to the common belief, this result holds true\nfor any distortion measure, and is not only a problem of the PSNR or SSIM\ncriteria. However, as we show experimentally, for some measures it is less\nsevere (e.g. distance between VGG features). We also show that\ngenerative-adversarial-nets (GANs) provide a principled way to approach the\nperception-distortion bound. This constitutes theoretical support to their\nobserved success in low-level vision tasks. Based on our analysis, we propose a\nnew methodology for evaluating image restoration methods, and use it to perform\nan extensive comparison between recent super-resolution algorithms.",
+  "id": "arxiv.1711.06077",
+  "url": "https://arxiv.org/abs/1711.06077",
+  "pdf": "https://arxiv.org/pdf/1711.06077",
+  "bibtex": "@misc{blau2017_arxiv:1711.06077,\n    title = {The Perception-Distortion Tradeoff},\n    author = {Yochai Blau and Tomer Michaeli},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1711.06077},\n    pdf = {{https://arxiv.org/pdf/1711.06077}},\n    url = {https://arxiv.org/abs/1711.06077}\n}",
+  "source": "arxiv.org",
+  "date": 1553251407,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1711.06077"
+}
