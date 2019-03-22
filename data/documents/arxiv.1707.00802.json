@@ -1,0 +1,18 @@
+{
+  "title": "PBODL : Parallel Bayesian Online Deep Learning for Click-Through Rate Prediction in Tencent Advertising System",
+  "authors": [
+    "Xun Liu",
+    "Wei Xue",
+    "Lei Xiao",
+    "Bo Zhang"
+  ],
+  "abstract": "We describe a parallel bayesian online deep learning framework (PBODL) for\nclick-through rate (CTR) prediction within today's Tencent advertising system,\nwhich provides quick and accurate learning of user preferences. We first\nexplain the framework with a deep probit regression model, which is trained\nwith probabilistic back-propagation in the mode of assumed Gaussian density\nfiltering. Then we extend the model family to a variety of bayesian online\nmodels with increasing feature embedding capabilities, such as Sparse-MLP,\nFM-MLP and FFM-MLP. Finally, we implement a parallel training system based on a\nstream computing infrastructure and parameter servers. Experiments with public\navailable datasets and Tencent industrial datasets show that models within our\nframework perform better than several common online models, such as\nAdPredictor, FTRL-Proximal and MatchBox. Online A/B test within Tencent\nadvertising system further proves that our framework could achieve CTR and CPM\nlift by learning more quickly and accurately.",
+  "id": "arxiv.1707.00802",
+  "url": "https://arxiv.org/abs/1707.00802",
+  "pdf": "https://arxiv.org/pdf/1707.00802",
+  "bibtex": "@misc{liu2017_arxiv:1707.00802,\n    title = {PBODL : Parallel Bayesian Online Deep Learning for Click-Through Rate Prediction in Tencent Advertising System},\n    author = {Xun Liu and Wei Xue and Lei Xiao and Bo Zhang},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1707.00802},\n    pdf = {{https://arxiv.org/pdf/1707.00802}},\n    url = {https://arxiv.org/abs/1707.00802}\n}",
+  "source": "arxiv.org",
+  "date": 1553263302,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1707.00802"
+}
