@@ -87,8 +87,6 @@
 	</head>
 	<body onhashchange="navigate()" onload="navigate()">
 		<textarea id="bibtex_copy_area"></textarea>
-		<textarea id="zrxiv_deleted_docs" onchange="update_deleted_docs(this.value)"></textarea>
-		<textarea id="zrxiv_imported_docs" onchange="update_imported_docs(this.value)"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}{% if page.import_docs != true %} <span id="subtitles"><a href="{{ tag }}.bib" class="subtitle-unchecked" download>{{tag}}.bib</a><a href="{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ tag }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span>{% endif %}</h1>
 			<div class="tags-header" data-selected=""><a href="" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="filter_click()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div>
@@ -233,41 +231,6 @@
 				ul.removeAttribute('hidden');
 			}
 			
-			function read_deleted_docs()
-			{
-				let docs = document.cookie.split('deleted_docs=');
-				docs = docs.length >= 2 ? docs[1].split(';')[0].trim() : '';
-				docs = docs.length > 0 ? docs.split(',') : [];
-				return docs.filter(doc => doc).map(doc => doc.trim());
-			}
-			
-			function mark_deleted_docs()
-			{
-				const docs = read_deleted_docs();
-				if(docs.length > 0)
-					document.querySelectorAll(docs.map(doc => `li[data-id="${doc}"]`).join(',')).forEach(li => {
-						li.title = 'Document is being deleted';
-						li.classList.add('doc-deleted');
-						const checkbox = li.querySelector('input[type=checkbox]');
-						checkbox.checked = false;
-						checkbox.disabled = true;
-					});
-			}
-			
-			function update_deleted_docs(docs)
-			{
-				const expires_in_minutes = 15;
-				var date = new Date();
-				date.setTime(date.getTime() + expires_in_minutes * 60 * 1000);
-				const deleted_docs = Array.from(new Set(read_deleted_docs().concat(docs.trim().split(' '))));
-				document.cookie = `deleted_docs=${deleted_docs.join(',')}; expires=${date.toGMTString()}`;
-				mark_deleted_docs();
-			}
-			
-			function update_imported_docs(docs)
-			{
-			}
-			
 			function update_docs_header(filtered, selected)
 			{
 				const data_text_plain_base64_encode_utf8 = str => 'data:text/plain;base64,' + btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {return String.fromCharCode(parseInt(p1, 16)) }));
@@ -348,7 +311,6 @@
 					li.hidden = false;
 				});
 				update_docs_header(selector != '', selector != '');
-				mark_deleted_docs();
 			}
 		</script>
 	</body>
