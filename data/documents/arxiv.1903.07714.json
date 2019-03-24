@@ -1,0 +1,18 @@
+{
+  "title": "A RAD approach to deep mixture models",
+  "authors": [
+    "Laurent Dinh",
+    "Jascha Sohl-Dickstein",
+    "Razvan Pascanu",
+    "Hugo Larochelle"
+  ],
+  "abstract": "Flow based models such as Real NVP are an extremely powerful approach to\ndensity estimation. However, existing flow based models are restricted to\ntransforming continuous densities over a continuous input space into similarly\ncontinuous distributions over continuous latent variables. This makes them\npoorly suited for modeling and representing discrete structures in data\ndistributions, for example class membership or discrete symmetries. To address\nthis difficulty, we present a normalizing flow architecture which relies on\ndomain partitioning using locally invertible functions, and possesses both real\nand discrete valued latent variables. This Real and Discrete (RAD) approach\nretains the desirable normalizing flow properties of exact sampling, exact\ninference, and analytically computable probabilities, while at the same time\nallowing simultaneous modeling of both continuous and discrete structure in a\ndata distribution.",
+  "id": "arxiv.1903.07714",
+  "url": "https://arxiv.org/abs/1903.07714",
+  "pdf": "https://arxiv.org/pdf/1903.07714",
+  "bibtex": "@misc{dinh2019_arxiv:1903.07714,\n    title = {A RAD approach to deep mixture models},\n    author = {Laurent Dinh and Jascha Sohl-Dickstein and Razvan Pascanu and Hugo Larochelle},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.07714},\n    pdf = {{https://arxiv.org/pdf/1903.07714}},\n    url = {https://arxiv.org/abs/1903.07714}\n}",
+  "source": "arxiv.org",
+  "date": 1553460966,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.07714"
+}
