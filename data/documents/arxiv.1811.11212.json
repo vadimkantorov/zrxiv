@@ -1,0 +1,19 @@
+{
+  "title": "Self-Supervised Generative Adversarial Networks",
+  "authors": [
+    "Ting Chen",
+    "Xiaohua Zhai",
+    "Marvin Ritter",
+    "Mario Lucic",
+    "Neil Houlsby"
+  ],
+  "abstract": "Conditional GANs are at the forefront of natural image synthesis. The main\ndrawback of such models is the necessity for labelled data. In this work we\nexploit two popular unsupervised learning techniques, adversarial training and\nself-supervision, to close the gap between conditional and unconditional GANs.\nIn particular, we allow the networks to collaborate on the task of\nrepresentation learning, while being adversarial with respect to the classic\nGAN game. The role of self-supervision is to encourage the discriminator to\nlearn meaningful feature representations which are not forgotten during\ntraining. We test empirically both the quality of the learned image\nrepresentations, and the quality of the synthesized images. Under the same\nconditions, the self-supervised GAN attains a similar performance to\nstate-of-the-art conditional counterparts. Finally, we show that this approach\nto fully unsupervised learning can be scaled to attain an FID of 33 on\nunconditional ImageNet generation.",
+  "id": "arxiv.1811.11212",
+  "url": "https://arxiv.org/abs/1811.11212",
+  "pdf": "https://arxiv.org/pdf/1811.11212",
+  "bibtex": "@misc{chen2018_arxiv:1811.11212,\n    title = {Self-Supervised Generative Adversarial Networks},\n    author = {Ting Chen and Xiaohua Zhai and Marvin Ritter and Mario Lucic and Neil Houlsby},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.11212},\n    pdf = {{https://arxiv.org/pdf/1811.11212}},\n    url = {https://arxiv.org/abs/1811.11212}\n}",
+  "source": "arxiv.org",
+  "date": 1553415549,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.11212"
+}
