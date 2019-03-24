@@ -1,0 +1,17 @@
+{
+  "title": "A Case for Object Compositionality in Deep Generative Models of Images",
+  "authors": [
+    "Sjoerd van Steenkiste",
+    "Karol Kurach",
+    "Sylvain Gelly"
+  ],
+  "abstract": "Deep generative models seek to recover the process with which the observed\ndata was generated. They may be used to synthesize new samples or to\nsubsequently extract representations. Successful approaches in the domain of\nimages are driven by several core inductive biases. However, a bias to account\nfor the compositional way in which humans structure a visual scene in terms of\nobjects has frequently been overlooked. In this work we propose to structure\nthe generator of a GAN to consider objects and their relations explicitly, and\ngenerate images by means of composition. This provides a way to efficiently\nlearn a more accurate generative model of real-world images, and serves as an\ninitial step towards learning corresponding object representations. We evaluate\nour approach on several multi-object image datasets, and find that the\ngenerator learns to identify and disentangle information corresponding to\ndifferent objects at a representational level. A human study reveals that the\nresulting generative model is better at generating images that are more\nfaithful to the reference distribution.",
+  "id": "arxiv.1810.10340",
+  "url": "https://arxiv.org/abs/1810.10340",
+  "pdf": "https://arxiv.org/pdf/1810.10340",
+  "bibtex": "@misc{steenkiste2018_arxiv:1810.10340,\n    title = {A Case for Object Compositionality in Deep Generative Models of Images},\n    author = {Sjoerd van Steenkiste and Karol Kurach and Sylvain Gelly},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.10340},\n    pdf = {{https://arxiv.org/pdf/1810.10340}},\n    url = {https://arxiv.org/abs/1810.10340}\n}",
+  "source": "arxiv.org",
+  "date": 1553415353,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1810.10340"
+}
