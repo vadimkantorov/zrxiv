@@ -1,0 +1,17 @@
+{
+  "title": "DeepRED: Deep Image Prior Powered by RED",
+  "authors": [
+    "Gary Mataev",
+    "Michael Elad",
+    "Peyman Milanfar"
+  ],
+  "abstract": "Inverse problems in imaging are extensively studied, with a variety of\nstrategies, tools, and theory that have been accumulated over the years.\nRecently, this field has been immensely influenced by the emergence of\ndeep-learning techniques. One such contribution, which is the focus of this\npaper, is the Deep Image Prior (DIP) work by Ulyanov, Vedaldi, and Lempitsky\n(2018). DIP offers a new approach towards the regularization of inverse\nproblems, obtained by forcing the recovered image to be synthesized from a\ngiven deep architecture. While DIP has been shown to be effective, its results\nfall short when compared to state-of-the-art alternatives. In this work, we aim\nto boost DIP by adding an explicit prior, which enriches the overall\nregularization effect in order to lead to better-recovered images. More\nspecifically, we propose to bring-in the concept of Regularization by Denoising\n(RED), which leverages existing denoisers for regularizing inverse problems.\nOur work shows how the two (DeepRED) can be merged to a highly effective\nrecovery process while avoiding the need to differentiate the chosen denoiser,\nand leading to very effective results, demonstrated for several tested inverse\nproblems.",
+  "id": "arxiv.1903.10176",
+  "url": "https://arxiv.org/abs/1903.10176",
+  "pdf": "https://arxiv.org/pdf/1903.10176",
+  "bibtex": "@misc{mataev2019_arxiv:1903.10176,\n    title = {DeepRED: Deep Image Prior Powered by RED},\n    author = {Gary Mataev and Michael Elad and Peyman Milanfar},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.10176},\n    pdf = {{https://arxiv.org/pdf/1903.10176}},\n    url = {https://arxiv.org/abs/1903.10176}\n}",
+  "source": "arxiv.org",
+  "date": 1553630178,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.10176"
+}
