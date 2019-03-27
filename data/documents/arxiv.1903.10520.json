@@ -1,0 +1,19 @@
+{
+  "title": "Weight Standardization",
+  "authors": [
+    "Siyuan Qiao",
+    "Huiyu Wang",
+    "Chenxi Liu",
+    "Wei Shen",
+    "Alan Yuille"
+  ],
+  "abstract": "In this paper, we propose Weight Standardization (WS) to accelerate deep\nnetwork training. WS is targeted at the micro-batch training setting where each\nGPU typically has only 1-2 images for training. The micro-batch training\nsetting is hard because small batch sizes are not enough for training networks\nwith Batch Normalization (BN), while other normalization methods that do not\nrely on batch knowledge still have difficulty matching the performances of BN\nin large-batch training. Our WS ends this problem because when used with Group\nNormalization and trained with 1 image/GPU, WS is able to match or outperform\nthe performances of BN trained with large batch sizes with only 2 more lines of\ncode. In micro-batch training, WS significantly outperforms other normalization\nmethods. WS achieves these superior results by standardizing the weights in the\nconvolutional layers, which we show is able to smooth the loss landscape by\nreducing the Lipschitz constants of the loss and the gradients. The\neffectiveness of WS is verified on many tasks, including image classification,\nobject detection, instance segmentation, video recognition, semantic\nsegmentation, and point cloud recognition. The code is available here:\nhttps://github.com/joe-siyuan-qiao/WeightStandardization.",
+  "id": "arxiv.1903.10520",
+  "url": "https://arxiv.org/abs/1903.10520",
+  "pdf": "https://arxiv.org/pdf/1903.10520",
+  "bibtex": "@misc{qiao2019_arxiv:1903.10520,\n    title = {Weight Standardization},\n    author = {Siyuan Qiao and Huiyu Wang and Chenxi Liu and Wei Shen and Alan Yuille},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.10520},\n    pdf = {{https://arxiv.org/pdf/1903.10520}},\n    url = {https://arxiv.org/abs/1903.10520}\n}",
+  "source": "arxiv.org",
+  "date": 1553711882,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.10520"
+}
