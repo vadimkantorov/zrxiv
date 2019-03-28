@@ -1,0 +1,22 @@
+{
+  "title": "Machine learning and the physical sciences",
+  "authors": [
+    "Giuseppe Carleo",
+    "Ignacio Cirac",
+    "Kyle Cranmer",
+    "Laurent Daudet",
+    "Maria Schuld",
+    "Naftali Tishby",
+    "Leslie Vogt-Maranto",
+    "Lenka Zdeborová"
+  ],
+  "abstract": "Machine learning encompasses a broad range of algorithms and modeling tools\nused for a vast array of data processing tasks, which has entered most\nscientific disciplines in recent years. We review in a selective way the recent\nresearch on the interface between machine learning and physical sciences.This\nincludes conceptual developments in machine learning (ML) motivated by physical\ninsights, applications of machine learning techniques to several domains in\nphysics, and cross-fertilization between the two fields. After giving basic\nnotion of machine learning methods and principles, we describe examples of how\nstatistical physics is used to understand methods in ML. We then move to\ndescribe applications of ML methods in particle physics and cosmology, quantum\nmany body physics, quantum computing, and chemical and material physics. We\nalso highlight research and development into novel computing architectures\naimed at accelerating ML. In each of the sections we describe recent successes\nas well as domain-specific methodology and challenges.",
+  "id": "arxiv.1903.10563",
+  "url": "https://arxiv.org/abs/1903.10563",
+  "pdf": "https://arxiv.org/pdf/1903.10563",
+  "bibtex": "@misc{carleo2019_arxiv:1903.10563,\n    title = {Machine learning and the physical sciences},\n    author = {Giuseppe Carleo and Ignacio Cirac and Kyle Cranmer and Laurent Daudet and Maria Schuld and Naftali Tishby and Leslie Vogt-Maranto and Lenka Zdeborová},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.10563},\n    pdf = {{https://arxiv.org/pdf/1903.10563}},\n    url = {https://arxiv.org/abs/1903.10563}\n}",
+  "source": "arxiv.org",
+  "date": 1553781760,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.10563"
+}
