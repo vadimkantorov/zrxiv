@@ -1,0 +1,20 @@
+{
+  "title": "Wasserstein Dependency Measure for Representation Learning",
+  "authors": [
+    "Sherjil Ozair",
+    "Corey Lynch",
+    "Yoshua Bengio",
+    "Aaron van den Oord",
+    "Sergey Levine",
+    "Pierre Sermanet"
+  ],
+  "abstract": "Mutual information maximization has emerged as a powerful learning objective\nfor unsupervised representation learning obtaining state-of-the-art performance\nin applications such as object recognition, speech recognition, and\nreinforcement learning. However, such approaches are fundamentally limited\nsince a tight lower bound of mutual information requires sample size\nexponential in the mutual information. This limits the applicability of these\napproaches for prediction tasks with high mutual information, such as in video\nunderstanding or reinforcement learning. In these settings, such techniques are\nprone to overfit, both in theory and in practice, and capture only a few of the\nrelevant factors of variation. This leads to incomplete representations that\nare not optimal for downstream tasks. In this work, we empirically demonstrate\nthat mutual information-based representation learning approaches do fail to\nlearn complete representations on a number of designed and real-world tasks. To\nmitigate these problems we introduce the Wasserstein dependency measure, which\nlearns more complete representations by using the Wasserstein distance instead\nof the KL divergence in the mutual information estimator. We show that a\npractical approximation to this theoretically motivated solution, constructed\nusing Lipschitz constraint techniques from the GAN literature, achieves\nsubstantially improved results on tasks where incomplete representations are a\nmajor challenge.",
+  "id": "arxiv.1903.11780",
+  "url": "https://arxiv.org/abs/1903.11780",
+  "pdf": "https://arxiv.org/pdf/1903.11780",
+  "bibtex": "@misc{ozair2019_arxiv:1903.11780,\n    title = {Wasserstein Dependency Measure for Representation Learning},\n    author = {Sherjil Ozair and Corey Lynch and Yoshua Bengio and Aaron van den Oord and Sergey Levine and Pierre Sermanet},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.11780},\n    pdf = {{https://arxiv.org/pdf/1903.11780}},\n    url = {https://arxiv.org/abs/1903.11780}\n}",
+  "source": "arxiv.org",
+  "date": 1553876826,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.11780"
+}
