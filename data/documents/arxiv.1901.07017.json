@@ -1,0 +1,18 @@
+{
+  "title": "Spatial Broadcast Decoder: A Simple Architecture for Learning Disentangled Representations in VAEs",
+  "authors": [
+    "Nicholas Watters",
+    "Loic Matthey",
+    "Christopher P. Burgess",
+    "Alexander Lerchner"
+  ],
+  "abstract": "We present a simple neural rendering architecture that helps variational\nautoencoders (VAEs) learn disentangled representations. Instead of the\ndeconvolutional network typically used in the decoder of VAEs, we tile\n(broadcast) the latent vector across space, concatenate fixed X- and\nY-\"coordinate\" channels, and apply a fully convolutional network with 1x1\nstride. This provides an architectural prior for dissociating positional from\nnon-positional features in the latent distribution of VAEs, yet without\nproviding any explicit supervision to this effect. We show that this\narchitecture, which we term the Spatial Broadcast decoder, improves\ndisentangling, reconstruction accuracy, and generalization to held-out regions\nin data space. It provides a particularly dramatic benefit when applied to\ndatasets with small objects. We also emphasize a method for visualizing learned\nlatent spaces that helped us diagnose our models and may prove useful for\nothers aiming to assess data representations. Finally, we show the Spatial\nBroadcast Decoder is complementary to state-of-the-art (SOTA) disentangling\ntechniques and when incorporated improves their performance.",
+  "id": "arxiv.1901.07017",
+  "url": "https://arxiv.org/abs/1901.07017",
+  "pdf": "https://arxiv.org/pdf/1901.07017",
+  "bibtex": "@misc{watters2019_arxiv:1901.07017,\n    title = {Spatial Broadcast Decoder: A Simple Architecture for Learning Disentangled Representations in VAEs},\n    author = {Nicholas Watters and Loic Matthey and Christopher P. Burgess and Alexander Lerchner},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.07017},\n    pdf = {{https://arxiv.org/pdf/1901.07017}},\n    url = {https://arxiv.org/abs/1901.07017}\n}",
+  "source": "arxiv.org",
+  "date": 1553954004,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.07017"
+}
