@@ -1,0 +1,20 @@
+{
+  "title": "PointCNN: Convolution On $\\mathcal{X}$-Transformed Points",
+  "authors": [
+    "Yangyan Li",
+    "Rui Bu",
+    "Mingchao Sun",
+    "Wei Wu",
+    "Xinhan Di",
+    "Baoquan Chen"
+  ],
+  "abstract": "We present a simple and general framework for feature learning from point\nclouds. The key to the success of CNNs is the convolution operator that is\ncapable of leveraging spatially-local correlation in data represented densely\nin grids (e.g. images). However, point clouds are irregular and unordered, thus\ndirectly convolving kernels against features associated with the points, will\nresult in desertion of shape information and variance to point ordering. To\naddress these problems, we propose to learn an $\\mathcal{X}$-transformation\nfrom the input points, to simultaneously promote two causes. The first is the\nweighting of the input features associated with the points, and the second is\nthe permutation of the points into a latent and potentially canonical order.\nElement-wise product and sum operations of the typical convolution operator are\nsubsequently applied on the $\\mathcal{X}$-transformed features. The proposed\nmethod is a generalization of typical CNNs to feature learning from point\nclouds, thus we call it PointCNN. Experiments show that PointCNN achieves on\npar or better performance than state-of-the-art methods on multiple challenging\nbenchmark datasets and tasks.",
+  "id": "arxiv.1801.07791",
+  "url": "https://arxiv.org/abs/1801.07791",
+  "pdf": "https://arxiv.org/pdf/1801.07791",
+  "bibtex": "@misc{li2018_arxiv:1801.07791,\n    title = {PointCNN: Convolution On $\\mathcal{X}$-Transformed Points},\n    author = {Yangyan Li and Rui Bu and Mingchao Sun and Wei Wu and Xinhan Di and Baoquan Chen},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1801.07791},\n    pdf = {{https://arxiv.org/pdf/1801.07791}},\n    url = {https://arxiv.org/abs/1801.07791}\n}",
+  "source": "arxiv.org",
+  "date": 1554030009,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1801.07791"
+}
