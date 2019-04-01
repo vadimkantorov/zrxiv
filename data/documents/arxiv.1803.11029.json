@@ -1,0 +1,20 @@
+{
+  "title": "Structured Attention Guided Convolutional Neural Fields for Monocular Depth Estimation",
+  "authors": [
+    "Dan Xu",
+    "Wei Wang",
+    "Hao Tang",
+    "Hong Liu",
+    "Nicu Sebe",
+    "Elisa Ricci"
+  ],
+  "abstract": "Recent works have shown the benefit of integrating Conditional Random Fields\n(CRFs) models into deep architectures for improving pixel-level prediction\ntasks. Following this line of research, in this paper we introduce a novel\napproach for monocular depth estimation. Similarly to previous works, our\nmethod employs a continuous CRF to fuse multi-scale information derived from\ndifferent layers of a front-end Convolutional Neural Network (CNN). Differently\nfrom past works, our approach benefits from a structured attention model which\nautomatically regulates the amount of information transferred between\ncorresponding features at different scales. Importantly, the proposed attention\nmodel is seamlessly integrated into the CRF, allowing end-to-end training of\nthe entire architecture. Our extensive experimental evaluation demonstrates the\neffectiveness of the proposed method which is competitive with previous methods\non the KITTI benchmark and outperforms the state of the art on the NYU Depth V2\ndataset.",
+  "id": "arxiv.1803.11029",
+  "url": "https://arxiv.org/abs/1803.11029",
+  "pdf": "https://arxiv.org/pdf/1803.11029",
+  "bibtex": "@misc{xu2018_arxiv:1803.11029,\n    title = {Structured Attention Guided Convolutional Neural Fields for Monocular Depth Estimation},\n    author = {Dan Xu and Wei Wang and Hao Tang and Hong Liu and Nicu Sebe and Elisa Ricci},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.11029},\n    pdf = {{https://arxiv.org/pdf/1803.11029}},\n    url = {https://arxiv.org/abs/1803.11029}\n}",
+  "source": "arxiv.org",
+  "date": 1554123924,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1803.11029"
+}
