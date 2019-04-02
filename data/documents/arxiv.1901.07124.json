@@ -1,0 +1,19 @@
+{
+  "title": "Linearized Multi-Sampling for Differentiable Image Transformation",
+  "authors": [
+    "Wei Jiang",
+    "Weiwei Sun",
+    "Andrea Tagliasacchi",
+    "Eduard Trulls",
+    "Kwang Moo Yi"
+  ],
+  "abstract": "We propose a novel image sampling method for differentiable image\ntransformation in deep neural networks. The sampling schemes currently used in\ndeep learning, such as Spatial Transformer Networks, rely on bilinear\ninterpolation, which performs poorly under severe scale changes, and more\nimportantly, results in poor gradient propagation. This is due to their strict\nreliance on direct neighbors. Instead, we propose to generate random auxiliary\nsamples in the vicinity of each pixel in the sampled image, and create a linear\napproximation using their intensity values. We then use this approximation as a\ndifferentiable formula for the transformed image. However, we observe that\nthese auxiliary samples may collapse to a single pixel under severe image\ntransformations, and propose to address it by adding constraints to the\ndistance between the center pixel and the auxiliary samples. We demonstrate\nthat our approach produces more representative gradients with a wider basin of\nconvergence for image alignment, which leads to considerable performance\nimprovements when training networks for image registration and classification\ntasks, particularly under large downsampling.",
+  "id": "arxiv.1901.07124",
+  "url": "https://arxiv.org/abs/1901.07124",
+  "pdf": "https://arxiv.org/pdf/1901.07124",
+  "bibtex": "@misc{jiang2019_arxiv:1901.07124,\n    title = {Linearized Multi-Sampling for Differentiable Image Transformation},\n    author = {Wei Jiang and Weiwei Sun and Andrea Tagliasacchi and Eduard Trulls and Kwang Moo Yi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.07124},\n    pdf = {{https://arxiv.org/pdf/1901.07124}},\n    url = {https://arxiv.org/abs/1901.07124}\n}",
+  "source": "arxiv.org",
+  "date": 1554209813,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.07124"
+}
