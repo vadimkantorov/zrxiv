@@ -1,0 +1,17 @@
+{
+  "title": "An Exact No Free Lunch Theorem for Community Detection",
+  "authors": [
+    "Arya D. McCarthy",
+    "Tongfei Chen",
+    "Seth Ebner"
+  ],
+  "abstract": "A precondition for a No Free Lunch theorem is evaluation with a loss function\nwhich does not assume a priori superiority of some outputs over others. A\nprevious result for community detection by Peel et al. (2017) relies on a\nmismatch between the loss function and the problem domain. The loss function\ncomputes an expectation over only a subset of the universe of possible outputs;\nthus, it is only asymptotically appropriate with respect to the problem size.\nBy using the correct random model for the problem domain, we provide a\nstronger, exact No Free Lunch theorem for community detection. The claim\ngeneralizes to other set-partitioning tasks including core/periphery\nseparation, $k$-clustering, and graph partitioning. Finally, we review the\nliterature of proposed evaluation functions and identify functions which\n(perhaps with slight modifications) are compatible with an exact No Free Lunch\ntheorem.",
+  "id": "arxiv.1903.10092",
+  "url": "https://arxiv.org/abs/1903.10092",
+  "pdf": "https://arxiv.org/pdf/1903.10092",
+  "bibtex": "@misc{mccarthy2019_arxiv:1903.10092,\n    title = {An Exact No Free Lunch Theorem for Community Detection},\n    author = {Arya D. McCarthy and Tongfei Chen and Seth Ebner},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.10092},\n    pdf = {{https://arxiv.org/pdf/1903.10092}},\n    url = {https://arxiv.org/abs/1903.10092}\n}",
+  "source": "arxiv.org",
+  "date": 1554230251,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.10092"
+}
