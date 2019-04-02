@@ -184,6 +184,7 @@
 					{
 						console.log(exception);
 						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g).map(s => /^\d{4}\.\d+$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
+						console.log(urls);
 						return await Promise.all(urls.map(import_doc_by_url));
 					}
 				}
