@@ -1,0 +1,16 @@
+{
+  "title": "Learning Structured Text Representations",
+  "authors": [
+    "Yang Liu",
+    "Mirella Lapata"
+  ],
+  "abstract": "In this paper, we focus on learning structure-aware document representations\nfrom data without recourse to a discourse parser or additional annotations.\nDrawing inspiration from recent efforts to empower neural networks with a\nstructural bias, we propose a model that can encode a document while\nautomatically inducing rich structural dependencies. Specifically, we embed a\ndifferentiable non-projective parsing algorithm into a neural model and use\nattention mechanisms to incorporate the structural biases. Experimental\nevaluation across different tasks and datasets shows that the proposed model\nachieves state-of-the-art results on document modeling tasks while inducing\nintermediate structures which are both interpretable and meaningful.",
+  "id": "arxiv.1705.09207",
+  "url": "https://arxiv.org/abs/1705.09207",
+  "pdf": "https://arxiv.org/pdf/1705.09207",
+  "bibtex": "@misc{liu2017_arxiv:1705.09207,\n    title = {Learning Structured Text Representations},\n    author = {Yang Liu and Mirella Lapata},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1705.09207},\n    pdf = {{https://arxiv.org/pdf/1705.09207}},\n    url = {https://arxiv.org/abs/1705.09207}\n}",
+  "source": "arxiv.org",
+  "date": 1554200505,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1705.09207"
+}
