@@ -1,0 +1,18 @@
+{
+  "title": "Multiscale shortest path algorithm for big-size utility networks",
+  "authors": [
+    "Carlo Giudicianni",
+    "Armando di Nardo",
+    "Antonio Scala",
+    "Manuel Herrera"
+  ],
+  "abstract": "This paper proposes a dimension reduction process for computing the\nDijkstra's shortest path algorithm in a complex network. This is done through a\nnovel multiscale (MS) network decomposition into base-elements: links and\nlandmark-nodes. All of them result to be essential for keeping all the network\nconnectivity information and for speeding up the exact computation of the\nDijkstra's shortest path. The multiscale shortest path (MS-SP) algorithm shows\nto be advantageous when dealing with big-size utility networks in comparison\nwith other shortest-path algorithms: unfeasible for the curse of the\ndimensionality for traditional approaches or providing approximate solution in\nother cases. The novel methodology is of high interest when it is computed on\nurban utility networks as it explodes several of their inherent properties.\nHowever, the proposal extends straightforwardly to another kind of networks.\nMS-SP has been successfully applied for 2 water utility networks (medium and\nbig size). In both cases, MS-SP provides the exact solution that the obtained\nby applying the Dijkstra's shortest path while showing its efficiency in terms\nof computational time.",
+  "id": "arxiv.1903.11710",
+  "url": "https://arxiv.org/abs/1903.11710",
+  "pdf": "https://arxiv.org/pdf/1903.11710",
+  "bibtex": "@misc{giudicianni2019_arxiv:1903.11710,\n    title = {Multiscale shortest path algorithm for big-size utility networks},\n    author = {Carlo Giudicianni and Armando di Nardo and Antonio Scala and Manuel Herrera},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.11710},\n    pdf = {{https://arxiv.org/pdf/1903.11710}},\n    url = {https://arxiv.org/abs/1903.11710}\n}",
+  "source": "arxiv.org",
+  "date": 1554229943,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.11710"
+}
