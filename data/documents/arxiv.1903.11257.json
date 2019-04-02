@@ -1,0 +1,16 @@
+{
+  "title": "How Can We Be So Dense? The Benefits of Using Highly Sparse Representations",
+  "authors": [
+    "Subutai Ahmad",
+    "Luiz Scheinkman"
+  ],
+  "abstract": "Most artificial networks today rely on dense representations, whereas\nbiological networks rely on sparse representations. In this paper we show how\nsparse representations can be more robust to noise and interference, as long as\nthe underlying dimensionality is sufficiently high. A key intuition that we\ndevelop is that the ratio of the operable volume around a sparse vector divided\nby the volume of the representational space decreases exponentially with\ndimensionality. We then analyze computationally efficient sparse networks\ncontaining both sparse weights and activations. Simulations on MNIST and the\nGoogle Speech Command Dataset show that such networks demonstrate significantly\nimproved robustness and stability compared to dense networks, while maintaining\ncompetitive accuracy. We discuss the potential benefits of sparsity on\naccuracy, noise robustness, hyperparameter tuning, learning speed,\ncomputational efficiency, and power requirements.",
+  "id": "arxiv.1903.11257",
+  "url": "https://arxiv.org/abs/1903.11257",
+  "pdf": "https://arxiv.org/pdf/1903.11257",
+  "bibtex": "@misc{ahmad2019_arxiv:1903.11257,\n    title = {How Can We Be So Dense? The Benefits of Using Highly Sparse Representations},\n    author = {Subutai Ahmad and Luiz Scheinkman},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.11257},\n    pdf = {{https://arxiv.org/pdf/1903.11257}},\n    url = {https://arxiv.org/abs/1903.11257}\n}",
+  "source": "arxiv.org",
+  "date": 1554209578,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.11257"
+}
