@@ -187,9 +187,9 @@
 								p = p.slice(0, -4);
 							if(p.includes('arxiv.org/abs/'))
 								arxiv_id = p.split('arxiv.org/abs/')[1];
-							if(p.includes('arxiv.org/pdf/'))
+							else if(p.includes('arxiv.org/pdf/'))
 								arxiv_id = p.split('arxiv.org/pdf/')[1];
-							if(p.includes('arxiv.org/ftp/arxiv/papers/'))
+							else if(p.includes('arxiv.org/ftp/arxiv/papers/'))
 								arxiv_id = p.split('arxiv.org/ftp/arxiv/papers/')[1].split('/')[1];
 							if(arxiv_id.includes('v'))
 								arxiv_id = arxiv_id.split('v').slice(0, -1).join('v');
