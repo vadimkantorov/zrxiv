@@ -184,9 +184,21 @@
 					}
 					catch(exception)
 					{
-						console.log(exception);
-						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g).map(s => /^\d{4}\.\d+$/.test(s) ? `https://arxiv.org/abs/${s}` : s.replace('http://', 'https://'));
-						console.log(urls);
+						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g)).map(p => {
+							let arxiv_id = /^\d{4}\.\d+$/.test(p) ? p : null;
+							if(p.endsWith('.pdf'))
+								p = p.slice(0, -4);
+							if(p.includes('arxiv.org/abs/'))
+								arxiv_id = p.split('arxiv.org/abs/')[1];
+							if(p.includes('arxiv.org/pdf/'))
+								arxiv_id = p.split('arxiv.org/pdf/')[1];
+							if(p.includes('arxiv.org/ftp/arxiv/papers/'))
+								arxiv_id = p.split('arxiv.org/ftp/arxiv/papers/')[1].split('/')[1];
+							if(arxiv_id.includes('v'))
+								arxiv_id = arxiv_id.split('v').slice(0, -1).join('v');
+								
+							return `https://arxiv.org/abs/${arxiv_id}`;
+						});
 						return await Promise.all(urls.map(import_doc_by_url));
 					}
 				}
