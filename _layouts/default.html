@@ -91,14 +91,14 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}{% if page.import_docs != true %} <span id="subtitles"><a href="{{ tag }}.bib" class="subtitle-unchecked" download>{{tag}}.bib</a><a href="{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ tag }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span>{% endif %}</h1>
-			<div class="tags-header" data-selected=""><a href="" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="filter_click()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div>
+			<div class="tags-header" data-selected=""><a href="" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<input id="filter_area" type="text" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="click_filter()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div>
 			
 			{% if page.import_docs == true %}
 			<div>
 				<textarea id="import_area" placeholder="Paste here (upload a file, enter a URL) BibTeX, arXiv ID list or URL list"></textarea>
 				<input id="import" type="file"></input>
 				<input id="import_url" placeholder="URL to a BibTeX file"></input>
-				<button id="import_button" onclick="import_click()">Parse and preview</button>
+				<button id="import_button" onclick="click_import()">Parse and preview</button>
 			</div>
 			{% endif %}
 
@@ -114,7 +114,7 @@
 					</div>
 					<div>
 						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return bibtex_copy_click(this)" title="{{ doc.bibtex | escape }}"><span /></a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return click_bibtex_copy(this)" title="{{ doc.bibtex | escape }}"><span /></a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
@@ -127,7 +127,7 @@
 			</div>
 			<div>
 				<div class="authors"></div>
-				<div class="date"><a class="bibtex_copy" href="" onclick="return bibtex_copy_click(this)" title="">bibtex</a></div>
+				<div class="date"><a class="bibtex_copy" href="" onclick="return click_bibtex_copy(this)" title="">bibtex</a></div>
 			</div>
 		</li></template>
 		
@@ -170,7 +170,7 @@
 				});
 			};
 			
-			async function import_click()
+			async function click_import()
 			{
 				const parse_docs = async function(text)
 				{
@@ -274,7 +274,7 @@
 				}
 			}
 			
-			function bibtex_copy_click(a)
+			function click_bibtex_copy(a)
 			{
 				const textarea = document.getElementById('bibtex_copy_area');
 				textarea.value = a.title;
@@ -283,7 +283,7 @@
 				return false;
 			}
 			
-			function filter_click()
+			function click_filter()
 			{
 				window.location = (window.location.pathname.slice(-1) == '/' ? (window.location.pathname + 'all') : '') + '#filter=' + document.getElementById('filter_area').value.split(' ').join('+');
 			}
