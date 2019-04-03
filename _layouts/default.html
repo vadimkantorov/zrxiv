@@ -180,6 +180,7 @@
 					}
 					catch(exception)
 					{
+						// https://arxiv.org/abs/cond-mat/9911396 https://arxiv.org/abs/1810.08647 http://arxiv.org/abs/1810.08647v1 https://arxiv.org/pdf/1903.05844.pdf https://arxiv.org/pdf/hep-th/9909024.pdf https://arxiv.org/pdf/1805.04246v1.pdf https://arxiv.org/ftp/arxiv/papers/1206/1206.4614.pdf https://arxiv.org/abs/quant-ph/0101012
 						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=-]+/g).map(p => {
 							let arxiv_id = /^\d{4}\.\d+$/.test(p) ? p : null;
 							if(p.endsWith('.pdf'))
@@ -192,7 +193,7 @@
 								arxiv_id = p.split('arxiv.org/ftp/arxiv/papers/')[1].split('/')[1];
 							if(arxiv_id.includes('v'))
 								arxiv_id = arxiv_id.split('v').slice(0, -1).join('v');
-								
+							
 							return `https://arxiv.org/abs/${arxiv_id}`;
 						});
 						return await Promise.all(urls.map(import_doc_by_url));
