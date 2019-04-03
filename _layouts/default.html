@@ -143,7 +143,7 @@
 				if(url.includes('arxiv.org'))
 				{
 					const entry = document.createRange().createContextualFragment(await (await fetch(url.replace('arxiv.org/abs/', 'export.arxiv.org/api/query?id_list='))).text()).querySelector('entry');
-					const id = entry.querySelector('id').innerText.split('abs/')[1].split('v')[0];
+					const id = entry.querySelector('id').innerText.split('abs/')[1].split('v')[0].replace(/\//g, '_');
 					return {
 						title : entry.querySelector('title').innerText,
 						authors : Array.from(entry.querySelectorAll('author name')).map(elem => elem.innerText),
