@@ -184,7 +184,7 @@
 					}
 					catch(exception)
 					{
-						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g)).map(p => {
+						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=]+/g).map(p => {
 							let arxiv_id = /^\d{4}\.\d+$/.test(p) ? p : null;
 							if(p.endsWith('.pdf'))
 								p = p.slice(0, -4);
