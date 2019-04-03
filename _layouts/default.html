@@ -86,6 +86,8 @@
 			#import_url {float : right; width: 30% }
 			
 			.bibtex_copy:active {background-color: lightyellow }
+			.bibtex_copy.span::after {content: "bibtex" }
+			.bibtex_copy.span:active::after {content: "copied" }
 		</style>
 		<base href="{{ site.github.url }}/">
 	</head>
@@ -116,7 +118,7 @@
 					</div>
 					<div>
 						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return bibtex_copy_click(this)" title="{{ doc.bibtex | escape }}">bibtex</a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return bibtex_copy_click(this)" title="{{ doc.bibtex | escape }}"><span /></a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
