@@ -1,0 +1,20 @@
+{
+  "title": "SANNS: Scaling Up Secure Approximate k-Nearest Neighbors Search",
+  "authors": [
+    "Hao Chen",
+    "Ilaria Chillotti",
+    "Yihe Dong",
+    "Oxana Poburinnaya",
+    "Ilya Razenshteyn",
+    "M. Sadegh Riazi"
+  ],
+  "abstract": "We present new secure protocols for approximate $k$-nearest neighbor search\n($k$-NNS) over the Euclidean distance in the semi-honest model. Our\nimplementation is able to handle massive datasets efficiently. On the\nalgorithmic front, we show a new circuit for the approximate top-$k$ selection\nfrom $n$ numbers that is built from merely $O(n + \\mathrm{poly}(k))$\ncomparators. Using this circuit as a subroutine, we design new approximate\n$k$-NNS algorithms and two corresponding secure protocols: 1) optimized linear\nscan; 2) clustering-based sublinear time algorithm.\n  Our secure protocols utilize a combination of additively-homomorphic\nencryption, garbled circuit and Oblivious RAM. Along the way, we introduce\nvarious optimizations to these primitives, which drastically improve concrete\nefficiency.\n  We evaluate the new protocols empirically and show that they are able to\nhandle datasets that are significantly larger than in the prior work. For\ninstance, running on two standard Azure instances within the same availability\nzone, for a dataset of $96$-dimensional descriptors of $10\\,000\\,000$ images,\nwe can find $10$ nearest neighbors with average accuracy $0.9$ in under $10$\nseconds improving upon prior work by at least two orders of magnitude.",
+  "id": "arxiv.1904.02033",
+  "url": "https://arxiv.org/abs/1904.02033",
+  "pdf": "https://arxiv.org/pdf/1904.02033",
+  "bibtex": "@misc{chen2019_arxiv:1904.02033,\n    title = {SANNS: Scaling Up Secure Approximate k-Nearest Neighbors Search},\n    author = {Hao Chen and Ilaria Chillotti and Yihe Dong and Oxana Poburinnaya and Ilya Razenshteyn and M. Sadegh Riazi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.02033},\n    pdf = {{https://arxiv.org/pdf/1904.02033}},\n    url = {https://arxiv.org/abs/1904.02033}\n}",
+  "source": "arxiv.org",
+  "date": 1554449521,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.02033"
+}
