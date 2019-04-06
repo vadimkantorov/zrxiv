@@ -42,8 +42,8 @@
 			h1 {overflow-y:auto}
 			.container-lg {padding:0px!important}
 			
-			input[type=text] {margin-left: auto}
 			input[type=checkbox] {align-self: center; position: absolute; margin-top: 0.4em; margin-left: -1em;}
+			
 			#zrxiv_docs {margin: 0px; list-style:none; padding:0 !important; margin-top: 1em !important}
 			li {padding:6px 13px; padding-left: 20px; border:1px solid #dfe2e5; margin:0px !important}
 			li:last-child {border-bottom:1px solid #dfe2e5}
@@ -108,7 +108,7 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name }}<span id="subtitles" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}><a href="{{ tag }}.bib" class="subtitle-unchecked" download>{{tag}}.bib</a><a href="{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ tag }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span></h1>
-			<div class="tags-header" data-selected=""><a href="" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<div id="searchbox"><input id="filter_area" type="text" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="click_filter()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div></div>
+			<div class="tags-header" data-selected=""><a href="" class="tag_special {% if tag == "recent" %}tag_highlight{% endif %}">🏠recent</a><a href="all" class="tag_special {% if tag == "all" %}tag_highlight{% endif %}">📚all</a><a href="import" class="tag_special {% if tag == "import" %}tag_highlight{% endif %}">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ sortedtag }}" class="tag {% if sortedtag == tag %}tag_highlight{% endif %}">{{ sortedtag }}</a>{% endfor %}<div id="searchbox"><input id="filter_area" type="search" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}></input><button id="filter" onclick="click_filter()" {% if page.import_docs == true %}class="visibility_hidden"{% endif %}>Filter</button></div></div>
 			
 			{% if page.import_docs == true %}
 			<div>
