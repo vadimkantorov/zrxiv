@@ -80,7 +80,6 @@
 			
 			#import_area { width: 100%; height: 100pt; margin-top: 1em }
 			#import_button {margin-right: 10pt; margin-left: auto; margin-right: auto; display : block}
-			#import_url {float : right; width: 30% }
 			
 			.bibtex_copy:active {background-color: lightyellow }
 			.bibtex_copy span::after {content: "bibtex" }
@@ -103,9 +102,8 @@
 			
 			{% if page.import_docs == true %}
 			<div>
-				<textarea id="import_area" placeholder="Paste here (upload a file, enter a URL) BibTeX, arXiv ID list or URL list"></textarea>
+				<textarea id="import_area" placeholder="Paste here (upload a file) BibTeX, BibTeX URL list, arXiv ID list or URL list"></textarea>
 				<input id="import" type="file"></input>
-				<input id="import_url" placeholder="URL to a BibTeX file"></input>
 				<button id="import_button" onclick="click_import()">Parse and preview</button>
 			</div>
 			{% endif %}
@@ -186,10 +184,13 @@
 					{
 						return ZrxivBibtex.parse(text);
 					}
-					catch(exception)
+					catch
 					{
 						// https://arxiv.org/abs/cond-mat/9911396 https://arxiv.org/abs/1810.08647 http://arxiv.org/abs/1810.08647v1 https://arxiv.org/pdf/1903.05844.pdf https://arxiv.org/pdf/hep-th/9909024.pdf https://arxiv.org/pdf/1805.04246v1.pdf https://arxiv.org/ftp/arxiv/papers/1206/1206.4614.pdf https://arxiv.org/abs/quant-ph/0101012
 						const urls = text.match(/[a-zA-Z0-9\/\:\.\?=-]+/g).map(p => {
+							if(p.endsWith('.bib'))
+								return p.includes('http://') ? p.replace('http://', 'https://') : p.includes('https://') ? p : ('https://' + p);
+						
 							let arxiv_id = /^\d{4}\.\d+$/.test(p) ? p : null;
 							if(p.endsWith('.pdf'))
 								p = p.slice(0, -4);
@@ -204,17 +205,14 @@
 							
 							return `https://arxiv.org/abs/${arxiv_id}`;
 						});
+						//await (await fetch(import_url)).text()
 						return await Promise.all(urls.map(import_doc_by_url));
 					}
 				}
 				
-				const import_url = document.getElementById('import_url').value,
-				      import_area = document.getElementById('import_area').value,
-				      import_files = document.getElementById('import').files;
-				const files = [import_area || '']
-					.concat(await Promise.all(Array.from(import_files).map(read_text_file)))
-					.concat(import_url ? [await (await fetch(import_url)).text()] : []);
-						
+				const import_area = document.getElementById('import_area').value, import_files = document.getElementById('import').files;
+				
+				const files = [import_area || ''].concat(await Promise.all(Array.from(import_files).map(read_text_file)));
 				const bibs = [].concat.apply([], await Promise.all(files.map(parse_docs)));
 				
 				const tmpl = document.getElementById('zrxiv_doc').content;
@@ -319,11 +317,6 @@
 				const selector = hash != '' ? hash.split(' ').map(w => [w, sorted.find(r => w.startsWith(r))]).map(([w, r]) => `[${routes[r]}="${w.substr(r.length).toLowerCase()}"]`).join('') : '';
 				document.getElementById('filter_area').value = hash;
 				document.getElementById('filter_area').onkeyup = event => event.keyCode == 13 ? document.getElementById('filter').click() : null;
-				
-				const import_url = document.getElementById('import_url');
-				if(import_url)
-					import_url.onkeyup = event => event.keyCode == 13 ? document.getElementById('import_button').click() : null;
-				
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
 				document.querySelectorAll('.doc:not(.filtered)').forEach(d => {d.hidden = true;});
