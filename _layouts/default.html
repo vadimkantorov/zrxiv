@@ -55,12 +55,14 @@
 			#zrxiv_doc_header {background-color: #dfe2e5}
 			
 			
-			.doc>div {display:flex}
+			/*.doc>div {display:flex}
 			.authors {display:flex; flex-grow:1; flex-wrap:wrap; }
 			.date {display: flex; align-items:flex-end; }
 			.title {flex-grow:1; }
-			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end; }
+			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end; }*/
 			
+			.doc>div {display: flex; flex-direction:column}
+			.doc {display:flex; flex-direction:row}
 			
 			.tag_highlight {background-color: lightyellow}
 			.tag_special {color:red; margin-right: 2pt}
@@ -121,12 +123,13 @@
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
 				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}">
 					<div>
-						<div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
-						<div class="tags">{% if doc.source and doc.source != "" %}<a class="source" href="all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}{% for tag in doc.tags %}<a href="{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
+<div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
+<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
+
 					</div>
 					<div>
-						<div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
-						<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return click_bibtex_copy(this)" title="{{ doc.bibtex | escape }}"><span /></a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return click_bibtex_copy(this)" title="{{ doc.bibtex | escape }}"><span /></a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
+<div class="tags">{% if doc.source and doc.source != "" %}<a class="source" href="all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}{% for tag in doc.tags %}<a href="{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
 					</div>
 				</li>
 				{% endfor %}
