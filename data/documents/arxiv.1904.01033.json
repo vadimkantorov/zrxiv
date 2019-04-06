@@ -1,0 +1,20 @@
+{
+  "title": "Multitask Soft Option Learning",
+  "authors": [
+    "Maximilian Igl",
+    "Andrew Gambardella",
+    "Nantas Nardelli",
+    "N. Siddharth",
+    "Wendelin Böhmer",
+    "Shimon Whiteson"
+  ],
+  "abstract": "We present Multitask Soft Option Learning (MSOL), a hierarchical multitask\nframework based on Planning as Inference. MSOL extends the concept of options,\nusing separate variational posteriors for each task, regularized by a shared\nprior. This allows fine-tuning of options for new tasks without forgetting\ntheir learned policies, leading to faster training without reducing the\nexpressiveness of the hierarchical policy. Additionally, MSOL avoids several\ninstabilities during training in a multitask setting and provides a natural way\nto not only learn intra-option policies, but also their terminations. We\ndemonstrate empirically that MSOL significantly outperforms both hierarchical\nand flat transfer-learning baselines in challenging multi-task environments.",
+  "id": "arxiv.1904.01033",
+  "url": "https://arxiv.org/abs/1904.01033",
+  "pdf": "https://arxiv.org/pdf/1904.01033",
+  "bibtex": "@misc{igl2019_arxiv:1904.01033,\n    title = {Multitask Soft Option Learning},\n    author = {Maximilian Igl and Andrew Gambardella and Nantas Nardelli and N. Siddharth and Wendelin Böhmer and Shimon Whiteson},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.01033},\n    pdf = {{https://arxiv.org/pdf/1904.01033}},\n    url = {https://arxiv.org/abs/1904.01033}\n}",
+  "source": "arxiv.org",
+  "date": 1554542900,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.01033v1"
+}
