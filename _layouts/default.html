@@ -54,13 +54,6 @@
 			#zrxiv_doc_header>div {display:flex}
 			#zrxiv_doc_header {background-color: #dfe2e5}
 			
-			
-			/*.doc>div {display:flex}
-			.authors {display:flex; flex-grow:1; flex-wrap:wrap; }
-			.title {flex-grow:1; }
-			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end; }
-			.date {display: flex; align-items:flex-end; }*/
-			
 			.date {display: flex; justify-content:flex-end; }
 			.doc>div {display: flex; flex-direction:column}
 			.doc {display:flex; flex-direction:row}
@@ -78,7 +71,6 @@
 			.source { color:lightgray; font-size:small; margin-left: 3px; }
 			
 			#bibtex_copy_area, #zrxiv_deleted_docs, #zrxiv_imported_docs {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px; }
-			.separator_before::before { content: " | " }
 			.visibility_hidden {visibility : hidden}
 			
 			.subtitle-unchecked { font-size:small; color:lightgray; margin-left: 2pt}
@@ -102,6 +94,8 @@
 				#subtitles {float: left}
 				.doc {flex-direction:column}
 				.doc>div:last-child {flex-direction: row}
+				.bibtex_copy {font-size:small}
+				.bibtex_copy::after { content: " | " }
 			}
 		</style>
 		<base href="{{ site.github.url }}/">
