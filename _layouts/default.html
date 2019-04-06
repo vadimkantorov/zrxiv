@@ -130,8 +130,8 @@
 
 					</div>
 					<div>
-<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return click_bibtex_copy(this)" title="{{ doc.bibtex | escape }}"><span /></a>{% endif %}<a class="{% if doc.bibtex and doc.bibtex != "" %}separator_before{%endif%}" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
-<div class="tags">{% if doc.source and doc.source != "" %}<a class="source" href="all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}{% for tag in doc.tags %}<a href="{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</div>
+<div class="date">{% if doc.bibtex and doc.bibtex != "" %}<a class="bibtex_copy" href="#" onclick="return click_bibtex_copy(this)" title="{{ doc.bibtex | escape }}"><span /></a>{% endif %}</div>
+<div class="tags">{% for tag in doc.tags %}<a href="{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}{% if doc.source and doc.source != "" %}<a class="source" href="all#filter=#{{ doc.source | downcase }}">#{{ doc.source }}</a>{% endif %}<a class="tag" href="all#filter=#{{ doc.date | date: "%Y-%m-%d" }}" title="added at {{ doc.date | date: "%Y, %B %-d, %H:%M GMT" }}">#{{ doc.date | date: "%Y-%m-%d" }}</a></div>
 					</div>
 				</li>
 				{% endfor %}
