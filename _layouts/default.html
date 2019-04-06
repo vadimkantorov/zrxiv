@@ -49,26 +49,28 @@
 			li:last-child {border-bottom:1px solid #dfe2e5}
 			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
 			.doc-deleted {background-color: orangered !important }
-			.doc>div {display:flex}
+			
+			.tags-header {display:flex; flex-wrap: wrap; }
 			#zrxiv_doc_header>div {display:flex}
 			#zrxiv_doc_header {background-color: #dfe2e5}
+			
+			
+			.doc>div {display:flex}
+			.authors {display:flex; flex-grow:1; flex-wrap:wrap; }
+			.date {display: flex; align-items:flex-end; }
+			.title {flex-grow:1; }
+			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end; }
+			
 			
 			.tag_highlight {background-color: lightyellow}
 			.tag_special {color:red; margin-right: 2pt}
 			.tag {color:red}
 			.tag::before {content: "#"}
 			.tag:not(:first-child) {margin-left: 5px;}
-			.tags {display:flex; flex-grow:1; flex-wrap: wrap; justify-content:flex-end; }
-			.tags-header {display:flex; flex-wrap: wrap; }
 			
-			.authors {display:flex; flex-grow:1; flex-wrap:wrap; }
 			.author {color:lightgray; font-size:small}
 			a.author:not(:last-child)::after {content: ","; margin-right: 2pt; }
-			
 			.date>a {color:lightgray; font-size:small; white-space:nowrap; margin-left: 3px; }
-			.date {display: flex; align-items:flex-end; }
-						
-			.title {flex-grow:1; }
 			.source { color:lightgray }
 			
 			#bibtex_copy_area, #zrxiv_deleted_docs, #zrxiv_imported_docs {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px; }
