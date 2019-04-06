@@ -68,14 +68,14 @@
 			
 			.tag_highlight {background-color: lightyellow}
 			.tag_special {color:red; margin-right: 2pt}
-			.tag {color:red}
+			.tag {color:red; font-size:small;}
 			.tag::before {content: "#"}
 			.tag:not(:first-child) {margin-left: 5px;}
 			
 			.author {color:lightgray; font-size:small}
 			a.author:not(:last-child)::after {content: ","; margin-right: 2pt; }
-			.date>a {color:lightgray; font-size:small; white-space:nowrap; margin-left: 3px; }
-			.source { color:lightgray }
+			.date>a {color:lightgray; white-space:nowrap; margin-left: 3px; }
+			.source { color:lightgray; font-size:small; }
 			
 			#bibtex_copy_area, #zrxiv_deleted_docs, #zrxiv_imported_docs {height: 0px; width: 0px; overflow: hidden; position: absolute; left: -10000px; }
 			.separator_before::before { content: " | " }
