@@ -344,7 +344,7 @@
 				const sorted = Object.keys(routes).sort((lhs, rhs) => rhs.length - lhs.length);
 				const selector = hash != '' ? hash.split(' ').map(w => [w, sorted.find(r => w.startsWith(r))]).map(([w, r]) => `[${routes[r]}="${w.substr(r.length).toLowerCase()}"]`).join('') : '';
 				document.getElementById('filter_area').value = hash;
-				document.getElementById('filter_area').onkeyup = event => event.keyCode == 13 && click_filter();
+				document.getElementById('filter_area').onkeyup = event => {event.keyCode == 13 && click_filter(); return false; };
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
 				document.querySelectorAll('.doc:not(.filtered)').forEach(d => {d.hidden = true;});
