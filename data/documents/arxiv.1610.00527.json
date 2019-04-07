@@ -1,0 +1,21 @@
+{
+  "title": "Video Pixel Networks",
+  "authors": [
+    "Nal Kalchbrenner",
+    "Aaron van den Oord",
+    "Karen Simonyan",
+    "Ivo Danihelka",
+    "Oriol Vinyals",
+    "Alex Graves",
+    "Koray Kavukcuoglu"
+  ],
+  "abstract": "We propose a probabilistic video model, the Video Pixel Network (VPN), that\nestimates the discrete joint distribution of the raw pixel values in a video.\nThe model and the neural architecture reflect the time, space and color\nstructure of video tensors and encode it as a four-dimensional dependency\nchain. The VPN approaches the best possible performance on the Moving MNIST\nbenchmark, a leap over the previous state of the art, and the generated videos\nshow only minor deviations from the ground truth. The VPN also produces\ndetailed samples on the action-conditional Robotic Pushing benchmark and\ngeneralizes to the motion of novel objects.",
+  "id": "arxiv.1610.00527",
+  "url": "https://arxiv.org/abs/1610.00527",
+  "pdf": "https://arxiv.org/pdf/1610.00527",
+  "bibtex": "@misc{kalchbrenner2016_arxiv:1610.00527,\n    title = {Video Pixel Networks},\n    author = {Nal Kalchbrenner and Aaron van den Oord and Karen Simonyan and Ivo Danihelka and Oriol Vinyals and Alex Graves and Koray Kavukcuoglu},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1610.00527},\n    pdf = {{https://arxiv.org/pdf/1610.00527}},\n    url = {https://arxiv.org/abs/1610.00527}\n}",
+  "source": "arxiv.org",
+  "date": 1554634416,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1610.00527"
+}
