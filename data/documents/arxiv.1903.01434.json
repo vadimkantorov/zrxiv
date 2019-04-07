@@ -1,0 +1,21 @@
+{
+  "title": "VideoFlow: A Flow-Based Generative Model for Video",
+  "authors": [
+    "Manoj Kumar",
+    "Mohammad Babaeizadeh",
+    "Dumitru Erhan",
+    "Chelsea Finn",
+    "Sergey Levine",
+    "Laurent Dinh",
+    "Durk Kingma"
+  ],
+  "abstract": "Generative models that can model and predict sequences of future events can,\nin principle, learn to capture complex real-world phenomena, such as physical\ninteractions. In particular, learning predictive models of videos offers an\nespecially appealing mechanism to enable a rich understanding of the physical\nworld: videos of real-world interactions are plentiful and readily available,\nand a model that can predict future video frames can not only capture useful\nrepresentations of the world, but can be useful in its own right, for problems\nsuch as model-based robotic control. However, a central challenge in video\nprediction is that the future is highly uncertain: a sequence of past\nobservations of events can imply many possible futures. Although a number of\nrecent works have studied probabilistic models that can represent uncertain\nfutures, such models are either extremely expensive computationally (as in the\ncase of pixel-level autoregressive models), or do not directly optimize the\nlikelihood of the data. In this work, we propose a model for video prediction\nbased on normalizing flows, which allows for direct optimization of the data\nlikelihood, and produces high-quality stochastic predictions. To our knowledge,\nour work is the first to propose multi-frame video prediction with normalizing\nflows. We describe an approach for modeling the latent space dynamics, and\ndemonstrate that flow-based generative models offer a viable and competitive\napproach to generative modeling of video.",
+  "id": "arxiv.1903.01434",
+  "url": "https://arxiv.org/abs/1903.01434",
+  "pdf": "https://arxiv.org/pdf/1903.01434",
+  "bibtex": "@misc{kumar2019_arxiv:1903.01434,\n    title = {VideoFlow: A Flow-Based Generative Model for Video},\n    author = {Manoj Kumar and Mohammad Babaeizadeh and Dumitru Erhan and Chelsea Finn and Sergey Levine and Laurent Dinh and Durk Kingma},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.01434},\n    pdf = {{https://arxiv.org/pdf/1903.01434}},\n    url = {https://arxiv.org/abs/1903.01434}\n}",
+  "source": "arxiv.org",
+  "date": 1554639483,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.01434"
+}
