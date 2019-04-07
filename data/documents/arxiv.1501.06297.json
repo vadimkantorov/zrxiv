@@ -1,0 +1,18 @@
+{
+  "title": "Geodesic convolutional neural networks on Riemannian manifolds",
+  "authors": [
+    "Jonathan Masci",
+    "Davide Boscaini",
+    "Michael M. Bronstein",
+    "Pierre Vandergheynst"
+  ],
+  "abstract": "Feature descriptors play a crucial role in a wide range of geometry analysis\nand processing applications, including shape correspondence, retrieval, and\nsegmentation. In this paper, we introduce Geodesic Convolutional Neural\nNetworks (GCNN), a generalization of the convolutional networks (CNN) paradigm\nto non-Euclidean manifolds. Our construction is based on a local geodesic\nsystem of polar coordinates to extract \"patches\", which are then passed through\na cascade of filters and linear and non-linear operators. The coefficients of\nthe filters and linear combination weights are optimization variables that are\nlearned to minimize a task-specific cost function. We use GCNN to learn\ninvariant shape features, allowing to achieve state-of-the-art performance in\nproblems such as shape description, retrieval, and correspondence.",
+  "id": "arxiv.1501.06297",
+  "url": "https://arxiv.org/abs/1501.06297",
+  "pdf": "https://arxiv.org/pdf/1501.06297",
+  "bibtex": "@misc{masci2015_arxiv:1501.06297,\n    title = {Geodesic convolutional neural networks on Riemannian manifolds},\n    author = {Jonathan Masci and Davide Boscaini and Michael M. Bronstein and Pierre Vandergheynst},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1501.06297},\n    pdf = {{https://arxiv.org/pdf/1501.06297}},\n    url = {https://arxiv.org/abs/1501.06297}\n}",
+  "source": "arxiv.org",
+  "date": 1554642317,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1501.06297"
+}
