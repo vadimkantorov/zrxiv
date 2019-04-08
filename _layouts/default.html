@@ -313,6 +313,18 @@
 				const textarea = document.getElementById('bibtex_copy_area');
 				textarea.value = a.title;
 				textarea.select();
+				
+				const oldContentEditable = textarea.contentEditable, oldReadOnly = textarea.readOnly, range = document.createRange();
+				textarea.contentEditable = true;
+				textarea.readOnly = false;
+				range.selectNodeContents(textarea);
+				const s = window.getSelection();
+				s.removeAllRanges();
+				s.addRange(range);
+				textarea.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
+				textarea.contentEditable = oldContentEditable;
+				textarea.readOnly = oldReadOnly;
+				
 				document.execCommand('copy');
 				return false;
 			}
