@@ -1,0 +1,19 @@
+{
+  "title": "Interactive Image Segmentation From A Feedback Control Perspective",
+  "authors": [
+    "Liangjia Zhu",
+    "Peter Karasev",
+    "Ivan Kolesov",
+    "Romeil Sandhu",
+    "Allen Tannenbaum"
+  ],
+  "abstract": "Image segmentation is a fundamental problem in computational vision and\nmedical imaging. Designing a generic, automated method that works for various\nobjects and imaging modalities is a formidable task. Instead of proposing a new\nspecific segmentation algorithm, we present a general design principle on how\nto integrate user interactions from the perspective of feedback control theory.\nImpulsive control and Lyapunov stability analysis are employed to design and\nanalyze an interactive segmentation system. Then stabilization conditions are\nderived to guide algorithm design. Finally, the effectiveness and robustness of\nproposed method are demonstrated.",
+  "id": "arxiv.1606.08008",
+  "url": "https://arxiv.org/abs/1606.08008",
+  "pdf": "https://arxiv.org/pdf/1606.08008",
+  "bibtex": "@misc{zhu2016_arxiv:1606.08008,\n    title = {Interactive Image Segmentation From A Feedback Control Perspective},\n    author = {Liangjia Zhu and Peter Karasev and Ivan Kolesov and Romeil Sandhu and Allen Tannenbaum},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1606.08008},\n    pdf = {{https://arxiv.org/pdf/1606.08008}},\n    url = {https://arxiv.org/abs/1606.08008}\n}",
+  "source": "arxiv.org",
+  "date": 1554737150,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1606.08008"
+}
