@@ -1,0 +1,19 @@
+{
+  "title": "Learning Problem-agnostic Speech Representations from Multiple Self-supervised Tasks",
+  "authors": [
+    "Santiago Pascual",
+    "Mirco Ravanelli",
+    "Joan Serrà",
+    "Antonio Bonafonte",
+    "Yoshua Bengio"
+  ],
+  "abstract": "Learning good representations without supervision is still an open issue in\nmachine learning, and is particularly challenging for speech signals, which are\noften characterized by long sequences with a complex hierarchical structure.\nSome recent works, however, have shown that it is possible to derive useful\nspeech representations by employing a self-supervised encoder-discriminator\napproach. This paper proposes an improved self-supervised method, where a\nsingle neural encoder is followed by multiple workers that jointly solve\ndifferent self-supervised tasks. The needed consensus across different tasks\nnaturally imposes meaningful constraints to the encoder, contributing to\ndiscover general representations and to minimize the risk of learning\nsuperficial ones. Experiments show that the proposed approach can learn\ntransferable, robust, and problem-agnostic features that carry on relevant\ninformation from the speech signal, such as speaker identity, phonemes, and\neven higher-level features such as emotional cues. In addition, a number of\ndesign choices make the encoder easily exportable, facilitating its direct\nusage or adaptation to different problems.",
+  "id": "arxiv.1904.03416",
+  "url": "https://arxiv.org/abs/1904.03416",
+  "pdf": "https://arxiv.org/pdf/1904.03416",
+  "bibtex": "@misc{pascual2019_arxiv:1904.03416,\n    title = {Learning Problem-agnostic Speech Representations from Multiple Self-supervised Tasks},\n    author = {Santiago Pascual and Mirco Ravanelli and Joan Serrà and Antonio Bonafonte and Yoshua Bengio},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.03416},\n    pdf = {{https://arxiv.org/pdf/1904.03416}},\n    url = {https://arxiv.org/abs/1904.03416}\n}",
+  "source": "arxiv.org",
+  "date": 1554828275,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.03416"
+}
