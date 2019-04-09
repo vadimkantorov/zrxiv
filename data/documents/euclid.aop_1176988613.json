@@ -1,0 +1,15 @@
+{
+  "title": "A Solution to the Game of Googol",
+  "authors": [
+    "Alexander V. Gnedin"
+  ],
+  "abstract": "For any $n > 2$ we construct an exchangeable sequence of positive continuous random variables, $X_1, \\ldots, X_n$, for which, among all stopping rules, $\\tau$, based on the $X$'s, $\\sup_\\tau P\\{X_{\\tau} = X_1 \\vee \\cdots \\vee X_n\\}$ is achieved by a rule based only on the relative ranks of the $X$'s.",
+  "id": "euclid.aop_1176988613",
+  "url": "https://projecteuclid.org/euclid.aop/1176988613",
+  "pdf": "https://projecteuclid.org/download/pdf_1/euclid.aop/1176988613",
+  "bibtex": "@article{gnedin1994,\n    title = {A Solution to the Game of Googol},\n    author = {Gnedin and Alexander V.},\n    journal = {Ann. Probab.},\n    year = {1994},\n    doi = {10.1214/aop/1176988613},\n    fjournal = {The Annals of Probability},\n    month = {07},\n    number = {3},\n    pages = {1588--1595},\n    publisher = {The Institute of Mathematical Statistics},\n    volume = {22},\n    pdf = {{https://projecteuclid.org/download/pdf_1/euclid.aop/1176988613}},\n    url = {https://projecteuclid.org/euclid.aop/1176988613}\n}",
+  "source": "projecteuclid.org",
+  "date": 1554774494,
+  "tags": [],
+  "doi": "10.1214/aop/1176988613"
+}
