@@ -1,0 +1,17 @@
+{
+  "title": "Reinforcement Learning with Attention that Works: A Self-Supervised Approach",
+  "authors": [
+    "Anthony Manchin",
+    "Ehsan Abbasnejad",
+    "Anton van den Hengel"
+  ],
+  "abstract": "Attention models have had a significant positive impact on deep learning\nacross a range of tasks. However previous attempts at integrating attention\nwith reinforcement learning have failed to produce significant improvements. We\npropose the first combination of self attention and reinforcement learning that\nis capable of producing significant improvements, including new state of the\nart results in the Arcade Learning Environment. Unlike the selective attention\nmodels used in previous attempts, which constrain the attention via\npreconceived notions of importance, our implementation utilises the Markovian\nproperties inherent in the state input. Our method produces a faithful\nvisualisation of the policy, focusing on the behaviour of the agent. Our\nexperiments demonstrate that the trained policies use multiple simultaneous\nfoci of attention, and are able to modulate attention over time to deal with\nsituations of partial observability.",
+  "id": "arxiv.1904.03367",
+  "url": "https://arxiv.org/abs/1904.03367",
+  "pdf": "https://arxiv.org/pdf/1904.03367",
+  "bibtex": "@misc{manchin2019_arxiv:1904.03367,\n    title = {Reinforcement Learning with Attention that Works: A Self-Supervised Approach},\n    author = {Anthony Manchin and Ehsan Abbasnejad and Anton van den Hengel},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.03367},\n    pdf = {{https://arxiv.org/pdf/1904.03367}},\n    url = {https://arxiv.org/abs/1904.03367}\n}",
+  "source": "arxiv.org",
+  "date": 1554899166,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.03367"
+}
