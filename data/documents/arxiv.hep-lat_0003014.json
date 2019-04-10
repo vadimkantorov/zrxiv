@@ -1,0 +1,19 @@
+{
+  "title": "Percolation and Magnetization in the Continuous Spin Ising Model",
+  "authors": [
+    "Piotr Bialas",
+    "Philippe Blanchard",
+    "Santo Fortunato",
+    "Daniel Gandolfo",
+    "Helmut Satz"
+  ],
+  "abstract": "In the strong coupling limit the partition function of SU(2) gauge theory can\nbe reduced to that of the continuous spin Ising model with nearest neighbour\npair-interactions. The random cluster representation of the continuous spin\nIsing model in two dimensions is derived through a Fortuin-Kasteleyn\ntransformation, and the properties of the corresponding cluster distribution\nare analyzed. It is shown that for this model, the magnetic transition is\nequivalent to the percolation transition of Fortuin-Kasteleyn clusters, using\nlocal bond weights. These results are also illustrated by means of numerical\nsimulations.",
+  "id": "arxiv.hep-lat_0003014",
+  "url": "https://arxiv.org/abs/hep-lat/0003014",
+  "pdf": "https://arxiv.org/pdf/hep-lat/0003014",
+  "bibtex": "@misc{bialas2000_arxiv:hep-lat/0003014,\n    title = {Percolation and Magnetization in the Continuous Spin Ising Model},\n    author = {Piotr Bialas and Philippe Blanchard and Santo Fortunato and Daniel Gandolfo and Helmut Satz},\n    year = {2000},\n    archiveprefix = {arXiv},\n    eprint = {hep-lat/0003014},\n    pdf = {{https://arxiv.org/pdf/hep-lat/0003014}},\n    url = {https://arxiv.org/abs/hep-lat/0003014}\n}",
+  "source": "arxiv.org",
+  "date": 1554916969,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=hep-lat/0003014"
+}
