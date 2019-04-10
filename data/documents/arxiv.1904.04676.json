@@ -1,0 +1,17 @@
+{
+  "title": "Block Neural Autoregressive Flow",
+  "authors": [
+    "Nicola De Cao",
+    "Ivan Titov",
+    "Wilker Aziz"
+  ],
+  "abstract": "Normalising flows (NFS) map two density functions via a differentiable\nbijection whose Jacobian determinant can be computed efficiently. Recently, as\nan alternative to hand-crafted bijections, Huang et al. (2018) proposed neural\nautoregressive flow (NAF) which is a universal approximator for density\nfunctions. Their flow is a neural network (NN) whose parameters are predicted\nby another NN. The latter grows quadratically with the size of the former and\nthus an efficient technique for parametrization is needed. We propose block\nneural autoregressive flow (B-NAF), a much more compact universal approximator\nof density functions, where we model a bijection directly using a single\nfeed-forward network. Invertibility is ensured by carefully designing each\naffine transformation with block matrices that make the flow autoregressive and\n(strictly) monotone. We compare B-NAF to NAF and other established flows on\ndensity estimation and approximate inference for latent variable models. Our\nproposed flow is competitive across datasets while using orders of magnitude\nfewer parameters.",
+  "id": "arxiv.1904.04676",
+  "url": "https://arxiv.org/abs/1904.04676",
+  "pdf": "https://arxiv.org/pdf/1904.04676",
+  "bibtex": "@misc{cao2019_arxiv:1904.04676,\n    title = {Block Neural Autoregressive Flow},\n    author = {Nicola De Cao and Ivan Titov and Wilker Aziz},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.04676},\n    pdf = {{https://arxiv.org/pdf/1904.04676}},\n    url = {https://arxiv.org/abs/1904.04676}\n}",
+  "source": "arxiv.org",
+  "date": 1554912366,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.04676"
+}
