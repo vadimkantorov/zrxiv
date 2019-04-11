@@ -1,0 +1,15 @@
+{
+  "title": "A Conceptual Introduction to Hamiltonian Monte Carlo",
+  "authors": [
+    "Michael Betancourt"
+  ],
+  "abstract": "Hamiltonian Monte Carlo has proven a remarkable empirical success, but only\nrecently have we begun to develop a rigorous understanding of why it performs\nso well on difficult problems and how it is best applied in practice.\nUnfortunately, that understanding is confined within the mathematics of\ndifferential geometry which has limited its dissemination, especially to the\napplied communities for which it is particularly important. In this review I\nprovide a comprehensive conceptual account of these theoretical foundations,\nfocusing on developing a principled intuition behind the method and its optimal\nimplementations rather of any exhaustive rigor. Whether a practitioner or a\nstatistician, the dedicated reader will acquire a solid grasp of how\nHamiltonian Monte Carlo works, when it succeeds, and, perhaps most importantly,\nwhen it fails.",
+  "id": "arxiv.1701.02434",
+  "url": "https://arxiv.org/abs/1701.02434",
+  "pdf": "https://arxiv.org/pdf/1701.02434",
+  "bibtex": "@misc{betancourt2017_arxiv:1701.02434,\n    title = {A Conceptual Introduction to Hamiltonian Monte Carlo},\n    author = {Michael Betancourt},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1701.02434},\n    pdf = {https://arxiv.org/pdf/1701.02434},\n    url = {https://arxiv.org/abs/1701.02434}\n}",
+  "source": "arxiv.org",
+  "date": 1554985711,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1701.02434"
+}
