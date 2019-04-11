@@ -5,7 +5,7 @@
 {% assign docs = "" | split:"," %}
 {% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}
 {% assign docs = (docs | sort: 'date') | reverse %}
-{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}
+{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size | xml_escape %}
 {% assign num_docs = site.data.documents | size %}
 {% assign recent_docs = site.recent_docs %}
 {% if num_docs < recent_docs %}{% assign recent_docs = num_docs %}{% endif %}
