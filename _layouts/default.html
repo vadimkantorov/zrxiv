@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% assign sortedtags = "" | split: "," %}
-{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size %}{% assign sortedtags = sortedtags | push: tag %}{% endif %}{% endfor %}
+{% for page in site.pages %}{% if page.path contains 'data/tags/' %}{% assign tag_name_size = page.name | size | minus: 3 %}{% assign tag = page.name | slice: 0, tag_name_size | xml_escape %}{% assign sortedtags = sortedtags | push: tag %}{% endif %}{% endfor %}
 {% assign sortedtags = sortedtags | sort %}
 {% assign docs = "" | split:"," %}
 {% for doc_ in site.data.documents %}{% assign docs = docs | push: doc_[1] %}{% endfor %}
