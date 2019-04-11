@@ -10,11 +10,7 @@
 {% assign recent_docs = site.recent_docs %}
 {% if num_docs < recent_docs %}{% assign recent_docs = num_docs %}{% endif %}
 {% if page.recent_docs == true %}{% assign docs = docs | slice: 0, recent_docs %}{% endif %}
-{% if page.path contains "data/tags/" %}
-	{% assign docs_by_tag = "" | split:"," %}
-	{% for doc in docs %}{% if doc.tags contains tag %}{% assign docs_by_tag = docs_by_tag | push: doc %}{% endif %}{% endfor %}
-	{% assign docs = docs_by_tag %}
-{% endif %}
+{% if page.path contains "data/tags/" %}{% assign docs = docs | where_exp:"doc","doc.tags contains tag" %}{% endif %}
 {% assign tag_xml = tag %}{% if tag == "all" %}{% assign tag_xml = "recent" %}{% endif %}
 {% if page.import_docs == true %}{% assign docs = "" | split:"," %}{% endif %}
 
