@@ -1,0 +1,19 @@
+{
+  "title": "From Variational to Deterministic Autoencoders",
+  "authors": [
+    "Partha Ghosh",
+    "Mehdi S. M. Sajjadi",
+    "Antonio Vergari",
+    "Michael Black",
+    "Bernhard Schölkopf"
+  ],
+  "abstract": "Variational Autoencoders (VAEs) provide a theoretically-backed framework for\ndeep generative models. However, they often produce \"blurry\" images, which is\nlinked to their training objective. Sampling in the most popular\nimplementation, the Gaussian VAE, can be interpreted as simply injecting noise\nto the input of a deterministic decoder. In practice, this simply enforces a\nsmooth latent space structure. We challenge the adoption of the full VAE\nframework on this specific point in favor of a simpler, deterministic one.\nSpecifically, we investigate how substituting stochasticity with other explicit\nand implicit regularization schemes can lead to a meaningful latent space\nwithout having to force it to conform to an arbitrarily chosen prior. To\nretrieve a generative mechanism for sampling new data points, we propose to\nemploy an efficient ex-post density estimation step that can be readily adopted\nboth for the proposed deterministic autoencoders as well as to improve sample\nquality of existing VAEs. We show in a rigorous empirical study that\nregularized deterministic autoencoding achieves state-of-the-art sample quality\non the common MNIST, CIFAR-10 and CelebA datasets.",
+  "id": "arxiv.1903.12436",
+  "url": "https://arxiv.org/abs/1903.12436",
+  "pdf": "https://arxiv.org/pdf/1903.12436",
+  "bibtex": "@misc{ghosh2019_arxiv:1903.12436,\n    title = {From Variational to Deterministic Autoencoders},\n    author = {Partha Ghosh and Mehdi S. M. Sajjadi and Antonio Vergari and Michael Black and Bernhard Schölkopf},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.12436},\n    pdf = {https://arxiv.org/pdf/1903.12436},\n    url = {https://arxiv.org/abs/1903.12436}\n}",
+  "source": "arxiv.org",
+  "date": 1554959369,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.12436"
+}
