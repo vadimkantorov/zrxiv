@@ -235,7 +235,7 @@
 						});
 						const [urls_bib, urls_arxiv] = [urls.filter(u => u.endsWith('.bib')), urls.filter(u => u.includes('arxiv.org'))];
 						const docs_arxiv = await Promise.all(urls_arxiv.map(import_doc_by_url));
-						const docs_bib = (await Promise.all(await Promise.all(urls_bib.map(u => fetch(u))).map(res => res.text()))).map(parse_docs);
+						const docs_bib = (await Promise.all((await Promise.all(urls_bib.map(u => fetch(u)))).map(res => res.text()))).map(parse_docs);
 						const docs = docs_bib.concat([docs_arxiv]);
 						return [].concat.apply([], docs);
 					}
