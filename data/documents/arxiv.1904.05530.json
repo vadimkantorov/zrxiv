@@ -1,0 +1,18 @@
+{
+  "title": "Recurrent Event Network for Reasoning over Temporal Knowledge Graphs",
+  "authors": [
+    "Woojeong Jin",
+    "Changlin Zhang",
+    "Pedro Szekely",
+    "Xiang Ren"
+  ],
+  "abstract": "Recently, there has been a surge of interest in learning representation of\ngraph-structured data that are dynamically evolving. However, current dynamic\ngraph learning methods lack a principled way in modeling temporal,\nmulti-relational, and concurrent interactions between nodes---a limitation that\nis especially problematic for the task of temporal knowledge graph reasoning,\nwhere the goal is to predict unseen entity relationships (i.e., events) over\ntime. Here we present Recurrent Event Network (\\method)---an architecture for\nmodeling complex event sequences---which consists of a recurrent event encoder\nand a neighborhood aggregator. The event encoder employs a RNN to capture\n(subject, relation)-specific patterns from historical entity interactions;\nwhile the neighborhood aggregator summarizes concurrent interactions within\neach time stamp. An output layer is designed for predicting forthcoming,\nmulti-relational events. Experiments on temporal link prediction over two\nknowledge graph datasets demonstrate the effectiveness of our method,\nespecially on multi-step inference over time.",
+  "id": "arxiv.1904.05530",
+  "url": "https://arxiv.org/abs/1904.05530",
+  "pdf": "https://arxiv.org/pdf/1904.05530",
+  "bibtex": "@misc{jin2019_arxiv:1904.05530,\n    title = {Recurrent Event Network for Reasoning over Temporal Knowledge Graphs},\n    author = {Woojeong Jin and Changlin Zhang and Pedro Szekely and Xiang Ren},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.05530},\n    pdf = {https://arxiv.org/pdf/1904.05530},\n    url = {https://arxiv.org/abs/1904.05530}\n}",
+  "source": "arxiv.org",
+  "date": 1555333927,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.05530"
+}
