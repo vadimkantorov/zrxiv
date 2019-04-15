@@ -1,0 +1,15 @@
+{
+  "title": "Policy Guided Monte Carlo: Reinforcement Learning Markov Chain Dynamics",
+  "authors": [
+    "Troels Arnfred Bojesen"
+  ],
+  "abstract": "We introduce \\textit{Policy Guided Monte Carlo} (PGMC), a computational\nframework using reinforcement learning to improve Markov chain Monte Carlo\n(MCMC) sampling. The methodology is generally applicable, unbiased and opens up\na new path to automated discovery of efficient MCMC samplers. After developing\na general theory, we demonstrate some of PGMC's prospects on an Ising model on\nthe kagome lattice, including when the model is in its computationally\nchallenging kagome spin ice regime. Here, we show that PGMC is able to\nautomatically machine learn efficient MCMC updates without a priori knowledge\nof the physics at hand.",
+  "id": "arxiv.1808.09095",
+  "url": "https://arxiv.org/abs/1808.09095",
+  "pdf": "https://arxiv.org/pdf/1808.09095",
+  "bibtex": "@misc{bojesen2018_arxiv:1808.09095,\n    title = {Policy Guided Monte Carlo: Reinforcement Learning Markov Chain Dynamics},\n    author = {Troels Arnfred Bojesen},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1808.09095},\n    pdf = {https://arxiv.org/pdf/1808.09095},\n    url = {https://arxiv.org/abs/1808.09095}\n}",
+  "source": "arxiv.org",
+  "date": 1555319861,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1808.09095"
+}
