@@ -1,0 +1,17 @@
+{
+  "title": "Inferring the quantum density matrix with machine learning",
+  "authors": [
+    "Kyle Cranmer",
+    "Siavash Golkar",
+    "Duccio Pappadopulo"
+  ],
+  "abstract": "We introduce two methods for estimating the density matrix for a quantum\nsystem: Quantum Maximum Likelihood and Quantum Variational Inference. In these\nmethods, we construct a variational family to model the density matrix of a\nmixed quantum state. We also introduce quantum flows, the quantum analog of\nnormalizing flows, which can be used to increase the expressivity of this\nvariational family. The eigenstates and eigenvalues of interest are then\nderived by optimizing an appropriate loss function. The approach is\nqualitatively different than traditional lattice techniques that rely on the\ntime dependence of correlation functions that summarize the lattice\nconfigurations. The resulting estimate of the density matrix can then be used\nto evaluate the expectation of an arbitrary operator, which opens the door to\nnew possibilities.",
+  "id": "arxiv.1904.05903",
+  "url": "https://arxiv.org/abs/1904.05903",
+  "pdf": "https://arxiv.org/pdf/1904.05903",
+  "bibtex": "@misc{cranmer2019_arxiv:1904.05903,\n    title = {Inferring the quantum density matrix with machine learning},\n    author = {Kyle Cranmer and Siavash Golkar and Duccio Pappadopulo},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.05903},\n    pdf = {https://arxiv.org/pdf/1904.05903},\n    url = {https://arxiv.org/abs/1904.05903}\n}",
+  "source": "arxiv.org",
+  "date": 1555319979,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.05903"
+}
