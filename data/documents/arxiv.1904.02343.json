@@ -1,0 +1,18 @@
+{
+  "title": "Density Matching for Bilingual Word Embedding",
+  "authors": [
+    "Chunting Zhou",
+    "Xuezhe Ma",
+    "Di Wang",
+    "Graham Neubig"
+  ],
+  "abstract": "Recent approaches to cross-lingual word embedding have generally been based\non linear transformations between the sets of embedding vectors in the two\nlanguages. In this paper, we propose an approach that instead expresses the two\nmonolingual embedding spaces as probability densities defined by a Gaussian\nmixture model, and matches the two densities using a method called normalizing\nflow. The method requires no explicit supervision, and can be learned with only\na seed dictionary of words that have identical strings. We argue that this\nformulation has several intuitively attractive properties, particularly with\nthe respect to improving robustness and generalization to mappings between\ndifficult language pairs or word pairs. On a benchmark data set of bilingual\nlexicon induction and cross-lingual word similarity, our approach can achieve\ncompetitive or superior performance compared to state-of-the-art published\nresults, with particularly strong results being found on etymologically distant\nand/or morphologically rich languages.",
+  "id": "arxiv.1904.02343",
+  "url": "https://arxiv.org/abs/1904.02343",
+  "pdf": "https://arxiv.org/pdf/1904.02343",
+  "bibtex": "@misc{zhou2019_arxiv:1904.02343,\n    title = {Density Matching for Bilingual Word Embedding},\n    author = {Chunting Zhou and Xuezhe Ma and Di Wang and Graham Neubig},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.02343},\n    pdf = {https://arxiv.org/pdf/1904.02343},\n    url = {https://arxiv.org/abs/1904.02343}\n}",
+  "source": "arxiv.org",
+  "date": 1555360204,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.02343"
+}
