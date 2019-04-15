@@ -43,9 +43,8 @@
 			#zrxiv_docs {margin: 0px; list-style:none; padding:0 !important; margin-top: 1em !important}
 			li {padding:6px 13px; padding-left: 20px; border:1px solid #dfe2e5; margin:0px !important}
 			li:last-child {border-bottom:1px solid #dfe2e5}
-			.doc-even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
-			.doc-deleted {background-color: orangered !important }
-			
+			.doc_even {background-color:#f6f8fa; border-top:0px; border-bottom:0px}
+						
 			.tags-header {display:flex; flex-wrap: wrap; }
 			#zrxiv_doc_header>div {display:flex}
 			#zrxiv_doc_header {background-color: #dfe2e5}
@@ -93,6 +92,7 @@
 				/*.bibtex_copy {font-size: smaller}*/
 				.bibtex_copy::after { content: " | " }
 				li {padding-right: 0px;}
+				.doc_even {background-color: initial}
 			}
 			
 			#searchbox label {
@@ -140,7 +140,7 @@
 			    </li>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
-				<li class="doc {% cycle '', 'doc-even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}">
+				<li class="doc {% cycle '', 'doc_even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}">
 					<div>
 <div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 <div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
@@ -366,9 +366,9 @@
 				document.querySelectorAll('.doc.filtered').forEach((li, row_index) =>
 				{
 					if(row_index % 2 == 1)
-						li.classList.add('doc-even');
+						li.classList.add('doc_even');
 					else
-						li.classList.remove('doc-even');
+						li.classList.remove('doc_even');
 					li.style.display = 'flex';
 				});
 				update_docs_header(selector != '', selector != '');
