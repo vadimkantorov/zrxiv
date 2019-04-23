@@ -1,0 +1,18 @@
+{
+  "title": "Learning Discrete Structures for Graph Neural Networks",
+  "authors": [
+    "Luca Franceschi",
+    "Mathias Niepert",
+    "Massimiliano Pontil",
+    "Xiao He"
+  ],
+  "abstract": "Graph neural networks (GNNs) are a popular class of machine learning models\nwhose major advantage is their ability to incorporate a sparse and discrete\ndependency structure between data points. Unfortunately, GNNs can only be used\nwhen such a graph-structure is available. In practice, however, real-world\ngraphs are often noisy and incomplete or might not be available at all. With\nthis work, we propose to jointly learn the graph structure and the parameters\nof graph convolutional networks (GCNs) by approximately solving a bilevel\nprogram that learns a discrete probability distribution on the edges of the\ngraph. This allows one to apply GCNs not only in scenarios where the given\ngraph is incomplete or corrupted but also in those where a graph is not\navailable. We conduct a series of experiments that analyze the behavior of the\nproposed method and demonstrate that it outperforms related methods by a\nsignificant margin.",
+  "id": "arxiv.1903.11960",
+  "url": "https://arxiv.org/abs/1903.11960",
+  "pdf": "https://arxiv.org/pdf/1903.11960",
+  "bibtex": "@misc{franceschi2019_arxiv:1903.11960,\n    title = {Learning Discrete Structures for Graph Neural Networks},\n    author = {Luca Franceschi and Mathias Niepert and Massimiliano Pontil and Xiao He},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.11960},\n    pdf = {https://arxiv.org/pdf/1903.11960},\n    url = {https://arxiv.org/abs/1903.11960}\n}",
+  "source": "arxiv.org",
+  "date": 1556051422,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.11960"
+}
