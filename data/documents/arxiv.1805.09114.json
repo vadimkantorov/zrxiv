@@ -1,0 +1,19 @@
+{
+  "title": "Optimal Transport for structured data with application on graphs",
+  "authors": [
+    "Titouan Vayer",
+    "Laetitia Chapel",
+    "Rémi Flamary",
+    "Romain Tavenard",
+    "Nicolas Courty"
+  ],
+  "abstract": "This work considers the problem of computing distances between structured\nobjects such as undirected graphs, seen as probability distributions in a\nspecific metric space. We consider a new transportation distance (i.e. that\nminimizes a total cost of transporting probability masses) that unveils the\ngeometric nature of the structured objects space. Unlike Wasserstein or\nGromov-Wasserstein metrics that focus solely and respectively on features (by\nconsidering a metric in the feature space) or structure (by seeing structure as\na metric space), our new distance exploits jointly both information, and is\nconsequently called Fused Gromov-Wasserstein (FGW). After discussing its\nproperties and computational aspects, we show results on a graph classification\ntask, where our method outperforms both graph kernels and deep graph\nconvolutional networks. Exploiting further on the metric properties of FGW,\ninteresting geometric objects such as Fréchet means or barycenters of graphs\nare illustrated and discussed in a clustering context.",
+  "id": "arxiv.1805.09114",
+  "url": "https://arxiv.org/abs/1805.09114",
+  "pdf": "https://arxiv.org/pdf/1805.09114",
+  "bibtex": "@misc{vayer2018_arxiv:1805.09114,\n    title = {Optimal Transport for structured data with application on graphs},\n    author = {Titouan Vayer and Laetitia Chapel and Rémi Flamary and Romain Tavenard and Nicolas Courty},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.09114},\n    pdf = {https://arxiv.org/pdf/1805.09114},\n    url = {https://arxiv.org/abs/1805.09114}\n}",
+  "source": "arxiv.org",
+  "date": 1556009497,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1805.09114"
+}
