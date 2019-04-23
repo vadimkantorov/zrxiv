@@ -1,0 +1,16 @@
+{
+  "title": "Autoregressive Energy Machines",
+  "authors": [
+    "Charlie Nash",
+    "Conor Durkan"
+  ],
+  "abstract": "Neural density estimators are flexible families of parametric models which\nhave seen widespread use in unsupervised machine learning in recent years.\nMaximum-likelihood training typically dictates that these models be constrained\nto specify an explicit density. However, this limitation can be overcome by\ninstead using a neural network to specify an energy function, or unnormalized\ndensity, which can subsequently be normalized to obtain a valid distribution.\nThe challenge with this approach lies in accurately estimating the normalizing\nconstant of the high-dimensional energy function. We propose the Autoregressive\nEnergy Machine, an energy-based model which simultaneously learns an\nunnormalized density and computes an importance-sampling estimate of the\nnormalizing constant for each conditional in an autoregressive decomposition.\nThe Autoregressive Energy Machine achieves state-of-the-art performance on a\nsuite of density-estimation tasks.",
+  "id": "arxiv.1904.05626",
+  "url": "https://arxiv.org/abs/1904.05626",
+  "pdf": "https://arxiv.org/pdf/1904.05626",
+  "bibtex": "@misc{nash2019_arxiv:1904.05626,\n    title = {Autoregressive Energy Machines},\n    author = {Charlie Nash and Conor Durkan},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.05626},\n    pdf = {https://arxiv.org/pdf/1904.05626},\n    url = {https://arxiv.org/abs/1904.05626}\n}",
+  "source": "arxiv.org",
+  "date": 1556012827,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.05626"
+}
