@@ -1,0 +1,30 @@
+{
+  "title": "Deep reinforcement learning with relational inductive biases",
+  "authors": [
+    "Vinicius Zambaldi",
+    "David Raposo",
+    "Adam Santoro",
+    "Victor Bapst",
+    "Yujia Li",
+    "Igor Babuschkin",
+    "Karl Tuyls",
+    "David Reichert",
+    "Timothy Lillicrap",
+    "Edward Lockhart",
+    "Murray Shanahan",
+    "Victoria Langston",
+    "Razvan Pascanu",
+    "Matthew Botvinick",
+    "Oriol Vinyals",
+    "Peter Battaglia"
+  ],
+  "abstract": "We introduce an approach for augmenting model-free deep reinforcement learning agents with a mechanism for relational reasoning over structured representations, which improves performance, learning efficiency, generalization, and interpretability. Our architecture encodes an image as a set of vectors, and applies an iterative message-passing procedure to discover and reason about relevant entities and relations in a scene. In six of seven StarCraft II Learning Environment mini-games, our agent achieved state-of-the-art performance, and surpassed human grandmaster-level on four. In a novel navigation and planning task, our agent's performance and learning efficiency far exceeded non-relational baselines, it was able to generalize to more complex scenes than it had experienced during training. Moreover, when we examined its learned internal representations, they reflected important structure about the problem and the agent's intentions. The main contribution of this work is to introduce techniques for representing and reasoning about states in model-free deep reinforcement learning agents via relational inductive biases. Our experiments show this approach can offer advantages in efficiency, generalization, and interpretability, and can scale up to meet some of the most challenging test environments in modern artificial intelligence.",
+  "id": "openreview.HkxaFoC9KQ",
+  "url": "https://openreview.net/forum?id=HkxaFoC9KQ",
+  "pdf": "https://openreview.net/pdf?id=HkxaFoC9KQ",
+  "bibtex": "@inproceedings{zambaldi2018deep,\n    title = {Deep reinforcement learning with relational inductive biases},\n    author = {Vinicius Zambaldi and David Raposo and Adam Santoro and Victor Bapst and Yujia Li and Igor Babuschkin and Karl Tuyls and David Reichert and Timothy Lillicrap and Edward Lockhart and Murray Shanahan and Victoria Langston and Razvan Pascanu and Matthew Botvinick and Oriol Vinyals and Peter Battaglia},\n    booktitle = {International Conference on Learning Representations},\n    year = {2019},\n    pdf = {https://openreview.net/pdf?id=HkxaFoC9KQ},\n    url = {https://openreview.net/forum?id=HkxaFoC9KQ}\n}",
+  "source": "openreview.net",
+  "date": 1556068365,
+  "tags": [],
+  "api": "https://openreview.net/notes?id=HkxaFoC9KQ"
+}
