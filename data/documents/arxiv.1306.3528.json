@@ -1,0 +1,16 @@
+{
+  "title": "A Continuum Generalization of the Ising Model",
+  "authors": [
+    "Haley A. Yaple",
+    "Daniel M. Abrams"
+  ],
+  "abstract": "The Lenz-Ising model has served for almost a century as a basis for\nunderstanding ferromagnetism, and has become a paradigmatic model for phase\ntransitions in statistical mechanics. While retaining the Ising energy\narguments, we use techniques previously applied to sociophysics to propose a\ncontinuum model. Our formulation results in an integro-differential equation\nthat has several advantages over the traditional version: it allows for\nasymptotic analysis of phase transitions, material properties, and the dynamics\nof the formation of magnetic domains.",
+  "id": "arxiv.1306.3528",
+  "url": "https://arxiv.org/abs/1306.3528",
+  "pdf": "https://arxiv.org/pdf/1306.3528",
+  "bibtex": "@misc{yaple2013_arxiv:1306.3528,\n    title = {A Continuum Generalization of the Ising Model},\n    author = {Haley A. Yaple and Daniel M. Abrams},\n    year = {2013},\n    archiveprefix = {arXiv},\n    eprint = {1306.3528},\n    pdf = {https://arxiv.org/pdf/1306.3528},\n    url = {https://arxiv.org/abs/1306.3528}\n}",
+  "source": "arxiv.org",
+  "date": 1556155465,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1306.3528"
+}
