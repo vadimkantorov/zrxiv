@@ -1,0 +1,20 @@
+{
+  "title": "Iterative Reinforcement Learning Based Design of Dynamic Locomotion Skills for Cassie",
+  "authors": [
+    "Zhaoming Xie",
+    "Patrick Clary",
+    "Jeremy Dao",
+    "Pedro Morais",
+    "Jonathan Hurst",
+    "Michiel van de Panne"
+  ],
+  "abstract": "Deep reinforcement learning (DRL) is a promising approach for developing\nlegged locomotion skills. However, the iterative design process that is\ninevitable in practice is poorly supported by the default methodology. It is\ndifficult to predict the outcomes of changes made to the reward functions,\npolicy architectures, and the set of tasks being trained on. In this paper, we\npropose a practical method that allows the reward function to be fully\nredefined on each successive design iteration while limiting the deviation from\nthe previous iteration. We characterize policies via sets of Deterministic\nAction Stochastic State (DASS) tuples, which represent the deterministic policy\nstate-action pairs as sampled from the states visited by the trained stochastic\npolicy. New policies are trained using a policy gradient algorithm which then\nmixes RL-based policy gradients with gradient updates defined by the DASS\ntuples. The tuples also allow for robust policy distillation to new network\narchitectures. We demonstrate the effectiveness of this iterative-design\napproach on the bipedal robot Cassie, achieving stable walking with different\ngait styles at various speeds. We demonstrate the successful transfer of\npolicies learned in simulation to the physical robot without any dynamics\nrandomization, and that variable-speed walking policies for the physical robot\ncan be represented by a small dataset of 5-10k tuples.",
+  "id": "arxiv.1903.09537",
+  "url": "https://arxiv.org/abs/1903.09537",
+  "pdf": "https://arxiv.org/pdf/1903.09537",
+  "bibtex": "@misc{xie2019_arxiv:1903.09537,\n    title = {Iterative Reinforcement Learning Based Design of Dynamic Locomotion Skills for Cassie},\n    author = {Zhaoming Xie and Patrick Clary and Jeremy Dao and Pedro Morais and Jonathan Hurst and Michiel van de Panne},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.09537},\n    pdf = {https://arxiv.org/pdf/1903.09537},\n    url = {https://arxiv.org/abs/1903.09537}\n}",
+  "source": "arxiv.org",
+  "date": 1556292583,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.09537"
+}
