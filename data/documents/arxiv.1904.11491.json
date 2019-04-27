@@ -1,0 +1,18 @@
+{
+  "title": "Local Relation Networks for Image Recognition",
+  "authors": [
+    "Han Hu",
+    "Zheng Zhang",
+    "Zhenda Xie",
+    "Stephen Lin"
+  ],
+  "abstract": "The convolution layer has been the dominant feature extractor in computer\nvision for years. However, the spatial aggregation in convolution is basically\na pattern matching process that applies fixed filters which are inefficient at\nmodeling visual elements with varying spatial distributions. This paper\npresents a new image feature extractor, called the local relation layer, that\nadaptively determines aggregation weights based on the compositional\nrelationship of local pixel pairs. With this relational approach, it can\ncomposite visual elements into higher-level entities in a more efficient manner\nthat benefits semantic inference. A network built with local relation layers,\ncalled the Local Relation Network (LR-Net), is found to provide greater\nmodeling capacity than its counterpart built with regular convolution on\nlarge-scale recognition tasks such as ImageNet classification.",
+  "id": "arxiv.1904.11491",
+  "url": "https://arxiv.org/abs/1904.11491",
+  "pdf": "https://arxiv.org/pdf/1904.11491",
+  "bibtex": "@misc{hu2019_arxiv:1904.11491,\n    title = {Local Relation Networks for Image Recognition},\n    author = {Han Hu and Zheng Zhang and Zhenda Xie and Stephen Lin},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.11491},\n    pdf = {https://arxiv.org/pdf/1904.11491},\n    url = {https://arxiv.org/abs/1904.11491}\n}",
+  "source": "arxiv.org",
+  "date": 1556382337,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.11491"
+}
