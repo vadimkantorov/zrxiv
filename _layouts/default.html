@@ -127,7 +127,7 @@
 		<textarea id="bibtex_copy_area"></textarea>
 		<div class="container-lg px-3 my-5 markdown-body">
 			<h1><a href="" title="Page [{{ tag }}] updated at {{ site.time | date: "%Y, %B %-d, %H:%M GMT" }}">ℤrxiv</a> for  {{ site.github.owner_name | xml_escape }}<span id="subtitles"><a href="{{ tag }}.bib" class="subtitle-unchecked" download>{{tag }}.bib</a><a href="{{ tag }}.json" class="subtitle-unchecked">.json</a><a href="{{ tag | xml_escape }}.txt" class="subtitle-unchecked">.txt</a><a href="{{ tag_xml }}.xml" class="subtitle-unchecked">.rss</a></span></h1>
-			<div class="tags-header" data-selected=""><a href="" class="tag_special" id="tag_recent">🏠recent</a><a href="all" class="tag_special" id="tag_all">📚all</a><a href="import" class="tag_special" id="tag_import">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ sortedtag }}" class="tag" id="tag_{{ sortedtag }}">{{ sortedtag }}</a>{% endfor %}<div id="searchbox"><form action="."><label><input id="filter_area" type="text" name="search" placeholder="Filter" onkeyup="return click_filter(event)"></input></label></form></div></div>
+			<div class="tags-header" data-selected=""><a href="" class="tag_special" id="tag_recent">🏠recent</a><a href="all" class="tag_special" id="tag_all">📚all</a><a href="import" class="tag_special" id="tag_import">📥import</a>{% for sortedtag in sortedtags %}<a href="{{ sortedtag }}" class="tag" id="tag_{{ sortedtag }}" data-id-qualified="{{ sortedtag }}/">{{ sortedtag }}</a>{% endfor %}<div id="searchbox"><form action="."><label><input id="filter_area" type="text" name="search" placeholder="Filter" onkeyup="return click_filter(event)"></input></label></form></div></div>
 			
 			<div id="import_form">
 				<textarea id="import_area" placeholder="Paste or upload here BibTeX, BibTeX URL list, arXiv ID list or URL list"></textarea>
@@ -140,7 +140,7 @@
 			    </li>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
-				<li class="doc {% cycle '', 'doc_even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}">
+				<li class="doc {% cycle '', 'doc_even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}" data-id-qualified="{% if tag != "recent" and tag != "all" %}{{ tag }}{% endif %}/{{ doc.id }}">
 					<div>
 <div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 <div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
