@@ -1,0 +1,19 @@
+{
+  "title": "GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond",
+  "authors": [
+    "Yue Cao",
+    "Jiarui Xu",
+    "Stephen Lin",
+    "Fangyun Wei",
+    "Han Hu"
+  ],
+  "abstract": "The Non-Local Network (NLNet) presents a pioneering approach for capturing\nlong-range dependencies, via aggregating query-specific global context to each\nquery position. However, through a rigorous empirical analysis, we have found\nthat the global contexts modeled by non-local network are almost the same for\ndifferent query positions within an image. In this paper, we take advantage of\nthis finding to create a simplified network based on a query-independent\nformulation, which maintains the accuracy of NLNet but with significantly less\ncomputation. We further observe that this simplified design shares similar\nstructure with Squeeze-Excitation Network (SENet). Hence we unify them into a\nthree-step general framework for global context modeling. Within the general\nframework, we design a better instantiation, called the global context (GC)\nblock, which is lightweight and can effectively model the global context. The\nlightweight property allows us to apply it for multiple layers in a backbone\nnetwork to construct a global context network (GCNet), which generally\noutperforms both simplified NLNet and SENet on major benchmarks for various\nrecognition tasks. The code and configurations are released at\nhttps://github.com/xvjiarui/GCNet.",
+  "id": "arxiv.1904.11492",
+  "url": "https://arxiv.org/abs/1904.11492",
+  "pdf": "https://arxiv.org/pdf/1904.11492",
+  "bibtex": "@misc{cao2019_arxiv:1904.11492,\n    title = {GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond},\n    author = {Yue Cao and Jiarui Xu and Stephen Lin and Fangyun Wei and Han Hu},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.11492},\n    pdf = {https://arxiv.org/pdf/1904.11492},\n    url = {https://arxiv.org/abs/1904.11492}\n}",
+  "source": "arxiv.org",
+  "date": 1556452490,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.11492"
+}
