@@ -1,0 +1,20 @@
+{
+  "title": "Neural Logic Machines",
+  "authors": [
+    "Honghua Dong",
+    "Jiayuan Mao",
+    "Tian Lin",
+    "Chong Wang",
+    "Lihong Li",
+    "Denny Zhou"
+  ],
+  "abstract": "We propose the Neural Logic Machine (NLM), a neural-symbolic architecture for\nboth inductive learning and logic reasoning. NLMs exploit the power of both\nneural networks---as function approximators, and logic programming---as a\nsymbolic processor for objects with properties, relations, logic connectives,\nand quantifiers. After being trained on small-scale tasks (such as sorting\nshort arrays), NLMs can recover lifted rules, and generalize to large-scale\ntasks (such as sorting longer arrays). In our experiments, NLMs achieve perfect\ngeneralization in a number of tasks, from relational reasoning tasks on the\nfamily tree and general graphs, to decision making tasks including sorting\narrays, finding shortest paths, and playing the blocks world. Most of these\ntasks are hard to accomplish for neural networks or inductive logic programming\nalone.",
+  "id": "arxiv.1904.11694",
+  "url": "https://arxiv.org/abs/1904.11694",
+  "pdf": "https://arxiv.org/pdf/1904.11694",
+  "bibtex": "@misc{dong2019_arxiv:1904.11694,\n    title = {Neural Logic Machines},\n    author = {Honghua Dong and Jiayuan Mao and Tian Lin and Chong Wang and Lihong Li and Denny Zhou},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.11694},\n    pdf = {https://arxiv.org/pdf/1904.11694},\n    url = {https://arxiv.org/abs/1904.11694}\n}",
+  "source": "arxiv.org",
+  "date": 1556532308,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.11694"
+}
