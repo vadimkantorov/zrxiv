@@ -1,0 +1,18 @@
+{
+  "title": "Dynamic Monte Carlo algorithm for out-of-equilibrium processes in colloidal dispersions",
+  "authors": [
+    "Daniel Corbett",
+    "Alejandro Cuetos",
+    "Matthew Dennison",
+    "Alessandro Patti"
+  ],
+  "abstract": "Colloids have a striking relevance in a wide spectrum of industrial\nformulations, spanning from personal care products to protective paints. Their\nbehaviour can be easily influenced by extremely weak forces, which disturb\ntheir thermodynamic equilibrium and dramatically determine their performance.\nMotivated by the impact of colloidal dispersions in fundamental science and\nformulation engineering, we have designed an efficient Dynamic Monte Carlo\n(DMC) approach to mimic their out-of-equilibrium dynamics. Our recent theory,\nwhich provided a rigorous method to reproduce the Brownian motion of colloids\nby MC simulations, is here generalised to reproduce the Brownian motion of\ncolloidal particles during transitory unsteady states, when their thermodynamic\nequilibrium is significantly modified. To this end, we investigate monodisperse\nand bidisperse rod-like particles in the isotropic phase and apply an external\nfield that forces their reorientation along a common direction and induces an\nisotropic-to-nematic phase transition. We also study the behaviour of the\nsystem once the external field is removed. Our simulations are in excellent\nquantitative agreement with Brownian Dynamics simulations when the DMC results\nare rescaled with a time-dependent acceptance ratio, which depends on the\nstrength of the applied field. Further generalising our DMC algorithm to\nprocesses displaying significant density fluctuations, such as nucleation and\ngrowth, where the MC acceptance ratio is expected to depend on both time and\nspace, is currently under investigation.",
+  "id": "arxiv.1804.07578",
+  "url": "https://arxiv.org/abs/1804.07578",
+  "pdf": "https://arxiv.org/pdf/1804.07578",
+  "bibtex": "@misc{corbett2018_arxiv:1804.07578,\n    title = {Dynamic Monte Carlo algorithm for out-of-equilibrium processes in colloidal dispersions},\n    author = {Daniel Corbett and Alejandro Cuetos and Matthew Dennison and Alessandro Patti},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1804.07578},\n    pdf = {https://arxiv.org/pdf/1804.07578},\n    url = {https://arxiv.org/abs/1804.07578}\n}",
+  "source": "arxiv.org",
+  "date": 1556537924,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1804.07578"
+}
