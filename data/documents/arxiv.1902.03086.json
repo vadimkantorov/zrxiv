@@ -1,0 +1,16 @@
+{
+  "title": "Affine Invariant Covariance Estimation for Heavy-Tailed Distributions",
+  "authors": [
+    "Dmitrii Ostrovskii",
+    "Alessandro Rudi"
+  ],
+  "abstract": "In this work we provide an estimator for the covariance matrix of a\nheavy-tailed random vector. We prove that the proposed estimator\n$\\widehat{\\mathbf{S}}$ admits \\textit{affine-invariant} bounds of the form\n$$(1-\\varepsilon) \\mathbf{S} \\preccurlyeq \\widehat{\\mathbf{S}} \\preccurlyeq\n(1+\\varepsilon) \\mathbf{S}$$in high probability, where $\\mathbf{S}$ is the\nunknown covariance matrix, and $\\preccurlyeq$ is the positive semidefinite\norder on symmetric matrices. The result only requires the existence of\nfourth-order moments, and allows for $\\varepsilon = O(\\sqrt{κ^4 d/n})$\nwhere $κ^4$ is some measure of kurtosis of the distribution, $d$ is the\ndimensionality of the space, and $n$ is the sample size. More generally, we can\nallow for regularization with level~$λ$, then $\\varepsilon$ depends on\nthe degrees of freedom number which is generally smaller than $d$. The\ncomputational cost of the proposed estimator is essentially~$O(d^2 n + d^3)$,\ncomparable to the computational cost of the sample covariance matrix in the\nstatistically interesting regime~$n \\gg d$. Its applications to eigenvalue\nestimation with relative error and to ridge regression with heavy-tailed random\ndesign are discussed.",
+  "id": "arxiv.1902.03086",
+  "url": "https://arxiv.org/abs/1902.03086",
+  "pdf": "https://arxiv.org/pdf/1902.03086",
+  "bibtex": "@misc{ostrovskii2019_arxiv:1902.03086,\n    title = {Affine Invariant Covariance Estimation for Heavy-Tailed Distributions},\n    author = {Dmitrii Ostrovskii and Alessandro Rudi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.03086},\n    pdf = {https://arxiv.org/pdf/1902.03086},\n    url = {https://arxiv.org/abs/1902.03086}\n}",
+  "source": "arxiv.org",
+  "date": 1556530250,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1902.03086?fbclid=IwAR19ZUgWP_Y5D28Te_mOmX18dXYFTkLeqPpvZu9VYQkTJsyQDx6shTJczEk"
+}
