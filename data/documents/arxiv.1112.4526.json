@@ -1,0 +1,17 @@
+{
+  "title": "Mysteries around the graph Laplacian eigenvalue 4",
+  "authors": [
+    "Yuji Nakatsukasa",
+    "Naoki Saito",
+    "Ernest Woei"
+  ],
+  "abstract": "We describe our current understanding on the phase transition phenomenon of\nthe graph Laplacian eigenvectors constructed on a certain type of unweighted\ntrees, which we previously observed through our numerical experiments. The\neigenvalue distribution for such a tree is a smooth bell-shaped curve starting\nfrom the eigenvalue 0 up to 4. Then, at the eigenvalue 4, there is a sudden\njump. Interestingly, the eigenvectors corresponding to the eigenvalues below 4\nare semi-global oscillations (like Fourier modes) over the entire tree or one\nof the branches; on the other hand, those corresponding to the eigenvalues\nabove 4 are much more localized and concentrated (like wavelets) around\njunctions/branching vertices. For a special class of trees called starlike\ntrees, we obtain a complete understanding of such phase transition phenomenon.\nFor a general graph, we prove the number of the eigenvalues larger than 4 is\nbounded from above by the number of vertices whose degrees is strictly higher\nthan 2. Moreover, we also prove that if a graph contains a branching path, then\nthe magnitudes of the components of any eigenvector corresponding to the\neigenvalue greater than 4 decay exponentially from the branching vertex toward\nthe leaf of that branch.",
+  "id": "arxiv.1112.4526",
+  "url": "https://arxiv.org/abs/1112.4526",
+  "pdf": "https://arxiv.org/pdf/1112.4526",
+  "bibtex": "@misc{nakatsukasa2011_arxiv:1112.4526,\n    title = {Mysteries around the graph Laplacian eigenvalue 4},\n    author = {Yuji Nakatsukasa and Naoki Saito and Ernest Woei},\n    year = {2011},\n    archiveprefix = {arXiv},\n    eprint = {1112.4526},\n    pdf = {https://arxiv.org/pdf/1112.4526},\n    url = {https://arxiv.org/abs/1112.4526}\n}",
+  "source": "arxiv.org",
+  "date": 1556573453,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1112.4526"
+}
