@@ -1,0 +1,23 @@
+{
+  "title": "Meta-Sim: Learning to Generate Synthetic Datasets",
+  "authors": [
+    "Amlan Kar",
+    "Aayush Prakash",
+    "Ming-Yu Liu",
+    "Eric Cameracci",
+    "Justin Yuan",
+    "Matt Rusiniak",
+    "David Acuna",
+    "Antonio Torralba",
+    "Sanja Fidler"
+  ],
+  "abstract": "Training models to high-end performance requires availability of large\nlabeled datasets, which are expensive to get. The goal of our work is to\nautomatically synthesize labeled datasets that are relevant for a downstream\ntask. We propose Meta-Sim, which learns a generative model of synthetic scenes,\nand obtain images as well as its corresponding ground-truth via a graphics\nengine. We parametrize our dataset generator with a neural network, which\nlearns to modify attributes of scene graphs obtained from probabilistic scene\ngrammars, so as to minimize the distribution gap between its rendered outputs\nand target data. If the real dataset comes with a small labeled validation set,\nwe additionally aim to optimize a meta-objective, i.e. downstream task\nperformance. Experiments show that the proposed method can greatly improve\ncontent generation quality over a human-engineered probabilistic scene grammar,\nboth qualitatively and quantitatively as measured by performance on a\ndownstream task.",
+  "id": "arxiv.1904.11621",
+  "url": "https://arxiv.org/abs/1904.11621",
+  "pdf": "https://arxiv.org/pdf/1904.11621",
+  "bibtex": "@misc{kar2019_arxiv:1904.11621,\n    title = {Meta-Sim: Learning to Generate Synthetic Datasets},\n    author = {Amlan Kar and Aayush Prakash and Ming-Yu Liu and Eric Cameracci and Justin Yuan and Matt Rusiniak and David Acuna and Antonio Torralba and Sanja Fidler},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.11621},\n    pdf = {https://arxiv.org/pdf/1904.11621},\n    url = {https://arxiv.org/abs/1904.11621}\n}",
+  "source": "arxiv.org",
+  "date": 1556577644,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.11621"
+}
