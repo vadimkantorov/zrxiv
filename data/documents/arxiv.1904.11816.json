@@ -1,0 +1,16 @@
+{
+  "title": "Think Again Networks, the Delta Loss, and an Application in Language Modeling",
+  "authors": [
+    "Alexandre Salle",
+    "Marcelo Prates"
+  ],
+  "abstract": "This short paper introduces an abstraction called Think Again Networks\n(ThinkNet) which can be applied to any state-dependent function (such as a\nrecurrent neural network). Here we show a simple application in Language\nModeling which achieves state of the art perplexity on the Penn Treebank.",
+  "id": "arxiv.1904.11816",
+  "url": "https://arxiv.org/abs/1904.11816",
+  "pdf": "https://arxiv.org/pdf/1904.11816",
+  "bibtex": "@misc{salle2019_arxiv:1904.11816,\n    title = {Think Again Networks, the Delta Loss, and an Application in Language Modeling},\n    author = {Alexandre Salle and Marcelo Prates},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.11816},\n    pdf = {https://arxiv.org/pdf/1904.11816},\n    url = {https://arxiv.org/abs/1904.11816}\n}",
+  "source": "arxiv.org",
+  "date": 1556641519,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.11816"
+}
