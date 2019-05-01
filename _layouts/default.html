@@ -51,11 +51,12 @@
 			
 			.date {display: flex; justify-content:flex-end; }
 			.doc>div {display: flex; flex-direction:column}
-			.doc {display:flex; flex-direction:row}
+			.doc {flex-direction:row}
+			.docdisplay {display: flex}
 			.doc>div:first-child {flex-grow: 1}
 			
 			.doc .tag {font-size: small}
-			
+						
 			.tag_special {color:red; margin-right: 2pt}
 			.tag {color:red; }
 			.tag::before {content: "#"}
@@ -140,7 +141,7 @@
 			    </li>
 				{% for doc in docs %}
 				{% assign lastnames = "" | split: "," %}{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}{% assign lastnames = lastnames | push: lastname %}{% endfor %}
-				<li class="doc {% cycle '', 'doc_even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}" data-id-qualified="{% if tag != "recent" and tag != "all" %}{{ tag }}{% endif %}/{{ doc.id }}">
+				<li class="doc docdisplay {% cycle '', 'doc_even' %}" data-authors="{{ lastnames | join: ' ' | downcase }}" data-tags="{{ doc.tags | join: ' ' | downcase }} {{ doc.source | downcase }} {{ doc.date | date: "%Y-%m-%d" }}" data-title="{{ doc.title | strip | strip_html | downcase | escape }}" data-id="{{ doc.id }}" data-id-qualified="{% if tag != "recent" and tag != "all" %}{{ tag }}{% endif %}/{{ doc.id }}">
 					<div>
 <div class="title"><input type="checkbox" onchange="update_docs_header(false, true)"></input><a class="title" href="{{ doc.url }}" title="{{ doc.abstract | strip | strip_html | escape }}">{{ doc.title | strip | strip_html | escape }}</a></div>
 <div class="authors">{% for author in doc.authors %}{% assign lastname = (author | split: " ") | last %}<a href="all#filter=@{{ lastname | downcase }}" class="author" title="{{ author }}">{{ lastname }}</a>{% endfor %}</div>
@@ -362,14 +363,14 @@
 				document.getElementById('filter_area').value = hash;
 				document.querySelectorAll('.doc').forEach(d => d.classList.remove('filtered'));
 				document.querySelectorAll('.doc' + selector).forEach(d => d.classList.add('filtered'));
-				document.querySelectorAll('.doc:not(.filtered)').forEach(d => {d.style.display = 'none';});
+				document.querySelectorAll('.doc:not(.filtered)').forEach(d => d.classList.remove('docdisplay'));
 				document.querySelectorAll('.doc.filtered').forEach((li, row_index) =>
 				{
 					if(row_index % 2 == 1)
 						li.classList.add('doc_even');
 					else
 						li.classList.remove('doc_even');
-					li.style.display = 'flex';
+					li.classList.add('docdisplay');
 				});
 				update_docs_header(selector != '', selector != '');
 			}
