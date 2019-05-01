@@ -1,0 +1,18 @@
+{
+  "title": "Gauge Equivariant Convolutional Networks and the Icosahedral CNN",
+  "authors": [
+    "Taco S. Cohen",
+    "Maurice Weiler",
+    "Berkay Kicanaoglu",
+    "Max Welling"
+  ],
+  "abstract": "The principle of equivariance to symmetry transformations enables a\ntheoretically grounded approach to neural network architecture design.\nEquivariant networks have shown excellent performance and data efficiency on\nvision and medical imaging problems that exhibit symmetries. Here we show how\nthis principle can be extended beyond global symmetries to local gauge\ntransformations. This enables the development of a very general class of\nconvolutional neural networks on manifolds that depend only on the intrinsic\ngeometry, and which includes many popular methods from equivariant and\ngeometric deep learning.\n  We implement gauge equivariant CNNs for signals defined on the surface of the\nicosahedron, which provides a reasonable approximation of the sphere. By\nchoosing to work with this very regular manifold, we are able to implement the\ngauge equivariant convolution using a single conv2d call, making it a highly\nscalable and practical alternative to Spherical CNNs. Using this method, we\ndemonstrate substantial improvements over previous methods on the task of\nsegmenting omnidirectional images and global climate patterns.",
+  "id": "arxiv.1902.04615",
+  "url": "https://arxiv.org/abs/1902.04615",
+  "pdf": "https://arxiv.org/pdf/1902.04615",
+  "bibtex": "@misc{cohen2019_arxiv:1902.04615,\n    title = {Gauge Equivariant Convolutional Networks and the Icosahedral CNN},\n    author = {Taco S. Cohen and Maurice Weiler and Berkay Kicanaoglu and Max Welling},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.04615},\n    pdf = {https://arxiv.org/pdf/1902.04615},\n    url = {https://arxiv.org/abs/1902.04615}\n}",
+  "source": "arxiv.org",
+  "date": 1556748618,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1902.04615"
+}
