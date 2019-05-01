@@ -1,0 +1,19 @@
+{
+  "title": "Projecting \"better than randomly\": How to reduce the dimensionality of very large datasets in a way that outperforms random projections",
+  "authors": [
+    "Michael Wojnowicz",
+    "Di Zhang",
+    "Glenn Chisholm",
+    "Xuan Zhao",
+    "Matt Wolff"
+  ],
+  "abstract": "For very large datasets, random projections (RP) have become the tool of\nchoice for dimensionality reduction. This is due to the computational\ncomplexity of principal component analysis. However, the recent development of\nrandomized principal component analysis (RPCA) has opened up the possibility of\nobtaining approximate principal components on very large datasets. In this\npaper, we compare the performance of RPCA and RP in dimensionality reduction\nfor supervised learning. In Experiment 1, study a malware classification task\non a dataset with over 10 million samples, almost 100,000 features, and over 25\nbillion non-zero values, with the goal of reducing the dimensionality to a\ncompressed representation of 5,000 features. In order to apply RPCA to this\ndataset, we develop a new algorithm called large sample RPCA (LS-RPCA), which\nextends the RPCA algorithm to work on datasets with arbitrarily many samples.\nWe find that classification performance is much higher when using LS-RPCA for\ndimensionality reduction than when using random projections. In particular,\nacross a range of target dimensionalities, we find that using LS-RPCA reduces\nclassification error by between 37% and 54%. Experiment 2 generalizes the\nphenomenon to multiple datasets, feature representations, and classifiers.\nThese findings have implications for a large number of research projects in\nwhich random projections were used as a preprocessing step for dimensionality\nreduction. As long as accuracy is at a premium and the target dimensionality is\nsufficiently less than the numeric rank of the dataset, randomized PCA may be a\nsuperior choice. Moreover, if the dataset has a large number of samples, then\nLS-RPCA will provide a method for obtaining the approximate principal\ncomponents.",
+  "id": "arxiv.1901.00630",
+  "url": "https://arxiv.org/abs/1901.00630",
+  "pdf": "https://arxiv.org/pdf/1901.00630",
+  "bibtex": "@misc{wojnowicz2019_arxiv:1901.00630,\n    title = {Projecting \"better than randomly\": How to reduce the dimensionality of very large datasets in a way that outperforms random projections},\n    author = {Michael Wojnowicz and Di Zhang and Glenn Chisholm and Xuan Zhao and Matt Wolff},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.00630},\n    pdf = {https://arxiv.org/pdf/1901.00630},\n    url = {https://arxiv.org/abs/1901.00630}\n}",
+  "source": "arxiv.org",
+  "date": 1556712560,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.00630v1"
+}
