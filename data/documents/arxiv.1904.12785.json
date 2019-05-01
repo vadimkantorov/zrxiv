@@ -1,0 +1,17 @@
+{
+  "title": "Style Transfer by Relaxed Optimal Transport and Self-Similarity",
+  "authors": [
+    "Nicholas Kolkin",
+    "Jason Salavon",
+    "Greg Shakhnarovich"
+  ],
+  "abstract": "Style transfer algorithms strive to render the content of one image using the\nstyle of another. We propose Style Transfer by Relaxed Optimal Transport and\nSelf-Similarity (STROTSS), a new optimization-based style transfer algorithm.\nWe extend our method to allow user-specified point-to-point or region-to-region\ncontrol over visual similarity between the style image and the output. Such\nguidance can be used to either achieve a particular visual effect or correct\nerrors made by unconstrained style transfer. In order to quantitatively compare\nour method to prior work, we conduct a large-scale user study designed to\nassess the style-content tradeoff across settings in style transfer algorithms.\nOur results indicate that for any desired level of content preservation, our\nmethod provides higher quality stylization than prior work. Code is available\nat https://github.com/nkolkin13/STROTSS",
+  "id": "arxiv.1904.12785",
+  "url": "https://arxiv.org/abs/1904.12785",
+  "pdf": "https://arxiv.org/pdf/1904.12785",
+  "bibtex": "@misc{kolkin2019_arxiv:1904.12785,\n    title = {Style Transfer by Relaxed Optimal Transport and Self-Similarity},\n    author = {Nicholas Kolkin and Jason Salavon and Greg Shakhnarovich},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.12785},\n    pdf = {https://arxiv.org/pdf/1904.12785},\n    url = {https://arxiv.org/abs/1904.12785}\n}",
+  "source": "arxiv.org",
+  "date": 1556722544,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.12785"
+}
