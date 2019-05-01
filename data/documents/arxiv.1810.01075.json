@@ -1,0 +1,16 @@
+{
+  "title": "Implicit Self-Regularization in Deep Neural Networks: Evidence from Random Matrix Theory and Implications for Learning",
+  "authors": [
+    "Charles H. Martin",
+    "Michael W. Mahoney"
+  ],
+  "abstract": "Random Matrix Theory (RMT) is applied to analyze weight matrices of Deep\nNeural Networks (DNNs), including both production quality, pre-trained models\nsuch as AlexNet and Inception, and smaller models trained from scratch, such as\nLeNet5 and a miniature-AlexNet. Empirical and theoretical results clearly\nindicate that the DNN training process itself implicitly implements a form of\nSelf-Regularization. The empirical spectral density (ESD) of DNN layer matrices\ndisplays signatures of traditionally-regularized statistical models, even in\nthe absence of exogenously specifying traditional forms of explicit\nregularization. Building on relatively recent results in RMT, most notably its\nextension to Universality classes of Heavy-Tailed matrices, we develop a theory\nto identify 5+1 Phases of Training, corresponding to increasing amounts of\nImplicit Self-Regularization. These phases can be observed during the training\nprocess as well as in the final learned DNNs. For smaller and/or older DNNs,\nthis Implicit Self-Regularization is like traditional Tikhonov regularization,\nin that there is a \"size scale\" separating signal from noise. For\nstate-of-the-art DNNs, however, we identify a novel form of Heavy-Tailed\nSelf-Regularization, similar to the self-organization seen in the statistical\nphysics of disordered systems. This results from correlations arising at all\nsize scales, which arises implicitly due to the training process itself. This\nimplicit Self-Regularization can depend strongly on the many knobs of the\ntraining process. By exploiting the generalization gap phenomena, we\ndemonstrate that we can cause a small model to exhibit all 5+1 phases of\ntraining simply by changing the batch size. This demonstrates that---all else\nbeing equal---DNN optimization with larger batch sizes leads to less-well\nimplicitly-regularized models, and it provides an explanation for the\ngeneralization gap phenomena.",
+  "id": "arxiv.1810.01075",
+  "url": "https://arxiv.org/abs/1810.01075",
+  "pdf": "https://arxiv.org/pdf/1810.01075",
+  "bibtex": "@misc{martin2018_arxiv:1810.01075,\n    title = {Implicit Self-Regularization in Deep Neural Networks: Evidence from Random Matrix Theory and Implications for Learning},\n    author = {Charles H. Martin and Michael W. Mahoney},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.01075},\n    pdf = {https://arxiv.org/pdf/1810.01075},\n    url = {https://arxiv.org/abs/1810.01075}\n}",
+  "source": "arxiv.org",
+  "date": 1556720683,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1810.01075"
+}
