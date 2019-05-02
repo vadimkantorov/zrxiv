@@ -1,0 +1,15 @@
+{
+  "title": "Persuasion on Networks",
+  "authors": [
+    "Georgy Egorov",
+    "Konstantin Sonin"
+  ],
+  "abstract": "We analyze persuasion in a model, in which each receiver (of many) might buy a direct access to the sender's signal or to rely on her network connections to get the same information. For the sender, a more biased signal increases the impact per subscriber (direct receiver), yet diminishes the willingness of agents to become subscribers. Contrary to the naive intuition, the optimal propaganda might target peripheral, rather than centrally located agents, and is at its maximum level when the probability that information flows between agents is either zero, or nearly one, but not in-between. The density of the network has a non-monotonic effect on the optimal level of propaganda as well.",
+  "url": "https://papers.ssrn.com/abstract=3375521",
+  "pdf": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=3375521",
+  "bibtex": null,
+  "source": "ssrn.com",
+  "date": 1556826100,
+  "tags": [],
+  "doi": ""
+}
