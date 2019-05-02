@@ -1,0 +1,22 @@
+{
+  "title": "A Meta-Transfer Objective for Learning to Disentangle Causal Mechanisms",
+  "authors": [
+    "Yoshua Bengio",
+    "Tristan Deleu",
+    "Nasim Rahaman",
+    "Rosemary Ke",
+    "Sébastien Lachapelle",
+    "Olexa Bilaniuk",
+    "Anirudh Goyal",
+    "Christopher Pal"
+  ],
+  "abstract": "We propose to meta-learn causal structures based on how fast a learner adapts\nto new distributions arising from sparse distributional changes, e.g. due to\ninterventions, actions of agents and other sources of non-stationarities. We\nshow that under this assumption, the correct causal structural choices lead to\nfaster adaptation to modified distributions because the changes are\nconcentrated in one or just a few mechanisms when the learned knowledge is\nmodularized appropriately. This leads to sparse expected gradients and a lower\neffective number of degrees of freedom needing to be relearned while adapting\nto the change. It motivates using the speed of adaptation to a modified\ndistribution as a meta-learning objective. We demonstrate how this can be used\nto determine the cause-effect relationship between two observed variables. The\ndistributional changes do not need to correspond to standard interventions\n(clamping a variable), and the learner has no direct knowledge of these\ninterventions. We show that causal structures can be parameterized via\ncontinuous variables and learned end-to-end. We then explore how these ideas\ncould be used to also learn an encoder that would map low-level observed\nvariables to unobserved causal variables leading to faster adaptation\nout-of-distribution, learning a representation space where one can satisfy the\nassumptions of independent mechanisms and of small and sparse changes in these\nmechanisms due to actions and non-stationarities.",
+  "id": "arxiv.1901.10912",
+  "url": "https://arxiv.org/abs/1901.10912",
+  "pdf": "https://arxiv.org/pdf/1901.10912",
+  "bibtex": "@misc{bengio2019_arxiv:1901.10912,\n    title = {A Meta-Transfer Objective for Learning to Disentangle Causal Mechanisms},\n    author = {Yoshua Bengio and Tristan Deleu and Nasim Rahaman and Rosemary Ke and Sébastien Lachapelle and Olexa Bilaniuk and Anirudh Goyal and Christopher Pal},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.10912},\n    pdf = {https://arxiv.org/pdf/1901.10912},\n    url = {https://arxiv.org/abs/1901.10912}\n}",
+  "source": "arxiv.org",
+  "date": 1556825555,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.10912?fbclid=IwAR01p5P5JYpURnzgx1Yi81kiJ7WkjdxDowY8m3wwxLuHSWJQ-Y2ZjaNn2jE"
+}
