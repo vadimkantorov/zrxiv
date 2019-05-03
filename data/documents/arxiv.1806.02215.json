@@ -1,0 +1,19 @@
+{
+  "title": "Spectral Inference Networks: Unifying Deep and Spectral Learning",
+  "authors": [
+    "David Pfau",
+    "Stig Petersen",
+    "Ashish Agarwal",
+    "David G. T. Barrett",
+    "Kimberly L. Stachenfeld"
+  ],
+  "abstract": "We present Spectral Inference Networks, a framework for learning\neigenfunctions of linear operators by stochastic optimization. Spectral\nInference Networks generalize Slow Feature Analysis to generic symmetric\noperators, and are closely related to Variational Monte Carlo methods from\ncomputational physics. As such, they can be a powerful tool for unsupervised\nrepresentation learning from video or graph-structured data. We cast training\nSpectral Inference Networks as a bilevel optimization problem, which allows for\nonline learning of multiple eigenfunctions. We show results of training\nSpectral Inference Networks on problems in quantum mechanics and feature\nlearning for videos on synthetic datasets. Our results demonstrate that\nSpectral Inference Networks accurately recover eigenfunctions of linear\noperators and can discover interpretable representations from video in a fully\nunsupervised manner.",
+  "id": "arxiv.1806.02215",
+  "url": "https://arxiv.org/abs/1806.02215",
+  "pdf": "https://arxiv.org/pdf/1806.02215",
+  "bibtex": "@misc{pfau2018_arxiv:1806.02215,\n    title = {Spectral Inference Networks: Unifying Deep and Spectral Learning},\n    author = {David Pfau and Stig Petersen and Ashish Agarwal and David G. T. Barrett and Kimberly L. Stachenfeld},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.02215},\n    pdf = {https://arxiv.org/pdf/1806.02215},\n    url = {https://arxiv.org/abs/1806.02215}\n}",
+  "source": "arxiv.org",
+  "date": 1556889511,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.02215"
+}
