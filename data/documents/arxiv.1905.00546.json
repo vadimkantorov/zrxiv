@@ -1,0 +1,19 @@
+{
+  "title": "Billion-scale semi-supervised learning for image classification",
+  "authors": [
+    "I. Zeki Yalniz",
+    "Hervé Jégou",
+    "Kan Chen",
+    "Manohar Paluri",
+    "Dhruv Mahajan"
+  ],
+  "abstract": "This paper presents a study of semi-supervised learning with large\nconvolutional networks. We propose a pipeline, based on a teacher/student\nparadigm, that leverages a large collection of unlabelled images (up to 1\nbillion). Our main goal is to improve the performance for a given target\narchitecture, like ResNet-50 or ResNext. We provide an extensive analysis of\nthe success factors of our approach, which leads us to formulate some\nrecommendations to produce high-accuracy models for image classification with\nsemi-supervised learning. As a result, our approach brings important gains to\nstandard architectures for image, video and fine-grained classification. For\ninstance, by leveraging one billion unlabelled images, our learned vanilla\nResNet-50 achieves 81.2% top-1 accuracy on the ImageNet benchmark.",
+  "id": "arxiv.1905.00546",
+  "url": "https://arxiv.org/abs/1905.00546",
+  "pdf": "https://arxiv.org/pdf/1905.00546",
+  "bibtex": "@misc{yalniz2019_arxiv:1905.00546,\n    title = {Billion-scale semi-supervised learning for image classification},\n    author = {I. Zeki Yalniz and Hervé Jégou and Kan Chen and Manohar Paluri and Dhruv Mahajan},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.00546},\n    pdf = {https://arxiv.org/pdf/1905.00546},\n    url = {https://arxiv.org/abs/1905.00546}\n}",
+  "source": "arxiv.org",
+  "date": 1556995833,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.00546?fbclid=IwAR0pV8hPkGTOvJsvrVAN95h4L3lIDylZ8o5HXd5WCmewgNOSmi8WwE864rU"
+}
