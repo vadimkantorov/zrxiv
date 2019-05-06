@@ -1,0 +1,19 @@
+{
+  "title": "Discrete Flows: Invertible Generative Models of Discrete Data",
+  "authors": [
+    "Dustin Tran",
+    "Keyon Vafa",
+    "Kumar Agrawal",
+    "Laurent Dinh",
+    "Ben Poole"
+  ],
+  "abstract": "While normalizing flows have led to significant advances in modeling high-dimensional continuous distributions, their applicability to discrete distributions remains unknown. In this paper, we show that flows can in fact be extended to discrete events---and under a simple change-of-variables formula not requiring log-determinant-Jacobian computations. Discrete flows have numerous applications. We display proofs of concept under 2 flow architectures: discrete autoregressive flows enable bidirectionality, allowing for example tokens in text to depend on both left-to-right and right-to-left contexts in an exact language model; and discrete bipartite flows (i.e., with layer structure from RealNVP) enable parallel generation such as exact nonautoregressive text modeling.",
+  "id": "openreview.rJlo4UIt_E",
+  "url": "https://openreview.net/forum?id=rJlo4UIt_E",
+  "pdf": "https://openreview.net/pdf?id=rJlo4UIt_E",
+  "bibtex": null,
+  "source": "openreview.net",
+  "date": 1557162155,
+  "tags": [],
+  "api": "https://openreview.net/notes?id=rJlo4UIt_E"
+}
