@@ -1,0 +1,17 @@
+{
+  "title": "Deep Residual Reinforcement Learning",
+  "authors": [
+    "Shangtong Zhang",
+    "Wendelin Boehmer",
+    "Shimon Whiteson"
+  ],
+  "abstract": "We revisit residual algorithms in both model-free and model-based\nreinforcement learning settings. We propose the bidirectional target network\ntechnique to stabilize residual algorithms, yielding a residual version of DDPG\nthat significantly outperforms vanilla DDPG in the DeepMind Control Suite\nbenchmark. Moreover, we find the residual algorithm an effective approach to\nthe distribution mismatch problem in model-based planning. Compared with the\nexisting TD($k$) method, our residual-based method makes weaker assumptions\nabout the model and yields a greater performance boost.",
+  "id": "arxiv.1905.01072",
+  "url": "https://arxiv.org/abs/1905.01072",
+  "pdf": "https://arxiv.org/pdf/1905.01072",
+  "bibtex": "@misc{zhang2019_arxiv:1905.01072,\n    title = {Deep Residual Reinforcement Learning},\n    author = {Shangtong Zhang and Wendelin Boehmer and Shimon Whiteson},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.01072},\n    pdf = {https://arxiv.org/pdf/1905.01072},\n    url = {https://arxiv.org/abs/1905.01072}\n}",
+  "source": "arxiv.org",
+  "date": 1557219112,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.01072"
+}
