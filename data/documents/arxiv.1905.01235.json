@@ -1,0 +1,18 @@
+{
+  "title": "Scaling and Benchmarking Self-Supervised Visual Representation Learning",
+  "authors": [
+    "Priya Goyal",
+    "Dhruv Mahajan",
+    "Abhinav Gupta",
+    "Ishan Misra"
+  ],
+  "abstract": "Self-supervised learning aims to learn representations from the data itself\nwithout explicit manual supervision. Existing efforts ignore a crucial aspect\nof self-supervised learning - the ability to scale to large amount of data\nbecause self-supervision requires no manual labels. In this work, we revisit\nthis principle and scale two popular self-supervised approaches to 100 million\nimages. We show that by scaling on various axes (including data size and\nproblem 'hardness'), one can largely match or even exceed the performance of\nsupervised pre-training on a variety of tasks such as object detection, surface\nnormal estimation (3D) and visual navigation using reinforcement learning.\nScaling these methods also provides many interesting insights into the\nlimitations of current self-supervised techniques and evaluations. We conclude\nthat current self-supervised methods are not 'hard' enough to take full\nadvantage of large scale data and do not seem to learn effective high level\nsemantic representations. We also introduce an extensive benchmark across 9\ndifferent datasets and tasks. We believe that such a benchmark along with\ncomparable evaluation settings is necessary to make meaningful progress.",
+  "id": "arxiv.1905.01235",
+  "url": "https://arxiv.org/abs/1905.01235",
+  "pdf": "https://arxiv.org/pdf/1905.01235",
+  "bibtex": "@misc{goyal2019_arxiv:1905.01235,\n    title = {Scaling and Benchmarking Self-Supervised Visual Representation Learning},\n    author = {Priya Goyal and Dhruv Mahajan and Abhinav Gupta and Ishan Misra},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.01235},\n    pdf = {https://arxiv.org/pdf/1905.01235},\n    url = {https://arxiv.org/abs/1905.01235}\n}",
+  "source": "arxiv.org",
+  "date": 1557240682,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.01235?fbclid=IwAR3emg_G7wJnZA6-KI__PpccWNr78uyA5muaab0meE4o0iP9rnHTVV3E45o"
+}
