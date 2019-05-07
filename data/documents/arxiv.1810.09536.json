@@ -1,0 +1,18 @@
+{
+  "title": "Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks",
+  "authors": [
+    "Yikang Shen",
+    "Shawn Tan",
+    "Alessandro Sordoni",
+    "Aaron Courville"
+  ],
+  "abstract": "Natural language is hierarchically structured: smaller units (e.g., phrases)\nare nested within larger units (e.g., clauses). When a larger constituent ends,\nall of the smaller constituents that are nested within it must also be closed.\nWhile the standard LSTM architecture allows different neurons to track\ninformation at different time scales, it does not have an explicit bias towards\nmodeling a hierarchy of constituents. This paper proposes to add such an\ninductive bias by ordering the neurons; a vector of master input and forget\ngates ensures that when a given neuron is updated, all the neurons that follow\nit in the ordering are also updated. Our novel recurrent architecture, ordered\nneurons LSTM (ON-LSTM), achieves good performance on four different tasks:\nlanguage modeling, unsupervised parsing, targeted syntactic evaluation, and\nlogical inference.",
+  "id": "arxiv.1810.09536",
+  "url": "https://arxiv.org/abs/1810.09536",
+  "pdf": "https://arxiv.org/pdf/1810.09536",
+  "bibtex": "@misc{shen2018_arxiv:1810.09536,\n    title = {Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks},\n    author = {Yikang Shen and Shawn Tan and Alessandro Sordoni and Aaron Courville},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.09536},\n    pdf = {https://arxiv.org/pdf/1810.09536},\n    url = {https://arxiv.org/abs/1810.09536}\n}",
+  "source": "arxiv.org",
+  "date": 1557210282,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1810.09536"
+}
