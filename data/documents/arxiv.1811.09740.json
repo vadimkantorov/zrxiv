@@ -1,0 +1,19 @@
+{
+  "title": "Connecting the Dots Between MLE and RL for Sequence Generation",
+  "authors": [
+    "Bowen Tan",
+    "Zhiting Hu",
+    "Zichao Yang",
+    "Ruslan Salakhutdinov",
+    "Eric Xing"
+  ],
+  "abstract": "Sequence generation models such as recurrent networks can be trained with a\ndiverse set of learning algorithms. For example, maximum likelihood learning is\nsimple and efficient, yet suffers from the exposure bias problem. Reinforcement\nlearning like policy gradient addresses the problem but can have prohibitively\npoor exploration efficiency. A variety of other algorithms such as RAML, SPG,\nand data noising, have also been developed from different perspectives. This\npaper establishes a formal connection between these algorithms. We present a\ngeneralized entropy regularized policy optimization formulation, and show that\nthe apparently divergent algorithms can all be reformulated as special\ninstances of the framework, with the only difference being the configurations\nof reward function and a couple of hyperparameters. The unified interpretation\noffers a systematic view of the varying properties of exploration and learning\nefficiency. Besides, based on the framework, we present a new algorithm that\ndynamically interpolates among the existing algorithms for improved learning.\nExperiments on machine translation and text summarization demonstrate the\nsuperiority of the proposed algorithm.",
+  "id": "arxiv.1811.09740",
+  "url": "https://arxiv.org/abs/1811.09740",
+  "pdf": "https://arxiv.org/pdf/1811.09740",
+  "bibtex": "@misc{tan2018_arxiv:1811.09740,\n    title = {Connecting the Dots Between MLE and RL for Sequence Generation},\n    author = {Bowen Tan and Zhiting Hu and Zichao Yang and Ruslan Salakhutdinov and Eric Xing},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.09740},\n    pdf = {https://arxiv.org/pdf/1811.09740},\n    url = {https://arxiv.org/abs/1811.09740}\n}",
+  "source": "arxiv.org",
+  "date": 1557221420,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.09740"
+}
