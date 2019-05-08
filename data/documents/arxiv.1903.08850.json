@@ -1,0 +1,18 @@
+{
+  "title": "Stochastic Optimization of Sorting Networks via Continuous Relaxations",
+  "authors": [
+    "Aditya Grover",
+    "Eric Wang",
+    "Aaron Zweig",
+    "Stefano Ermon"
+  ],
+  "abstract": "Sorting input objects is an important step in many machine learning\npipelines. However, the sorting operator is non-differentiable with respect to\nits inputs, which prohibits end-to-end gradient-based optimization. In this\nwork, we propose NeuralSort, a general-purpose continuous relaxation of the\noutput of the sorting operator from permutation matrices to the set of unimodal\nrow-stochastic matrices, where every row sums to one and has a distinct arg\nmax. This relaxation permits straight-through optimization of any computational\ngraph involve a sorting operation. Further, we use this relaxation to enable\ngradient-based stochastic optimization over the combinatorially large space of\npermutations by deriving a reparameterized gradient estimator for the\nPlackett-Luce family of distributions over permutations. We demonstrate the\nusefulness of our framework on three tasks that require learning semantic\norderings of high-dimensional objects, including a fully differentiable,\nparameterized extension of the k-nearest neighbors algorithm.",
+  "id": "arxiv.1903.08850",
+  "url": "https://arxiv.org/abs/1903.08850",
+  "pdf": "https://arxiv.org/pdf/1903.08850",
+  "bibtex": "@misc{grover2019_arxiv:1903.08850,\n    title = {Stochastic Optimization of Sorting Networks via Continuous Relaxations},\n    author = {Aditya Grover and Eric Wang and Aaron Zweig and Stefano Ermon},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.08850},\n    pdf = {https://arxiv.org/pdf/1903.08850},\n    url = {https://arxiv.org/abs/1903.08850}\n}",
+  "source": "arxiv.org",
+  "date": 1557300736,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.08850"
+}
