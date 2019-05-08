@@ -1,0 +1,20 @@
+{
+  "title": "MixMatch: A Holistic Approach to Semi-Supervised Learning",
+  "authors": [
+    "David Berthelot",
+    "Nicholas Carlini",
+    "Ian Goodfellow",
+    "Nicolas Papernot",
+    "Avital Oliver",
+    "Colin Raffel"
+  ],
+  "abstract": "Semi-supervised learning has proven to be a powerful paradigm for leveraging\nunlabeled data to mitigate the reliance on large labeled datasets. In this\nwork, we unify the current dominant approaches for semi-supervised learning to\nproduce a new algorithm, MixMatch, that works by guessing low-entropy labels\nfor data-augmented unlabeled examples and mixing labeled and unlabeled data\nusing MixUp. We show that MixMatch obtains state-of-the-art results by a large\nmargin across many datasets and labeled data amounts. For example, on CIFAR-10\nwith 250 labels, we reduce error rate by a factor of 4 (from 38% to 11%) and by\na factor of 2 on STL-10. We also demonstrate how MixMatch can help achieve a\ndramatically better accuracy-privacy trade-off for differential privacy.\nFinally, we perform an ablation study to tease apart which components of\nMixMatch are most important for its success.",
+  "id": "arxiv.1905.02249",
+  "url": "https://arxiv.org/abs/1905.02249",
+  "pdf": "https://arxiv.org/pdf/1905.02249",
+  "bibtex": "@misc{berthelot2019_arxiv:1905.02249,\n    title = {MixMatch: A Holistic Approach to Semi-Supervised Learning},\n    author = {David Berthelot and Nicholas Carlini and Ian Goodfellow and Nicolas Papernot and Avital Oliver and Colin Raffel},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.02249},\n    pdf = {https://arxiv.org/pdf/1905.02249},\n    url = {https://arxiv.org/abs/1905.02249}\n}",
+  "source": "arxiv.org",
+  "date": 1557311485,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.02249"
+}
