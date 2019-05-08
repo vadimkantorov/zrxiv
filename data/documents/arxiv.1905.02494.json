@@ -1,0 +1,21 @@
+{
+  "title": "REGAL: Transfer Learning For Fast Optimization of Computation Graphs",
+  "authors": [
+    "Aditya Paliwal",
+    "Felix Gimeno",
+    "Vinod Nair",
+    "Yujia Li",
+    "Miles Lubin",
+    "Pushmeet Kohli",
+    "Oriol Vinyals"
+  ],
+  "abstract": "We present a deep reinforcement learning approach to optimizing the execution\ncost of computation graphs in a static compiler. The key idea is to combine a\nneural network policy with a genetic algorithm, the Biased Random-Key Genetic\nAlgorithm (BRKGA). The policy is trained to predict, given an input graph to be\noptimized, the node-level probability distributions for sampling mutations and\ncrossovers in BRKGA. Our approach, \"REINFORCE-based Genetic Algorithm Learning\"\n(REGAL), uses the policy's ability to transfer to new graphs to significantly\nimprove the solution quality of the genetic algorithm for the same objective\nevaluation budget. As a concrete application, we show results for minimizing\npeak memory in TensorFlow graphs by jointly optimizing device placement and\nscheduling. REGAL achieves on average 3.56% lower peak memory than BRKGA on\npreviously unseen graphs, outperforming all the algorithms we compare to, and\ngiving 4.4x bigger improvement than the next best algorithm. We also evaluate\nREGAL on a production compiler team's performance benchmark of XLA graphs and\nachieve on average 3.74% lower peak memory than BRKGA, again outperforming all\nothers. Our approach and analysis is made possible by collecting a dataset of\n372 unique real-world TensorFlow graphs, more than an order of magnitude more\ndata than previous work.",
+  "id": "arxiv.1905.02494",
+  "url": "https://arxiv.org/abs/1905.02494",
+  "pdf": "https://arxiv.org/pdf/1905.02494",
+  "bibtex": "@misc{paliwal2019_arxiv:1905.02494,\n    title = {REGAL: Transfer Learning For Fast Optimization of Computation Graphs},\n    author = {Aditya Paliwal and Felix Gimeno and Vinod Nair and Yujia Li and Miles Lubin and Pushmeet Kohli and Oriol Vinyals},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.02494},\n    pdf = {https://arxiv.org/pdf/1905.02494},\n    url = {https://arxiv.org/abs/1905.02494}\n}",
+  "source": "arxiv.org",
+  "date": 1557333039,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.02494"
+}
