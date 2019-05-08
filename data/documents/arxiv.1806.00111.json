@@ -1,0 +1,17 @@
+{
+  "title": "Probabilistic Model of Visual Segmentation",
+  "authors": [
+    "Jonathan Vacher",
+    "Pascal Mamassian",
+    "Ruben Coen-Cagli"
+  ],
+  "abstract": "Visual segmentation is a key perceptual function that partitions visual space\nand allows for detection, recognition and discrimination of objects in complex\nenvironments. The processes underlying human segmentation of natural images are\nstill poorly understood. In part, this is because we lack segmentation models\nconsistent with experimental and theoretical knowledge in visual neuroscience.\nBiological sensory systems have been shown to approximate probabilistic\ninference to interpret their inputs. This requires a generative model that\ncaptures both the statistics of the sensory inputs and expectations about the\ncauses of those inputs. Following this hypothesis, we propose a probabilistic\ngenerative model of visual segmentation that combines knowledge about 1) the\nsensitivity of neurons in the visual cortex to statistical regularities in\nnatural images; and 2) the preference of humans to form contiguous partitions\nof visual space. We develop an efficient algorithm for training and inference\nbased on expectation-maximization and validate it on synthetic data.\nImportantly, with the appropriate choice of the prior, we derive an intuitive\nclosed--form update rule for assigning pixels to segments: at each iteration,\nthe pixel assignment probabilities to segments is the sum of the evidence (i.e.\nlocal pixel statistics) and prior (i.e. the assignments of neighboring pixels)\nweighted by their relative uncertainty. The model performs competitively on\nnatural images from the Berkeley Segmentation Dataset (BSD), and we illustrate\nhow the likelihood and prior components improve segmentation relative to\ntraditional mixture models. Furthermore, our model explains some variability\nacross human subjects as reflecting local uncertainty about the number of\nsegments. Our model thus provides a viable approach to probe human visual\nsegmentation.",
+  "id": "arxiv.1806.00111",
+  "url": "https://arxiv.org/abs/1806.00111",
+  "pdf": "https://arxiv.org/pdf/1806.00111",
+  "bibtex": "@misc{vacher2018_arxiv:1806.00111,\n    title = {Probabilistic Model of Visual Segmentation},\n    author = {Jonathan Vacher and Pascal Mamassian and Ruben Coen-Cagli},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.00111},\n    pdf = {https://arxiv.org/pdf/1806.00111},\n    url = {https://arxiv.org/abs/1806.00111}\n}",
+  "source": "arxiv.org",
+  "date": 1557292336,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.00111"
+}
