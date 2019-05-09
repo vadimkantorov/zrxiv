@@ -1,0 +1,21 @@
+{
+  "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)",
+  "authors": [
+    "Been Kim",
+    "Martin Wattenberg",
+    "Justin Gilmer",
+    "Carrie Cai",
+    "James Wexler",
+    "Fernanda Viegas",
+    "Rory Sayres"
+  ],
+  "abstract": "The interpretation of deep learning models is a challenge due to their size,\ncomplexity, and often opaque internal state. In addition, many systems, such as\nimage classifiers, operate on low-level features rather than high-level\nconcepts. To address these challenges, we introduce Concept Activation Vectors\n(CAVs), which provide an interpretation of a neural net's internal state in\nterms of human-friendly concepts. The key idea is to view the high-dimensional\ninternal state of a neural net as an aid, not an obstacle. We show how to use\nCAVs as part of a technique, Testing with CAVs (TCAV), that uses directional\nderivatives to quantify the degree to which a user-defined concept is important\nto a classification result--for example, how sensitive a prediction of \"zebra\"\nis to the presence of stripes. Using the domain of image classification as a\ntesting ground, we describe how CAVs may be used to explore hypotheses and\ngenerate insights for a standard image classification network as well as a\nmedical application.",
+  "id": "arxiv.1711.11279",
+  "url": "https://arxiv.org/abs/1711.11279",
+  "pdf": "https://arxiv.org/pdf/1711.11279",
+  "bibtex": "@misc{kim2017_arxiv:1711.11279,\n    title = {Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)},\n    author = {Been Kim and Martin Wattenberg and Justin Gilmer and Carrie Cai and James Wexler and Fernanda Viegas and Rory Sayres},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1711.11279},\n    pdf = {https://arxiv.org/pdf/1711.11279},\n    url = {https://arxiv.org/abs/1711.11279}\n}",
+  "source": "arxiv.org",
+  "date": 1557411581,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1711.11279"
+}
