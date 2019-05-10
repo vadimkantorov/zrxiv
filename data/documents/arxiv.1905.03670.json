@@ -1,0 +1,18 @@
+{
+  "title": "S$^\\mathbf{4}$L: Self-Supervised Semi-Supervised Learning",
+  "authors": [
+    "Xiaohua Zhai",
+    "Avital Oliver",
+    "Alexander Kolesnikov",
+    "Lucas Beyer"
+  ],
+  "abstract": "This work tackles the problem of semi-supervised learning of image\nclassifiers. Our main insight is that the field of semi-supervised learning can\nbenefit from the quickly advancing field of self-supervised visual\nrepresentation learning. Unifying these two approaches, we propose the\nframework of self-supervised semi-supervised learning ($S^4L$) and use it to\nderive two novel semi-supervised image classification methods. We demonstrate\nthe effectiveness of these methods in comparison to both carefully tuned\nbaselines, and existing semi-supervised learning methods. We then show that\n$S^4L$ and existing semi-supervised methods can be jointly trained, yielding a\nnew state-of-the-art result on semi-supervised ILSVRC-2012 with 10% of labels.",
+  "id": "arxiv.1905.03670",
+  "url": "https://arxiv.org/abs/1905.03670",
+  "pdf": "https://arxiv.org/pdf/1905.03670",
+  "bibtex": "@misc{zhai2019_arxiv:1905.03670,\n    title = {S$^\\mathbf{4}$L: Self-Supervised Semi-Supervised Learning},\n    author = {Xiaohua Zhai and Avital Oliver and Alexander Kolesnikov and Lucas Beyer},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.03670},\n    pdf = {https://arxiv.org/pdf/1905.03670},\n    url = {https://arxiv.org/abs/1905.03670}\n}",
+  "source": "arxiv.org",
+  "date": 1557501628,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.03670"
+}
