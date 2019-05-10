@@ -1,0 +1,18 @@
+{
+  "title": "PointNetLK: Robust & Efficient Point Cloud Registration using PointNet",
+  "authors": [
+    "Yasuhiro Aoki",
+    "Hunter Goforth",
+    "Rangaprasad Arun Srivatsan",
+    "Simon Lucey"
+  ],
+  "abstract": "PointNet has revolutionized how we think about representing point clouds. For\nclassification and segmentation tasks, the approach and its subsequent\nextensions are state-of-the-art. To date, the successful application of\nPointNet to point cloud registration has remained elusive. In this paper we\nargue that PointNet itself can be thought of as a learnable \"imaging\" function.\nAs a consequence, classical vision algorithms for image alignment can be\napplied on the problem - namely the Lucas & Kanade (LK) algorithm. Our central\ninnovations stem from: (i) how to modify the LK algorithm to accommodate the\nPointNet imaging function, and (ii) unrolling PointNet and the LK algorithm\ninto a single trainable recurrent deep neural network. We describe the\narchitecture, and compare its performance against state-of-the-art in common\nregistration scenarios. The architecture offers some remarkable properties\nincluding: generalization across shape categories and computational efficiency\n- opening up new paths of exploration for the application of deep learning to\npoint cloud registration. Code and videos are available at\nhttps://github.com/hmgoforth/PointNetLK.",
+  "id": "arxiv.1903.05711",
+  "url": "https://arxiv.org/abs/1903.05711",
+  "pdf": "https://arxiv.org/pdf/1903.05711",
+  "bibtex": "@misc{aoki2019_arxiv:1903.05711,\n    title = {PointNetLK: Robust & Efficient Point Cloud Registration using PointNet},\n    author = {Yasuhiro Aoki and Hunter Goforth and Rangaprasad Arun Srivatsan and Simon Lucey},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.05711},\n    pdf = {https://arxiv.org/pdf/1903.05711},\n    url = {https://arxiv.org/abs/1903.05711}\n}",
+  "source": "arxiv.org",
+  "date": 1557480044,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.05711"
+}
