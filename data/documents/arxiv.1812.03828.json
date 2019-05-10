@@ -1,0 +1,19 @@
+{
+  "title": "Occupancy Networks: Learning 3D Reconstruction in Function Space",
+  "authors": [
+    "Lars Mescheder",
+    "Michael Oechsle",
+    "Michael Niemeyer",
+    "Sebastian Nowozin",
+    "Andreas Geiger"
+  ],
+  "abstract": "With the advent of deep neural networks, learning-based approaches for 3D\nreconstruction have gained popularity. However, unlike for images, in 3D there\nis no canonical representation which is both computationally and memory\nefficient yet allows for representing high-resolution geometry of arbitrary\ntopology. Many of the state-of-the-art learning-based 3D reconstruction\napproaches can hence only represent very coarse 3D geometry or are limited to a\nrestricted domain. In this paper, we propose Occupancy Networks, a new\nrepresentation for learning-based 3D reconstruction methods. Occupancy networks\nimplicitly represent the 3D surface as the continuous decision boundary of a\ndeep neural network classifier. In contrast to existing approaches, our\nrepresentation encodes a description of the 3D output at infinite resolution\nwithout excessive memory footprint. We validate that our representation can\nefficiently encode 3D structure and can be inferred from various kinds of\ninput. Our experiments demonstrate competitive results, both qualitatively and\nquantitatively, for the challenging tasks of 3D reconstruction from single\nimages, noisy point clouds and coarse discrete voxel grids. We believe that\noccupancy networks will become a useful tool in a wide variety of\nlearning-based 3D tasks.",
+  "id": "arxiv.1812.03828",
+  "url": "https://arxiv.org/abs/1812.03828",
+  "pdf": "https://arxiv.org/pdf/1812.03828",
+  "bibtex": "@misc{mescheder2018_arxiv:1812.03828,\n    title = {Occupancy Networks: Learning 3D Reconstruction in Function Space},\n    author = {Lars Mescheder and Michael Oechsle and Michael Niemeyer and Sebastian Nowozin and Andreas Geiger},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.03828},\n    pdf = {https://arxiv.org/pdf/1812.03828},\n    url = {https://arxiv.org/abs/1812.03828}\n}",
+  "source": "arxiv.org",
+  "date": 1557505413,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.03828"
+}
