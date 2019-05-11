@@ -1,0 +1,18 @@
+{
+  "title": "Non-Reversible Parallel Tempering: an Embarassingly Parallel MCMC Scheme",
+  "authors": [
+    "Saifuddin Syed",
+    "Alexandre Bouchard-Côté",
+    "George Deligiannidis",
+    "Arnaud Doucet"
+  ],
+  "abstract": "Parallel tempering (PT) methods are a popular class of Markov chain Monte\nCarlo schemes used to explore complex high-dimensional probability\ndistributions. These algorithms can be highly effective but their performance\nis contingent on the selection of a suitable annealing schedule. In this work,\nwe provide a new perspective on PT algorithms and their tuning, based on two\nmain insights. First, we identify and formalize a sharp divide in the behaviour\nand performance of reversible versus non-reversible PT methods. Second, we\nanalyze the behaviour of PT algorithms using a novel asymptotic regime in which\nthe number of parallel compute cores goes to infinity. Based on this approach\nwe show that a class of non-reversible PT methods dominates its reversible\ncounterpart and identify distinct scaling limits for the non-reversible and\nreversible schemes, the former being a piecewise-deterministic Markov process\n(PDMP) and the latter a diffusion. In particular, we identify a class of\nnon-reversible PT algorithms which is provably scalable to massive parallel\nimplementation, in contrast to reversible PT algorithms, which are known to\ncollapse in the massive parallel regime. We then bring these theoretical tools\nto bear on the development of novel methodologies. We develop an adaptive\nnon-reversible PT scheme which estimates the event rate of the limiting PDMP\nand uses this estimated rate to approximate the optimal annealing schedule. We\nprovide a wide range of numerical examples supporting and extending our\ntheoretical and methodological contributions. Our adaptive non-reversible PT\nmethod outperforms experimentally state-of-the-art PT methods in terms of\ntaking less time to adapt, as well as providing better target approximations.\nOur scheme has no tuning parameters and appears in our simulations robust to\nviolations of the theoretical assumption used to carry out our analysis.",
+  "id": "arxiv.1905.02939",
+  "url": "https://arxiv.org/abs/1905.02939",
+  "pdf": "https://arxiv.org/pdf/1905.02939",
+  "bibtex": "@misc{syed2019_arxiv:1905.02939,\n    title = {Non-Reversible Parallel Tempering: an Embarassingly Parallel MCMC Scheme},\n    author = {Saifuddin Syed and Alexandre Bouchard-Côté and George Deligiannidis and Arnaud Doucet},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.02939},\n    pdf = {https://arxiv.org/pdf/1905.02939},\n    url = {https://arxiv.org/abs/1905.02939}\n}",
+  "source": "arxiv.org",
+  "date": 1557584621,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.02939"
+}
