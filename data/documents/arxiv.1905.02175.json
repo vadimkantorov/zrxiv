@@ -1,0 +1,20 @@
+{
+  "title": "Adversarial Examples Are Not Bugs, They Are Features",
+  "authors": [
+    "Andrew Ilyas",
+    "Shibani Santurkar",
+    "Dimitris Tsipras",
+    "Logan Engstrom",
+    "Brandon Tran",
+    "Aleksander Madry"
+  ],
+  "abstract": "Adversarial examples have attracted significant attention in machine\nlearning, but the reasons for their existence and pervasiveness remain unclear.\nWe demonstrate that adversarial examples can be directly attributed to the\npresence of non-robust features: features derived from patterns in the data\ndistribution that are highly predictive, yet brittle and incomprehensible to\nhumans. After capturing these features within a theoretical framework, we\nestablish their widespread existence in standard datasets. Finally, we present\na simple setting where we can rigorously tie the phenomena we observe in\npractice to a misalignment between the (human-specified) notion of robustness\nand the inherent geometry of the data.",
+  "id": "arxiv.1905.02175",
+  "url": "https://arxiv.org/abs/1905.02175",
+  "pdf": "https://arxiv.org/pdf/1905.02175",
+  "bibtex": "@misc{ilyas2019_arxiv:1905.02175,\n    title = {Adversarial Examples Are Not Bugs, They Are Features},\n    author = {Andrew Ilyas and Shibani Santurkar and Dimitris Tsipras and Logan Engstrom and Brandon Tran and Aleksander Madry},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.02175},\n    pdf = {https://arxiv.org/pdf/1905.02175},\n    url = {https://arxiv.org/abs/1905.02175}\n}",
+  "source": "arxiv.org",
+  "date": 1557592494,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.02175"
+}
