@@ -1,0 +1,19 @@
+{
+  "title": "Nonlinear Approximation and (Deep) ReLU Networks",
+  "authors": [
+    "I. Daubechies",
+    "R. DeVore",
+    "S. Foucart",
+    "B. Hanin",
+    "G. Petrova"
+  ],
+  "abstract": "This article is concerned with the approximation and expressive powers of\ndeep neural networks. This is an active research area currently producing many\ninteresting papers. The results most commonly found in the literature prove\nthat neural networks approximate functions with classical smoothness to the\nsame accuracy as classical linear methods of approximation, e.g. approximation\nby polynomials or by piecewise polynomials on prescribed partitions. However,\napproximation by neural networks depending on n parameters is a form of\nnonlinear approximation and as such should be compared with other nonlinear\nmethods such as variable knot splines or n-term approximation from\ndictionaries. The performance of neural networks in targeted applications such\nas machine learning indicate that they actually possess even greater\napproximation power than these traditional methods of nonlinear approximation.\nThe main results of this article prove that this is indeed the case. This is\ndone by exhibiting large classes of functions which can be efficiently captured\nby neural networks where classical nonlinear methods fall short of the task.\nThe present article purposefully limits itself to studying the approximation of\nunivariate functions by ReLU networks. Many generalizations to functions of\nseveral variables and other activation functions can be envisioned. However,\neven in this simplest of settings considered here, a theory that completely\nquantifies the approximation power of neural networks is still lacking.",
+  "id": "arxiv.1905.02199",
+  "url": "https://arxiv.org/abs/1905.02199",
+  "pdf": "https://arxiv.org/pdf/1905.02199",
+  "bibtex": "@misc{daubechies2019_arxiv:1905.02199,\n    title = {Nonlinear Approximation and (Deep) ReLU Networks},\n    author = {I. Daubechies and R. DeVore and S. Foucart and B. Hanin and G. Petrova},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.02199},\n    pdf = {https://arxiv.org/pdf/1905.02199},\n    url = {https://arxiv.org/abs/1905.02199}\n}",
+  "source": "arxiv.org",
+  "date": 1557663924,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.02199"
+}
