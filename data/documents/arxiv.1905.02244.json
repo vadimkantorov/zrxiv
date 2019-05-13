@@ -1,0 +1,26 @@
+{
+  "title": "Searching for MobileNetV3",
+  "authors": [
+    "Andrew Howard",
+    "Mark Sandler",
+    "Grace Chu",
+    "Liang-Chieh Chen",
+    "Bo Chen",
+    "Mingxing Tan",
+    "Weijun Wang",
+    "Yukun Zhu",
+    "Ruoming Pang",
+    "Vijay Vasudevan",
+    "Quoc V. Le",
+    "Hartwig Adam"
+  ],
+  "abstract": "We present the next generation of MobileNets based on a combination of\ncomplementary search techniques as well as a novel architecture design.\nMobileNetV3 is tuned to mobile phone CPUs through a combination of hardware\naware network architecture search (NAS) complemented by the NetAdapt algorithm\nand then subsequently improved through novel architecture advances. This paper\nstarts the exploration of how automated search algorithms and network design\ncan work together to harness complementary approaches improving the overall\nstate of the art. Through this process we create two new MobileNet models for\nrelease: MobileNetV3-Large and MobileNetV3-Small which are targeted for high\nand low resource use cases. These models are then adapted and applied to the\ntasks of object detection and semantic segmentation. For the task of semantic\nsegmentation (or any dense pixel prediction), we propose a new efficient\nsegmentation decoder Lite Reduced Atrous Spatial Pyramid Pooling (LR-ASPP). We\nachieve new state of the art results for mobile classification, detection and\nsegmentation. MobileNetV3-Large is 3.2% more accurate on ImageNet\nclassification while reducing latency by 15% compared to MobileNetV2.\nMobileNetV2-Small is 4.6% more accurate while reducing latency by 5% compared\nto MobileNetV2. MobileNetV3-Large detection is 25% faster at roughly the same\naccuracy as MobileNetV2 on COCO detection. MobileNetV3-Large LR-ASPP is 30%\nfaster than MobileNetV2 R-ASPP at similar accuracy for Cityscapes segmentation.",
+  "id": "arxiv.1905.02244",
+  "url": "https://arxiv.org/abs/1905.02244",
+  "pdf": "https://arxiv.org/pdf/1905.02244",
+  "bibtex": "@misc{howard2019_arxiv:1905.02244,\n    title = {Searching for MobileNetV3},\n    author = {Andrew Howard and Mark Sandler and Grace Chu and Liang-Chieh Chen and Bo Chen and Mingxing Tan and Weijun Wang and Yukun Zhu and Ruoming Pang and Vijay Vasudevan and Quoc V. Le and Hartwig Adam},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.02244},\n    pdf = {https://arxiv.org/pdf/1905.02244},\n    url = {https://arxiv.org/abs/1905.02244}\n}",
+  "source": "arxiv.org",
+  "date": 1557772829,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.02244?fbclid=IwAR37FdchSzoiqmfhzxA3G0R9dgxs7Nn--AZm3QJ3JoX2JywyUBmAIVsNtMs"
+}
