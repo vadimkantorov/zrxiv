@@ -1,0 +1,19 @@
+{
+  "title": "SOM-VAE: Interpretable Discrete Representation Learning on Time Series",
+  "authors": [
+    "Vincent Fortuin",
+    "Matthias Hüser",
+    "Francesco Locatello",
+    "Heiko Strathmann",
+    "Gunnar Rätsch"
+  ],
+  "abstract": "High-dimensional time series are common in many domains. Since human\ncognition is not optimized to work well in high-dimensional spaces, these areas\ncould benefit from interpretable low-dimensional representations. However, most\nrepresentation learning algorithms for time series data are difficult to\ninterpret. This is due to non-intuitive mappings from data features to salient\nproperties of the representation and non-smoothness over time. To address this\nproblem, we propose a new representation learning framework building on ideas\nfrom interpretable discrete dimensionality reduction and deep generative\nmodeling. This framework allows us to learn discrete representations of time\nseries, which give rise to smooth and interpretable embeddings with superior\nclustering performance. We introduce a new way to overcome the\nnon-differentiability in discrete representation learning and present a\ngradient-based version of the traditional self-organizing map algorithm that is\nmore performant than the original. Furthermore, to allow for a probabilistic\ninterpretation of our method, we integrate a Markov model in the representation\nspace. This model uncovers the temporal transition structure, improves\nclustering performance even further and provides additional explanatory\ninsights as well as a natural representation of uncertainty. We evaluate our\nmodel in terms of clustering performance and interpretability on static\n(Fashion-)MNIST data, a time series of linearly interpolated (Fashion-)MNIST\nimages, a chaotic Lorenz attractor system with two macro states, as well as on\na challenging real world medical time series application on the eICU data set.\nOur learned representations compare favorably with competitor methods and\nfacilitate downstream tasks on the real world data.",
+  "id": "arxiv.1806.02199",
+  "url": "https://arxiv.org/abs/1806.02199",
+  "pdf": "https://arxiv.org/pdf/1806.02199",
+  "bibtex": "@misc{fortuin2018_arxiv:1806.02199,\n    title = {SOM-VAE: Interpretable Discrete Representation Learning on Time Series},\n    author = {Vincent Fortuin and Matthias Hüser and Francesco Locatello and Heiko Strathmann and Gunnar Rätsch},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.02199},\n    pdf = {https://arxiv.org/pdf/1806.02199},\n    url = {https://arxiv.org/abs/1806.02199}\n}",
+  "source": "arxiv.org",
+  "date": 1557782976,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.02199"
+}
