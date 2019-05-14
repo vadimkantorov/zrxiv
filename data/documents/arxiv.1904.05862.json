@@ -1,0 +1,18 @@
+{
+  "title": "wav2vec: Unsupervised Pre-training for Speech Recognition",
+  "authors": [
+    "Steffen Schneider",
+    "Alexei Baevski",
+    "Ronan Collobert",
+    "Michael Auli"
+  ],
+  "abstract": "We explore unsupervised pre-training for speech recognition by learning\nrepresentations of raw audio. wav2vec is trained on large amounts of unlabeled\naudio data and the resulting representations are then used to improve acoustic\nmodel training. We pre-train a simple multi-layer convolutional neural network\noptimized via a noise contrastive binary classification task. Our experiments\non WSJ reduce WER of a strong character-based log-mel filterbank baseline by up\nto 32% when only a few hours of transcribed data is available. Our approach\nachieves 2.78% WER on the nov92 test set. This outperforms Deep Speech 2, the\nbest reported character-based system in the literature while using three orders\nof magnitude less labeled training data.",
+  "id": "arxiv.1904.05862",
+  "url": "https://arxiv.org/abs/1904.05862",
+  "pdf": "https://arxiv.org/pdf/1904.05862",
+  "bibtex": "@misc{schneider2019_arxiv:1904.05862,\n    title = {wav2vec: Unsupervised Pre-training for Speech Recognition},\n    author = {Steffen Schneider and Alexei Baevski and Ronan Collobert and Michael Auli},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.05862},\n    pdf = {https://arxiv.org/pdf/1904.05862},\n    url = {https://arxiv.org/abs/1904.05862}\n}",
+  "source": "arxiv.org",
+  "date": 1557840054,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.05862?fbclid=IwAR1Wv0aaqA4jW-RimamzW7oFej9TWKlKqvwMFStFOejMIvWG7osMqxMHkQU"
+}
