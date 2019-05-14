@@ -1,0 +1,16 @@
+{
+  "title": "Universal Invariant and Equivariant Graph Neural Networks",
+  "authors": [
+    "Nicolas Keriven",
+    "Gabriel Peyré"
+  ],
+  "abstract": "Graph Neural Networks (GNN) come in many flavors, but should always be either\ninvariant (permutation of the nodes of the input graph does not affect the\noutput) or equivariant (permutation of the input permutes the output). In this\npaper, we consider a specific class of invariant and equivariant networks, for\nwhich we prove new universality theorems. More precisely, we consider networks\nwith a single hidden layer, obtained by summing channels formed by applying an\nequivariant linear operator, a pointwise non-linearity and either an invariant\nor equivariant linear operator. Recently, Maron et al. (2019) showed that by\nallowing higher-order tensorization inside the network, universal invariant\nGNNs can be obtained. As a first contribution, we propose an alternative proof\nof this result, which relies on the Stone-Weierstrass theorem for algebra of\nreal-valued functions. Our main contribution is then an extension of this\nresult to the equivariant case, which appears in many practical applications\nbut has been less studied from a theoretical point of view. The proof relies on\na new generalized Stone-Weierstrass theorem for algebra of equivariant\nfunctions, which is of independent interest. Finally, unlike many previous\nsettings that consider a fixed number of nodes, our results show that a GNN\ndefined by a single set of parameters can approximate uniformly well a function\ndefined on graphs of varying size.",
+  "id": "arxiv.1905.04943",
+  "url": "https://arxiv.org/abs/1905.04943",
+  "pdf": "https://arxiv.org/pdf/1905.04943",
+  "bibtex": "@misc{keriven2019_arxiv:1905.04943,\n    title = {Universal Invariant and Equivariant Graph Neural Networks},\n    author = {Nicolas Keriven and Gabriel Peyré},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.04943},\n    pdf = {https://arxiv.org/pdf/1905.04943},\n    url = {https://arxiv.org/abs/1905.04943}\n}",
+  "source": "arxiv.org",
+  "date": 1557827333,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.04943"
+}
