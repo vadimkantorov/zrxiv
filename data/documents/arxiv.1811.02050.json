@@ -1,0 +1,23 @@
+{
+  "title": "Leveraging Weakly Supervised Data to Improve End-to-End Speech-to-Text Translation",
+  "authors": [
+    "Ye Jia",
+    "Melvin Johnson",
+    "Wolfgang Macherey",
+    "Ron J. Weiss",
+    "Yuan Cao",
+    "Chung-Cheng Chiu",
+    "Naveen Ari",
+    "Stella Laurenzo",
+    "Yonghui Wu"
+  ],
+  "abstract": "End-to-end Speech Translation (ST) models have many potential advantages when\ncompared to the cascade of Automatic Speech Recognition (ASR) and text Machine\nTranslation (MT) models, including lowered inference latency and the avoidance\nof error compounding. However, the quality of end-to-end ST is often limited by\na paucity of training data, since it is difficult to collect large parallel\ncorpora of speech and translated transcript pairs. Previous studies have\nproposed the use of pre-trained components and multi-task learning in order to\nbenefit from weakly supervised training data, such as speech-to-transcript or\ntext-to-foreign-text pairs. In this paper, we demonstrate that using\npre-trained MT or text-to-speech (TTS) synthesis models to convert weakly\nsupervised data into speech-to-translation pairs for ST training can be more\neffective than multi-task learning. Furthermore, we demonstrate that a high\nquality end-to-end ST model can be trained using only weakly supervised\ndatasets, and that synthetic data sourced from unlabeled monolingual text or\nspeech can be used to improve performance. Finally, we discuss methods for\navoiding overfitting to synthetic speech with a quantitative ablation study.",
+  "id": "arxiv.1811.02050",
+  "url": "https://arxiv.org/abs/1811.02050",
+  "pdf": "https://arxiv.org/pdf/1811.02050",
+  "bibtex": "@misc{jia2018_arxiv:1811.02050,\n    title = {Leveraging Weakly Supervised Data to Improve End-to-End Speech-to-Text Translation},\n    author = {Ye Jia and Melvin Johnson and Wolfgang Macherey and Ron J. Weiss and Yuan Cao and Chung-Cheng Chiu and Naveen Ari and Stella Laurenzo and Yonghui Wu},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.02050},\n    pdf = {https://arxiv.org/pdf/1811.02050},\n    url = {https://arxiv.org/abs/1811.02050}\n}",
+  "source": "arxiv.org",
+  "date": 1557838761,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.02050"
+}
