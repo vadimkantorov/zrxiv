@@ -1,0 +1,17 @@
+{
+  "title": "A Fully Differentiable Beam Search Decoder",
+  "authors": [
+    "Ronan Collobert",
+    "Awni Hannun",
+    "Gabriel Synnaeve"
+  ],
+  "abstract": "We introduce a new beam search decoder that is fully differentiable, making\nit possible to optimize at training time through the inference procedure. Our\ndecoder allows us to combine models which operate at different granularities\n(e.g. acoustic and language models). It can be used when target sequences are\nnot aligned to input sequences by considering all possible alignments between\nthe two. We demonstrate our approach scales by applying it to speech\nrecognition, jointly training acoustic and word-level language models. The\nsystem is end-to-end, with gradients flowing through the whole architecture\nfrom the word-level transcriptions. Recent research efforts have shown that\ndeep neural networks with attention-based mechanisms are powerful enough to\nsuccessfully train an acoustic model from the final transcription, while\nimplicitly learning a language model. Instead, we show that it is possible to\ndiscriminatively train an acoustic model jointly with an explicit and possibly\npre-trained language model.",
+  "id": "arxiv.1902.06022",
+  "url": "https://arxiv.org/abs/1902.06022",
+  "pdf": "https://arxiv.org/pdf/1902.06022",
+  "bibtex": "@misc{collobert2019_arxiv:1902.06022,\n    title = {A Fully Differentiable Beam Search Decoder},\n    author = {Ronan Collobert and Awni Hannun and Gabriel Synnaeve},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.06022},\n    pdf = {https://arxiv.org/pdf/1902.06022},\n    url = {https://arxiv.org/abs/1902.06022}\n}",
+  "source": "arxiv.org",
+  "date": 1557915167,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1902.06022"
+}
