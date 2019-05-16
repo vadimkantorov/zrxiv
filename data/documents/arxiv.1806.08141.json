@@ -1,0 +1,18 @@
+{
+  "title": "Sliced-Wasserstein Flows: Nonparametric Generative Modeling via Optimal Transport and Diffusions",
+  "authors": [
+    "Umut Şimşekli",
+    "Antoine Liutkus",
+    "Szymon Majewski",
+    "Alain Durmus"
+  ],
+  "abstract": "By building up on the recent theory that established the connection between\nimplicit generative modeling and optimal transport, in this study, we propose a\nnovel parameter-free algorithm for learning the underlying distributions of\ncomplicated datasets and sampling from them. The proposed algorithm is based on\na functional optimization problem, which aims at finding a measure that is\nclose to the data distribution as much as possible and also expressive enough\nfor generative modeling purposes. We formulate the problem as a gradient flow\nin the space of probability measures. The connections between gradient flows\nand stochastic differential equations let us develop a computationally\nefficient algorithm for solving the optimization problem, where the resulting\nalgorithm resembles the recent dynamics-based Markov Chain Monte Carlo\nalgorithms. We provide formal theoretical analysis where we prove finite-time\nerror guarantees for the proposed algorithm. Our experimental results support\nour theory and shows that our algorithm is able to capture the structure of\nchallenging distributions.",
+  "id": "arxiv.1806.08141",
+  "url": "https://arxiv.org/abs/1806.08141",
+  "pdf": "https://arxiv.org/pdf/1806.08141",
+  "bibtex": "@misc{şimşekli2018_arxiv:1806.08141,\n    title = {Sliced-Wasserstein Flows: Nonparametric Generative Modeling via Optimal Transport and Diffusions},\n    author = {Umut Şimşekli and Antoine Liutkus and Szymon Majewski and Alain Durmus},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.08141},\n    pdf = {https://arxiv.org/pdf/1806.08141},\n    url = {https://arxiv.org/abs/1806.08141}\n}",
+  "source": "arxiv.org",
+  "date": 1558008516,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.08141"
+}
