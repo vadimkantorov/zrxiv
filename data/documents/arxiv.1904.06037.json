@@ -1,0 +1,21 @@
+{
+  "title": "Direct speech-to-speech translation with a sequence-to-sequence model",
+  "authors": [
+    "Ye Jia",
+    "Ron J. Weiss",
+    "Fadi Biadsy",
+    "Wolfgang Macherey",
+    "Melvin Johnson",
+    "Zhifeng Chen",
+    "Yonghui Wu"
+  ],
+  "abstract": "We present an attention-based sequence-to-sequence neural network which can\ndirectly translate speech from one language into speech in another language,\nwithout relying on an intermediate text representation. The network is trained\nend-to-end, learning to map speech spectrograms into target spectrograms in\nanother language, corresponding to the translated content (in a different\ncanonical voice). We further demonstrate the ability to synthesize translated\nspeech using the voice of the source speaker. We conduct experiments on two\nSpanish-to-English speech translation datasets, and find that the proposed\nmodel slightly underperforms a baseline cascade of a direct speech-to-text\ntranslation model and a text-to-speech synthesis model, demonstrating the\nfeasibility of the approach on this very challenging task.",
+  "id": "arxiv.1904.06037",
+  "url": "https://arxiv.org/abs/1904.06037",
+  "pdf": "https://arxiv.org/pdf/1904.06037",
+  "bibtex": "@misc{jia2019_arxiv:1904.06037,\n    title = {Direct speech-to-speech translation with a sequence-to-sequence model},\n    author = {Ye Jia and Ron J. Weiss and Fadi Biadsy and Wolfgang Macherey and Melvin Johnson and Zhifeng Chen and Yonghui Wu},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.06037},\n    pdf = {https://arxiv.org/pdf/1904.06037},\n    url = {https://arxiv.org/abs/1904.06037}\n}",
+  "source": "arxiv.org",
+  "date": 1558044317,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.06037"
+}
