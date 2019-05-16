@@ -1,0 +1,20 @@
+{
+  "title": "Control Regularization for Reduced Variance Reinforcement Learning",
+  "authors": [
+    "Richard Cheng",
+    "Abhinav Verma",
+    "Gabor Orosz",
+    "Swarat Chaudhuri",
+    "Yisong Yue",
+    "Joel W. Burdick"
+  ],
+  "abstract": "Dealing with high variance is a significant challenge in model-free\nreinforcement learning (RL). Existing methods are unreliable, exhibiting high\nvariance in performance from run to run using different initializations/seeds.\nFocusing on problems arising in continuous control, we propose a functional\nregularization approach to augmenting model-free RL. In particular, we\nregularize the behavior of the deep policy to be similar to a policy prior,\ni.e., we regularize in function space. We show that functional regularization\nyields a bias-variance trade-off, and propose an adaptive tuning strategy to\noptimize this trade-off. When the policy prior has control-theoretic stability\nguarantees, we further show that this regularization approximately preserves\nthose stability guarantees throughout learning. We validate our approach\nempirically on a range of settings, and demonstrate significantly reduced\nvariance, guaranteed dynamic stability, and more efficient learning than deep\nRL alone.",
+  "id": "arxiv.1905.05380",
+  "url": "https://arxiv.org/abs/1905.05380",
+  "pdf": "https://arxiv.org/pdf/1905.05380",
+  "bibtex": "@misc{cheng2019_arxiv:1905.05380,\n    title = {Control Regularization for Reduced Variance Reinforcement Learning},\n    author = {Richard Cheng and Abhinav Verma and Gabor Orosz and Swarat Chaudhuri and Yisong Yue and Joel W. Burdick},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.05380},\n    pdf = {https://arxiv.org/pdf/1905.05380},\n    url = {https://arxiv.org/abs/1905.05380}\n}",
+  "source": "arxiv.org",
+  "date": 1558035599,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.05380"
+}
