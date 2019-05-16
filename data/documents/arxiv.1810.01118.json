@@ -1,0 +1,22 @@
+{
+  "title": "Sinkhorn AutoEncoders",
+  "authors": [
+    "Giorgio Patrini",
+    "Marcello Carioni",
+    "Patrick Forré",
+    "Samarth Bhargav",
+    "Max Welling",
+    "Rianne van den Berg",
+    "Tim Genewein",
+    "Frank Nielsen"
+  ],
+  "abstract": "Optimal Transport offers an alternative to maximum likelihood for learning\ngenerative autoencoding models. We show how this principle dictates the\nminimization of the Wasserstein distance between the encoder aggregated\nposterior and the prior, plus a reconstruction error. We prove that in the\nnon-parametric limit the autoencoder generates the data distribution if and\nonly if the two distributions match exactly, and that the optimum can be\nobtained by deterministic autoencoders. We then introduce the Sinkhorn\nAutoEncoder (SAE), which casts the problem into Optimal Transport on the latent\nspace. The resulting Wasserstein distance is minimized by backpropagating\nthrough the Sinkhorn algorithm. SAE models the aggregated posterior as an\nimplicit distribution and therefore does not need a reparameterization trick\nfor gradients estimation. Moreover, it requires virtually no adaptation to\ndifferent prior distributions. We demonstrate its flexibility by considering\nmodels with hyperspherical and Dirichlet priors, as well as a simple case of\nprobabilistic programming. SAE matches or outperforms other autoencoding models\nin visual quality and FID scores.",
+  "id": "arxiv.1810.01118",
+  "url": "https://arxiv.org/abs/1810.01118",
+  "pdf": "https://arxiv.org/pdf/1810.01118",
+  "bibtex": "@misc{patrini2018_arxiv:1810.01118,\n    title = {Sinkhorn AutoEncoders},\n    author = {Giorgio Patrini and Marcello Carioni and Patrick Forré and Samarth Bhargav and Max Welling and Rianne van den Berg and Tim Genewein and Frank Nielsen},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.01118},\n    pdf = {https://arxiv.org/pdf/1810.01118},\n    url = {https://arxiv.org/abs/1810.01118}\n}",
+  "source": "arxiv.org",
+  "date": 1558024805,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1810.01118"
+}
