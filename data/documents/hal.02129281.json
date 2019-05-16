@@ -1,0 +1,17 @@
+{
+  "title": "Geometric Losses for Distributional Learning",
+  "authors": [
+    "Arthur Mensch",
+    "Mathieu Blondel",
+    "Gabriel Peyré"
+  ],
+  "abstract": "Building upon recent advances in entropy-regularized optimal transport, and upon Fenchel duality between measures and continuous functions , we propose a generalization of the logistic loss that incorporates a metric or cost between classes. Unlike previous attempts to use optimal transport distances for learning, our loss results in unconstrained convex objective functions, supports infinite (or very large) class spaces, and naturally defines a geometric generalization of the softmax operator. The geometric properties of this loss make it suitable for predicting sparse and singular distributions, for instance supported on curves or hyper-surfaces. We study the theoretical properties of our loss and show-case its effectiveness on two applications: ordinal regression and drawing generation.",
+  "id": "hal.02129281",
+  "url": "https://hal.archives-ouvertes.fr/hal-02129281",
+  "pdf": "https://hal.archives-ouvertes.fr/hal-02129281/file/article.pdf",
+  "bibtex": "@inproceedings{mensch:hal-02129281,\n    title = {Geometric Losses for Distributional Learning},\n    author = {Arthur Mensch and Mathieu Blondel and Gabriel Peyr{\\'e}},\n    booktitle = {Proceedings of the International Conference on Machine Learning},\n    year = {2019},\n    address = {Long Beach, United States},\n    hal_id = {hal-02129281},\n    hal_version = {v1},\n    pdf = {https://hal.archives-ouvertes.fr/hal-02129281/file/article.pdf},\n    url = {https://hal.archives-ouvertes.fr/hal-02129281}\n}",
+  "source": "hal.archives-ouvertes.fr",
+  "date": 1558003541,
+  "tags": [],
+  "api": "https://hal.archives-ouvertes.fr/hal-02129281v1/json"
+}
