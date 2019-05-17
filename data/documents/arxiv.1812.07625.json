@@ -1,0 +1,22 @@
+{
+  "title": "wav2letter++: The Fastest Open-source Speech Recognition System",
+  "authors": [
+    "Vineel Pratap",
+    "Awni Hannun",
+    "Qiantong Xu",
+    "Jeff Cai",
+    "Jacob Kahn",
+    "Gabriel Synnaeve",
+    "Vitaliy Liptchinsky",
+    "Ronan Collobert"
+  ],
+  "abstract": "This paper introduces wav2letter++, the fastest open-source deep learning\nspeech recognition framework. wav2letter++ is written entirely in C++, and uses\nthe ArrayFire tensor library for maximum efficiency. Here we explain the\narchitecture and design of the wav2letter++ system and compare it to other\nmajor open-source speech recognition systems. In some cases wav2letter++ is\nmore than 2x faster than other optimized frameworks for training end-to-end\nneural networks for speech recognition. We also show that wav2letter++'s\ntraining times scale linearly to 64 GPUs, the highest we tested, for models\nwith 100 million parameters. High-performance frameworks enable fast iteration,\nwhich is often a crucial factor in successful research and model tuning on new\ndatasets and tasks.",
+  "id": "arxiv.1812.07625",
+  "url": "https://arxiv.org/abs/1812.07625",
+  "pdf": "https://arxiv.org/pdf/1812.07625",
+  "bibtex": "@misc{pratap2018_arxiv:1812.07625,\n    title = {wav2letter++: The Fastest Open-source Speech Recognition System},\n    author = {Vineel Pratap and Awni Hannun and Qiantong Xu and Jeff Cai and Jacob Kahn and Gabriel Synnaeve and Vitaliy Liptchinsky and Ronan Collobert},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.07625},\n    pdf = {https://arxiv.org/pdf/1812.07625},\n    url = {https://arxiv.org/abs/1812.07625}\n}",
+  "source": "arxiv.org",
+  "date": 1558080050,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.07625"
+}
