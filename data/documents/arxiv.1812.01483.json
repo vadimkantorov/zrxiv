@@ -1,0 +1,22 @@
+{
+  "title": "CompILE: Compositional Imitation Learning and Execution",
+  "authors": [
+    "Thomas Kipf",
+    "Yujia Li",
+    "Hanjun Dai",
+    "Vinicius Zambaldi",
+    "Alvaro Sanchez-Gonzalez",
+    "Edward Grefenstette",
+    "Pushmeet Kohli",
+    "Peter Battaglia"
+  ],
+  "abstract": "We introduce Compositional Imitation Learning and Execution (CompILE): a\nframework for learning reusable, variable-length segments of\nhierarchically-structured behavior from demonstration data. CompILE uses a\nnovel unsupervised, fully-differentiable sequence segmentation module to learn\nlatent encodings of sequential data that can be re-composed and executed to\nperform new tasks. Once trained, our model generalizes to sequences of longer\nlength and from environment instances not seen during training. We evaluate\nCompILE in a challenging 2D multi-task environment and a continuous control\ntask, and show that it can find correct task boundaries and event encodings in\nan unsupervised manner. Latent codes and associated behavior policies\ndiscovered by CompILE can be used by a hierarchical agent, where the high-level\npolicy selects actions in the latent code space, and the low-level,\ntask-specific policies are simply the learned decoders. We found that our\nCompILE-based agent could learn given only sparse rewards, where agents without\ntask-specific policies struggle.",
+  "id": "arxiv.1812.01483",
+  "url": "https://arxiv.org/abs/1812.01483",
+  "pdf": "https://arxiv.org/pdf/1812.01483",
+  "bibtex": "@misc{kipf2018_arxiv:1812.01483,\n    title = {CompILE: Compositional Imitation Learning and Execution},\n    author = {Thomas Kipf and Yujia Li and Hanjun Dai and Vinicius Zambaldi and Alvaro Sanchez-Gonzalez and Edward Grefenstette and Pushmeet Kohli and Peter Battaglia},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.01483},\n    pdf = {https://arxiv.org/pdf/1812.01483},\n    url = {https://arxiv.org/abs/1812.01483}\n}",
+  "source": "arxiv.org",
+  "date": 1558088203,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.01483"
+}
