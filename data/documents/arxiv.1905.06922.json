@@ -1,0 +1,19 @@
+{
+  "title": "On Variational Bounds of Mutual Information",
+  "authors": [
+    "Ben Poole",
+    "Sherjil Ozair",
+    "Aaron van den Oord",
+    "Alexander A. Alemi",
+    "George Tucker"
+  ],
+  "abstract": "Estimating and optimizing Mutual Information (MI) is core to many problems in\nmachine learning; however, bounding MI in high dimensions is challenging. To\nestablish tractable and scalable objectives, recent work has turned to\nvariational bounds parameterized by neural networks, but the relationships and\ntradeoffs between these bounds remains unclear. In this work, we unify these\nrecent developments in a single framework. We find that the existing\nvariational lower bounds degrade when the MI is large, exhibiting either high\nbias or high variance. To address this problem, we introduce a continuum of\nlower bounds that encompasses previous bounds and flexibly trades off bias and\nvariance. On high-dimensional, controlled problems, we empirically characterize\nthe bias and variance of the bounds and their gradients and demonstrate the\neffectiveness of our new bounds for estimation and representation learning.",
+  "id": "arxiv.1905.06922",
+  "url": "https://arxiv.org/abs/1905.06922",
+  "pdf": "https://arxiv.org/pdf/1905.06922",
+  "bibtex": "@misc{poole2019_arxiv:1905.06922,\n    title = {On Variational Bounds of Mutual Information},\n    author = {Ben Poole and Sherjil Ozair and Aaron van den Oord and Alexander A. Alemi and George Tucker},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.06922},\n    pdf = {https://arxiv.org/pdf/1905.06922},\n    url = {https://arxiv.org/abs/1905.06922}\n}",
+  "source": "arxiv.org",
+  "date": 1558216752,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.06922"
+}
