@@ -1,0 +1,19 @@
+{
+  "title": "AutoAugment: Learning Augmentation Policies from Data",
+  "authors": [
+    "Ekin D. Cubuk",
+    "Barret Zoph",
+    "Dandelion Mane",
+    "Vijay Vasudevan",
+    "Quoc V. Le"
+  ],
+  "abstract": "Data augmentation is an effective technique for improving the accuracy of\nmodern image classifiers. However, current data augmentation implementations\nare manually designed. In this paper, we describe a simple procedure called\nAutoAugment to automatically search for improved data augmentation policies. In\nour implementation, we have designed a search space where a policy consists of\nmany sub-policies, one of which is randomly chosen for each image in each\nmini-batch. A sub-policy consists of two operations, each operation being an\nimage processing function such as translation, rotation, or shearing, and the\nprobabilities and magnitudes with which the functions are applied. We use a\nsearch algorithm to find the best policy such that the neural network yields\nthe highest validation accuracy on a target dataset. Our method achieves\nstate-of-the-art accuracy on CIFAR-10, CIFAR-100, SVHN, and ImageNet (without\nadditional data). On ImageNet, we attain a Top-1 accuracy of 83.5% which is\n0.4% better than the previous record of 83.1%. On CIFAR-10, we achieve an error\nrate of 1.5%, which is 0.6% better than the previous state-of-the-art.\nAugmentation policies we find are transferable between datasets. The policy\nlearned on ImageNet transfers well to achieve significant improvements on other\ndatasets, such as Oxford Flowers, Caltech-101, Oxford-IIT Pets, FGVC Aircraft,\nand Stanford Cars.",
+  "id": "arxiv.1805.09501",
+  "url": "https://arxiv.org/abs/1805.09501",
+  "pdf": "https://arxiv.org/pdf/1805.09501",
+  "bibtex": "@misc{cubuk2018_arxiv:1805.09501,\n    title = {AutoAugment: Learning Augmentation Policies from Data},\n    author = {Ekin D. Cubuk and Barret Zoph and Dandelion Mane and Vijay Vasudevan and Quoc V. Le},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.09501},\n    pdf = {https://arxiv.org/pdf/1805.09501},\n    url = {https://arxiv.org/abs/1805.09501}\n}",
+  "source": "arxiv.org",
+  "date": 1558294605,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1805.09501"
+}
