@@ -1,0 +1,19 @@
+{
+  "title": "Fully Supervised Speaker Diarization",
+  "authors": [
+    "Aonan Zhang",
+    "Quan Wang",
+    "Zhenyao Zhu",
+    "John Paisley",
+    "Chong Wang"
+  ],
+  "abstract": "In this paper, we propose a fully supervised speaker diarization approach,\nnamed unbounded interleaved-state recurrent neural networks (UIS-RNN). Given\nextracted speaker-discriminative embeddings (a.k.a. d-vectors) from input\nutterances, each individual speaker is modeled by a parameter-sharing RNN,\nwhile the RNN states for different speakers interleave in the time domain. This\nRNN is naturally integrated with a distance-dependent Chinese restaurant\nprocess (ddCRP) to accommodate an unknown number of speakers. Our system is\nfully supervised and is able to learn from examples where time-stamped speaker\nlabels are annotated. We achieved a 7.6% diarization error rate on NIST SRE\n2000 CALLHOME, which is better than the state-of-the-art method using spectral\nclustering. Moreover, our method decodes in an online fashion while most\nstate-of-the-art systems rely on offline clustering.",
+  "id": "arxiv.1810.04719",
+  "url": "https://arxiv.org/abs/1810.04719",
+  "pdf": "https://arxiv.org/pdf/1810.04719",
+  "bibtex": "@misc{zhang2018_arxiv:1810.04719,\n    title = {Fully Supervised Speaker Diarization},\n    author = {Aonan Zhang and Quan Wang and Zhenyao Zhu and John Paisley and Chong Wang},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.04719},\n    pdf = {https://arxiv.org/pdf/1810.04719},\n    url = {https://arxiv.org/abs/1810.04719}\n}",
+  "source": "arxiv.org",
+  "date": 1558341574,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1810.04719"
+}
