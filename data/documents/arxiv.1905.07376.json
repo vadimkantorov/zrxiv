@@ -1,0 +1,18 @@
+{
+  "title": "Integer Discrete Flows and Lossless Compression",
+  "authors": [
+    "Emiel Hoogeboom",
+    "Jorn W. T. Peters",
+    "Rianne van den Berg",
+    "Max Welling"
+  ],
+  "abstract": "Lossless compression methods shorten the expected representation size of data\nwithout loss of information, using a statistical model. Flow-based models are\nattractive in this setting because they admit exact likelihood optimization,\nwhich is equivalent to minimizing the expected number of bits per message.\nHowever, conventional flows assume continuous data, which may lead to\nreconstruction errors when quantized for compression. For that reason, we\nintroduce a generative flow for ordinal discrete data called Integer Discrete\nFlow (IDF): a bijective integer map that can learn rich transformations on\nhigh-dimensional data. As building blocks for IDFs, we introduce flexible\ntransformation layers called integer discrete coupling and lower triangular\ncoupling. Our experiments show that IDFs are competitive with other flow-based\ngenerative models. Furthermore, we demonstrate that IDF based compression\nachieves state-of-the-art lossless compression rates on CIFAR10, ImageNet32,\nand ImageNet64.",
+  "id": "arxiv.1905.07376",
+  "url": "https://arxiv.org/abs/1905.07376",
+  "pdf": "https://arxiv.org/pdf/1905.07376",
+  "bibtex": "@misc{hoogeboom2019_arxiv:1905.07376,\n    title = {Integer Discrete Flows and Lossless Compression},\n    author = {Emiel Hoogeboom and Jorn W. T. Peters and Rianne van den Berg and Max Welling},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.07376},\n    pdf = {https://arxiv.org/pdf/1905.07376},\n    url = {https://arxiv.org/abs/1905.07376}\n}",
+  "source": "arxiv.org",
+  "date": 1558381091,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.07376"
+}
