@@ -1,0 +1,18 @@
+{
+  "title": "Equi-normalization of Neural Networks",
+  "authors": [
+    "Pierre Stock",
+    "Benjamin Graham",
+    "Rémi Gribonval",
+    "Hervé Jégou"
+  ],
+  "abstract": "Modern neural networks are over-parametrized. In particular, each rectified\nlinear hidden unit can be modified by a multiplicative factor by adjusting\ninput and output weights, without changing the rest of the network. Inspired by\nthe Sinkhorn-Knopp algorithm, we introduce a fast iterative method for\nminimizing the L2 norm of the weights, equivalently the weight decay\nregularizer. It provably converges to a unique solution. Interleaving our\nalgorithm with SGD during training improves the test accuracy. For small\nbatches, our approach offers an alternative to batch-and group-normalization on\nCIFAR-10 and ImageNet with a ResNet-18.",
+  "id": "arxiv.1902.10416",
+  "url": "https://arxiv.org/abs/1902.10416",
+  "pdf": "https://arxiv.org/pdf/1902.10416",
+  "bibtex": "@misc{stock2019_arxiv:1902.10416,\n    title = {Equi-normalization of Neural Networks},\n    author = {Pierre Stock and Benjamin Graham and Rémi Gribonval and Hervé Jégou},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.10416},\n    pdf = {https://arxiv.org/pdf/1902.10416},\n    url = {https://arxiv.org/abs/1902.10416}\n}",
+  "source": "arxiv.org",
+  "date": 1558438479,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1902.10416"
+}
