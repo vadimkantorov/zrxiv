@@ -1,0 +1,18 @@
+{
+  "title": "Few-Shot Adversarial Learning of Realistic Neural Talking Head Models",
+  "authors": [
+    "Egor Zakharov",
+    "Aliaksandra Shysheya",
+    "Egor Burkov",
+    "Victor Lempitsky"
+  ],
+  "abstract": "Several recent works have shown how highly realistic human head images can be\nobtained by training convolutional neural networks to generate them. In order\nto create a personalized talking head model, these works require training on a\nlarge dataset of images of a single person. However, in many practical\nscenarios, such personalized talking head models need to be learned from a few\nimage views of a person, potentially even a single image. Here, we present a\nsystem with such few-shot capability. It performs lengthy meta-learning on a\nlarge dataset of videos, and after that is able to frame few- and one-shot\nlearning of neural talking head models of previously unseen people as\nadversarial training problems with high capacity generators and discriminators.\nCrucially, the system is able to initialize the parameters of both the\ngenerator and the discriminator in a person-specific way, so that training can\nbe based on just a few images and done quickly, despite the need to tune tens\nof millions of parameters. We show that such an approach is able to learn\nhighly realistic and personalized talking head models of new people and even\nportrait paintings.",
+  "id": "arxiv.1905.08233",
+  "url": "https://arxiv.org/abs/1905.08233",
+  "pdf": "https://arxiv.org/pdf/1905.08233",
+  "bibtex": "@misc{zakharov2019_arxiv:1905.08233,\n    title = {Few-Shot Adversarial Learning of Realistic Neural Talking Head Models},\n    author = {Egor Zakharov and Aliaksandra Shysheya and Egor Burkov and Victor Lempitsky},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.08233},\n    pdf = {https://arxiv.org/pdf/1905.08233},\n    url = {https://arxiv.org/abs/1905.08233}\n}",
+  "source": "arxiv.org",
+  "date": 1558555873,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.08233"
+}
