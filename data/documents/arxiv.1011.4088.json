@@ -1,0 +1,16 @@
+{
+  "title": "An Introduction to Conditional Random Fields",
+  "authors": [
+    "Charles Sutton",
+    "Andrew McCallum"
+  ],
+  "abstract": "Often we wish to predict a large number of variables that depend on each\nother as well as on other observed variables. Structured prediction methods are\nessentially a combination of classification and graphical modeling, combining\nthe ability of graphical models to compactly model multivariate data with the\nability of classification methods to perform prediction using large sets of\ninput features. This tutorial describes conditional random fields, a popular\nprobabilistic method for structured prediction. CRFs have seen wide application\nin natural language processing, computer vision, and bioinformatics. We\ndescribe methods for inference and parameter estimation for CRFs, including\npractical issues for implementing large scale CRFs. We do not assume previous\nknowledge of graphical modeling, so this tutorial is intended to be useful to\npractitioners in a wide variety of fields.",
+  "id": "arxiv.1011.4088",
+  "url": "https://arxiv.org/abs/1011.4088",
+  "pdf": "https://arxiv.org/pdf/1011.4088",
+  "bibtex": "@misc{sutton2010_arxiv:1011.4088,\n    title = {An Introduction to Conditional Random Fields},\n    author = {Charles Sutton and Andrew McCallum},\n    year = {2010},\n    archiveprefix = {arXiv},\n    eprint = {1011.4088},\n    pdf = {https://arxiv.org/pdf/1011.4088},\n    url = {https://arxiv.org/abs/1011.4088}\n}",
+  "source": "arxiv.org",
+  "date": 1558553857,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1011.4088"
+}
