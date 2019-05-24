@@ -1,0 +1,18 @@
+{
+  "title": "Using stacking to average Bayesian predictive distributions",
+  "authors": [
+    "Yuling Yao",
+    "Aki Vehtari",
+    "Daniel Simpson",
+    "Andrew Gelman"
+  ],
+  "abstract": "The widely recommended procedure of Bayesian model averaging is flawed in the\nM-open setting in which the true data-generating process is not one of the\ncandidate models being fit. We take the idea of stacking from the point\nestimation literature and generalize to the combination of predictive\ndistributions, extending the utility function to any proper scoring rule, using\nPareto smoothed importance sampling to efficiently compute the required\nleave-one-out posterior distributions and regularization to get more stability.\nWe compare stacking of predictive distributions to several alternatives:\nstacking of means, Bayesian model averaging (BMA), pseudo-BMA using AIC-type\nweighting, and a variant of pseudo-BMA that is stabilized using the Bayesian\nbootstrap. Based on simulations and real-data applications, we recommend\nstacking of predictive distributions, with BB-pseudo-BMA as an approximate\nalternative when computation cost is an issue.",
+  "id": "arxiv.1704.02030",
+  "url": "https://arxiv.org/abs/1704.02030",
+  "pdf": "https://arxiv.org/pdf/1704.02030",
+  "bibtex": "@misc{yao2017_arxiv:1704.02030,\n    title = {Using stacking to average Bayesian predictive distributions},\n    author = {Yuling Yao and Aki Vehtari and Daniel Simpson and Andrew Gelman},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1704.02030},\n    pdf = {https://arxiv.org/pdf/1704.02030},\n    url = {https://arxiv.org/abs/1704.02030}\n}",
+  "source": "arxiv.org",
+  "date": 1558685660,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1704.02030"
+}
