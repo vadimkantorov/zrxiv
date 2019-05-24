@@ -1,0 +1,17 @@
+{
+  "title": "Augmented Neural ODEs",
+  "authors": [
+    "Emilien Dupont",
+    "Arnaud Doucet",
+    "Yee Whye Teh"
+  ],
+  "abstract": "We show that Neural Ordinary Differential Equations (ODEs) learn\nrepresentations that preserve the topology of the input space and prove that\nthis implies the existence of functions Neural ODEs cannot represent. To\naddress these limitations, we introduce Augmented Neural ODEs which, in\naddition to being more expressive models, are empirically more stable,\ngeneralize better and have a lower computational cost than Neural ODEs.",
+  "id": "arxiv.1904.01681",
+  "url": "https://arxiv.org/abs/1904.01681",
+  "pdf": "https://arxiv.org/pdf/1904.01681",
+  "bibtex": "@misc{dupont2019_arxiv:1904.01681,\n    title = {Augmented Neural ODEs},\n    author = {Emilien Dupont and Arnaud Doucet and Yee Whye Teh},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.01681},\n    pdf = {https://arxiv.org/pdf/1904.01681},\n    url = {https://arxiv.org/abs/1904.01681}\n}",
+  "source": "arxiv.org",
+  "date": 1558706192,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.01681"
+}
