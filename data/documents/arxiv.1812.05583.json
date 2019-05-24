@@ -1,0 +1,16 @@
+{
+  "title": "Scene Recomposition by Learning-based ICP",
+  "authors": [
+    "Hamid Izadinia",
+    "Steven M. Seitz"
+  ],
+  "abstract": "By moving a depth sensor around a room, we compute a 3D CAD model of the\nenvironment, capturing the room shape and contents such as chairs, desks,\nsofas, and tables. Rather than reconstructing geometry, we match, place, and\nalign each object in the scene to thousands of CAD models of objects. In\naddition to the end-to-end system, the key technical contribution is a novel\napproach for aligning CAD models to 3D scans, based on deep reinforcement\nlearning. This approach, which we call Learning-based ICP, outperforms prior\nICP methods in the literature, by learning the best points to match and\nconditioning on object viewpoint. LICP learns to align using only synthetic\ndata and does not require ground-truth annotation of object pose or keypoint\npair matching in real scene scans. While LICP is trained on synthetic data and\nwithout 3D real scene annotations, it outperforms both learned local deep\nfeature matching and geometric based alignment methods in real scenes. Proposed\nmethod is evaluated on publicly available real scenes datasets of SceneNN and\nScanNet as well as synthetic scenes of SUNCG. High quality results are\ndemonstrated on a range of real world scenes, with robustness to clutter,\nviewpoint, and occlusion.",
+  "id": "arxiv.1812.05583",
+  "url": "https://arxiv.org/abs/1812.05583",
+  "pdf": "https://arxiv.org/pdf/1812.05583",
+  "bibtex": "@misc{izadinia2018_arxiv:1812.05583,\n    title = {Scene Recomposition by Learning-based ICP},\n    author = {Hamid Izadinia and Steven M. Seitz},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.05583},\n    pdf = {https://arxiv.org/pdf/1812.05583},\n    url = {https://arxiv.org/abs/1812.05583}\n}",
+  "source": "arxiv.org",
+  "date": 1558724033,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.05583"
+}
