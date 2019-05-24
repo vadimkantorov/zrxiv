@@ -1,0 +1,16 @@
+{
+  "title": "A Contrastive Divergence for Combining Variational Inference and MCMC",
+  "authors": [
+    "Francisco J. R. Ruiz",
+    "Michalis K. Titsias"
+  ],
+  "abstract": "We develop a method to combine Markov chain Monte Carlo (MCMC) and\nvariational inference (VI), leveraging the advantages of both inference\napproaches. Specifically, we improve the variational distribution by running a\nfew MCMC steps. To make inference tractable, we introduce the variational\ncontrastive divergence (VCD), a new divergence that replaces the standard\nKullback-Leibler (KL) divergence used in VI. The VCD captures a notion of\ndiscrepancy between the initial variational distribution and its improved\nversion (obtained after running the MCMC steps), and it converges\nasymptotically to the symmetrized KL divergence between the variational\ndistribution and the posterior of interest. The VCD objective can be optimized\nefficiently with respect to the variational parameters via stochastic\noptimization. We show experimentally that optimizing the VCD leads to better\npredictive performance on two latent variable models: logistic matrix\nfactorization and variational autoencoders (VAEs).",
+  "id": "arxiv.1905.04062",
+  "url": "https://arxiv.org/abs/1905.04062",
+  "pdf": "https://arxiv.org/pdf/1905.04062",
+  "bibtex": "@misc{ruiz2019_arxiv:1905.04062,\n    title = {A Contrastive Divergence for Combining Variational Inference and MCMC},\n    author = {Francisco J. R. Ruiz and Michalis K. Titsias},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.04062},\n    pdf = {https://arxiv.org/pdf/1905.04062},\n    url = {https://arxiv.org/abs/1905.04062}\n}",
+  "source": "arxiv.org",
+  "date": 1558737168,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.04062"
+}
