@@ -1,0 +1,17 @@
+{
+  "title": "Automatic Posterior Transformation for Likelihood-Free Inference",
+  "authors": [
+    "David S. Greenberg",
+    "Marcel Nonnenmacher",
+    "Jakob H. Macke"
+  ],
+  "abstract": "How can one perform Bayesian inference on stochastic simulators with\nintractable likelihoods? A recent approach is to learn the posterior from\nadaptively proposed simulations using neural network-based conditional density\nestimators. However, existing methods are limited to a narrow range of proposal\ndistributions or require importance weighting that can limit performance in\npractice. Here we present automatic posterior transformation (APT), a new\nsequential neural posterior estimation method for simulation-based inference.\nAPT can modify the posterior estimate using arbitrary, dynamically updated\nproposals, and is compatible with powerful flow-based density estimators. It is\nmore flexible, scalable and efficient than previous simulation-based inference\ntechniques. APT can operate directly on high-dimensional time series and image\ndata, opening up new applications for likelihood-free inference.",
+  "id": "arxiv.1905.07488",
+  "url": "https://arxiv.org/abs/1905.07488",
+  "pdf": "https://arxiv.org/pdf/1905.07488",
+  "bibtex": "@misc{greenberg2019_arxiv:1905.07488,\n    title = {Automatic Posterior Transformation for Likelihood-Free Inference},\n    author = {David S. Greenberg and Marcel Nonnenmacher and Jakob H. Macke},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.07488},\n    pdf = {https://arxiv.org/pdf/1905.07488},\n    url = {https://arxiv.org/abs/1905.07488}\n}",
+  "source": "arxiv.org",
+  "date": 1558733662,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.07488"
+}
