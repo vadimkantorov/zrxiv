@@ -1,0 +1,16 @@
+{
+  "title": "Revisiting Graph Neural Networks: All We Have is Low-Pass Filters",
+  "authors": [
+    "Hoang NT",
+    "Takanori Maehara"
+  ],
+  "abstract": "Graph neural networks have become one of the most important techniques to\nsolve machine learning problems on graph-structured data. Recent work on vertex\nclassification proposed deep and distributed learning models to achieve high\nperformance and scalability. However, we find that the feature vectors of\nbenchmark datasets are already quite informative for the classification task,\nand the graph structure only provides a means to denoise the data. In this\npaper, we develop a theoretical framework based on graph signal processing for\nanalyzing graph neural networks. Our results indicate that graph neural\nnetworks only perform low-pass filtering on feature vectors and do not have the\nnon-linear manifold learning property. We further investigate their resilience\nto feature noise and propose some insights on GCN-based graph neural network\ndesign.",
+  "id": "arxiv.1905.09550",
+  "url": "https://arxiv.org/abs/1905.09550",
+  "pdf": "https://arxiv.org/pdf/1905.09550",
+  "bibtex": "@misc{nt2019_arxiv:1905.09550,\n    title = {Revisiting Graph Neural Networks: All We Have is Low-Pass Filters},\n    author = {Hoang NT and Takanori Maehara},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.09550},\n    pdf = {https://arxiv.org/pdf/1905.09550},\n    url = {https://arxiv.org/abs/1905.09550}\n}",
+  "source": "arxiv.org",
+  "date": 1558738664,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.09550v1"
+}
