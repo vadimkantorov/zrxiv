@@ -1,0 +1,20 @@
+{
+  "title": "DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients",
+  "authors": [
+    "Shuchang Zhou",
+    "Yuxin Wu",
+    "Zekun Ni",
+    "Xinyu Zhou",
+    "He Wen",
+    "Yuheng Zou"
+  ],
+  "abstract": "We propose DoReFa-Net, a method to train convolutional neural networks that\nhave low bitwidth weights and activations using low bitwidth parameter\ngradients. In particular, during backward pass, parameter gradients are\nstochastically quantized to low bitwidth numbers before being propagated to\nconvolutional layers. As convolutions during forward/backward passes can now\noperate on low bitwidth weights and activations/gradients respectively,\nDoReFa-Net can use bit convolution kernels to accelerate both training and\ninference. Moreover, as bit convolutions can be efficiently implemented on CPU,\nFPGA, ASIC and GPU, DoReFa-Net opens the way to accelerate training of low\nbitwidth neural network on these hardware. Our experiments on SVHN and ImageNet\ndatasets prove that DoReFa-Net can achieve comparable prediction accuracy as\n32-bit counterparts. For example, a DoReFa-Net derived from AlexNet that has\n1-bit weights, 2-bit activations, can be trained from scratch using 6-bit\ngradients to get 46.1\\% top-1 accuracy on ImageNet validation set. The\nDoReFa-Net AlexNet model is released publicly.",
+  "id": "arxiv.1606.06160",
+  "url": "https://arxiv.org/abs/1606.06160",
+  "pdf": "https://arxiv.org/pdf/1606.06160",
+  "bibtex": "@misc{zhou2016_arxiv:1606.06160,\n    title = {DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients},\n    author = {Shuchang Zhou and Yuxin Wu and Zekun Ni and Xinyu Zhou and He Wen and Yuheng Zou},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1606.06160},\n    pdf = {https://arxiv.org/pdf/1606.06160},\n    url = {https://arxiv.org/abs/1606.06160}\n}",
+  "source": "arxiv.org",
+  "date": 1558806566,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1606.06160"
+}
