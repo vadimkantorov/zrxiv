@@ -1,0 +1,18 @@
+{
+  "title": "Kervolutional Neural Networks",
+  "authors": [
+    "Chen Wang",
+    "Jianfei Yang",
+    "Lihua Xie",
+    "Junsong Yuan"
+  ],
+  "abstract": "Convolutional neural networks (CNNs) have enabled the state-of-the-art\nperformance in many computer vision tasks. However, little effort has been\ndevoted to establishing convolution in non-linear space. Existing works mainly\nleverage on the activation layers, which can only provide point-wise\nnon-linearity. To solve this problem, a new operation, kervolution (kernel\nconvolution), is introduced to approximate complex behaviors of human\nperception systems leveraging on the kernel trick. It generalizes convolution,\nenhances the model capacity, and captures higher order interactions of\nfeatures, via patch-wise kernel functions, but without introducing additional\nparameters. Extensive experiments show that kervolutional neural networks (KNN)\nachieve higher accuracy and faster convergence than baseline CNN.",
+  "id": "arxiv.1904.03955",
+  "url": "https://arxiv.org/abs/1904.03955",
+  "pdf": "https://arxiv.org/pdf/1904.03955",
+  "bibtex": "@misc{wang2019_arxiv:1904.03955,\n    title = {Kervolutional Neural Networks},\n    author = {Chen Wang and Jianfei Yang and Lihua Xie and Junsong Yuan},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.03955},\n    pdf = {https://arxiv.org/pdf/1904.03955},\n    url = {https://arxiv.org/abs/1904.03955}\n}",
+  "source": "arxiv.org",
+  "date": 1558781065,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.03955"
+}
