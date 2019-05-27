@@ -1,0 +1,16 @@
+{
+  "title": "Estimating Convergence of Markov chains with L-Lag Couplings",
+  "authors": [
+    "Niloy Biswas",
+    "Pierre E. Jacob"
+  ],
+  "abstract": "Markov chain Monte Carlo (MCMC) methods generate samples that are\nasymptotically distributed from a target distribution of interest as the number\nof iterations goes to infinity. Various theoretical results provide upper\nbounds on the distance between the target and marginal distribution after a\nfixed number of iterations. These upper bounds are on a case by case basis and\ntypically involve intractable quantities, which limits their use for\npractitioners. We introduce L-lag couplings to generate computable,\nnon-asymptotic upper bound estimates for the total variation or the Wasserstein\ndistance of general Markov chains. We apply L-lag couplings to three tasks: (i)\ndetermining MCMC burn-in with guarantees; (ii) comparison of different MCMC\nalgorithms targeting the same distribution; (iii) comparison of exact and\napproximate MCMC algorithms such as Metropolis adjusted Langevin and unadjusted\nLangevin.",
+  "id": "arxiv.1905.09971",
+  "url": "https://arxiv.org/abs/1905.09971",
+  "pdf": "https://arxiv.org/pdf/1905.09971",
+  "bibtex": "@misc{biswas2019_arxiv:1905.09971,\n    title = {Estimating Convergence of Markov chains with L-Lag Couplings},\n    author = {Niloy Biswas and Pierre E. Jacob},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.09971},\n    pdf = {https://arxiv.org/pdf/1905.09971},\n    url = {https://arxiv.org/abs/1905.09971}\n}",
+  "source": "arxiv.org",
+  "date": 1558964557,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.09971"
+}
