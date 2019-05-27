@@ -1,0 +1,19 @@
+{
+  "title": "Sliced Gromov-Wasserstein",
+  "authors": [
+    "Titouan Vayer",
+    "Rémi Flamary",
+    "Romain Tavenard",
+    "Laetitia Chapel",
+    "Nicolas Courty"
+  ],
+  "abstract": "Recently used in various machine learning contexts, the Gromov-Wasserstein\ndistance (GW) allows for comparing distributions that do not necessarily lie in\nthe same metric space. However, this Optimal Transport (OT) distance requires\nsolving a complex non convex quadratic program which is most of the time very\ncostly both in time and memory. Contrary to GW, the Wasserstein distance (W)\nenjoys several properties (e.g. duality) that permit large scale optimization.\nAmong those, the Sliced Wasserstein (SW) distance exploits the direct solution\nof W on the line, that only requires sorting discrete samples in 1D. This paper\npropose a new divergence based on GW akin to SW. We first derive a closed form\nfor GW when dealing with 1D distributions, based on a new result for the\nrelated quadratic assignment problem. We then define a novel OT discrepancy\nthat can deal with large scale distributions via a slicing approach and we show\nhow it relates to the GW distance while being $O(n^2)$ to compute. We\nillustrate the behavior of this so called Sliced Gromov-Wasserstein (SGW)\ndiscrepancy in experiments where we demonstrate its ability to tackle similar\nproblems as GW while being several order of magnitudes faster to compute",
+  "id": "arxiv.1905.10124",
+  "url": "https://arxiv.org/abs/1905.10124",
+  "pdf": "https://arxiv.org/pdf/1905.10124",
+  "bibtex": "@misc{vayer2019_arxiv:1905.10124,\n    title = {Sliced Gromov-Wasserstein},\n    author = {Titouan Vayer and Rémi Flamary and Romain Tavenard and Laetitia Chapel and Nicolas Courty},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.10124},\n    pdf = {https://arxiv.org/pdf/1905.10124},\n    url = {https://arxiv.org/abs/1905.10124}\n}",
+  "source": "arxiv.org",
+  "date": 1558958854,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.10124"
+}
