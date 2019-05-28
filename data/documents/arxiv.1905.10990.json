@@ -1,0 +1,15 @@
+{
+  "title": "Edge Contraction Pooling for Graph Neural Networks",
+  "authors": [
+    "Frederik Diehl"
+  ],
+  "abstract": "Graph Neural Network (GNN) research has concentrated on improving\nconvolutional layers, with little attention paid to developing graph pooling\nlayers. Yet pooling layers can enable GNNs to reason over abstracted groups of\nnodes instead of single nodes. To close this gap, we propose a graph pooling\nlayer relying on the notion of edge contraction: EdgePool learns a localized\nand sparse hard pooling transform. We show that EdgePool outperforms\nalternative pooling methods, can be easily integrated into most GNN models, and\nimproves performance on both node and graph classification.",
+  "id": "arxiv.1905.10990",
+  "url": "https://arxiv.org/abs/1905.10990",
+  "pdf": "https://arxiv.org/pdf/1905.10990",
+  "bibtex": "@misc{diehl2019_arxiv:1905.10990,\n    title = {Edge Contraction Pooling for Graph Neural Networks},\n    author = {Frederik Diehl},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.10990},\n    pdf = {https://arxiv.org/pdf/1905.10990},\n    url = {https://arxiv.org/abs/1905.10990}\n}",
+  "source": "arxiv.org",
+  "date": 1559047474,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.10990"
+}
