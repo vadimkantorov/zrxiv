@@ -1,0 +1,15 @@
+{
+  "title": "AI-GAs: AI-generating algorithms, an alternate paradigm for producing general artificial intelligence",
+  "authors": [
+    "Jeff Clune"
+  ],
+  "abstract": "Perhaps the most ambitious scientific quest in human history is the creation\nof general artificial intelligence, which roughly means AI that is as smart or\nsmarter than humans. The dominant approach in the machine learning community is\nto attempt to discover each of the pieces required for intelligence, with the\nimplicit assumption that some future group will complete the Herculean task of\nfiguring out how to combine all of those pieces into a complex thinking\nmachine. I call this the ``manual AI approach.'' This paper describes another\nexciting path that ultimately may be more successful at producing general AI.\nIt is based on the clear trend in machine learning that hand-designed solutions\neventually are replaced by more effective, learned solutions. The idea is to\ncreate an AI-generating algorithm (AI-GA), which automatically learns how to\nproduce general AI. Three Pillars are essential for the approach: (1)\nmeta-learning architectures, (2) meta-learning the learning algorithms\nthemselves, and (3) generating effective learning environments. I argue that\neither approach could produce general AI first, and both are scientifically\nworthwhile irrespective of which is the fastest path. Because both are\npromising, yet the ML community is currently committed to the manual approach,\nI argue that our community should increase its research investment in the AI-GA\napproach. To encourage such research, I describe promising work in each of the\nThree Pillars. I also discuss AI-GA-specific safety and ethical considerations.\nBecause it it may be the fastest path to general AI and because it is\ninherently scientifically interesting to understand the conditions in which a\nsimple algorithm can produce general AI (as happened on Earth where Darwinian\nevolution produced human intelligence), I argue that the pursuit of AI-GAs\nshould be considered a new grand challenge of computer science research.",
+  "id": "arxiv.1905.10985",
+  "url": "https://arxiv.org/abs/1905.10985",
+  "pdf": "https://arxiv.org/pdf/1905.10985",
+  "bibtex": "@misc{clune2019_arxiv:1905.10985,\n    title = {AI-GAs: AI-generating algorithms, an alternate paradigm for producing general artificial intelligence},\n    author = {Jeff Clune},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.10985},\n    pdf = {https://arxiv.org/pdf/1905.10985},\n    url = {https://arxiv.org/abs/1905.10985}\n}",
+  "source": "arxiv.org",
+  "date": 1559064243,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.10985"
+}
