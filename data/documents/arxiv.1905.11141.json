@@ -1,0 +1,21 @@
+{
+  "title": "Intrinsic Multi-scale Evaluation of Generative Models",
+  "authors": [
+    "Anton Tsitsulin",
+    "Marina Munkhoeva",
+    "Davide Mottin",
+    "Panagiotis Karras",
+    "Alex Bronstein",
+    "Ivan Oseledets",
+    "Emmanuel Müller"
+  ],
+  "abstract": "Generative models are often used to sample high-dimensional data points from\na manifold with small intrinsic dimension. Existing techniques for comparing\ngenerative models focus on global data properties such as mean and covariance;\nin that sense, they are extrinsic and uni-scale. We develop the first, to our\nknowledge, intrinsic and multi-scale method for characterizing and comparing\nunderlying data manifolds, based on comparing all data moments by\nlower-bounding the spectral notion of the Gromov-Wasserstein distance between\nmanifolds. In a thorough experimental study, we demonstrate that our method\neffectively evaluates the quality of generative models; further, we showcase\nits efficacy in discerning the disentanglement process in neural networks.",
+  "id": "arxiv.1905.11141",
+  "url": "https://arxiv.org/abs/1905.11141",
+  "pdf": "https://arxiv.org/pdf/1905.11141",
+  "bibtex": "@misc{tsitsulin2019_arxiv:1905.11141,\n    title = {Intrinsic Multi-scale Evaluation of Generative Models},\n    author = {Anton Tsitsulin and Marina Munkhoeva and Davide Mottin and Panagiotis Karras and Alex Bronstein and Ivan Oseledets and Emmanuel Müller},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11141},\n    pdf = {https://arxiv.org/pdf/1905.11141},\n    url = {https://arxiv.org/abs/1905.11141}\n}",
+  "source": "arxiv.org",
+  "date": 1559045069,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11141"
+}
