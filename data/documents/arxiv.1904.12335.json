@@ -1,0 +1,16 @@
+{
+  "title": "Blended Matching Pursuit",
+  "authors": [
+    "Cyrille W. Combettes",
+    "Sebastian Pokutta"
+  ],
+  "abstract": "Matching pursuit algorithms are an important class of algorithms in signal\nprocessing and machine learning. We present a blended matching pursuit\nalgorithm, combining coordinate descent-like steps with stronger gradient\ndescent steps, for minimizing a smooth convex function over a linear space\nspanned by a set of atoms. We derive sublinear to linear convergence rates\naccording to the smoothness and sharpness orders of the function and\ndemonstrate computational superiority of our approach. In particular, we derive\nlinear rates for a wide class of non-strongly convex functions, and we\ndemonstrate in experiments that our algorithm enjoys very fast rates of\nconvergence and wall-clock speed while maintaining a sparsity of iterates very\ncomparable to that of the (much slower) orthogonal matching pursuit.",
+  "id": "arxiv.1904.12335",
+  "url": "https://arxiv.org/abs/1904.12335",
+  "pdf": "https://arxiv.org/pdf/1904.12335",
+  "bibtex": "@misc{combettes2019_arxiv:1904.12335,\n    title = {Blended Matching Pursuit},\n    author = {Cyrille W. Combettes and Sebastian Pokutta},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.12335},\n    pdf = {https://arxiv.org/pdf/1904.12335},\n    url = {https://arxiv.org/abs/1904.12335}\n}",
+  "source": "arxiv.org",
+  "date": 1559058939,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.12335"
+}
