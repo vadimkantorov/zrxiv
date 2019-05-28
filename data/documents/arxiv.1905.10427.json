@@ -1,0 +1,18 @@
+{
+  "title": "DIVA: Domain Invariant Variational Autoencoders",
+  "authors": [
+    "Maximilian Ilse",
+    "Jakub M. Tomczak",
+    "Christos Louizos",
+    "Max Welling"
+  ],
+  "abstract": "We consider the problem of domain generalization, namely, how to learn\nrepresentations given data from a set of domains that generalize to data from a\npreviously unseen domain. We propose the Domain Invariant Variational\nAutoencoder (DIVA), a generative model that tackles this problem by learning\nthree independent latent subspaces, one for the domain, one for the class, and\none for any residual variations. We highlight that due to the generative nature\nof our model we can also incorporate unlabeled data from known or previously\nunseen domains. To the best of our knowledge this has not been done before in a\ndomain generalization setting. This property is highly desirable in fields like\nmedical imaging where labeled data is scarce. We experimentally evaluate our\nmodel on the rotated MNIST benchmark and a malaria cell images dataset where we\nshow that (i) the learned subspaces are indeed complementary to each other,\n(ii) we improve upon recent works on this task and (iii) incorporating\nunlabelled data can boost the performance even further.",
+  "id": "arxiv.1905.10427",
+  "url": "https://arxiv.org/abs/1905.10427",
+  "pdf": "https://arxiv.org/pdf/1905.10427",
+  "bibtex": "@misc{ilse2019_arxiv:1905.10427,\n    title = {DIVA: Domain Invariant Variational Autoencoders},\n    author = {Maximilian Ilse and Jakub M. Tomczak and Christos Louizos and Max Welling},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.10427},\n    pdf = {https://arxiv.org/pdf/1905.10427},\n    url = {https://arxiv.org/abs/1905.10427}\n}",
+  "source": "arxiv.org",
+  "date": 1559044897,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.10427"
+}
