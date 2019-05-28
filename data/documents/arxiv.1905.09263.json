@@ -1,0 +1,21 @@
+{
+  "title": "FastSpeech: Fast, Robust and Controllable Text to Speech",
+  "authors": [
+    "Yi Ren",
+    "Yangjun Ruan",
+    "Xu Tan",
+    "Tao Qin",
+    "Sheng Zhao",
+    "Zhou Zhao",
+    "Tie-Yan Liu"
+  ],
+  "abstract": "Neural network based end-to-end text to speech (TTS) has significantly\nimproved the quality of synthesized speech. Prominent methods (e.g., Tacotron\n2) usually first generate mel-spectrogram from text, and then synthesize speech\nfrom mel-spectrogram using vocoder such as WaveNet. Compared with traditional\nconcatenative and statistical parametric approaches, neural network based\nend-to-end models suffer from slow inference speed, and the synthesized speech\nis usually not robust (i.e., some words are skipped or repeated) and lack of\ncontrollability (voice speed or prosody control). In this work, we propose a\nnovel feed-forward network based on Transformer to generate mel-spectrogram in\nparallel for TTS. Specifically, we extract attention alignments from an\nencoder-decoder based teacher model for phoneme duration prediction, which is\nused by a length regulator to expand the source phoneme sequence to match the\nlength of target mel-spectrogram sequence for parallel mel-spectrogram\ngeneration. Experiments on the LJSpeech dataset show that our parallel model\nmatches autoregressive models in terms of speech quality, nearly eliminates the\nproblem of word skipping and repeating in particularly hard cases, and can\nadjust voice speed smoothly. Most importantly, compared with autoregressive\nTransformer TTS, our model speeds up the mel-spectrogram generation by 270x and\nthe end-to-end speech synthesis by 38x. Therefore, we call our model\nFastSpeech. We will release the code on Github (anonymous.url). Synthesized\nspeech samples can be found in https://speechresearch.github.io/fastspeech/.",
+  "id": "arxiv.1905.09263",
+  "url": "https://arxiv.org/abs/1905.09263",
+  "pdf": "https://arxiv.org/pdf/1905.09263",
+  "bibtex": "@misc{ren2019_arxiv:1905.09263,\n    title = {FastSpeech: Fast, Robust and Controllable Text to Speech},\n    author = {Yi Ren and Yangjun Ruan and Xu Tan and Tao Qin and Sheng Zhao and Zhou Zhao and Tie-Yan Liu},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.09263},\n    pdf = {https://arxiv.org/pdf/1905.09263},\n    url = {https://arxiv.org/abs/1905.09263}\n}",
+  "source": "arxiv.org",
+  "date": 1559062534,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.09263"
+}
