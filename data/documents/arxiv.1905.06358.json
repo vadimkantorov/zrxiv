@@ -1,0 +1,17 @@
+{
+  "title": "Local Features and Visual Words Emerge in Activations",
+  "authors": [
+    "Oriane Siméoni",
+    "Yannis Avrithis",
+    "Ondrej Chum"
+  ],
+  "abstract": "We propose a novel method of deep spatial matching (DSM) for image retrieval.\nInitial ranking is based on image descriptors extracted from convolutional\nneural network activations by global pooling, as in recent state-of-the-art\nwork. However, the same sparse 3D activation tensor is also approximated by a\ncollection of local features. These local features are then robustly matched to\napproximate the optimal alignment of the tensors. This happens without any\nnetwork modification, additional layers or training. No local feature detection\nhappens on the original image. No local feature descriptors and no visual\nvocabulary are needed throughout the whole process.\n  We experimentally show that the proposed method achieves the state-of-the-art\nperformance on standard benchmarks across different network architectures and\ndifferent global pooling methods. The highest gain in performance is achieved\nwhen diffusion on the nearest-neighbor graph of global descriptors is initiated\nfrom spatially verified images.",
+  "id": "arxiv.1905.06358",
+  "url": "https://arxiv.org/abs/1905.06358",
+  "pdf": "https://arxiv.org/pdf/1905.06358",
+  "bibtex": "@misc{siméoni2019_arxiv:1905.06358,\n    title = {Local Features and Visual Words Emerge in Activations},\n    author = {Oriane Siméoni and Yannis Avrithis and Ondrej Chum},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.06358},\n    pdf = {https://arxiv.org/pdf/1905.06358},\n    url = {https://arxiv.org/abs/1905.06358}\n}",
+  "source": "arxiv.org",
+  "date": 1559070661,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.06358"
+}
