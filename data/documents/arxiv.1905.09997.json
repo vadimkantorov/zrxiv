@@ -1,0 +1,20 @@
+{
+  "title": "Painless Stochastic Gradient: Interpolation, Line-Search, and Convergence Rates",
+  "authors": [
+    "Sharan Vaswani",
+    "Aaron Mishkin",
+    "Issam Laradji",
+    "Mark Schmidt",
+    "Gauthier Gidel",
+    "Simon Lacoste-Julien"
+  ],
+  "abstract": "Recent works have shown that stochastic gradient descent (SGD) achieves the\nfast convergence rates of full-batch gradient descent for over-parameterized\nmodels satisfying certain interpolation conditions. However, the step-size used\nin these works depends on unknown quantities, and SGD's practical performance\nheavily relies on the choice of the step-size. We propose to use line-search\nmethods to automatically set the step-size when training models that can\ninterpolate the data. We prove that SGD with the classic Armijo line-search\nattains the fast convergence rates of full-batch gradient descent in convex and\nstrongly-convex settings. We also show that under additional assumptions, SGD\nwith a modified line-search can attain a fast rate of convergence for\nnon-convex functions. Furthermore, we show that a stochastic extra-gradient\nmethod with a Lipschitz line-search attains a fast convergence rate for an\nimportant class of non-convex functions and saddle-point problems satisfying\ninterpolation. We then give heuristics to use larger step-sizes and\nacceleration with our line-search techniques. We compare the proposed\nalgorithms against numerous optimization methods for standard classification\ntasks using both kernel methods and deep networks. The proposed methods are\nrobust and result in competitive performance across all models and datasets.\nMoreover, for the deep network models, SGD with our line-search results in both\nfaster convergence and better generalization.",
+  "id": "arxiv.1905.09997",
+  "url": "https://arxiv.org/abs/1905.09997",
+  "pdf": "https://arxiv.org/pdf/1905.09997",
+  "bibtex": "@misc{vaswani2019_arxiv:1905.09997,\n    title = {Painless Stochastic Gradient: Interpolation, Line-Search, and Convergence Rates},\n    author = {Sharan Vaswani and Aaron Mishkin and Issam Laradji and Mark Schmidt and Gauthier Gidel and Simon Lacoste-Julien},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.09997},\n    pdf = {https://arxiv.org/pdf/1905.09997},\n    url = {https://arxiv.org/abs/1905.09997}\n}",
+  "source": "arxiv.org",
+  "date": 1559075144,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.09997"
+}
