@@ -1,0 +1,20 @@
+{
+  "title": "Evaluating Generative Models Using Divergence Frontiers",
+  "authors": [
+    "Josip Djolonga",
+    "Mario Lucic",
+    "Marco Cuturi",
+    "Olivier Bachem",
+    "Olivier Bousquet",
+    "Sylvain Gelly"
+  ],
+  "abstract": "Despite the tremendous progress in the estimation of generative models, the\ndevelopment of tools for diagnosing their failures and assessing their\nperformance has advanced at a much slower pace. Recent developments have\ninvestigated metrics that quantify which parts of the true distribution are\nmodeled well, and, on the contrary, what the model fails to capture, akin to\nprecision and recall in information retrieval. In this paper, we present a\ngeneral evaluation framework for generative models that measures the trade-off\nbetween precision and recall using Rényi divergences. Our framework provides\na novel perspective on existing techniques and extends them to more general\ndomains. As a key advantage, it allows for efficient algorithms that are\ndirectly applicable to continuous distributions directly without\ndiscretization. We further showcase the proposed techniques on a set of image\nsynthesis models.",
+  "id": "arxiv.1905.10768",
+  "url": "https://arxiv.org/abs/1905.10768",
+  "pdf": "https://arxiv.org/pdf/1905.10768",
+  "bibtex": "@misc{djolonga2019_arxiv:1905.10768,\n    title = {Evaluating Generative Models Using Divergence Frontiers},\n    author = {Josip Djolonga and Mario Lucic and Marco Cuturi and Olivier Bachem and Olivier Bousquet and Sylvain Gelly},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.10768},\n    pdf = {https://arxiv.org/pdf/1905.10768},\n    url = {https://arxiv.org/abs/1905.10768}\n}",
+  "source": "arxiv.org",
+  "date": 1559044457,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.10768"
+}
