@@ -1,0 +1,19 @@
+{
+  "title": "Practical Full Resolution Learned Lossless Image Compression",
+  "authors": [
+    "Fabian Mentzer",
+    "Eirikur Agustsson",
+    "Michael Tschannen",
+    "Radu Timofte",
+    "Luc Van Gool"
+  ],
+  "abstract": "We propose the first practical learned lossless image compression system,\nL3C, and show that it outperforms the popular engineered codecs, PNG, WebP and\nJPEG 2000. At the core of our method is a fully parallelizable hierarchical\nprobabilistic model for adaptive entropy coding which is optimized end-to-end\nfor the compression task. In contrast to recent autoregressive discrete\nprobabilistic models such as PixelCNN, our method i) models the image\ndistribution jointly with learned auxiliary representations instead of\nexclusively modeling the image distribution in RGB space, and ii) only requires\nthree forward-passes to predict all pixel probabilities instead of one for each\npixel. As a result, L3C obtains over two orders of magnitude speedups when\nsampling compared to the fastest PixelCNN variant (Multiscale-PixelCNN).\nFurthermore, we find that learning the auxiliary representation is crucial and\noutperforms predefined auxiliary representations such as an RGB pyramid\nsignificantly.",
+  "id": "arxiv.1811.12817",
+  "url": "https://arxiv.org/abs/1811.12817",
+  "pdf": "https://arxiv.org/pdf/1811.12817",
+  "bibtex": "@misc{mentzer2018_arxiv:1811.12817,\n    title = {Practical Full Resolution Learned Lossless Image Compression},\n    author = {Fabian Mentzer and Eirikur Agustsson and Michael Tschannen and Radu Timofte and Luc Van Gool},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.12817},\n    pdf = {https://arxiv.org/pdf/1811.12817},\n    url = {https://arxiv.org/abs/1811.12817}\n}",
+  "source": "arxiv.org",
+  "date": 1559070616,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.12817"
+}
