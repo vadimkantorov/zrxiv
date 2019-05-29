@@ -1,0 +1,17 @@
+{
+  "title": "Greedy InfoMax for Biologically Plausible Self-Supervised Representation Learning",
+  "authors": [
+    "Sindy Löwe",
+    "Peter O'Connor",
+    "Bastiaan S. Veeling"
+  ],
+  "abstract": "We propose a novel deep learning method for local self-supervised\nrepresentation learning that does not require labels nor end-to-end\nbackpropagation but exploits the natural order in data instead. Inspired by the\nobservation that biological neural networks appear to learn without\nbackpropagating a global error signal, we split a deep neural network into a\nstack of gradient-isolated modules. Each module is trained to maximize the\nmutual information between its consecutive outputs using the InfoNCE bound from\nOord et al. [2018]. Despite this greedy training, we demonstrate that each\nmodule improves upon the output of its predecessor, and that the\nrepresentations created by the top module yield highly competitive results on\ndownstream classification tasks in the audio and visual domain. The proposal\nenables optimizing modules asynchronously, allowing large-scale distributed\ntraining of very deep neural networks on unlabelled datasets.",
+  "id": "arxiv.1905.11786",
+  "url": "https://arxiv.org/abs/1905.11786",
+  "pdf": "https://arxiv.org/pdf/1905.11786",
+  "bibtex": "@misc{löwe2019_arxiv:1905.11786,\n    title = {Greedy InfoMax for Biologically Plausible Self-Supervised Representation Learning},\n    author = {Sindy Löwe and Peter O'Connor and Bastiaan S. Veeling},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11786},\n    pdf = {https://arxiv.org/pdf/1905.11786},\n    url = {https://arxiv.org/abs/1905.11786}\n}",
+  "source": "arxiv.org",
+  "date": 1559132969,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11786"
+}
