@@ -1,0 +1,16 @@
+{
+  "title": "Size-free generalization bounds for convolutional neural networks",
+  "authors": [
+    "Philip M. Long",
+    "Hanie Sedghi"
+  ],
+  "abstract": "We prove bounds on the generalization error of convolutional networks. The\nbounds are in terms of the training loss, the number of parameters, the\nLipschitz constant of the loss and the distance from the weights to the initial\nweights. They are independent of the number of pixels in the input, and the\nheight and width of hidden feature maps; to our knowledge, they are the first\nbounds for deep convolutional networks with this property. We present\nexperiments with CIFAR-10 and a scaled-down variant, along with varying\nhyperparameters of a deep convolutional network, comparing our bounds with\npractical generalization gaps.",
+  "id": "arxiv.1905.12600",
+  "url": "https://arxiv.org/abs/1905.12600",
+  "pdf": "https://arxiv.org/pdf/1905.12600",
+  "bibtex": "@misc{long2019_arxiv:1905.12600,\n    title = {Size-free generalization bounds for convolutional neural networks},\n    author = {Philip M. Long and Hanie Sedghi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.12600},\n    pdf = {https://arxiv.org/pdf/1905.12600},\n    url = {https://arxiv.org/abs/1905.12600}\n}",
+  "source": "arxiv.org",
+  "date": 1559227636,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.12600"
+}
