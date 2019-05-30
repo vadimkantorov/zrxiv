@@ -1,0 +1,18 @@
+{
+  "title": "SATNet: Bridging deep learning and logical reasoning using a differentiable satisfiability solver",
+  "authors": [
+    "Po-Wei Wang",
+    "Priya L. Donti",
+    "Bryan Wilder",
+    "Zico Kolter"
+  ],
+  "abstract": "Integrating logical reasoning within deep learning architectures has been a\nmajor goal of modern AI systems. In this paper, we propose a new direction\ntoward this goal by introducing a differentiable (smoothed) maximum\nsatisfiability (MAXSAT) solver that can be integrated into the loop of larger\ndeep learning systems. Our (approximate) solver is based upon a fast coordinate\ndescent approach to solving the semidefinite program (SDP) associated with the\nMAXSAT problem. We show how to analytically differentiate through the solution\nto this SDP and efficiently solve the associated backward pass. We demonstrate\nthat by integrating this solver into end-to-end learning systems, we can learn\nthe logical structure of challenging problems in a minimally supervised\nfashion. In particular, we show that we can learn the parity function using\nsingle-bit supervision (a traditionally hard task for deep networks) and learn\nhow to play 9x9 Sudoku solely from examples. We also solve a \"visual Sudok\"\nproblem that maps images of Sudoku puzzles to their associated logical\nsolutions by combining our MAXSAT solver with a traditional convolutional\narchitecture. Our approach thus shows promise in integrating logical structures\nwithin deep learning.",
+  "id": "arxiv.1905.12149",
+  "url": "https://arxiv.org/abs/1905.12149",
+  "pdf": "https://arxiv.org/pdf/1905.12149",
+  "bibtex": "@misc{wang2019_arxiv:1905.12149,\n    title = {SATNet: Bridging deep learning and logical reasoning using a differentiable satisfiability solver},\n    author = {Po-Wei Wang and Priya L. Donti and Bryan Wilder and Zico Kolter},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.12149},\n    pdf = {https://arxiv.org/pdf/1905.12149},\n    url = {https://arxiv.org/abs/1905.12149}\n}",
+  "source": "arxiv.org",
+  "date": 1559250439,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.12149"
+}
