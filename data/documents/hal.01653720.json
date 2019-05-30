@@ -1,0 +1,17 @@
+{
+  "title": "Learning to Segment Moving Objects",
+  "authors": [
+    "Pavel Tokmakov",
+    "Cordelia Schmid",
+    "Karteek Alahari"
+  ],
+  "abstract": "We study the problem of segmenting moving objects in unconstrained videos. Given a video, the task is to segment all the objects that exhibit independent motion in at least one frame. We formulate this as a learning problem and design our framework with three cues: (i) independent object motion between a pair of frames, which complements object recognition, (ii) object appearance, which helps to correct errors in motion estimation, and (iii) temporal consistency, which imposes additional constraints on the segmentation. The framework is a two-stream neural network with an explicit memory module. The two streams encode appearance and motion cues in a video sequence respectively , while the memory module captures the evolution of objects over time, exploiting the temporal consistency. The motion stream is a convolutional neural network trained on synthetic videos to segment independently moving objects in the optical flow field. The module to build a 'visual memory' in video, i.e., a joint representation of all the video frames, is realized with a convolutional recurrent unit learned from a small number of training video sequences. For every pixel in a frame of a test video, our approach assigns an object or background label based on the learned spatio-temporal features as well as the 'visual memory' specific to the video. We evaluate our method extensively on three benchmarks, DAVIS, Freiburg-Berkeley motion seg-mentation dataset and SegTrack. In addition, we provide an extensive ablation study to investigate both the choice of the training data and the influence of each component in the proposed framework.",
+  "id": "hal.01653720",
+  "url": "https://hal.archives-ouvertes.fr/hal-01653720v2",
+  "pdf": "https://hal.archives-ouvertes.fr/hal-01653720/file/paper.pdf",
+  "bibtex": "@article{tokmakov:hal-01653720,\n    title = {Learning to Segment Moving Objects},\n    author = {Pavel Tokmakov and Cordelia Schmid and Karteek Alahari},\n    journal = {International Journal of Computer Vision},\n    year = {2019},\n    doi = {10.1007/s11263-018-1122-2},\n    hal_id = {hal-01653720},\n    hal_version = {v2},\n    month = {Mar,},\n    number = {3},\n    pages = {282--301},\n    publisher = {Springer Verlag},\n    volume = {127},\n    pdf = {https://hal.archives-ouvertes.fr/hal-01653720/file/paper.pdf},\n    url = {https://hal.archives-ouvertes.fr/hal-01653720v2}\n}",
+  "source": "hal.archives-ouvertes.fr",
+  "date": 1559224525,
+  "tags": [],
+  "api": "https://hal.archives-ouvertes.fr/hal-01653720v2/json"
+}
