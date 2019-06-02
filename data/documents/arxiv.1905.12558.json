@@ -1,0 +1,17 @@
+{
+  "title": "Limitations of the Empirical Fisher Approximation",
+  "authors": [
+    "Frederik Kunstner",
+    "Lukas Balles",
+    "Philipp Hennig"
+  ],
+  "abstract": "Natural gradient descent, which preconditions a gradient descent update with\nthe Fisher information matrix of the underlying statistical model, is a way to\ncapture partial second-order information. Several highly visible works have\nadvocated an approximation known as the empirical Fisher, drawing connections\nbetween approximate second-order methods and heuristics like Adam. We dispute\nthis argument by showing that the empirical Fisher---unlike the Fisher---does\nnot generally capture second-order information. We further argue that the\nconditions under which the empirical Fisher approaches the Fisher (and the\nHessian) are unlikely to be met in practice, and that, even on simple\noptimization problems, the pathologies of the empirical Fisher can have\nundesirable effects.",
+  "id": "arxiv.1905.12558",
+  "url": "https://arxiv.org/abs/1905.12558",
+  "pdf": "https://arxiv.org/pdf/1905.12558",
+  "bibtex": "@misc{kunstner2019_arxiv:1905.12558,\n    title = {Limitations of the Empirical Fisher Approximation},\n    author = {Frederik Kunstner and Lukas Balles and Philipp Hennig},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.12558},\n    pdf = {https://arxiv.org/pdf/1905.12558},\n    url = {https://arxiv.org/abs/1905.12558}\n}",
+  "source": "arxiv.org",
+  "date": 1559504583,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.12558"
+}
