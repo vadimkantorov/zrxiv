@@ -1,0 +1,22 @@
+{
+  "title": "Jasper: An End-to-End Convolutional Neural Acoustic Model",
+  "authors": [
+    "Jason Li",
+    "Vitaly Lavrukhin",
+    "Boris Ginsburg",
+    "Ryan Leary",
+    "Oleksii Kuchaiev",
+    "Jonathan M. Cohen",
+    "Huyen Nguyen",
+    "Ravi Teja Gadde"
+  ],
+  "abstract": "In this paper, we report state-of-the-art results on LibriSpeech among\nend-to-end speech recognition models without any external training data. Our\nmodel, Jasper, uses only 1D convolutions, batch normalization, ReLU, dropout,\nand residual connections. To improve training, we further introduce a new\nlayer-wise optimizer called NovoGrad. Through experiments, we demonstrate that\nthe proposed deep architecture performs as well or better than more complex\nchoices. Our deepest Jasper variant uses 54 convolutional layers. With this\narchitecture, we achieve 2.95% WER using beam-search decoder with an external\nneural language model and 3.86% WER with a greedy decoder on LibriSpeech\ntest-clean. We also report competitive results on the Wall Street Journal and\nthe Hub5'00 conversational evaluation datasets.",
+  "id": "arxiv.1904.03288",
+  "url": "https://arxiv.org/abs/1904.03288",
+  "pdf": "https://arxiv.org/pdf/1904.03288",
+  "bibtex": "@misc{li2019_arxiv:1904.03288,\n    title = {Jasper: An End-to-End Convolutional Neural Acoustic Model},\n    author = {Jason Li and Vitaly Lavrukhin and Boris Ginsburg and Ryan Leary and Oleksii Kuchaiev and Jonathan M. Cohen and Huyen Nguyen and Ravi Teja Gadde},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.03288},\n    pdf = {https://arxiv.org/pdf/1904.03288},\n    url = {https://arxiv.org/abs/1904.03288}\n}",
+  "source": "arxiv.org",
+  "date": 1559560987,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.03288"
+}
