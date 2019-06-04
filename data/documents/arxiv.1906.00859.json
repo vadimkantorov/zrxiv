@@ -1,0 +1,17 @@
+{
+  "title": "Separable Layers Enable Structured Efficient Linear Substitutions",
+  "authors": [
+    "Gavin Gray",
+    "Elliot J. Crowley",
+    "Amos Storkey"
+  ],
+  "abstract": "In response to the development of recent efficient dense layers, this paper\nshows that something as simple as replacing linear components in pointwise\nconvolutions with structured linear decompositions also produces substantial\ngains in the efficiency/accuracy tradeoff. Pointwise convolutions are fully\nconnected layers and are thus prepared for replacement by structured\ntransforms. Networks using such layers are able to learn the same tasks as\nthose using standard convolutions, and provide Pareto-optimal benefits in\nefficiency/accuracy, both in terms of computation (mult-adds) and parameter\ncount (and hence memory). Code is available at\nhttps://github.com/BayesWatch/deficient-efficient.",
+  "id": "arxiv.1906.00859",
+  "url": "https://arxiv.org/abs/1906.00859",
+  "pdf": "https://arxiv.org/pdf/1906.00859",
+  "bibtex": "@misc{gray2019_arxiv:1906.00859,\n    title = {Separable Layers Enable Structured Efficient Linear Substitutions},\n    author = {Gavin Gray and Elliot J. Crowley and Amos Storkey},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.00859},\n    pdf = {https://arxiv.org/pdf/1906.00859},\n    url = {https://arxiv.org/abs/1906.00859}\n}",
+  "source": "arxiv.org",
+  "date": 1559643842,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.00859"
+}
