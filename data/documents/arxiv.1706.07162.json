@@ -1,0 +1,17 @@
+{
+  "title": "A Wavenet for Speech Denoising",
+  "authors": [
+    "Dario Rethage",
+    "Jordi Pons",
+    "Xavier Serra"
+  ],
+  "abstract": "Currently, most speech processing techniques use magnitude spectrograms as\nfront-end and are therefore by default discarding part of the signal: the\nphase. In order to overcome this limitation, we propose an end-to-end learning\nmethod for speech denoising based on Wavenet. The proposed model adaptation\nretains Wavenet's powerful acoustic modeling capabilities, while significantly\nreducing its time-complexity by eliminating its autoregressive nature.\nSpecifically, the model makes use of non-causal, dilated convolutions and\npredicts target fields instead of a single target sample. The discriminative\nadaptation of the model we propose, learns in a supervised fashion via\nminimizing a regression loss. These modifications make the model highly\nparallelizable during both training and inference. Both computational and\nperceptual evaluations indicate that the proposed method is preferred to Wiener\nfiltering, a common method based on processing the magnitude spectrogram.",
+  "id": "arxiv.1706.07162",
+  "url": "https://arxiv.org/abs/1706.07162",
+  "pdf": "https://arxiv.org/pdf/1706.07162",
+  "bibtex": "@misc{rethage2017_arxiv:1706.07162,\n    title = {A Wavenet for Speech Denoising},\n    author = {Dario Rethage and Jordi Pons and Xavier Serra},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1706.07162},\n    pdf = {https://arxiv.org/pdf/1706.07162},\n    url = {https://arxiv.org/abs/1706.07162}\n}",
+  "source": "arxiv.org",
+  "date": 1559656929,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1706.07162"
+}
