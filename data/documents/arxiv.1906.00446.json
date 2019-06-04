@@ -1,0 +1,17 @@
+{
+  "title": "Generating Diverse High-Fidelity Images with VQ-VAE-2",
+  "authors": [
+    "Ali Razavi",
+    "Aaron van den Oord",
+    "Oriol Vinyals"
+  ],
+  "abstract": "We explore the use of Vector Quantized Variational AutoEncoder (VQ-VAE)\nmodels for large scale image generation. To this end, we scale and enhance the\nautoregressive priors used in VQ-VAE to generate synthetic samples of much\nhigher coherence and fidelity than possible before. We use simple feed-forward\nencoder and decoder networks, making our model an attractive candidate for\napplications where the encoding and/or decoding speed is critical.\nAdditionally, VQ-VAE requires sampling an autoregressive model only in the\ncompressed latent space, which is an order of magnitude faster than sampling in\nthe pixel space, especially for large images. We demonstrate that a multi-scale\nhierarchical organization of VQ-VAE, augmented with powerful priors over the\nlatent codes, is able to generate samples with quality that rivals that of\nstate of the art Generative Adversarial Networks on multifaceted datasets such\nas ImageNet, while not suffering from GAN's known shortcomings such as mode\ncollapse and lack of diversity.",
+  "id": "arxiv.1906.00446",
+  "url": "https://arxiv.org/abs/1906.00446",
+  "pdf": "https://arxiv.org/pdf/1906.00446",
+  "bibtex": "@misc{razavi2019_arxiv:1906.00446,\n    title = {Generating Diverse High-Fidelity Images with VQ-VAE-2},\n    author = {Ali Razavi and Aaron van den Oord and Oriol Vinyals},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.00446},\n    pdf = {https://arxiv.org/pdf/1906.00446},\n    url = {https://arxiv.org/abs/1906.00446}\n}",
+  "source": "arxiv.org",
+  "date": 1559682180,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.00446"
+}
