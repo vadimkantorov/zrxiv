@@ -1,0 +1,15 @@
+{
+  "title": "Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction",
+  "authors": [
+    "Karl Stratos"
+  ],
+  "abstract": "We address part-of-speech (POS) induction by maximizing the mutual\ninformation between the induced label and its context. We focus on two training\nobjectives that are amenable to stochastic gradient descent (SGD): a novel\ngeneralization of the classical Brown clustering objective and a recently\nproposed variational lower bound. While both objectives are subject to noise in\ngradient updates, we show through analysis and experiments that the variational\nlower bound is robust whereas the generalized Brown objective is vulnerable. We\nobtain competitive performance on a multitude of datasets and languages with a\nsimple architecture that encodes morphology and context.",
+  "id": "arxiv.1804.07849",
+  "url": "https://arxiv.org/abs/1804.07849",
+  "pdf": "https://arxiv.org/pdf/1804.07849",
+  "bibtex": "@misc{stratos2018_arxiv:1804.07849,\n    title = {Mutual Information Maximization for Simple and Accurate Part-Of-Speech Induction},\n    author = {Karl Stratos},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1804.07849},\n    pdf = {https://arxiv.org/pdf/1804.07849},\n    url = {https://arxiv.org/abs/1804.07849}\n}",
+  "source": "arxiv.org",
+  "date": 1559683722,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1804.07849"
+}
