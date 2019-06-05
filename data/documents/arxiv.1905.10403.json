@@ -1,0 +1,16 @@
+{
+  "title": "Neural Jump Stochastic Differential Equations",
+  "authors": [
+    "Junteng Jia",
+    "Austin R. Benson"
+  ],
+  "abstract": "Many time series can be effectively modeled with a combination of continuous\nflows along with random jumps sparked by discrete events. However, we usually\ndo not have the equation of motion describing the flows, or how they are\naffected by jumps. To this end, we introduce Neural Jump Stochastic\nDifferential Equations that provide a data-driven approach to learn continuous\nand discrete dynamic behavior, i.e., hybrid systems that both flow and jump.\nOur approach extends the framework of Neural Ordinary Differential Equations\nwith a stochastic process term that models discrete events. We then model\ntemporal point processes with a piecewise-continuous latent trajectory, where\nstochastic events cause an abrupt change in the latent variables. We\ndemonstrate the predictive capabilities of our model on a range of synthetic\nand real-world marked point process datasets, including classical point\nprocesses such as Hawkes processes, medical records, awards on Stack Overflow,\nand earthquake monitoring.",
+  "id": "arxiv.1905.10403",
+  "url": "https://arxiv.org/abs/1905.10403",
+  "pdf": "https://arxiv.org/pdf/1905.10403",
+  "bibtex": "@misc{jia2019_arxiv:1905.10403,\n    title = {Neural Jump Stochastic Differential Equations},\n    author = {Junteng Jia and Austin R. Benson},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.10403},\n    pdf = {https://arxiv.org/pdf/1905.10403},\n    url = {https://arxiv.org/abs/1905.10403}\n}",
+  "source": "arxiv.org",
+  "date": 1559767282,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.10403"
+}
