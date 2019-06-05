@@ -1,0 +1,18 @@
+{
+  "title": "Separability and Geometry of Object Manifolds in Deep Neural Networks",
+  "authors": [
+    "Uri Cohen",
+    "SueYeon Chung",
+    "Daniel D. Lee",
+    "Haim Sompolinsky"
+  ],
+  "abstract": "<p>Stimuli are represented in the brain by the collective population responses of sensory neurons, and an object presented under varying conditions gives rise to a collection of neural population responses called an 9object manifold.9 Changes in the object representation along a hierarchical sensory system are associated with changes in the geometry of those manifolds, and recent theoretical progress connects this geometry with 9classification capacity,9 a quantitative measure of the ability to support object classification. Deep neural networks trained on object classification tasks are a natural testbed for the applicability of this relation. We show how classification capacity improves along the hierarchies of deep neural networks with different architectures. We demonstrate that changes in the geometry of the associated object manifolds underlie this improved capacity, and shed light on the functional roles different levels in the hierarchy play to achieve it, through orchestrated reduction of manifolds9 radius, dimensionality and inter-manifold correlations.</p>",
+  "id": "biorxiv.644658v1",
+  "url": "https://www.biorxiv.org/content/10.1101/644658v1",
+  "pdf": "https://www.biorxiv.org/content/biorxiv/early/2019/05/23/644658.full.pdf",
+  "bibtex": "@article{cohen644658,\n    title = {Separability and Geometry of Object Manifolds in Deep Neural Networks},\n    author = {Uri Cohen and SueYeon Chung and Daniel D. Lee and Haim Sompolinsky},\n    journal = {bioRxiv},\n    year = {2019},\n    doi = {10.1101/644658},\n    elocation-id = {644658},\n    eprint = {https://www.biorxiv.org/content/early/2019/05/23/644658.full.pdf},\n    publisher = {Cold Spring Harbor Laboratory},\n    pdf = {https://www.biorxiv.org/content/biorxiv/early/2019/05/23/644658.full.pdf},\n    url = {https://www.biorxiv.org/content/10.1101/644658v1}\n}",
+  "source": "biorxiv.org",
+  "date": 1559764034,
+  "tags": [],
+  "doi": "10.1101/644658"
+}
