@@ -1,0 +1,16 @@
+{
+  "title": "A Simple Saliency Method That Passes the Sanity Checks",
+  "authors": [
+    "Arushi Gupta",
+    "Sanjeev Arora"
+  ],
+  "abstract": "There is great interest in *saliency methods* (also called *attribution\nmethods*), which give \"explanations\" for a deep net's decision, by assigning a\n*score* to each feature/pixel in the input. Their design usually involves\ncredit-assignment via the gradient of the output with respect to input.\nRecently Adebayo et al. [arXiv:1810.03292] questioned the validity of many of\nthese methods since they do not pass simple *sanity checks* which test whether\nthe scores shift/vanish when layers of the trained net are randomized, or when\nthe net is retrained using random labels for inputs.\n  We propose a simple fix to existing saliency methods that helps them pass\nsanity checks, which we call *competition for pixels*. This involves computing\nsaliency maps for all possible labels in the classification task, and using a\nsimple competition among them to identify and remove less relevant pixels from\nthe map. The simplest variant of this is *Competitive Gradient $\\odot$ Input\n(CGI)*: it is efficient, requires no additional training, and uses only the\ninput and gradient. Some theoretical justification is provided for it\n(especially for ReLU networks) and its performance is empirically demonstrated.",
+  "id": "arxiv.1905.12152",
+  "url": "https://arxiv.org/abs/1905.12152",
+  "pdf": "https://arxiv.org/pdf/1905.12152",
+  "bibtex": "@misc{gupta2019_arxiv:1905.12152,\n    title = {A Simple Saliency Method That Passes the Sanity Checks},\n    author = {Arushi Gupta and Sanjeev Arora},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.12152},\n    pdf = {https://arxiv.org/pdf/1905.12152},\n    url = {https://arxiv.org/abs/1905.12152}\n}",
+  "source": "arxiv.org",
+  "date": 1559833505,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.12152"
+}
