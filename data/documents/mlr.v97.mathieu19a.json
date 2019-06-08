@@ -1,0 +1,17 @@
+{
+  "title": "Disentangling Disentanglement in Variational Autoencoders",
+  "authors": [
+    "Emile Mathieu",
+    "Tom Rainforth",
+    "N Siddharth",
+    "Yee Whye Teh"
+  ],
+  "abstract": "We develop a generalisation of disentanglement in variational autoencoders (VAEs)—decomposition of the latent representation—characterising it as the fulfilment of two factors: a) the latent encodings of the data having an appropriate level of overlap, and b) the aggregate encoding of the data conforming to a desired structure, represented through the prior. Decomposition permits disentanglement, i.e. explicit independence between latents, as a special case, but also allows for a much richer class of properties to be imposed on the learnt representation, such as sparsity, clustering, independent subspaces, or even intricate hierarchical dependency relationships. We show that the $\\beta$-VAE varies from the standard VAE predominantly in its control of latent overlap and that for the standard choice of an isotropic Gaussian prior, its objective is invariant to rotations of the latent representation. Viewed from the decomposition perspective, breaking this invariance with simple manipulations of the prior can yield better disentanglement with little or no detriment to reconstructions. We further demonstrate how other choices of prior can assist in producing different decompositions and introduce an alternative training objective that allows the control of both decomposition factors in a principled manner.",
+  "id": "mlr.v97.mathieu19a",
+  "url": "http://proceedings.mlr.press/v97/mathieu19a.html",
+  "pdf": "http://proceedings.mlr.press/v97/mathieu19a/mathieu19a.pdf",
+  "bibtex": "@inproceedings{pmlr-v97-mathieu19a,\n    title = {Disentangling Disentanglement in Variational Autoencoders},\n    author = {Emile Mathieu and Tom Rainforth and N Siddharth and Yee Whye Teh},\n    booktitle = {Proceedings of the 36th International Conference on Machine Learning},\n    year = {2019},\n    address = {Long Beach, California, USA},\n    editor = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},\n    month = {09--15 Jun},\n    pages = {4402--4412},\n    publisher = {PMLR},\n    series = {Proceedings of Machine Learning Research},\n    volume = {97},\n    pdf = {http://proceedings.mlr.press/v97/mathieu19a/mathieu19a.pdf},\n    url = {http://proceedings.mlr.press/v97/mathieu19a.html}\n}",
+  "source": "mlr.press",
+  "date": 1560030592,
+  "tags": []
+}
