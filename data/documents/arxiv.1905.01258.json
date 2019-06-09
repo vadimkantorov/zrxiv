@@ -1,0 +1,20 @@
+{
+  "title": "Disentangling Factors of Variation Using Few Labels",
+  "authors": [
+    "Francesco Locatello",
+    "Michael Tschannen",
+    "Stefan Bauer",
+    "Gunnar Rätsch",
+    "Bernhard Schölkopf",
+    "Olivier Bachem"
+  ],
+  "abstract": "Learning disentangled representations is considered a cornerstone problem in\nrepresentation learning. Recently, Locatello et al. (2019) demonstrated that\nunsupervised disentanglement learning without inductive biases is theoretically\nimpossible and that existing inductive biases and unsupervised methods do not\nallow to consistently learn disentangled representations. However, in many\npractical settings, one might have access to a very limited amount of\nsupervision, for example through manual labeling of training examples. In this\npaper, we investigate the impact of such supervision on state-of-the-art\ndisentanglement methods and perform a large scale study, training over 29000\nmodels under well-defined and reproducible experimental conditions. We first\nobserve that a very limited number of labeled examples (0.01--0.5% of the data\nset) is sufficient to perform model selection on state-of-the-art unsupervised\nmodels. Yet, if one has access to labels for supervised model selection, this\nraises the natural question of whether they should also be incorporated into\nthe training process. As a case-study, we test the benefit of introducing (very\nlimited) supervision into existing state-of-the-art unsupervised\ndisentanglement methods exploiting both the values of the labels and the\nordinal information that can be deduced from them. Overall, we empirically\nvalidate that with very little and potentially imprecise supervision it is\npossible to reliably learn disentangled representations.",
+  "id": "arxiv.1905.01258",
+  "url": "https://arxiv.org/abs/1905.01258",
+  "pdf": "https://arxiv.org/pdf/1905.01258",
+  "bibtex": "@misc{locatello2019_arxiv:1905.01258,\n    title = {Disentangling Factors of Variation Using Few Labels},\n    author = {Francesco Locatello and Michael Tschannen and Stefan Bauer and Gunnar Rätsch and Bernhard Schölkopf and Olivier Bachem},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.01258},\n    pdf = {https://arxiv.org/pdf/1905.01258},\n    url = {https://arxiv.org/abs/1905.01258}\n}",
+  "source": "arxiv.org",
+  "date": 1560081590,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.01258"
+}
