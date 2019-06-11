@@ -1,0 +1,18 @@
+{
+  "title": "Neural Spline Flows",
+  "authors": [
+    "Conor Durkan",
+    "Artur Bekasov",
+    "Iain Murray",
+    "George Papamakarios"
+  ],
+  "abstract": "A normalizing flow models a complex probability density as an invertible\ntransformation of a simple base density. Flows based on either coupling or\nautoregressive transforms both offer exact density evaluation and sampling, but\nrely on the parameterization of an easily invertible elementwise\ntransformation, whose choice determines the flexibility of these models.\nBuilding upon recent work, we propose a fully-differentiable module based on\nmonotonic rational-quadratic splines, which enhances the flexibility of both\ncoupling and autoregressive transforms while retaining analytic invertibility.\nWe demonstrate that neural spline flows improve density estimation, variational\ninference, and generative modeling of images.",
+  "id": "arxiv.1906.04032",
+  "url": "https://arxiv.org/abs/1906.04032",
+  "pdf": "https://arxiv.org/pdf/1906.04032",
+  "bibtex": "@misc{durkan2019_arxiv:1906.04032,\n    title = {Neural Spline Flows},\n    author = {Conor Durkan and Artur Bekasov and Iain Murray and George Papamakarios},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.04032},\n    pdf = {https://arxiv.org/pdf/1906.04032},\n    url = {https://arxiv.org/abs/1906.04032}\n}",
+  "source": "arxiv.org",
+  "date": 1560276866,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.04032"
+}
