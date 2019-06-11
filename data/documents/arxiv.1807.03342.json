@@ -1,0 +1,21 @@
+{
+  "title": "PCL: Proposal Cluster Learning for Weakly Supervised Object Detection",
+  "authors": [
+    "Peng Tang",
+    "Xinggang Wang",
+    "Song Bai",
+    "Wei Shen",
+    "Xiang Bai",
+    "Wenyu Liu",
+    "Alan Yuille"
+  ],
+  "abstract": "Weakly Supervised Object Detection (WSOD), using only image-level annotations\nto train object detectors, is of growing importance in object recognition. In\nthis paper, we propose a novel deep network for WSOD. Unlike previous networks\nthat transfer the object detection problem to an image classification problem\nusing Multiple Instance Learning (MIL), our strategy generates proposal\nclusters to learn refined instance classifiers by an iterative process. The\nproposals in the same cluster are spatially adjacent and associated with the\nsame object. This prevents the network from concentrating too much on parts of\nobjects instead of whole objects. We first show that instances can be assigned\nobject or background labels directly based on proposal clusters for instance\nclassifier refinement, and then show that treating each cluster as a small new\nbag yields fewer ambiguities than the directly assigning label method. The\niterative instance classifier refinement is implemented online using multiple\nstreams in convolutional neural networks, where the first is an MIL network and\nthe others are for instance classifier refinement supervised by the preceding\none. Experiments are conducted on the PASCAL VOC, ImageNet detection, and\nMS-COCO benchmarks for WSOD. Results show that our method outperforms the\nprevious state of the art significantly.",
+  "id": "arxiv.1807.03342",
+  "url": "https://arxiv.org/abs/1807.03342",
+  "pdf": "https://arxiv.org/pdf/1807.03342",
+  "bibtex": "@misc{tang2018_arxiv:1807.03342,\n    title = {PCL: Proposal Cluster Learning for Weakly Supervised Object Detection},\n    author = {Peng Tang and Xinggang Wang and Song Bai and Wei Shen and Xiang Bai and Wenyu Liu and Alan Yuille},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1807.03342},\n    pdf = {https://arxiv.org/pdf/1807.03342},\n    url = {https://arxiv.org/abs/1807.03342}\n}",
+  "source": "arxiv.org",
+  "date": 1560219356,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1807.03342"
+}
