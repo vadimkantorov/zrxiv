@@ -1,0 +1,17 @@
+{
+  "title": "Selfie: Self-supervised Pretraining for Image Embedding",
+  "authors": [
+    "Trieu H. Trinh",
+    "Minh-Thang Luong",
+    "Quoc V. Le"
+  ],
+  "abstract": "We introduce a pretraining technique called Selfie, which stands for\nSELF-supervised Image Embedding. Selfie generalizes the concept of masked\nlanguage modeling to continuous data, such as images. Given masked-out patches\nin an input image, our method learns to select the correct patch, among other\n\"distractor\" patches sampled from the same image, to fill in the masked\nlocation. This classification objective sidesteps the need for predicting exact\npixel values of the target patches. The pretraining architecture includes a\nnetwork of convolutional blocks to process patches followed by an attention\npooling network to summarize the content of unmasked patches before predicting\nmasked ones. During finetuning, we reuse the convolutional weights found by\npretraining. We evaluate our method on three benchmarks (CIFAR-10, ImageNet 32\nx 32, and ImageNet 224 x 224) with varying amounts of labeled data, from 5% to\n100% of the training sets. Our pretraining method provides consistent\nimprovements to ResNet-50 across all settings compared to the standard\nsupervised training of the same network. Notably, on ImageNet 224 x 224 with 60\nexamples per class (5%), our method improves the mean accuracy of ResNet-50\nfrom 35.6% to 46.7%, an improvement of 11.1 points in absolute accuracy. Our\npretraining method also improves ResNet-50 training stability, especially on\nlow data regime, by significantly lowering the standard deviation of test\naccuracies across datasets.",
+  "id": "arxiv.1906.02940",
+  "url": "https://arxiv.org/abs/1906.02940",
+  "pdf": "https://arxiv.org/pdf/1906.02940",
+  "bibtex": "@misc{trinh2019_arxiv:1906.02940,\n    title = {Selfie: Self-supervised Pretraining for Image Embedding},\n    author = {Trieu H. Trinh and Minh-Thang Luong and Quoc V. Le},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.02940},\n    pdf = {https://arxiv.org/pdf/1906.02940},\n    url = {https://arxiv.org/abs/1906.02940}\n}",
+  "source": "arxiv.org",
+  "date": 1560229134,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.02940"
+}
