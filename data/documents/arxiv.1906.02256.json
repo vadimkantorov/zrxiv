@@ -1,0 +1,17 @@
+{
+  "title": "Butterfly Transform: An Efficient FFT Based Neural Architecture Design",
+  "authors": [
+    "Keivan Alizadeh",
+    "Ali Farhadi",
+    "Mohammad Rastegari"
+  ],
+  "abstract": "In this paper, we introduce the Butterfly Transform (BFT), a light weight\nchannel fusion method that reduces the computational complexity of point-wise\nconvolutions from O(n^2) of conventional solutions to O(n log n) with respect\nto the number of channels while improving the accuracy of the networks under\nthe same range of FLOPs. The proposed BFT generalizes the Discrete Fourier\nTransform in a way that its parameters are learned at training time. Our\nexperimental evaluations show that replacing channel fusion modules with \\sys\nresults in significant accuracy gains at similar FLOPs across a wide range of\nnetwork architectures. For example, replacing channel fusion convolutions with\nBFT offers 3% absolute top-1 improvement for MobileNetV1-0.25 and 2.5% for\nShuffleNet V2-0.5 while maintaining the same number of FLOPS. Notably, the\nShuffleNet-V2+BFT outperforms state-of-the-art architecture search methods\nMNasNet \\cite{tan2018mnasnet} and FBNet \\cite{wu2018fbnet}. We also show that\nthe structure imposed by BFT has interesting properties that ensures the\nefficacy of the resulting network.",
+  "id": "arxiv.1906.02256",
+  "url": "https://arxiv.org/abs/1906.02256",
+  "pdf": "https://arxiv.org/pdf/1906.02256",
+  "bibtex": "@misc{alizadeh2019_arxiv:1906.02256,\n    title = {Butterfly Transform: An Efficient FFT Based Neural Architecture Design},\n    author = {Keivan Alizadeh and Ali Farhadi and Mohammad Rastegari},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.02256},\n    pdf = {https://arxiv.org/pdf/1906.02256},\n    url = {https://arxiv.org/abs/1906.02256}\n}",
+  "source": "arxiv.org",
+  "date": 1560219504,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.02256"
+}
