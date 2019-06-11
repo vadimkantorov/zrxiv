@@ -1,0 +1,18 @@
+{
+  "title": "Adaptive Neural Trees",
+  "authors": [
+    "Ryutaro Tanno",
+    "Kai Arulkumaran",
+    "Daniel Alexander",
+    "Antonio Criminisi",
+    "Aditya Nori"
+  ],
+  "abstract": "Deep neural networks and decision trees operate on largely separate paradigms; typically, the former performs representation learning with pre-specified architectures, while the latter is characterised by learning hierarchies over pre-specified features with data-driven architectures. We unite the two via adaptive neural trees (ANTs), a model that incorporates representation learning into edges, routing functions and leaf nodes of a decision tree, along with a backpropagation-based training algorithm that adaptively grows the architecture from primitive modules (e.g., convolutional layers). We demonstrate that, whilst achieving competitive performance on classification and regression datasets, ANTs benefit from (i) lightweight inference via conditional computation, (ii) hierarchical separation of features useful to the predictive task e.g. learning meaningful class associations, such as separating natural vs. man-made objects, and (iii) a mechanism to adapt the architecture to the size and complexity of the training dataset.",
+  "id": "mlr.v97.tanno19a",
+  "url": "http://proceedings.mlr.press/v97/tanno19a.html",
+  "pdf": "http://proceedings.mlr.press/v97/tanno19a/tanno19a.pdf",
+  "bibtex": "@inproceedings{pmlr-v97-tanno19a,\n    title = {Adaptive Neural Trees},\n    author = {Ryutaro Tanno and Kai Arulkumaran and Daniel Alexander and Antonio Criminisi and Aditya Nori},\n    booktitle = {Proceedings of the 36th International Conference on Machine Learning},\n    year = {2019},\n    address = {Long Beach, California, USA},\n    editor = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},\n    month = {09--15 Jun},\n    pages = {6166--6175},\n    publisher = {PMLR},\n    series = {Proceedings of Machine Learning Research},\n    volume = {97},\n    pdf = {http://proceedings.mlr.press/v97/tanno19a/tanno19a.pdf},\n    url = {http://proceedings.mlr.press/v97/tanno19a.html}\n}",
+  "source": "mlr.press",
+  "date": 1560276768,
+  "tags": []
+}
