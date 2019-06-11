@@ -1,0 +1,19 @@
+{
+  "title": "C-WSL: Count-guided Weakly Supervised Localization",
+  "authors": [
+    "Mingfei Gao",
+    "Ang Li",
+    "Ruichi Yu",
+    "Vlad I. Morariu",
+    "Larry S. Davis"
+  ],
+  "abstract": "We introduce count-guided weakly supervised localization (C-WSL), an approach\nthat uses per-class object count as a new form of supervision to improve weakly\nsupervised localization (WSL). C-WSL uses a simple count-based region selection\nalgorithm to select high-quality regions, each of which covers a single object\ninstance during training, and improves existing WSL methods by training with\nthe selected regions. To demonstrate the effectiveness of C-WSL, we integrate\nit into two WSL architectures and conduct extensive experiments on VOC2007 and\nVOC2012. Experimental results show that C-WSL leads to large improvements in\nWSL and that the proposed approach significantly outperforms the\nstate-of-the-art methods. The results of annotation experiments on VOC2007\nsuggest that a modest extra time is needed to obtain per-class object counts\ncompared to labeling only object categories in an image. Furthermore, we reduce\nthe annotation time by more than $2\\times$ and $38\\times$ compared to\ncenter-click and bounding-box annotations.",
+  "id": "arxiv.1711.05282",
+  "url": "https://arxiv.org/abs/1711.05282",
+  "pdf": "https://arxiv.org/pdf/1711.05282",
+  "bibtex": "@misc{gao2017_arxiv:1711.05282,\n    title = {C-WSL: Count-guided Weakly Supervised Localization},\n    author = {Mingfei Gao and Ang Li and Ruichi Yu and Vlad I. Morariu and Larry S. Davis},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1711.05282},\n    pdf = {https://arxiv.org/pdf/1711.05282},\n    url = {https://arxiv.org/abs/1711.05282}\n}",
+  "source": "arxiv.org",
+  "date": 1560222781,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1711.05282"
+}
