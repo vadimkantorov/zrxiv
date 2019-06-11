@@ -1,0 +1,19 @@
+{
+  "title": "Reducing the variance in online optimization by transporting past gradients",
+  "authors": [
+    "Sébastien M. R. Arnold",
+    "Pierre-Antoine Manzagol",
+    "Reza Babanezhad",
+    "Ioannis Mitliagkas",
+    "Nicolas Le Roux"
+  ],
+  "abstract": "Most stochastic optimization methods use gradients once before discarding\nthem. While variance reduction methods have shown that reusing past gradients\ncan be beneficial when there is a finite number of datapoints, they do not\neasily extend to the online setting. One issue is the staleness due to using\npast gradients. We propose to correct this staleness using the idea of implicit\ngradient transport (IGT) which transforms gradients computed at previous\niterates into gradients evaluated at the current iterate without using the\nHessian explicitly. In addition to reducing the variance and bias of our\nupdates over time, IGT can be used as a drop-in replacement for the gradient\nestimate in a number of well-understood methods such as heavy ball or Adam. We\nshow experimentally that it achieves state-of-the-art results on a wide range\nof architectures and benchmarks. Additionally, the IGT gradient estimator\nyields the optimal asymptotic convergence rate for online stochastic\noptimization in the restricted setting where the Hessians of all component\nfunctions are equal.",
+  "id": "arxiv.1906.03532",
+  "url": "https://arxiv.org/abs/1906.03532",
+  "pdf": "https://arxiv.org/pdf/1906.03532",
+  "bibtex": "@misc{arnold2019_arxiv:1906.03532,\n    title = {Reducing the variance in online optimization by transporting past gradients},\n    author = {Sébastien M. R. Arnold and Pierre-Antoine Manzagol and Reza Babanezhad and Ioannis Mitliagkas and Nicolas Le Roux},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.03532},\n    pdf = {https://arxiv.org/pdf/1906.03532},\n    url = {https://arxiv.org/abs/1906.03532}\n}",
+  "source": "arxiv.org",
+  "date": 1560276124,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.03532"
+}
