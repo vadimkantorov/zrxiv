@@ -1,0 +1,15 @@
+{
+  "title": "Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization",
+  "authors": [
+    "Juergen Schmidhuber"
+  ],
+  "abstract": "Generative Adversarial Networks (GANs) learn to model data distributions\nthrough two unsupervised neural networks, each minimizing the objective\nfunction maximized by the other. We relate this game theoretic strategy to\nearlier neural networks playing unsupervised minimax games. (i) GANs can be\nformulated as a special case of Adversarial Curiosity (1990) based on a minimax\nduel between two networks, one generating data through its probabilistic\nactions, the other predicting consequences thereof. (ii) We correct a\npreviously published claim that Predictability Minimization (PM, 1990s) is not\nbased on a minimax game. PM models data distributions through a neural encoder\nthat maximizes the objective function minimized by a neural predictor of the\ncode components.",
+  "id": "arxiv.1906.04493",
+  "url": "https://arxiv.org/abs/1906.04493",
+  "pdf": "https://arxiv.org/pdf/1906.04493",
+  "bibtex": "@misc{schmidhuber2019_arxiv:1906.04493,\n    title = {Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization},\n    author = {Juergen Schmidhuber},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.04493},\n    pdf = {https://arxiv.org/pdf/1906.04493},\n    url = {https://arxiv.org/abs/1906.04493}\n}",
+  "source": "arxiv.org",
+  "date": 1560331402,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.04493"
+}
