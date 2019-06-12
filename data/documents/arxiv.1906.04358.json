@@ -1,0 +1,16 @@
+{
+  "title": "Weight Agnostic Neural Networks",
+  "authors": [
+    "Adam Gaier",
+    "David Ha"
+  ],
+  "abstract": "Not all neural network architectures are created equal, some perform much\nbetter than others for certain tasks. But how important are the weight\nparameters of a neural network compared to its architecture? In this work, we\nquestion to what extent neural network architectures alone, without learning\nany weight parameters, can encode solutions for a given task. We propose a\nsearch method for neural network architectures that can already perform a task\nwithout any explicit weight training. To evaluate these networks, we populate\nthe connections with a single shared weight parameter sampled from a uniform\nrandom distribution, and measure the expected performance. We demonstrate that\nour method can find minimal neural network architectures that can perform\nseveral reinforcement learning tasks without weight training. On a supervised\nlearning domain, we find network architectures that achieve much higher than\nchance accuracy on MNIST using random weights. Interactive version of this\npaper at https://weightagnostic.github.io/",
+  "id": "arxiv.1906.04358",
+  "url": "https://arxiv.org/abs/1906.04358",
+  "pdf": "https://arxiv.org/pdf/1906.04358",
+  "bibtex": "@misc{gaier2019_arxiv:1906.04358,\n    title = {Weight Agnostic Neural Networks},\n    author = {Adam Gaier and David Ha},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.04358},\n    pdf = {https://arxiv.org/pdf/1906.04358},\n    url = {https://arxiv.org/abs/1906.04358}\n}",
+  "source": "arxiv.org",
+  "date": 1560331177,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.04358"
+}
