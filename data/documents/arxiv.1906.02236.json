@@ -1,0 +1,18 @@
+{
+  "title": "Noise Contrastive Meta-Learning for Conditional Density Estimation using Kernel Mean Embeddings",
+  "authors": [
+    "Jean-Francois Ton",
+    "Lucian Chan",
+    "Yee Whye Teh",
+    "Dino Sejdinovic"
+  ],
+  "abstract": "Current meta-learning approaches focus on learning functional representations\nof relationships between variables, i.e. on estimating conditional expectations\nin regression. In many applications, however, we are faced with conditional\ndistributions which cannot be meaningfully summarized using expectation only\n(due to e.g. multimodality). Hence, we consider the problem of conditional\ndensity estimation in the meta-learning setting. We introduce a novel technique\nfor meta-learning which combines neural representation and noise-contrastive\nestimation with the established literature of conditional mean embeddings into\nreproducing kernel Hilbert spaces. The method is validated on synthetic and\nreal-world problems, demonstrating the utility of sharing learned\nrepresentations across multiple conditional density estimation tasks.",
+  "id": "arxiv.1906.02236",
+  "url": "https://arxiv.org/abs/1906.02236",
+  "pdf": "https://arxiv.org/pdf/1906.02236",
+  "bibtex": "@misc{ton2019_arxiv:1906.02236,\n    title = {Noise Contrastive Meta-Learning for Conditional Density Estimation using Kernel Mean Embeddings},\n    author = {Jean-Francois Ton and Lucian Chan and Yee Whye Teh and Dino Sejdinovic},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.02236},\n    pdf = {https://arxiv.org/pdf/1906.02236},\n    url = {https://arxiv.org/abs/1906.02236}\n}",
+  "source": "arxiv.org",
+  "date": 1560345631,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.02236"
+}
