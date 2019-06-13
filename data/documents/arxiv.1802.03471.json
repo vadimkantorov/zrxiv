@@ -1,0 +1,19 @@
+{
+  "title": "Certified Robustness to Adversarial Examples with Differential Privacy",
+  "authors": [
+    "Mathias Lecuyer",
+    "Vaggelis Atlidakis",
+    "Roxana Geambasu",
+    "Daniel Hsu",
+    "Suman Jana"
+  ],
+  "abstract": "Adversarial examples that fool machine learning models, particularly deep\nneural networks, have been a topic of intense research interest, with attacks\nand defenses being developed in a tight back-and-forth. Most past defenses are\nbest effort and have been shown to be vulnerable to sophisticated attacks.\nRecently a set of certified defenses have been introduced, which provide\nguarantees of robustness to norm-bounded attacks, but they either do not scale\nto large datasets or are limited in the types of models they can support. This\npaper presents the first certified defense that both scales to large networks\nand datasets (such as Google's Inception network for ImageNet) and applies\nbroadly to arbitrary model types. Our defense, called PixelDP, is based on a\nnovel connection between robustness against adversarial examples and\ndifferential privacy, a cryptographically-inspired formalism, that provides a\nrigorous, generic, and flexible foundation for defense.",
+  "id": "arxiv.1802.03471",
+  "url": "https://arxiv.org/abs/1802.03471",
+  "pdf": "https://arxiv.org/pdf/1802.03471",
+  "bibtex": "@misc{lecuyer2018_arxiv:1802.03471,\n    title = {Certified Robustness to Adversarial Examples with Differential Privacy},\n    author = {Mathias Lecuyer and Vaggelis Atlidakis and Roxana Geambasu and Daniel Hsu and Suman Jana},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1802.03471},\n    pdf = {https://arxiv.org/pdf/1802.03471},\n    url = {https://arxiv.org/abs/1802.03471}\n}",
+  "source": "arxiv.org",
+  "date": 1560451778,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1802.03471"
+}
