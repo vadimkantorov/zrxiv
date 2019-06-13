@@ -1,0 +1,18 @@
+{
+  "title": "Maximum Mean Discrepancy Gradient Flow",
+  "authors": [
+    "Michael Arbel",
+    "Anna Korba",
+    "Adil Salim",
+    "Arthur Gretton"
+  ],
+  "abstract": "We construct a Wasserstein gradient flow of the maximum mean discrepancy\n(MMD) and study its convergence properties.\n  The MMD is an integral probability metric defined for a reproducing kernel\nHilbert space (RKHS), and serves as a metric on probability measures for a\nsufficiently rich RKHS. We obtain conditions for convergence of the gradient\nflow towards a global optimum, that can be related to particle transport when\noptimizing neural networks.\n  We also propose a way to regularize this MMD flow, based on an injection of\nnoise in the gradient. This algorithmic fix comes with theoretical and\nempirical evidence. The practical implementation of the flow is\nstraightforward, since both the MMD and its gradient have simple closed-form\nexpressions, which can be easily estimated with samples.",
+  "id": "arxiv.1906.04370",
+  "url": "https://arxiv.org/abs/1906.04370",
+  "pdf": "https://arxiv.org/pdf/1906.04370",
+  "bibtex": "@misc{arbel2019_arxiv:1906.04370,\n    title = {Maximum Mean Discrepancy Gradient Flow},\n    author = {Michael Arbel and Anna Korba and Adil Salim and Arthur Gretton},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.04370},\n    pdf = {https://arxiv.org/pdf/1906.04370},\n    url = {https://arxiv.org/abs/1906.04370}\n}",
+  "source": "arxiv.org",
+  "date": 1560419646,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.04370"
+}
