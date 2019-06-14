@@ -1,0 +1,21 @@
+{
+  "title": "Provably Robust Deep Learning via Adversarially Trained Smoothed Classifiers",
+  "authors": [
+    "Hadi Salman",
+    "Greg Yang",
+    "Jerry Li",
+    "Pengchuan Zhang",
+    "Huan Zhang",
+    "Ilya Razenshteyn",
+    "Sebastien Bubeck"
+  ],
+  "abstract": "Recent works have shown the effectiveness of randomized smoothing as a\nscalable technique for building neural network-based classifiers that are\nprovably robust to $\\ell_2$-norm adversarial perturbations. In this paper, we\nemploy adversarial training to improve the performance of randomized smoothing.\nWe design an adapted attack for smoothed classifiers, and we show how this\nattack can be used in an adversarial training setting to boost the provable\nrobustness of smoothed classifiers. We demonstrate through extensive\nexperimentation that our method consistently outperforms all existing provably\n$\\ell_2$-robust classifiers by a significant margin on ImageNet and CIFAR-10,\nestablishing the state-of-the-art for provable $\\ell_2$-defenses. Our code and\ntrained models are available at\nhttp://github.com/Hadisalman/smoothing-adversarial .",
+  "id": "arxiv.1906.04584",
+  "url": "https://arxiv.org/abs/1906.04584",
+  "pdf": "https://arxiv.org/pdf/1906.04584",
+  "bibtex": "@misc{salman2019_arxiv:1906.04584,\n    title = {Provably Robust Deep Learning via Adversarially Trained Smoothed Classifiers},\n    author = {Hadi Salman and Greg Yang and Jerry Li and Pengchuan Zhang and Huan Zhang and Ilya Razenshteyn and Sebastien Bubeck},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.04584},\n    pdf = {https://arxiv.org/pdf/1906.04584},\n    url = {https://arxiv.org/abs/1906.04584}\n}",
+  "source": "arxiv.org",
+  "date": 1560502971,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.04584"
+}
