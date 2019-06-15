@@ -1,0 +1,19 @@
+{
+  "title": "Slim DensePose: Thrifty Learning from Sparse Annotations and Motion Cues",
+  "authors": [
+    "Natalia Neverova",
+    "James Thewlis",
+    "Rıza Alp Güler",
+    "Iasonas Kokkinos",
+    "Andrea Vedaldi"
+  ],
+  "abstract": "DensePose supersedes traditional landmark detectors by densely mapping image\npixels to body surface coordinates. This power, however, comes at a greatly\nincreased annotation time, as supervising the model requires to manually label\nhundreds of points per pose instance. In this work, we thus seek methods to\nsignificantly slim down the DensePose annotations, proposing more efficient\ndata collection strategies. In particular, we demonstrate that if annotations\nare collected in video frames, their efficacy can be multiplied for free by\nusing motion cues. To explore this idea, we introduce DensePose-Track, a\ndataset of videos where selected frames are annotated in the traditional\nDensePose manner. Then, building on geometric properties of the DensePose\nmapping, we use the video dynamic to propagate ground-truth annotations in time\nas well as to learn from Siamese equivariance constraints. Having performed\nexhaustive empirical evaluation of various data annotation and learning\nstrategies, we demonstrate that doing so can deliver significantly improved\npose estimation results over strong baselines. However, despite what is\nsuggested by some recent works, we show that merely synthesizing motion\npatterns by applying geometric transformations to isolated frames is\nsignificantly less effective, and that motion cues help much more when they are\nextracted from videos.",
+  "id": "arxiv.1906.05706",
+  "url": "https://arxiv.org/abs/1906.05706",
+  "pdf": "https://arxiv.org/pdf/1906.05706",
+  "bibtex": "@misc{neverova2019_arxiv:1906.05706,\n    title = {Slim DensePose: Thrifty Learning from Sparse Annotations and Motion Cues},\n    author = {Natalia Neverova and James Thewlis and Rıza Alp Güler and Iasonas Kokkinos and Andrea Vedaldi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.05706},\n    pdf = {https://arxiv.org/pdf/1906.05706},\n    url = {https://arxiv.org/abs/1906.05706}\n}",
+  "source": "arxiv.org",
+  "date": 1560628769,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.05706"
+}
