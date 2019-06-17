@@ -1,0 +1,18 @@
+{
+  "title": "A Signal Propagation Perspective for Pruning Neural Networks at Initialization",
+  "authors": [
+    "Namhoon Lee",
+    "Thalaiyasingam Ajanthan",
+    "Stephen Gould",
+    "Philip H. S. Torr"
+  ],
+  "abstract": "Network pruning is a promising avenue for compressing deep neural networks. A\ntypical approach to pruning starts by training a model and removing unnecessary\nparameters while minimizing the impact on what is learned. Alternatively, a\nrecent approach shows that pruning can be done at initialization prior to\ntraining. However, it remains unclear exactly why pruning an untrained,\nrandomly initialized neural network is effective. In this work, we consider the\npruning problem from a signal propagation perspective, formally characterizing\ninitialization conditions that ensure faithful signal propagation throughout a\nnetwork. Based on singular values of a network's input-output Jacobian, we find\nthat orthogonal initialization enables more faithful signal propagation\ncompared to other initialization schemes, thereby enhancing pruning results on\na range of modern architectures and datasets. Also, we empirically study the\neffect of supervision for pruning at initialization, and show that often\nunsupervised pruning can be as effective as the supervised pruning.\nFurthermore, we demonstrate that our signal propagation perspective, combined\nwith unsupervised pruning, can indeed be useful in various scenarios where\npruning is applied to non-standard arbitrarily-designed architectures.",
+  "id": "arxiv.1906.06307",
+  "url": "https://arxiv.org/abs/1906.06307",
+  "pdf": "https://arxiv.org/pdf/1906.06307",
+  "bibtex": "@misc{lee2019_arxiv:1906.06307,\n    title = {A Signal Propagation Perspective for Pruning Neural Networks at Initialization},\n    author = {Namhoon Lee and Thalaiyasingam Ajanthan and Stephen Gould and Philip H. S. Torr},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.06307},\n    pdf = {https://arxiv.org/pdf/1906.06307},\n    url = {https://arxiv.org/abs/1906.06307}\n}",
+  "source": "arxiv.org",
+  "date": 1560778014,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.06307"
+}
