@@ -1,0 +1,19 @@
+{
+  "title": "NLProlog: Reasoning with Weak Unification for Question Answering in Natural Language",
+  "authors": [
+    "Leon Weber",
+    "Pasquale Minervini",
+    "Jannes Münchmeyer",
+    "Ulf Leser",
+    "Tim Rocktäschel"
+  ],
+  "abstract": "Rule-based models are attractive for various tasks because they inherently\nlead to interpretable and explainable decisions and can easily incorporate\nprior knowledge. However, such systems are difficult to apply to problems\ninvolving natural language, due to its linguistic variability. In contrast,\nneural models can cope very well with ambiguity by learning distributed\nrepresentations of words and their composition from data, but lead to models\nthat are difficult to interpret. In this paper, we describe a model combining\nneural networks with logic programming in a novel manner for solving multi-hop\nreasoning tasks over natural language. Specifically, we propose to use a Prolog\nprover which we extend to utilize a similarity function over pretrained\nsentence encoders. We fine-tune the representations for the similarity function\nvia backpropagation. This leads to a system that can apply rule-based reasoning\nto natural language, and induce domain-specific rules from training data. We\nevaluate the proposed system on two different question answering tasks, showing\nthat it outperforms two baselines -- BIDAF (Seo et al., 2016a) and FAST QA\n(Weissenborn et al., 2017b) on a subset of the WikiHop corpus and achieves\ncompetitive results on the MedHop data set (Welbl et al., 2017).",
+  "id": "arxiv.1906.06187",
+  "url": "https://arxiv.org/abs/1906.06187",
+  "pdf": "https://arxiv.org/pdf/1906.06187",
+  "bibtex": "@misc{weber2019_arxiv:1906.06187,\n    title = {NLProlog: Reasoning with Weak Unification for Question Answering in Natural Language},\n    author = {Leon Weber and Pasquale Minervini and Jannes Münchmeyer and Ulf Leser and Tim Rocktäschel},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.06187},\n    pdf = {https://arxiv.org/pdf/1906.06187},\n    url = {https://arxiv.org/abs/1906.06187}\n}",
+  "source": "arxiv.org",
+  "date": 1560791481,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.06187"
+}
