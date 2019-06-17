@@ -1,0 +1,19 @@
+{
+  "title": "Direct Policy Gradients: Direct Optimization of Policies in Discrete Action Spaces",
+  "authors": [
+    "Guy Lorberbom",
+    "Chris J. Maddison",
+    "Nicolas Heess",
+    "Tamir Hazan",
+    "Daniel Tarlow"
+  ],
+  "abstract": "Direct optimization is an appealing approach to differentiating through\ndiscrete quantities. Rather than relying on REINFORCE or continuous relaxations\nof discrete structures, it uses optimization in discrete space to compute\ngradients through a discrete argmax operation. In this paper, we develop\nreinforcement learning algorithms that use direct optimization to compute\ngradients of the expected return in environments with discrete actions. We call\nthe resulting algorithms \"direct policy gradient\" algorithms and investigate\ntheir properties, showing that there is a built-in variance reduction technique\nand that a parameter that was previously viewed as a numerical approximation\ncan be interpreted as controlling risk sensitivity. We also tackle challenges\nin algorithm design, leveraging ideas from A$^\\star$ Sampling to develop a\npractical algorithm. Empirically, we show that the algorithm performs well in\nillustrative domains, and that it can make use of domain knowledge about upper\nbounds on return-to-go to speed up training.",
+  "id": "arxiv.1906.06062",
+  "url": "https://arxiv.org/abs/1906.06062",
+  "pdf": "https://arxiv.org/pdf/1906.06062",
+  "bibtex": "@misc{lorberbom2019_arxiv:1906.06062,\n    title = {Direct Policy Gradients: Direct Optimization of Policies in Discrete Action Spaces},\n    author = {Guy Lorberbom and Chris J. Maddison and Nicolas Heess and Tamir Hazan and Daniel Tarlow},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.06062},\n    pdf = {https://arxiv.org/pdf/1906.06062},\n    url = {https://arxiv.org/abs/1906.06062}\n}",
+  "source": "arxiv.org",
+  "date": 1560808407,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.06062"
+}
