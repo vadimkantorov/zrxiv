@@ -1,0 +1,18 @@
+{
+  "title": "A Bayesian Perspective on the Deep Image Prior",
+  "authors": [
+    "Zezhou Cheng",
+    "Matheus Gadelha",
+    "Subhransu Maji",
+    "Daniel Sheldon"
+  ],
+  "abstract": "The deep image prior was recently introduced as a prior for natural images.\nIt represents images as the output of a convolutional network with random\ninputs. For \"inference\", gradient descent is performed to adjust network\nparameters to make the output match observations. This approach yields good\nperformance on a range of image reconstruction tasks. We show that the deep\nimage prior is asymptotically equivalent to a stationary Gaussian process prior\nin the limit as the number of channels in each layer of the network goes to\ninfinity, and derive the corresponding kernel. This informs a Bayesian approach\nto inference. We show that by conducting posterior inference using stochastic\ngradient Langevin we avoid the need for early stopping, which is a drawback of\nthe current approach, and improve results for denoising and impainting tasks.\nWe illustrate these intuitions on a number of 1D and 2D signal reconstruction\ntasks.",
+  "id": "arxiv.1904.07457",
+  "url": "https://arxiv.org/abs/1904.07457",
+  "pdf": "https://arxiv.org/pdf/1904.07457",
+  "bibtex": "@misc{cheng2019_arxiv:1904.07457,\n    title = {A Bayesian Perspective on the Deep Image Prior},\n    author = {Zezhou Cheng and Matheus Gadelha and Subhransu Maji and Daniel Sheldon},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.07457},\n    pdf = {https://arxiv.org/pdf/1904.07457},\n    url = {https://arxiv.org/abs/1904.07457}\n}",
+  "source": "arxiv.org",
+  "date": 1560805208,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.07457?fbclid=IwAR2Xapt-QcFO_ALSAlvWKKUznEmfe5nZyCitgFZKf7P0UegUu1gwsKu62E4"
+}
