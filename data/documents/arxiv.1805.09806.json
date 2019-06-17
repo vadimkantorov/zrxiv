@@ -1,0 +1,21 @@
+{
+  "title": "Competitive Collaboration: Joint Unsupervised Learning of Depth, Camera Motion, Optical Flow and Motion Segmentation",
+  "authors": [
+    "Anurag Ranjan",
+    "Varun Jampani",
+    "Lukas Balles",
+    "Kihwan Kim",
+    "Deqing Sun",
+    "Jonas Wulff",
+    "Michael J. Black"
+  ],
+  "abstract": "We address the unsupervised learning of several interconnected problems in\nlow-level vision: single view depth prediction, camera motion estimation,\noptical flow, and segmentation of a video into the static scene and moving\nregions. Our key insight is that these four fundamental vision problems are\ncoupled through geometric constraints. Consequently, learning to solve them\ntogether simplifies the problem because the solutions can reinforce each other.\nWe go beyond previous work by exploiting geometry more explicitly and\nsegmenting the scene into static and moving regions. To that end, we introduce\nCompetitive Collaboration, a framework that facilitates the coordinated\ntraining of multiple specialized neural networks to solve complex problems.\nCompetitive Collaboration works much like expectation-maximization, but with\nneural networks that act as both competitors to explain pixels that correspond\nto static or moving regions, and as collaborators through a moderator that\nassigns pixels to be either static or independently moving. Our novel method\nintegrates all these problems in a common framework and simultaneously reasons\nabout the segmentation of the scene into moving objects and the static\nbackground, the camera motion, depth of the static scene structure, and the\noptical flow of moving objects. Our model is trained without any supervision\nand achieves state-of-the-art performance among joint unsupervised methods on\nall sub-problems.",
+  "id": "arxiv.1805.09806",
+  "url": "https://arxiv.org/abs/1805.09806",
+  "pdf": "https://arxiv.org/pdf/1805.09806",
+  "bibtex": "@misc{ranjan2018_arxiv:1805.09806,\n    title = {Competitive Collaboration: Joint Unsupervised Learning of Depth, Camera Motion, Optical Flow and Motion Segmentation},\n    author = {Anurag Ranjan and Varun Jampani and Lukas Balles and Kihwan Kim and Deqing Sun and Jonas Wulff and Michael J. Black},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.09806},\n    pdf = {https://arxiv.org/pdf/1805.09806},\n    url = {https://arxiv.org/abs/1805.09806}\n}",
+  "source": "arxiv.org",
+  "date": 1560811721,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1805.09806"
+}
