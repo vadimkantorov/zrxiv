@@ -1,0 +1,20 @@
+{
+  "title": "Stand-Alone Self-Attention in Vision Models",
+  "authors": [
+    "Prajit Ramachandran",
+    "Niki Parmar",
+    "Ashish Vaswani",
+    "Irwan Bello",
+    "Anselm Levskaya",
+    "Jonathon Shlens"
+  ],
+  "abstract": "Convolutions are a fundamental building block of modern computer vision\nsystems. Recent approaches have argued for going beyond convolutions in order\nto capture long-range dependencies. These efforts focus on augmenting\nconvolutional models with content-based interactions, such as self-attention\nand non-local means, to achieve gains on a number of vision tasks. The natural\nquestion that arises is whether attention can be a stand-alone primitive for\nvision models instead of serving as just an augmentation on top of\nconvolutions. In developing and testing a pure self-attention vision model, we\nverify that self-attention can indeed be an effective stand-alone layer. A\nsimple procedure of replacing all instances of spatial convolutions with a form\nof self-attention applied to ResNet model produces a fully self-attentional\nmodel that outperforms the baseline on ImageNet classification with 12% fewer\nFLOPS and 29% fewer parameters. On COCO object detection, a pure self-attention\nmodel matches the mAP of a baseline RetinaNet while having 39% fewer FLOPS and\n34% fewer parameters. Detailed ablation studies demonstrate that self-attention\nis especially impactful when used in later layers. These results establish that\nstand-alone self-attention is an important addition to the vision\npractitioner's toolbox.",
+  "id": "arxiv.1906.05909",
+  "url": "https://arxiv.org/abs/1906.05909",
+  "pdf": "https://arxiv.org/pdf/1906.05909",
+  "bibtex": "@misc{ramachandran2019_arxiv:1906.05909,\n    title = {Stand-Alone Self-Attention in Vision Models},\n    author = {Prajit Ramachandran and Niki Parmar and Ashish Vaswani and Irwan Bello and Anselm Levskaya and Jonathon Shlens},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.05909},\n    pdf = {https://arxiv.org/pdf/1906.05909},\n    url = {https://arxiv.org/abs/1906.05909}\n}",
+  "source": "arxiv.org",
+  "date": 1560791894,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.05909"
+}
