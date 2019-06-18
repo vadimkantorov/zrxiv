@@ -1,0 +1,19 @@
+{
+  "title": "Population Based Augmentation: Efficient Learning of Augmentation Policy Schedules",
+  "authors": [
+    "Daniel Ho",
+    "Eric Liang",
+    "Ion Stoica",
+    "Pieter Abbeel",
+    "Xi Chen"
+  ],
+  "abstract": "A key challenge in leveraging data augmentation for neural network training\nis choosing an effective augmentation policy from a large search space of\ncandidate operations. Properly chosen augmentation policies can lead to\nsignificant generalization improvements; however, state-of-the-art approaches\nsuch as AutoAugment are computationally infeasible to run for the ordinary\nuser. In this paper, we introduce a new data augmentation algorithm, Population\nBased Augmentation (PBA), which generates nonstationary augmentation policy\nschedules instead of a fixed augmentation policy. We show that PBA can match\nthe performance of AutoAugment on CIFAR-10, CIFAR-100, and SVHN, with three\norders of magnitude less overall compute. On CIFAR-10 we achieve a mean test\nerror of 1.46%, which is a slight improvement upon the current\nstate-of-the-art. The code for PBA is open source and is available at\nhttps://github.com/arcelien/pba.",
+  "id": "arxiv.1905.05393",
+  "url": "https://arxiv.org/abs/1905.05393",
+  "pdf": "https://arxiv.org/pdf/1905.05393",
+  "bibtex": "@misc{ho2019_arxiv:1905.05393,\n    title = {Population Based Augmentation: Efficient Learning of Augmentation Policy Schedules},\n    author = {Daniel Ho and Eric Liang and Ion Stoica and Pieter Abbeel and Xi Chen},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.05393},\n    pdf = {https://arxiv.org/pdf/1905.05393},\n    url = {https://arxiv.org/abs/1905.05393}\n}",
+  "source": "arxiv.org",
+  "date": 1560871636,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.05393"
+}
