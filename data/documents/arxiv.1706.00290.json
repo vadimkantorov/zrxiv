@@ -1,0 +1,20 @@
+{
+  "title": "Transfer Learning for Speech Recognition on a Budget",
+  "authors": [
+    "Julius Kunze",
+    "Louis Kirsch",
+    "Ilia Kurenkov",
+    "Andreas Krug",
+    "Jens Johannsmeier",
+    "Sebastian Stober"
+  ],
+  "abstract": "End-to-end training of automated speech recognition (ASR) systems requires\nmassive data and compute resources. We explore transfer learning based on model\nadaptation as an approach for training ASR models under constrained GPU memory,\nthroughput and training data. We conduct several systematic experiments\nadapting a Wav2Letter convolutional neural network originally trained for\nEnglish ASR to the German language. We show that this technique allows faster\ntraining on consumer-grade resources while requiring less training data in\norder to achieve the same accuracy, thereby lowering the cost of training ASR\nmodels in other languages. Model introspection revealed that small adaptations\nto the network's weights were sufficient for good performance, especially for\ninner layers.",
+  "id": "arxiv.1706.00290",
+  "url": "https://arxiv.org/abs/1706.00290",
+  "pdf": "https://arxiv.org/pdf/1706.00290",
+  "bibtex": "@misc{kunze2017_arxiv:1706.00290,\n    title = {Transfer Learning for Speech Recognition on a Budget},\n    author = {Julius Kunze and Louis Kirsch and Ilia Kurenkov and Andreas Krug and Jens Johannsmeier and Sebastian Stober},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1706.00290},\n    pdf = {https://arxiv.org/pdf/1706.00290},\n    url = {https://arxiv.org/abs/1706.00290}\n}",
+  "source": "arxiv.org",
+  "date": 1560950959,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1706.00290"
+}
