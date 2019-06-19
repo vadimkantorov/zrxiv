@@ -1,0 +1,16 @@
+{
+  "title": "Audio Transport: A Generalized Portamento via Optimal Transport",
+  "authors": [
+    "Trevor Henderson",
+    "Justin Solomon"
+  ],
+  "abstract": "This paper proposes a new method to interpolate between two audio signals. As\nan interpolation parameter is changed, the pitches in one signal slide to the\npitches in the other, producing a portamento, or musical glide. The assignment\nof pitches in one sound to pitches in the other is accomplished by solving a\n1-dimensional optimal transport problem. In addition, we introduce several\ntechniques that preserve the audio fidelity over this highly non-linear\ntransformation.\n  A portamento is a natural way for a musician to transition between notes, but\ntraditionally it has only been possible for instruments with a continuously\nvariable pitch like the human voice or the violin. Audio transport extends the\nportamento to any instrument, even polyphonic ones. Moreover, the effect can be\nused to transition between different instruments, groups of instruments, or\nreally any transient-less audio signals. The audio transport effect operates in\nreal-time; we open-source implementation is provided. In experiments with\nsinusoidal inputs, the interpolating effect is indistinguishable from ideal\nsine sweeps. In general, the effect produces clear, musical results for a wide\nvariety of inputs.",
+  "id": "arxiv.1906.06763",
+  "url": "https://arxiv.org/abs/1906.06763",
+  "pdf": "https://arxiv.org/pdf/1906.06763",
+  "bibtex": "@misc{henderson2019_arxiv:1906.06763,\n    title = {Audio Transport: A Generalized Portamento via Optimal Transport},\n    author = {Trevor Henderson and Justin Solomon},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.06763},\n    pdf = {https://arxiv.org/pdf/1906.06763},\n    url = {https://arxiv.org/abs/1906.06763}\n}",
+  "source": "arxiv.org",
+  "date": 1560927183,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.06763"
+}
