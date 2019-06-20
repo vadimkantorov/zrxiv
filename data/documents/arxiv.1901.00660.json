@@ -1,0 +1,18 @@
+{
+  "title": "Deep Speech Enhancement for Reverberated and Noisy Signals using Wide Residual Networks",
+  "authors": [
+    "Dayana Ribas",
+    "Jorge Llombart",
+    "Antonio Miguel",
+    "Luis Vicente"
+  ],
+  "abstract": "This paper proposes a deep speech enhancement method which exploits the high\npotential of residual connections in a wide neural network architecture, a\ntopology known as Wide Residual Network. This is supported on single\ndimensional convolutions computed alongside the time domain, which is a\npowerful approach to process contextually correlated representations through\nthe temporal domain, such as speech feature sequences. We find the residual\nmechanism extremely useful for the enhancement task since the signal always has\na linear shortcut and the non-linear path enhances it in several steps by\nadding or subtracting corrections. The enhancement capacity of the proposal is\nassessed by objective quality metrics and the performance of a speech\nrecognition system. This was evaluated in the framework of the REVERB Challenge\ndataset, including simulated and real samples of reverberated and noisy speech\nsignals. Results showed that enhanced speech from the proposed method succeeded\nfor both, the enhancement task with intelligibility purposes and the speech\nrecognition system. The DNN model, trained with artificial synthesized\nreverberation data, was able to deal with far-field reverberated speech from\nreal scenarios. Furthermore, the method was able to take advantage of the\nresidual connection achieving to enhance signals with low noise level, which is\nusually a strong handicap of traditional enhancement methods.",
+  "id": "arxiv.1901.00660",
+  "url": "https://arxiv.org/abs/1901.00660",
+  "pdf": "https://arxiv.org/pdf/1901.00660",
+  "bibtex": "@misc{ribas2019_arxiv:1901.00660,\n    title = {Deep Speech Enhancement for Reverberated and Noisy Signals using Wide Residual Networks},\n    author = {Dayana Ribas and Jorge Llombart and Antonio Miguel and Luis Vicente},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.00660},\n    pdf = {https://arxiv.org/pdf/1901.00660},\n    url = {https://arxiv.org/abs/1901.00660}\n}",
+  "source": "arxiv.org",
+  "date": 1561040511,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.00660"
+}
