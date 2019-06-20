@@ -1,0 +1,16 @@
+{
+  "title": "Regularization by Denoising: Clarifications and New Interpretations",
+  "authors": [
+    "Edward T. Reehorst",
+    "Philip Schniter"
+  ],
+  "abstract": "Regularization by Denoising (RED), as recently proposed by Romano, Elad, and\nMilanfar, is powerful image-recovery framework that aims to minimize an\nexplicit regularization objective constructed from a plug-in image-denoising\nfunction. Experimental evidence suggests that the RED algorithms are\nstate-of-the-art. We claim, however, that explicit regularization does not\nexplain the RED algorithms. In particular, we show that many of the expressions\nin the paper by Romano et al. hold only when the denoiser has a symmetric\nJacobian, and we demonstrate that such symmetry does not occur with practical\ndenoisers such as non-local means, BM3D, TNRD, and DnCNN. To explain the RED\nalgorithms, we propose a new framework called Score-Matching by Denoising\n(SMD), which aims to match a \"score\" (i.e., the gradient of a log-prior). We\nthen show tight connections between SMD, kernel density estimation, and\nconstrained minimum mean-squared error denoising. Furthermore, we interpret the\nRED algorithms from Romano et al. and propose new algorithms with acceleration\nand convergence guarantees. Finally, we show that the RED algorithms seek a\nconsensus equilibrium solution, which facilitates a comparison to plug-and-play\nADMM.",
+  "id": "arxiv.1806.02296",
+  "url": "https://arxiv.org/abs/1806.02296",
+  "pdf": "https://arxiv.org/pdf/1806.02296",
+  "bibtex": "@misc{reehorst2018_arxiv:1806.02296,\n    title = {Regularization by Denoising: Clarifications and New Interpretations},\n    author = {Edward T. Reehorst and Philip Schniter},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.02296},\n    pdf = {https://arxiv.org/pdf/1806.02296},\n    url = {https://arxiv.org/abs/1806.02296}\n}",
+  "source": "arxiv.org",
+  "date": 1561040892,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.02296"
+}
