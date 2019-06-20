@@ -1,0 +1,17 @@
+{
+  "title": "Large Batch Training of Convolutional Networks",
+  "authors": [
+    "Yang You",
+    "Igor Gitman",
+    "Boris Ginsburg"
+  ],
+  "abstract": "A common way to speed up training of large convolutional networks is to add\ncomputational units. Training is then performed using data-parallel synchronous\nStochastic Gradient Descent (SGD) with mini-batch divided between computational\nunits. With an increase in the number of nodes, the batch size grows. But\ntraining with large batch size often results in the lower model accuracy. We\nargue that the current recipe for large batch training (linear learning rate\nscaling with warm-up) is not general enough and training may diverge. To\novercome this optimization difficulties we propose a new training algorithm\nbased on Layer-wise Adaptive Rate Scaling (LARS). Using LARS, we scaled Alexnet\nup to a batch size of 8K, and Resnet-50 to a batch size of 32K without loss in\naccuracy.",
+  "id": "arxiv.1708.03888",
+  "url": "https://arxiv.org/abs/1708.03888",
+  "pdf": "https://arxiv.org/pdf/1708.03888",
+  "bibtex": "@misc{you2017_arxiv:1708.03888,\n    title = {Large Batch Training of Convolutional Networks},\n    author = {Yang You and Igor Gitman and Boris Ginsburg},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1708.03888},\n    pdf = {https://arxiv.org/pdf/1708.03888},\n    url = {https://arxiv.org/abs/1708.03888}\n}",
+  "source": "arxiv.org",
+  "date": 1561016716,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1708.03888"
+}
