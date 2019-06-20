@@ -1,0 +1,19 @@
+{
+  "title": "Deep Griffin-Lim Iteration",
+  "authors": [
+    "Yoshiki Masuyama",
+    "Kohei Yatabe",
+    "Yuma Koizumi",
+    "Yasuhiro Oikawa",
+    "Noboru Harada"
+  ],
+  "abstract": "This paper presents a novel phase reconstruction method (only from a given\namplitude spectrogram) by combining a signal-processing-based approach and a\ndeep neural network (DNN). To retrieve a time-domain signal from its amplitude\nspectrogram, the corresponding phase is required. One of the popular phase\nreconstruction methods is the Griffin-Lim algorithm (GLA), which is based on\nthe redundancy of the short-time Fourier transform. However, GLA often involves\nmany iterations and produces low-quality signals owing to the lack of prior\nknowledge of the target signal. In order to address these issues, in this\nstudy, we propose an architecture which stacks a sub-block including two\nGLA-inspired fixed layers and a DNN. The number of stacked sub-blocks is\nadjustable, and we can trade the performance and computational load based on\nrequirements of applications. The effectiveness of the proposed method is\ninvestigated by reconstructing phases from amplitude spectrograms of speeches.",
+  "id": "arxiv.1903.03971",
+  "url": "https://arxiv.org/abs/1903.03971",
+  "pdf": "https://arxiv.org/pdf/1903.03971",
+  "bibtex": "@misc{masuyama2019_arxiv:1903.03971,\n    title = {Deep Griffin-Lim Iteration},\n    author = {Yoshiki Masuyama and Kohei Yatabe and Yuma Koizumi and Yasuhiro Oikawa and Noboru Harada},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.03971},\n    pdf = {https://arxiv.org/pdf/1903.03971},\n    url = {https://arxiv.org/abs/1903.03971}\n}",
+  "source": "arxiv.org",
+  "date": 1561041776,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.03971"
+}
