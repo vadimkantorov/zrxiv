@@ -1,0 +1,18 @@
+{
+  "title": "Predicting the Generalization Gap in Deep Networks with Margin Distributions",
+  "authors": [
+    "Yiding Jiang",
+    "Dilip Krishnan",
+    "Hossein Mobahi",
+    "Samy Bengio"
+  ],
+  "abstract": "As shown in recent research, deep neural networks can perfectly fit randomly\nlabeled data, but with very poor accuracy on held out data. This phenomenon\nindicates that loss functions such as cross-entropy are not a reliable\nindicator of generalization. This leads to the crucial question of how\ngeneralization gap should be predicted from the training data and network\nparameters. In this paper, we propose such a measure, and conduct extensive\nempirical studies on how well it can predict the generalization gap. Our\nmeasure is based on the concept of margin distribution, which are the distances\nof training points to the decision boundary. We find that it is necessary to\nuse margin distributions at multiple layers of a deep network. On the CIFAR-10\nand the CIFAR-100 datasets, our proposed measure correlates very strongly with\nthe generalization gap. In addition, we find the following other factors to be\nof importance: normalizing margin values for scale independence, using\ncharacterizations of margin distribution rather than just the margin (closest\ndistance to decision boundary), and working in log space instead of linear\nspace (effectively using a product of margins rather than a sum). Our measure\ncan be easily applied to feedforward deep networks with any architecture and\nmay point towards new training loss functions that could enable better\ngeneralization.",
+  "id": "arxiv.1810.00113",
+  "url": "https://arxiv.org/abs/1810.00113",
+  "pdf": "https://arxiv.org/pdf/1810.00113",
+  "bibtex": "@misc{jiang2018_arxiv:1810.00113,\n    title = {Predicting the Generalization Gap in Deep Networks with Margin Distributions},\n    author = {Yiding Jiang and Dilip Krishnan and Hossein Mobahi and Samy Bengio},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.00113},\n    pdf = {https://arxiv.org/pdf/1810.00113},\n    url = {https://arxiv.org/abs/1810.00113}\n}",
+  "source": "arxiv.org",
+  "date": 1561015537,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1810.00113"
+}
