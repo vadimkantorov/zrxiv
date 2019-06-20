@@ -1,0 +1,20 @@
+{
+  "title": "XLNet: Generalized Autoregressive Pretraining for Language Understanding",
+  "authors": [
+    "Zhilin Yang",
+    "Zihang Dai",
+    "Yiming Yang",
+    "Jaime Carbonell",
+    "Ruslan Salakhutdinov",
+    "Quoc V. Le"
+  ],
+  "abstract": "With the capability of modeling bidirectional contexts, denoising\nautoencoding based pretraining like BERT achieves better performance than\npretraining approaches based on autoregressive language modeling. However,\nrelying on corrupting the input with masks, BERT neglects dependency between\nthe masked positions and suffers from a pretrain-finetune discrepancy. In light\nof these pros and cons, we propose XLNet, a generalized autoregressive\npretraining method that (1) enables learning bidirectional contexts by\nmaximizing the expected likelihood over all permutations of the factorization\norder and (2) overcomes the limitations of BERT thanks to its autoregressive\nformulation. Furthermore, XLNet integrates ideas from Transformer-XL, the\nstate-of-the-art autoregressive model, into pretraining. Empirically, XLNet\noutperforms BERT on 20 tasks, often by a large margin, and achieves\nstate-of-the-art results on 18 tasks including question answering, natural\nlanguage inference, sentiment analysis, and document ranking.",
+  "id": "arxiv.1906.08237",
+  "url": "https://arxiv.org/abs/1906.08237",
+  "pdf": "https://arxiv.org/pdf/1906.08237",
+  "bibtex": "@misc{yang2019_arxiv:1906.08237,\n    title = {XLNet: Generalized Autoregressive Pretraining for Language Understanding},\n    author = {Zhilin Yang and Zihang Dai and Yiming Yang and Jaime Carbonell and Ruslan Salakhutdinov and Quoc V. Le},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.08237},\n    pdf = {https://arxiv.org/pdf/1906.08237},\n    url = {https://arxiv.org/abs/1906.08237}\n}",
+  "source": "arxiv.org",
+  "date": 1561014980,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.08237"
+}
