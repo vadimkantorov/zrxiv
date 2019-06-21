@@ -1,0 +1,19 @@
+{
+  "title": "Almost-unsupervised Speech Recognition with Close-to-zero Resource Based on Phonetic Structures Learned from Very Small Unpaired Speech and Text Data",
+  "authors": [
+    "Yi-Chen Chen",
+    "Chia-Hao Shen",
+    "Sung-Feng Huang",
+    "Hung-yi Lee",
+    "Lin-shan Lee"
+  ],
+  "abstract": "Producing a large amount of annotated speech data for training ASR systems\nremains difficult for more than 95% of languages all over the world which are\nlow-resourced. However, we note human babies start to learn the language by the\nsounds of a small number of exemplar words without hearing a large amount of\ndata. We initiate some preliminary work in this direction in this paper. Audio\nWord2Vec is used to obtain embeddings of spoken words which carry phonetic\ninformation extracted from the signals. An autoencoder is used to generate\nembeddings of text words based on the articulatory features for the phoneme\nsequences. Both sets of embeddings for spoken and text words describe similar\nphonetic structures among words in their respective latent spaces. A mapping\nrelation from the audio embeddings to text embeddings actually gives the\nword-level ASR. This can be learned by aligning a small number of spoken words\nand the corresponding text words in the embedding spaces. In the initial\nexperiments only 200 annotated spoken words and one hour of speech data without\nannotation gave a word accuracy of 27.5%, which is low but a good starting\npoint.",
+  "id": "arxiv.1810.12566",
+  "url": "https://arxiv.org/abs/1810.12566",
+  "pdf": "https://arxiv.org/pdf/1810.12566",
+  "bibtex": "@misc{chen2018_arxiv:1810.12566,\n    title = {Almost-unsupervised Speech Recognition with Close-to-zero Resource Based on Phonetic Structures Learned from Very Small Unpaired Speech and Text Data},\n    author = {Yi-Chen Chen and Chia-Hao Shen and Sung-Feng Huang and Hung-yi Lee and Lin-shan Lee},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1810.12566},\n    pdf = {https://arxiv.org/pdf/1810.12566},\n    url = {https://arxiv.org/abs/1810.12566}\n}",
+  "source": "arxiv.org",
+  "date": 1561116820,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1810.12566"
+}
