@@ -1,0 +1,18 @@
+{
+  "title": "Unsupervised Cross-Modal Alignment of Speech and Text Embedding Spaces",
+  "authors": [
+    "Yu-An Chung",
+    "Wei-Hung Weng",
+    "Schrasing Tong",
+    "James Glass"
+  ],
+  "abstract": "Recent research has shown that word embedding spaces learned from text\ncorpora of different languages can be aligned without any parallel data\nsupervision. Inspired by the success in unsupervised cross-lingual word\nembeddings, in this paper we target learning a cross-modal alignment between\nthe embedding spaces of speech and text learned from corpora of their\nrespective modalities in an unsupervised fashion. The proposed framework learns\nthe individual speech and text embedding spaces, and attempts to align the two\nspaces via adversarial training, followed by a refinement procedure. We show\nhow our framework could be used to perform spoken word classification and\ntranslation, and the results on these two tasks demonstrate that the\nperformance of our unsupervised alignment approach is comparable to its\nsupervised counterpart. Our framework is especially useful for developing\nautomatic speech recognition (ASR) and speech-to-text translation systems for\nlow- or zero-resource languages, which have little parallel audio-text data for\ntraining modern supervised ASR and speech-to-text translation models, but\naccount for the majority of the languages spoken across the world.",
+  "id": "arxiv.1805.07467",
+  "url": "https://arxiv.org/abs/1805.07467",
+  "pdf": "https://arxiv.org/pdf/1805.07467",
+  "bibtex": "@misc{chung2018_arxiv:1805.07467,\n    title = {Unsupervised Cross-Modal Alignment of Speech and Text Embedding Spaces},\n    author = {Yu-An Chung and Wei-Hung Weng and Schrasing Tong and James Glass},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.07467},\n    pdf = {https://arxiv.org/pdf/1805.07467},\n    url = {https://arxiv.org/abs/1805.07467}\n}",
+  "source": "arxiv.org",
+  "date": 1561116814,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1805.07467"
+}
