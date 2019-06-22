@@ -1,0 +1,20 @@
+{
+  "title": "Information matrices and generalization",
+  "authors": [
+    "Valentin Thomas",
+    "Fabian Pedregosa",
+    "Bart van Merriënboer",
+    "Pierre-Antoine Mangazol",
+    "Yoshua Bengio",
+    "Nicolas Le Roux"
+  ],
+  "abstract": "This work revisits the use of information criteria to characterize the\ngeneralization of deep learning models. In particular, we empirically\ndemonstrate the effectiveness of the Takeuchi information criterion (TIC), an\nextension of the Akaike information criterion (AIC) for misspecified models, in\nestimating the generalization gap, shedding light on why quantities such as the\nnumber of parameters cannot quantify generalization. The TIC depends on both\nthe Hessian of the loss H and the covariance of the gradients C. By exploring\nthe similarities and differences between these two matrices as well as the\nFisher information matrix F, we study the interplay between noise and curvature\nin deep models. We also address the question of whether C is a reasonable\napproximation to F, as is commonly assumed.",
+  "id": "arxiv.1906.07774",
+  "url": "https://arxiv.org/abs/1906.07774",
+  "pdf": "https://arxiv.org/pdf/1906.07774",
+  "bibtex": "@misc{thomas2019_arxiv:1906.07774,\n    title = {Information matrices and generalization},\n    author = {Valentin Thomas and Fabian Pedregosa and Bart van Merriënboer and Pierre-Antoine Mangazol and Yoshua Bengio and Nicolas Le Roux},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.07774},\n    pdf = {https://arxiv.org/pdf/1906.07774},\n    url = {https://arxiv.org/abs/1906.07774}\n}",
+  "source": "arxiv.org",
+  "date": 1561210593,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.07774"
+}
