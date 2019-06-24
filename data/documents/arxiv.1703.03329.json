@@ -1,0 +1,18 @@
+{
+  "title": "UntrimmedNets for Weakly Supervised Action Recognition and Detection",
+  "authors": [
+    "Limin Wang",
+    "Yuanjun Xiong",
+    "Dahua Lin",
+    "Luc Van Gool"
+  ],
+  "abstract": "Current action recognition methods heavily rely on trimmed videos for model\ntraining. However, it is expensive and time-consuming to acquire a large-scale\ntrimmed video dataset. This paper presents a new weakly supervised\narchitecture, called UntrimmedNet, which is able to directly learn action\nrecognition models from untrimmed videos without the requirement of temporal\nannotations of action instances. Our UntrimmedNet couples two important\ncomponents, the classification module and the selection module, to learn the\naction models and reason about the temporal duration of action instances,\nrespectively. These two components are implemented with feed-forward networks,\nand UntrimmedNet is therefore an end-to-end trainable architecture. We exploit\nthe learned models for action recognition (WSR) and detection (WSD) on the\nuntrimmed video datasets of THUMOS14 and ActivityNet. Although our UntrimmedNet\nonly employs weak supervision, our method achieves performance superior or\ncomparable to that of those strongly supervised approaches on these two\ndatasets.",
+  "id": "arxiv.1703.03329",
+  "url": "https://arxiv.org/abs/1703.03329",
+  "pdf": "https://arxiv.org/pdf/1703.03329",
+  "bibtex": "@misc{wang2017_arxiv:1703.03329,\n    title = {UntrimmedNets for Weakly Supervised Action Recognition and Detection},\n    author = {Limin Wang and Yuanjun Xiong and Dahua Lin and Luc Van Gool},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1703.03329},\n    pdf = {https://arxiv.org/pdf/1703.03329},\n    url = {https://arxiv.org/abs/1703.03329}\n}",
+  "source": "arxiv.org",
+  "date": 1561339792,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1703.03329"
+}
