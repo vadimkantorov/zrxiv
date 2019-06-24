@@ -1,0 +1,18 @@
+{
+  "title": "Elucidating image-to-set prediction: An analysis of models, losses and datasets",
+  "authors": [
+    "Luis Pineda",
+    "Amaia Salvador",
+    "Michal Drozdzal",
+    "Adriana Romero"
+  ],
+  "abstract": "In recent years, we have experienced a flurry of contributions in the\nmulti-label classification literature. This problem has been framed under\ndifferent perspectives, from predicting independent labels, to modeling label\nco-occurrences via architectural and/or loss function design. Despite great\nprogress, it is still unclear which modeling choices are best suited to address\nthis task, partially due to the lack of well defined benchmarks. Therefore, in\nthis paper, we provide an in-depth analysis on five different computer vision\ndatasets of increasing task complexity that are suitable for multi-label\nclasification (VOC, COCO, NUS-WIDE, ADE20k and Recipe1M). Our results show that\n(1) modeling label co-occurrences and predicting the number of labels that\nappear in the image is important, especially in high-dimensional output spaces;\n(2) carefully tuning hyper-parameters for very simple baselines leads to\nsignificant improvements, comparable to previously reported results; and (3) as\na consequence of our analysis, we achieve state-of-the-art results on 3\ndatasets for which a fair comparison to previously published methods is\nfeasible.",
+  "id": "arxiv.1904.05709",
+  "url": "https://arxiv.org/abs/1904.05709",
+  "pdf": "https://arxiv.org/pdf/1904.05709",
+  "bibtex": "@misc{pineda2019_arxiv:1904.05709,\n    title = {Elucidating image-to-set prediction: An analysis of models, losses and datasets},\n    author = {Luis Pineda and Amaia Salvador and Michal Drozdzal and Adriana Romero},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.05709},\n    pdf = {https://arxiv.org/pdf/1904.05709},\n    url = {https://arxiv.org/abs/1904.05709}\n}",
+  "source": "arxiv.org",
+  "date": 1561407994,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.05709"
+}
