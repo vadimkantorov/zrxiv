@@ -1,0 +1,22 @@
+{
+  "title": "Simplex2Vec embeddings for community detection in simplicial complexes",
+  "authors": [
+    "Jacob Charles Wright Billings",
+    "Mirko Hu",
+    "Giulia Lerda",
+    "Alexey N. Medvedev",
+    "Francesco Mottes",
+    "Adrian Onicas",
+    "Andrea Santoro",
+    "Giovanni Petri"
+  ],
+  "abstract": "Topological representations are rapidly becoming a popular way to capture and\nencode higher-order interactions in complex systems. They have found\napplications in disciplines as different as cancer genomics, brain function,\nand computational social science, in representing both descriptive features of\ndata and inference models. While intense research has focused on the\nconnectivity and homological features of topological representations,\nsurprisingly scarce attention has been given to the investigation of the\ncommunity structures of simplicial complexes. To this end, we adopt recent\nadvances in symbolic embeddings to compute and visualize the community\nstructures of simplicial complexes. We first investigate the stability\nproperties of embedding obtained for synthetic simplicial complexes to the\npresence of higher order interactions. We then focus on complexes arising from\nsocial and brain functional data and show how higher order interactions can be\nleveraged to improve clustering detection and assess the effect of higher order\ninteraction on individual nodes. We conclude delineating limitations and\ndirections for extension of this work.",
+  "id": "arxiv.1906.09068",
+  "url": "https://arxiv.org/abs/1906.09068",
+  "pdf": "https://arxiv.org/pdf/1906.09068",
+  "bibtex": "@misc{billings2019_arxiv:1906.09068,\n    title = {Simplex2Vec embeddings for community detection in simplicial complexes},\n    author = {Jacob Charles Wright Billings and Mirko Hu and Giulia Lerda and Alexey N. Medvedev and Francesco Mottes and Adrian Onicas and Andrea Santoro and Giovanni Petri},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.09068},\n    pdf = {https://arxiv.org/pdf/1906.09068},\n    url = {https://arxiv.org/abs/1906.09068}\n}",
+  "source": "arxiv.org",
+  "date": 1561406749,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.09068"
+}
