@@ -1,0 +1,17 @@
+{
+  "title": "Deep Set Prediction Networks",
+  "authors": [
+    "Yan Zhang",
+    "Jonathon Hare",
+    "Adam Prügel-Bennett"
+  ],
+  "abstract": "We study the problem of predicting a set from a feature vector with a deep\nneural network. Existing approaches ignore the set structure of the problem and\nsuffer from discontinuity issues as a result. We propose a general model for\npredicting sets that properly respects the structure of sets and avoids this\nproblem. With a single feature vector as input, we show that our model is able\nto auto-encode point sets, predict bounding boxes of the set of objects in an\nimage, and predict the attributes of these objects in an image.",
+  "id": "arxiv.1906.06565",
+  "url": "https://arxiv.org/abs/1906.06565",
+  "pdf": "https://arxiv.org/pdf/1906.06565",
+  "bibtex": "@misc{zhang2019_arxiv:1906.06565,\n    title = {Deep Set Prediction Networks},\n    author = {Yan Zhang and Jonathon Hare and Adam Prügel-Bennett},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.06565},\n    pdf = {https://arxiv.org/pdf/1906.06565},\n    url = {https://arxiv.org/abs/1906.06565}\n}",
+  "source": "arxiv.org",
+  "date": 1561406737,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.06565"
+}
