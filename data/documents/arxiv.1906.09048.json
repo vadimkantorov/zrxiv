@@ -1,0 +1,18 @@
+{
+  "title": "Turing-like patterns from purely reactive systems",
+  "authors": [
+    "Giulia Cencetti",
+    "Federico Battiston",
+    "Timoteo Carletti",
+    "Duccio Fanelli"
+  ],
+  "abstract": "Almost 70 years ago A. Turing showed how species diffusion can lead to the\nemergence of coherent patterns in otherwise stable reactive systems. In this\nletter, we introduce a novel mechanism to generate spontaneous patterns even in\nabsence of diffusion. We consider a class of purely reactive systems, where\nimmobile species associated to distinct patches, the nodes of a network,\ninteract both locally and at a long-range, as specified by couplings encoded in\nan (interaction) adjacency matrix. Non local reactions are treated in a\nmean-field setting which enables the system to reach a homogeneous consensus\nstate, either constant or time dependent. We provide analytical evidence that\nsuch homogenous solution can turn unstable under externally imposed\ndisturbances, following a symmetry breaking mechanism that is reminiscent of\nthe Turing instability for reaction-diffusion systems, and which anticipates\nthe subsequent outbreak of the patterns. The onset of the instability can be\ntraced back, via a linear stability analysis, to a dispersion relation that is\nshaped by the spectrum of an unconventional reactive Laplacian. Examples of\nsystems displaying a fixed point or a limit cycle, in their uncoupled versions,\nare discussed. Taken together, our results pave the way for alternative\nmechanisms of pattern formation, opening new possibilities for modeling\necological, chemical and physical interacting systems.",
+  "id": "arxiv.1906.09048",
+  "url": "https://arxiv.org/abs/1906.09048",
+  "pdf": "https://arxiv.org/pdf/1906.09048",
+  "bibtex": "@misc{cencetti2019_arxiv:1906.09048,\n    title = {Turing-like patterns from purely reactive systems},\n    author = {Giulia Cencetti and Federico Battiston and Timoteo Carletti and Duccio Fanelli},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.09048},\n    pdf = {https://arxiv.org/pdf/1906.09048},\n    url = {https://arxiv.org/abs/1906.09048}\n}",
+  "source": "arxiv.org",
+  "date": 1561405979,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.09048"
+}
