@@ -1,0 +1,20 @@
+{
+  "title": "CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features",
+  "authors": [
+    "Sangdoo Yun",
+    "Dongyoon Han",
+    "Seong Joon Oh",
+    "Sanghyuk Chun",
+    "Junsuk Choe",
+    "Youngjoon Yoo"
+  ],
+  "abstract": "Regional dropout strategies have been proposed to enhance the performance of\nconvolutional neural network classifiers. They have proved to be effective for\nguiding the model to attend on less discriminative parts of objects (\\eg leg as\nopposed to head of a person), thereby letting the network generalize better and\nhave better object localization capabilities. On the other hand, current\nmethods for regional dropout removes informative pixels on training images by\noverlaying a patch of either black pixels or random noise. {Such removal is not\ndesirable because it leads to information loss and inefficiency during\ntraining.} We therefore propose the CutMix augmentation strategy: patches are\ncut and pasted among training images where the ground truth labels are also\nmixed proportionally to the area of the patches. By making efficient use of\ntraining pixels and \\mbox{retaining} the regularization effect of regional\ndropout, CutMix consistently outperforms the state-of-the-art augmentation\nstrategies on CIFAR and ImageNet classification tasks, as well as on the\nImageNet weakly-supervised localization task. Moreover, unlike previous\naugmentation methods, our CutMix-trained ImageNet classifier, when used as a\npretrained model, results in consistent performance gains in Pascal detection\nand MS-COCO image captioning benchmarks. We also show that CutMix improves the\nmodel robustness against input corruptions and its out-of-distribution\ndetection performances.",
+  "id": "arxiv.1905.04899",
+  "url": "https://arxiv.org/abs/1905.04899",
+  "pdf": "https://arxiv.org/pdf/1905.04899",
+  "bibtex": "@misc{yun2019_arxiv:1905.04899,\n    title = {CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features},\n    author = {Sangdoo Yun and Dongyoon Han and Seong Joon Oh and Sanghyuk Chun and Junsuk Choe and Youngjoon Yoo},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.04899},\n    pdf = {https://arxiv.org/pdf/1905.04899},\n    url = {https://arxiv.org/abs/1905.04899}\n}",
+  "source": "arxiv.org",
+  "date": 1561506624,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.04899"
+}
