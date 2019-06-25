@@ -1,0 +1,20 @@
+{
+  "title": "Shaping Belief States with Generative Environment Models for RL",
+  "authors": [
+    "Karol Gregor",
+    "Danilo Jimenez Rezende",
+    "Frederic Besse",
+    "Yan Wu",
+    "Hamza Merzic",
+    "Aaron van den Oord"
+  ],
+  "abstract": "When agents interact with a complex environment, they must form and maintain\nbeliefs about the relevant aspects of that environment. We propose a way to\nefficiently train expressive generative models in complex environments. We show\nthat a predictive algorithm with an expressive generative model can form stable\nbelief-states in visually rich and dynamic 3D environments. More precisely, we\nshow that the learned representation captures the layout of the environment as\nwell as the position and orientation of the agent. Our experiments show that\nthe model substantially improves data-efficiency on a number of reinforcement\nlearning (RL) tasks compared with strong model-free baseline agents. We find\nthat predicting multiple steps into the future (overshooting), in combination\nwith an expressive generative model, is critical for stable representations to\nemerge. In practice, using expressive generative models in RL is\ncomputationally expensive and we propose a scheme to reduce this computational\nburden, allowing us to build agents that are competitive with model-free\nbaselines.",
+  "id": "arxiv.1906.09237",
+  "url": "https://arxiv.org/abs/1906.09237",
+  "pdf": "https://arxiv.org/pdf/1906.09237",
+  "bibtex": "@misc{gregor2019_arxiv:1906.09237,\n    title = {Shaping Belief States with Generative Environment Models for RL},\n    author = {Karol Gregor and Danilo Jimenez Rezende and Frederic Besse and Yan Wu and Hamza Merzic and Aaron van den Oord},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.09237},\n    pdf = {https://arxiv.org/pdf/1906.09237},\n    url = {https://arxiv.org/abs/1906.09237}\n}",
+  "source": "arxiv.org",
+  "date": 1561506493,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.09237v2"
+}
