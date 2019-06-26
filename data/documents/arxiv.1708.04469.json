@@ -1,0 +1,21 @@
+{
+  "title": "Comparison of Decoding Strategies for CTC Acoustic Models",
+  "authors": [
+    "Thomas Zenkel",
+    "Ramon Sanabria",
+    "Florian Metze",
+    "Jan Niehues",
+    "Matthias Sperber",
+    "Sebastian Stüker",
+    "Alex Waibel"
+  ],
+  "abstract": "Connectionist Temporal Classification has recently attracted a lot of\ninterest as it offers an elegant approach to building acoustic models (AMs) for\nspeech recognition. The CTC loss function maps an input sequence of observable\nfeature vectors to an output sequence of symbols. Output symbols are\nconditionally independent of each other under CTC loss, so a language model\n(LM) can be incorporated conveniently during decoding, retaining the\ntraditional separation of acoustic and linguistic components in ASR. For fixed\nvocabularies, Weighted Finite State Transducers provide a strong baseline for\nefficient integration of CTC AMs with n-gram LMs. Character-based neural LMs\nprovide a straight forward solution for open vocabulary speech recognition and\nall-neural models, and can be decoded with beam search. Finally,\nsequence-to-sequence models can be used to translate a sequence of individual\nsounds into a word string. We compare the performance of these three\napproaches, and analyze their error patterns, which provides insightful\nguidance for future research and development in this important area.",
+  "id": "arxiv.1708.04469",
+  "url": "https://arxiv.org/abs/1708.04469",
+  "pdf": "https://arxiv.org/pdf/1708.04469",
+  "bibtex": "@misc{zenkel2017_arxiv:1708.04469,\n    title = {Comparison of Decoding Strategies for CTC Acoustic Models},\n    author = {Thomas Zenkel and Ramon Sanabria and Florian Metze and Jan Niehues and Matthias Sperber and Sebastian Stüker and Alex Waibel},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1708.04469},\n    pdf = {https://arxiv.org/pdf/1708.04469},\n    url = {https://arxiv.org/abs/1708.04469}\n}",
+  "source": "arxiv.org",
+  "date": 1561572760,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1708.04469"
+}
