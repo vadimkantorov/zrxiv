@@ -1,0 +1,17 @@
+{
+  "title": "One-shot Voice Conversion by Separating Speaker and Content Representations with Instance Normalization",
+  "authors": [
+    "Ju-chieh Chou",
+    "Cheng-chieh Yeh",
+    "Hung-yi Lee"
+  ],
+  "abstract": "Recently, voice conversion (VC) without parallel data has been successfully\nadapted to multi-target scenario in which a single model is trained to convert\nthe input voice to many different speakers. However, such model suffers from\nthe limitation that it can only convert the voice to the speakers in the\ntraining data, which narrows down the applicable scenario of VC. In this paper,\nwe proposed a novel one-shot VC approach which is able to perform VC by only an\nexample utterance from source and target speaker respectively, and the source\nand target speaker do not even need to be seen during training. This is\nachieved by disentangling speaker and content representations with instance\nnormalization (IN). Objective and subjective evaluation shows that our model is\nable to generate the voice similar to target speaker. In addition to the\nperformance measurement, we also demonstrate that this model is able to learn\nmeaningful speaker representations without any supervision.",
+  "id": "arxiv.1904.05742",
+  "url": "https://arxiv.org/abs/1904.05742",
+  "pdf": "https://arxiv.org/pdf/1904.05742",
+  "bibtex": "@misc{chou2019_arxiv:1904.05742,\n    title = {One-shot Voice Conversion by Separating Speaker and Content Representations with Instance Normalization},\n    author = {Ju-chieh Chou and Cheng-chieh Yeh and Hung-yi Lee},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.05742},\n    pdf = {https://arxiv.org/pdf/1904.05742},\n    url = {https://arxiv.org/abs/1904.05742}\n}",
+  "source": "arxiv.org",
+  "date": 1561629401,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.05742"
+}
