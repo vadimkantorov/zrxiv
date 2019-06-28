@@ -1,0 +1,18 @@
+{
+  "title": "SEARNN: Training RNNs with Global-Local Losses",
+  "authors": [
+    "Rémi Leblond",
+    "Jean-Baptiste Alayrac",
+    "Anton Osokin",
+    "Simon Lacoste-Julien"
+  ],
+  "abstract": "We propose SEARNN, a novel training algorithm for recurrent neural networks\n(RNNs) inspired by the \"learning to search\" (L2S) approach to structured\nprediction. RNNs have been widely successful in structured prediction\napplications such as machine translation or parsing, and are commonly trained\nusing maximum likelihood estimation (MLE). Unfortunately, this training loss is\nnot always an appropriate surrogate for the test error: by only maximizing the\nground truth probability, it fails to exploit the wealth of information offered\nby structured losses. Further, it introduces discrepancies between training and\npredicting (such as exposure bias) that may hurt test performance. Instead,\nSEARNN leverages test-alike search space exploration to introduce global-local\nlosses that are closer to the test error. We first demonstrate improved\nperformance over MLE on two different tasks: OCR and spelling correction. Then,\nwe propose a subsampling strategy to enable SEARNN to scale to large vocabulary\nsizes. This allows us to validate the benefits of our approach on a machine\ntranslation task.",
+  "id": "arxiv.1706.04499",
+  "url": "https://arxiv.org/abs/1706.04499",
+  "pdf": "https://arxiv.org/pdf/1706.04499",
+  "bibtex": "@misc{leblond2017_arxiv:1706.04499,\n    title = {SEARNN: Training RNNs with Global-Local Losses},\n    author = {Rémi Leblond and Jean-Baptiste Alayrac and Anton Osokin and Simon Lacoste-Julien},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1706.04499},\n    pdf = {https://arxiv.org/pdf/1706.04499},\n    url = {https://arxiv.org/abs/1706.04499}\n}",
+  "source": "arxiv.org",
+  "date": 1561714801,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1706.04499"
+}
