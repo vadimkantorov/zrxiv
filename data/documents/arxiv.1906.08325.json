@@ -1,0 +1,18 @@
+{
+  "title": "GEAR: Geometry-Aware R\\'enyi Information",
+  "authors": [
+    "Jose Gallego",
+    "Ankit Vani",
+    "Max Schwarzer",
+    "Simon Lacoste-Julien"
+  ],
+  "abstract": "Shannon's seminal theory of information has been of paramount importance in\nthe development of modern machine learning techniques. However, standard\ninformation measures deal with probability distributions over an alphabet\nconsidered as a mere set of symbols and disregard further geometric structure,\nwhich might be available in the form of a metric or similarity function. We\nadvocate the use of a notion of entropy that reflects not only the relative\nabundances of symbols but also the similarities between them, which was\noriginally introduced in theoretical ecology to study the diversity of\nbiological communities. Echoing this idea, we propose a criterion for comparing\ntwo probability distributions (possibly degenerate and with non-overlapping\nsupports) that takes into account the geometry of the space in which the\ndistributions are defined. Our proposal exhibits performance on par with\nstate-of-the-art methods based on entropy-regularized optimal transport, but\nenjoys a closed-form expression and thus a lower computational cost. We\ndemonstrate the versatility of our proposal via experiments on a broad range of\ndomains: computing image barycenters, approximating densities with a collection\nof (super-) samples; summarizing texts; assessing mode coverage; as well as\ntraining generative models.",
+  "id": "arxiv.1906.08325",
+  "url": "https://arxiv.org/abs/1906.08325",
+  "pdf": "https://arxiv.org/pdf/1906.08325",
+  "bibtex": "@misc{gallego2019_arxiv:1906.08325,\n    title = {GEAR: Geometry-Aware R\\'enyi Information},\n    author = {Jose Gallego and Ankit Vani and Max Schwarzer and Simon Lacoste-Julien},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.08325},\n    pdf = {https://arxiv.org/pdf/1906.08325},\n    url = {https://arxiv.org/abs/1906.08325}\n}",
+  "source": "arxiv.org",
+  "date": 1561819569,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.08325"
+}
