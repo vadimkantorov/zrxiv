@@ -1,0 +1,15 @@
+{
+  "title": "Visualizing Attention in Transformer-Based Language Representation Models",
+  "authors": [
+    "Jesse Vig"
+  ],
+  "abstract": "We present an open-source tool for visualizing multi-head self-attention in\nTransformer-based language representation models. The tool extends earlier work\nby visualizing attention at three levels of granularity: the attention-head\nlevel, the model level, and the neuron level. We describe how each of these\nviews can help to interpret the model, and we demonstrate the tool on the BERT\nmodel and the OpenAI GPT-2 model. We also present three use cases for analyzing\nGPT-2: detecting model bias, identifying recurring patterns, and linking\nneurons to model behavior.",
+  "id": "arxiv.1904.02679",
+  "url": "https://arxiv.org/abs/1904.02679",
+  "pdf": "https://arxiv.org/pdf/1904.02679",
+  "bibtex": "@misc{vig2019_arxiv:1904.02679,\n    title = {Visualizing Attention in Transformer-Based Language Representation Models},\n    author = {Jesse Vig},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.02679},\n    pdf = {https://arxiv.org/pdf/1904.02679},\n    url = {https://arxiv.org/abs/1904.02679}\n}",
+  "source": "arxiv.org",
+  "date": 1561902085,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.02679"
+}
