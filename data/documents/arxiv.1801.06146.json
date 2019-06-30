@@ -1,0 +1,16 @@
+{
+  "title": "Universal Language Model Fine-tuning for Text Classification",
+  "authors": [
+    "Jeremy Howard",
+    "Sebastian Ruder"
+  ],
+  "abstract": "Inductive transfer learning has greatly impacted computer vision, but\nexisting approaches in NLP still require task-specific modifications and\ntraining from scratch. We propose Universal Language Model Fine-tuning\n(ULMFiT), an effective transfer learning method that can be applied to any task\nin NLP, and introduce techniques that are key for fine-tuning a language model.\nOur method significantly outperforms the state-of-the-art on six text\nclassification tasks, reducing the error by 18-24% on the majority of datasets.\nFurthermore, with only 100 labeled examples, it matches the performance of\ntraining from scratch on 100x more data. We open-source our pretrained models\nand code.",
+  "id": "arxiv.1801.06146",
+  "url": "https://arxiv.org/abs/1801.06146",
+  "pdf": "https://arxiv.org/pdf/1801.06146",
+  "bibtex": "@misc{howard2018_arxiv:1801.06146,\n    title = {Universal Language Model Fine-tuning for Text Classification},\n    author = {Jeremy Howard and Sebastian Ruder},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1801.06146},\n    pdf = {https://arxiv.org/pdf/1801.06146},\n    url = {https://arxiv.org/abs/1801.06146}\n}",
+  "source": "arxiv.org",
+  "date": 1561913639,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1801.06146"
+}
