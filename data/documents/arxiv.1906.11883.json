@@ -1,0 +1,21 @@
+{
+  "title": "Unsupervised Learning of Object Keypoints for Perception and Control",
+  "authors": [
+    "Tejas Kulkarni",
+    "Ankush Gupta",
+    "Catalin Ionescu",
+    "Sebastian Borgeaud",
+    "Malcolm Reynolds",
+    "Andrew Zisserman",
+    "Volodymyr Mnih"
+  ],
+  "abstract": "The study of object representations in computer vision has primarily focused\non developing representations that are useful for image classification, object\ndetection, or semantic segmentation as downstream tasks. In this work we aim to\nlearn object representations that are useful for control and reinforcement\nlearning (RL). To this end, we introduce Transporter, a neural network\narchitecture for discovering concise geometric object representations in terms\nof keypoints or image-space coordinates. Our method learns from raw video\nframes in a fully unsupervised manner, by transporting learnt image features\nbetween video frames using a keypoint bottleneck. The discovered keypoints\ntrack objects and object parts across long time-horizons more accurately than\nrecent similar methods. Furthermore, consistent long-term tracking enables two\nnotable results in control domains -- (1) using the keypoint co-ordinates and\ncorresponding image features as inputs enables highly sample-efficient\nreinforcement learning; (2) learning to explore by controlling keypoint\nlocations drastically reduces the search space, enabling deep exploration\n(leading to states unreachable through random action exploration) without any\nextrinsic rewards.",
+  "id": "arxiv.1906.11883",
+  "url": "https://arxiv.org/abs/1906.11883",
+  "pdf": "https://arxiv.org/pdf/1906.11883",
+  "bibtex": "@misc{kulkarni2019_arxiv:1906.11883,\n    title = {Unsupervised Learning of Object Keypoints for Perception and Control},\n    author = {Tejas Kulkarni and Ankush Gupta and Catalin Ionescu and Sebastian Borgeaud and Malcolm Reynolds and Andrew Zisserman and Volodymyr Mnih},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.11883},\n    pdf = {https://arxiv.org/pdf/1906.11883},\n    url = {https://arxiv.org/abs/1906.11883}\n}",
+  "source": "arxiv.org",
+  "date": 1561986978,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.11883"
+}
