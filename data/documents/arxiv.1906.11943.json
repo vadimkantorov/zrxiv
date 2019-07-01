@@ -1,0 +1,24 @@
+{
+  "title": "Findings of the First Shared Task on Machine Translation Robustness",
+  "authors": [
+    "Xian Li",
+    "Paul Michel",
+    "Antonios Anastasopoulos",
+    "Yonatan Belinkov",
+    "Nadir Durrani",
+    "Orhan Firat",
+    "Philipp Koehn",
+    "Graham Neubig",
+    "Juan Pino",
+    "Hassan Sajjad"
+  ],
+  "abstract": "We share the findings of the first shared task on improving robustness of\nMachine Translation (MT). The task provides a testbed representing challenges\nfacing MT models deployed in the real world, and facilitates new approaches to\nimprove models; robustness to noisy input and domain mismatch. We focus on two\nlanguage pairs (English-French and English-Japanese), and the submitted systems\nare evaluated on a blind test set consisting of noisy comments on Reddit and\nprofessionally sourced translations. As a new task, we received 23 submissions\nby 11 participating teams from universities, companies, national labs, etc. All\nsubmitted systems achieved large improvements over baselines, with the best\nimprovement having +22.33 BLEU. We evaluated submissions by both human judgment\nand automatic evaluation (BLEU), which shows high correlations (Pearson's r =\n0.94 and 0.95). Furthermore, we conducted a qualitative analysis of the\nsubmitted systems using compare-mt, which revealed their salient differences in\nhandling challenges in this task. Such analysis provides additional insights\nwhen there is occasional disagreement between human judgment and BLEU, e.g.\nsystems better at producing colloquial expressions received higher score from\nhuman judgment.",
+  "id": "arxiv.1906.11943",
+  "url": "https://arxiv.org/abs/1906.11943",
+  "pdf": "https://arxiv.org/pdf/1906.11943",
+  "bibtex": "@misc{li2019_arxiv:1906.11943,\n    title = {Findings of the First Shared Task on Machine Translation Robustness},\n    author = {Xian Li and Paul Michel and Antonios Anastasopoulos and Yonatan Belinkov and Nadir Durrani and Orhan Firat and Philipp Koehn and Graham Neubig and Juan Pino and Hassan Sajjad},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.11943},\n    pdf = {https://arxiv.org/pdf/1906.11943},\n    url = {https://arxiv.org/abs/1906.11943}\n}",
+  "source": "arxiv.org",
+  "date": 1562017163,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.11943"
+}
