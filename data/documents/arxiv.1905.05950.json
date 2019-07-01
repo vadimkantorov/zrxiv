@@ -1,0 +1,17 @@
+{
+  "title": "BERT Rediscovers the Classical NLP Pipeline",
+  "authors": [
+    "Ian Tenney",
+    "Dipanjan Das",
+    "Ellie Pavlick"
+  ],
+  "abstract": "Pre-trained text encoders have rapidly advanced the state of the art on many\nNLP tasks. We focus on one such model, BERT, and aim to quantify where\nlinguistic information is captured within the network. We find that the model\nrepresents the steps of the traditional NLP pipeline in an interpretable and\nlocalizable way, and that the regions responsible for each step appear in the\nexpected sequence: POS tagging, parsing, NER, semantic roles, then coreference.\nQualitative analysis reveals that the model can and often does adjust this\npipeline dynamically, revising lower-level decisions on the basis of\ndisambiguating information from higher-level representations.",
+  "id": "arxiv.1905.05950",
+  "url": "https://arxiv.org/abs/1905.05950",
+  "pdf": "https://arxiv.org/pdf/1905.05950",
+  "bibtex": "@misc{tenney2019_arxiv:1905.05950,\n    title = {BERT Rediscovers the Classical NLP Pipeline},\n    author = {Ian Tenney and Dipanjan Das and Ellie Pavlick},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.05950},\n    pdf = {https://arxiv.org/pdf/1905.05950},\n    url = {https://arxiv.org/abs/1905.05950}\n}",
+  "source": "arxiv.org",
+  "date": 1561975596,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.05950"
+}
