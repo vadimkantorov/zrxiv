@@ -1,0 +1,17 @@
+{
+  "title": "When to Finish? Optimal Beam Search for Neural Text Generation (modulo beam size)",
+  "authors": [
+    "Liang Huang",
+    "Kai Zhao",
+    "Mingbo Ma"
+  ],
+  "abstract": "In neural text generation such as neural machine translation, summarization,\nand image captioning, beam search is widely used to improve the output text\nquality. However, in the neural generation setting, hypotheses can finish in\ndifferent steps, which makes it difficult to decide when to end beam search to\nensure optimality. We propose a provably optimal beam search algorithm that\nwill always return the optimal-score complete hypothesis (modulo beam size),\nand finish as soon as the optimality is established (finishing no later than\nthe baseline). To counter neural generation's tendency for shorter hypotheses,\nwe also introduce a bounded length reward mechanism which allows a modified\nversion of our beam search algorithm to remain optimal. Experiments on neural\nmachine translation demonstrate that our principled beam search algorithm leads\nto improvement in BLEU score over previously proposed alternatives.",
+  "id": "arxiv.1809.00069",
+  "url": "https://arxiv.org/abs/1809.00069",
+  "pdf": "https://arxiv.org/pdf/1809.00069",
+  "bibtex": "@misc{huang2018_arxiv:1809.00069,\n    title = {When to Finish? Optimal Beam Search for Neural Text Generation (modulo beam size)},\n    author = {Liang Huang and Kai Zhao and Mingbo Ma},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1809.00069},\n    pdf = {https://arxiv.org/pdf/1809.00069},\n    url = {https://arxiv.org/abs/1809.00069}\n}",
+  "source": "arxiv.org",
+  "date": 1562005395,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1809.00069"
+}
