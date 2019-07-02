@@ -1,0 +1,17 @@
+{
+  "title": "Bidirectional Beam Search: Forward-Backward Inference in Neural Sequence Models for Fill-in-the-Blank Image Captioning",
+  "authors": [
+    "Qing Sun",
+    "Stefan Lee",
+    "Dhruv Batra"
+  ],
+  "abstract": "We develop the first approximate inference algorithm for 1-Best (and M-Best)\ndecoding in bidirectional neural sequence models by extending Beam Search (BS)\nto reason about both forward and backward time dependencies. Beam Search (BS)\nis a widely used approximate inference algorithm for decoding sequences from\nunidirectional neural sequence models. Interestingly, approximate inference in\nbidirectional models remains an open problem, despite their significant\nadvantage in modeling information from both the past and future. To enable the\nuse of bidirectional models, we present Bidirectional Beam Search (BiBS), an\nefficient algorithm for approximate bidirectional inference.To evaluate our\nmethod and as an interesting problem in its own right, we introduce a novel\nFill-in-the-Blank Image Captioning task which requires reasoning about both\npast and future sentence structure to reconstruct sensible image descriptions.\nWe use this task as well as the Visual Madlibs dataset to demonstrate the\neffectiveness of our approach, consistently outperforming all baseline methods.",
+  "id": "arxiv.1705.08759",
+  "url": "https://arxiv.org/abs/1705.08759",
+  "pdf": "https://arxiv.org/pdf/1705.08759",
+  "bibtex": "@misc{sun2017_arxiv:1705.08759,\n    title = {Bidirectional Beam Search: Forward-Backward Inference in Neural Sequence Models for Fill-in-the-Blank Image Captioning},\n    author = {Qing Sun and Stefan Lee and Dhruv Batra},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1705.08759},\n    pdf = {https://arxiv.org/pdf/1705.08759},\n    url = {https://arxiv.org/abs/1705.08759}\n}",
+  "source": "arxiv.org",
+  "date": 1562051962,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1705.08759"
+}
