@@ -1,0 +1,20 @@
+{
+  "title": "Promising Accurate Prefix Boosting for sequence-to-sequence ASR",
+  "authors": [
+    "Murali Karthick Baskar",
+    "Lukáš Burget",
+    "Shinji Watanabe",
+    "Martin Karafiát",
+    "Takaaki Hori",
+    "Jan Honza Černocký"
+  ],
+  "abstract": "In this paper, we present promising accurate prefix boosting (PAPB), a\ndiscriminative training technique for attention based sequence-to-sequence\n(seq2seq) ASR. PAPB is devised to unify the training and testing scheme in an\neffective manner. The training procedure involves maximizing the score of each\npartial correct sequence obtained during beam search compared to other\nhypotheses. The training objective also includes minimization of token\n(character) error rate. PAPB shows its efficacy by achieving 10.8\\% and 3.8\\%\nWER with and without RNNLM respectively on Wall Street Journal dataset.",
+  "id": "arxiv.1811.02770",
+  "url": "https://arxiv.org/abs/1811.02770",
+  "pdf": "https://arxiv.org/pdf/1811.02770",
+  "bibtex": "@misc{baskar2018_arxiv:1811.02770,\n    title = {Promising Accurate Prefix Boosting for sequence-to-sequence ASR},\n    author = {Murali Karthick Baskar and Lukáš Burget and Shinji Watanabe and Martin Karafiát and Takaaki Hori and Jan Honza Černocký},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.02770},\n    pdf = {https://arxiv.org/pdf/1811.02770},\n    url = {https://arxiv.org/abs/1811.02770}\n}",
+  "source": "arxiv.org",
+  "date": 1562057844,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.02770"
+}
