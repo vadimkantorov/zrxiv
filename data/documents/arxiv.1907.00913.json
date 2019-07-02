@@ -1,0 +1,16 @@
+{
+  "title": "Nonlinearization of two-parameter eigenvalue problems",
+  "authors": [
+    "Emil Ringh",
+    "Elias Jarlebring"
+  ],
+  "abstract": "We investigate a technique to transform a linear two-parameter eigenvalue\nproblem, into a nonlinear eigenvalue problem (NEP). The transformation stems\nfrom an elimination of one of the equations in the two-parameter eigenvalue\nproblem, by considering it as a (standard) generalized eigenvalue problem. We\ncharacterize the equivalence between the original and the nonlinearized problem\ntheoretically and show how to use the transformation computationally. Special\ncases of the transformation can be interpreted as a reversed companion\nlinearization for polynomial eigenvalue problems, as well as a reversed (less\nknown) linearization technique for certain algebraic eigenvalue problems with\nsquare-root terms. Moreover, by exploiting the structure of the NEP we present\nalgorithm specializations for NEP methods, although the technique also allows\ngeneral solution methods for NEPs to be directly applied to the problem. The\nnonlinearization is illustrated in examples and simulations, with focus on\nproblems where the eliminated equation is of much smaller dimensions than the\nother two-parameter eigenvalue equation, in particular applications in domain\ndecomposition. A general analysis is also carried out under the assumption that\na backward stable eigenvalue solver method is used to solve the eliminated\nproblem, leading to the conclusion that the error is benign.",
+  "id": "arxiv.1907.00913",
+  "url": "https://arxiv.org/abs/1907.00913",
+  "pdf": "https://arxiv.org/pdf/1907.00913",
+  "bibtex": "@misc{ringh2019_arxiv:1907.00913,\n    title = {Nonlinearization of two-parameter eigenvalue problems},\n    author = {Emil Ringh and Elias Jarlebring},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.00913},\n    pdf = {https://arxiv.org/pdf/1907.00913},\n    url = {https://arxiv.org/abs/1907.00913}\n}",
+  "source": "arxiv.org",
+  "date": 1562074347,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.00913"
+}
