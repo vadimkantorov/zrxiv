@@ -1,0 +1,19 @@
+{
+  "title": "Acoustic-To-Word Model Without OOV",
+  "authors": [
+    "Jinyu Li",
+    "Guoli Ye",
+    "Rui Zhao",
+    "Jasha Droppo",
+    "Yifan Gong"
+  ],
+  "abstract": "Recently, the acoustic-to-word model based on the Connectionist Temporal\nClassification (CTC) criterion was shown as a natural end-to-end model directly\ntargeting words as output units. However, this type of word-based CTC model\nsuffers from the out-of-vocabulary (OOV) issue as it can only model limited\nnumber of words in the output layer and maps all the remaining words into an\nOOV output node. Therefore, such word-based CTC model can only recognize the\nfrequent words modeled by the network output nodes. It also cannot easily\nhandle the hot-words which emerge after the model is trained. In this study, we\nimprove the acoustic-to-word model with a hybrid CTC model which can predict\nboth words and characters at the same time. With a shared-hidden-layer\nstructure and modular design, the alignments of words generated from the\nword-based CTC and the character-based CTC are synchronized. Whenever the\nacoustic-to-word model emits an OOV token, we back off that OOV segment to the\nword output generated from the character-based CTC, hence solving the OOV or\nhot-words issue. Evaluated on a Microsoft Cortana voice assistant task, the\nproposed model can reduce the errors introduced by the OOV output token in the\nacoustic-to-word model by 30%.",
+  "id": "arxiv.1711.10136",
+  "url": "https://arxiv.org/abs/1711.10136",
+  "pdf": "https://arxiv.org/pdf/1711.10136",
+  "bibtex": "@misc{li2017_arxiv:1711.10136,\n    title = {Acoustic-To-Word Model Without OOV},\n    author = {Jinyu Li and Guoli Ye and Rui Zhao and Jasha Droppo and Yifan Gong},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1711.10136},\n    pdf = {https://arxiv.org/pdf/1711.10136},\n    url = {https://arxiv.org/abs/1711.10136}\n}",
+  "source": "arxiv.org",
+  "date": 1562055449,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1711.10136"
+}
