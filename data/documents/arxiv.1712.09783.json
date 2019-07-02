@@ -1,0 +1,22 @@
+{
+  "title": "Topic Compositional Neural Language Model",
+  "authors": [
+    "Wenlin Wang",
+    "Zhe Gan",
+    "Wenqi Wang",
+    "Dinghan Shen",
+    "Jiaji Huang",
+    "Wei Ping",
+    "Sanjeev Satheesh",
+    "Lawrence Carin"
+  ],
+  "abstract": "We propose a Topic Compositional Neural Language Model (TCNLM), a novel\nmethod designed to simultaneously capture both the global semantic meaning and\nthe local word ordering structure in a document. The TCNLM learns the global\nsemantic coherence of a document via a neural topic model, and the probability\nof each learned latent topic is further used to build a Mixture-of-Experts\n(MoE) language model, where each expert (corresponding to one topic) is a\nrecurrent neural network (RNN) that accounts for learning the local structure\nof a word sequence. In order to train the MoE model efficiently, a matrix\nfactorization method is applied, by extending each weight matrix of the RNN to\nbe an ensemble of topic-dependent weight matrices. The degree to which each\nmember of the ensemble is used is tied to the document-dependent probability of\nthe corresponding topics. Experimental results on several corpora show that the\nproposed approach outperforms both a pure RNN-based model and other\ntopic-guided language models. Further, our model yields sensible topics, and\nalso has the capacity to generate meaningful sentences conditioned on given\ntopics.",
+  "id": "arxiv.1712.09783",
+  "url": "https://arxiv.org/abs/1712.09783",
+  "pdf": "https://arxiv.org/pdf/1712.09783",
+  "bibtex": "@misc{wang2017_arxiv:1712.09783,\n    title = {Topic Compositional Neural Language Model},\n    author = {Wenlin Wang and Zhe Gan and Wenqi Wang and Dinghan Shen and Jiaji Huang and Wei Ping and Sanjeev Satheesh and Lawrence Carin},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1712.09783},\n    pdf = {https://arxiv.org/pdf/1712.09783},\n    url = {https://arxiv.org/abs/1712.09783}\n}",
+  "source": "arxiv.org",
+  "date": 1562068180,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1712.09783"
+}
