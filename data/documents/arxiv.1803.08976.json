@@ -1,0 +1,16 @@
+{
+  "title": "Speech2Vec: A Sequence-to-Sequence Framework for Learning Word Embeddings from Speech",
+  "authors": [
+    "Yu-An Chung",
+    "James Glass"
+  ],
+  "abstract": "In this paper, we propose a novel deep neural network architecture,\nSpeech2Vec, for learning fixed-length vector representations of audio segments\nexcised from a speech corpus, where the vectors contain semantic information\npertaining to the underlying spoken words, and are close to other vectors in\nthe embedding space if their corresponding underlying spoken words are\nsemantically similar. The proposed model can be viewed as a speech version of\nWord2Vec. Its design is based on a RNN Encoder-Decoder framework, and borrows\nthe methodology of skipgrams or continuous bag-of-words for training. Learning\nword embeddings directly from speech enables Speech2Vec to make use of the\nsemantic information carried by speech that does not exist in plain text. The\nlearned word embeddings are evaluated and analyzed on 13 widely used word\nsimilarity benchmarks, and outperform word embeddings learned by Word2Vec from\nthe transcriptions.",
+  "id": "arxiv.1803.08976",
+  "url": "https://arxiv.org/abs/1803.08976",
+  "pdf": "https://arxiv.org/pdf/1803.08976",
+  "bibtex": "@misc{chung2018_arxiv:1803.08976,\n    title = {Speech2Vec: A Sequence-to-Sequence Framework for Learning Word Embeddings from Speech},\n    author = {Yu-An Chung and James Glass},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.08976},\n    pdf = {https://arxiv.org/pdf/1803.08976},\n    url = {https://arxiv.org/abs/1803.08976}\n}",
+  "source": "arxiv.org",
+  "date": 1562055146,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1803.08976"
+}
