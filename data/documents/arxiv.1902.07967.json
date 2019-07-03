@@ -1,0 +1,19 @@
+{
+  "title": "Deep Discriminative Representation Learning with Attention Map for Scene Classification",
+  "authors": [
+    "Jun Li",
+    "Daoyu Lin",
+    "Yang Wang",
+    "Guangluan Xu",
+    "Chibiao Ding"
+  ],
+  "abstract": "Learning powerful discriminative features for remote sensing image scene\nclassification is a challenging computer vision problem. In the past, most\nclassification approaches were based on handcrafted features. However, most\nrecent approaches to remote sensing scene classification are based on\nConvolutional Neural Networks (CNNs). The de facto practice when learning these\nCNN models is only to use original RGB patches as input with training performed\non large amounts of labeled data (ImageNet). In this paper, we show class\nactivation map (CAM) encoded CNN models, codenamed DDRL-AM, trained using\noriginal RGB patches and attention map based class information provide\ncomplementary information to the standard RGB deep models. To the best of our\nknowledge, we are the first to investigate attention information encoded CNNs.\nAdditionally, to enhance the discriminability, we further employ a recently\ndeveloped object function called \"center loss,\" which has proved to be very\nuseful in face recognition. Finally, our framework provides attention guidance\nto the model in an end-to-end fashion. Extensive experiments on two benchmark\ndatasets show that our approach matches or exceeds the performance of other\nmethods.",
+  "id": "arxiv.1902.07967",
+  "url": "https://arxiv.org/abs/1902.07967",
+  "pdf": "https://arxiv.org/pdf/1902.07967",
+  "bibtex": "@misc{li2019_arxiv:1902.07967,\n    title = {Deep Discriminative Representation Learning with Attention Map for Scene Classification},\n    author = {Jun Li and Daoyu Lin and Yang Wang and Guangluan Xu and Chibiao Ding},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1902.07967},\n    pdf = {https://arxiv.org/pdf/1902.07967},\n    url = {https://arxiv.org/abs/1902.07967}\n}",
+  "source": "arxiv.org",
+  "date": 1562165269,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1902.07967"
+}
