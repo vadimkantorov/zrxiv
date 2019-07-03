@@ -1,0 +1,16 @@
+{
+  "title": "Audio Adversarial Examples: Targeted Attacks on Speech-to-Text",
+  "authors": [
+    "Nicholas Carlini",
+    "David Wagner"
+  ],
+  "abstract": "We construct targeted audio adversarial examples on automatic speech\nrecognition. Given any audio waveform, we can produce another that is over\n99.9% similar, but transcribes as any phrase we choose (recognizing up to 50\ncharacters per second of audio). We apply our white-box iterative\noptimization-based attack to Mozilla's implementation DeepSpeech end-to-end,\nand show it has a 100% success rate. The feasibility of this attack introduce a\nnew domain to study adversarial examples.",
+  "id": "arxiv.1801.01944",
+  "url": "https://arxiv.org/abs/1801.01944",
+  "pdf": "https://arxiv.org/pdf/1801.01944",
+  "bibtex": "@misc{carlini2018_arxiv:1801.01944,\n    title = {Audio Adversarial Examples: Targeted Attacks on Speech-to-Text},\n    author = {Nicholas Carlini and David Wagner},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1801.01944},\n    pdf = {https://arxiv.org/pdf/1801.01944},\n    url = {https://arxiv.org/abs/1801.01944}\n}",
+  "source": "arxiv.org",
+  "date": 1562139072,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1801.01944"
+}
