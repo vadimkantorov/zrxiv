@@ -1,0 +1,18 @@
+{
+  "title": "Benefits of Overparameterization in Single-Layer Latent Variable Generative Models",
+  "authors": [
+    "Rares-Darius Buhai",
+    "Andrej Risteski",
+    "Yoni Halpern",
+    "David Sontag"
+  ],
+  "abstract": "One of the most surprising and exciting discoveries in supervising learning\nwas the benefit of overparametrization (i.e. training a very large model) to\nimproving the optimization landscape of a problem, with minimal effect on\nstatistical performance (i.e. generalization). In contrast, unsupervised\nsettings have been under-explored, despite the fact that it has been observed\nthat overparameterization can be helpful as early as Dasgupta & Schulman\n(2007). In this paper, we perform an exhaustive study of different aspects of\noverparameterization in unsupervised learning via synthetic and semi-synthetic\nexperiments. We discuss benefits to different metrics of success (held-out\nlog-likelihood, recovering the parameters of the ground-truth model),\nsensitivity to variations of the training algorithm, and behavior as the amount\nof overparameterization increases. We find that, when learning using methods\nsuch as variational inference, larger models can significantly increase the\nnumber of ground truth latent variables recovered.",
+  "id": "arxiv.1907.00030",
+  "url": "https://arxiv.org/abs/1907.00030",
+  "pdf": "https://arxiv.org/pdf/1907.00030",
+  "bibtex": "@misc{buhai2019_arxiv:1907.00030,\n    title = {Benefits of Overparameterization in Single-Layer Latent Variable Generative Models},\n    author = {Rares-Darius Buhai and Andrej Risteski and Yoni Halpern and David Sontag},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.00030},\n    pdf = {https://arxiv.org/pdf/1907.00030},\n    url = {https://arxiv.org/abs/1907.00030}\n}",
+  "source": "arxiv.org",
+  "date": 1562149369,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.00030"
+}
