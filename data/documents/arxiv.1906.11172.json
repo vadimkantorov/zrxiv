@@ -1,0 +1,20 @@
+{
+  "title": "Learning Data Augmentation Strategies for Object Detection",
+  "authors": [
+    "Barret Zoph",
+    "Ekin D. Cubuk",
+    "Golnaz Ghiasi",
+    "Tsung-Yi Lin",
+    "Jonathon Shlens",
+    "Quoc V. Le"
+  ],
+  "abstract": "Data augmentation is a critical component of training deep learning models.\nAlthough data augmentation has been shown to significantly improve image\nclassification, its potential has not been thoroughly investigated for object\ndetection. Given the additional cost for annotating images for object\ndetection, data augmentation may be of even greater importance for this\ncomputer vision task. In this work, we study the impact of data augmentation on\nobject detection. We first demonstrate that data augmentation operations\nborrowed from image classification may be helpful for training detection\nmodels, but the improvement is limited. Thus, we investigate how learned,\nspecialized data augmentation policies improve generalization performance for\ndetection models. Importantly, these augmentation policies only affect training\nand leave a trained model unchanged during evaluation. Experiments on the COCO\ndataset indicate that an optimized data augmentation policy improves detection\naccuracy by more than +2.3 mAP, and allow a single inference model to achieve a\nstate-of-the-art accuracy of 50.7 mAP. Importantly, the best policy found on\nCOCO may be transferred unchanged to other detection datasets and models to\nimprove predictive accuracy. For example, the best augmentation policy\nidentified with COCO improves a strong baseline on PASCAL-VOC by +2.7 mAP. Our\nresults also reveal that a learned augmentation policy is superior to\nstate-of-the-art architecture regularization methods for object detection, even\nwhen considering strong baselines. Code for training with the learned policy is\navailable online at\nhttps://github.com/tensorflow/tpu/tree/master/models/official/detection",
+  "id": "arxiv.1906.11172",
+  "url": "https://arxiv.org/abs/1906.11172",
+  "pdf": "https://arxiv.org/pdf/1906.11172",
+  "bibtex": "@misc{zoph2019_arxiv:1906.11172,\n    title = {Learning Data Augmentation Strategies for Object Detection},\n    author = {Barret Zoph and Ekin D. Cubuk and Golnaz Ghiasi and Tsung-Yi Lin and Jonathon Shlens and Quoc V. Le},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.11172},\n    pdf = {https://arxiv.org/pdf/1906.11172},\n    url = {https://arxiv.org/abs/1906.11172}\n}",
+  "source": "arxiv.org",
+  "date": 1562247651,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.11172"
+}
