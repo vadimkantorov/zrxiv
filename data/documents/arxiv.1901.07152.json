@@ -1,0 +1,16 @@
+{
+  "title": "Sensitivity Analysis of Deep Neural Networks",
+  "authors": [
+    "Hai Shu",
+    "Hongtu Zhu"
+  ],
+  "abstract": "Deep neural networks (DNNs) have achieved superior performance in various\nprediction tasks, but can be very vulnerable to adversarial examples or\nperturbations. Therefore, it is crucial to measure the sensitivity of DNNs to\nvarious forms of perturbations in real applications. We introduce a novel\nperturbation manifold and its associated influence measure to quantify the\neffects of various perturbations on DNN classifiers. Such perturbations include\nvarious external and internal perturbations to input samples and network\nparameters. The proposed measure is motivated by information geometry and\nprovides desirable invariance properties. We demonstrate that our influence\nmeasure is useful for four model building tasks: detecting potential\n'outliers', analyzing the sensitivity of model architectures, comparing network\nsensitivity between training and test sets, and locating vulnerable areas.\nExperiments show reasonably good performance of the proposed measure for the\npopular DNN models ResNet50 and DenseNet121 on CIFAR10 and MNIST datasets.",
+  "id": "arxiv.1901.07152",
+  "url": "https://arxiv.org/abs/1901.07152",
+  "pdf": "https://arxiv.org/pdf/1901.07152",
+  "bibtex": "@misc{shu2019_arxiv:1901.07152,\n    title = {Sensitivity Analysis of Deep Neural Networks},\n    author = {Hai Shu and Hongtu Zhu},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.07152},\n    pdf = {https://arxiv.org/pdf/1901.07152},\n    url = {https://arxiv.org/abs/1901.07152}\n}",
+  "source": "arxiv.org",
+  "date": 1562238219,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.07152"
+}
