@@ -1,0 +1,18 @@
+{
+  "title": "Learning Landmarks from Unaligned Data using Image Translation",
+  "authors": [
+    "Tomas Jakab",
+    "Ankush Gupta",
+    "Hakan Bilen",
+    "Andrea Vedaldi"
+  ],
+  "abstract": "We introduce a method for learning landmark detectors from unlabelled video\nframes and unpaired labels. This allows us to learn a detector from a large\ncollection of raw videos given only a few example annotations harvested from\nexisting data or motion capture. We achieve this by formulating the landmark\ndetection task as one of image translation, learning to map an image of the\nobject to an image of its landmarks, represented as a skeleton. The advantage\nis that this translation problem can then be tackled by CycleGAN. However, we\nshow that a naive application of CycleGAN confounds appearance and pose\ninformation, with suboptimal keypoint detection performance. We solve this\nproblem by introducing an analytical and differentiable renderer for the\nskeleton image so that no appearance information can be leaked in the skeleton.\nThen, since cycle consistency requires to reconstruct the input image from the\nskeleton, we supply the appearance information thus removed by conditioning the\ngenerator with a second image of the same object (e.g. another frame from a\nvideo). Furthermore, while CycleGAN uses two cycle consistency constraints, we\nshow that the second one is detrimental in this application and we discard it,\nsignificantly simplifying the model. We show that these modifications improve\nthe quality of the learned detector leading to state-of-the-art unsupervised\nlandmark detection performance in a number of challenging human pose and facial\nlandmark detection benchmarks.",
+  "id": "arxiv.1907.02055",
+  "url": "https://arxiv.org/abs/1907.02055",
+  "pdf": "https://arxiv.org/pdf/1907.02055",
+  "bibtex": "@misc{jakab2019_arxiv:1907.02055,\n    title = {Learning Landmarks from Unaligned Data using Image Translation},\n    author = {Tomas Jakab and Ankush Gupta and Hakan Bilen and Andrea Vedaldi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.02055},\n    pdf = {https://arxiv.org/pdf/1907.02055},\n    url = {https://arxiv.org/abs/1907.02055}\n}",
+  "source": "arxiv.org",
+  "date": 1562341496,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.02055"
+}
