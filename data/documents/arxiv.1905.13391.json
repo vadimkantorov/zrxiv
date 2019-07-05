@@ -1,0 +1,17 @@
+{
+  "title": "Rethinking Table Recognition using Graph Neural Networks",
+  "authors": [
+    "Shah Rukh Qasim",
+    "Hassan Mahmood",
+    "Faisal Shafait"
+  ],
+  "abstract": "Document structure analysis, such as zone segmentation and table recognition,\nis a complex problem in document processing and is an active area of research.\nThe recent success of deep learning in solving various computer vision and\nmachine learning problems has not been reflected in document structure analysis\nsince conventional neural networks are not well suited to the input structure\nof the problem. In this paper, we propose an architecture based on graph\nnetworks as a better alternative to standard neural networks for table\nrecognition. We argue that graph networks are a more natural choice for these\nproblems, and explore two gradient-based graph neural networks. Our proposed\narchitecture combines the benefits of convolutional neural networks for visual\nfeature extraction and graph networks for dealing with the problem structure.\nWe empirically demonstrate that our method outperforms the baseline by a\nsignificant margin. In addition, we identify the lack of large scale datasets\nas a major hindrance for deep learning research for structure analysis and\npresent a new large scale synthetic dataset for the problem of table\nrecognition. Finally, we open-source our implementation of dataset generation\nand the training framework of our graph networks to promote reproducible\nresearch in this direction.",
+  "id": "arxiv.1905.13391",
+  "url": "https://arxiv.org/abs/1905.13391",
+  "pdf": "https://arxiv.org/pdf/1905.13391",
+  "bibtex": "@misc{qasim2019_arxiv:1905.13391,\n    title = {Rethinking Table Recognition using Graph Neural Networks},\n    author = {Shah Rukh Qasim and Hassan Mahmood and Faisal Shafait},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.13391},\n    pdf = {https://arxiv.org/pdf/1905.13391},\n    url = {https://arxiv.org/abs/1905.13391}\n}",
+  "source": "arxiv.org",
+  "date": 1562324815,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.13391"
+}
