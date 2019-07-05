@@ -1,0 +1,19 @@
+{
+  "title": "Learning World Graphs to Accelerate Hierarchical Reinforcement Learning",
+  "authors": [
+    "Wenling Shang",
+    "Alex Trott",
+    "Stephan Zheng",
+    "Caiming Xiong",
+    "Richard Socher"
+  ],
+  "abstract": "In many real-world scenarios, an autonomous agent often encounters various\ntasks within a single complex environment. We propose to build a graph\nabstraction over the environment structure to accelerate the learning of these\ntasks. Here, nodes are important points of interest (pivotal states) and edges\nrepresent feasible traversals between them. Our approach has two stages. First,\nwe jointly train a latent pivotal state model and a curiosity-driven\ngoal-conditioned policy in a task-agnostic manner. Second, provided with the\ninformation from the world graph, a high-level Manager quickly finds solution\nto new tasks and expresses subgoals in reference to pivotal states to a\nlow-level Worker. The Worker can then also leverage the graph to easily\ntraverse to the pivotal states of interest, even across long distance, and\nexplore non-locally. We perform a thorough ablation study to evaluate our\napproach on a suite of challenging maze tasks, demonstrating significant\nadvantages from the proposed framework over baselines that lack world graph\nknowledge in terms of performance and efficiency.",
+  "id": "arxiv.1907.00664",
+  "url": "https://arxiv.org/abs/1907.00664",
+  "pdf": "https://arxiv.org/pdf/1907.00664",
+  "bibtex": "@misc{shang2019_arxiv:1907.00664,\n    title = {Learning World Graphs to Accelerate Hierarchical Reinforcement Learning},\n    author = {Wenling Shang and Alex Trott and Stephan Zheng and Caiming Xiong and Richard Socher},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.00664},\n    pdf = {https://arxiv.org/pdf/1907.00664},\n    url = {https://arxiv.org/abs/1907.00664}\n}",
+  "source": "arxiv.org",
+  "date": 1562341642,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.00664"
+}
