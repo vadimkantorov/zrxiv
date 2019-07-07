@@ -1,0 +1,18 @@
+{
+  "title": "Robust Seriation and Applications to Cancer Genomics",
+  "authors": [
+    "Antoine Recanati",
+    "Nicolas Servant",
+    "Jean-Philippe Vert",
+    "Alexandre d'Aspremont"
+  ],
+  "abstract": "The seriation problem seeks to reorder a set of elements given pairwise\nsimilarity information, so that elements with higher similarity are closer in\nthe resulting sequence. When a global ordering consistent with the similarity\ninformation exists, an exact spectral solution recovers it in the noiseless\ncase and seriation is equivalent to the combinatorial 2-SUM problem over\npermutations, for which several relaxations have been derived. However, in\napplications such as DNA assembly, similarity values are often heavily\ncorrupted, and the solution of 2-SUM may no longer yield an approximate serial\nstructure on the elements. We introduce the robust seriation problem and show\nthat it is equivalent to a modified 2-SUM problem for a class of similarity\nmatrices modeling those observed in DNA assembly. We explore several\nrelaxations of this modified 2-SUM problem and compare them empirically on both\nsynthetic matrices and real DNA data. We then introduce the problem of\nseriation with duplications, which is a generalization of Seriation motivated\nby applications to cancer genome reconstruction. We propose an algorithm\ninvolving robust seriation to solve it, and present preliminary results on\nsynthetic data sets.",
+  "id": "arxiv.1806.00664",
+  "url": "https://arxiv.org/abs/1806.00664",
+  "pdf": "https://arxiv.org/pdf/1806.00664",
+  "bibtex": "@misc{recanati2018_arxiv:1806.00664,\n    title = {Robust Seriation and Applications to Cancer Genomics},\n    author = {Antoine Recanati and Nicolas Servant and Jean-Philippe Vert and Alexandre d'Aspremont},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.00664},\n    pdf = {https://arxiv.org/pdf/1806.00664},\n    url = {https://arxiv.org/abs/1806.00664}\n}",
+  "source": "arxiv.org",
+  "date": 1562501849,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.00664"
+}
