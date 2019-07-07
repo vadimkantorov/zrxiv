@@ -1,0 +1,17 @@
+{
+  "title": "Reconstructing Latent Orderings by Spectral Clustering",
+  "authors": [
+    "Antoine Recanati",
+    "Thomas Kerdreux",
+    "Alexandre d'Aspremont"
+  ],
+  "abstract": "Spectral clustering uses a graph Laplacian spectral embedding to enhance the\ncluster structure of some data sets. When the embedding is one dimensional, it\ncan be used to sort the items (spectral ordering). A number of empirical\nresults also suggests that a multidimensional Laplacian embedding enhances the\nlatent ordering of the data, if any. This also extends to circular orderings, a\ncase where unidimensional embeddings fail. We tackle the task of retrieving\nlinear and circular orderings in a unifying framework, and show how a latent\nordering on the data translates into a filamentary structure on the Laplacian\nembedding. We propose a method to recover it, illustrated with numerical\nexperiments on synthetic data and real DNA sequencing data. The code and\nexperiments are available at https://github.com/antrec/mdso.",
+  "id": "arxiv.1807.07122",
+  "url": "https://arxiv.org/abs/1807.07122",
+  "pdf": "https://arxiv.org/pdf/1807.07122",
+  "bibtex": "@misc{recanati2018_arxiv:1807.07122,\n    title = {Reconstructing Latent Orderings by Spectral Clustering},\n    author = {Antoine Recanati and Thomas Kerdreux and Alexandre d'Aspremont},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1807.07122},\n    pdf = {https://arxiv.org/pdf/1807.07122},\n    url = {https://arxiv.org/abs/1807.07122}\n}",
+  "source": "arxiv.org",
+  "date": 1562503027,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1807.07122"
+}
