@@ -1,0 +1,20 @@
+{
+  "title": "Semantic Human Matting",
+  "authors": [
+    "Quan Chen",
+    "Tiezheng Ge",
+    "Yanyu Xu",
+    "Zhiqiang Zhang",
+    "Xinxin Yang",
+    "Kun Gai"
+  ],
+  "abstract": "Human matting, high quality extraction of humans from natural images, is\ncrucial for a wide variety of applications. Since the matting problem is\nseverely under-constrained, most previous methods require user interactions to\ntake user designated trimaps or scribbles as constraints. This user-in-the-loop\nnature makes them difficult to be applied to large scale data or time-sensitive\nscenarios. In this paper, instead of using explicit user input constraints, we\nemploy implicit semantic constraints learned from data and propose an automatic\nhuman matting algorithm (SHM). SHM is the first algorithm that learns to\njointly fit both semantic information and high quality details with deep\nnetworks. In practice, simultaneously learning both coarse semantics and fine\ndetails is challenging. We propose a novel fusion strategy which naturally\ngives a probabilistic estimation of the alpha matte. We also construct a very\nlarge dataset with high quality annotations consisting of 35,513 unique\nforegrounds to facilitate the learning and evaluation of human matting.\nExtensive experiments on this dataset and plenty of real images show that SHM\nachieves comparable results with state-of-the-art interactive matting methods.",
+  "id": "arxiv.1809.01354",
+  "url": "https://arxiv.org/abs/1809.01354",
+  "pdf": "https://arxiv.org/pdf/1809.01354",
+  "bibtex": "@misc{chen2018_arxiv:1809.01354,\n    title = {Semantic Human Matting},\n    author = {Quan Chen and Tiezheng Ge and Yanyu Xu and Zhiqiang Zhang and Xinxin Yang and Kun Gai},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1809.01354},\n    pdf = {https://arxiv.org/pdf/1809.01354},\n    url = {https://arxiv.org/abs/1809.01354}\n}",
+  "source": "arxiv.org",
+  "date": 1562501947,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1809.01354"
+}
