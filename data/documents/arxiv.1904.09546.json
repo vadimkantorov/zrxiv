@@ -1,0 +1,20 @@
+{
+  "title": "DeepCaps: Going Deeper with Capsule Networks",
+  "authors": [
+    "Jathushan Rajasegaran",
+    "Vinoj Jayasundara",
+    "Sandaru Jayasekara",
+    "Hirunima Jayasekara",
+    "Suranga Seneviratne",
+    "Ranga Rodrigo"
+  ],
+  "abstract": "Capsule Network is a promising concept in deep learning, yet its true\npotential is not fully realized thus far, providing sub-par performance on\nseveral key benchmark datasets with complex data. Drawing intuition from the\nsuccess achieved by Convolutional Neural Networks (CNNs) by going deeper, we\nintroduce DeepCaps1, a deep capsule network architecture which uses a novel 3D\nconvolution based dynamic routing algorithm. With DeepCaps, we surpass the\nstate-of-the-art results in the capsule network domain on CIFAR10, SVHN and\nFashion MNIST, while achieving a 68% reduction in the number of parameters.\nFurther, we propose a class-independent decoder network, which strengthens the\nuse of reconstruction loss as a regularization term. This leads to an\ninteresting property of the decoder, which allows us to identify and control\nthe physical attributes of the images represented by the instantiation\nparameters.",
+  "id": "arxiv.1904.09546",
+  "url": "https://arxiv.org/abs/1904.09546",
+  "pdf": "https://arxiv.org/pdf/1904.09546",
+  "bibtex": "@misc{rajasegaran2019_arxiv:1904.09546,\n    title = {DeepCaps: Going Deeper with Capsule Networks},\n    author = {Jathushan Rajasegaran and Vinoj Jayasundara and Sandaru Jayasekara and Hirunima Jayasekara and Suranga Seneviratne and Ranga Rodrigo},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.09546},\n    pdf = {https://arxiv.org/pdf/1904.09546},\n    url = {https://arxiv.org/abs/1904.09546}\n}",
+  "source": "arxiv.org",
+  "date": 1562484680,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.09546"
+}
