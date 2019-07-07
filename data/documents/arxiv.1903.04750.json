@@ -1,0 +1,19 @@
+{
+  "title": "Interaction Embeddings for Prediction and Explanation in Knowledge Graphs",
+  "authors": [
+    "Wen Zhang",
+    "Bibek Paudel",
+    "Wei Zhang",
+    "Abraham Bernstein",
+    "Huajun Chen"
+  ],
+  "abstract": "Knowledge graph embedding aims to learn distributed representations for\nentities and relations, and is proven to be effective in many applications.\nCrossover interactions --- bi-directional effects between entities and\nrelations --- help select related information when predicting a new triple, but\nhaven't been formally discussed before. In this paper, we propose CrossE, a\nnovel knowledge graph embedding which explicitly simulates crossover\ninteractions. It not only learns one general embedding for each entity and\nrelation as most previous methods do, but also generates multiple triple\nspecific embeddings for both of them, named interaction embeddings. We evaluate\nembeddings on typical link prediction tasks and find that CrossE achieves\nstate-of-the-art results on complex and more challenging datasets. Furthermore,\nwe evaluate embeddings from a new perspective --- giving explanations for\npredicted triples, which is important for real applications. In this work, an\nexplanation for a triple is regarded as a reliable closed-path between the head\nand the tail entity. Compared to other baselines, we show experimentally that\nCrossE, benefiting from interaction embeddings, is more capable of generating\nreliable explanations to support its predictions.",
+  "id": "arxiv.1903.04750",
+  "url": "https://arxiv.org/abs/1903.04750",
+  "pdf": "https://arxiv.org/pdf/1903.04750",
+  "bibtex": "@misc{zhang2019_arxiv:1903.04750,\n    title = {Interaction Embeddings for Prediction and Explanation in Knowledge Graphs},\n    author = {Wen Zhang and Bibek Paudel and Wei Zhang and Abraham Bernstein and Huajun Chen},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.04750},\n    pdf = {https://arxiv.org/pdf/1903.04750},\n    url = {https://arxiv.org/abs/1903.04750}\n}",
+  "source": "arxiv.org",
+  "date": 1562501158,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.04750"
+}
