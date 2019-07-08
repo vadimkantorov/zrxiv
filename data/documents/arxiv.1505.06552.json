@@ -1,0 +1,20 @@
+{
+  "title": "Concrete resource analysis of the quantum linear system algorithm used to compute the electromagnetic scattering cross section of a 2D target",
+  "authors": [
+    "Artur Scherer",
+    "Benoît Valiron",
+    "Siun-Chuon Mau",
+    "Scott Alexander",
+    "Eric van den Berg",
+    "Thomas E. Chapuran"
+  ],
+  "abstract": "We provide a detailed estimate for the logical resource requirements of the\nquantum linear system algorithm (QLSA) [Phys. Rev. Lett. 103, 150502 (2009)]\nincluding the recently described elaborations [Phys. Rev. Lett. 110, 250504\n(2013)]. Our resource estimates are based on the standard quantum-circuit model\nof quantum computation; they comprise circuit width, circuit depth, the number\nof qubits and ancilla qubits employed, and the overall number of elementary\nquantum gate operations as well as more specific gate counts for each\nelementary fault-tolerant gate from the standard set {X, Y, Z, H, S, T, CNOT}.\nTo perform these estimates, we used an approach that combines manual analysis\nwith automated estimates generated via the Quipper quantum programming language\nand compiler. Our estimates pertain to the example problem size N=332,020,680\nbeyond which, according to a crude big-O complexity comparison, QLSA is\nexpected to run faster than the best known classical linear-system solving\nalgorithm. For this problem size, a desired calculation accuracy 0.01 requires\nan approximate circuit width 340 and circuit depth of order $10^{25}$ if oracle\ncosts are excluded, and a circuit width and depth of order $10^8$ and\n$10^{29}$, respectively, if oracle costs are included, indicating that the\ncommonly ignored oracle resources are considerable. In addition to providing\ndetailed logical resource estimates, it is also the purpose of this paper to\ndemonstrate explicitly how these impressively large numbers arise with an\nactual circuit implementation of a quantum algorithm. While our estimates may\nprove to be conservative as more efficient advanced quantum-computation\ntechniques are developed, they nevertheless provide a valid baseline for\nresearch targeting a reduction of the resource requirements, implying that a\nreduction by many orders of magnitude is necessary for the algorithm to become\npractical.",
+  "id": "arxiv.1505.06552",
+  "url": "https://arxiv.org/abs/1505.06552",
+  "pdf": "https://arxiv.org/pdf/1505.06552",
+  "bibtex": "@misc{scherer2015_arxiv:1505.06552,\n    title = {Concrete resource analysis of the quantum linear system algorithm used to compute the electromagnetic scattering cross section of a 2D target},\n    author = {Artur Scherer and Benoît Valiron and Siun-Chuon Mau and Scott Alexander and Eric van den Berg and Thomas E. Chapuran},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1505.06552},\n    pdf = {https://arxiv.org/pdf/1505.06552},\n    url = {https://arxiv.org/abs/1505.06552}\n}",
+  "source": "arxiv.org",
+  "date": 1562576519,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1505.06552"
+}
