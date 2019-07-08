@@ -1,0 +1,16 @@
+{
+  "title": "Large Scale Adversarial Representation Learning",
+  "authors": [
+    "Jeff Donahue",
+    "Karen Simonyan"
+  ],
+  "abstract": "Adversarially trained generative models (GANs) have recently achieved\ncompelling image synthesis results. But despite early successes in using GANs\nfor unsupervised representation learning, they have since been superseded by\napproaches based on self-supervision. In this work we show that progress in\nimage generation quality translates to substantially improved representation\nlearning performance. Our approach, BigBiGAN, builds upon the state-of-the-art\nBigGAN model, extending it to representation learning by adding an encoder and\nmodifying the discriminator. We extensively evaluate the representation\nlearning and generation capabilities of these BigBiGAN models, demonstrating\nthat these generation-based models achieve the state of the art in unsupervised\nrepresentation learning on ImageNet, as well as in unconditional image\ngeneration.",
+  "id": "arxiv.1907.02544",
+  "url": "https://arxiv.org/abs/1907.02544",
+  "pdf": "https://arxiv.org/pdf/1907.02544",
+  "bibtex": "@misc{donahue2019_arxiv:1907.02544,\n    title = {Large Scale Adversarial Representation Learning},\n    author = {Jeff Donahue and Karen Simonyan},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.02544},\n    pdf = {https://arxiv.org/pdf/1907.02544},\n    url = {https://arxiv.org/abs/1907.02544}\n}",
+  "source": "arxiv.org",
+  "date": 1562610796,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.02544"
+}
