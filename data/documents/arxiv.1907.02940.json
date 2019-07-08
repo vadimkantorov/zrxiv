@@ -1,0 +1,15 @@
+{
+  "title": "Visualizing Uncertainty and Saliency Maps of Deep Convolutional Neural Networks for Medical Imaging Applications",
+  "authors": [
+    "Jae Duk Seo"
+  ],
+  "abstract": "Deep learning models are now used in many different industries, while in\ncertain domains safety is not a critical issue in the medical field it is a\nhuge concern. Not only, we want the models to generalize well but we also want\nto know the models confidence respect to its decision and which features matter\nthe most. Our team aims to develop a full pipeline in which not only displays\nthe uncertainty of the models decision but also, the saliency map to show which\nsets of pixels of the input image contribute most to the predictions.",
+  "id": "arxiv.1907.02940",
+  "url": "https://arxiv.org/abs/1907.02940",
+  "pdf": "https://arxiv.org/pdf/1907.02940",
+  "bibtex": "@misc{seo2019_arxiv:1907.02940,\n    title = {Visualizing Uncertainty and Saliency Maps of Deep Convolutional Neural Networks for Medical Imaging Applications},\n    author = {Jae Duk Seo},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.02940},\n    pdf = {https://arxiv.org/pdf/1907.02940},\n    url = {https://arxiv.org/abs/1907.02940}\n}",
+  "source": "arxiv.org",
+  "date": 1562610801,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.02940"
+}
