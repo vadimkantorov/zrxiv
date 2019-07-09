@@ -1,0 +1,17 @@
+{
+  "title": "Learning Representations by Maximizing Mutual Information Across Views",
+  "authors": [
+    "Philip Bachman",
+    "R Devon Hjelm",
+    "William Buchwalter"
+  ],
+  "abstract": "We propose an approach to self-supervised representation learning based on\nmaximizing mutual information between features extracted from multiple views of\na shared context. For example, one could produce multiple views of a local\nspatio-temporal context by observing it from different locations (e.g., camera\npositions within a scene), and via different modalities (e.g., tactile,\nauditory, or visual). Or, an ImageNet image could provide a context from which\none produces multiple views by repeatedly applying data augmentation.\nMaximizing mutual information between features extracted from these views\nrequires capturing information about high-level factors whose influence spans\nmultiple views -- e.g., presence of certain objects or occurrence of certain\nevents.\n  Following our proposed approach, we develop a model which learns image\nrepresentations that significantly outperform prior methods on the tasks we\nconsider. Most notably, using self-supervised learning, our model learns\nrepresentations which achieve 68.1% accuracy on ImageNet using standard linear\nevaluation. This beats prior results by over 12% and concurrent results by 7%.\nWhen we extend our model to use mixture-based representations, segmentation\nbehaviour emerges as a natural side-effect. Our code is available online:\nhttps://github.com/Philip-Bachman/amdim-public.",
+  "id": "arxiv.1906.00910",
+  "url": "https://arxiv.org/abs/1906.00910",
+  "pdf": "https://arxiv.org/pdf/1906.00910",
+  "bibtex": "@misc{bachman2019_arxiv:1906.00910,\n    title = {Learning Representations by Maximizing Mutual Information Across Views},\n    author = {Philip Bachman and R Devon Hjelm and William Buchwalter},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.00910},\n    pdf = {https://arxiv.org/pdf/1906.00910},\n    url = {https://arxiv.org/abs/1906.00910}\n}",
+  "source": "arxiv.org",
+  "date": 1562674212,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.00910"
+}
