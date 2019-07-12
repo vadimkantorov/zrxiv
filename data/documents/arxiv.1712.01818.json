@@ -1,0 +1,21 @@
+{
+  "title": "Minimum Word Error Rate Training for Attention-based Sequence-to-Sequence Models",
+  "authors": [
+    "Rohit Prabhavalkar",
+    "Tara N. Sainath",
+    "Yonghui Wu",
+    "Patrick Nguyen",
+    "Zhifeng Chen",
+    "Chung-Cheng Chiu",
+    "Anjuli Kannan"
+  ],
+  "abstract": "Sequence-to-sequence models, such as attention-based models in automatic\nspeech recognition (ASR), are typically trained to optimize the cross-entropy\ncriterion which corresponds to improving the log-likelihood of the data.\nHowever, system performance is usually measured in terms of word error rate\n(WER), not log-likelihood. Traditional ASR systems benefit from discriminative\nsequence training which optimizes criteria such as the state-level minimum\nBayes risk (sMBR) which are more closely related to WER. In the present work,\nwe explore techniques to train attention-based models to directly minimize\nexpected word error rate. We consider two loss functions which approximate the\nexpected number of word errors: either by sampling from the model, or by using\nN-best lists of decoded hypotheses, which we find to be more effective than the\nsampling-based method. In experimental evaluations, we find that the proposed\ntraining procedure improves performance by up to 8.2% relative to the baseline\nsystem. This allows us to train grapheme-based, uni-directional attention-based\nmodels which match the performance of a traditional, state-of-the-art,\ndiscriminative sequence-trained system on a mobile voice-search task.",
+  "id": "arxiv.1712.01818",
+  "url": "https://arxiv.org/abs/1712.01818",
+  "pdf": "https://arxiv.org/pdf/1712.01818",
+  "bibtex": "@misc{prabhavalkar2017_arxiv:1712.01818,\n    title = {Minimum Word Error Rate Training for Attention-based Sequence-to-Sequence Models},\n    author = {Rohit Prabhavalkar and Tara N. Sainath and Yonghui Wu and Patrick Nguyen and Zhifeng Chen and Chung-Cheng Chiu and Anjuli Kannan},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1712.01818},\n    pdf = {https://arxiv.org/pdf/1712.01818},\n    url = {https://arxiv.org/abs/1712.01818}\n}",
+  "source": "arxiv.org",
+  "date": 1562918400,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1712.01818"
+}
