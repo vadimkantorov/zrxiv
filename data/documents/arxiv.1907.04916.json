@@ -1,0 +1,18 @@
+{
+  "title": "Listen, Attend, Spell and Adapt: Speaker Adapted Sequence-to-Sequence ASR",
+  "authors": [
+    "Felix Weninger",
+    "Jesús Andrés-Ferrer",
+    "Xinwei Li",
+    "Puming Zhan"
+  ],
+  "abstract": "Sequence-to-sequence (seq2seq) based ASR systems have shown state-of-the-art\nperformances while having clear advantages in terms of simplicity. However,\ncomparisons are mostly done on speaker independent (SI) ASR systems, though\nspeaker adapted conventional systems are commonly used in practice for\nimproving robustness to speaker and environment variations. In this paper, we\napply speaker adaptation to seq2seq models with the goal of matching the\nperformance of conventional ASR adaptation. Specifically, we investigate\nKullback-Leibler divergence (KLD) as well as Linear Hidden Network (LHN) based\nadaptation for seq2seq ASR, using different amounts (up to 20 hours) of\nadaptation data per speaker. Our SI models are trained on large amounts of\ndictation data and achieve state-of-the-art results. We obtained 25% relative\nword error rate (WER) improvement with KLD adaptation of the seq2seq model vs.\n18.7% gain from acoustic model adaptation in the conventional system. We also\nshow that the WER of the seq2seq model decreases log-linearly with the amount\nof adaptation data. Finally, we analyze adaptation based on the minimum WER\ncriterion and adapting the language model (LM) for score fusion with the\nspeaker adapted seq2seq model, which result in further improvements of the\nseq2seq system performance.",
+  "id": "arxiv.1907.04916",
+  "url": "https://arxiv.org/abs/1907.04916",
+  "pdf": "https://arxiv.org/pdf/1907.04916",
+  "bibtex": "@misc{weninger2019_arxiv:1907.04916,\n    title = {Listen, Attend, Spell and Adapt: Speaker Adapted Sequence-to-Sequence ASR},\n    author = {Felix Weninger and Jesús Andrés-Ferrer and Xinwei Li and Puming Zhan},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.04916},\n    pdf = {https://arxiv.org/pdf/1907.04916},\n    url = {https://arxiv.org/abs/1907.04916}\n}",
+  "source": "arxiv.org",
+  "date": 1562910273,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.04916"
+}
