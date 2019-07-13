@@ -1,0 +1,18 @@
+{
+  "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models",
+  "authors": [
+    "Kurtland Chua",
+    "Roberto Calandra",
+    "Rowan McAllister",
+    "Sergey Levine"
+  ],
+  "abstract": "Model-based reinforcement learning (RL) algorithms can attain excellent\nsample efficiency, but often lag behind the best model-free algorithms in terms\nof asymptotic performance. This is especially true with high-capacity\nparametric function approximators, such as deep networks. In this paper, we\nstudy how to bridge this gap, by employing uncertainty-aware dynamics models.\nWe propose a new algorithm called probabilistic ensembles with trajectory\nsampling (PETS) that combines uncertainty-aware deep network dynamics models\nwith sampling-based uncertainty propagation. Our comparison to state-of-the-art\nmodel-based and model-free deep RL algorithms shows that our approach matches\nthe asymptotic performance of model-free algorithms on several challenging\nbenchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125\ntimes fewer samples than Soft Actor Critic and Proximal Policy Optimization\nrespectively on the half-cheetah task).",
+  "id": "arxiv.1805.12114",
+  "url": "https://arxiv.org/abs/1805.12114",
+  "pdf": "https://arxiv.org/pdf/1805.12114",
+  "bibtex": "@misc{chua2018_arxiv:1805.12114,\n    title = {Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models},\n    author = {Kurtland Chua and Roberto Calandra and Rowan McAllister and Sergey Levine},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.12114},\n    pdf = {https://arxiv.org/pdf/1805.12114},\n    url = {https://arxiv.org/abs/1805.12114}\n}",
+  "source": "arxiv.org",
+  "date": 1563043253,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1805.12114"
+}
