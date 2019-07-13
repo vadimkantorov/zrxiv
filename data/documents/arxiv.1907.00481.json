@@ -1,0 +1,17 @@
+{
+  "title": "Mincut pooling in Graph Neural Networks",
+  "authors": [
+    "Filippo Maria Bianchi",
+    "Daniele Grattarola",
+    "Cesare Alippi"
+  ],
+  "abstract": "The advance of node pooling operations in Graph Neural Networks (GNNs) has\nlagged behind the feverish design of new message-passing techniques, and\npooling remains an important and challenging endeavor for the design of deep\narchitectures. In this paper, we propose a pooling operation for GNNs that\nleverages a differentiable unsupervised loss based on the mincut optimization\nobjective. For each node, our method learns a soft cluster assignment vector\nthat depends on the node features, the target inference task (e.g., graph\nclassification), and, thanks to the mincut objective, also on the graph\nconnectivity. Graph pooling is obtained by applying the matrix of assignment\nvectors to the adjacency matrix and the node features. We validate the\neffectiveness of the proposed pooling method on a variety of supervised and\nunsupervised tasks.",
+  "id": "arxiv.1907.00481",
+  "url": "https://arxiv.org/abs/1907.00481",
+  "pdf": "https://arxiv.org/pdf/1907.00481",
+  "bibtex": "@misc{bianchi2019_arxiv:1907.00481,\n    title = {Mincut pooling in Graph Neural Networks},\n    author = {Filippo Maria Bianchi and Daniele Grattarola and Cesare Alippi},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.00481},\n    pdf = {https://arxiv.org/pdf/1907.00481},\n    url = {https://arxiv.org/abs/1907.00481}\n}",
+  "source": "arxiv.org",
+  "date": 1563047014,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.00481"
+}
