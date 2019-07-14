@@ -1,0 +1,16 @@
+{
+  "title": "Interpretable Convolutional Filters with SincNet",
+  "authors": [
+    "Mirco Ravanelli",
+    "Yoshua Bengio"
+  ],
+  "abstract": "Deep learning is currently playing a crucial role toward higher levels of\nartificial intelligence. This paradigm allows neural networks to learn complex\nand abstract representations, that are progressively obtained by combining\nsimpler ones. Nevertheless, the internal \"black-box\" representations\nautomatically discovered by current neural architectures often suffer from a\nlack of interpretability, making of primary interest the study of explainable\nmachine learning techniques. This paper summarizes our recent efforts to\ndevelop a more interpretable neural model for directly processing speech from\nthe raw waveform. In particular, we propose SincNet, a novel Convolutional\nNeural Network (CNN) that encourages the first layer to discover more\nmeaningful filters by exploiting parametrized sinc functions. In contrast to\nstandard CNNs, which learn all the elements of each filter, only low and high\ncutoff frequencies of band-pass filters are directly learned from data. This\ninductive bias offers a very compact way to derive a customized filter-bank\nfront-end, that only depends on some parameters with a clear physical meaning.\nOur experiments, conducted on both speaker and speech recognition, show that\nthe proposed architecture converges faster, performs better, and is more\ninterpretable than standard CNNs.",
+  "id": "arxiv.1811.09725",
+  "url": "https://arxiv.org/abs/1811.09725",
+  "pdf": "https://arxiv.org/pdf/1811.09725",
+  "bibtex": "@misc{ravanelli2018_arxiv:1811.09725,\n    title = {Interpretable Convolutional Filters with SincNet},\n    author = {Mirco Ravanelli and Yoshua Bengio},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.09725},\n    pdf = {https://arxiv.org/pdf/1811.09725},\n    url = {https://arxiv.org/abs/1811.09725}\n}",
+  "source": "arxiv.org",
+  "date": 1563100737,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.09725"
+}
