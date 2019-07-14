@@ -1,0 +1,17 @@
+{
+  "title": "Learning Distributed Representations of Symbolic Structure Using Binding and Unbinding Operations",
+  "authors": [
+    "Shuai Tang",
+    "Paul Smolensky",
+    "Virginia R. de Sa"
+  ],
+  "abstract": "Widely used recurrent units, including Long-short Term Memory (LSTM) and Gated Recurrent Unit (GRU), perform well on natural language tasks, but their ability to learn structured representations is still questionable. Exploiting Tensor Product Representations (TPRs) --- distributed representations of symbolic structure in which vector-embedded symbols are bound to vector-embedded structural positions --- we propose the TPRU, a recurrent unit that, at each time step, explicitly executes structural-role binding and unbinding operations to incorporate structural information into learning. Experiments are conducted on both the Logical Entailment task and the Multi-genre Natural Language Inference (MNLI) task, and our TPR-derived recurrent unit provides strong performance with significantly fewer parameters than LSTM and GRU baselines. Furthermore, our learnt TPRU trained on MNLI demonstrates solid generalisation ability on downstream tasks.",
+  "id": "openreview.r1zvGR6jjm",
+  "url": "https://openreview.net/forum?id=r1zvGR6jjm",
+  "pdf": "https://openreview.net/pdf?id=r1zvGR6jjm",
+  "bibtex": null,
+  "source": "openreview.net",
+  "date": 1563110337,
+  "tags": [],
+  "api": "https://openreview.net/notes?id=r1zvGR6jjm"
+}
