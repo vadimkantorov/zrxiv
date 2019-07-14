@@ -1,0 +1,17 @@
+{
+  "title": "CNM: An Interpretable Complex-valued Network for Matching",
+  "authors": [
+    "Qiuchi Li",
+    "Benyou Wang",
+    "Massimo Melucci"
+  ],
+  "abstract": "This paper seeks to model human language by the mathematical framework of\nquantum physics. With the well-designed mathematical formulations in quantum\nphysics, this framework unifies different linguistic units in a single\ncomplex-valued vector space, e.g. words as particles in quantum states and\nsentences as mixed systems. A complex-valued network is built to implement this\nframework for semantic matching. With well-constrained complex-valued\ncomponents, the network admits interpretations to explicit physical meanings.\nThe proposed complex-valued network for matching (CNM) achieves comparable\nperformances to strong CNN and RNN baselines on two benchmarking question\nanswering (QA) datasets.",
+  "id": "arxiv.1904.05298",
+  "url": "https://arxiv.org/abs/1904.05298",
+  "pdf": "https://arxiv.org/pdf/1904.05298",
+  "bibtex": "@misc{li2019_arxiv:1904.05298,\n    title = {CNM: An Interpretable Complex-valued Network for Matching},\n    author = {Qiuchi Li and Benyou Wang and Massimo Melucci},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.05298},\n    pdf = {https://arxiv.org/pdf/1904.05298},\n    url = {https://arxiv.org/abs/1904.05298}\n}",
+  "source": "arxiv.org",
+  "date": 1563140800,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.05298"
+}
