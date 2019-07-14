@@ -1,0 +1,17 @@
+{
+  "title": "Improving the Interpretability of Deep Neural Networks with Knowledge Distillation",
+  "authors": [
+    "Xuan Liu",
+    "Xiaoguang Wang",
+    "Stan Matwin"
+  ],
+  "abstract": "Deep Neural Networks have achieved huge success at a wide spectrum of\napplications from language modeling, computer vision to speech recognition.\nHowever, nowadays, good performance alone is not sufficient to satisfy the\nneeds of practical deployment where interpretability is demanded for cases\ninvolving ethics and mission critical applications. The complex models of Deep\nNeural Networks make it hard to understand and reason the predictions, which\nhinders its further progress. To tackle this problem, we apply the Knowledge\nDistillation technique to distill Deep Neural Networks into decision trees in\norder to attain good performance and interpretability simultaneously. We\nformulate the problem at hand as a multi-output regression problem and the\nexperiments demonstrate that the student model achieves significantly better\naccuracy performance (about 1\\% to 5\\%) than vanilla decision trees at the same\nlevel of tree depth. The experiments are implemented on the TensorFlow platform\nto make it scalable to big datasets. To the best of our knowledge, we are the\nfirst to distill Deep Neural Networks into vanilla decision trees on\nmulti-class datasets.",
+  "id": "arxiv.1812.10924",
+  "url": "https://arxiv.org/abs/1812.10924",
+  "pdf": "https://arxiv.org/pdf/1812.10924",
+  "bibtex": "@misc{liu2018_arxiv:1812.10924,\n    title = {Improving the Interpretability of Deep Neural Networks with Knowledge Distillation},\n    author = {Xuan Liu and Xiaoguang Wang and Stan Matwin},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.10924},\n    pdf = {https://arxiv.org/pdf/1812.10924},\n    url = {https://arxiv.org/abs/1812.10924}\n}",
+  "source": "arxiv.org",
+  "date": 1563100733,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.10924"
+}
