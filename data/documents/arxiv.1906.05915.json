@@ -1,0 +1,18 @@
+{
+  "title": "Recurrent Neural Processes",
+  "authors": [
+    "Timon Willi",
+    "Jonathan Masci",
+    "Jürgen Schmidhuber",
+    "Christian Osendorfer"
+  ],
+  "abstract": "We extend Neural Processes (NPs) to sequential data through Recurrent NPs or\nRNPs, a family of conditional state space models. RNPs can learn dynamical\npatterns from sequential data and deal with non-stationarity. Given time series\nobserved on fast real-world time scales but containing slow long-term\nvariabilities, RNPs may derive appropriate slow latent time scales. They do so\nin an efficient manner by establishing conditional independence among\nsubsequences of the time series. Our theoretically grounded framework for\nstochastic processes expands the applicability of NPs while retaining their\nbenefits of flexibility, uncertainty estimation and favourable runtime with\nrespect to Gaussian Processes. We demonstrate that state spaces learned by RNPs\nbenefit predictive performance on real-world time-series data and nonlinear\nsystem identification, even in the case of limited data availability.",
+  "id": "arxiv.1906.05915",
+  "url": "https://arxiv.org/abs/1906.05915",
+  "pdf": "https://arxiv.org/pdf/1906.05915",
+  "bibtex": "@misc{willi2019_arxiv:1906.05915,\n    title = {Recurrent Neural Processes},\n    author = {Timon Willi and Jonathan Masci and Jürgen Schmidhuber and Christian Osendorfer},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.05915},\n    pdf = {https://arxiv.org/pdf/1906.05915},\n    url = {https://arxiv.org/abs/1906.05915}\n}",
+  "source": "arxiv.org",
+  "date": 1563102007,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.05915"
+}
