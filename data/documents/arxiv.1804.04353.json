@@ -1,0 +1,19 @@
+{
+  "title": "Global SNR Estimation of Speech Signals using Entropy and Uncertainty Estimates from Dropout Networks",
+  "authors": [
+    "Rohith Aralikatti",
+    "Dilip Margam",
+    "Tanay Sharma",
+    "Thanda Abhinav",
+    "Shankar M Venkatesan"
+  ],
+  "abstract": "This paper demonstrates two novel methods to estimate the global SNR of\nspeech signals. In both methods, Deep Neural Network-Hidden Markov Model\n(DNN-HMM) acoustic model used in speech recognition systems is leveraged for\nthe additional task of SNR estimation. In the first method, the entropy of the\nDNN-HMM output is computed. Recent work on bayesian deep learning has shown\nthat a DNN-HMM trained with dropout can be used to estimate model uncertainty\nby approximating it as a deep Gaussian process. In the second method, this\napproximation is used to obtain model uncertainty estimates. Noise specific\nregressors are used to predict the SNR from the entropy and model uncertainty.\nThe DNN-HMM is trained on GRID corpus and tested on different noise profiles\nfrom the DEMAND noise database at SNR levels ranging from -10 dB to 30 dB.",
+  "id": "arxiv.1804.04353",
+  "url": "https://arxiv.org/abs/1804.04353",
+  "pdf": "https://arxiv.org/pdf/1804.04353",
+  "bibtex": "@misc{aralikatti2018_arxiv:1804.04353,\n    title = {Global SNR Estimation of Speech Signals using Entropy and Uncertainty Estimates from Dropout Networks},\n    author = {Rohith Aralikatti and Dilip Margam and Tanay Sharma and Thanda Abhinav and Shankar M Venkatesan},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1804.04353},\n    pdf = {https://arxiv.org/pdf/1804.04353},\n    url = {https://arxiv.org/abs/1804.04353}\n}",
+  "source": "arxiv.org",
+  "date": 1563190744,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1804.04353"
+}
