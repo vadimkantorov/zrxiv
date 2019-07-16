@@ -1,0 +1,18 @@
+{
+  "title": "Gated-SCNN: Gated Shape CNNs for Semantic Segmentation",
+  "authors": [
+    "Towaki Takikawa",
+    "David Acuna",
+    "Varun Jampani",
+    "Sanja Fidler"
+  ],
+  "abstract": "Current state-of-the-art methods for image segmentation form a dense image\nrepresentation where the color, shape and texture information are all processed\ntogether inside a deep CNN. This however may not be ideal as they contain very\ndifferent type of information relevant for recognition. Here, we propose a new\ntwo-stream CNN architecture for semantic segmentation that explicitly wires\nshape information as a separate processing branch, i.e. shape stream, that\nprocesses information in parallel to the classical stream. Key to this\narchitecture is a new type of gates that connect the intermediate layers of the\ntwo streams. Specifically, we use the higher-level activations in the classical\nstream to gate the lower-level activations in the shape stream, effectively\nremoving noise and helping the shape stream to only focus on processing the\nrelevant boundary-related information. This enables us to use a very shallow\narchitecture for the shape stream that operates on the image-level resolution.\nOur experiments show that this leads to a highly effective architecture that\nproduces sharper predictions around object boundaries and significantly boosts\nperformance on thinner and smaller objects. Our method achieves\nstate-of-the-art performance on the Cityscapes benchmark, in terms of both mask\n(mIoU) and boundary (F-score) quality, improving by 2% and 4% over strong\nbaselines.",
+  "id": "arxiv.1907.05740",
+  "url": "https://arxiv.org/abs/1907.05740",
+  "pdf": "https://arxiv.org/pdf/1907.05740",
+  "bibtex": "@misc{takikawa2019_arxiv:1907.05740,\n    title = {Gated-SCNN: Gated Shape CNNs for Semantic Segmentation},\n    author = {Towaki Takikawa and David Acuna and Varun Jampani and Sanja Fidler},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.05740},\n    pdf = {https://arxiv.org/pdf/1907.05740},\n    url = {https://arxiv.org/abs/1907.05740}\n}",
+  "source": "arxiv.org",
+  "date": 1563304719,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.05740"
+}
