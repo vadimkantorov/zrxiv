@@ -1,0 +1,17 @@
+{
+  "title": "Reducing Network Agnostophobia",
+  "authors": [
+    "Akshay Raj Dhamija",
+    "Manuel Günther",
+    "Terrance E. Boult"
+  ],
+  "abstract": "Agnostophobia, the fear of the unknown, can be experienced by deep learning\nengineers while applying their networks to real-world applications.\nUnfortunately, network behavior is not well defined for inputs far from a\nnetworks training set. In an uncontrolled environment, networks face many\ninstances that are not of interest to them and have to be rejected in order to\navoid a false positive. This problem has previously been tackled by researchers\nby either a) thresholding softmax, which by construction cannot return \"none of\nthe known classes\", or b) using an additional background or garbage class. In\nthis paper, we show that both of these approaches help, but are generally\ninsufficient when previously unseen classes are encountered. We also introduce\na new evaluation metric that focuses on comparing the performance of multiple\napproaches in scenarios where such unseen classes or unknowns are encountered.\nOur major contributions are simple yet effective Entropic Open-Set and\nObjectosphere losses that train networks using negative samples from some\nclasses. These novel losses are designed to maximize entropy for unknown inputs\nwhile increasing separation in deep feature space by modifying magnitudes of\nknown and unknown samples. Experiments on networks trained to classify classes\nfrom MNIST and CIFAR-10 show that our novel loss functions are significantly\nbetter at dealing with unknown inputs from datasets such as Devanagari,\nNotMNIST, CIFAR-100, and SVHN.",
+  "id": "arxiv.1811.04110",
+  "url": "https://arxiv.org/abs/1811.04110",
+  "pdf": "https://arxiv.org/pdf/1811.04110",
+  "bibtex": "@misc{dhamija2018_arxiv:1811.04110,\n    title = {Reducing Network Agnostophobia},\n    author = {Akshay Raj Dhamija and Manuel Günther and Terrance E. Boult},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.04110},\n    pdf = {https://arxiv.org/pdf/1811.04110},\n    url = {https://arxiv.org/abs/1811.04110}\n}",
+  "source": "arxiv.org",
+  "date": 1563301281,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.04110"
+}
