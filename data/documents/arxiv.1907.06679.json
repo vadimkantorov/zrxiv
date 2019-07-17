@@ -1,0 +1,16 @@
+{
+  "title": "Towards Near-imperceptible Steganographic Text",
+  "authors": [
+    "Falcon Z. Dai",
+    "Zheng Cai"
+  ],
+  "abstract": "We show that the imperceptibility of several existing linguistic\nsteganographic systems (Fang et al., 2017; Yang et al., 2018) relies on\nimplicit assumptions on statistical behaviors of fluent text. We formally\nanalyze them and empirically evaluate these assumptions. Furthermore, based on\nthese observations, we propose an encoding algorithm called patient-Huffman\nwith improved near-imperceptible guarantees.",
+  "id": "arxiv.1907.06679",
+  "url": "https://arxiv.org/abs/1907.06679",
+  "pdf": "https://arxiv.org/pdf/1907.06679",
+  "bibtex": "@misc{dai2019_arxiv:1907.06679,\n    title = {Towards Near-imperceptible Steganographic Text},\n    author = {Falcon Z. Dai and Zheng Cai},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.06679},\n    pdf = {https://arxiv.org/pdf/1907.06679},\n    url = {https://arxiv.org/abs/1907.06679}\n}",
+  "source": "arxiv.org",
+  "date": 1563390214,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.06679"
+}
