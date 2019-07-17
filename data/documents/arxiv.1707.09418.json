@@ -1,0 +1,17 @@
+{
+  "title": "FontCode: Embedding Information in Text Documents using Glyph Perturbation",
+  "authors": [
+    "Chang Xiao",
+    "Cheng Zhang",
+    "Changxi Zheng"
+  ],
+  "abstract": "We introduce FontCode, an information embedding technique for text documents.\nProvided a text document with specific fonts, our method embeds user-specified\ninformation in the text by perturbing the glyphs of text characters while\npreserving the text content. We devise an algorithm to chooses unobtrusive yet\nmachine-recognizable glyph perturbations, leveraging a recently developed\ngenerative model that alters the glyphs of each character continuously on a\nfont manifold. We then introduce an algorithm that embeds a user-provided\nmessage in the text document and produces an encoded document whose appearance\nis minimally perturbed from the original document. We also present a glyph\nrecognition method that recovers the embedded information from an encoded\ndocument stored as a vector graphic or pixel image, or even on a printed paper.\nIn addition, we introduce a new error-correction coding scheme that rectifies a\ncertain number of recognition errors. Lastly, we demonstrate that our technique\nenables a wide array of applications, using it as a text document metadata\nholder, an unobtrusive optical barcode, a cryptographic message embedding\nscheme, and a text document signature.",
+  "id": "arxiv.1707.09418",
+  "url": "https://arxiv.org/abs/1707.09418",
+  "pdf": "https://arxiv.org/pdf/1707.09418",
+  "bibtex": "@misc{xiao2017_arxiv:1707.09418,\n    title = {FontCode: Embedding Information in Text Documents using Glyph Perturbation},\n    author = {Chang Xiao and Cheng Zhang and Changxi Zheng},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1707.09418},\n    pdf = {https://arxiv.org/pdf/1707.09418},\n    url = {https://arxiv.org/abs/1707.09418}\n}",
+  "source": "arxiv.org",
+  "date": 1563390215,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1707.09418"
+}
