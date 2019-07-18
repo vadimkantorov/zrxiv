@@ -1,0 +1,16 @@
+{
+  "title": "On the accuracy of the Viterbi alignment",
+  "authors": [
+    "Kristi Kuljus",
+    "Jüri Lember"
+  ],
+  "abstract": "In a hidden Markov model, the underlying Markov chain is usually hidden.\nOften, the maximum likelihood alignment (Viterbi alignment) is used as its\nestimate. Although having the biggest likelihood, the Viterbi alignment can\nbehave very untypically by passing states that are at most unexpected. To avoid\nsuch situations, the Viterbi alignment can be modified by forcing it not to\npass these states. In this article, an iterative procedure for improving the\nViterbi alignment is proposed and studied. The iterative approach is compared\nwith a simple bunch approach where a number of states with low probability are\nall replaced at the same time. It can be seen that the iterative way of\nadjusting the Viterbi alignment is more efficient and it has several advantages\nover the bunch approach. The same iterative algorithm for improving the Viterbi\nalignment can be used in the case of peeping, that is when it is possible to\nreveal hidden states. In addition, lower bounds for classification\nprobabilities of the Viterbi alignment under different conditions on the model\nparameters are studied.",
+  "id": "arxiv.1307.7948",
+  "url": "https://arxiv.org/abs/1307.7948",
+  "pdf": "https://arxiv.org/pdf/1307.7948",
+  "bibtex": "@misc{kuljus2013_arxiv:1307.7948,\n    title = {On the accuracy of the Viterbi alignment},\n    author = {Kristi Kuljus and Jüri Lember},\n    year = {2013},\n    archiveprefix = {arXiv},\n    eprint = {1307.7948},\n    pdf = {https://arxiv.org/pdf/1307.7948},\n    url = {https://arxiv.org/abs/1307.7948}\n}",
+  "source": "arxiv.org",
+  "date": 1563489782,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1307.7948"
+}
