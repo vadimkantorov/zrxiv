@@ -1,0 +1,16 @@
+{
+  "title": "Generative Modeling by Estimating Gradients of the Data Distribution",
+  "authors": [
+    "Yang Song",
+    "Stefano Ermon"
+  ],
+  "abstract": "We introduce a new generative model where samples are produced via Langevin\ndynamics using gradients of the data distribution estimated with score\nmatching. Because gradients might be ill-defined when the data resides on\nlow-dimensional manifolds, we perturb the data with different levels of\nGaussian noise and jointly estimate the corresponding scores, i.e., the vector\nfields of gradients of the perturbed data distribution for all noise levels.\nFor sampling, we propose an annealed Langevin dynamics where we use gradients\ncorresponding to gradually decreasing noise levels as the sampling process gets\ncloser to the data manifold. Our framework allows flexible model architectures,\nrequires no sampling during training or the use of adversarial methods, and\nprovides a learning objective that can be used for principled model\ncomparisons. Our models produce samples comparable to GANs on MNIST, CelebA and\nCIFAR-10 datasets, achieving a new state-of-the-art inception score of 8.91 on\nCIFAR-10. Additionally, we demonstrate that our models learn effective\nrepresentations via image inpainting experiments.",
+  "id": "arxiv.1907.05600",
+  "url": "https://arxiv.org/abs/1907.05600",
+  "pdf": "https://arxiv.org/pdf/1907.05600",
+  "bibtex": "@misc{song2019_arxiv:1907.05600,\n    title = {Generative Modeling by Estimating Gradients of the Data Distribution},\n    author = {Yang Song and Stefano Ermon},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.05600},\n    pdf = {https://arxiv.org/pdf/1907.05600},\n    url = {https://arxiv.org/abs/1907.05600}\n}",
+  "source": "arxiv.org",
+  "date": 1563710592,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.05600"
+}
