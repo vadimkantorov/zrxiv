@@ -1,0 +1,23 @@
+{
+  "title": "Stochastic Gradient Methods with Layer-wise Adaptive Moments for Training of Deep Networks",
+  "authors": [
+    "Boris Ginsburg",
+    "Patrice Castonguay",
+    "Oleksii Hrinchuk",
+    "Oleksii Kuchaiev",
+    "Vitaly Lavrukhin",
+    "Ryan Leary",
+    "Jason Li",
+    "Huyen Nguyen",
+    "Jonathan M. Cohen"
+  ],
+  "abstract": "We propose NovoGrad, a first-order stochastic gradient method with layer-wise\ngradient normalization via second moment estimators and with decoupled weight\ndecay for a better regularization. The method requires half as much memory as\nAdam/AdamW. We evaluated NovoGrad on the diverse set of problems, including\nimage classification, speech recognition, neural machine translation and\nlanguage modeling. On these problems, NovoGrad performed equal to or better\nthan SGD and Adam/AdamW. Empirically we show that NovoGrad (1) is very robust\nduring the initial training phase and does not require learning rate warm-up,\n(2) works well with the same learning rate policy for different problems, and\n(3) generally performs better than other optimizers for very large batch sizes",
+  "id": "arxiv.1905.11286",
+  "url": "https://arxiv.org/abs/1905.11286",
+  "pdf": "https://arxiv.org/pdf/1905.11286",
+  "bibtex": "@misc{ginsburg2019_arxiv:1905.11286,\n    title = {Stochastic Gradient Methods with Layer-wise Adaptive Moments for Training of Deep Networks},\n    author = {Boris Ginsburg and Patrice Castonguay and Oleksii Hrinchuk and Oleksii Kuchaiev and Vitaly Lavrukhin and Ryan Leary and Jason Li and Huyen Nguyen and Jonathan M. Cohen},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11286},\n    pdf = {https://arxiv.org/pdf/1905.11286},\n    url = {https://arxiv.org/abs/1905.11286}\n}",
+  "source": "arxiv.org",
+  "date": 1563783779,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11286"
+}
