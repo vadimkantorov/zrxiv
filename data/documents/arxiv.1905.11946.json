@@ -1,0 +1,16 @@
+{
+  "title": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks",
+  "authors": [
+    "Mingxing Tan",
+    "Quoc V. Le"
+  ],
+  "abstract": "Convolutional Neural Networks (ConvNets) are commonly developed at a fixed\nresource budget, and then scaled up for better accuracy if more resources are\navailable. In this paper, we systematically study model scaling and identify\nthat carefully balancing network depth, width, and resolution can lead to\nbetter performance. Based on this observation, we propose a new scaling method\nthat uniformly scales all dimensions of depth/width/resolution using a simple\nyet highly effective compound coefficient. We demonstrate the effectiveness of\nthis method on scaling up MobileNets and ResNet.\n  To go even further, we use neural architecture search to design a new\nbaseline network and scale it up to obtain a family of models, called\nEfficientNets, which achieve much better accuracy and efficiency than previous\nConvNets. In particular, our EfficientNet-B7 achieves state-of-the-art 84.4%\ntop-1 / 97.1% top-5 accuracy on ImageNet, while being 8.4x smaller and 6.1x\nfaster on inference than the best existing ConvNet. Our EfficientNets also\ntransfer well and achieve state-of-the-art accuracy on CIFAR-100 (91.7%),\nFlowers (98.8%), and 3 other transfer learning datasets, with an order of\nmagnitude fewer parameters. Source code is at\nhttps://github.com/tensorflow/tpu/tree/master/models/official/efficientnet.",
+  "id": "arxiv.1905.11946",
+  "url": "https://arxiv.org/abs/1905.11946",
+  "pdf": "https://arxiv.org/pdf/1905.11946",
+  "bibtex": "@misc{tan2019_arxiv:1905.11946,\n    title = {EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks},\n    author = {Mingxing Tan and Quoc V. Le},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11946},\n    pdf = {https://arxiv.org/pdf/1905.11946},\n    url = {https://arxiv.org/abs/1905.11946}\n}",
+  "source": "arxiv.org",
+  "date": 1563797218,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11946"
+}
