@@ -1,0 +1,18 @@
+{
+  "title": "Advances in Joint CTC-Attention based End-to-End Speech Recognition with a Deep CNN Encoder and RNN-LM",
+  "authors": [
+    "Takaaki Hori",
+    "Shinji Watanabe",
+    "Yu Zhang",
+    "William Chan"
+  ],
+  "abstract": "We present a state-of-the-art end-to-end Automatic Speech Recognition (ASR)\nmodel. We learn to listen and write characters with a joint Connectionist\nTemporal Classification (CTC) and attention-based encoder-decoder network. The\nencoder is a deep Convolutional Neural Network (CNN) based on the VGG network.\nThe CTC network sits on top of the encoder and is jointly trained with the\nattention-based decoder. During the beam search process, we combine the CTC\npredictions, the attention-based decoder predictions and a separately trained\nLSTM language model. We achieve a 5-10\\% error reduction compared to prior\nsystems on spontaneous Japanese and Chinese speech, and our end-to-end model\nbeats out traditional hybrid ASR systems.",
+  "id": "arxiv.1706.02737",
+  "url": "https://arxiv.org/abs/1706.02737",
+  "pdf": "https://arxiv.org/pdf/1706.02737",
+  "bibtex": "@misc{hori2017_arxiv:1706.02737,\n    title = {Advances in Joint CTC-Attention based End-to-End Speech Recognition with a Deep CNN Encoder and RNN-LM},\n    author = {Takaaki Hori and Shinji Watanabe and Yu Zhang and William Chan},\n    year = {2017},\n    archiveprefix = {arXiv},\n    eprint = {1706.02737},\n    pdf = {https://arxiv.org/pdf/1706.02737},\n    url = {https://arxiv.org/abs/1706.02737}\n}",
+  "source": "arxiv.org",
+  "date": 1563790127,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1706.02737"
+}
