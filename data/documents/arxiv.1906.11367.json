@@ -1,0 +1,17 @@
+{
+  "title": "Accelerating Large-Kernel Convolution Using Summed-Area Tables",
+  "authors": [
+    "Linguang Zhang",
+    "Maciej Halber",
+    "Szymon Rusinkiewicz"
+  ],
+  "abstract": "Expanding the receptive field to capture large-scale context is key to\nobtaining good performance in dense prediction tasks, such as human pose\nestimation. While many state-of-the-art fully-convolutional architectures\nenlarge the receptive field by reducing resolution using strided convolution or\npooling layers, the most straightforward strategy is adopting large filters.\nThis, however, is costly because of the quadratic increase in the number of\nparameters and multiply-add operations. In this work, we explore using\nlearnable box filters to allow for convolution with arbitrarily large kernel\nsize, while keeping the number of parameters per filter constant. In addition,\nwe use precomputed summed-area tables to make the computational cost of\nconvolution independent of the filter size. We adapt and incorporate the box\nfilter as a differentiable module in a fully-convolutional neural network, and\ndemonstrate its competitive performance on popular benchmarks for the task of\nhuman pose estimation.",
+  "id": "arxiv.1906.11367",
+  "url": "https://arxiv.org/abs/1906.11367",
+  "pdf": "https://arxiv.org/pdf/1906.11367",
+  "bibtex": "@misc{zhang2019_arxiv:1906.11367,\n    title = {Accelerating Large-Kernel Convolution Using Summed-Area Tables},\n    author = {Linguang Zhang and Maciej Halber and Szymon Rusinkiewicz},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.11367},\n    pdf = {https://arxiv.org/pdf/1906.11367},\n    url = {https://arxiv.org/abs/1906.11367}\n}",
+  "source": "arxiv.org",
+  "date": 1563788046,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.11367"
+}
