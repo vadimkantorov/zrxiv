@@ -1,0 +1,16 @@
+{
+  "title": "CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition",
+  "authors": [
+    "Linhao Dong",
+    "Bo Xu"
+  ],
+  "abstract": "Automatic speech recognition (ASR) system is undergoing an exciting pathway\nto be more simplified and practical with the spring up of various end-to-end\nmodels. However, the mainstream of them neglects the positioning of token\nboundaries from continuous speech, which is considered crucial in human\nlanguage learning and instant speech recognition. In this work, we propose\nContinuous Integrate-and-Fire (CIF), a 'soft' and 'monotonic'\nacoustic-to-linguistic alignment mechanism that addresses the boundary\npositioning by simulating the integrate-and-fire neuron model using continuous\nfunctions under the encoder-decoder framework. As the connection between the\nencoder and decoder, the CIF forwardly integrates the information in the\nencoded acoustic representations to determine a boundary and instantly fires\nthe integrated information to the decoder once a boundary is located. Multiple\neffective strategies are introduced to the CIF-based model to alleviate the\nproblems brought by the inaccurate positioning. Besides, multi-task learning is\nperformed during training and an external language model is incorporated during\ninference to further boost the model performance. Evaluated on multiple ASR\ndatasets that cover different languages and speech types, the CIF-based model\nshows stable convergence and competitive performance. Especially, it achieves a\nword error rate (WER) of 3.70% on the test-clean of Librispeech.",
+  "id": "arxiv.1905.11235",
+  "url": "https://arxiv.org/abs/1905.11235",
+  "pdf": "https://arxiv.org/pdf/1905.11235",
+  "bibtex": "@misc{dong2019_arxiv:1905.11235,\n    title = {CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition},\n    author = {Linhao Dong and Bo Xu},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11235},\n    pdf = {https://arxiv.org/pdf/1905.11235},\n    url = {https://arxiv.org/abs/1905.11235}\n}",
+  "source": "arxiv.org",
+  "date": 1563783774,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11235"
+}
