@@ -1,0 +1,17 @@
+{
+  "title": "Greedy Layerwise Learning Can Scale to ImageNet",
+  "authors": [
+    "Eugene Belilovsky",
+    "Michael Eickenberg",
+    "Edouard Oyallon"
+  ],
+  "abstract": "Shallow supervised 1-hidden layer neural networks have a number of favorable\nproperties that make them easier to interpret, analyze, and optimize than their\ndeep counterparts, but lack their representational power. Here we use 1-hidden\nlayer learning problems to sequentially build deep networks layer by layer,\nwhich can inherit properties from shallow networks. Contrary to previous\napproaches using shallow networks, we focus on problems where deep learning is\nreported as critical for success. We thus study CNNs on image classification\ntasks using the large-scale ImageNet dataset and the CIFAR-10 dataset. Using a\nsimple set of ideas for architecture and training we find that solving\nsequential 1-hidden-layer auxiliary problems lead to a CNN that exceeds AlexNet\nperformance on ImageNet. Extending this training methodology to construct\nindividual layers by solving 2-and-3-hidden layer auxiliary problems, we obtain\nan 11-layer network that exceeds several members of the VGG model family on\nImageNet, and can train a VGG-11 model to the same accuracy as end-to-end\nlearning. To our knowledge, this is the first competitive alternative to\nend-to-end training of CNNs that can scale to ImageNet. We illustrate several\ninteresting properties of these models theoretically and conduct a range of\nexperiments to study the properties this training induces on the intermediate\nlayers.",
+  "id": "arxiv.1812.11446",
+  "url": "https://arxiv.org/abs/1812.11446",
+  "pdf": "https://arxiv.org/pdf/1812.11446",
+  "bibtex": "@misc{belilovsky2018_arxiv:1812.11446,\n    title = {Greedy Layerwise Learning Can Scale to ImageNet},\n    author = {Eugene Belilovsky and Michael Eickenberg and Edouard Oyallon},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.11446},\n    pdf = {https://arxiv.org/pdf/1812.11446},\n    url = {https://arxiv.org/abs/1812.11446}\n}",
+  "source": "arxiv.org",
+  "date": 1563782714,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.11446"
+}
