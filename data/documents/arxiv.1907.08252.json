@@ -1,0 +1,16 @@
+{
+  "title": "Message passing on networks with loops",
+  "authors": [
+    "George T. Cantwell",
+    "M. E. J. Newman"
+  ],
+  "abstract": "In this paper we offer a solution to a long-standing problem in the study of\nnetworks. Message passing is a fundamental technique for calculations on\nnetworks and graphs. The first versions of the method appeared in the 1930s and\nover the decades it has been applied to a wide range of foundational problems\nin mathematics, physics, computer science, statistics, and machine learning,\nincluding Bayesian inference, spin models, coloring, satisfiability, graph\npartitioning, network epidemiology, and the calculation of matrix eigenvalues.\nDespite its wide use, however, it has long been recognized that the method has\na fundamental flaw: it only works on networks that are free of short loops.\nLoops introduce correlations that cause the method to give inaccurate answers\nat best, and to fail completely in the worst cases. Unfortunately, almost all\nreal-world networks contain many short loops, which limits the usefulness of\nthe message passing approach. In this paper we demonstrate how to rectify this\nshortcoming and create message passing methods that work on any network. We\ngive two example applications, one to the percolation properties of networks\nand the other to the calculation of the spectra of sparse matrices.",
+  "id": "arxiv.1907.08252",
+  "url": "https://arxiv.org/abs/1907.08252",
+  "pdf": "https://arxiv.org/pdf/1907.08252",
+  "bibtex": "@misc{cantwell2019_arxiv:1907.08252,\n    title = {Message passing on networks with loops},\n    author = {George T. Cantwell and M. E. J. Newman},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.08252},\n    pdf = {https://arxiv.org/pdf/1907.08252},\n    url = {https://arxiv.org/abs/1907.08252}\n}",
+  "source": "arxiv.org",
+  "date": 1563785087,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.08252"
+}
