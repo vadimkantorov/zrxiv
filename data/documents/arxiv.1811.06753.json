@@ -1,0 +1,17 @@
+{
+  "title": "Stochastic Adaptive Neural Architecture Search for Keyword Spotting",
+  "authors": [
+    "Tom Véniat",
+    "Olivier Schwander",
+    "Ludovic Denoyer"
+  ],
+  "abstract": "The problem of keyword spotting i.e. identifying keywords in a real-time\naudio stream is mainly solved by applying a neural network over successive\nsliding windows. Due to the difficulty of the task, baseline models are usually\nlarge, resulting in a high computational cost and energy consumption level. We\npropose a new method called SANAS (Stochastic Adaptive Neural Architecture\nSearch) which is able to adapt the architecture of the neural network\non-the-fly at inference time such that small architectures will be used when\nthe stream is easy to process (silence, low noise, ...) and bigger networks\nwill be used when the task becomes more difficult. We show that this adaptive\nmodel can be learned end-to-end by optimizing a trade-off between the\nprediction performance and the average computational cost per unit of time.\nExperiments on the Speech Commands dataset show that this approach leads to a\nhigh recognition level while being much faster (and/or energy saving) than\nclassical approaches where the network architecture is static.",
+  "id": "arxiv.1811.06753",
+  "url": "https://arxiv.org/abs/1811.06753",
+  "pdf": "https://arxiv.org/pdf/1811.06753",
+  "bibtex": "@misc{véniat2018_arxiv:1811.06753,\n    title = {Stochastic Adaptive Neural Architecture Search for Keyword Spotting},\n    author = {Tom Véniat and Olivier Schwander and Ludovic Denoyer},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1811.06753},\n    pdf = {https://arxiv.org/pdf/1811.06753},\n    url = {https://arxiv.org/abs/1811.06753}\n}",
+  "source": "arxiv.org",
+  "date": 1563782909,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1811.06753"
+}
