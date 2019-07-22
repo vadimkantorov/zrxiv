@@ -1,0 +1,16 @@
+{
+  "title": "Dense Prediction on Sequences with Time-Dilated Convolutions for Speech Recognition",
+  "authors": [
+    "Tom Sercu",
+    "Vaibhava Goel"
+  ],
+  "abstract": "In computer vision pixelwise dense prediction is the task of predicting a\nlabel for each pixel in the image. Convolutional neural networks achieve good\nperformance on this task, while being computationally efficient. In this paper\nwe carry these ideas over to the problem of assigning a sequence of labels to a\nset of speech frames, a task commonly known as framewise classification. We\nshow that dense prediction view of framewise classification offers several\nadvantages and insights, including computational efficiency and the ability to\napply batch normalization. When doing dense prediction we pay specific\nattention to strided pooling in time and introduce an asymmetric dilated\nconvolution, called time-dilated convolution, that allows for efficient and\nelegant implementation of pooling in time. We show results using time-dilated\nconvolutions in a very deep VGG-style CNN with batch normalization on the Hub5\nSwitchboard-2000 benchmark task. With a big n-gram language model, we achieve\n7.7% WER which is the best single model single-pass performance reported so\nfar.",
+  "id": "arxiv.1611.09288",
+  "url": "https://arxiv.org/abs/1611.09288",
+  "pdf": "https://arxiv.org/pdf/1611.09288",
+  "bibtex": "@misc{sercu2016_arxiv:1611.09288,\n    title = {Dense Prediction on Sequences with Time-Dilated Convolutions for Speech Recognition},\n    author = {Tom Sercu and Vaibhava Goel},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1611.09288},\n    pdf = {https://arxiv.org/pdf/1611.09288},\n    url = {https://arxiv.org/abs/1611.09288}\n}",
+  "source": "arxiv.org",
+  "date": 1563798074,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1611.09288"
+}
