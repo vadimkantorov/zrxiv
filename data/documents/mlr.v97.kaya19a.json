@@ -1,0 +1,16 @@
+{
+  "title": "Shallow-Deep Networks: Understanding and Mitigating Network Overthinking",
+  "authors": [
+    "Yigitcan Kaya",
+    "Sanghyun Hong",
+    "Tudor Dumitras"
+  ],
+  "abstract": "We characterize a prevalent weakness of deep neural networks (DNNs), ’overthinking’, which occurs when a DNN can reach correct predictions before its final layer. Overthinking is computationally wasteful, and it can also be destructive when, by the final layer, a correct prediction changes into a misclassification. Understanding overthinking requires studying how each prediction evolves during a DNN’s forward pass, which conventionally is opaque. For prediction transparency, we propose the Shallow-Deep Network (SDN), a generic modification to off-the-shelf DNNs that introduces internal classifiers. We apply SDN to four modern architectures, trained on three image classification tasks, to characterize the overthinking problem. We show that SDNs can mitigate the wasteful effect of overthinking with confidence-based early exits, which reduce the average inference cost by more than 50% and preserve the accuracy. We also find that the destructive effect occurs for 50% of misclassifications on natural inputs and that it can be induced, adversarially, with a recent backdooring attack. To mitigate this effect, we propose a new confusion metric to quantify the internal disagreements that will likely to lead to misclassifications.",
+  "id": "mlr.v97.kaya19a",
+  "url": "http://proceedings.mlr.press/v97/kaya19a.html",
+  "pdf": "http://proceedings.mlr.press/v97/kaya19a/kaya19a.pdf",
+  "bibtex": "@inproceedings{pmlr-v97-kaya19a,\n    title = {Shallow-Deep Networks: Understanding and Mitigating Network Overthinking},\n    author = {Yigitcan Kaya and Sanghyun Hong and Tudor Dumitras},\n    booktitle = {Proceedings of the 36th International Conference on Machine Learning},\n    year = {2019},\n    address = {Long Beach, California, USA},\n    editor = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},\n    month = {09--15 Jun},\n    pages = {3301--3310},\n    publisher = {PMLR},\n    series = {Proceedings of Machine Learning Research},\n    volume = {97},\n    pdf = {http://proceedings.mlr.press/v97/kaya19a/kaya19a.pdf},\n    url = {http://proceedings.mlr.press/v97/kaya19a.html}\n}",
+  "source": "mlr.press",
+  "date": 1563803522,
+  "tags": []
+}
