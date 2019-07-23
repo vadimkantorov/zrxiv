@@ -1,0 +1,22 @@
+{
+  "title": "Deep Mixture of Experts via Shallow Embedding",
+  "authors": [
+    "Xin Wang",
+    "Fisher Yu",
+    "Lisa Dunlap",
+    "Yi-An Ma",
+    "Ruth Wang",
+    "Azalia Mirhoseini",
+    "Trevor Darrell",
+    "Joseph E. Gonzalez"
+  ],
+  "abstract": "Larger networks generally have greater representational power at the cost of\nincreased computational complexity. Sparsifying such networks has been an\nactive area of research but has been generally limited to static regularization\nor dynamic approaches using reinforcement learning. We explore a mixture of\nexperts (MoE) approach to deep dynamic routing, which activates certain experts\nin the network on a per-example basis. Our novel DeepMoE architecture increases\nthe representational power of standard convolutional networks by adaptively\nsparsifying and recalibrating channel-wise features in each convolutional\nlayer. We employ a multi-headed sparse gating network to determine the\nselection and scaling of channels for each input, leveraging exponential\ncombinations of experts within a single convolutional network. Our proposed\narchitecture is evaluated on four benchmark datasets and tasks, and we show\nthat Deep-MoEs are able to achieve higher accuracy with lower computation than\nstandard convolutional networks.",
+  "id": "arxiv.1806.01531",
+  "url": "https://arxiv.org/abs/1806.01531",
+  "pdf": "https://arxiv.org/pdf/1806.01531",
+  "bibtex": "@misc{wang2018_arxiv:1806.01531,\n    title = {Deep Mixture of Experts via Shallow Embedding},\n    author = {Xin Wang and Fisher Yu and Lisa Dunlap and Yi-An Ma and Ruth Wang and Azalia Mirhoseini and Trevor Darrell and Joseph E. Gonzalez},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.01531},\n    pdf = {https://arxiv.org/pdf/1806.01531},\n    url = {https://arxiv.org/abs/1806.01531}\n}",
+  "source": "arxiv.org",
+  "date": 1563901867,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.01531"
+}
