@@ -1,0 +1,19 @@
+{
+  "title": "Universality and individuality in neural dynamics across large populations of recurrent networks",
+  "authors": [
+    "Niru Maheswaranathan",
+    "Alex H. Williams",
+    "Matthew D. Golub",
+    "Surya Ganguli",
+    "David Sussillo"
+  ],
+  "abstract": "Task-based modeling with recurrent neural networks (RNNs) has emerged as a\npopular way to infer the computational function of different brain regions.\nThese models are quantitatively assessed by comparing the low-dimensional\nneural representations of the model with the brain, for example using canonical\ncorrelation analysis (CCA). However, the nature of the detailed neurobiological\ninferences one can draw from such efforts remains elusive. For example, to what\nextent does training neural networks to solve common tasks uniquely determine\nthe network dynamics, independent of modeling architectural choices? Or\nalternatively, are the learned dynamics highly sensitive to different model\nchoices? Knowing the answer to these questions has strong implications for\nwhether and how we should use task-based RNN modeling to understand brain\ndynamics. To address these foundational questions, we study populations of\nthousands of networks, with commonly used RNN architectures, trained to solve\nneuroscientifically motivated tasks and characterize their nonlinear dynamics.\nWe find the geometry of the RNN representations can be highly sensitive to\ndifferent network architectures, yielding a cautionary tale for measures of\nsimilarity that rely representational geometry, such as CCA. Moreover, we find\nthat while the geometry of neural dynamics can vary greatly across\narchitectures, the underlying computational scaffold---the topological\nstructure of fixed points, transitions between them, limit cycles, and\nlinearized dynamics---often appears universal across all architectures.",
+  "id": "arxiv.1907.08549",
+  "url": "https://arxiv.org/abs/1907.08549",
+  "pdf": "https://arxiv.org/pdf/1907.08549",
+  "bibtex": "@misc{maheswaranathan2019_arxiv:1907.08549,\n    title = {Universality and individuality in neural dynamics across large populations of recurrent networks},\n    author = {Niru Maheswaranathan and Alex H. Williams and Matthew D. Golub and Surya Ganguli and David Sussillo},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.08549},\n    pdf = {https://arxiv.org/pdf/1907.08549},\n    url = {https://arxiv.org/abs/1907.08549}\n}",
+  "source": "arxiv.org",
+  "date": 1563907142,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.08549"
+}
