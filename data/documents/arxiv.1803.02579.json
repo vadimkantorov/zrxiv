@@ -1,0 +1,17 @@
+{
+  "title": "Concurrent Spatial and Channel Squeeze & Excitation in Fully Convolutional Networks",
+  "authors": [
+    "Abhijit Guha Roy",
+    "Nassir Navab",
+    "Christian Wachinger"
+  ],
+  "abstract": "Fully convolutional neural networks (F-CNNs) have set the state-of-the-art in\nimage segmentation for a plethora of applications. Architectural innovations\nwithin F-CNNs have mainly focused on improving spatial encoding or network\nconnectivity to aid gradient flow. In this paper, we explore an alternate\ndirection of recalibrating the feature maps adaptively, to boost meaningful\nfeatures, while suppressing weak ones. We draw inspiration from the recently\nproposed squeeze & excitation (SE) module for channel recalibration of feature\nmaps for image classification. Towards this end, we introduce three variants of\nSE modules for image segmentation, (i) squeezing spatially and exciting\nchannel-wise (cSE), (ii) squeezing channel-wise and exciting spatially (sSE)\nand (iii) concurrent spatial and channel squeeze & excitation (scSE). We\neffectively incorporate these SE modules within three different\nstate-of-the-art F-CNNs (DenseNet, SD-Net, U-Net) and observe consistent\nimprovement of performance across all architectures, while minimally effecting\nmodel complexity. Evaluations are performed on two challenging applications:\nwhole brain segmentation on MRI scans (Multi-Atlas Labelling Challenge Dataset)\nand organ segmentation on whole body contrast enhanced CT scans (Visceral\nDataset).",
+  "id": "arxiv.1803.02579",
+  "url": "https://arxiv.org/abs/1803.02579",
+  "pdf": "https://arxiv.org/pdf/1803.02579",
+  "bibtex": "@misc{roy2018_arxiv:1803.02579,\n    title = {Concurrent Spatial and Channel Squeeze & Excitation in Fully Convolutional Networks},\n    author = {Abhijit Guha Roy and Nassir Navab and Christian Wachinger},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.02579},\n    pdf = {https://arxiv.org/pdf/1803.02579},\n    url = {https://arxiv.org/abs/1803.02579}\n}",
+  "source": "arxiv.org",
+  "date": 1563870736,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1803.02579"
+}
