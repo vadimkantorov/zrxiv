@@ -1,0 +1,18 @@
+{
+  "title": "Metalearned Neural Memory",
+  "authors": [
+    "Tsendsuren Munkhdalai",
+    "Alessandro Sordoni",
+    "Tong Wang",
+    "Adam Trischler"
+  ],
+  "abstract": "We augment recurrent neural networks with an external memory mechanism that\nbuilds upon recent progress in metalearning. We conceptualize this memory as a\nrapidly adaptable function that we parameterize as a deep neural network.\nReading from the neural memory function amounts to pushing an input (the key\nvector) through the function to produce an output (the value vector). Writing\nto memory means changing the function; specifically, updating the parameters of\nthe neural network to encode desired information. We leverage training and\nalgorithmic techniques from metalearning to update the neural memory function\nin one shot. The proposed memory-augmented model achieves strong performance on\na variety of learning problems, from supervised question answering to\nreinforcement learning.",
+  "id": "arxiv.1907.09720",
+  "url": "https://arxiv.org/abs/1907.09720",
+  "pdf": "https://arxiv.org/pdf/1907.09720",
+  "bibtex": "@misc{munkhdalai2019_arxiv:1907.09720,\n    title = {Metalearned Neural Memory},\n    author = {Tsendsuren Munkhdalai and Alessandro Sordoni and Tong Wang and Adam Trischler},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.09720},\n    pdf = {https://arxiv.org/pdf/1907.09720},\n    url = {https://arxiv.org/abs/1907.09720}\n}",
+  "source": "arxiv.org",
+  "date": 1564001027,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.09720v1"
+}
