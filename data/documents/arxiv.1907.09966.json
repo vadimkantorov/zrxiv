@@ -1,0 +1,15 @@
+{
+  "title": "Fundamental Structures in Dynamic Communication Networks",
+  "authors": [
+    "Sune Lehmann"
+  ],
+  "abstract": "In this paper I introduce a framework for modeling temporal communication\nnetworks and dynamical processes unfolding on such networks. The framework\noriginates from the realization that there is a meaningful division of temporal\ncommunication networks into six dynamic classes, where the class of a network\nis determined by its generating process. In particular, each class is\ncharacterized by a fundamental structure: a temporal-topological network motif,\nwhich corresponds to the network representation of communication events in that\nclass of network. These fundamental structures constrain network\nconfigurations: only certain configurations are possible within a dynamic\nclass. In this way the framework presented here highlights strong constraints\non network structures, which simplify analyses and shape network flows.\nTherefore the fundamental structures hold the potential to impact how we model\ntemporal networks overall. I argue below that networks within the same class\ncan be meaningfully compared, and modeled using similar techniques, but that\nintegrating statistics across networks belonging to separate classes is not\nmeaningful in general. This paper presents a framework for how to analyze\nnetworks in general, rather than a particular result of analyzing a particular\ndataset. I hope, however, that readers interested in modeling temporal networks\nwill find the ideas and discussion useful in spite of the paper's more\nconceptual nature.",
+  "id": "arxiv.1907.09966",
+  "url": "https://arxiv.org/abs/1907.09966",
+  "pdf": "https://arxiv.org/pdf/1907.09966",
+  "bibtex": "@misc{lehmann2019_arxiv:1907.09966,\n    title = {Fundamental Structures in Dynamic Communication Networks},\n    author = {Sune Lehmann},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.09966},\n    pdf = {https://arxiv.org/pdf/1907.09966},\n    url = {https://arxiv.org/abs/1907.09966}\n}",
+  "source": "arxiv.org",
+  "date": 1563997244,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.09966"
+}
