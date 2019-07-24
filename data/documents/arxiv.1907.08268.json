@@ -1,0 +1,19 @@
+{
+  "title": "Discrete Object Generation with Reversible Inductive Construction",
+  "authors": [
+    "Ari Seff",
+    "Wenda Zhou",
+    "Farhan Damani",
+    "Abigail Doyle",
+    "Ryan P. Adams"
+  ],
+  "abstract": "The success of generative modeling in continuous domains has led to a surge\nof interest in generating discrete data such as molecules, source code, and\ngraphs. However, construction histories for these discrete objects are\ntypically not unique and so generative models must reason about intractably\nlarge spaces in order to learn. Additionally, structured discrete domains are\noften characterized by strict constraints on what constitutes a valid object\nand generative models must respect these requirements in order to produce\nuseful novel samples. Here, we present a generative model for discrete objects\nemploying a Markov chain where transitions are restricted to a set of local\noperations that preserve validity. Building off of generative interpretations\nof denoising autoencoders, the Markov chain alternates between producing 1) a\nsequence of corrupted objects that are valid but not from the data\ndistribution, and 2) a learned reconstruction distribution that attempts to fix\nthe corruptions while also preserving validity. This approach constrains the\ngenerative model to only produce valid objects, requires the learner to only\ndiscover local modifications to the objects, and avoids marginalization over an\nunknown and potentially large space of construction histories. We evaluate the\nproposed approach on two highly structured discrete domains, molecules and\nLaman graphs, and find that it compares favorably to alternative methods at\ncapturing distributional statistics for a host of semantically relevant\nmetrics.",
+  "id": "arxiv.1907.08268",
+  "url": "https://arxiv.org/abs/1907.08268",
+  "pdf": "https://arxiv.org/pdf/1907.08268",
+  "bibtex": "@misc{seff2019_arxiv:1907.08268,\n    title = {Discrete Object Generation with Reversible Inductive Construction},\n    author = {Ari Seff and Wenda Zhou and Farhan Damani and Abigail Doyle and Ryan P. Adams},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.08268},\n    pdf = {https://arxiv.org/pdf/1907.08268},\n    url = {https://arxiv.org/abs/1907.08268}\n}",
+  "source": "arxiv.org",
+  "date": 1563997353,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.08268"
+}
