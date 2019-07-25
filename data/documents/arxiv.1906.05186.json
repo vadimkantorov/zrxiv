@@ -1,0 +1,19 @@
+{
+  "title": "Boosting Few-Shot Visual Learning with Self-Supervision",
+  "authors": [
+    "Spyros Gidaris",
+    "Andrei Bursuc",
+    "Nikos Komodakis",
+    "Patrick Pérez",
+    "Matthieu Cord"
+  ],
+  "abstract": "Few-shot learning and self-supervised learning address different facets of\nthe same problem: how to train a model with little or no labeled data. Few-shot\nlearning aims for optimization methods and models that can learn efficiently to\nrecognize patterns in the low data regime. Self-supervised learning focuses\ninstead on unlabeled data and looks into it for the supervisory signal to feed\nhigh capacity deep neural networks. In this work we exploit the complementarity\nof these two domains and propose an approach for improving few-shot learning\nthrough self-supervision. We use self-supervision as an auxiliary task in a\nfew-shot learning pipeline, enabling feature extractors to learn richer and\nmore transferable visual representations while still using few annotated\nsamples. Through self-supervision, our approach can be naturally extended\ntowards using diverse unlabeled data from other datasets in the few-shot\nsetting. We report consistent improvements across an array of architectures,\ndatasets and self-supervision techniques.",
+  "id": "arxiv.1906.05186",
+  "url": "https://arxiv.org/abs/1906.05186",
+  "pdf": "https://arxiv.org/pdf/1906.05186",
+  "bibtex": "@misc{gidaris2019_arxiv:1906.05186,\n    title = {Boosting Few-Shot Visual Learning with Self-Supervision},\n    author = {Spyros Gidaris and Andrei Bursuc and Nikos Komodakis and Patrick Pérez and Matthieu Cord},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.05186},\n    pdf = {https://arxiv.org/pdf/1906.05186},\n    url = {https://arxiv.org/abs/1906.05186}\n}",
+  "source": "arxiv.org",
+  "date": 1564043534,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.05186"
+}
