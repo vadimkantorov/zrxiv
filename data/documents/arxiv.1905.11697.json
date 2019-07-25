@@ -1,0 +1,16 @@
+{
+  "title": "Deep Scale-spaces: Equivariance Over Scale",
+  "authors": [
+    "Daniel E. Worrall",
+    "Max Welling"
+  ],
+  "abstract": "We introduce deep scale-spaces (DSS), a generalization of convolutional\nneural networks, exploiting the scale symmetry structure of conventional image\nrecognition tasks. Put plainly, the class of an image is invariant to the scale\nat which it is viewed. We construct scale equivariant cross-correlations based\non a principled extension of convolutions, grounded in the theory of\nscale-spaces and semigroups. As a very basic operation, these\ncross-correlations can be used in almost any modern deep learning architecture\nin a plug-and-play manner. We demonstrate our networks on the Patch Camelyon\nand Cityscapes datasets, to prove their utility and perform introspective\nstudies to further understand their properties.",
+  "id": "arxiv.1905.11697",
+  "url": "https://arxiv.org/abs/1905.11697",
+  "pdf": "https://arxiv.org/pdf/1905.11697",
+  "bibtex": "@misc{worrall2019_arxiv:1905.11697,\n    title = {Deep Scale-spaces: Equivariance Over Scale},\n    author = {Daniel E. Worrall and Max Welling},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11697},\n    pdf = {https://arxiv.org/pdf/1905.11697},\n    url = {https://arxiv.org/abs/1905.11697}\n}",
+  "source": "arxiv.org",
+  "date": 1564050258,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11697"
+}
