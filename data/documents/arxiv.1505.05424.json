@@ -1,0 +1,18 @@
+{
+  "title": "Weight Uncertainty in Neural Networks",
+  "authors": [
+    "Charles Blundell",
+    "Julien Cornebise",
+    "Koray Kavukcuoglu",
+    "Daan Wierstra"
+  ],
+  "abstract": "We introduce a new, efficient, principled and backpropagation-compatible\nalgorithm for learning a probability distribution on the weights of a neural\nnetwork, called Bayes by Backprop. It regularises the weights by minimising a\ncompression cost, known as the variational free energy or the expected lower\nbound on the marginal likelihood. We show that this principled kind of\nregularisation yields comparable performance to dropout on MNIST\nclassification. We then demonstrate how the learnt uncertainty in the weights\ncan be used to improve generalisation in non-linear regression problems, and\nhow this weight uncertainty can be used to drive the exploration-exploitation\ntrade-off in reinforcement learning.",
+  "id": "arxiv.1505.05424",
+  "url": "https://arxiv.org/abs/1505.05424",
+  "pdf": "https://arxiv.org/pdf/1505.05424",
+  "bibtex": "@misc{blundell2015_arxiv:1505.05424,\n    title = {Weight Uncertainty in Neural Networks},\n    author = {Charles Blundell and Julien Cornebise and Koray Kavukcuoglu and Daan Wierstra},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1505.05424},\n    pdf = {https://arxiv.org/pdf/1505.05424},\n    url = {https://arxiv.org/abs/1505.05424}\n}",
+  "source": "arxiv.org",
+  "date": 1564233978,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1505.05424"
+}
