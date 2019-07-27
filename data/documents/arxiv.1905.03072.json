@@ -1,0 +1,22 @@
+{
+  "title": "RWTH ASR Systems for LibriSpeech: Hybrid vs Attention -- w/o Data Augmentation",
+  "authors": [
+    "Christoph Lüscher",
+    "Eugen Beck",
+    "Kazuki Irie",
+    "Markus Kitza",
+    "Wilfried Michel",
+    "Albert Zeyer",
+    "Ralf Schlüter",
+    "Hermann Ney"
+  ],
+  "abstract": "We present state-of-the-art automatic speech recognition (ASR) systems\nemploying a standard hybrid DNN/HMM architecture compared to an attention-based\nencoder-decoder design for the LibriSpeech task. Detailed descriptions of the\nsystem development, including model design, pretraining schemes, training\nschedules, and optimization approaches are provided for both system\narchitectures. Both hybrid DNN/HMM and attention-based systems employ\nbi-directional LSTMs for acoustic modeling/encoding. For language modeling, we\nemploy both LSTM and Transformer based architectures. All our systems are built\nusing RWTHs open-source toolkits RASR and RETURNN. To the best knowledge of the\nauthors, the results obtained when training on the full LibriSpeech training\nset, are the best published currently, both for the hybrid DNN/HMM and the\nattention-based systems. Our single hybrid system even outperforms previous\nresults obtained from combining eight single systems. Our comparison shows that\non the LibriSpeech 960h task, the hybrid DNN/HMM system outperforms the\nattention-based system by 15% relative on the clean and 40% relative on the\nother test sets in terms of word error rate. Moreover, experiments on a reduced\n100h-subset of the LibriSpeech training corpus even show a more pronounced\nmargin between the hybrid DNN/HMM and attention-based architectures.",
+  "id": "arxiv.1905.03072",
+  "url": "https://arxiv.org/abs/1905.03072",
+  "pdf": "https://arxiv.org/pdf/1905.03072",
+  "bibtex": "@misc{lüscher2019_arxiv:1905.03072,\n    title = {RWTH ASR Systems for LibriSpeech: Hybrid vs Attention -- w/o Data Augmentation},\n    author = {Christoph Lüscher and Eugen Beck and Kazuki Irie and Markus Kitza and Wilfried Michel and Albert Zeyer and Ralf Schlüter and Hermann Ney},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.03072},\n    pdf = {https://arxiv.org/pdf/1905.03072},\n    url = {https://arxiv.org/abs/1905.03072}\n}",
+  "source": "arxiv.org",
+  "date": 1564242850,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.03072"
+}
