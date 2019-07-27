@@ -1,0 +1,18 @@
+{
+  "title": "Sequence-to-Sequence Speech Recognition with Time-Depth Separable Convolutions",
+  "authors": [
+    "Awni Hannun",
+    "Ann Lee",
+    "Qiantong Xu",
+    "Ronan Collobert"
+  ],
+  "abstract": "We propose a fully convolutional sequence-to-sequence encoder architecture\nwith a simple and efficient decoder. Our model improves WER on LibriSpeech\nwhile being an order of magnitude more efficient than a strong RNN baseline.\nKey to our approach is a time-depth separable convolution block which\ndramatically reduces the number of parameters in the model while keeping the\nreceptive field large. We also give a stable and efficient beam search\ninference procedure which allows us to effectively integrate a language model.\nCoupled with a convolutional language model, our time-depth separable\nconvolution architecture improves by more than 22% relative WER over the best\npreviously reported sequence-to-sequence results on the noisy LibriSpeech test\nset.",
+  "id": "arxiv.1904.02619",
+  "url": "https://arxiv.org/abs/1904.02619",
+  "pdf": "https://arxiv.org/pdf/1904.02619",
+  "bibtex": "@misc{hannun2019_arxiv:1904.02619,\n    title = {Sequence-to-Sequence Speech Recognition with Time-Depth Separable Convolutions},\n    author = {Awni Hannun and Ann Lee and Qiantong Xu and Ronan Collobert},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.02619},\n    pdf = {https://arxiv.org/pdf/1904.02619},\n    url = {https://arxiv.org/abs/1904.02619}\n}",
+  "source": "arxiv.org",
+  "date": 1564224216,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.02619"
+}
