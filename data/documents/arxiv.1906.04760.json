@@ -1,0 +1,19 @@
+{
+  "title": "Unsupervised Discovery of Gendered Language through Latent-Variable Modeling",
+  "authors": [
+    "Alexander Hoyle",
+    "Wolf-Sonkin",
+    "Hanna Wallach",
+    "Isabelle Augenstein",
+    "Ryan Cotterell"
+  ],
+  "abstract": "Studying the ways in which language is gendered has long been an area of\ninterest in sociolinguistics. Studies have explored, for example, the speech of\nmale and female characters in film and the language used to describe male and\nfemale politicians. In this paper, we aim not to merely study this phenomenon\nqualitatively, but instead to quantify the degree to which the language used to\ndescribe men and women is different and, moreover, different in a positive or\nnegative way. To that end, we introduce a generative latent-variable model that\njointly represents adjective (or verb) choice, with its sentiment, given the\nnatural gender of a head (or dependent) noun. We find that there are\nsignificant differences between descriptions of male and female nouns and that\nthese differences align with common gender stereotypes: Positive adjectives\nused to describe women are more often related to their bodies than adjectives\nused to describe men.",
+  "id": "arxiv.1906.04760",
+  "url": "https://arxiv.org/abs/1906.04760",
+  "pdf": "https://arxiv.org/pdf/1906.04760",
+  "bibtex": "@misc{hoyle2019_arxiv:1906.04760,\n    title = {Unsupervised Discovery of Gendered Language through Latent-Variable Modeling},\n    author = {Alexander Hoyle and Wolf-Sonkin and Hanna Wallach and Isabelle Augenstein and Ryan Cotterell},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.04760},\n    pdf = {https://arxiv.org/pdf/1906.04760},\n    url = {https://arxiv.org/abs/1906.04760}\n}",
+  "source": "arxiv.org",
+  "date": 1564219841,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.04760"
+}
