@@ -1,0 +1,18 @@
+{
+  "title": "GENESIS: Generative Scene Inference and Sampling with Object-Centric Latent Representations",
+  "authors": [
+    "Martin Engelcke",
+    "Adam R. Kosiorek",
+    "Oiwi Parker Jones",
+    "Ingmar Posner"
+  ],
+  "abstract": "Generative models are emerging as promising tools in robotics and\nreinforcement learning. Yet, even though tasks in these domains typically\ninvolve distinct objects, most state-of-the-art methods do not explicitly\ncapture the compositional nature of visual scenes. Two exceptions, MONet and\nIODINE, decompose scenes into objects in an unsupervised fashion via a set of\nlatent variables. Their underlying generative processes, however, do not\naccount for component interactions. Hence, neither of them allows for\nprincipled sampling of coherent scenes. Here we present GENESIS, the first\nobject-centric generative model of visual scenes capable of both decomposing\nand generating complete scenes by explicitly capturing relationships between\nscene components. GENESIS parameterises a spatial GMM over pixels which is\nencoded by component-wise latent variables that are inferred sequentially or\nsampled from an autoregressive prior. We train GENESIS on two publicly\navailable datasets and probe the information in the latent representations\nthrough a set of classification tasks, outperforming several baselines.",
+  "id": "arxiv.1907.13052",
+  "url": "https://arxiv.org/abs/1907.13052",
+  "pdf": "https://arxiv.org/pdf/1907.13052",
+  "bibtex": "@misc{engelcke2019_arxiv:1907.13052,\n    title = {GENESIS: Generative Scene Inference and Sampling with Object-Centric Latent Representations},\n    author = {Martin Engelcke and Adam R. Kosiorek and Oiwi Parker Jones and Ingmar Posner},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.13052},\n    pdf = {https://arxiv.org/pdf/1907.13052},\n    url = {https://arxiv.org/abs/1907.13052}\n}",
+  "source": "arxiv.org",
+  "date": 1564563879,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.13052"
+}
