@@ -1,0 +1,19 @@
+{
+  "title": "End-to-end Recurrent Multi-Object Tracking and Trajectory Prediction with Relational Reasoning",
+  "authors": [
+    "Fabian B. Fuchs",
+    "Adam R. Kosiorek",
+    "Li Sun",
+    "Oiwi Parker Jones",
+    "Ingmar Posner"
+  ],
+  "abstract": "The majority of contemporary object-tracking approaches used in autonomous\nvehicles do not model interactions between objects. This contrasts with the\nfact that objects' paths are not independent: a cyclist might abruptly deviate\nfrom a previously planned trajectory in order to avoid colliding with a car.\nBuilding upon HART, a neural, class-agnostic single-object tracker, we\nintroduce a multi-object tracking method MOHART capable of relational\nreasoning. Importantly, the entire system, including the understanding of\ninteractions and relations between objects, is class-agnostic and learned\nsimultaneously in an end-to-end fashion. We find that the addition of\nrelational-reasoning capabilities to HART leads to consistent performance gains\nin tracking as well as future trajectory prediction on several real-world\ndatasets (MOTChallenge, UA-DETRAC, and Stanford Drone dataset), particularly in\nthe presence of ego-motion, occlusions, crowded scenes, and faulty sensor\ninputs. Finally, based on controlled simulations, we propose that a comparison\nof MOHART and HART may be used as a novel way to measure the degree to which\nthe objects in a video depend upon each other as they move together through\ntime.",
+  "id": "arxiv.1907.12887",
+  "url": "https://arxiv.org/abs/1907.12887",
+  "pdf": "https://arxiv.org/pdf/1907.12887",
+  "bibtex": "@misc{fuchs2019_arxiv:1907.12887,\n    title = {End-to-end Recurrent Multi-Object Tracking and Trajectory Prediction with Relational Reasoning},\n    author = {Fabian B. Fuchs and Adam R. Kosiorek and Li Sun and Oiwi Parker Jones and Ingmar Posner},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.12887},\n    pdf = {https://arxiv.org/pdf/1907.12887},\n    url = {https://arxiv.org/abs/1907.12887}\n}",
+  "source": "arxiv.org",
+  "date": 1564578875,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.12887"
+}
