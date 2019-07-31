@@ -1,0 +1,24 @@
+{
+  "title": "Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis",
+  "authors": [
+    "Yuxuan Wang",
+    "Daisy Stanton",
+    "Yu Zhang",
+    "RJ Skerry-Ryan",
+    "Eric Battenberg",
+    "Joel Shor",
+    "Ying Xiao",
+    "Fei Ren",
+    "Ye Jia",
+    "Rif A. Saurous"
+  ],
+  "abstract": "In this work, we propose \"global style tokens\" (GSTs), a bank of embeddings\nthat are jointly trained within Tacotron, a state-of-the-art end-to-end speech\nsynthesis system. The embeddings are trained with no explicit labels, yet learn\nto model a large range of acoustic expressiveness. GSTs lead to a rich set of\nsignificant results. The soft interpretable \"labels\" they generate can be used\nto control synthesis in novel ways, such as varying speed and speaking style -\nindependently of the text content. They can also be used for style transfer,\nreplicating the speaking style of a single audio clip across an entire\nlong-form text corpus. When trained on noisy, unlabeled found data, GSTs learn\nto factorize noise and speaker identity, providing a path towards highly\nscalable but robust speech synthesis.",
+  "id": "arxiv.1803.09017",
+  "url": "https://arxiv.org/abs/1803.09017",
+  "pdf": "https://arxiv.org/pdf/1803.09017",
+  "bibtex": "@misc{wang2018_arxiv:1803.09017,\n    title = {Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis},\n    author = {Yuxuan Wang and Daisy Stanton and Yu Zhang and RJ Skerry-Ryan and Eric Battenberg and Joel Shor and Ying Xiao and Fei Ren and Ye Jia and Rif A. Saurous},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1803.09017},\n    pdf = {https://arxiv.org/pdf/1803.09017},\n    url = {https://arxiv.org/abs/1803.09017}\n}",
+  "source": "arxiv.org",
+  "date": 1564571593,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1803.09017"
+}
