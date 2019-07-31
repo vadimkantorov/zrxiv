@@ -1,0 +1,20 @@
+{
+  "title": "Moment Matching for Multi-Source Domain Adaptation",
+  "authors": [
+    "Xingchao Peng",
+    "Qinxun Bai",
+    "Xide Xia",
+    "Zijun Huang",
+    "Kate Saenko",
+    "Bo Wang"
+  ],
+  "abstract": "Conventional unsupervised domain adaptation (UDA) assumes that training data\nare sampled from a single domain. This neglects the more practical scenario\nwhere training data are collected from multiple sources, requiring multi-source\ndomain adaptation. We make three major contributions towards addressing this\nproblem. First, we collect and annotate by far the largest UDA dataset with six\ndomains and about 0.6 million images distributed among 345 categories,\naddressing the gap in data availability for multi-source UDA research. Second,\nwe propose a new deep learning approach, Moment Matching for Multi-Source\nDomain Adaptation M3SDA, which aims to transfer knowledge learned from multiple\nlabeled source domains to an unlabeled target domain by dynamically aligning\nmoments of their feature distributions. Third, we provide new theoretical\ninsight specifically for moment matching approaches in both single and multiple\nsource domain adaptation. Extensive experiments are conducted to demonstrate\nthe power of our new dataset in benchmarking state-of-the-art multi-source\ndomain adaptation methods, as well as the advantage of our proposed model.",
+  "id": "arxiv.1812.01754",
+  "url": "https://arxiv.org/abs/1812.01754",
+  "pdf": "https://arxiv.org/pdf/1812.01754",
+  "bibtex": "@misc{peng2018_arxiv:1812.01754,\n    title = {Moment Matching for Multi-Source Domain Adaptation},\n    author = {Xingchao Peng and Qinxun Bai and Xide Xia and Zijun Huang and Kate Saenko and Bo Wang},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.01754},\n    pdf = {https://arxiv.org/pdf/1812.01754},\n    url = {https://arxiv.org/abs/1812.01754}\n}",
+  "source": "arxiv.org",
+  "date": 1564553523,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.01754"
+}
