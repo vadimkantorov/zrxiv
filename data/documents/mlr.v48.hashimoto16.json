@@ -1,0 +1,16 @@
+{
+  "title": "Learning Population-Level Diffusions with Generative RNNs",
+  "authors": [
+    "Tatsunori Hashimoto",
+    "David Gifford",
+    "Tommi Jaakkola"
+  ],
+  "abstract": "We estimate stochastic processes that govern the dynamics of evolving populations such as cell differentiation. The problem is challenging since longitudinal trajectory measurements of individuals in a population are rarely available due to experimental cost and/or privacy. We show that cross-sectional samples from an evolving population suffice for recovery within a class of processes even if samples are available only at a few distinct time points. We provide a stratified analysis of recoverability conditions, and establish that reversibility is sufficient for recoverability. For estimation, we derive a natural loss and regularization, and parameterize the processes as diffusive recurrent neural networks. We demonstrate the approach in the context of uncovering complex cellular dynamics known as the ‘epigenetic landscape’ from existing biological assays.",
+  "id": "mlr.v48.hashimoto16",
+  "url": "http://proceedings.mlr.press/v48/hashimoto16.html",
+  "pdf": "http://proceedings.mlr.press/v48/hashimoto16.pdf",
+  "bibtex": "@inproceedings{pmlr-v48-hashimoto16,\n    title = {Learning Population-Level Diffusions with Generative RNNs},\n    author = {Tatsunori Hashimoto and David Gifford and Tommi Jaakkola},\n    booktitle = {Proceedings of The 33rd International Conference on Machine Learning},\n    year = {2016},\n    address = {New York, New York, USA},\n    editor = {Maria Florina Balcan and Kilian Q. Weinberger},\n    month = {20--22 Jun},\n    pages = {2417--2426},\n    publisher = {PMLR},\n    series = {Proceedings of Machine Learning Research},\n    volume = {48},\n    pdf = {http://proceedings.mlr.press/v48/hashimoto16.pdf},\n    url = {http://proceedings.mlr.press/v48/hashimoto16.html}\n}",
+  "source": "mlr.press",
+  "date": 1564597768,
+  "tags": []
+}
