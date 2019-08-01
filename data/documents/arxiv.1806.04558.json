@@ -1,0 +1,25 @@
+{
+  "title": "Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis",
+  "authors": [
+    "Ye Jia",
+    "Yu Zhang",
+    "Ron J. Weiss",
+    "Quan Wang",
+    "Jonathan Shen",
+    "Fei Ren",
+    "Zhifeng Chen",
+    "Patrick Nguyen",
+    "Ruoming Pang",
+    "Ignacio Lopez Moreno",
+    "Yonghui Wu"
+  ],
+  "abstract": "We describe a neural network-based system for text-to-speech (TTS) synthesis\nthat is able to generate speech audio in the voice of many different speakers,\nincluding those unseen during training. Our system consists of three\nindependently trained components: (1) a speaker encoder network, trained on a\nspeaker verification task using an independent dataset of noisy speech from\nthousands of speakers without transcripts, to generate a fixed-dimensional\nembedding vector from seconds of reference speech from a target speaker; (2) a\nsequence-to-sequence synthesis network based on Tacotron 2, which generates a\nmel spectrogram from text, conditioned on the speaker embedding; (3) an\nauto-regressive WaveNet-based vocoder that converts the mel spectrogram into a\nsequence of time domain waveform samples. We demonstrate that the proposed\nmodel is able to transfer the knowledge of speaker variability learned by the\ndiscriminatively-trained speaker encoder to the new task, and is able to\nsynthesize natural speech from speakers that were not seen during training. We\nquantify the importance of training the speaker encoder on a large and diverse\nspeaker set in order to obtain the best generalization performance. Finally, we\nshow that randomly sampled speaker embeddings can be used to synthesize speech\nin the voice of novel speakers dissimilar from those used in training,\nindicating that the model has learned a high quality speaker representation.",
+  "id": "arxiv.1806.04558",
+  "url": "https://arxiv.org/abs/1806.04558",
+  "pdf": "https://arxiv.org/pdf/1806.04558",
+  "bibtex": "@misc{jia2018_arxiv:1806.04558,\n    title = {Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis},\n    author = {Ye Jia and Yu Zhang and Ron J. Weiss and Quan Wang and Jonathan Shen and Fei Ren and Zhifeng Chen and Patrick Nguyen and Ruoming Pang and Ignacio Lopez Moreno and Yonghui Wu},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.04558},\n    pdf = {https://arxiv.org/pdf/1806.04558},\n    url = {https://arxiv.org/abs/1806.04558}\n}",
+  "source": "arxiv.org",
+  "date": 1564675602,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.04558"
+}
