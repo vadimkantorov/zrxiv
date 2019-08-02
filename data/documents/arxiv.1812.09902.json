@@ -1,0 +1,18 @@
+{
+  "title": "Invariant and Equivariant Graph Networks",
+  "authors": [
+    "Haggai Maron",
+    "Heli Ben-Hamu",
+    "Nadav Shamir",
+    "Yaron Lipman"
+  ],
+  "abstract": "Invariant and equivariant networks have been successfully used for learning\nimages, sets, point clouds, and graphs. A basic challenge in developing such\nnetworks is finding the maximal collection of invariant and equivariant linear\nlayers. Although this question is answered for the first three examples (for\npopular transformations, at-least), a full characterization of invariant and\nequivariant linear layers for graphs is not known.\n  In this paper we provide a characterization of all permutation invariant and\nequivariant linear layers for (hyper-)graph data, and show that their\ndimension, in case of edge-value graph data, is 2 and 15, respectively. More\ngenerally, for graph data defined on k-tuples of nodes, the dimension is the\nk-th and 2k-th Bell numbers. Orthogonal bases for the layers are computed,\nincluding generalization to multi-graph data. The constant number of basis\nelements and their characteristics allow successfully applying the networks to\ndifferent size graphs. From the theoretical point of view, our results\ngeneralize and unify recent advancement in equivariant deep learning. In\nparticular, we show that our model is capable of approximating any message\npassing neural network\n  Applying these new linear layers in a simple deep neural network framework is\nshown to achieve comparable results to state-of-the-art and to have better\nexpressivity than previous invariant and equivariant bases.",
+  "id": "arxiv.1812.09902",
+  "url": "https://arxiv.org/abs/1812.09902",
+  "pdf": "https://arxiv.org/pdf/1812.09902",
+  "bibtex": "@misc{maron2018_arxiv:1812.09902,\n    title = {Invariant and Equivariant Graph Networks},\n    author = {Haggai Maron and Heli Ben-Hamu and Nadav Shamir and Yaron Lipman},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1812.09902},\n    pdf = {https://arxiv.org/pdf/1812.09902},\n    url = {https://arxiv.org/abs/1812.09902}\n}",
+  "source": "arxiv.org",
+  "date": 1564762165,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1812.09902"
+}
