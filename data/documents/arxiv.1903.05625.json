@@ -1,0 +1,17 @@
+{
+  "title": "Tracking without bells and whistles",
+  "authors": [
+    "Philipp Bergmann",
+    "Tim Meinhardt",
+    "Laura Leal-Taixe"
+  ],
+  "abstract": "The problem of tracking multiple objects in a video sequence poses several\nchallenging tasks. For tracking-by-detection these include object\nre-identification, motion pre diction and dealing with occlusions. We present a\ntracker (without bells and whistles) that accomplishes tracking without\nspecifically targeting any of these tasks, in particular, we perform no\ntraining or optimization on tracking data. To this end, we exploit the bounding\nbox regression of an object detector to predict the position of an object in\nthe next frame, thereby converting a detector into a Tracktor. We demonstrate\nthe extensibility of our Tracktor and provide a new state-of-the-art on three\nmulti-object tracking benchmarks by extending it with a straightforward\nre-identification and camera motion compensation. We then perform an analysis\non the performance and failure cases of several state-of-the-art tracking\nmethods in comparison to our Tracktor. Surprisingly, none of the dedicated\ntracking methods are considerably better in dealing with complex tracking\nscenarios, namely, small and occluded objects or missing detections. However,\nour approach tackles most of the easy tracking scenarios. Therefore, we\nmotivate our approach as a new tracking paradigm and point out promising future\nresearch directions. Overall, we show a Tracktor can perform better tracking\nthan any current tracking method and expose remaining and unsolved tracking\nchallenges.",
+  "id": "arxiv.1903.05625",
+  "url": "https://arxiv.org/abs/1903.05625",
+  "pdf": "https://arxiv.org/pdf/1903.05625",
+  "bibtex": "@misc{bergmann2019_arxiv:1903.05625,\n    title = {Tracking without bells and whistles},\n    author = {Philipp Bergmann and Tim Meinhardt and Laura Leal-Taixe},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1903.05625},\n    pdf = {https://arxiv.org/pdf/1903.05625},\n    url = {https://arxiv.org/abs/1903.05625}\n}",
+  "source": "arxiv.org",
+  "date": 1564764921,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1903.05625"
+}
