@@ -1,0 +1,16 @@
+{
+  "title": "Sorting out typicality with the inverse moment matrix SOS polynomial",
+  "authors": [
+    "Jean-Bernard Lasserre",
+    "Edouard Pauwels"
+  ],
+  "abstract": "We study a surprising phenomenon related to the representation of a cloud of\ndata points using polynomials. We start with the previously unnoticed empirical\nobservation that, given a collection (a cloud) of data points, the sublevel\nsets of a certain distinguished polynomial capture the shape of the cloud very\naccurately. This distinguished polynomial is a sum-of-squares (SOS) derived in\na simple manner from the inverse of the empirical moment matrix. In fact, this\nSOS polynomial is directly related to orthogonal polynomials and the\nChristoffel function. This allows to generalize and interpret extremality\nproperties of orthogonal polynomials and to provide a mathematical rationale\nfor the observed phenomenon. Among diverse potential applications, we\nillustrate the relevance of our results on a network intrusion detection task\nfor which we obtain performances similar to existing dedicated methods reported\nin the literature.",
+  "id": "arxiv.1606.03858",
+  "url": "https://arxiv.org/abs/1606.03858",
+  "pdf": "https://arxiv.org/pdf/1606.03858",
+  "bibtex": "@misc{lasserre2016_arxiv:1606.03858,\n    title = {Sorting out typicality with the inverse moment matrix SOS polynomial},\n    author = {Jean-Bernard Lasserre and Edouard Pauwels},\n    year = {2016},\n    archiveprefix = {arXiv},\n    eprint = {1606.03858},\n    pdf = {https://arxiv.org/pdf/1606.03858},\n    url = {https://arxiv.org/abs/1606.03858}\n}",
+  "source": "arxiv.org",
+  "date": 1564762229,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1606.03858"
+}
