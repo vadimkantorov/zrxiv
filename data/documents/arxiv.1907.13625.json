@@ -1,0 +1,19 @@
+{
+  "title": "On Mutual Information Maximization for Representation Learning",
+  "authors": [
+    "Michael Tschannen",
+    "Josip Djolonga",
+    "Paul K. Rubenstein",
+    "Sylvain Gelly",
+    "Mario Lucic"
+  ],
+  "abstract": "Many recent methods for unsupervised or self-supervised representation\nlearning train feature extractors by maximizing an estimate of the mutual\ninformation (MI) between different views of the data. This comes with several\nimmediate problems: For example, MI is notoriously hard to estimate, and using\nit as an objective for representation learning may lead to highly entangled\nrepresentations due to its invariance under arbitrary invertible\ntransformations. Nevertheless, these methods have been repeatedly shown to\nexcel in practice. In this paper we argue, and provide empirical evidence, that\nthe success of these methods might be only loosely attributed to the properties\nof MI, and that they strongly depend on the inductive bias in both the choice\nof feature extractor architectures and the parametrization of the employed MI\nestimators. Finally, we establish a connection to deep metric learning and\nargue that this interpretation may be a plausible explanation for the success\nof the recently introduced methods.",
+  "id": "arxiv.1907.13625",
+  "url": "https://arxiv.org/abs/1907.13625",
+  "pdf": "https://arxiv.org/pdf/1907.13625",
+  "bibtex": "@misc{tschannen2019_arxiv:1907.13625,\n    title = {On Mutual Information Maximization for Representation Learning},\n    author = {Michael Tschannen and Josip Djolonga and Paul K. Rubenstein and Sylvain Gelly and Mario Lucic},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1907.13625},\n    pdf = {https://arxiv.org/pdf/1907.13625},\n    url = {https://arxiv.org/abs/1907.13625}\n}",
+  "source": "arxiv.org",
+  "date": 1564834184,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1907.13625"
+}
