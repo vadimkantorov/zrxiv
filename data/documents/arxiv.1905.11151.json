@@ -1,0 +1,18 @@
+{
+  "title": "Colonel Blotto and Hide-and-Seek Games as Path Planning Problems with Side Observations",
+  "authors": [
+    "Dong Quan Vu",
+    "Patrick Loiseau",
+    "Alonso Silva",
+    "Long Tran-Thanh"
+  ],
+  "abstract": "Resource allocation games such as the famous Colonel Blotto (CB) and\nHide-and-Seek (HS) games are often used to model a large variety of practical\nproblems, but only in their one-shot versions. Indeed, due to their extremely\nlarge strategy space, it remains an open question how one can efficiently learn\nin these games. In this work, we show that the online CB and HS games can be\ncast as path planning problems with side-observations (SOPPP): at each stage, a\nlearner chooses a path on a directed acyclic graph and suffers the sum of\nlosses that are adversarially assigned to the corresponding edges; and she then\nreceives semi-bandit feedback with side-observations (i.e., she observes the\nlosses on the chosen edges plus some others). Then, we propose a novel\nalgorithm, EXP3-OE, the first-of-its-kind with guaranteed efficient running\ntime for SOPPP without requiring any auxiliary oracle. We provide an\nexpected-regret bound of EXP3-OE in SOPPP matching the order of the best\nbenchmark in the literature. Moreover, we introduce additional assumptions on\nthe observability model under which we can further improve the regret bounds of\nEXP3-OE. We illustrate the benefit of using EXP3-OE in SOPPP by applying it to\nthe online CB and HS games.",
+  "id": "arxiv.1905.11151",
+  "url": "https://arxiv.org/abs/1905.11151",
+  "pdf": "https://arxiv.org/pdf/1905.11151",
+  "bibtex": "@misc{vu2019_arxiv:1905.11151,\n    title = {Colonel Blotto and Hide-and-Seek Games as Path Planning Problems with Side Observations},\n    author = {Dong Quan Vu and Patrick Loiseau and Alonso Silva and Long Tran-Thanh},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11151},\n    pdf = {https://arxiv.org/pdf/1905.11151},\n    url = {https://arxiv.org/abs/1905.11151}\n}",
+  "source": "arxiv.org",
+  "date": 1564948882,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11151"
+}
