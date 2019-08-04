@@ -1,0 +1,22 @@
+{
+  "title": "HIGAN: Cosmic Neutral Hydrogen with Generative Adversarial Networks",
+  "authors": [
+    "Juan Zamudio-Fernandez",
+    "Atakan Okan",
+    "Francisco Villaescusa-Navarro",
+    "Seda Bilaloglu",
+    "Asena Derin Cengiz",
+    "Siyu He",
+    "Laurence Perreault Levasseur",
+    "Shirley Ho"
+  ],
+  "abstract": "One of the most promising ways to observe the Universe is by detecting the\n21cm emission from cosmic neutral hydrogen (HI) through radio-telescopes. Those\nobservations can shed light on fundamental astrophysical questions only if\naccurate theoretical predictions are available. In order to maximize the\nscientific return of these surveys, those predictions need to include different\nobservables and be precise on non-linear scales. Currently, one of the best\nways to achieve this is via cosmological hydrodynamic simulations; however, the\ncomputational cost of these simulations is high -- tens of millions of CPU\nhours. In this work, we use Wasserstein Generative Adversarial Networks (WGANs)\nto generate new high-resolution ($35~h^{-1}{\\rm kpc}$) 3D realizations of\ncosmic HI at $z=5$. We do so by sampling from a 100-dimension manifold, learned\nby the generator, that characterizes the fully non-linear abundance and\nclustering of cosmic HI from the state-of-the-art simulation IllustrisTNG. We\nshow that different statistical properties of the produced samples -- 1D PDF,\npower spectrum, bispectrum, and void size function -- match very well those of\nIllustrisTNG, and outperform state-of-the-art models such as Halo Occupation\nDistributions (HODs). Our WGAN samples reproduce the abundance of HI across 9\norders of magnitude, from the Ly$α$ forest to Damped Lyman Absorbers. WGAN\ncan produce new samples orders of magnitude faster than hydrodynamic\nsimulations.",
+  "id": "arxiv.1904.12846",
+  "url": "https://arxiv.org/abs/1904.12846",
+  "pdf": "https://arxiv.org/pdf/1904.12846",
+  "bibtex": "@misc{zamudio-fernandez2019_arxiv:1904.12846,\n    title = {HIGAN: Cosmic Neutral Hydrogen with Generative Adversarial Networks},\n    author = {Juan Zamudio-Fernandez and Atakan Okan and Francisco Villaescusa-Navarro and Seda Bilaloglu and Asena Derin Cengiz and Siyu He and Laurence Perreault Levasseur and Shirley Ho},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.12846},\n    pdf = {https://arxiv.org/pdf/1904.12846},\n    url = {https://arxiv.org/abs/1904.12846}\n}",
+  "source": "arxiv.org",
+  "date": 1564922236,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.12846"
+}
