@@ -1,0 +1,20 @@
+{
+  "title": "Deep-Learning Jets with Uncertainties and More",
+  "authors": [
+    "Sven Bollweg",
+    "Manuel Haussmann",
+    "Gregor Kasieczka",
+    "Michel Luchmann",
+    "Tilman Plehn",
+    "Jennifer Thompson"
+  ],
+  "abstract": "Bayesian neural networks allow us to keep track of uncertainties, for example\nin top tagging, by learning a tagger output together with an error band. We\nillustrate the main features of Bayesian versions of established deep-learning\ntaggers. We show how they capture statistical uncertainties from finite\ntraining samples, systematics related to the jet energy scale, and stability\nissues through pile-up. Altogether, Bayesian networks offer many new handles to\nunderstand and control deep learning at the LHC without introducing a visible\nprior effect and without compromising the network performance.",
+  "id": "arxiv.1904.10004",
+  "url": "https://arxiv.org/abs/1904.10004",
+  "pdf": "https://arxiv.org/pdf/1904.10004",
+  "bibtex": "@misc{bollweg2019_arxiv:1904.10004,\n    title = {Deep-Learning Jets with Uncertainties and More},\n    author = {Sven Bollweg and Manuel Haussmann and Gregor Kasieczka and Michel Luchmann and Tilman Plehn and Jennifer Thompson},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.10004},\n    pdf = {https://arxiv.org/pdf/1904.10004},\n    url = {https://arxiv.org/abs/1904.10004}\n}",
+  "source": "arxiv.org",
+  "date": 1565077815,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.10004"
+}
