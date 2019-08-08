@@ -1,0 +1,15 @@
+{
+  "title": "Feature Normalisation for Robust Speech Recognition",
+  "authors": [
+    "D. S. Pavan Kumar"
+  ],
+  "abstract": "Speech recognition system performance degrades in noisy environments. If the\nacoustic models are built using features of clean utterances, the features of a\nnoisy test utterance would be acoustically mismatched with the trained model.\nThis gives poor likelihoods and poor recognition accuracy. Model adaptation and\nfeature normalisation are two broad areas that address this problem. While the\nformer often gives better performance, the latter involves estimation of lesser\nnumber of parameters, making the system feasible for practical implementations.\n  This research focuses on the efficacies of various subspace, statistical and\nstereo based feature normalisation techniques. A subspace projection based\nmethod has been investigated as a standalone and adjunct technique involving\nreconstruction of noisy speech features from a precomputed set of clean speech\nbuilding-blocks. The building blocks are learned using non-negative matrix\nfactorisation (NMF) on log-Mel filter bank coefficients, which form a basis for\nthe clean speech subspace. The work provides a detailed study on how the method\ncan be incorporated into the extraction process of Mel-frequency cepstral\ncoefficients. Experimental results show that the new features are robust to\nnoise, and achieve better results when combined with the existing techniques.\n  The work also proposes a modification to the training process of SPLICE\nalgorithm for noise robust speech recognition. It is based on feature\ncorrelations, and enables this stereo-based algorithm to improve the\nperformance in all noise conditions, especially in unseen cases. Further, the\nmodified framework is extended to work for non-stereo datasets where clean and\nnoisy training utterances, but not stereo counterparts, are required. An\nMLLR-based computationally efficient run-time noise adaptation method in SPLICE\nframework has been proposed.",
+  "id": "arxiv.1507.04019",
+  "url": "https://arxiv.org/abs/1507.04019",
+  "pdf": "https://arxiv.org/pdf/1507.04019",
+  "bibtex": "@misc{kumar2015_arxiv:1507.04019,\n    title = {Feature Normalisation for Robust Speech Recognition},\n    author = {D. S. Pavan Kumar},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1507.04019},\n    pdf = {https://arxiv.org/pdf/1507.04019},\n    url = {https://arxiv.org/abs/1507.04019}\n}",
+  "source": "arxiv.org",
+  "date": 1565299361,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1507.04019"
+}
