@@ -1,0 +1,18 @@
+{
+  "title": "Analysis of Gradient Clipping and Adaptive Scaling with a Relaxed Smoothness Condition",
+  "authors": [
+    "Jingzhao Zhang",
+    "Tianxing He",
+    "Suvrit Sra",
+    "Ali Jadbabaie"
+  ],
+  "abstract": "We provide a theoretical explanation for the fast convergence of gradient\nclipping and adaptively scaled gradient methods commonly used in neural network\ntraining. Our analysis is based on a novel relaxation of gradient smoothness\nconditions that is weaker than the commonly used Lipschitz smoothness\nassumption. We validate the new smoothness condition in experiments on\nlarge-scale neural network training applications where adaptively-scaled\nmethods have been empirically shown to outperform standard gradient based\nalgorithms. Under this new smoothness condition, we prove that two popular\nadaptively scaled methods, \\emph{gradient clipping} and \\emph{normalized\ngradient}, converge faster than the theoretical lower bound of fixed-step\ngradient descent. We verify this fast convergence empirically in neural network\ntraining for language modeling and image classification.",
+  "id": "arxiv.1905.11881",
+  "url": "https://arxiv.org/abs/1905.11881",
+  "pdf": "https://arxiv.org/pdf/1905.11881",
+  "bibtex": "@misc{zhang2019_arxiv:1905.11881,\n    title = {Analysis of Gradient Clipping and Adaptive Scaling with a Relaxed Smoothness Condition},\n    author = {Jingzhao Zhang and Tianxing He and Suvrit Sra and Ali Jadbabaie},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.11881},\n    pdf = {https://arxiv.org/pdf/1905.11881},\n    url = {https://arxiv.org/abs/1905.11881}\n}",
+  "source": "arxiv.org",
+  "date": 1565249241,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.11881"
+}
