@@ -1,0 +1,21 @@
+{
+  "title": "Distributed Deep Learning Strategies For Automatic Speech Recognition",
+  "authors": [
+    "Wei Zhang",
+    "Xiaodong Cui",
+    "Ulrich Finkler",
+    "Brian Kingsbury",
+    "George Saon",
+    "David Kung",
+    "Michael Picheny"
+  ],
+  "abstract": "In this paper, we propose and investigate a variety of distributed deep\nlearning strategies for automatic speech recognition (ASR) and evaluate them\nwith a state-of-the-art Long short-term memory (LSTM) acoustic model on the\n2000-hour Switchboard (SWB2000), which is one of the most widely used datasets\nfor ASR performance benchmark. We first investigate what are the proper\nhyper-parameters (e.g., learning rate) to enable the training with sufficiently\nlarge batch size without impairing the model accuracy. We then implement\nvarious distributed strategies, including Synchronous (SYNC), Asynchronous\nDecentralized Parallel SGD (ADPSGD) and the hybrid of the two HYBRID, to study\ntheir runtime/accuracy trade-off. We show that we can train the LSTM model\nusing ADPSGD in 14 hours with 16 NVIDIA P100 GPUs to reach a 7.6% WER on the\nHub5- 2000 Switchboard (SWB) test set and a 13.1% WER on the CallHome (CH) test\nset. Furthermore, we can train the model using HYBRID in 11.5 hours with 32\nNVIDIA V100 GPUs without loss in accuracy.",
+  "id": "arxiv.1904.04956",
+  "url": "https://arxiv.org/abs/1904.04956",
+  "pdf": "https://arxiv.org/pdf/1904.04956",
+  "bibtex": "@misc{zhang2019_arxiv:1904.04956,\n    title = {Distributed Deep Learning Strategies For Automatic Speech Recognition},\n    author = {Wei Zhang and Xiaodong Cui and Ulrich Finkler and Brian Kingsbury and George Saon and David Kung and Michael Picheny},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1904.04956},\n    pdf = {https://arxiv.org/pdf/1904.04956},\n    url = {https://arxiv.org/abs/1904.04956}\n}",
+  "source": "arxiv.org",
+  "date": 1565329763,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1904.04956"
+}
