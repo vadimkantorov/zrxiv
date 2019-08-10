@@ -1,0 +1,17 @@
+{
+  "title": "Learning with Fenchel-Young Losses",
+  "authors": [
+    "Mathieu Blondel",
+    "André F. T. Martins",
+    "Vlad Niculae"
+  ],
+  "abstract": "Over the past decades, numerous loss functions have been been proposed for a\nvariety of supervised learning tasks, including regression, classification,\nranking, and more generally structured prediction. Understanding the core\nprinciples and theoretical properties underpinning these losses is key to\nchoose the right loss for the right problem, as well as to create new losses\nwhich combine their strengths. In this paper, we introduce Fenchel-Young\nlosses, a generic way to construct a convex loss function for a regularized\nprediction function. We provide an in-depth study of their properties in a very\nbroad setting, covering all the aforementioned supervised learning tasks, and\nrevealing new connections between sparsity, generalized entropies, and\nseparation margins. We show that Fenchel-Young losses unify many well-known\nloss functions and allow to create useful new ones easily. Finally, we derive\nefficient predictive and training algorithms, making Fenchel-Young losses\nappealing both in theory and practice.",
+  "id": "arxiv.1901.02324",
+  "url": "https://arxiv.org/abs/1901.02324",
+  "pdf": "https://arxiv.org/pdf/1901.02324",
+  "bibtex": "@misc{blondel2019_arxiv:1901.02324,\n    title = {Learning with Fenchel-Young Losses},\n    author = {Mathieu Blondel and André F. T. Martins and Vlad Niculae},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1901.02324},\n    pdf = {https://arxiv.org/pdf/1901.02324},\n    url = {https://arxiv.org/abs/1901.02324}\n}",
+  "source": "arxiv.org",
+  "date": 1565459787,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1901.02324"
+}
