@@ -1,0 +1,19 @@
+{
+  "title": "Extra-gradient with player sampling for provable fast convergence in n-player games",
+  "authors": [
+    "Samy Jelassi",
+    "Carles Domingo Enrich",
+    "Damien Scieur",
+    "Arthur Mensch",
+    "Joan Bruna"
+  ],
+  "abstract": "Data-driven model training is increasingly relying on finding Nash equilibria\nwith provable techniques, e.g., for GANs and multi-agent RL. In this paper, we\nanalyse a new extra-gradient method, that performs gradient extrapolations and\nupdates on a random subset of players at each iteration. This approach provably\nexhibits the same rate of convergence as full extra-gradient in non-smooth\nconvex games. We propose an additional variance reduction mechanism for this to\nhold for smooth convex games. Our approach makes extrapolation amenable to\nmassive multiplayer settings, and brings empirical speed-ups, in particular\nwhen using cyclic sampling schemes. We demonstrate the efficiency of player\nsampling on large-scale non-smooth and non-strictly convex games. We show that\nthe joint use of extrapolation and player sampling allows to train better GANs\non CIFAR10.",
+  "id": "arxiv.1905.12363",
+  "url": "https://arxiv.org/abs/1905.12363",
+  "pdf": "https://arxiv.org/pdf/1905.12363",
+  "bibtex": "@misc{jelassi2019_arxiv:1905.12363,\n    title = {Extra-gradient with player sampling for provable fast convergence in n-player games},\n    author = {Samy Jelassi and Carles Domingo Enrich and Damien Scieur and Arthur Mensch and Joan Bruna},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1905.12363},\n    pdf = {https://arxiv.org/pdf/1905.12363},\n    url = {https://arxiv.org/abs/1905.12363}\n}",
+  "source": "arxiv.org",
+  "date": 1565506132,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1905.12363"
+}
