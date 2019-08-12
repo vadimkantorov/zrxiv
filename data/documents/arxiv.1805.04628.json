@@ -1,0 +1,20 @@
+{
+  "title": "Constrained-CNN losses for weakly supervised segmentation",
+  "authors": [
+    "Hoel Kervadec",
+    "Jose Dolz",
+    "Meng Tang",
+    "Eric Granger",
+    "Yuri Boykov",
+    "Ismail Ben Ayed"
+  ],
+  "abstract": "Weakly-supervised learning based on, e.g., partially labelled images or\nimage-tags, is currently attracting significant attention in CNN segmentation\nas it can mitigate the need for full and laborious pixel/voxel annotations.\nEnforcing high-order (global) inequality constraints on the network output (for\ninstance, to constrain the size of the target region) can leverage unlabeled\ndata, guiding the training process with domain-specific knowledge. Inequality\nconstraints are very flexible because they do not assume exact prior knowledge.\nHowever, constrained Lagrangian dual optimization has been largely avoided in\ndeep networks, mainly for computational tractability reasons. To the best of\nour knowledge, the method of [Pathak et al., 2015] is the only prior work that\naddresses deep CNNs with linear constraints in weakly supervised segmentation.\nIt uses the constraints to synthesize fully-labeled training masks (proposals)\nfrom weak labels, mimicking full supervision and facilitating dual\noptimization. We propose to introduce a differentiable penalty, which enforces\ninequality constraints directly in the loss function, avoiding expensive\nLagrangian dual iterates and proposal generation. From constrained-optimization\nperspective, our simple penalty-based approach is not optimal as there is no\nguarantee that the constraints are satisfied. However, surprisingly, it yields\nsubstantially better results than the Lagrangian-based constrained CNNs in\n[Pathak et al., 2015], while reducing the computational demand for training. By\nannotating only a small fraction of the pixels, the proposed approach can reach\na level of segmentation performance that is comparable to full supervision on\nthree separate tasks. While our experiments focused on basic linear constraints\nsuch as the target-region size and image tags, our framework can be easily\nextended to other non-linear constraints.",
+  "id": "arxiv.1805.04628",
+  "url": "https://arxiv.org/abs/1805.04628",
+  "pdf": "https://arxiv.org/pdf/1805.04628",
+  "bibtex": "@misc{kervadec2018_arxiv:1805.04628,\n    title = {Constrained-CNN losses for weakly supervised segmentation},\n    author = {Hoel Kervadec and Jose Dolz and Meng Tang and Eric Granger and Yuri Boykov and Ismail Ben Ayed},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1805.04628},\n    pdf = {https://arxiv.org/pdf/1805.04628},\n    url = {https://arxiv.org/abs/1805.04628}\n}",
+  "source": "arxiv.org",
+  "date": 1565633539,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1805.04628"
+}
