@@ -1,0 +1,18 @@
+{
+  "title": "What's the Point: Semantic Segmentation with Point Supervision",
+  "authors": [
+    "Amy Bearman",
+    "Olga Russakovsky",
+    "Vittorio Ferrari",
+    "Li Fei-Fei"
+  ],
+  "abstract": "The semantic image segmentation task presents a trade-off between test time\naccuracy and training-time annotation cost. Detailed per-pixel annotations\nenable training accurate models but are very time-consuming to obtain,\nimage-level class labels are an order of magnitude cheaper but result in less\naccurate models. We take a natural step from image-level annotation towards\nstronger supervision: we ask annotators to point to an object if one exists. We\nincorporate this point supervision along with a novel objectness potential in\nthe training loss function of a CNN model. Experimental results on the PASCAL\nVOC 2012 benchmark reveal that the combined effect of point-level supervision\nand objectness potential yields an improvement of 12.9% mIOU over image-level\nsupervision. Further, we demonstrate that models trained with point-level\nsupervision are more accurate than models trained with image-level,\nsquiggle-level or full supervision given a fixed annotation budget.",
+  "id": "arxiv.1506.02106",
+  "url": "https://arxiv.org/abs/1506.02106",
+  "pdf": "https://arxiv.org/pdf/1506.02106",
+  "bibtex": "@misc{bearman2015_arxiv:1506.02106,\n    title = {What's the Point: Semantic Segmentation with Point Supervision},\n    author = {Amy Bearman and Olga Russakovsky and Vittorio Ferrari and Li Fei-Fei},\n    year = {2015},\n    archiveprefix = {arXiv},\n    eprint = {1506.02106},\n    pdf = {https://arxiv.org/pdf/1506.02106},\n    url = {https://arxiv.org/abs/1506.02106}\n}",
+  "source": "arxiv.org",
+  "date": 1565633553,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1506.02106"
+}
