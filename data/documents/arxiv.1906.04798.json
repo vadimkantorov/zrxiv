@@ -1,0 +1,18 @@
+{
+  "title": "Table-Based Neural Units: Fully Quantizing Networks for Multiply-Free Inference",
+  "authors": [
+    "Michele Covell",
+    "David Marwood",
+    "Shumeet Baluja",
+    "Nick Johnston"
+  ],
+  "abstract": "In this work, we propose to quantize all parts of standard classification\nnetworks and replace the activation-weight--multiply step with a simple\ntable-based lookup. This approach results in networks that are free of\nfloating-point operations and free of multiplications, suitable for direct FPGA\nand ASIC implementations. It also provides us with two simple measures of\nper-layer and network-wide compactness as well as insight into the distribution\ncharacteristics of activationoutput and weight values. We run controlled\nstudies across different quantization schemes, both fixed and adaptive and,\nwithin the set of adaptive approaches, both parametric and model-free. We\nimplement our approach to quantization with minimal, localized changes to the\ntraining process, allowing us to benefit from advances in training\ncontinuous-valued network architectures. We apply our approach successfully to\nAlexNet, ResNet, and MobileNet. We show results that are within 1.6% of the\nreported, non-quantized performance on MobileNet using only 40 entries in our\ntable. This performance gap narrows to zero when we allow tables with 320\nentries. Our results give the best accuracies among multiply-free networks.",
+  "id": "arxiv.1906.04798",
+  "url": "https://arxiv.org/abs/1906.04798",
+  "pdf": "https://arxiv.org/pdf/1906.04798",
+  "bibtex": "@misc{covell2019_arxiv:1906.04798,\n    title = {Table-Based Neural Units: Fully Quantizing Networks for Multiply-Free Inference},\n    author = {Michele Covell and David Marwood and Shumeet Baluja and Nick Johnston},\n    year = {2019},\n    archiveprefix = {arXiv},\n    eprint = {1906.04798},\n    pdf = {https://arxiv.org/pdf/1906.04798},\n    url = {https://arxiv.org/abs/1906.04798}\n}",
+  "source": "arxiv.org",
+  "date": 1565668784,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1906.04798"
+}
