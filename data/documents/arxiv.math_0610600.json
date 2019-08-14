@@ -1,0 +1,16 @@
+{
+  "title": "On Permanental Processes",
+  "authors": [
+    "Nathalie Eisenbaum",
+    "Haya Kaspi"
+  ],
+  "abstract": "Permanental processes can be viewed as a generalisation of squared centered\nGaussian processes. We develop in this paper two main subjects. The first one\nanalyses the connections of these processes with the local times of general\nMarkov processes. The second deals with Bosonian point processes and the\nBose-Einstein condensation. The obtained results in both directions are related\nand based on the notion of infinite divisibility.",
+  "id": "arxiv.math_0610600",
+  "url": "https://arxiv.org/abs/math/0610600",
+  "pdf": "https://arxiv.org/pdf/math/0610600",
+  "bibtex": "@misc{eisenbaum2006_arxiv:math/0610600,\n    title = {On Permanental Processes},\n    author = {Nathalie Eisenbaum and Haya Kaspi},\n    year = {2006},\n    archiveprefix = {arXiv},\n    eprint = {math/0610600},\n    pdf = {https://arxiv.org/pdf/math/0610600},\n    url = {https://arxiv.org/abs/math/0610600}\n}",
+  "source": "arxiv.org",
+  "date": 1565768571,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=math/0610600"
+}
