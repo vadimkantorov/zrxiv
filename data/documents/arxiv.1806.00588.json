@@ -1,0 +1,17 @@
+{
+  "title": "Fast Locality Sensitive Hashing for Beam Search on GPU",
+  "authors": [
+    "Xing Shi",
+    "Shizhen Xu",
+    "Kevin Knight"
+  ],
+  "abstract": "We present a GPU-based Locality Sensitive Hashing (LSH) algorithm to speed up\nbeam search for sequence models. We utilize the winner-take-all (WTA) hash,\nwhich is based on relative ranking order of hidden dimensions and thus\nresilient to perturbations in numerical values. Our algorithm is designed by\nfully considering the underling architecture of CUDA-enabled GPUs\n(Algorithm/Architecture Co-design): 1) A parallel Cuckoo hash table is applied\nfor LSH code lookup (guaranteed O(1) lookup time); 2) Candidate lists are\nshared across beams to maximize the parallelism; 3) Top frequent words are\nmerged into candidate lists to improve performance. Experiments on 4\nlarge-scale neural machine translation models demonstrate that our algorithm\ncan achieve up to 4x speedup on softmax module, and 2x overall speedup without\nhurting BLEU on GPU.",
+  "id": "arxiv.1806.00588",
+  "url": "https://arxiv.org/abs/1806.00588",
+  "pdf": "https://arxiv.org/pdf/1806.00588",
+  "bibtex": "@misc{shi2018_arxiv:1806.00588,\n    title = {Fast Locality Sensitive Hashing for Beam Search on GPU},\n    author = {Xing Shi and Shizhen Xu and Kevin Knight},\n    year = {2018},\n    archiveprefix = {arXiv},\n    eprint = {1806.00588},\n    pdf = {https://arxiv.org/pdf/1806.00588},\n    url = {https://arxiv.org/abs/1806.00588}\n}",
+  "source": "arxiv.org",
+  "date": 1565813587,
+  "tags": [],
+  "api": "https://export.arxiv.org/api/query?id_list=1806.00588"
+}
