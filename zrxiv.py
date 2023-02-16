@@ -2,26 +2,31 @@ import os
 import re
 import sys
 import json
+import time
 import argparse
 import urllib.request
 import xml.dom.minidom
 
 def import_arxiv_urls(urls):
+    sanitize_whitespaces = lambda s: ' '.join(s.replace('\n', ' ').split()).strip()
     xml_tag_contents = lambda elem, tagName, idx = 0: [textNode.firstChild.nodeValue.strip() for textNode in elem.getElementsByTagName(tagName)]
     
     arxiv_ids = [url.split('arxiv.org/abs/')[-1] for url in urls]
     entries = xml.dom.minidom.parse(urllib.request.urlopen('https://export.arxiv.org/api/query?id_list=' + ','.join(arxiv_ids))).getElementsByTagName('entry')
     
+
     res = []
     for url, entry in zip(urls, entries):
         arxiv_id = xml_tag_contents(entry, 'id')[0].split('abs/')[1].split('v')[0].replace('/', '_')
         authors = xml_tag_contents(entry, 'name') 
         res.append(dict(
-            title = xml_tag_contents(entry, 'title')[0],
+            title = sanitize_whitespaces(xml_tag_contents(entry, 'title')[0]),
             authors = authors,
             url = url,
-            abstract = xml_tag_contents(entry, 'summary')[0].replace('\n', ' '),
+            pdf = url.replace('/abs/', '/pdf/'),
+            abstract = sanitize_whitespaces(xml_tag_contents(entry, 'summary')[0]),
             id = 'arxiv.' + arxiv_id,
+            source = 'arxiv.org',
             bibtex_citation_key = 'arxiv.' + arxiv_id,
             bibtex_record_type = 'misc',
             bibtex_author = ' and '.join(authors),
@@ -73,10 +78,12 @@ def import_docs(bibs, documents_dir, verbose = False, dry = False, exclude_keys 
     os.makedirs(documents_dir, exist_ok = True)
 
     for bib in bibs:
-        bib_id = bib.get('id') or str(abs(hash(str(bib))))
-        p = os.path.join(documents_dir, bib_id + '.json')
+        bib['id'] = bib.get('id') or str(abs(hash(str(bib))))
+        bib['date'] = bib.get('date') or int(time.time())
+        bib['tags'] = bib.get('tags', [])
+        p = os.path.join(documents_dir, bib['id'] + '.json')
         if verbose:
-            print('dry = ', dry, 'saving to ' + p, file = sys.stderr)
+            print('dry =', dry, 'saving to ' + p, file = sys.stderr)
 
         with open(p if not dry else os.devnull, 'w') as f:
             j = {k : v for k, v in bib.items() if k not in exclude_keys}
