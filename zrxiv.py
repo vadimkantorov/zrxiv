@@ -345,12 +345,21 @@ def normalize_arxiv_url(url):
         arxiv_id = 'v'.join(arxiv_id.split('v')[:-1])
     return f'https://arxiv.org/abs/{arxiv_id}'
 
+def extract_source(url):
+    if not url:
+        return None
+    if 'arxiv.org' in url or re.fullmatch(r'\d{4}\.\d+', url):
+        return 'arxiv.org'
+    if 'openreview.net' in url:
+        return 'openreview.net'
+    return None
+
 def parse_urls(text):
     urls = re.findall(r'[a-zA-Z0-9\/\:\.\?=-]+', text)
     
-    bibs_arxiv = fetch_arxiv_urls(list(set(normalize_arxiv_url(u) for u in urls if 'arxiv.org' in u or re.fullmatch(r'\d{4}\.\d+', u))))
-    bibs_openreview = fetch_openreview_urls(list(set(normalize_openreview_url(u) for u in urls if 'openreview.net' in u)))
-    
+    sources = list(map(extract_source, urls))
+    bibs_arxiv = fetch_arxiv_urls(list(set(normalize_arxiv_url(u) for u, s in zip(urls, sources) if s == 'arxiv.org')))
+    bibs_openreview = fetch_openreview_urls(list(set(normalize_openreview_url(u) for u, s in zip(urls, sources) if s == 'openreview.net')))
     
     bibs = bibs_arxiv + bibs_openreview
 
@@ -399,8 +408,16 @@ def import_docs(bibs, documents_dir, tags = [], verbose = False, dry = False, ex
                 print(s, end = '\n\n', file = sys.stderr)
             print(s, file = f)
 
-def enrich_docs(bibs):
-    pass
+def enrich_docs(bibs_to_enrich):
+    urls = []
+    bibs = []
+    for bib in bibs_to_enrich:
+        if extract_source(bib.get('url')) is not None:
+            urls.append(bib['url'])
+        else:
+            bibs.append(bib)
+    bibs += parse_urls('\n'.join(urls))
+    return bibs
 
 if __name__ == '__main__':
     # https://arxiv.org/abs/cond-mat/9911396 https://arxiv.org/abs/1810.08647 http://arxiv.org/abs/1810.08647v1 https://arxiv.org/pdf/1903.05844.pdf https://arxiv.org/pdf/hep-th/9909024.pdf https://arxiv.org/pdf/1805.04246v1.pdf https://arxiv.org/ftp/arxiv/papers/1206/1206.4614.pdf https://arxiv.org/abs/quant-ph/0101012
@@ -433,12 +450,12 @@ if __name__ == '__main__':
     bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in args.bibtex_path)
     urls = '\n\n'.join(open(p).read() for p in args.urls_path) + '\n\n' + '\n'.join(args.urls)
     
-    bibs = parse_urls(urls) + parse_bibtex(bibtex)
-
-    bibs = {bib['id'] : bib for bib in bibs}.values()
-    
+    bibs = parse_bibtex(bibtex)
     if args.enrich_docs:
         bibs = enrich_docs(bibs)
+    bibs += parse_urls(urls)
+
+    bibs = {bib['id'] : bib for bib in bibs}.values()
     
     if args.verbose == 'bibtex':
         print(format_bibtex(bibs, terse = args.terse))
