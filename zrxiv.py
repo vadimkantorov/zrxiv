@@ -5,6 +5,7 @@ import json
 import time
 import argparse
 import urllib.request
+import urllib.parse
 import xml.dom.minidom
 
 ###########################################################################################
@@ -263,62 +264,97 @@ def parse_bibtex(text):
         bibs.append(v)
     return bibs
 
-def import_arxiv_urls(urls, batch_size = 50):
-    sanitize_whitespaces = lambda s: ' '.join(s.replace('\n', ' ').split()).strip()
+def sanitize_whitespaces(s):
+    return ' '.join(s.replace('\n', ' ').split()).strip()
+
+def fetch_arxiv_urls(urls, batch_size = 50):
     xml_tag_contents = lambda elem, tagName, idx = 0: [textNode.firstChild.nodeValue.strip() for textNode in elem.getElementsByTagName(tagName)]
-    
     bibs = []
     for i in range(0, len(urls), batch_size):
         urls_batch = urls[i:i + batch_size]
         id_list = [url.split('arxiv.org/abs/')[-1] for url in urls_batch]
         entries = xml.dom.minidom.parse(urllib.request.urlopen('https://export.arxiv.org/api/query?id_list=' + ','.join(id_list))).getElementsByTagName('entry')
 
-        for url, entry in zip(urls_batch, entries):
-            arxiv_id = xml_tag_contents(entry, 'id')[0].split('abs/')[1].split('v')[0].replace('/', '_')
+        for entry in entries:
+            # bibtex = `@misc{${authors[0].split(' ').pop()}${year}_arXiv:${arxiv_id}, title = {${title}}, author = {${authors.join(', ')}}, year = {${year}}, eprint = {${arxiv_id}}, archivePrefix={arXiv}}`; 
+            arxiv_id = normalize_arxiv_url(xml_tag_contents(entry, 'id')[0]).split('/abs/')[-1]
+            id_bibtex = 'arxiv.' + arxiv_id.replace('/', '_')
+            url = f'https://arxiv.org/abs/{arxiv_id}'
+            pdf = url.replace('/abs/', '/pdf/')
             authors = xml_tag_contents(entry, 'name') 
-            # const bibtex = `@misc{${authors[0].split(' ').pop()}${year}_arXiv:${arxiv_id}, title = {${title}}, author = {${authors.join(', ')}}, year = {${year}}, eprint = {${arxiv_id}}, archivePrefix={arXiv}}`; 
+            bibtex = ''
             bibs.append(dict(
                 title = sanitize_whitespaces(xml_tag_contents(entry, 'title')[0]),
                 authors = authors,
                 url = url,
-                pdf = url.replace('/abs/', '/pdf/'),
+                pdf = pdf,
+                bibtex = bibtex,
                 abstract = sanitize_whitespaces(xml_tag_contents(entry, 'summary')[0]),
-                id = 'arxiv.' + arxiv_id,
-                source = 'arxiv.org',
-                bibtex_citation_key = 'arxiv.' + arxiv_id,
-                bibtex_record_type = 'misc',
+                id = id_bibtex,
+                bibtex_citation_key = id_bibtex,
                 bibtex_author = ' and '.join(authors),
+                bibtex_record_type = 'misc',
+                source = 'arxiv.org',
             ))
     return bibs
 
+def fetch_openreview_urls(urls, batch_size = 50):
+    bibs = []
+    for i in range(0, len(urls), batch_size):
+        urls_batch = urls[i:i + batch_size]
+        id_list = [url.split('/forum?id=')[-1] for url in urls_batch]
+        entries = json.load(urllib.request.urlopen('https://api.openreview.net/notes?ids=' + ','.join(id_list)))['notes']
+        for entry in entries:
+            openreview_id = entry['id']
+            id_bibtex = 'openreview.' + openreview_id.replace('-', '_')
+            url = f'https://openreview.net/forum?id={openreview_id}'
+            pdf = url.replace('/forum?', '/pdf?')
+            authors = entry['content']['authors']
+            bibtex = entry['content']['_bibtex']
+            # format_bibtex(entry._bibtex, url, pdf),
+            bibs.append(dict(
+                title = sanitize_whitespaces(entry['content']['title']),
+                authors = authors,
+                url = url,
+                pdf = pdf,
+                bibtex = bibtex,
+                abstract = sanitize_whitespaces(entry['content']['abstract']),
+                id = id_bibtex,
+                bibtex_citation_key = id_bibtex,
+                bibtex_author = ' and '.join(authors),
+                bibtex_record_type = 'misc',
+                source = 'openreview.net',
+            ))
+    return bibs
+
+def normalize_openreview_url(url):
+    openreview_id = dict(urllib.parse.parse_qsl(urllib.request.urlparse(url).query))['id']
+    return f'https://openreview.net/forum?id={openreview_id}'
+
 def normalize_arxiv_url(url):
-    arxiv_id = re.fullmatch(r'\d{4}\.\d+', url)
-    if arxiv_id is not None:
+    if 'arxiv.org' not in url:
         arxiv_id = url
-    
-    url = url.replace('http://', 'https://') if 'http://' in url else (url if 'https://' in url else f'https://{url}')
-
-    if url.endswith('.pdf'):
-        url = url[:-4]
-    
-    if 'arxiv.org/abs/' in url:
-        arxiv_id = url.split('arxiv.org/abs/')[1]
-
-    elif 'arxiv.org/pdf/' in url:
-        arxiv_id = url.split('arxiv.org/pdf/')[1]
-
-    elif 'arxiv.org/ftp/arxiv/papers/' in url:
-        arxiv_id = url.split('arxiv.org/ftp/arxiv/papers/')[1].split('/')[1]
-
+    else:
+        arxiv_id = urllib.request.urlparse(url).path
+        for delete in ['.pdf', '/abs/', '/pdf/']:
+            arxiv_id = arxiv_id.replace(delete, '')
+        for extract_basename in ['/ftp/arxiv/papers/']:
+            if extract_basename in arxiv_id:
+                arxiv_id = os.path.basename(arxiv_id)
     if 'v' in arxiv_id:
         arxiv_id = 'v'.join(arxiv_id.split('v')[:-1])
-    
     return f'https://arxiv.org/abs/{arxiv_id}'
 
 def parse_urls(text):
     urls = re.findall(r'[a-zA-Z0-9\/\:\.\?=-]+', text)
-    docs_arxiv = import_arxiv_urls([normalize_arxiv_url(u) for u in urls if 'arxiv.org' in u])
-    return docs_arxiv
+    
+    bibs_arxiv = fetch_arxiv_urls(list(set(normalize_arxiv_url(u) for u in urls if 'arxiv.org' in u or re.fullmatch(r'\d{4}\.\d+', u))))
+    bibs_openreview = fetch_openreview_urls(list(set(normalize_openreview_url(u) for u in urls if 'openreview.net' in u)))
+    
+    
+    bibs = bibs_arxiv + bibs_openreview
+
+    return bibs
 
 def format_bibtex(bibs, terse = False, terse_keys = ['title', 'url'], header_keys = ['title', 'bibtex_author', 'booktitle', 'journal', 'year', 'doi'], footer_keys = ['note', 'pdf', 'url'], exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'authors', 'abstract', 'bibtex'], remap_keys = dict(bibtex_author = 'author')):
     bibstrs = []
@@ -335,13 +371,23 @@ def format_bibtex(bibs, terse = False, terse_keys = ['title', 'url'], header_key
         bibstrs.append(bibstr)
     return ('\n' if terse else '\n\n').join(bibstrs)
 
-def import_docs(bibs, documents_dir, verbose = False, dry = False, exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'bibtex_author']):
+def format_txt(bibs, terse = False, ljust = 50, tab = 4):
+    bibstrs = []
+    for bib in bibs:
+        bibstr = bib['url'].ljust(ljust) + ' ' * tab + bib['title']
+        if not terse:
+            bibstr += ' ' * tab + ', '.join(bib.get('authors', []))
+        bibstrs.append(bibstr)
+    return ('\n' if terse else '\n\n').join(sorted(bibstrs))
+
+def import_docs(bibs, documents_dir, tags = [], verbose = False, dry = False, exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'bibtex_author']):
     os.makedirs(documents_dir, exist_ok = True)
 
+    current_year = time.strftime('%Y')
     for bib in bibs:
         bib['id'] = bib.get('id') or str(abs(hash(str(bib))))
         bib['date'] = bib.get('date') or int(time.time())
-        bib['tags'] = bib.get('tags', [])
+        bib['tags'] = bib.get('tags', []) + tags + [current_year]
         p = os.path.join(documents_dir, bib['id'] + '.json')
         if verbose:
             print('dry =', dry, 'saving to ' + p, file = sys.stderr)
@@ -358,15 +404,25 @@ def enrich_docs(bibs):
 
 if __name__ == '__main__':
     # https://arxiv.org/abs/cond-mat/9911396 https://arxiv.org/abs/1810.08647 http://arxiv.org/abs/1810.08647v1 https://arxiv.org/pdf/1903.05844.pdf https://arxiv.org/pdf/hep-th/9909024.pdf https://arxiv.org/pdf/1805.04246v1.pdf https://arxiv.org/ftp/arxiv/papers/1206/1206.4614.pdf https://arxiv.org/abs/quant-ph/0101012
-    
+    # chrome-extension://noogafoofpebimajpfpamcfhoaifemoa/suspended.html#ttl=%5B2201.04309%5D%20Robust%20Contrastive%20Learning%20against%20Noisy%20Views&pos=0&uri=https://arxiv.org/abs/2201.04309
+    # chrome-extension://noogafoofpebimajpfpamcfhoaifemoa/suspended.html#ttl=2212.04493.pdf&pos=0&uri=https://arxiv.org/pdf/2212.04493.pdf
+    # https://arxiv.org/abs/2207.08605, Class-incremental Novel Class Discovery
+    # https://arxiv.org/abs/2210.01571?fbclid=IwAR1JwuhgvDq_FC49QXKJex-4rQALRSmhmKk70XIqD1lpoj57MF71AMlu8N0
+    # https://download.arxiv.org/pdf/2205.14217v1.pdf
+    # 2211.09788
+    # https://arxiv.org/abs/1003.0860
+
+    # https://mobile.twitter.com/neural_fields/status/1555032266203697152
+    # https://openaccess.thecvf.com/content/CVPR2022/supplemental/Liu_Unbiased_Teacher_v2_CVPR_2022_supplemental.pdf
+
     parser = argparse.ArgumentParser()
+    parser.add_argument('--documents-dir', default = './data/documents/')
     parser.add_argument('--import', dest = 'import_docs', action = 'store_true')
     parser.add_argument('--enrich', dest = 'enrich_docs', action = 'store_true')
     parser.add_argument('--tags', nargs = '*', default = [])
-    parser.add_argument('--verbose', action = 'store_true')
+    parser.add_argument('--verbose', choices = ['bibtex', 'txt'], nargs = '?', const = 'bibtex')
     parser.add_argument('--terse', action = 'store_true')
     parser.add_argument('--dry', action = 'store_true')
-    parser.add_argument('--documents-dir', default = './data/documents/')
     parser.add_argument('--bibtex-path', nargs = '*', default = [])
     parser.add_argument('--urls-path', nargs = '*', default = [])
     parser.add_argument('urls', nargs = argparse.REMAINDER, default = [])
@@ -379,11 +435,15 @@ if __name__ == '__main__':
     
     bibs = parse_urls(urls) + parse_bibtex(bibtex)
 
-    if args.verbose:
-        print(format_bibtex(bibs, terse = args.terse))
+    bibs = {bib['id'] : bib for bib in bibs}.values()
     
     if args.enrich_docs:
         bibs = enrich_docs(bibs)
+    
+    if args.verbose == 'bibtex':
+        print(format_bibtex(bibs, terse = args.terse))
+    elif args.verbose == 'txt':
+        print(format_txt(bibs, terse = args.terse))
 
     if args.import_docs:
-        import_docs(bibs, documents_dir = args.documents_dir, verbose = args.verbose, dry = args.dry)
+        import_docs(bibs, documents_dir = args.documents_dir, verbose = args.verbose, dry = args.dry, tags = args.tags)
