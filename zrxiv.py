@@ -254,7 +254,7 @@ class Parser() :
 
 ###########################################################################################
 
-def parse_bibtex(text):
+def parse_bibtex(text, verbose = False):
     parser = Parser(text)
     parser.parse()
     bibs = []
@@ -328,7 +328,10 @@ def fetch_openreview_urls(urls, batch_size = 50):
     return bibs
 
 def normalize_openreview_url(url):
-    openreview_id = dict(urllib.parse.parse_qsl(urllib.request.urlparse(url).query))['id']
+    try:
+        openreview_id = dict(urllib.parse.parse_qsl(urllib.request.urlparse(url).query))['id']
+    except:
+        breakpoint()
     return f'https://openreview.net/forum?id={openreview_id}'
 
 def normalize_arxiv_url(url):
@@ -354,18 +357,24 @@ def extract_source(url):
         return 'openreview.net'
     return None
 
-def parse_urls(text):
-    urls = re.findall(r'[a-zA-Z0-9\/\:\.\?=-]+', text)
+def parse_urls(text, verbose = False):
+    urls = re.findall(r'\S+', text)
     
     sources = list(map(extract_source, urls))
     bibs_arxiv = fetch_arxiv_urls(list(set(normalize_arxiv_url(u) for u, s in zip(urls, sources) if s == 'arxiv.org')))
     bibs_openreview = fetch_openreview_urls(list(set(normalize_openreview_url(u) for u, s in zip(urls, sources) if s == 'openreview.net')))
     
+    if verbose:
+        print('From arxiv extracted documents:', len(bibs_arxiv))
+        print('From openreview extracted documents:', len(bibs_openreview))
+        print('Unknown sources:', sources.count(None))
+        print('Unknown sources:', [u for u, s in zip(urls, sources) if s is None])
+    
     bibs = bibs_arxiv + bibs_openreview
 
     return bibs
 
-def format_bibtex(bibs, terse = False, terse_keys = ['title', 'url'], header_keys = ['title', 'bibtex_author', 'booktitle', 'journal', 'year', 'doi'], footer_keys = ['note', 'pdf', 'url'], exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'authors', 'abstract', 'bibtex'], remap_keys = dict(bibtex_author = 'author')):
+def format_bib(bibs, terse = False, terse_keys = ['title', 'url'], header_keys = ['title', 'bibtex_author', 'booktitle', 'journal', 'year', 'doi'], footer_keys = ['note', 'pdf', 'url'], exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'authors', 'abstract', 'bibtex'], remap_keys = dict(bibtex_author = 'author')):
     bibstrs = []
     for bib in bibs:
         if terse:
@@ -385,7 +394,7 @@ def format_txt(bibs, terse = False, ljust = 50, tab = 4):
     for bib in bibs:
         bibstr = bib['url'].ljust(ljust) + ' ' * tab + bib['title']
         if not terse:
-            bibstr += ' ' * tab + ', '.join(bib.get('authors', []))
+            bibstr += ' | ' + ', '.join(bib.get('authors', []))
         bibstrs.append(bibstr)
     return ('\n' if terse else '\n\n').join(sorted(bibstrs))
 
@@ -408,7 +417,7 @@ def import_docs(bibs, documents_dir, tags = [], verbose = False, dry = False, ex
                 print(s, end = '\n\n', file = sys.stderr)
             print(s, file = f)
 
-def enrich_docs(bibs_to_enrich):
+def enrich_docs(bibs_to_enrich, verbose = False):
     urls = []
     bibs = []
     for bib in bibs_to_enrich:
@@ -433,34 +442,44 @@ if __name__ == '__main__':
     # https://openaccess.thecvf.com/content/CVPR2022/supplemental/Liu_Unbiased_Teacher_v2_CVPR_2022_supplemental.pdf
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('--output-path', '-o')
     parser.add_argument('--documents-dir', default = './data/documents/')
     parser.add_argument('--import', dest = 'import_docs', action = 'store_true')
     parser.add_argument('--enrich', dest = 'enrich_docs', action = 'store_true')
     parser.add_argument('--tags', nargs = '*', default = [])
-    parser.add_argument('--verbose', choices = ['bibtex', 'txt'], nargs = '?', const = 'bibtex')
     parser.add_argument('--terse', action = 'store_true')
     parser.add_argument('--dry', action = 'store_true')
+    parser.add_argument('--verbose', action = 'store_true')
     parser.add_argument('--bibtex-path', nargs = '*', default = [])
-    parser.add_argument('--urls-path', nargs = '*', default = [])
+    parser.add_argument('--txt-path', nargs = '*', default = [])
     parser.add_argument('urls', nargs = argparse.REMAINDER, default = [])
     args = parser.parse_args()
 
     open_or_urlopen = lambda p: open(p) if not any(map(p.startswith, ['http://', 'https://'])) else urllib.request.urlopen(p)
 
     bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in args.bibtex_path)
-    urls = '\n\n'.join(open(p).read() for p in args.urls_path) + '\n\n' + '\n'.join(args.urls)
-    
-    bibs = parse_bibtex(bibtex)
-    if args.enrich_docs:
-        bibs = enrich_docs(bibs)
-    bibs += parse_urls(urls)
+    urls = '\n\n'.join(open(p).read() for p in args.txt_path) + '\n\n' + '\n'.join(args.urls)
 
-    bibs = {bib['id'] : bib for bib in bibs}.values()
+    bibs_bibtex = parse_bibtex(bibtex, verbose = args.verbose)
+    if args.enrich_docs:
+        bibs = enrich_docs(bibs, verbose = args.verbose)
+    if args.verbose:
+        print('From bibtex extracted documents:', len(bibs_bibtex))
     
-    if args.verbose == 'bibtex':
-        print(format_bibtex(bibs, terse = args.terse))
-    elif args.verbose == 'txt':
-        print(format_txt(bibs, terse = args.terse))
+    bibs_txt = parse_urls(urls, verbose = args.verbose)
+    if args.verbose:
+        print('From txt extracted documents:', len(bibs_txt))
+
+    bibs = {bib['id'] : bib for bib in bibs_bibtex + bibs_txt}.values()
+    if args.verbose:
+        print('Total extracted documents:', len(bibs))
+    
+    output_format = 'bib' if (args.output_path or '').endswith('.bib') else 'txt'
+    output_file = sys.stdout if args.output_path == '-' else sys.stdout if args.output_path is None and args.verbose else open(args.output_path, 'w') if args.output_path is not None else open(os.devnull, 'w')
+    if output_format == 'bib':
+        print(format_bib(bibs, terse = args.terse), file = output_file)
+    elif output_format == 'txt':
+        print(format_txt(bibs, terse = args.terse), file = output_file)
 
     if args.import_docs:
         import_docs(bibs, documents_dir = args.documents_dir, verbose = args.verbose, dry = args.dry, tags = args.tags)
