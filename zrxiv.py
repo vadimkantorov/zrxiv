@@ -267,19 +267,20 @@ def parse_bibtex(text, verbose = False):
 def sanitize_whitespaces(s):
     return ' '.join(s.replace('\n', ' ').split()).strip()
 
-def fetch_arxiv_urls(urls, batch_size = 50):
+def fetch_arxiv_urls(urls, batch_size = 50, arxiv_api_url_format = 'https://export.arxiv.org/api/query?id_list={comma_separated_id_list}', arxiv_url_format = 'https://arxiv.org/abs/{arxiv_id}'):
     xml_tag_contents = lambda elem, tagName, idx = 0: [textNode.firstChild.nodeValue.strip() for textNode in elem.getElementsByTagName(tagName)]
     bibs = []
     for i in range(0, len(urls), batch_size):
         urls_batch = urls[i:i + batch_size]
         id_list = [url.split('arxiv.org/abs/')[-1] for url in urls_batch]
-        entries = xml.dom.minidom.parse(urllib.request.urlopen('https://export.arxiv.org/api/query?id_list=' + ','.join(id_list))).getElementsByTagName('entry')
+        url = arxiv_api_url_format.format(comma_separated_id_list = ','.join(id_list))
+        entries = xml.dom.minidom.parse(urllib.request.urlopen(url)).getElementsByTagName('entry')
 
         for entry in entries:
             # bibtex = `@misc{${authors[0].split(' ').pop()}${year}_arXiv:${arxiv_id}, title = {${title}}, author = {${authors.join(', ')}}, year = {${year}}, eprint = {${arxiv_id}}, archivePrefix={arXiv}}`; 
             arxiv_id = normalize_arxiv_url(xml_tag_contents(entry, 'id')[0]).split('/abs/')[-1]
             id_bibtex = 'arxiv.' + arxiv_id.replace('/', '_')
-            url = f'https://arxiv.org/abs/{arxiv_id}'
+            url = arxiv_url_format.format(arxiv_id = arxiv_id)
             pdf = url.replace('/abs/', '/pdf/')
             authors = xml_tag_contents(entry, 'name') 
             bibtex = ''
@@ -441,6 +442,9 @@ if __name__ == '__main__':
     # https://mobile.twitter.com/neural_fields/status/1555032266203697152
     # https://openaccess.thecvf.com/content/CVPR2022/supplemental/Liu_Unbiased_Teacher_v2_CVPR_2022_supplemental.pdf
 
+    # https://www.biorxiv.org/content/10.1101/2021.11.08.467651v1
+    # chrome-extension://noogafoofpebimajpfpamcfhoaifemoa/suspended.html#ttl=%5B2207.13871%5D%20A%20Repulsive%20Force%20Unit%20for%20Garment%20Collision%20Handling%20in%20Neural%20Networks&pos=0&uri=https://arxiv.org/abs/2207.13871
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--output-path', '-o')
     parser.add_argument('--documents-dir', default = './data/documents/')
@@ -476,6 +480,7 @@ if __name__ == '__main__':
     
     output_format = 'bib' if (args.output_path or '').endswith('.bib') else 'txt'
     output_file = sys.stdout if args.output_path == '-' else sys.stdout if args.output_path is None and args.verbose else open(args.output_path, 'w') if args.output_path is not None else open(os.devnull, 'w')
+
     if output_format == 'bib':
         print(format_bib(bibs, terse = args.terse), file = output_file)
     elif output_format == 'txt':
