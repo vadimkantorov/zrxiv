@@ -27,3 +27,4 @@ ctx['site']['pages'] = []
 content = cls(ctx).render(os.path.splitext(os.path.basename(layout_html))[0])
 
 print(content, file = open(test_html, 'w'))
+print(test_html)
