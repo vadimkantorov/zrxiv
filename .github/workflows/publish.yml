@@ -36,12 +36,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install nanojekyll
-        run: |
-          python -m pip install --user markdown
-          curl -O https://raw.githubusercontent.com/vadimkantorov/nanojekyll/release/nanojekyll.py
+        run: curl -O https://raw.githubusercontent.com/vadimkantorov/nanojekyll/release/nanojekyll.py
 
-      - name: Build with minimapython
-        run: python demo.py --baseurl "${{ steps.pages.outputs.base_path }}" --siteurl "https://${{ github.repository_owner }}.github.io"
+      - name: Build with zrxiv
+        run: python zrxivrender.py #demo.py --baseurl "${{ steps.pages.outputs.base_path }}" --siteurl "https://${{ github.repository_owner }}.github.io"
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
