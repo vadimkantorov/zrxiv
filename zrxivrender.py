@@ -35,6 +35,7 @@ for d in config['defaults']:
     if '*' in d['scope']['path']:
         for path in glob.glob(d['scope']['path']):
             output_path = os.path.join(args.output_dir, d['values']['permalink'].replace(':basename', os.path.splitext(os.path.basename(path))[0]).lstrip('/') + 'index.html' * (d['values']['permalink'][-1] == '/'))
+            os.makedirs(os.path.dirname(output_path), exist_ok = True)
             print(cls(dict(ctx, page = dict(d['values'], path = path, name = os.path.basename(path)))).render(d['values']['layout']), file = open(output_path, 'w'))
             print(output_path)
     else:
