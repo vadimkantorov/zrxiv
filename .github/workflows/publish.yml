@@ -32,7 +32,7 @@ jobs:
       
       - name: Install nanojekyll
         run: | 
-            echo "print('hello world')" > nanojekyll.py
+            echo "hello world" > hi.txt
             ls
             #cat nanojekyll.py
             #curl -O https://raw.githubusercontent.com/vadimkantorov/nanojekyll/release/nanojekyll.py
