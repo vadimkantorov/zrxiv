@@ -1,5 +1,6 @@
 import os
 import json
+import glob
 import argparse
 
 import nanojekyll
@@ -13,7 +14,7 @@ parser.add_argument('--data-dir', default = 'data/')
 parser.add_argument('--docs-dir', default = 'data/old_documents')
 args = parser.parse_args()
 
-config = nanojekyll.NanoJekyllContext.yaml_loads(open(args.config_yml).read())
+config = nanojekyll.NanoJekyllContext.yaml_loads(open(args.config_yml).read(), convert_int = True, convert_bool = True)
 
 docs = {basename : json.load(open(os.path.join(args.docs_dir, basename))) for basename in os.listdir(args.docs_dir) if basename.endswith('.json')}
 
@@ -29,28 +30,14 @@ print(args.codegen_py)
 ctx = dict(site = dict(config, pages = [], data = dict(documents = list(docs.items()))))
 
 os.makedirs(args.output_dir, exist_ok = True)
-
-print(cls(dict(ctx, page = dict(name = 'all.md', recent_docs = False, path = 'all.md'))).render('default'), file = open(os.path.join(args.output_dir, 'all.html'), 'w'))
-print(cls(dict(ctx, page = dict(name = 'all_bib.md'))).render('bibtex'), file = open(os.path.join(args.output_dir, 'all.bib'), 'w'))
-print(cls(dict(ctx, page = dict(name = 'all_json.md'))).render('json'), file = open(os.path.join(args.output_dir, 'all.json'), 'w'))
-print(cls(dict(ctx, page = dict(name = 'all_txt.md'))).render('txt'), file = open(os.path.join(args.output_dir, 'all.txt'), 'w'))
-
-print(cls(dict(ctx, page = dict(name = 'recent.md', recent_docs = True, path = 'recent.md'))).render('default'), file = open(os.path.join(args.output_dir, 'index.html'), 'w'))
-print(cls(dict(ctx, page = dict(name = 'recent_bib.md'))).render('bibtex'), file = open(os.path.join(args.output_dir, 'recent.bib'), 'w'))
-print(cls(dict(ctx, page = dict(name = 'recent_json.md'))).render('json'), file = open(os.path.join(args.output_dir, 'recent.json'), 'w'))
-print(cls(dict(ctx, page = dict(name = 'recent_txt.md'))).render('txt'), file = open(os.path.join(args.output_dir, 'recent.txt'), 'w'))
-print(cls(dict(ctx, page = dict(name = 'recent_xml.md', path = 'recent_xml.md'))).render('xml'), file = open(os.path.join(args.output_dir, 'recent.xml'), 'w'))
-
-print(cls(dict(ctx, page = dict(name = 'import.md', import_docs = True))).render('default'), file = open(os.path.join(args.output_dir, 'import.html'), 'w'))
-for tag_md in os.listdir(os.path.join(args.data_dir, 'tags')):
-    basename = tag_md[:-3]
-    os.makedirs(os.path.join(args.output_dir, basename), exist_ok = True)
-    print(cls(dict(ctx, page = dict(name = tag_md, path = os.path.join(args.data_dir, 'tags', tag_md)))).render('default'), file = open(os.path.join(args.output_dir, basename, 'index.html'), 'w'))
-for tag_md in os.listdir(os.path.join(args.data_dir, 'bibtex')):
-    print(cls(dict(ctx, page = dict(name = tag_md))).render('bibtex'), file = open(os.path.join(args.output_dir, tag_md[:-3] + '.bib'), 'w'))
-for tag_md in os.listdir(os.path.join(args.data_dir, 'json')):
-    print(cls(dict(ctx, page = dict(name = tag_md))).render('json'), file = open(os.path.join(args.output_dir, tag_md[:-3] + '.json'), 'w'))
-for tag_md in os.listdir(os.path.join(args.data_dir, 'txt')):
-    print(cls(dict(ctx, page = dict(name = tag_md))).render('txt'), file = open(os.path.join(args.output_dir, tag_md[:-3] + '.txt'), 'w'))
-for tag_md in os.listdir(os.path.join(args.data_dir, 'xml')):
-    print(cls(dict(ctx, page = dict(name = tag_md, path = os.path.join(args.data_dir, 'xml', tag_md)))).render('xml'), file = open(os.path.join(args.output_dir, tag_md[:-3] + '.xml'), 'w'))
+print(args.output_dir)
+for d in config['defaults']:
+    if '*' in d['scope']['path']:
+        for path in glob.glob(d['scope']['path']):
+            output_path = os.path.join(args.output_dir, d['values']['permalink'].replace(':basename', os.path.splitext(os.path.basename(path))[0]).lstrip('/') + 'index.html' * (d['values']['permalink'][-1] == '/'))
+            print(cls(dict(ctx, page = dict(d['values'], path = path, name = os.path.basename(path)))).render(d['values']['layout']), file = open(output_path, 'w'))
+            print(output_path)
+    else:
+        output_path = os.path.join(args.output_dir, d['values']['permalink'].lstrip('/'))
+        print(cls(dict(ctx, page = dict(d['values'], path = d['scope']['path'], name = os.path.basename(d['scope']['path'])))).render(d['values']['layout']), file = open(output_path, 'w'))
+        print(output_path)
