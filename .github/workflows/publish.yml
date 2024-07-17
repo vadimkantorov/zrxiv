@@ -3,13 +3,13 @@
 
 name: Build and deploy nanojekyll site to GitHub Pages
 
-#on:
+on:
 #  # Runs on pushes targeting the default branch
 #  push:
 #    branches: [$default-branch]
 #
-#  # Allows you to run this workflow manually from the Actions tab
-#  workflow_dispatch:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 #
 ## Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 #permissions:
