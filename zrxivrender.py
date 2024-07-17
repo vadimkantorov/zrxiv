@@ -8,8 +8,6 @@ docs_dir = 'data/old_documents'
 config_yml = '_config.yml'
 layouts_dir = '_layouts'
 codegen_py = 'nanojekyllcodegen.py'
-# /recent.bib /recent.json /recent.txt /recent.rss
-# /all /import /giant
 
 config = nanojekyll.NanoJekyllContext.yaml_loads(open(config_yml).read())
 
