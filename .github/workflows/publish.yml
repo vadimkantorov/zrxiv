@@ -34,7 +34,7 @@ jobs:
         run: | 
             echo "print('hello world')" > nanojekyll.py
             ls
-            cat nanojekyll.py
+            #cat nanojekyll.py
             #curl -O https://raw.githubusercontent.com/vadimkantorov/nanojekyll/release/nanojekyll.py
 
 #      - name: Setup Pages
