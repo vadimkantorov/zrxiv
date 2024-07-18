@@ -31,7 +31,22 @@ with open(args.codegen_py, 'w') as f:
 #cls = __import__(os.path.splitext(args.codegen_py)[0]).NanoJekyllContext
 print(args.codegen_py)
 
-ctx = dict(site = dict(config, siteurl = args.siteurl, baseurl = args.baseurl, github = dict(url = args.github_url, owner_name = args.github_owner_name), pages = [], data = dict(documents = list(docs.items()))))
+pages = [dict(path = d['scope']['path'], name = os.path.basename(d['scope']['path'])) for d in config['defaults'] if '*' not in d['scope']['path']] + [dict(path = path, name = os.path.basename(path)) for d in config['defaults'] if '*' in d['scope']['path'] for path in glob.glob(d['scope']['path'])]
+data = dict(documents = list(docs.items()))
+
+ctx = dict(
+    site = dict(
+        config, 
+        pages = pages, 
+        data = data,
+        siteurl = args.siteurl, 
+        baseurl = args.baseurl, 
+        github = dict(
+            url = args.github_url, 
+            owner_name = args.github_owner_name
+        )
+    )
+)
 
 os.makedirs(args.output_dir, exist_ok = True)
 print(args.output_dir)
