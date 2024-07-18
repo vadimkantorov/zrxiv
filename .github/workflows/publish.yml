@@ -38,7 +38,7 @@ jobs:
         run: curl -O https://raw.githubusercontent.com/vadimkantorov/nanojekyll/release/nanojekyll.py
 
       - name: Build with zrxiv
-        run: python zrxivrender.py #demo.py --baseurl "${{ steps.pages.outputs.base_path }}" --siteurl "https://${{ github.repository_owner }}.github.io"
+        run: python zrxivrender.py --github-owner-name "${{ github.repository_owner }}" --github-url "https://${{ github.repository_owner }}.github.io/${{ github.repository }}" --siteurl "https://${{ github.repository_owner }}.github.io" --baseurl "${{ steps.pages.outputs.base_path }}"
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
