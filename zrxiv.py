@@ -218,7 +218,7 @@ class Parser() :
                                     return s.group(1) + s.group(2).upper()
                                 while val.find('{') > -1:
                                     caps = (val.find('{'), val.find('}'))
-                                    val = val.replace(val[caps[0]:caps[1]+1], re.sub("(^|\s)(\S)", capitalize, val[caps[0]+1:caps[1]]).strip())
+                                    val = val.replace(val[caps[0]:caps[1]+1], re.sub(r"(^|\s)(\S)", capitalize, val[caps[0]+1:caps[1]]).strip())
                         
                             self.records[ key ][k] = val
                         if self.token != ',' :                      
@@ -358,8 +358,19 @@ def extract_source(url):
         return 'openreview.net'
     return None
 
+def normalize_url(orig_url):
+    try:
+        url = orig_url
+        parsed = urllib.parse.urlparse(url)
+        if parsed.scheme == 'chrome-extension': # and parsed.netloc == 'noogafoofpebimajpfpamcfhoaifemoa' and parsed.path == '/suspended.html': # https://chromewebstore.google.com/detail/the-marvellous-suspender/noogafoofpebimajpfpamcfhoaifemoa?pli=1
+            url = urllib.parse.parse_qs(parsed.fragment).get('uri', [''])[0]
+        return url, orig_url
+    except:
+        return '', orig_url
+
 def parse_urls(text, verbose = False):
-    urls = re.findall(r'\S+', text)
+    normalized = [(normalized_url, orig_url) for url in re.findall(r'\S+', text) for normalized_url, orig_url in [normalize_url(url)] if normalized_url]
+    urls, orig_urls = [normalized_url for normalized_url, orig_url in normalized], [orig_url for normalized_url, orig_url in normalized]
     
     sources = list(map(extract_source, urls))
     bibs_arxiv = fetch_arxiv_urls(list(set(normalize_arxiv_url(u) for u, s in zip(urls, sources) if s == 'arxiv.org')))
@@ -460,7 +471,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     open_or_urlopen = lambda p: open(p) if not any(map(p.startswith, ['http://', 'https://'])) else urllib.request.urlopen(p)
-
+    
     bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in args.bibtex_path)
     urls = '\n\n'.join(open(p).read() for p in args.txt_path) + '\n\n' + '\n'.join(args.urls)
 
@@ -488,3 +499,4 @@ if __name__ == '__main__':
 
     if args.import_docs:
         import_docs(bibs, documents_dir = args.documents_dir, verbose = args.verbose, dry = args.dry, tags = args.tags)
+        print(args.documents_dir)
