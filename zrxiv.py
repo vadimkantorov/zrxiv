@@ -377,10 +377,10 @@ def parse_urls(text, verbose = False):
     bibs_openreview = fetch_openreview_urls(list(set(normalize_openreview_url(u) for u, s in zip(urls, sources) if s == 'openreview.net')))
     
     if verbose:
-        print('From arxiv extracted documents:', len(bibs_arxiv))
-        print('From openreview extracted documents:', len(bibs_openreview))
-        print('Unknown sources:', sources.count(None))
-        print('Unknown sources:', [u for u, s in zip(urls, sources) if s is None])
+        print('# from arxiv extracted documents:', len(bibs_arxiv))
+        print('# from openreview extracted documents:', len(bibs_openreview))
+        print('# unknown sources:', sources.count(None))
+        print('# unknown sources:', [u for u, s in zip(urls, sources) if s is None])
     
     bibs = bibs_arxiv + bibs_openreview
 
@@ -441,21 +441,6 @@ def enrich_docs(bibs_to_enrich, verbose = False):
     return bibs
 
 if __name__ == '__main__':
-    # https://arxiv.org/abs/cond-mat/9911396 https://arxiv.org/abs/1810.08647 http://arxiv.org/abs/1810.08647v1 https://arxiv.org/pdf/1903.05844.pdf https://arxiv.org/pdf/hep-th/9909024.pdf https://arxiv.org/pdf/1805.04246v1.pdf https://arxiv.org/ftp/arxiv/papers/1206/1206.4614.pdf https://arxiv.org/abs/quant-ph/0101012
-    # chrome-extension://noogafoofpebimajpfpamcfhoaifemoa/suspended.html#ttl=%5B2201.04309%5D%20Robust%20Contrastive%20Learning%20against%20Noisy%20Views&pos=0&uri=https://arxiv.org/abs/2201.04309
-    # chrome-extension://noogafoofpebimajpfpamcfhoaifemoa/suspended.html#ttl=2212.04493.pdf&pos=0&uri=https://arxiv.org/pdf/2212.04493.pdf
-    # https://arxiv.org/abs/2207.08605, Class-incremental Novel Class Discovery
-    # https://arxiv.org/abs/2210.01571?fbclid=IwAR1JwuhgvDq_FC49QXKJex-4rQALRSmhmKk70XIqD1lpoj57MF71AMlu8N0
-    # https://download.arxiv.org/pdf/2205.14217v1.pdf
-    # 2211.09788
-    # https://arxiv.org/abs/1003.0860
-
-    # https://mobile.twitter.com/neural_fields/status/1555032266203697152
-    # https://openaccess.thecvf.com/content/CVPR2022/supplemental/Liu_Unbiased_Teacher_v2_CVPR_2022_supplemental.pdf
-
-    # https://www.biorxiv.org/content/10.1101/2021.11.08.467651v1
-    # chrome-extension://noogafoofpebimajpfpamcfhoaifemoa/suspended.html#ttl=%5B2207.13871%5D%20A%20Repulsive%20Force%20Unit%20for%20Garment%20Collision%20Handling%20in%20Neural%20Networks&pos=0&uri=https://arxiv.org/abs/2207.13871
-
     parser = argparse.ArgumentParser()
     parser.add_argument('--output-path', '-o')
     parser.add_argument('--documents-dir', default = './data/documents/')
@@ -465,29 +450,31 @@ if __name__ == '__main__':
     parser.add_argument('--terse', action = 'store_true')
     parser.add_argument('--dry', action = 'store_true')
     parser.add_argument('--verbose', action = 'store_true')
-    parser.add_argument('--bibtex-path', nargs = '*', default = [])
+    parser.add_argument('--bib-path', nargs = '*', default = [])
     parser.add_argument('--txt-path', nargs = '*', default = [])
+    parser.add_argument('--csv-path', nargs = '*', default = [])
+    parser.add_argument('--json-path', nargs = '*', default = [])
     parser.add_argument('urls', nargs = argparse.REMAINDER, default = [])
     args = parser.parse_args()
 
     open_or_urlopen = lambda p: open(p) if not any(map(p.startswith, ['http://', 'https://'])) else urllib.request.urlopen(p)
     
-    bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in args.bibtex_path)
+    bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in args.bib_path)
     urls = '\n\n'.join(open(p).read() for p in args.txt_path) + '\n\n' + '\n'.join(args.urls)
 
     bibs_bibtex = parse_bibtex(bibtex, verbose = args.verbose)
     if args.enrich_docs:
         bibs = enrich_docs(bibs, verbose = args.verbose)
     if args.verbose:
-        print('From bibtex extracted documents:', len(bibs_bibtex))
+        print('# from bibtex extracted documents:', len(bibs_bibtex))
     
     bibs_txt = parse_urls(urls, verbose = args.verbose)
     if args.verbose:
-        print('From txt extracted documents:', len(bibs_txt))
+        print('# from txt extracted documents:', len(bibs_txt))
 
     bibs = {bib['id'] : bib for bib in bibs_bibtex + bibs_txt}.values()
     if args.verbose:
-        print('Total extracted documents:', len(bibs))
+        print('# total extracted documents:', len(bibs))
     
     output_format = 'bib' if (args.output_path or '').endswith('.bib') else 'txt'
     output_file = sys.stdout if args.output_path == '-' else sys.stdout if args.output_path is None and args.verbose else open(args.output_path, 'w') if args.output_path is not None else open(os.devnull, 'w')
