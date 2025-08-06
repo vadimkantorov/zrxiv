@@ -270,7 +270,7 @@ def parse_bibtex(text, verbose = False):
     return bibs
 
 def sanitize_whitespaces(s):
-    return ' '.join(s.replace('\n', ' ').split()).strip()
+    return ' '.join(s.split()).strip()
 
 def fetch_arxiv_urls(urls, batch_size = 10, arxiv_api_url_format = 'https://export.arxiv.org/api/query?id_list={comma_separated_id_list}', arxiv_url_format = 'https://arxiv.org/abs/{arxiv_id}'):
     # https://info.arxiv.org/help/api/user-manual.html#3111-search_query-and-id_list-logic
