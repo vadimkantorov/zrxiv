@@ -1,4 +1,6 @@
 python3 zrxiv.py --verbose \
+  --csv-path  testmarvelous/session-buddy-export-2025-07-25-19-16-51.csv \
+  --json-path testmarvelous/session-buddy-export-2025-07-25-19-17-32.json \
   'https://arxiv.org/abs/cond-mat/9911396' \
   'https://arxiv.org/abs/1810.08647' \
   'http://arxiv.org/abs/1810.08647v1' \
