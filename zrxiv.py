@@ -1,5 +1,5 @@
 #TODO: cut out #:~:text=
-#TODO: cut out fbclid utm etc
+#TODO: cut out fbclid, utm etc
 #TODO: increase batch size
 
 import os
@@ -259,6 +259,9 @@ class Parser() :
 
 ###########################################################################################
 
+def open_or_urlopen(path):
+    return open(path) if not any(map(path.startswith, ['http://', 'https://'])) else urllib.request.urlopen(path)
+
 def parse_bibtex(text, verbose = False):
     parser = Parser(text)
     parser.parse()
@@ -280,7 +283,7 @@ def fetch_arxiv_urls(urls, batch_size = 10, arxiv_api_url_format = 'https://expo
         urls_batch = urls[i:i + batch_size]
         id_list = [url.split('arxiv.org/abs/')[-1] for url in urls_batch]
         url = arxiv_api_url_format.format(comma_separated_id_list = ','.join(id_list))
-        entries = xml.dom.minidom.parse(urllib.request.urlopen(url)).getElementsByTagName('entry')
+        entries = xml.dom.minidom.parse(open_or_urlopen(url)).getElementsByTagName('entry')
 
         for entry in entries:
             # bibtex = `@misc{${authors[0].split(' ').pop()}${year}_arXiv:${arxiv_id}, title = {${title}}, author = {${authors.join(', ')}}, year = {${year}}, eprint = {${arxiv_id}}, archivePrefix={arXiv}}`; 
@@ -458,7 +461,11 @@ def read_urls_from_csv(path):
 def read_urls_from_json(path):
     loaded = json.load(open(path))
     return [link['url'] for collection in loaded['collections'] for folder in collection['folders'] for link in folder['links']]
-    
+
+def read_urls_from_txt(path):
+    lines = open(path)
+    return [line.strip() for line in lines if line.strip() and not line.lstrip().startswith('#')]
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--output-path', '-o')
@@ -473,16 +480,31 @@ if __name__ == '__main__':
     parser.add_argument('--txt-path', action = 'append', default = [])
     parser.add_argument('--csv-path', action = 'append', default = [])
     parser.add_argument('--json-path', action = 'append', default = [])
-    parser.add_argument('urls', nargs = argparse.REMAINDER, default = [])
+    parser.add_argument('urls_or_paths', nargs = argparse.REMAINDER, default = [])
     args = parser.parse_args()
 
-    open_or_urlopen = lambda p: open(p) if not any(map(p.startswith, ['http://', 'https://'])) else urllib.request.urlopen(p)
+    csv_path, json_path, txt_path, bib_path, url_path = map(list, [args.csv_path, args.json_path, args.txt_path, args.bib_path, []])
+    for path in args.urls_or_paths:
+        paths = [path] if not os.path.isdir(path) else [os.path.join(path, basename) for basename in os.listdir(path)]
+        for p in paths:
+            if p.endswith('.csv'):
+                csv_path.append(p)
+            elif p.endswith('.json'):
+                json_path.append(p)
+            elif p.endswith('.txt'):
+                txt_path.append(p)
+            elif p.endswith('.bib'):
+                bib_path.append(p)
+            else:
+                url_path.append(p)
     
-    bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in args.bib_path)
-    urls  = '\n\n'.join(open(p).read() for p in args.txt_path)
-    urls += '\n\n' + '\n'.join(args.urls)
-    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_csv, args.csv_path), []))
-    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_json, args.json_path), []))
+    bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in bib_path)
+    
+    urls = ''
+    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_txt, txt_path), []))
+    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_csv, csv_path), []))
+    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_json, json_path), []))
+    urls += '\n\n' + '\n'.join(url_path)
 
     bibs_bibtex = parse_bibtex(bibtex, verbose = args.verbose)
     if args.enrich_docs:
