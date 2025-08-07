@@ -1,1 +1,1 @@
-python3 zrxiv.py --verbose test/
+python3 zrxiv.py --verbose -i test/

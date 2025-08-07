@@ -469,6 +469,7 @@ def read_urls_from_txt(path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--output-path', '-o')
+    parser.add_argument('--input-path', '-i', nargs = '*', default = [])
     parser.add_argument('--documents-dir', default = './data/documents/')
     parser.add_argument('--import', dest = 'import_docs', action = 'store_true')
     parser.add_argument('--enrich', dest = 'enrich_docs', action = 'store_true')
@@ -476,15 +477,10 @@ if __name__ == '__main__':
     parser.add_argument('--terse', action = 'store_true')
     parser.add_argument('--dry', action = 'store_true')
     parser.add_argument('--verbose', action = 'store_true')
-    parser.add_argument('--bib-path', action = 'append', default = [])
-    parser.add_argument('--txt-path', action = 'append', default = [])
-    parser.add_argument('--csv-path', action = 'append', default = [])
-    parser.add_argument('--json-path', action = 'append', default = [])
-    parser.add_argument('urls_or_paths', nargs = argparse.REMAINDER, default = [])
     args = parser.parse_args()
 
-    csv_path, json_path, txt_path, bib_path, url_path = map(list, [args.csv_path, args.json_path, args.txt_path, args.bib_path, []])
-    for path in args.urls_or_paths:
+    csv_path, json_path, txt_path, bib_path, url_path = [], [], [], [], []
+    for path in args.input_path:
         paths = [path] if not os.path.isdir(path) else [os.path.join(path, basename) for basename in os.listdir(path)]
         for p in paths:
             if p.endswith('.csv'):
