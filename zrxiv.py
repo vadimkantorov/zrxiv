@@ -409,6 +409,25 @@ def enrich_bibs(bibs, verbose = False):
     
     return bibs
 
+def import_docs(bibs, documents_dir, tags = [], verbose = False, dry = False, exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'bibtex_author']):
+    os.makedirs(documents_dir, exist_ok = True)
+
+    current_year = time.strftime('%Y')
+    for bib in bibs:
+        bib['id'] = bib.get('id') or str(abs(hash(str(bib))))
+        bib['date'] = bib.get('date') or int(time.time())
+        bib['tags'] = bib.get('tags', []) + tags + [current_year]
+        p = os.path.join(documents_dir, bib['id'] + '.json')
+        if verbose:
+            print('dry =', dry, 'saving to ' + p, file = sys.stderr)
+
+        with open(p if not dry else os.devnull, 'w') as f:
+            j = {k : v for k, v in bib.items() if k not in exclude_keys}
+            s = json.dumps(j, indent = 2, ensure_ascii = False, sort_keys = True)
+            if verbose:
+                print(s, end = '\n\n', file = sys.stderr)
+            print(s, file = f)
+
 def format_bib(bibs, terse = False, terse_keys = ['title', 'url'], header_keys = ['title', 'bibtex_author', 'booktitle', 'journal', 'year', 'doi'], footer_keys = ['note', 'pdf', 'url'], exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'authors', 'abstract', 'bibtex'], remap_keys = dict(bibtex_author = 'author')):
     bibstrs = []
     for bib in bibs:
@@ -434,24 +453,8 @@ def format_txt(bibs, terse = False, ljust = 50, tab = 4):
         bibstrs.append(bibstr)
     return ('\n' if terse else '\n\n').join(sorted(bibstrs))
 
-def import_docs(bibs, documents_dir, tags = [], verbose = False, dry = False, exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'bibtex_author']):
-    os.makedirs(documents_dir, exist_ok = True)
-
-    current_year = time.strftime('%Y')
-    for bib in bibs:
-        bib['id'] = bib.get('id') or str(abs(hash(str(bib))))
-        bib['date'] = bib.get('date') or int(time.time())
-        bib['tags'] = bib.get('tags', []) + tags + [current_year]
-        p = os.path.join(documents_dir, bib['id'] + '.json')
-        if verbose:
-            print('dry =', dry, 'saving to ' + p, file = sys.stderr)
-
-        with open(p if not dry else os.devnull, 'w') as f:
-            j = {k : v for k, v in bib.items() if k not in exclude_keys}
-            s = json.dumps(j, indent = 2, ensure_ascii = False, sort_keys = True)
-            if verbose:
-                print(s, end = '\n\n', file = sys.stderr)
-            print(s, file = f)
+def format_json(bibs, terse = False):
+    return json.dumps(bibs, indent = 2, sort_keys = True)
 
 def read_from_csv(path):
     rows = list(csv.reader(open(path), delimiter=','))
@@ -480,10 +483,11 @@ def read_from_args(urls):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--output-path', '-o')
     parser.add_argument('--input-path', '-i', nargs = '*', default = [])
+    parser.add_argument('--output-path', '-o')
     parser.add_argument('--documents-dir', default = './data/documents/')
-    parser.add_argument('--import', dest = 'import_docs', action = 'store_true')
+    parser.add_argument('--import', action = 'store_true')
+    parser.add_argument('--enrich', action = 'store_true')
     parser.add_argument('--tags', nargs = '*', default = [])
     parser.add_argument('--terse', action = 'store_true')
     parser.add_argument('--dry', action = 'store_true')
@@ -514,18 +518,22 @@ if __name__ == '__main__':
 
     bibs = bibs_csv + bibs_json + bibs_bibtex + bibs_txt + bibs_args
 
-    bibs = enrich_bibs(bibs)
+    if args.enrich:
+        bibs = enrich_bibs(bibs)
 
     if args.verbose:
         print('# total extracted documents:', len(bibs))
     
     output_file = sys.stdout if args.output_path == '-' else sys.stdout if args.output_path is None and args.verbose else open(args.output_path, 'w') if args.output_path is not None else open(os.devnull, 'w')
-    output_format = 'bib' if (args.output_path or '').endswith('.bib') else 'txt'
+    output_format = 'bib' if (args.output_path or '').endswith('.bib') else 'json' if (args.output_path or '').endswith('.json') else 'txt'
+    
     if output_format == 'bib':
         print(format_bib(bibs, terse = args.terse), file = output_file)
     elif output_format == 'txt':
         print(format_txt(bibs, terse = args.terse), file = output_file)
+    elif output_format == 'json':
+        print(format_json(bibs, terse = args.terse), file = output_file)
 
-    if args.import_docs:
+    if args.import:
         import_docs(bibs, documents_dir = args.documents_dir, verbose = args.verbose, dry = args.dry, tags = args.tags)
         print(args.documents_dir)
