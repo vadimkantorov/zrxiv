@@ -1,6 +1,9 @@
 #TODO: cut out #:~:text=
 #TODO: cut out fbclid, utm etc
 #TODO: increase batch size
+#TODO: read all links as dicts
+#TODO: some link preview for twitter/x, github, youtube and maybe others
+#TODO: keep mtime order and delete duplicates?
 
 import os
 import re
@@ -296,7 +299,6 @@ def fetch_arxiv_urls(urls, batch_size = 10, arxiv_api_url_format = 'https://expo
             bibs.append(dict(
                 title = sanitize_whitespaces(xml_tag_contents(entry, 'title')[0]),
                 authors = authors,
-                url = url,
                 pdf = pdf,
                 bibtex = bibtex,
                 abstract = sanitize_whitespaces(xml_tag_contents(entry, 'summary')[0]),
@@ -304,7 +306,6 @@ def fetch_arxiv_urls(urls, batch_size = 10, arxiv_api_url_format = 'https://expo
                 bibtex_citation_key = id_bibtex,
                 bibtex_author = ' and '.join(authors),
                 bibtex_record_type = 'misc',
-                source = 'arxiv.org',
             ))
     return bibs
 
@@ -325,7 +326,6 @@ def fetch_openreview_urls(urls, batch_size = 50):
             bibs.append(dict(
                 title = sanitize_whitespaces(entry['content']['title']),
                 authors = authors,
-                url = url,
                 pdf = pdf,
                 bibtex = bibtex,
                 abstract = sanitize_whitespaces(entry['content']['abstract']),
@@ -333,7 +333,6 @@ def fetch_openreview_urls(urls, batch_size = 50):
                 bibtex_citation_key = id_bibtex,
                 bibtex_author = ' and '.join(authors),
                 bibtex_record_type = 'misc',
-                source = 'openreview.net',
             ))
     return bibs
 
@@ -375,20 +374,32 @@ def normalize_url(orig_url):
         parsed = urllib.parse.urlparse(url)
         if parsed.scheme == 'chrome-extension': # and parsed.netloc == 'noogafoofpebimajpfpamcfhoaifemoa' and parsed.path == '/suspended.html': # https://chromewebstore.google.com/detail/the-marvellous-suspender/noogafoofpebimajpfpamcfhoaifemoa?pli=1
             url = urllib.parse.parse_qs(parsed.fragment).get('uri', [''])[0]
-        return url, orig_url
+        return url
     except:
-        return '', orig_url
+        return ''
 
-def parse_urls(text, verbose = False):
-    normalized = [(normalized_url, orig_url) for url in re.findall(r'\S+', text) for normalized_url, orig_url in [normalize_url(url)] if normalized_url]
-    urls, orig_urls = [normalized_url for normalized_url, orig_url in normalized], [orig_url for normalized_url, orig_url in normalized]
-    sources = list(map(extract_source, urls))
+def enrich_bibs(bibs, verbose = False):
+    bibs_arxiv, bibs_openreview = [], []
+
+    urls, sources = [], []
+    for bib in bibs:
+        if not bib.get('normalized_url'):
+            bib['normalized_url'] = normalize_url(bib['url'])
+        if not bib.get('source'):
+            bib['source'] = extract_source(bib['normalized_url'])
+        if bib['source'] == 'arxiv.org':
+            bib['normalized_url'] = normalize_arxiv_url(bib['normalized_url'])
+            bibs_arxiv.append(bib)
+        if bib['source'] == 'openreview.net':
+            bib['normalized_url'] = normalize_openreview_url(bib['normalized_url'])
+            bibs_openreview.append(bib)
+        sources.append(bib['source'])
+        urls.append(bib['normalized_url'])
     
-    arxiv_urls = list(set(normalize_arxiv_url(u) for u, s in zip(urls, sources) if s == 'arxiv.org'))
-    openreview_urls = list(set(normalize_openreview_url(u) for u, s in zip(urls, sources) if s == 'openreview.net'))
-
-    bibs_arxiv = fetch_arxiv_urls(arxiv_urls)
-    bibs_openreview = fetch_openreview_urls(openreview_urls)
+    for bib, bib_enriched in zip(bibs_arxiv, fetch_arxiv_urls([bib['normalized_url'] for bib in bibs_arxiv])):
+        bib.update(bib_enriched)
+    for bib, bib_enriched in zip(bibs_arxiv, fetch_openreview_urls([bib['normalized_url'] for bib in bibs_openreview])):
+        bib.update(bib_enriched)
     
     if verbose:
         print('# from arxiv extracted documents:', len(bibs_arxiv))
@@ -396,8 +407,6 @@ def parse_urls(text, verbose = False):
         print('# unknown sources:', sources.count(None))
         print('# unknown sources:', [u for u, s in zip(urls, sources) if s is None])
     
-    bibs = bibs_arxiv + bibs_openreview
-
     return bibs
 
 def format_bib(bibs, terse = False, terse_keys = ['title', 'url'], header_keys = ['title', 'bibtex_author', 'booktitle', 'journal', 'year', 'doi'], footer_keys = ['note', 'pdf', 'url'], exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'authors', 'abstract', 'bibtex'], remap_keys = dict(bibtex_author = 'author')):
@@ -418,9 +427,10 @@ def format_bib(bibs, terse = False, terse_keys = ['title', 'url'], header_keys =
 def format_txt(bibs, terse = False, ljust = 50, tab = 4):
     bibstrs = []
     for bib in bibs:
-        bibstr = bib['url'].ljust(ljust) + ' ' * tab + bib['title']
+        url, title, authors = bib.get('normalized_url', ''), bib.get('title', ''), bib.get('authors', [])
+        bibstr = url.ljust(ljust) + ' ' * tab + title
         if not terse:
-            bibstr += ' | ' + ', '.join(bib.get('authors', []))
+            bibstr += ' | ' + ', '.join(authors)
         bibstrs.append(bibstr)
     return ('\n' if terse else '\n\n').join(sorted(bibstrs))
 
@@ -443,28 +453,30 @@ def import_docs(bibs, documents_dir, tags = [], verbose = False, dry = False, ex
                 print(s, end = '\n\n', file = sys.stderr)
             print(s, file = f)
 
-def enrich_docs(bibs_to_enrich, verbose = False):
-    urls = []
-    bibs = []
-    for bib in bibs_to_enrich:
-        if extract_source(bib.get('url')) is not None:
-            urls.append(bib['url'])
-        else:
-            bibs.append(bib)
-    bibs += parse_urls('\n'.join(urls))
-    return bibs
-
-def read_urls_from_csv(path):
+def read_from_csv(path):
     rows = list(csv.reader(open(path), delimiter=','))
-    return [row[-2] for row in rows[1:] if len(row) == 5]
+    mtime = os.path.getmtime(path)
+    return [dict(url = row[-2], mtime = mtime) for row in rows[1:] if len(row) == 5]
 
-def read_urls_from_json(path):
+def read_from_json(path):
     loaded = json.load(open(path))
-    return [link['url'] for collection in loaded['collections'] for folder in collection['folders'] for link in folder['links']]
+    mtime = os.path.getmtime(path)
+    return [dict(url = link['url'], mtime = mtime) for collection in loaded['collections'] for folder in collection['folders'] for link in folder['links']]
+
+def read_from_bib(path):
+    bibtex = open_or_urlopen(p).read()
+    mtime = os.path.getmtime(path)
+    parsed = parse_bibtex(bibtex, verbose = args.verbose)
+    return [dict(b, mtime = mtime) for b in parsed]
 
 def read_urls_from_txt(path):
     lines = open(path)
-    return [line.strip() for line in lines if line.strip() and not line.lstrip().startswith('#')]
+    mtime = os.path.getmtime(path)
+    return [dict(url = url, mtime = mtime) for line in lines if line.strip() and not line.lstrip().startswith('#') for url in re.findall(r'\S+', line)]
+
+def read_from_args(urls):
+    mtime = time.time()
+    return [dict(url = url, mtime = mtime) for url in urls] 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -472,11 +484,11 @@ if __name__ == '__main__':
     parser.add_argument('--input-path', '-i', nargs = '*', default = [])
     parser.add_argument('--documents-dir', default = './data/documents/')
     parser.add_argument('--import', dest = 'import_docs', action = 'store_true')
-    parser.add_argument('--enrich', dest = 'enrich_docs', action = 'store_true')
     parser.add_argument('--tags', nargs = '*', default = [])
     parser.add_argument('--terse', action = 'store_true')
     parser.add_argument('--dry', action = 'store_true')
     parser.add_argument('--verbose', action = 'store_true')
+    parser.add_argument('--stop-words', action = 'append', default = [])
     args = parser.parse_args()
 
     csv_path, json_path, txt_path, bib_path, url_path = [], [], [], [], []
@@ -494,31 +506,21 @@ if __name__ == '__main__':
             else:
                 url_path.append(p)
     
-    bibtex = '\n\n'.join(open_or_urlopen(p).read() for p in bib_path)
-    
-    urls = ''
-    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_txt, txt_path), []))
-    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_csv, csv_path), []))
-    urls += '\n\n' + '\n'.join(sum(map(read_urls_from_json, json_path), []))
-    urls += '\n\n' + '\n'.join(url_path)
+    bibs_csv    = sum(map(read_from_csv,      csv_path), [])
+    bibs_json   = sum(map(read_from_json,    json_path), [])
+    bibs_bibtex = sum(map(read_from_bib,      bib_path), [])
+    bibs_txt    = sum(map(read_urls_from_txt, txt_path), [])
+    bibs_args   = sum(map(read_from_args,     url_path), [])
 
-    bibs_bibtex = parse_bibtex(bibtex, verbose = args.verbose)
-    if args.enrich_docs:
-        bibs = enrich_docs(bibs, verbose = args.verbose)
-    if args.verbose:
-        print('# from bibtex extracted documents:', len(bibs_bibtex))
-    
-    bibs_txt = parse_urls(urls, verbose = args.verbose)
-    if args.verbose:
-        print('# from txt extracted documents:', len(bibs_txt))
+    bibs = bibs_csv + bibs_json + bibs_bibtex + bibs_txt + bibs_args
 
-    bibs = {bib['id'] : bib for bib in bibs_bibtex + bibs_txt}.values()
+    bibs = enrich_bibs(bibs)
+
     if args.verbose:
         print('# total extracted documents:', len(bibs))
     
-    output_format = 'bib' if (args.output_path or '').endswith('.bib') else 'txt'
     output_file = sys.stdout if args.output_path == '-' else sys.stdout if args.output_path is None and args.verbose else open(args.output_path, 'w') if args.output_path is not None else open(os.devnull, 'w')
-
+    output_format = 'bib' if (args.output_path or '').endswith('.bib') else 'txt'
     if output_format == 'bib':
         print(format_bib(bibs, terse = args.terse), file = output_file)
     elif output_format == 'txt':
