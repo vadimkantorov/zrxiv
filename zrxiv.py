@@ -368,37 +368,28 @@ def extract_source(url):
         return 'x.com'
     return None
 
-def normalize_url(orig_url):
-    try:
-        url = orig_url
-        parsed = urllib.parse.urlparse(url)
-        if parsed.scheme == 'chrome-extension': # and parsed.netloc == 'noogafoofpebimajpfpamcfhoaifemoa' and parsed.path == '/suspended.html': # https://chromewebstore.google.com/detail/the-marvellous-suspender/noogafoofpebimajpfpamcfhoaifemoa?pli=1
-            url = urllib.parse.parse_qs(parsed.fragment).get('uri', [''])[0]
-        return url
-    except:
-        return ''
-
 def enrich_bibs(bibs, verbose = False):
     bibs_arxiv, bibs_openreview = [], []
 
     urls, sources = [], []
     for bib in bibs:
-        if not bib.get('normalized_url'):
-            bib['normalized_url'] = normalize_url(bib['url'])
+        if not bib.get('canonical_url'):
+            bib_canonicalized = canonicalize_url(bib)
+            bib['canonical_url'] = bib_canonicalized['canonical_url']
         if not bib.get('source'):
-            bib['source'] = extract_source(bib['normalized_url'])
+            bib['source'] = extract_source(bib['canonical_url'])
         if bib['source'] == 'arxiv.org':
-            bib['normalized_url'] = normalize_arxiv_url(bib['normalized_url'])
+            bib['canonical_url'] = normalize_arxiv_url(bib['canonical_url'])
             bibs_arxiv.append(bib)
         if bib['source'] == 'openreview.net':
-            bib['normalized_url'] = normalize_openreview_url(bib['normalized_url'])
+            bib['canonical_url'] = normalize_openreview_url(bib['canonical_url'])
             bibs_openreview.append(bib)
         sources.append(bib['source'])
-        urls.append(bib['normalized_url'])
+        urls.append(bib['canonical_url'])
     
-    for bib, bib_enriched in zip(bibs_arxiv, fetch_arxiv_urls([bib['normalized_url'] for bib in bibs_arxiv])):
+    for bib, bib_enriched in zip(bibs_arxiv, fetch_arxiv_urls([bib['canonical_url'] for bib in bibs_arxiv])):
         bib.update(bib_enriched)
-    for bib, bib_enriched in zip(bibs_arxiv, fetch_openreview_urls([bib['normalized_url'] for bib in bibs_openreview])):
+    for bib, bib_enriched in zip(bibs_arxiv, fetch_openreview_urls([bib['canonical_url'] for bib in bibs_openreview])):
         bib.update(bib_enriched)
     
     if verbose:
@@ -409,7 +400,7 @@ def enrich_bibs(bibs, verbose = False):
     
     return bibs
 
-def import_docs(bibs, documents_dir, tags = [], verbose = False, dry = False, exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'bibtex_author']):
+def import_bibs(bibs, documents_dir, tags = [], verbose = False, dry = False, exclude_keys = ['bibtex_record_type', 'bibtex_citation_key', 'bibtex_author']):
     os.makedirs(documents_dir, exist_ok = True)
 
     current_year = time.strftime('%Y')
@@ -446,7 +437,7 @@ def format_bib(bibs, terse = False, terse_keys = ['title', 'url'], header_keys =
 def format_txt(bibs, terse = False, ljust = 50, tab = 4):
     bibstrs = []
     for bib in bibs:
-        url, title, authors = bib.get('normalized_url', ''), bib.get('title', ''), bib.get('authors', [])
+        url, title, authors = bib.get('canonical_url', ''), bib.get('title', ''), bib.get('authors', [])
         bibstr = url.ljust(ljust) + ' ' * tab + title
         if not terse:
             bibstr += ' | ' + ', '.join(authors)
@@ -456,15 +447,26 @@ def format_txt(bibs, terse = False, ljust = 50, tab = 4):
 def format_json(bibs, terse = False):
     return json.dumps(bibs, indent = 2, sort_keys = True)
 
+def canonicalize_url(bib):
+    try:
+        parsed = urllib.parse.urlparse(bib['url'])
+        if parsed.scheme == 'chrome-extension': # and parsed.netloc == 'noogafoofpebimajpfpamcfhoaifemoa' and parsed.path == '/suspended.html': # https://chromewebstore.google.com/detail/the-marvellous-suspender/noogafoofpebimajpfpamcfhoaifemoa?pli=1
+            qs = urllib.parse.parse_qs(parsed.fragment)
+            url = qs.get('uri', [''])[0]
+            title = qs.get('ttl', [''])[0]
+        return dict(canonical_url = url, title = title)
+    except:
+        return dict(canonical_url = url, title = '')
+
 def read_from_csv(path):
     rows = list(csv.reader(open(path), delimiter=','))
     mtime = os.path.getmtime(path)
-    return [dict(url = row[-2], mtime = mtime) for row in rows[1:] if len(row) == 5]
+    return [dict(url = row[-2], title = row[-3], mtime = mtime) for row in rows[1:] if len(row) == 5]
 
 def read_from_json(path):
     loaded = json.load(open(path))
     mtime = os.path.getmtime(path)
-    return [dict(url = link['url'], mtime = mtime) for collection in loaded['collections'] for folder in collection['folders'] for link in folder['links']]
+    return [dict(url = link['url'], title = link['title'], mtime = mtime) for collection in loaded['collections'] for folder in collection['folders'] for link in folder['links']]
 
 def read_from_bib(path):
     bibtex = open_or_urlopen(p).read()
@@ -499,16 +501,8 @@ if __name__ == '__main__':
     for path in args.input_path:
         paths = [path] if not os.path.isdir(path) else [os.path.join(path, basename) for basename in os.listdir(path)]
         for p in paths:
-            if p.endswith('.csv'):
-                csv_path.append(p)
-            elif p.endswith('.json'):
-                json_path.append(p)
-            elif p.endswith('.txt'):
-                txt_path.append(p)
-            elif p.endswith('.bib'):
-                bib_path.append(p)
-            else:
-                url_path.append(p)
+            v = [var for ext, var in {'.csv' : csv_path, '.json' : json_path, '.txt' : txt_path, '.bib' : bib_path, '' : url_path}.items() if p.endswith(ext)][0]
+            v.append(p)
     
     bibs_csv    = sum(map(read_from_csv,      csv_path), [])
     bibs_json   = sum(map(read_from_json,    json_path), [])
@@ -535,5 +529,5 @@ if __name__ == '__main__':
         print(format_json(bibs, terse = args.terse), file = output_file)
 
     if args.import:
-        import_docs(bibs, documents_dir = args.documents_dir, verbose = args.verbose, dry = args.dry, tags = args.tags)
+        import_bibs(bibs, documents_dir = args.documents_dir, verbose = args.verbose, dry = args.dry, tags = args.tags)
         print(args.documents_dir)
